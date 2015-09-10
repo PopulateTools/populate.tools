@@ -3,11 +3,11 @@
 <head>
   <title>Populate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
 <style type="text/css" media="screen">
 body {
-  font-family: "Work Sans";
+  font-family: "PT Sans";
   color: #666;
   font-size: 85%;
 }
@@ -16,6 +16,10 @@ h1, h2 {
 }
 h1, h2, h3 {
   margin-top: 2em;
+}
+h2 {
+  border-top: 1px solid #CCC;
+  padding: 20px 0 0 0;
 }
 .container {
   max-width: 50%;
@@ -42,15 +46,16 @@ h1, h2, h3 {
 .url {
   white-space: nowrap;
 }
+.logo {
+  margin: 45% 0 45% -54px;
+}
 </style>
 </head>
 <body>
 
 <div class="container">
 
-  <h1>Populate</h1>
-
-  <h2>Products for civic engagement</h2>
+  <h1><img class="logo" src="logo-populate-tools.png" width="400" height="124" title="Populate / Products for civic engagement"></h1>
 
   <p>We conceptualize, design and build products for civic engagement: Tools and platforms that enable 
   citizens and organizations to better understand and interact with the world around us. </p>
@@ -78,7 +83,7 @@ h1, h2, h3 {
 
   <div class="work">
     <h3>España en Cifras</h3>
-    <div class="description">We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheets with key indicators about economy, demographics, employment, election results, budgets... about the more than 8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. </div>
+    <div class="description">We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheet with key indicators about economy, demographics, employment, election results, budgets... for the +8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare indicators from different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. </div>
     <div class="date"><span>Date</span>May 2015</div>
     <div class="client"><span>Client</span>El Español</div>
     <div class="what"><span>Tasks</span>ux, visual design, front-end, scrapping, back-end, elastic search, ruby on rails, D3</div>
