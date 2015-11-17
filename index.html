@@ -19,33 +19,52 @@
 <style type="text/css" media="screen">
 body {
   font-family: "PT Sans";
-  color: #666;
-  font-size: 85%;
-  padding-bottom: 10%;
-}
-h1, h2 {
-  text-transform: uppercase;
+  color: #554E42;
+  font-size: 84%;
+  margin: 0;
+  padding: 0;
+  background: url('img/pieces.png') 101% -1.5% no-repeat;
 }
 h1, h2, h3 {
   margin-top: 2em;
 }
 h2 {
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #F1F1F1;
   padding: 20px 0 0 0;
+  font-size: 1em;
+  text-transform: none;
+  margin: 0 0 4em 0;
 }
 .container {
-  max-width: 50%;
+  max-width: 934px;
   min-width: 300px;
-  margin: auto;
+  margin: 0 auto 20% 20%;
 }
 .work {
-  margin: 0 0 3em 0;
+  margin: 0 0 12em 0;
+  overflow: auto;
 }
 .work h3 {
-  margin: 0 0 .5em 0;
+  margin: 0;
+  font-size: 1em;
+}
+.work .client {
+  display: inline;
+}
+.work .client:before {
+  content: "for ";
+  opacity: .75;
+}
+.work .date {
+  display: inline;
+  opacity: .5;
+  padding: 0 0 0 2em;
 }
 .work .description {
-  margin: 0 0 .5em 0;
+  margin: 1.5em 0;
+}
+.work img {
+  border: 1px solid #E0E0E0;
 }
 .work span {
   color: #ADADAD;
@@ -61,8 +80,8 @@ h2 {
   text-overflow: ellipsis;
 }
 .logo {
-  margin: 45% 0 45% -54px;
-  width: 55%;
+  margin: 10% 0 10% -4.8%;
+  width: 32%;
 }
 @media only screen and (max-device-width: 480px) {
   .logo {
@@ -70,77 +89,283 @@ h2 {
     width: 100%;
   }
 }
+.side {
+  background: #F5F5F4;
+  width: 108px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 29% 10px 0 0;
+  box-sizing: border-box;
+}
+.side menu {
+  margin: 0;
+  padding: 0;
+}
+.side a {
+  text-decoration: none;
+  color: #9D9D9D;
+  transition: .25s;
+  padding: 2px;
+  display: inline-block;
+}
+.side a:hover {
+  color: #666;
+}
+.side li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col-1-2, .col-2-2 {
+  width: 46.8%;
+  float: left;
+  margin: 0 4% 0 0;
+}
+.col-2-2 {
+  float: right; 
+  margin: 0;
+}
+.col-1-3, .col-2-3, .col-3-3 {
+  width: 32%;
+  float: left;
+  margin: 0 2% 0 0;
+  text-align: center;
+}
+.col-3-3 {
+  float: right;
+  margin: 0;
+}
+
+
+.intro_block {
+  margin: 0 0 12em 0;
+}
+.text_boxed {
+  box-sizing: border-box;
+  padding: 1em 2.8em 2em 2.4em;
+  background: #F5F5F4;
+  border-top: 1px solid #DDDDDC;
+}
+.intro_block h2 {
+  font-size: 1em;
+  text-transform: none;
+  padding: 1em 0 0 0;
+  margin: 0;
+}
+.intro_block ul, .intro_block li {
+  margin: 0; 
+  padding: 0;
+  list-style-type: none;
+}
+.intro_block ul {
+  margin: 0 0 2em 0;
+}
+
+.col-1-2 img {
+  width: 100%;
+
+}
+
 
 </style>
 </head>
 <body>
 
+<div class="side">
+
+  <menu type="">
+    <li><a href="#about">About</a></li>
+    <!-- <li><a href="#products">Products</a></li> -->
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- <li><a href="#lately">Lately</a></li> -->
+    <!-- <li><a href="#who">Who</a></li> -->
+  </menu>
+
+</div>
+
+
 <div class="container">
 
   <h1><img class="logo" src="img/logo-populate-tools.png" title="Populate / Products for civic engagement"></h1>
 
-  <p>We conceptualize, design and build products for civic engagement: Tools and platforms that enable 
-  citizens and organizations to better understand and interact with the world around us. </p>
+  <div id="about" class="intro_block clearfix">
+  
+    <div class="col-1-2 text_boxed">
+  
+      <p>We conceptualize, design and build products for civic engagement: Tools and platforms that enable citizens and organizations to better understand and interact with the world around us.</p>
 
-  <h2>What we do</h2>
+      <p>We create our own projects and provide commercial services around data journalism, news products, open data, civic engament.</p>
 
-  <ul>
-    <li><strong>Design</strong>: UX, visual, data visualization</li>
-    <li><strong>Code</strong>: front, back, systems</li>
-    <li><strong>Data</strong>: scrapping, processing, automating, open-data</li>
-    <li><strong>Training</strong>: ux, code, data</li>
-    <li><strong>Community</strong></li>
-  </ul>
+    </div>
 
-  <h2>Recent work</h2>
+    <div class="col-2-2 clearfix">
+
+
+      <div class="col-1-2">
+        
+        <h2>Design</h2>
+        <ul>
+          <li>UX</li>
+          <li>Visual & illustration</li>
+          <li>Data visualization</li>
+        </ul>
+
+        <h2>Data</h2>
+        <ul>
+          <li>Scraping</li>
+          <li>Processing and analysis</li>
+          <li>Open data</li>
+        </ul>
+        
+      </div>
+
+      <div class="col-2-2">
+
+        <h2>Code</h2>
+        <ul>
+          <li>Web apps</li>
+          <li>Interactives</li>
+          <li>Tools</li>
+        </ul>
+
+        <h2>Community</h2>
+        <ul>
+          <li>Engagement</li>
+          <li>Interaction</li>
+          <li>Training</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <h2 id="projects">Projects</h2>
 
   <div class="work">
-    <h3>Fatal Extraction: Where Australian Mining Leaves its Mark / data explorer</h3>
-    <div class="description">We built the interactive map and web site where you can browse details about the companies. Data was parsed from a Google Doc the editorial team was working on. Import was automated through a script.</div>
-    <div class="date"><span>Date</span>July 2015</div>
-    <div class="client"><span>Client</span> ICIJ</div>
-    <div class="what"><span>Tasks</span> ux, visual design, front-end, back-end, data processing</div>
-    <div class="url"><span>Visit</span> <a href="http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark">icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark</a></div>
+    
+    <div class="col-1-2">
+      <img src="img/JPG/ICIJ-FatalExtraction-2.jpg">
+    </div>
+
+    <div class="col-2-2">
+    
+      <h3>Fatal Extraction: Where Australian Mining Leaves its Mark / data explorer</h3>
+      <div class="client">ICIJ</div> 
+      <div class="date">July 2015</div>
+
+      <div class="description">We built the interactive map and web site where you can browse details about the companies. Data was parsed from a Google Doc the editorial team was working on. Import was automated through a script.</div>
+      
+      <div class="what"><span>Tasks</span> ux, visual design, front-end, back-end, data processing</div>
+      <div class="url"><span>Visit</span> <a href="http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark">icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark</a></div>
+
+    </div>
+
   </div>
 
   <div class="work">
-    <h3>España en Cifras</h3>
-    <div class="description">We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheet with key indicators about economy, demographics, employment, election results, budgets... for the +8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare indicators from different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. </div>
-    <div class="date"><span>Date</span>May 2015</div>
-    <div class="client"><span>Client</span>El Español</div>
-    <div class="what"><span>Tasks</span>ux, visual design, front-end, scrapping, back-end, elastic search, ruby on rails, D3</div>
-    <div class="url"><span>Visit</span><a href="http://espanaencifras.elespanol.com">espanaencifras.elespanol.com</a></div>
+
+    <div class="col-1-2">
+      <img src="img/JPG/EspañaEnCifras-1.jpg">
+    </div>
+
+    <div class="col-2-2">
+
+      <h3>España en Cifras</h3>
+      <div class="client">El Español</div>
+      <div class="date">May 2015</div>
+
+      <div class="description">We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheet with key indicators about economy, demographics, employment, election results, budgets... for the +8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare indicators from different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. </div>
+    
+      
+      <div class="what"><span>Tasks</span>ux, visual design, front-end, scrapping, back-end, elastic search, ruby on rails, D3</div>
+      <div class="url"><span>Visit</span><a href="http://espanaencifras.elespanol.com">espanaencifras.elespanol.com</a></div>
+
+    </div>
   </div>
 
   <div class="work">
-    <h3>Evicted and Abandoned / data explorer</h3>
-    <div class="description"></div>
-    <div class="date"><span>Date</span>April 2015</div>
-    <div class="client"><span>Client</span>ICIJ</div>
-    <div class="what"><span>Tasks</span>ux, visual design</div>
-    <div class="url"><span>Visit</span><a href="http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data">icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data</a></div>
+
+    <div class="col-1-2">
+      <img src="img/JPG/ICIJ-WorldBank-3.jpg">
+    </div>
+
+    <div class="col-2-2">
+      <h3>Evicted and Abandoned / data explorer</h3>
+      <div class="client">ICIJ</div> 
+      <div class="date">July 2015</div>
+
+      <div class="description"></div>
+      
+      <div class="what"><span>Tasks</span>ux, visual design</div>
+      <div class="url"><span>Visit</span><a href="http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data">icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data</a></div>
+    </div>
+
   </div>
 
   <div class="work">
-    <h3>Earnings Inspector</h3>
-    <div class="description"></div>
-    <div class="date"><span>Date</span>June 2015</div>
-    <div class="client"><span>Client</span>Brown Institute (Columbia/Stanford)</div>
-    <div class="what"><span>Tasks</span>ux, visual design</div>
-    <div class="url"><span>Visit</span><a href="http://earningsinspector.org">earningsinspector.org</a></div>
+
+    <div class="col-1-2">
+      <img src="img/JPG/Earnings-2.jpg">
+    </div>
+
+    <div class="col-2-2">
+      <h3>Earnings Inspector</h3>
+      <div class="client">Brown Institute (Columbia/Stanford)</div> 
+      <div class="date">June 2015</div>
+
+      <div class="description"></div>
+      
+      <div class="what"><span>Tasks</span>ux, visual design</div>
+      <div class="url"><span>Visit</span><a href="http://earningsinspector.org">earningsinspector.org</a></div>
+    </div>
+
   </div>
 
   <div class="work">
-    <h3>Swiss Leaks / data explorer</h3>
-    <div class="description"></div>
-    <div class="date"><span>Date</span> February 2015</div>
-    <div class="client"><span>Client</span> ICIJ</div>
-    <div class="what"><span>Tasks</span> ux, visual design</div>
-    <div class="url"><span>Visit</span> <a href="http://www.icij.org/project/swiss-leaks/explore-swiss-leaks-data">icij.org/project/swiss-leaks/explore-swiss-leaks-data</a></div>
+
+    <div class="col-1-2">
+      <img src="img/JPG/ICIJ-SwissLeaks-2.jpg">
+    </div>
+
+    <div class="col-2-2">
+      <h3>Swiss Leaks / data explorer</h3>
+      <div class="client">ICIJ</div> 
+      <div class="date">February 2015</div>
+
+      <div class="description"></div>
+      
+
+      <div class="what"><span>Tasks</span> ux, visual design</div>
+      <div class="url"><span>Visit</span> <a href="http://www.icij.org/project/swiss-leaks/explore-swiss-leaks-data">icij.org/project/swiss-leaks/explore-swiss-leaks-data</a></div>
+    </div>
+
   </div>
 
   
-  <h2>Contact</h2>
+  <h2 id="contact">Contact</h2>
 
   <p><a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
   <p><a href="http://twitter.com/populatetools">@populatetools</a></p>
