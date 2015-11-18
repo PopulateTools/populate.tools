@@ -38,7 +38,7 @@ h2 {
 .container {
   max-width: 934px;
   min-width: 300px;
-  margin: 0 auto 20% 20%;
+  margin: 0 5% 20% 20%;
 }
 .work {
   margin: 0 0 12em 0;
@@ -82,12 +82,6 @@ h2 {
 .logo {
   margin: 10% 0 10% -4.8%;
   width: 32%;
-}
-@media only screen and (max-device-width: 480px) {
-  .logo {
-    margin: 45% 0 45% 0;
-    width: 100%;
-  }
 }
 .side {
   background: #F5F5F4;
@@ -186,6 +180,45 @@ h2 {
 
 }
 
+@media screen and (max-width: 740px) {
+  body {
+    background-position: 107% -0.5%;
+    background-size: 40%;
+  }
+  .side {
+    display: none;
+  }
+  .col-1-2, .col-2-2 {
+    float: none; 
+    width: 100%;
+  }
+  .intro_block {
+    margin: 0 0 2em 0;
+  }
+  .mini_col {
+    width: 48%;
+    float: left;
+  }
+  .mini_col h2 {
+    border: none;
+    padding: 0;
+  }
+  .logo {
+    margin: 38% 0 3% 7%;
+    width: 50%;
+  }
+  .container {
+    margin: 0;
+  }
+  .resp_padding, h2, .work .col-2-2 {
+    padding: 1em 2.8em 2em 2.4em;
+    box-sizing: border-box;
+  }
+  .work {
+    margin: 0 0 5em 0;
+  }
+  
+}
 
 </style>
 </head>
@@ -219,10 +252,9 @@ h2 {
 
     </div>
 
-    <div class="col-2-2 clearfix">
+    <div class="col-2-2 clearfix resp_padding">
 
-
-      <div class="col-1-2">
+      <div class="col-1-2 mini_col">
         
         <h2>Design</h2>
         <ul>
@@ -240,7 +272,7 @@ h2 {
         
       </div>
 
-      <div class="col-2-2">
+      <div class="col-2-2 mini_col">
 
         <h2>Code</h2>
         <ul>
@@ -367,8 +399,10 @@ h2 {
   
   <h2 id="contact">Contact</h2>
 
-  <p><a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
-  <p><a href="http://twitter.com/populatetools">@populatetools</a></p>
+  <div class="resp_padding">
+    <p><a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
+    <p><a href="http://twitter.com/populatetools">@populatetools</a></p>
+  </div>
 
 </div>
 
