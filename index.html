@@ -180,6 +180,20 @@ h2 {
   width: 100%;
 
 }
+input {
+  padding: .5em;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+}
+input[type=email] {
+  width: 200px;
+}
+input[type=submit] {
+  background: #666;
+  color: #FFF;
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
 
 @media screen and (max-width: 740px) {
   body {
@@ -232,6 +246,7 @@ h2 {
     <li><a href="#products">Products</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#subscribe">Links</a></li>
     <!-- <li><a href="#lately">Lately</a></li> -->
     <!-- <li><a href="#who">Who</a></li> -->
   </menu>
@@ -295,6 +310,7 @@ h2 {
 
   </div>
 
+  
   <h2 id="products">Products</h2>
 
   <div class="work">
@@ -439,12 +455,37 @@ h2 {
 
   </div>
 
-  
-  <h2 id="contact">Contact</h2>
 
-  <div class="resp_padding">
-    <p><a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
-    <p><a href="http://twitter.com/populatetools">@populatetools</a></p>
+  <div class="work">
+
+    <div class="col-1-2">
+      <h2 id="contact">Contact</h2>
+
+      <div class="resp_padding">
+        <p><a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
+        <p><a href="http://twitter.com/populatetools">@populatetools</a></p>
+      </div>
+    </div>
+
+    <div class="col-2-2">
+
+      <h2 id="subscribe">Populate Links</h2>
+
+      <p>We send a weekly digest of links we found interesting we shared internally throughout the week, and ocassional news about our projects. Subscribe to receive it:</p>
+
+      <div id="revue-embed">
+        <form action="https://www.getrevue.co/profile/populate/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+        <p class="revue-form-group">
+          <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+          <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+        </p>
+        </form>
+      </div>
+
+      <p>Have fun <a href="https://www.getrevue.co/profile/populate/">checking past issues</a>.</p>
+
+    </div>
+
   </div>
 
 </div>
