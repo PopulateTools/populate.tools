@@ -1,0 +1,219 @@
+body {
+  font-family: "PT Sans";
+  color: #554E42;
+  font-size: 92%;
+  margin: 0;
+  padding: 0;
+  background: url('/img/pieces.png') 101% -1.5% no-repeat;
+}
+h1, h2, h3 {
+  margin-top: 2em;
+}
+h2 {
+  border-top: 1px solid #F1F1F1;
+  padding: 20px 0 0 0;
+  font-size: 1.2em;
+  text-transform: none;
+  margin: 0 0 4em 0;
+}
+.container {
+  max-width: 934px;
+  min-width: 300px;
+  margin: 0 5% 20% 20%;
+}
+.work {
+  margin: 0 0 12em 0;
+  overflow: auto;
+}
+.work h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+.work .client {
+  display: inline;
+  margin: 0 2em 0 0;
+}
+.work .client:before {
+  content: "for ";
+  opacity: .75;
+}
+.work .date {
+  display: inline;
+  opacity: .5;
+  padding: 0;
+}
+.work .description {
+  margin: 1.5em 0;
+}
+.work img {
+  border: 1px solid #E0E0E0;
+}
+.work span {
+  color: #ADADAD;
+  display: inline-block;
+  width: 70px;
+}
+.work a {
+  color: #888;
+}
+.url { /* hat tip to https://twitter.com/ivanheral/status/651441966450917377 ! */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.logo {
+  margin: 10% 0 10% -4.8%;
+  width: 32%;
+}
+.side {
+  background: #F5F5F4;
+  width: 108px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 29% 10px 0 0;
+  box-sizing: border-box;
+}
+.side menu {
+  margin: 0;
+  padding: 0;
+}
+.side a {
+  text-decoration: none;
+  color: #9D9D9D;
+  transition: .25s;
+  padding: 2px;
+  display: inline-block;
+}
+.side a:hover {
+  color: #666;
+}
+.side li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col-1-2, .col-2-2 {
+  width: 46.8%;
+  float: left;
+  margin: 0 4% 0 0;
+}
+.col-2-2 {
+  float: right;
+  margin: 0;
+}
+.col-1-3, .col-2-3, .col-3-3 {
+  width: 32%;
+  float: left;
+  margin: 0 2% 0 0;
+  text-align: center;
+}
+.col-3-3 {
+  float: right;
+  margin: 0;
+}
+
+
+.intro_block {
+  margin: 0 0 12em 0;
+}
+.text_boxed {
+  box-sizing: border-box;
+  padding: 1em 2.8em 2em 2.4em;
+  background: #F5F5F4;
+  border-top: 1px solid #DDDDDC;
+}
+.intro_block h2 {
+  font-size: 1em;
+  text-transform: none;
+  padding: 1em 0 0 0;
+  margin: 0;
+}
+.intro_block ul, .intro_block li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.intro_block ul {
+  margin: 0 0 2em 0;
+}
+
+.col-1-2 img {
+  width: 100%;
+
+}
+input {
+  padding: .5em;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+}
+input[type=email] {
+  width: 200px;
+}
+input[type=submit] {
+  background: #666;
+  color: #FFF;
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    background-position: 107% -0.5%;
+    background-size: 40%;
+  }
+  .side {
+    display: none;
+  }
+  .col-1-2, .col-2-2 {
+    float: none;
+    width: 100%;
+  }
+  .intro_block {
+    margin: 0 0 2em 0;
+  }
+  .mini_col {
+    width: 48%;
+    float: left;
+  }
+  .mini_col h2 {
+    border: none;
+    padding: 0;
+  }
+  .logo {
+    margin: 38% 0 3% 7%;
+    width: 50%;
+  }
+  .container {
+    margin: 0;
+  }
+  .resp_padding, h2, .work .col-2-2 {
+    padding: 1em 2.8em 2em 2.4em;
+    box-sizing: border-box;
+  }
+  .work {
+    margin: 0 0 5em 0;
+  }
+
+}
+
+

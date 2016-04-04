@@ -15,227 +15,15 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
-
-<style type="text/css" media="screen">
-body {
-  font-family: "PT Sans";
-  color: #554E42;
-  font-size: 84%;
-  margin: 0;
-  padding: 0;
-  background: url('img/pieces.png') 101% -1.5% no-repeat;
-}
-h1, h2, h3 {
-  margin-top: 2em;
-}
-h2 {
-  border-top: 1px solid #F1F1F1;
-  padding: 20px 0 0 0;
-  font-size: 1em;
-  text-transform: none;
-  margin: 0 0 4em 0;
-}
-.container {
-  max-width: 934px;
-  min-width: 300px;
-  margin: 0 5% 20% 20%;
-}
-.work {
-  margin: 0 0 12em 0;
-  overflow: auto;
-}
-.work h3 {
-  margin: 0;
-  font-size: 1em;
-}
-.work .client {
-  display: inline;
-  margin: 0 2em 0 0;
-}
-.work .client:before {
-  content: "for ";
-  opacity: .75;
-}
-.work .date {
-  display: inline;
-  opacity: .5;
-  padding: 0;
-}
-.work .description {
-  margin: 1.5em 0;
-}
-.work img {
-  border: 1px solid #E0E0E0;
-}
-.work span {
-  color: #ADADAD;
-  display: inline-block;
-  width: 70px;
-}
-.work a {
-  color: #888;
-}
-.url { /* hat tip to https://twitter.com/ivanheral/status/651441966450917377 ! */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.logo {
-  margin: 10% 0 10% -4.8%;
-  width: 32%;
-}
-.side {
-  background: #F5F5F4;
-  width: 108px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: right;
-  padding: 29% 10px 0 0;
-  box-sizing: border-box;
-}
-.side menu {
-  margin: 0;
-  padding: 0;
-}
-.side a {
-  text-decoration: none;
-  color: #9D9D9D;
-  transition: .25s;
-  padding: 2px;
-  display: inline-block;
-}
-.side a:hover {
-  color: #666;
-}
-.side li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-
-.clearfix:before,
-.clearfix:after {
-  content:"";
-  display:table;
-}
-.clearfix:after {
-  clear:both;
-}
-.clearfix {
-  zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-.col-1-2, .col-2-2 {
-  width: 46.8%;
-  float: left;
-  margin: 0 4% 0 0;
-}
-.col-2-2 {
-  float: right; 
-  margin: 0;
-}
-.col-1-3, .col-2-3, .col-3-3 {
-  width: 32%;
-  float: left;
-  margin: 0 2% 0 0;
-  text-align: center;
-}
-.col-3-3 {
-  float: right;
-  margin: 0;
-}
-
-
-.intro_block {
-  margin: 0 0 12em 0;
-}
-.text_boxed {
-  box-sizing: border-box;
-  padding: 1em 2.8em 2em 2.4em;
-  background: #F5F5F4;
-  border-top: 1px solid #DDDDDC;
-}
-.intro_block h2 {
-  font-size: 1em;
-  text-transform: none;
-  padding: 1em 0 0 0;
-  margin: 0;
-}
-.intro_block ul, .intro_block li {
-  margin: 0; 
-  padding: 0;
-  list-style-type: none;
-}
-.intro_block ul {
-  margin: 0 0 2em 0;
-}
-
-.col-1-2 img {
-  width: 100%;
-
-}
-input {
-  padding: .5em;
-  border-radius: 3px;
-  border: 1px solid #dfdfdf;
-}
-input[type=email] {
-  width: 200px;
-}
-input[type=submit] {
-  background: #666;
-  color: #FFF;
-  padding: .5em 1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 740px) {
-  body {
-    background-position: 107% -0.5%;
-    background-size: 40%;
-  }
-  .side {
-    display: none;
-  }
-  .col-1-2, .col-2-2 {
-    float: none; 
-    width: 100%;
-  }
-  .intro_block {
-    margin: 0 0 2em 0;
-  }
-  .mini_col {
-    width: 48%;
-    float: left;
-  }
-  .mini_col h2 {
-    border: none;
-    padding: 0;
-  }
-  .logo {
-    margin: 38% 0 3% 7%;
-    width: 50%;
-  }
-  .container {
-    margin: 0;
-  }
-  .resp_padding, h2, .work .col-2-2 {
-    padding: 1em 2.8em 2em 2.4em;
-    box-sizing: border-box;
-  }
-  .work {
-    margin: 0 0 5em 0;
-  }
-  
-}
-
-</style>
+  <link href="/stylesheets/application.css" media="all" rel="stylesheet" />
+  <meta name=twitter:card content=summary_large_image />
+  <meta name=twitter:site content="@populatetools"/>
+  <meta property=og:type content=article />
+  <meta property=og:url content="http://populate.tools"/>
+  <meta property=og:title content="Populate / Products for civic engagement"/>
+  <meta name=description content="We conceptualize, design and build products for civic engagement: Tools and platforms that enable citizens and organizations to better understand and interact with the world around us.">
+  <meta property=og:description content="We conceptualize, design and build products for civic engagement: Tools and platforms that enable citizens and organizations to better understand and interact with the world around us."/>
+  <meta property=og:image content="http://populate.tools/logo-populate-tools.png"/>
 </head>
 <body>
 
@@ -259,9 +47,9 @@ input[type=submit] {
   <h1><img class="logo" src="img/logo-populate-tools.png" title="Populate / Products for civic engagement"></h1>
 
   <div id="about" class="intro_block clearfix">
-  
+
     <div class="col-1-2 text_boxed">
-  
+
       <p>We conceptualize, design and build products for civic engagement: Tools and platforms that enable citizens and organizations to better understand and interact with the world around us.</p>
 
       <p>We create our own projects and provide commercial services around data journalism, news products, open data, civic engagement.</p>
@@ -271,7 +59,7 @@ input[type=submit] {
     <div class="col-2-2 clearfix resp_padding">
 
       <div class="col-1-2 mini_col">
-        
+
         <h2>Design</h2>
         <ul>
           <li>UX</li>
@@ -285,7 +73,7 @@ input[type=submit] {
           <li>Processing and analysis</li>
           <li>Open data</li>
         </ul>
-        
+
       </div>
 
       <div class="col-2-2 mini_col">
@@ -310,41 +98,41 @@ input[type=submit] {
 
   </div>
 
-  
+
   <h2 id="products">Products</h2>
 
   <div class="work">
-    
+
     <div class="col-1-2">
-      <img src="img/JPG/GobiertoPresupuestos-1.jpg">
+      <img src="/img/JPG/GobiertoPresupuestos-2.jpg">
     </div>
 
     <div class="col-2-2">
-    
+
       <h3>Gobierto</h3>
       <div class="date">November 2015</div>
 
       <div class="description">Online tools and consultancy to promote transparency, open government and participation in public administrations. Design and technology to help open and modernize organizations.</div>
-      
-      <div class="url"><span>Visit</span> soon <a href=""></a></div>
+
+      <div class="url"><span>Visit</span> <a href="https://presupuestos.gobierto.es/">presupuestos.gobierto.es</a></div>
 
     </div>
 
   </div>
 
   <div class="work">
-    
+
     <div class="col-1-2">
       <img src="img/JPG/Reasons-1.jpg">
     </div>
 
     <div class="col-2-2">
-    
+
       <h3>Reasons.club</h3>
       <div class="date">June 2015</div>
 
       <div class="description">A experiment-in-progress to explore better online discussions: Discuss with order, reach conclusions faster, take decisions.</div>
-      
+
       <div class="what"><span>Tasks</span> complete product</div>
       <div class="url"><span>Visit</span> <a href="http://reasons.club">reasons.club</a></div>
 
@@ -356,19 +144,19 @@ input[type=submit] {
   <h2 id="projects">Projects</h2>
 
   <div class="work">
-    
+
     <div class="col-1-2">
       <img src="img/JPG/ICIJ-FatalExtraction-2.jpg">
     </div>
 
     <div class="col-2-2">
-    
+
       <h3>Fatal Extraction: Where Australian Mining Leaves its Mark / data explorer</h3>
-      <div class="client">ICIJ</div> 
+      <div class="client">ICIJ</div>
       <div class="date">July 2015</div>
 
       <div class="description">We built the interactive map and web site where you can browse details about the companies. Data was parsed from a Google Doc the editorial team was working on. Import was automated through a script.</div>
-      
+
       <div class="what"><span>Tasks</span> ux, visual design, front-end, back-end, data processing</div>
       <div class="url"><span>Visit</span> <a href="http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark">icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark</a></div>
 
@@ -389,8 +177,8 @@ input[type=submit] {
       <div class="date">May 2015</div>
 
       <div class="description">We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheet with key indicators about economy, demographics, employment, election results, budgets... for the +8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare indicators from different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. <a href="https://medium.com/lets-populate/españa-en-cifras-a-data-journalism-project-by-populate-7481916b5d92">More about the process.</a></div>
-    
-      
+
+
       <div class="what"><span>Tasks</span>ux, visual design, front-end, scrapping, back-end, elastic search, ruby on rails, D3</div>
       <div class="url"><span>Visit</span><a href="http://espanaencifras.elespanol.com">espanaencifras.elespanol.com</a></div>
 
@@ -405,11 +193,11 @@ input[type=submit] {
 
     <div class="col-2-2">
       <h3>Evicted and Abandoned / data explorer</h3>
-      <div class="client">ICIJ</div> 
+      <div class="client">ICIJ</div>
       <div class="date">July 2015</div>
 
       <div class="description"></div>
-      
+
       <div class="what"><span>Tasks</span>ux, visual design</div>
       <div class="url"><span>Visit</span><a href="http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data">icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data</a></div>
     </div>
@@ -424,11 +212,11 @@ input[type=submit] {
 
     <div class="col-2-2">
       <h3>Earnings Inspector</h3>
-      <div class="client">Brown Institute (Columbia/Stanford)</div> 
+      <div class="client">Brown Institute (Columbia/Stanford)</div>
       <div class="date">June 2015</div>
 
       <div class="description"></div>
-      
+
       <div class="what"><span>Tasks</span>ux, visual design</div>
       <div class="url"><span>Visit</span><a href="http://earningsinspector.org">earningsinspector.org</a></div>
     </div>
@@ -443,11 +231,10 @@ input[type=submit] {
 
     <div class="col-2-2">
       <h3>Swiss Leaks / data explorer</h3>
-      <div class="client">ICIJ</div> 
+      <div class="client">ICIJ</div>
       <div class="date">February 2015</div>
 
       <div class="description"></div>
-      
 
       <div class="what"><span>Tasks</span> ux, visual design</div>
       <div class="url"><span>Visit</span> <a href="http://www.icij.org/project/swiss-leaks/explore-swiss-leaks-data">icij.org/project/swiss-leaks/explore-swiss-leaks-data</a></div>
