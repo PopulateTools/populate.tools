@@ -56,6 +56,19 @@ h2 {
 .work a {
   color: #888;
 }
+
+.who {
+  margin: 0 0 12em 0;
+  overflow: auto;
+}
+.who a {
+  color: #888;
+}
+
+.who h2 {
+  margin-bottom: 10px;
+}
+
 .url { /* hat tip to https://twitter.com/ivanheral/status/651441966450917377 ! */
   white-space: nowrap;
   overflow: hidden;
