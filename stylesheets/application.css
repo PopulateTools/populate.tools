@@ -63,12 +63,16 @@ h2 {
 .who .person {
   padding: 0 2em;
   box-sizing: border-box;
+  margin: 0 0 3em 0;
 }
 .who a {
   color: #BBB;
 }
 .who h2 {
   margin-bottom: 10px;
+}
+.who h3 {
+  margin: 0;
 }
 .who .fa {
   color: #BBB;
