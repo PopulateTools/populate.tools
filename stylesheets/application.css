@@ -1,7 +1,7 @@
 body {
   font-family: "PT Sans";
   color: #554E42;
-  font-size: 92%;
+  font-size: 88%;
   margin: 0;
   padding: 0;
   background: url('/img/pieces.png') 101% -1.5% no-repeat;
@@ -56,17 +56,35 @@ h2 {
 .work a {
   color: #888;
 }
-
 .who {
   margin: 0 0 12em 0;
   overflow: auto;
 }
-.who a {
-  color: #888;
+.who .person {
+  padding: 0 2em;
+  box-sizing: border-box;
 }
-
+.who a {
+  color: #BBB;
+}
 .who h2 {
   margin-bottom: 10px;
+}
+.who .fa {
+  color: #BBB;
+  margin: 0 .5em 0 0;
+}
+.who img {
+  border-radius: 50%;
+  margin: 5% auto;
+}
+.who li {
+  margin: 0 0 1em 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .url { /* hat tip to https://twitter.com/ivanheral/status/651441966450917377 ! */
@@ -197,7 +215,7 @@ input[type=submit] {
   .side {
     display: none;
   }
-  .col-1-2, .col-2-2 {
+  .col-1-2, .col-2-2, .col-1-3, .col-2-3, .col-3-3 {
     float: none;
     width: 100%;
   }
