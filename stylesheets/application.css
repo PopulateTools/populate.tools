@@ -63,7 +63,6 @@ h2 {
 .who .person {
   padding: 0 2em;
   box-sizing: border-box;
-  margin: 0 0 3em 0;
 }
 .who a {
   color: #BBB;
@@ -247,6 +246,9 @@ input[type=submit] {
   }
   .work {
     margin: 0 0 5em 0;
+  }
+  .who .person {
+    margin: 0 0 3em 0;
   }
 
 }
