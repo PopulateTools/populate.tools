@@ -84,6 +84,19 @@ h2 {
 .who li {
   margin: 0 0 1em 0;
 }
+.column_t {
+  max-width: 1000px;
+  width: 75%;
+  margin: auto;
+}
+.column_t ul {
+  margin: 1em 0 2em 0;
+  padding: 0 0 0 1.5em;
+}
+
+.column_t li {
+  list-style-type: square; 
+}
 ul, li {
   margin: 0;
   padding: 0;
