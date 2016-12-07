@@ -206,7 +206,9 @@ ul, li {
 
 .col-1-2 img {
   width: 100%;
-
+}
+.who .col-1-2 img {
+  width: initial;
 }
 input {
   padding: .5em;
