@@ -1,0 +1,24 @@
+- name: Álvaro Ortiz
+  img: /images/team/alvaro.png
+  job: Founder & Designer
+  handle: furilo
+
+- name: Fernando Blat
+  img: /images/team/blat.png
+  job: Founder & Backend engineer
+  handle: ferblape
+
+- name: Rafael de las Cuevas
+  img: /images/team/rafa.png
+  job: Data Journalist
+  handle: rafadelascuevas
+
+- name: Amaia Castro
+  img: /images/team/amaia.png
+  job: Backend Engineer
+  handle: amaiacastro
+
+- name: Martín González
+  img: /images/team/martin.png
+  job: UI Designer
+  handle: martgnz
