@@ -4,6 +4,7 @@
   }
 }
 .hero-logo {
+  position: relative;
   max-width: 1440px;
   height: 40vh;
   margin: 0 auto;
@@ -17,6 +18,19 @@
     max-width: 30rem;
   }
 }
+.lang-switcher {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+}
+.lang-switcher span {
+  padding-right: 1rem;
+}
+.lang-switcher .active {
+  font-weight: 700;
+}
+
+/* Description */
 .hero-content {
   background: $blue;
   color: white;
@@ -48,7 +62,8 @@
   
   @include min-screen(768) { 
     margin-bottom: 20vh;
-    font-size: 3rem; 
+    font-size: 3rem;
+    max-width: 50%;
   }
   
   @include min-screen(1280) { 

@@ -10,7 +10,13 @@ body {
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
   text-rendering: geometricPrecision;
-  background: url('/images/pieces.png') 101% -1.5% no-repeat;
+  background: url('/images/pieces.png') 107% -0.5% no-repeat;
+  background-size: 40%;
+  
+  @include min-screen(768) {
+    background-position: 101% -1.5%;
+    background-size: auto;
+  }
 }
 h1, h2, h3,
 h4, h5, h6 {
