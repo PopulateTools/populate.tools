@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.logo-header {
+  display: inline-block;
+  max-width: 10rem;
+  padding-right: 2rem;
+}
+.header-list {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.header-item {
+  vertical-align: 1rem;
+  display: inline-block;
+}
+.header-item {
+  padding-right: 2rem;
+}
+.header-link {
+  color: $link;
+  text-decoration: none;
+}
+.header-section {
+  font-weight: 500;
+}
+.header-subsection {
+  color: $gray;
+  font-weight: 300;
+}
+
+.newsletter {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  border-bottom: 1px solid $border;
+  background: white;
+  width: 35rem;
+}
+.newsletter #revue-embed {
+  position: relative;
+}
+.newsletter #member_email {
+  width: 95%;
+}
+.newsletter #member_submit {
+  position: absolute;
+  right: 0;
+}
+.newsletter p {
+  margin-bottom: 1rem;
+}
+.newsletter input {
+  border: none;
+}
+.newsletter input[type="submit"] {
+  background: none;
+}
