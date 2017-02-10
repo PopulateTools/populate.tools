@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  padding-bottom: 20rem;
+  font-family: $sans_headline;
+}
+.copy {
+  display: inline-block;
+}
+.links {
+  float: right;
+}
+.footer-link {
+  text-decoration: none;
+}
+.footer-link:not(:last-child) {
+  padding-right: 4rem;
+}

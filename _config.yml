@@ -9,10 +9,8 @@
 title: Populate
 description: We conceptualize, design and build products for civic engagement
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: "@populatetools"
-twitter_hashtag_for_social_share: '#populate'
 email: lets@populate.tools
-github: PopulateTools
+handle: populatetools
 
 # default permalink for blog posts
 permalink: /blog/:year:month:day-:title.html
