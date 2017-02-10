@@ -1,7 +1,11 @@
 .home {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  
+  @include min-screen(768) {
+    padding: 2rem 0;
+  }
 }
 .section {
   margin-bottom: 10rem;

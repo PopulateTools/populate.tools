@@ -439,17 +439,25 @@ $units: 1px !default;
 
 /* Padded Cols hack */
 .padded_cols.pure-g {
-  width: calc(100% + 2em);
+  @include min-screen(768) {
+    width: calc(100% + 2em);
+  }
 }
 .padded_cols {
   [class*="pure-u"] {
     box-sizing: border-box;
   }
   .padded {
-    margin: 1em;  
+    margin: 0;
+    
+    @include min-screen(768) {
+      margin: 1em;
+    }
   }
   [class*="pure-u"]:first-child {
-    margin-left: -1em;
+    @include min-screen(768) {
+      margin-left: -1em;
+    }
   }
 }
 .padded_cols.example {

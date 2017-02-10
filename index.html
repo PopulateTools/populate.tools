@@ -9,17 +9,7 @@ layout: default
   
   <div class="home">
     <section class="section products">
-      <h1 class="section-title">Products</h1>
-      
-      <div class="pure-g padded_cols">
-        {% for product in site.data.products %}
-        <div class="product pure-u-1 pure-u-md-1-3">
-          <div class="padded">
-            <h2><a href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a></h2>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+      {% include products.html %}
     </section>
     
     <section class="section all_stories">

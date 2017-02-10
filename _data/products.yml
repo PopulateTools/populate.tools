@@ -1,11 +1,14 @@
 - name: Gobierto
-  img: /images/products/gobierto.png
+  tagline: The open source government platform
+  img: /images/products/gobierto.jpg
   url: https://gobierto.es
 
 - name: Populate Data
-  img: /images/products/gobierto.png
+  tagline: Explore public data efficiently
+  img: /images/products/populate-data.png
   url: https://populate.data
 
 - name: Reasons.club
-  img: /images/products/gobierto.png
+  tagline: Decide and discuss on the internet
+  img: /images/products/reasons.png
   url: https://reasons.club
