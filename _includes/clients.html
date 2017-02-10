@@ -1,0 +1,7 @@
+<h2 class="clients-title">Clients</h2>
+
+<div class="clients-grid">
+{% for client in site.data.clients %}
+  <img class="client-img pure-img" src="{{client.img}}" alt="{{client.name}}">
+{% endfor %}
+</div>
