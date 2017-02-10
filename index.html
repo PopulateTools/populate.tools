@@ -4,29 +4,43 @@ layout: default
 
 {% include hero.html %}
 
-<main class="home">
+<main>
   {% include header.html %}
   
-  <div class="all_stories">
-    <h3>Latest posts:</h3>
-    {% for post in site.posts %}
-    <div class="story">
-      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    </div>
-    {% endfor %}
-  </div>
+  <div class="home">
+    <section class="section products">
+      <h1 class="section-title">Products</h1>
       
-  <div class="team">
+      <div class="pure-g padded_cols">
+        {% for product in site.data.products %}
+        <div class="product pure-u-1 pure-u-md-1-3">
+          <div class="padded">
+            <h2><a href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a></h2>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
     
-    <h1>Team</h1>
-    {% for human in site.data.team %}
-    <div>
-      <p>{{human.name}} ({{human.handle}})</p>
-      <p>{{human.job}}</p>
-      <br />
-    </div>
-    {% endfor %}
+    <section class="section all_stories">
+      <h1 class="section-title">News</h1>
+      {% for post in site.posts %}
+      <div class="story">
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      </div>
+      {% endfor %}
+    </section>
+        
+    <section class="section team">
+      <h1 class="section-title">Team</h1>
+      {% for human in site.data.team %}
+      <div>
+        <p>{{human.name}} ({{human.handle}})</p>
+        <p>{{human.job}}</p>
+        <br />
+      </div>
+      {% endfor %}
+    </section>
+    
   </div>
-  
-  
 </main>
