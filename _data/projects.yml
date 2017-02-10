@@ -1,0 +1,27 @@
+- name: The Panama Papers
+  img: /images/projects/panama-papers.jpg
+  url: https://panamapapers.icij.org/
+
+- name: Offshore Leaks
+  img: /images/projects/offshore-leaks.png
+  url: https://offshoreleaks.icij.org/
+
+- name: España en cifras
+  img: /images/projects/espana-en-cifras.png
+  url: http://espanaencifras.elespanol.com/
+
+- name: Fatal Extraction
+  img: /images/projects/fatal-extraction.png
+  url: http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark
+  
+- name: Earnings Inspector
+  img: /images/projects/earnings-inspector.png
+  url: http://earningsinspector.org/
+
+- name: Swiss Leaks
+  img: /images/projects/swiss-leaks.png
+  url: http://earningsinspector.org/
+
+- name: Evicted and Abandoned
+  img: /images/projects/evicted-and-abandoned.png
+  url: http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data
