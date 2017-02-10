@@ -1,13 +1,15 @@
 .header {
-  position: relative;
   margin-top: 2rem;
   margin-bottom: 4rem;
   max-width: 1440px;
   margin: 0 auto;
   padding: 4rem 0;
 }
+.header .wrapper {
+  position: relative;
+}
 .logo-header {
-  display: inline-block;
+  display: none;
   max-width: 10rem;
   padding-right: 2rem;
 }
@@ -41,13 +43,13 @@
   position: absolute;
   right: 0;
   border-bottom: 1px solid $border;
-  background: white;
   width: 35rem;
 }
 .newsletter #revue-embed {
   position: relative;
 }
 .newsletter #member_email {
+  background: transparent;
   width: 95%;
 }
 .newsletter #member_submit {
@@ -62,4 +64,28 @@
 }
 .newsletter input[type="submit"] {
   background: none;
+}
+
+/* Stick on scroll */
+.sticky-wrapper {
+  margin: 0 auto;
+}
+.stuck {
+  max-width: none;
+  z-index: 1;
+  background: rgba(255,255,255,0.98);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 2rem 0;
+}
+.stuck .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.stuck .header-list {
+  margin-bottom: 0;
+}
+.stuck .logo-header {
+  display: inline-block;
 }

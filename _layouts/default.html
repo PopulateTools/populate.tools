@@ -6,12 +6,8 @@
 
 {% include footer.html %}
 
-{% if jekyll.environment == "development" %}
-  <!-- dev -->
-{% elsif jekyll.environment == "production" %}
-  <!-- prod -->
-{% endif %}
-
-<!--<script src="/js/main.js"></script>-->
+{% for src in page.scripts %}
+<script src="{{ src }}" type="text/javascript"></script>
+{% endfor %}
 </body>
 </html>

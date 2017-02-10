@@ -1,12 +1,12 @@
 .hero {
   @include min-screen(768) { 
-    height: 100vh;
+    max-height: 90vh;
   }
 }
 .hero-logo {
   position: relative;
   max-width: 1440px;
-  height: 40vh;
+  height: 45vh;
   margin: 0 auto;
 }
 .hero-logo img {
@@ -36,7 +36,7 @@
   color: white;
   
   @include min-screen(768) { 
-    height: 60vh;
+    height: 45vh;
   }
 }
 .hero-lead {
@@ -67,7 +67,7 @@
   }
   
   @include min-screen(1280) { 
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
   }
 }
 
