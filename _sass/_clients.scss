@@ -2,15 +2,21 @@
   background: $light_gray;
   text-align: center;
 }
-.clients-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.clients-wrapper {
+  padding: 4rem 0;
 }
 .clients-title {
   font-weight: 400;
   color: $blue;
+  margin-bottom: 2rem;
+}
+.clients-grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .client {
   text-align: center;
@@ -19,7 +25,7 @@
 .client-img {
   padding: 2rem 6rem;
   align-self: center;
-  max-width: 225px;
+  max-width: 200px;
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: gray;

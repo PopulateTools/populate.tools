@@ -7,7 +7,7 @@ layout: default
 <main>
   {% include header.html %}
   
-  <div class="home">
+  <div class="container">
     <section id="products" class="section products">
       {% include products.html %}
     </section>
@@ -19,11 +19,15 @@ layout: default
     <section id="news" class="section news">
       {% include news.html %}
     </section>
-    
+  </div>
+  
+  <div class="container-fluid">
     <section id="clients" class="section clients">
       {% include clients.html %}
     </section>
-        
+  </div>
+  
+  <div class="container">
     <section id="team" class="section team">
       <h1 class="section-title">Team</h1>
       {% for human in site.data.team %}
@@ -34,6 +38,5 @@ layout: default
       </div>
       {% endfor %}
     </section>
-    
   </div>
 </main>
