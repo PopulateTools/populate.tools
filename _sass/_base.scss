@@ -3,8 +3,8 @@ html {
 }
 body {
   font-family: $sans_copy;
-  font-size: 1.8rem;
-  line-height: 1.25;
+  font-size: $f-copy;
+  line-height: $lh;
   color: $black;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;

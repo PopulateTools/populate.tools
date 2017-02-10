@@ -2,23 +2,33 @@
 $sans_headline: "Avenir Next", sans-serif;
 $sans_copy: "Helvetica Neue", sans-serif;
 
+$f1: 6rem;
+$f2: 3rem;
+$f3: 2.25rem;
+$f4: 1.5rem;
+$f5: 1.25rem;
+$f6: 1rem;
+$f-copy: 1.8rem;
+
+$lh: 1.25;
+
 /* Scale */
 h1 {
-  font-size: 6rem;
+  font-size: $f1;
   text-indent: -3px;
 }
 h2 {
-  font-size: 3rem;
+  font-size: $f2;
 }
 h3 {
-  font-size: 2.25rem;
+  font-size: $f3
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: $f4;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: $f5;
 }
 h6 {
-  font-size: 1rem;
+  font-size: $f6;
 }

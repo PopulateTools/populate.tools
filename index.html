@@ -16,13 +16,8 @@ layout: default
       {% include projects.html %}
     </section>
     
-    <section class="section all_stories">
-      <h1 class="section-title">News</h1>
-      {% for post in site.posts %}
-      <div class="story">
-        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      </div>
-      {% endfor %}
+    <section class="section news">
+      {% include news.html %}
     </section>
         
     <section class="section team">
