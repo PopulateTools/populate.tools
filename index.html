@@ -29,14 +29,7 @@ layout: default
   
   <div class="container">
     <section id="team" class="section team">
-      <h1 class="section-title">Team</h1>
-      {% for human in site.data.team %}
-      <div>
-        <p>{{human.name}} ({{human.handle}})</p>
-        <p>{{human.job}}</p>
-        <br />
-      </div>
-      {% endfor %}
+      {% include team.html %}
     </section>
   </div>
 </main>
