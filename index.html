@@ -8,19 +8,23 @@ layout: default
   {% include header.html %}
   
   <div class="home">
-    <section class="section products">
+    <section id="products" class="section products">
       {% include products.html %}
     </section>
     
-    <section class="section projects">
+    <section id="projects" class="section projects">
       {% include projects.html %}
     </section>
     
-    <section class="section news">
+    <section id="news" class="section news">
       {% include news.html %}
     </section>
+    
+    <section id="clients" class="section clients">
+      {% include clients.html %}
+    </section>
         
-    <section class="section team">
+    <section id="team" class="section team">
       <h1 class="section-title">Team</h1>
       {% for human in site.data.team %}
       <div>
