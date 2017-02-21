@@ -1,10 +1,8 @@
 /* Products */
 .product .padded {
-  box-shadow: 0 0 5px rgba(0,0,0,0.15);
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 6px;
-  border: 1px solid $border;
   min-height: 40rem;
   
   @include min-screen(768) {
@@ -21,5 +19,5 @@
 .product-tagline {
   font-weight: 400;
   color: $gray;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
