@@ -2,21 +2,37 @@
   background: $light_gray;
   text-align: center;
 }
-.clients-wrapper {
-  padding: 4rem 0;
-}
 .clients-title {
   font-weight: 400;
   color: $blue;
   margin-bottom: 2rem;
 }
 .clients-grid {
+  padding: 4rem 0;
   max-width: 1500px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+.clients-grid .col-3,
+.clients-grid .col-4 {
+  border-top: 1px solid $border;
+  
+  @include min-screen(768) {
+    border-top: none;
+  }
+}
+.clients-grid .col-5,
+.clients-grid .col-6,
+.clients-grid .col-7,
+.clients-grid .col-8 {
+  border-top: 1px solid $border;
+}
+.clients-grid .col-1,
+.clients-grid .col-2,
+.clients-grid .col-3,
+.clients-grid .col-5,
+.clients-grid .col-6,
+.clients-grid .col-7 {
+  border-right: 1px solid $border;
 }
 .client {
   text-align: center;
@@ -24,11 +40,7 @@
 }
 .client-wrapper {
   padding: 4rem;
-  width: 18%;
   height: 15vh;
-  border-top: 1px solid $border;
-  border-right: 1px solid $border;
-  // border-top: 1px solid $border;
 }
 .client-img {
   background-position: center;
