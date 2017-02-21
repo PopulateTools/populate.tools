@@ -7,7 +7,7 @@
   url: http://web.gencat.cat/en/inici/index.html
 
 - name: Diputació de València
-  img: /images/clients/dival.jpg
+  img: /images/clients/dival.png
   url: http://dival.es
 
 - name: San Sebastián de los Reyes
@@ -26,10 +26,6 @@
   img: /images/clients/unidad-editorial.svg
   url: http://www.unidadeditorial.es/
   
-- name: Ajuntament de Sencelles
-  img: /images/clients/sencelles.png
-  url: http://sencelles.es
-  
 - name: The International Consortium of Investigative Journalists
-  img: /images/clients/icij_.png
+  img: /images/clients/icij.png
   url: https://icij.org

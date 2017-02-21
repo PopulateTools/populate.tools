@@ -3,7 +3,7 @@
 
   <div class="clients-grid">
   {% for client in site.data.clients %}
-    <img class="client-img pure-img" src="{{client.img}}" alt="{{client.name}}">
+    <div class="client-wrapper"><div class="client-img" style="background-image: url('{{client.img}}')" alt="{{client.name}}"></div></div>
   {% endfor %}
   </div>
 </div>
