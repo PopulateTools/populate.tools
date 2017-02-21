@@ -3,14 +3,12 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem 0;
-  
-  // min-height: 10vh;
 }
 .header .wrapper {
   padding: 0 2rem;
   position: relative;
   
-  @media screen and (min-width: 90em) {
+  @include min-screen(90em) { 
     padding: 0;
   }
 }
@@ -52,7 +50,7 @@
   width: 35rem;
   top: 0.5rem;
   
-  @media screen and (min-width: 64em) {
+  @include min-screen(64em) { 
     display: inline-block;
   }
 }
@@ -106,7 +104,7 @@
 .stuck .newsletter {
   right: 2rem;
   
-  @media screen and (min-width: 90em) {
+  @include min-screen(90em) { 
     right: 4rem;
   }
 }
