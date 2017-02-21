@@ -1,12 +1,18 @@
 .header {
-  margin-top: 2rem;
   margin-bottom: 4rem;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 2rem 0;
+  
+  // min-height: 10vh;
 }
 .header .wrapper {
+  padding: 0 2rem;
   position: relative;
+  
+  @media screen and (min-width: 90em) {
+    padding: 0;
+  }
 }
 .logo-header {
   display: none;
@@ -39,11 +45,16 @@
 }
 
 .newsletter {
-  display: inline-block;
+  display: none;
   position: absolute;
-  right: 0;
+  right: 2rem;
   border-bottom: 1px solid $border;
   width: 35rem;
+  top: 0.5rem;
+  
+  @media screen and (min-width: 64em) {
+    display: inline-block;
+  }
 }
 .newsletter #revue-embed {
   position: relative;
@@ -73,19 +84,29 @@
 .stuck {
   max-width: none;
   z-index: 1;
-  background: rgba(255,255,255,0.98);
+  // background: rgba(255,255,255,0.98);
+  background: rgb(255,255,255);
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  padding: 1rem 0;
 }
 .stuck .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .stuck .header-list {
   margin-bottom: 0;
 }
 .stuck .logo-header {
   display: inline-block;
+}
+.stuck .newsletter {
+  right: 2rem;
+  
+  @media screen and (min-width: 90em) {
+    right: 4rem;
+  }
 }

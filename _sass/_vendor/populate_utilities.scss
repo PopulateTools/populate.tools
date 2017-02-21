@@ -439,9 +439,9 @@ $units: 1px !default;
 
 /* Padded Cols hack */
 .padded_cols.pure-g {
-  @include min-screen(768) {
-    width: calc(100% + 2em);
-  }
+  // @include min-screen(768) {
+  //   width: calc(100% + 2em);
+  // }
 }
 .padded_cols {
   [class*="pure-u"] {

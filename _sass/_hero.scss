@@ -6,25 +6,27 @@
 .hero-logo {
   position: relative;
   max-width: 1440px;
-  height: 45vh;
+  height: 40vh;
   margin: 0 auto;
 }
 .hero-logo img {
   padding-top: 10vh;
-  padding-left: 2rem;
   max-width: 20rem;
   
   @include min-screen(768) { 
-    max-width: 30rem;
+    max-width: 20rem;
   }
 }
 .lang-switcher {
   position: absolute;
   bottom: 1rem;
-  right: 0;
+  right: 2rem;
 }
-.lang-switcher span {
-  padding-right: 1rem;
+.lang-switcher a {
+  text-decoration: none;
+}
+.lang-switcher a:first-of-type {
+  margin-right: 0.5rem;
 }
 .lang-switcher .active {
   font-weight: 700;
@@ -34,23 +36,33 @@
 .hero-content {
   background: $blue;
   color: white;
+  position: relative;
   
   @include min-screen(768) { 
-    height: 45vh;
+    height: 50vh;
   }
 }
 .hero-lead {
-  padding: 2rem;
+  bottom: 0;
+  padding: 2rem 0;
   margin: 0 auto;
   max-width: 1440px;
+  
+  @include min-screen(768) { 
+    position: absolute;
+  }
 }
 .hero-headline {
   font-size: 3rem;
   
   @include min-screen(768) {
-    padding-top: 5rem;
-    font-size: 6rem;
+    max-width: 75%;
+    font-size: 4rem;
+  }
+  
+  @include min-screen(1400) {
     max-width: 70%;
+    font-size: 6rem;
   }
 }
 .hero-subheading {
@@ -61,13 +73,13 @@
   margin-bottom: 5vh;
   
   @include min-screen(768) { 
-    margin-bottom: 20vh;
-    font-size: 3rem;
-    max-width: 50%;
+    // margin-bottom: 20vh;
+    font-size: 2rem;
+    // max-width: 50%;
   }
   
   @include min-screen(1280) { 
-    margin-bottom: 10vh;
+    // margin-bottom: 10vh;
   }
 }
 
@@ -76,7 +88,7 @@
   padding-top: 2rem;
   
   @include min-screen(768) { 
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }
 .hero-point {
@@ -85,5 +97,6 @@
 .hero-point p {
   @include min-screen(768) { 
     max-width: 70%;
+    font-size: 1.5rem;
   }
 }

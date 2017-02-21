@@ -1,14 +1,14 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  
-  @include min-screen(768) {
-    padding: 2rem 0;
-  }
+  padding: 0 2rem;
 }
 .section {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+  
+  @include min-screen(1500) {
+    margin-bottom: 10rem;
+  }
 }
 .section-title {
   color: $blue;

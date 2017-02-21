@@ -5,12 +5,21 @@
 }
 .copy {
   display: inline-block;
+  margin-bottom: 2rem;
 }
-.links {
-  float: right;
+.links {  
+  @include min-screen(768) {
+    float: right;
+  }
 }
 .footer-link {
+  display: block;
+  margin-bottom: 1rem;
   text-decoration: none;
+  
+  @include min-screen(768) {
+    display: inline-block;
+  }
 }
 .footer-link:not(:last-child) {
   padding-right: 4rem;
