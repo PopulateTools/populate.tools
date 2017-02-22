@@ -17,7 +17,8 @@
   text-decoration: none;
 }
 .product-tagline {
+  font-family: $sans_copy;
   font-weight: 400;
-  color: $gray;
+  // color: $gray;
   margin-bottom: 1.5rem;
 }

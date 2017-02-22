@@ -5,8 +5,8 @@
   <div class="product pure-u-1 pure-u-md-1-3 {{product.slug}}">
     <div class="padded">
       <h2 class="product-name"><a class="product-link" href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a></h2>
-      <h4 class="product-tagline">{{product.tagline}}</h4>
-      <img class="pure-img" src="{{product.img}}" alt="{{product.name}}">
+      <h4 class="product-tagline">{{product.description}}</h4>
+      <a href="{{product.url}}"><img class="pure-img" src="{{product.img}}" alt="{{product.name}}"></a>
     </div>
   </div>
   {% endfor %}

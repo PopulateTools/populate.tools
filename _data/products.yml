@@ -1,17 +1,17 @@
 - name: Gobierto
   slug: gobierto
-  tagline: The open source government platform
+  description: The open source government platform. Gobierto is a software suite which enables transparency and citizen participation on a local level.
   img: /images/products/gobierto.png
   url: https://gobierto.es
 
 - name: Populate Data
   slug: populate-data
-  tagline: Explore public data efficiently
+  description: Retrieve public data quickly using a common set of APIs and forget about searching through obscure government sites.
   img: /images/products/populate-data.png
   url: https://populate.data
 
 - name: Reasons.club
   slug: reasons-club
-  tagline: Decide and discuss on the internet
+  description: Decide and discuss on the internet, reach conclusions faster. You can list the pros and cons of an issue and discuss it with your friends.
   img: /images/products/reasons.png
   url: https://reasons.club
