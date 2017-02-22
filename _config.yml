@@ -21,7 +21,7 @@ twitter_url: https://twitter.com/
 github_url: https://github.com/
 
 # default permalink for blog posts
-permalink: /blog/:year:month:day-:title.html
+permalink: blog/:title
 
 # Build settings
 markdown: kramdown
