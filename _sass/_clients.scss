@@ -39,8 +39,12 @@
   margin-bottom: 1rem;
 }
 .client-wrapper {
-  padding: 4rem;
+  padding: 2rem;
   height: 15vh;
+  
+  @include min-screen(768) {
+    padding: 4rem;
+  }
 }
 .client-img {
   background-position: center;
