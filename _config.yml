@@ -12,6 +12,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 email: lets@populate.tools
 handle: populatetools
 
+# Analytics
+ga_id: UA-70344922-1
+inspectlet_id: 761931177
+
 # default permalink for blog posts
 permalink: /blog/:year:month:day-:title.html
 
