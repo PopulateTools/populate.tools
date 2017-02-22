@@ -45,7 +45,7 @@ Once we feed the indexes with some custom scripts we add a small layer on our ap
 
 ![](https://cdn-images-1.medium.com/max/800/1*3sBD0Abdt95WvbEEcZGJew.png)
 
-As we described in the post about the process, the project consisted on displaying more than 85 different datasets in a friendly way. Storing those datasets in a relational database can be really complex, because it requires to create a schema different per dataset, or to unify all the datasets under a single schema with the same types. We quickly discarded the relational database option because the diversity of the data.
+As [we described in the post about the process](/blog/espana-en-cifras), the project consisted on displaying more than 85 different datasets in a friendly way. Storing those datasets in a relational database can be really complex, because it requires to create a schema different per dataset, or to unify all the datasets under a single schema with the same types. We quickly discarded the relational database option because the diversity of the data.
 
 Therefore, we created one ElasticSearch index with many types, one per dataset, with the same schema but with different types (to accommodate numeric and text data). Each of those 85 types are an independent data source in JSON format that different widgets on the page queried to compose the pages. We just added a simple API in front of it for convenience.
 
