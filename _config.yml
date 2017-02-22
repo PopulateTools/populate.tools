@@ -16,6 +16,10 @@ handle: populatetools
 ga_id: UA-70344922-1
 inspectlet_id: 761931177
 
+# Social handlers
+twitter_url: https://twitter.com/
+github_url: https://github.com/
+
 # default permalink for blog posts
 permalink: /blog/:year:month:day-:title.html
 
