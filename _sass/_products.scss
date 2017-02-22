@@ -16,9 +16,13 @@
 .product-link {
   text-decoration: none;
 }
-.product-tagline {
+.product-description {
   font-family: $sans_copy;
   font-weight: 400;
+  font-size: 1.8rem;
   // color: $gray;
-  margin-bottom: 1.5rem;
+}
+.product-img {
+  max-height: 300px;
+  margin-bottom: 1rem;
 }

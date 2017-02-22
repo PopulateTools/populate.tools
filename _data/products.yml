@@ -4,7 +4,7 @@
   url: https://gobierto.es
 
 - name: Populate Data
-  description: Retrieve public data quickly using a common set of APIs and forget about searching through obscure government sites.
+  description: Retrieve public data quickly using a common set of APIs. Filter, combine and explore datasets which are always up-to-date.
   img: /images/products/populate-data.png
   url: https://populate.data
 
