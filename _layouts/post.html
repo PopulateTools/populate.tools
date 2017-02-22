@@ -13,10 +13,10 @@ layout: default
 {% endif %}
 
 <div class="meta">
-  <img class="pure-img avatar" src="{{author.img}}" alt="{{author.name}}">
+  <a href="{{author.handle | prepend: site.twitter_url}}"><img class="pure-img avatar" src="{{author.img}}" alt="{{author.name}}"></a>
   <div class="info">
     <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
-    <time>{{page.date | date: "%-d %B, %Y"}}</time>
+    <time>{{page.date | date: "%b %-d, %Y"}}</time>
   </div>
 </div>
 
