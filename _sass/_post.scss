@@ -1,0 +1,49 @@
+/* Base */
+.post article {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem 2rem;
+}
+.post h1 {
+  color: $black;
+  max-width: 1250px;
+}
+.post p {
+  line-height: 1.5;
+  max-width: 700px;
+}
+.post .content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.post hr {
+  margin: 2.5rem 0;
+  max-width: 700px;
+}
+.author-link {
+  text-decoration: none;
+}
+
+/* Post meta */
+.meta {
+  color: $gray;
+  margin-bottom: 2rem;
+  font-size: $f4;
+}
+.info {
+  display: inline-block;
+  vertical-align: 5px;
+}
+.meta p {
+  margin-bottom: 0;
+}
+.meta time {
+  display: block;
+}
+.avatar {
+  display: inline-block;
+  margin-right: 0.75rem;
+  max-width: 45px;
+  border-radius: 50%;
+}
