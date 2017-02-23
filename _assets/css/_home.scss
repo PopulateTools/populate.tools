@@ -4,12 +4,13 @@
   padding: 0 2rem;
 }
 .section {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   
   @include min-screen(1500) {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 }
 .section-title {
   color: $blue;
+  margin-bottom: 1rem;
 }

@@ -1,3 +1,7 @@
+//= require vendor/jquery-3.1.1.min.js
+//= require vendor/jquery.waypoints.min.js
+//= require vendor/sticky.min.js
+
 /* Smooth scroll on anchor */
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

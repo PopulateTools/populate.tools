@@ -7,16 +7,12 @@ $post-width: 700px;
   padding: 0 2rem 6rem 2rem;
 }
 .post h1 {
-  font-size: 3.25rem;
   color: $black;
   max-width: $post-width * 1.35;
-  margin-bottom: 2rem;
-  
-  @include min-screen(768) {
-    font-size: 4.5rem;
-  }
+  margin-bottom: 1rem;
 }
 .post .content p {
+  font-size: 1.15rem;
   line-height: 1.6;
   margin-bottom: 1.85rem;
   max-width: $post-width
@@ -25,8 +21,9 @@ $post-width: 700px;
   word-wrap: break-word;
 }
 .post .content h2 {
-  margin-top: 3.5rem;
-  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
 }
 .post .content img {
   // margin: 2.75rem 0;
@@ -59,7 +56,6 @@ $post-width: 700px;
 .post .meta {
   color: $gray;
   margin-bottom: 1.5rem;
-  font-size: $f4;
 }
 .post .info {
   display: inline-block;
@@ -73,7 +69,7 @@ $post-width: 700px;
 }
 .post .avatar {
   display: inline-block;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
   max-width: 45px;
   border-radius: 50%;
 }

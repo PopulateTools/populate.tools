@@ -2,6 +2,8 @@
 
 <div class="project-gallery">
   {% for project in site.data.projects %}
-    <a class="project-link" href="{{project.url}}"><img class="project-teaser pure-img" src="{{project.img}}" alt="{{project.name}}"></a>
+    <a class="project-link" href="{{project.url}}">
+      {% img '{{project.img}}' class:'project-teaser pure-img' alt:'{{project.name}}' %}
+    </a>
   {% endfor %}
 </div>

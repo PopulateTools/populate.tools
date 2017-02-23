@@ -4,9 +4,13 @@
   {% for product in site.data.products %}
   <div class="product pure-u-1 pure-u-md-1-3 {{product.name | slugify}}">
     <div class="padded">
-      <h2 class="product-name"><a class="product-link" href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a></h2>
-      <a href="{{product.url}}"><img class="product-img pure-img" src="{{product.img}}" alt="{{product.name}}"></a>
-      <h3 class="product-description">{{product.description}}</h3>
+      <h2 class="product-name">
+        <a class="product-link" href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a>
+      </h2>
+      <a href="{{product.url}}">
+        {% img '{{product.img}}' class:'product-img pure-img' alt:'{{product.name}}' %}
+      </a>
+      <p class="product-description">{{product.description}}</p>
     </div>
   </div>
   {% endfor %}

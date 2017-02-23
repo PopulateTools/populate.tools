@@ -1,14 +1,14 @@
 - name: Gobierto
   description: The open source government platform. Gobierto is a software suite which enables transparency and citizen participation on a local level.
-  img: /images/products/gobierto.png
+  img: products/gobierto.png
   url: https://gobierto.es
 
 - name: Populate Data
   description: Retrieve public data quickly using a common set of APIs. Filter, combine and explore datasets which are always up-to-date.
-  img: /images/products/populate-data.png
+  img: products/populate-data.png
   url: https://populate.data
 
 - name: Reasons.club
   description: Decide and discuss on the internet, reach conclusions faster. You can list the pros and cons of an issue and discuss it with your friends.
-  img: /images/products/reasons.png
+  img: products/reasons.png
   url: https://reasons.club

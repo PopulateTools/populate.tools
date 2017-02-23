@@ -14,7 +14,7 @@
 }
 .logo-header {
   display: none;
-  max-width: 10rem;
+  max-width: 6rem;
   padding-right: 2rem;
 }
 .header-list {
@@ -24,7 +24,7 @@
   padding-left: 0;
 }
 .header-item {
-  vertical-align: 1rem;
+  vertical-align: 0.7rem;
   display: inline-block;
 }
 .header-item {
@@ -47,7 +47,7 @@
   position: absolute;
   right: 2rem;
   border-bottom: 1px solid $border;
-  width: 35rem;
+  width: 20rem;
   top: 0.5rem;
   
   @include min-screen(64em) { 
@@ -66,7 +66,7 @@
   right: 0;
 }
 .newsletter p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .newsletter input {
   border: none;

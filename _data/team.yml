@@ -1,29 +1,29 @@
 alvaro:
   name: Álvaro Ortiz
-  img: /images/team/alvaro.jpg
+  img: team/alvaro.jpg
   role: Founder & Designer
   handle: furilo
 
 blat:
   name: Fernando Blat
-  img: /images/team/blat.png
+  img: team/blat.png
   role: Founder & Backend engineer
   handle: ferblape
 
 rafa:
   name: Rafael de las Cuevas
-  img: /images/team/rafa.jpg
+  img: team/rafa.jpg
   role: Data Journalist
   handle: rafadelascuevas
 
 amaia:
   name: Amaia Castro
-  img: /images/team/amaia.jpeg
+  img: team/amaia.jpeg
   role: Backend Engineer
   handle: amaiacastro
 
 martin:
   name: Martín González
-  img: /images/team/martin.jpeg
+  img: team/martin.jpeg
   role: UI Designer
   handle: martgnz

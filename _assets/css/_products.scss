@@ -3,7 +3,6 @@
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 6px;
-  min-height: 40rem;
   
   @include min-screen(768) {
     margin-bottom: 0;
@@ -12,6 +11,7 @@
 }
 .product-name {
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 .product-link {
   text-decoration: none;
@@ -19,7 +19,6 @@
 .product-description {
   font-family: $sans_copy;
   font-weight: 400;
-  font-size: 1.8rem;
   // color: $gray;
 }
 .product-img {

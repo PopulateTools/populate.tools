@@ -1,16 +1,14 @@
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 body {
   font-family: $sans_copy;
-  font-size: $f-copy;
-  line-height: $lh;
   color: $black;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
   text-rendering: geometricPrecision;
-  background: url('/images/pieces.png') 107% -0.5% no-repeat;
+  background: url(asset_path('pieces')) 107% -0.5% no-repeat;
   background-size: 40%;
   
   @include min-screen(768) {
@@ -27,8 +25,8 @@ h4, h5, h6 {
   margin: 0 0 0.4em 0;
   font-family: $sans_headline;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 a {
   color: $link;
@@ -44,8 +42,8 @@ p, ul, ol, dl {
   -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   margin: 0 0 1.75em 0;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 ol, ul {
   padding-left: 3rem;

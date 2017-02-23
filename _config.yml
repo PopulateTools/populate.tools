@@ -28,6 +28,11 @@ markdown: kramdown
 highlighter: rouge
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config']
 
+assets:
+  features:
+    automatic_img_size: false
+
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-assets
