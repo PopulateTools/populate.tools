@@ -9,7 +9,7 @@
 $(document).ready(function() {
   /* Smooth scroll to anchor */
   $(function() {
-    $('.header a[href*="#"]:not([href="#"])').click(function() {
+    $('.desktop-menu a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -29,6 +29,21 @@ $(document).ready(function() {
   /* Stick header */
   var sticky = new Waypoint.Sticky({
     element: $('.section_home .header')[0]
+  });
+  
+  var sticky = new Waypoint.Sticky({
+    element: $('.section_home .header')[0]
+  });
+  
+  $('.open_mobile_menu').magnificPopup({
+    type: 'inline',
+    removalDelay: 300,
+    mainClass: 'mobile_menu',
+    fixedContentPos: true
+  });
+  
+  $('.mobile-link').click(function(e) {
+    $.magnificPopup.close();
   });
 
 	$('.project-gallery').magnificPopup({

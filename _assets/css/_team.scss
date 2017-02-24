@@ -5,8 +5,12 @@
   justify-content: center;
 }
 .member {
-  padding: 3rem;
+  padding: 1rem;
   text-align: center;
+  
+  @include min-screen(768) {
+    padding: 3rem;
+  }
 }
 .member-img {
   margin: 0 auto;

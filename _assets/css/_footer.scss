@@ -1,8 +1,12 @@
 .footer {
   border-top: 1px solid $border_light;
-  padding: 1rem 0 20rem 0;
+  padding: 1rem 1rem 20rem 1rem;
   position: relative;
   font-family: $sans_headline;
+  
+  @include min-screen(768) {
+    padding: 1rem 0 20rem 0;
+  }
 }
 .copy {
   display: inline-block;

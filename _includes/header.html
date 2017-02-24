@@ -1,26 +1,47 @@
 <header class="header">
   <div class="wrapper">
-    <a class="no-underline" href="/">
-      {% img 'logo' class:'logo-header pure-img' alt:'Populate' %}
-    </a>
-    <ul class="header-list">
-      <li class="header-item"><a class="header-link header-section" href="/#products">Products</a></li>
-      <li class="header-item"><a class="header-link header-section" href="/#projects">Projects</a></li>
-      <li class="header-item"><a class="header-link header-section" href="/#news">News</a></li>
-      <li class="header-item"><a class="header-link header-section" href="/#clients">Clients</a></li>
-      <li class="header-item"><a class="header-link header-section" href="/#team">Team</a></li>
-      <li class="header-item"><a class="header-link header-subsection" href="/#">About</a></li>
-    </ul>
+    <div class="mobile-menu">
+      <a class="no-underline logo" href="/">
+        {% img 'logo' class:'logo-header pure-img' alt:'Populate' %}
+      </a>
+      <a class="responsive menu_icon open_mobile_menu" href="#mobile_menu"><svg width="20" height="20" class="bars" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg></a>
+    </div>
     
-    <div class="newsletter">
-      <div id="revue-embed">
-        <form action="https://www.getrevue.co/profile/populate/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-        <p class="revue-form-group">
-          <input class="revue-form-field" placeholder="Get our weekly newsletter" name="member[email]" id="member_email" type="email">
-          <input value="✓" name="member[subscribe]" id="member_submit" type="submit">
-        </p>
-        </form>
+    <div class="desktop-menu">
+      <a class="no-underline" href="/">
+        {% img 'logo' class:'logo-header pure-img' alt:'Populate' %}
+      </a>
+      <ul class="header-list">
+        <li class="header-item"><a class="header-link header-section" href="/#products">Products</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#projects">Projects</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#news">News</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#clients">Clients</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#team">Team</a></li>
+        <li class="header-item"><a class="header-link header-subsection" href="/#">About</a></li>
+      </ul>
+      
+      <div class="newsletter">
+        <div id="revue-embed">
+          <form action="https://www.getrevue.co/profile/populate/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+          <p class="revue-form-group">
+            <input class="revue-form-field" placeholder="Get our weekly newsletter" name="member[email]" id="member_email" type="email">
+            <input value="✓" name="member[subscribe]" id="member_submit" type="submit">
+          </p>
+          </form>
+        </div>
       </div>
     </div>
+  
   </div>
+</header>
+
+<header class="mobile_menu modal mfp-hide" id="mobile_menu">
+  <menu>
+    <a class="mobile-link no-underline" href="/#products">Products</a>
+    <a class="mobile-link no-underline" href="/#projects">Projects</a>
+    <a class="mobile-link no-underline" href="/#news">News</a>
+    <a class="mobile-link no-underline" href="/#clients">Clients</a>
+    <a class="mobile-link no-underline" href="/#team">Team</a>
+    <a class="mobile-link no-underline" href="/#">About</a>
+  </menu>
 </header>

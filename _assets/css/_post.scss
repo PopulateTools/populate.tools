@@ -4,7 +4,11 @@ $post-width: 700px;
 .post article {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem 6rem 2rem;
+  padding: 0 1rem 6rem 1rem;
+  
+  @include min-screen(768) {
+    padding: 0 2rem 6rem 2rem;
+  }
 }
 .post h1 {
   color: $black;
