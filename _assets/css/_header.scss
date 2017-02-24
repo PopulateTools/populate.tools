@@ -89,14 +89,18 @@
   top: 0;
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
   padding: 1rem 0;
+  
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .header-list {
+    margin-bottom: 0;
+  }
 }
-.stuck .wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.stuck .header-list {
-  margin-bottom: 0;
-}
+
+.stuck,
 .stuck .logo-header {
   display: inline-block;
 }
