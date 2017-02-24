@@ -8,20 +8,28 @@
     width: 50%;
   }
 }
-.project-link {
-  // display: inline-block;
-  // line-height: 0;
-}
-.project-teaser {
-  // max-height: 300px;
-}
 
 /* Styles for dialog window */
 .dialog {
 	background: white;
-	padding: 20px 30px;
 	text-align: left;
-	max-width: 400px;
+	max-width: 960px;
 	margin: 40px auto;
 	position: relative;
+}
+.project-name {
+  margin-bottom: 0.5rem;
+}
+.project-description {
+  padding: 1rem 2rem;
+}
+.project-client {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $gray;
+  display: block;
+  margin-bottom: 2rem;
+}
+.project-popup-img {
+  margin: 0 auto;
 }

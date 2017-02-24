@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 	$('.project-gallery').magnificPopup({
 		type: 'inline',
-    delegate: 'a',
+    delegate: '.project',
 
 		fixedContentPos: false,
 		fixedBgPos: true,
@@ -41,7 +41,10 @@ $(document).ready(function() {
 		
 		midClick: true,
 		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
+		mainClass: 'my-mfp-zoom-in',
+    gallery: {
+      enabled: true
+    },
 	});
   
   /* Build project grid */

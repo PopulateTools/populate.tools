@@ -7,8 +7,13 @@
   </a>
   
   <div id="{{project.name | slugify}}" class="zoom-anim-dialog mfp-hide dialog">
-  	<h1>{{project.name}}</h1>
-    {% img '{{project.img}}' class:'project-teaser pure-img' alt:'{{project.name}}' %}
+    {% img '{{project.img}}' class:'project-popup-img pure-img' alt:'{{project.name}}' %}
+    <div class="project-description">
+      <h1 class="project-name">{{project.name}}</h1>
+      <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</small>
+      
+      <a class="pure-button project-button" href="{{project.url}}">Go to project</a>
+    </div>
   </div>
   {% endfor %}
 

@@ -1,27 +1,41 @@
 - name: The Panama Papers
+  client: International Consortium of Investigative Journalists
   img: projects/panama-papers.jpg
   url: https://panamapapers.icij.org/
+  client_url: https://icij.org/
 
 - name: Offshore Leaks
+  client: International Consortium of Investigative Journalists
   img: projects/offshore-leaks.png
   url: https://offshoreleaks.icij.org/
+  client_url: https://icij.org/
 
 - name: España en cifras
+  client: El Español
   img: projects/espana-en-cifras.png
   url: http://espanaencifras.elespanol.com/
+  client_url: http://www.elespanol.com/
 
 - name: Fatal Extraction
+  client: International Consortium of Investigative Journalists
   img: projects/fatal-extraction.png
   url: http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark
-  
+  client_url: https://icij.org/
+
 - name: Earnings Inspector
+  client: Brown Institute (Columbia University / Stanford University)
   img: projects/earnings-inspector.png
   url: http://earningsinspector.org/
+  client_url: http://brown.columbia.edu/
 
 - name: Swiss Leaks
+  client: International Consortium of Investigative Journalists
   img: projects/swiss-leaks.png
   url: http://earningsinspector.org/
+  client_url: https://icij.org/
 
 - name: Evicted and Abandoned
+  client: International Consortium of Investigative Journalists
   img: projects/evicted-and-abandoned.png
   url: http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data
+  client_url: https://icij.org/
