@@ -13,7 +13,9 @@ layout: default
 {% endif %}
 
 <div class="meta">
-  <a href="{{author.handle | prepend: site.twitter_url}}"><img class="pure-img avatar" src="{{author.img}}" alt="{{author.name}}"></a>
+  <a class="no-underline" href="{{author.handle | prepend: site.twitter_url}}">
+    {% img '{{author.img}}' class:'pure-img avatar' alt:'{{author.name}}' %}
+  </a>
   <div class="info">
     <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
     <time>{{page.date | date: "%b %-d, %Y"}}</time>
