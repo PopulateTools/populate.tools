@@ -2,8 +2,14 @@
 
 <div class="project-gallery">
   {% for project in site.data.projects %}
-    <a class="project-link" href="{{project.url}}">
-      {% img '{{project.img}}' class:'project-teaser pure-img' alt:'{{project.name}}' %}
-    </a>
+  <a class="popup-with-zoom-anim project" href="#{{project.name | slugify}}">
+    {% img '{{project.img}}' class:'project-teaser pure-img' alt:'{{project.name}}' %}
+  </a>
+  
+  <div id="{{project.name | slugify}}" class="zoom-anim-dialog mfp-hide dialog">
+  	<h1>{{project.name}}</h1>
+    {% img '{{project.img}}' class:'project-teaser pure-img' alt:'{{project.name}}' %}
+  </div>
   {% endfor %}
+
 </div>

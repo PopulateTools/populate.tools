@@ -1,10 +1,27 @@
 .project-gallery {
   font-size: 0;
 }
+.project {
+  width: 100%;
+  
+  @include min-screen(768) {
+    width: 50%;
+  }
+}
 .project-link {
-  display: inline-block;
-  line-height: 0;
+  // display: inline-block;
+  // line-height: 0;
 }
 .project-teaser {
-  max-height: 300px;
+  // max-height: 300px;
+}
+
+/* Styles for dialog window */
+.dialog {
+	background: white;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 400px;
+	margin: 40px auto;
+	position: relative;
 }
