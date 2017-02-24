@@ -7,7 +7,8 @@
   </a>
   
   <div id="{{project.name | slugify}}" class="zoom-anim-dialog mfp-hide dialog">
-    {% img '{{project.img}}' class:'project-popup-img pure-img' alt:'{{project.name}}' %}
+    <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-popup-img pure-img"></div>
+    
     <div class="project-description">
       <h1 class="project-name">{{project.name}}</h1>
       <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</a></small>
