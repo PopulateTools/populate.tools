@@ -40,9 +40,13 @@
 }
 .client-wrapper {
   padding: 2rem;
-  height: 15vh;
+  height: 120px;
   
   @include min-screen(768) {
+    padding: 4rem;
+  }
+  
+  @include min-screen(90em) {
     padding: 2rem 6rem;
   }
 }
