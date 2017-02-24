@@ -10,7 +10,9 @@
     {% img '{{project.img}}' class:'project-popup-img pure-img' alt:'{{project.name}}' %}
     <div class="project-description">
       <h1 class="project-name">{{project.name}}</h1>
-      <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</small>
+      <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</a></small>
+      
+      <p class="project-text">{{project.description}}</p>
       
       <a class="pure-button project-button" href="{{project.url}}">Go to project</a>
     </div>
