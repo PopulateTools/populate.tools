@@ -9,7 +9,9 @@
   }
 }
 .product {
-  width: 33%;
+  @include min-screen(768) {
+    width: 33%;
+  }
 }
 .product:first-child {
   @include min-screen(768) {
