@@ -45,7 +45,7 @@
 .newsletter {
   display: none;
   position: absolute;
-  right: 2rem;
+  right: 0;
   border-bottom: 1px solid $border;
   width: 20rem;
   top: 0.5rem;
@@ -93,20 +93,12 @@
 .stuck .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 .stuck .header-list {
   margin-bottom: 0;
 }
 .stuck .logo-header {
   display: inline-block;
-}
-.stuck .newsletter {
-  right: 2rem;
-  
-  @include min-screen(90em) { 
-    right: 4rem;
-  }
 }
 .post .logo-header {
   display: inline-block;

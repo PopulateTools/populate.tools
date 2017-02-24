@@ -1,12 +1,24 @@
 /* Products */
-.product .padded {
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border-radius: 6px;
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   
   @include min-screen(768) {
-    margin-bottom: 0;
-    padding: 2rem;
+    flex-wrap: nowrap;
+  }
+}
+.product {
+  width: 33%;
+}
+.product:first-child {
+  @include min-screen(768) {
+    padding-right: 2rem;
+  }
+}
+.product:last-child {
+  @include min-screen(768) {
+    padding-left: 2rem;
   }
 }
 .product-name {
@@ -17,11 +29,12 @@
   text-decoration: none;
 }
 .product-description {
+  // max-width: 85%;
   font-family: $sans_copy;
   font-weight: 400;
   // color: $gray;
 }
 .product-img {
-  max-height: 300px;
+  width: 90%;
   margin-bottom: 1rem;
 }

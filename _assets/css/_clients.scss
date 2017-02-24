@@ -43,7 +43,7 @@
   height: 15vh;
   
   @include min-screen(768) {
-    padding: 4rem;
+    padding: 2rem 6rem;
   }
 }
 .client-img {

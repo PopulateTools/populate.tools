@@ -12,7 +12,7 @@ $post-width: 700px;
   margin-bottom: 1rem;
 }
 .post .content p {
-  font-size: 1.15rem;
+  font-size: $fpost;
   line-height: 1.6;
   margin-bottom: 1.85rem;
   max-width: $post-width
@@ -23,7 +23,13 @@ $post-width: 700px;
 .post .content h2 {
   margin-top: 2rem;
   margin-bottom: 0.35rem;
-  font-weight: 600;
+  font-weight: 500;
+  max-width: $post-width;
+}
+.post .content h3,
+.post .content h4,
+.post .content h5 {
+  font-weight: 500;
 }
 .post .content img {
   // margin: 2.75rem 0;
@@ -45,6 +51,10 @@ $post-width: 700px;
   margin-left: -1.5rem;
   padding-left: 1.5rem;
   border-left: 2px solid $gray;
+}
+.content ul,
+.content ol {
+  font-size: $fpost;
 }
 .content ul,
 .content ol,
