@@ -4,6 +4,7 @@
 //= require vendor/jquery.magnific-popup.min.js
 //= require vendor/packery.pkgd.min.js
 //= require vendor/imagesloaded.pkgd.min.js
+//= require vendor/jquery.unveil.js
 
 $(document).ready(function() {
   /* Smooth scroll to anchor */
@@ -21,6 +22,9 @@ $(document).ready(function() {
       }
     });
   });
+  
+  /* Lazyload */
+  $('.lazy').unveil();
   
   /* Stick header */
   var sticky = new Waypoint.Sticky({

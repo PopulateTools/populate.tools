@@ -7,7 +7,7 @@
       <a class="product-link" href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a>
     </h2>
     <a href="{{product.url}}">
-      {% img '{{product.img}}' class:'product-img pure-img' alt:'{{product.name}}' %}
+      <img data-src="{% asset_path {{product.img}} %}" class="product-popup-img pure-img lazy" alt='{{product.name}}'/>
     </a>
     <p class="product-description">{{product.description}}</p>
   </div>
