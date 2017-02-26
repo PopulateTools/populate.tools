@@ -30,13 +30,11 @@ $(document).ready(function() {
   });
   
   /* Stick header */
-  var sticky = new Waypoint.Sticky({
-    element: $('.section_home .header')[0]
-  });
-  
-  var sticky = new Waypoint.Sticky({
-    element: $('.section_home .header')[0]
-  });
+  if ($('.section_home .header').length > 0) {
+    var sticky = new Waypoint.Sticky({
+      element: $('.section_home .header')[0]
+    });
+  }
   
   $('.open_mobile_menu').magnificPopup({
     type: 'inline',
