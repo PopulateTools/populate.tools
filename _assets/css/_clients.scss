@@ -11,6 +11,13 @@
   padding: 4rem 0;
   max-width: 1500px;
   margin: 0 auto;
+  
+  @include min-screen(1200) {
+    padding: 2rem 6rem;
+  }
+  @include min-screen(1600) {
+    padding: 2rem 0;
+  }
 }
 .clients-grid .col-3,
 .clients-grid .col-4 {
@@ -42,14 +49,14 @@
   padding: 2rem;
   height: 120px;
   
-  @include min-screen(768) {
-    padding: 4rem;
+  @include min-screen(1200) {
+    padding: 3rem;
   }
   
   @include min-screen(90em) {
     padding: 2rem 6rem;
   }
-}
+}.clients-grid
 .client-img {
   background-position: center;
   background-repeat: no-repeat;
