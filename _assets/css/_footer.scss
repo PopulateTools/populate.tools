@@ -5,7 +5,10 @@
   font-family: $sans_headline;
   
   @include min-screen(768) {
-    padding: 1rem 0 20rem 0;
+    padding: 2rem 2rem 6rem 2rem;
+  }
+  @include min-screen(1600) {
+    padding: 2rem 0 20rem 0;
   }
 }
 .copy {

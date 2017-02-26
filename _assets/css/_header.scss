@@ -3,6 +3,14 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem 0;
+  
+  @include min-screen(768) {
+    padding: 2rem 4rem;
+  }
+  
+  @include min-screen(1600) {
+    padding: 2rem 0;
+  }
 }
 .header .wrapper {
   padding: 0 1rem;
@@ -49,10 +57,10 @@
 .newsletter {
   display: none;
   position: absolute;
-  right: 0;
+  right: 2rem;
   border-bottom: 1px solid $border;
   width: 20rem;
-  top: 0.5rem;
+  top: 5px;
   
   @include min-screen(64em) { 
     display: inline-block;
@@ -161,6 +169,22 @@
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    
+    @include min-screen(768) {
+      padding: 0 6rem;
+    }
+    
+    @include min-screen(1600) {
+      padding: 0;
+    }
+  }
+  
+  .desktop-menu {
+    position: relative;
+  }
+  
+  .desktop-menu .newsletter {
+    right: 0;
   }
   
   .header-list {

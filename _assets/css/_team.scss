@@ -7,18 +7,17 @@
 .member {
   padding: 1rem;
   text-align: center;
-  
-  @include min-screen(768) {
-    padding: 3rem;
-  }
 }
 .member-img {
   margin: 0 auto;
   border-radius: 50%;
-  max-width: 150px;
+  max-width: 100px;
 }
 .member-name {
   margin-top: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+.member-role {
+  max-width: 150px;
 }
