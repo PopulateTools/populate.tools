@@ -4,7 +4,7 @@
 //= require vendor/jquery.magnific-popup.min.js
 //= require vendor/packery.pkgd.min.js
 //= require vendor/imagesloaded.pkgd.min.js
-//= require vendor/jquery.unveil.js
+//= require vendor/blazy.min.js
 
 $(document).ready(function() {
   /* Smooth scroll to anchor */
@@ -24,7 +24,10 @@ $(document).ready(function() {
   });
   
   /* Lazyload */
-  $('.lazy').unveil();
+  var bLazy = new Blazy({
+    selector: '.lazy',
+    successClass: 'loaded'
+  });
   
   /* Stick header */
   var sticky = new Waypoint.Sticky({
