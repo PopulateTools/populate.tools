@@ -1,11 +1,58 @@
-.project-gallery {
-  font-size: 0;
+.project-teaser {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: color .15s ease-in;
 }
-.project {
+.project-teaser:hover .project-hover {
+  opacity: 1;
+}
+.project-hover {
+  text-align: center;
+  opacity: 0;
+  color: white;
+  vertical-align: middle;
+  background-color: rgba(0,0,0,.6);
   width: 100%;
-  
+  height: 100%;
+  -webkit-transition: opacity .15s ease-in;
+  transition: opacity .15s ease-in;
+  position: absolute;
+}
+.hover-content {
+  padding-top: 8vh;
+}
+.hover-name {
+  font-family: $sans-headline;
+  font-size: $f2;
+  font-weight: 600;
+}
+.w1,
+.w2,
+.w3,
+.w4 {
+  height: 300px;
+  width: 100%;
+}
+.w1 {
   @include min-screen(768) {
-    width: 50%;
+    width: calc(50% - 2.5px);
+  }
+}
+.w2 {
+  @include min-screen(768) {
+    width: calc(50% - 2.5px);
+  }
+}
+.w3 {
+  @include min-screen(768) {
+    width: calc(70% - 2.5px);
+  }
+}
+.w4 {
+  @include min-screen(768) {
+    width: calc(30% - 2.5px);
   }
 }
 
@@ -13,9 +60,13 @@
 .dialog {
 	background: white;
 	text-align: left;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 40px auto;
 	position: relative;
+  
+  @include min-screen(1600) {
+    max-width: 1440px;
+  }
 }
 .project-name {
   margin-bottom: 0.5rem;
@@ -28,10 +79,8 @@
   letter-spacing: 2px;
   color: $gray;
   display: block;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
-}
-.project-popup-img {
-  margin: 0 auto;
 }
 .project-text {
   margin-top: 0;
@@ -50,8 +99,11 @@
   background-image: none;
 }
 .project-popup-img {
+  margin: 0 auto;
   width: 100%;
-  height: 30vh;
-  background: #222 no-repeat center center;
+  height: auto;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
   background-size: cover;
 }

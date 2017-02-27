@@ -5,7 +5,7 @@
   padding: 2rem 0;
   
   @include min-screen(768) {
-    padding: 2rem 4rem;
+    padding: 4rem 4rem 2rem 4rem;
   }
   
   @include min-screen(1600) {

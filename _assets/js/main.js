@@ -51,7 +51,7 @@ $(document).ready(function() {
 		type: 'inline',
     delegate: '.project',
 
-		fixedContentPos: false,
+		fixedContentPos: 'auto',
 		fixedBgPos: true,
 
 		overflowY: 'auto',
@@ -72,7 +72,7 @@ $(document).ready(function() {
     $grid.packery({
       // options
       itemSelector: '.project',
-      gutter: 0,
+      gutter: 5,
       percentPosition: true
     });
   });
