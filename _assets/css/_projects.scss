@@ -9,6 +9,9 @@
   opacity: 1;
 }
 .project-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   opacity: 0;
   color: white;
@@ -20,13 +23,20 @@
   transition: opacity .15s ease-in;
   position: absolute;
 }
-.hover-content {
-  padding-top: 8vh;
-}
 .hover-name {
   font-family: $sans-headline;
   font-size: $f2;
   font-weight: 600;
+}
+.hover-client {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: $f6;
+  
+  @include min-screen(1600) {
+    margin: 0 auto;
+    max-width: 60%;
+  }
 }
 .w1,
 .w2,
