@@ -1,20 +1,28 @@
 .hero {
-  @include min-screen(768) { 
-    max-height: 87vh;
-  }
-  @include min-screen(1600) { 
-    max-height: 90vh;
-  }
+  
 }
 .hero-logo {
   position: relative;
   max-width: 1440px;
-  height: 40vh;
   margin: 0 auto;
+  .container {
+    padding: 4rem 1rem;
+  }
+  @include min-screen(768) { 
+    padding: 2rem 6rem 8rem;
+  }
 }
 .hero-logo img {
   padding-top: 10vh;
   max-width: 12rem;
+
+  @include min-screen(768) { 
+    max-width: 12rem;
+  }
+  @include min-screen(1200) { 
+    max-width: 14rem;
+  }
+  
 }
 .lang-switcher {
   position: absolute;
@@ -44,9 +52,6 @@
   color: white;
   position: relative;
   
-  @include min-screen(768) { 
-    height: 50vh;
-  }
 }
 .hero-lead {
   bottom: 0;
@@ -57,19 +62,23 @@
 .hero-headline {
   font-size: $f2;
   
+  @include min-screen(1000) { 
+    font-size: 2.5rem;
+  }
   @include min-screen(1440) { 
     font-size: 4rem;
-    max-width: 75%;
   }
+   
 }
 .hero-subheading {
-  font-size: $f3;
+  font-size: $f4;
   font-weight: 300;
   font-family: $sans_copy;
   margin-bottom: 5vh;
   
   @include min-screen(768) {
     max-width: 75%;
+    font-size: $f3;
   }
 }
 
@@ -83,6 +92,9 @@
 }
 .hero-point {
   font-weight: 400;
+  font-size: $f5;
+  line-height: 1.4rem;
+  opacity: .5;
 }
 .hero-point p {
   @include min-screen(768) { 
