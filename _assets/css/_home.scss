@@ -15,11 +15,11 @@
   margin-bottom: 2rem;
   
   @include min-screen(768) {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
   
   @include min-screen(1600) {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 }
 .section-title {
