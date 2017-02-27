@@ -56,8 +56,8 @@
   @include min-screen(90em) {
     padding: 2rem 6rem;
   }
-}.clients-grid
-.client-img {
+}
+.clients-grid .client-img {
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -65,4 +65,6 @@
   -o-background-size: contain;
   background-size: contain;
   height: 100%;
-  width: 100%;}
+  width: 75%;
+  margin: auto;
+}
