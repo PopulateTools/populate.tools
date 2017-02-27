@@ -4,7 +4,7 @@ $post-width: 700px;
 .post article {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem 6rem 1rem;
+  padding: 3rem 1rem 6rem 1rem;
   
   @include min-screen(768) {
     padding: 0 6rem 4rem 6rem;
@@ -29,7 +29,7 @@ $post-width: 700px;
 }
 .post .content p {
   font-size: $fpost;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1.85rem;
   max-width: $post-width
 }
