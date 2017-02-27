@@ -7,6 +7,7 @@
 .member {
   padding: 1rem;
   text-align: center;
+  width: 200px;
 }
 .member-img {
   margin: 0 auto;
@@ -19,5 +20,6 @@
   margin-bottom: 0.5rem;
 }
 .member-role {
-  max-width: 150px;
+  opacity: .5;
+  font-size: .85rem;
 }
