@@ -36,6 +36,7 @@ $(document).ready(function() {
     });
   }
   
+  /* Mobile menu */
   $('.open_mobile_menu').magnificPopup({
     type: 'inline',
     removalDelay: 300,
@@ -46,7 +47,18 @@ $(document).ready(function() {
   $('.mobile-link').click(function(e) {
     $.magnificPopup.close();
   });
+  
+  /* Build project grid */
+  var $grid = $('.project-gallery').imagesLoaded(function() {
+    $grid.packery({
+      // options
+      itemSelector: '.project',
+      gutter: 5,
+      percentPosition: true
+    });
+  });
 
+  /* Project gallery popup */
 	$('.project-gallery').magnificPopup({
 		type: 'inline',
     delegate: '.project',
@@ -66,15 +78,5 @@ $(document).ready(function() {
       enabled: true
     },
 	});
-  
-  /* Build project grid */
-  var $grid = $('.project-gallery').imagesLoaded(function() {
-    $grid.packery({
-      // options
-      itemSelector: '.project',
-      gutter: 5,
-      percentPosition: true
-    });
-  });
 });
 

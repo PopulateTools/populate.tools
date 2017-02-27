@@ -6,9 +6,9 @@
 - name: Populate Data
   description: Retrieve public data quickly using a common set of APIs. Filter, combine and explore datasets which are always up-to-date.
   img: products/populate-data.png
-  url: https://populate.data
+  url: lets@populate.tools
 
 - name: Reasons.club
   description: Decide and discuss on the internet, reach conclusions faster. You can list the pros and cons of an issue and discuss it with your friends.
   img: products/reasons.png
-  url: https://reasons.club
+  url: http://reasons.club
