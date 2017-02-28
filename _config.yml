@@ -36,3 +36,8 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-assets
+  - jekyll-multiple-languages-plugin
+
+languages: ["en", "es"]
+exclude_from_localizations: ['_assets',  '_layouts',  '_site',  'img']
+
