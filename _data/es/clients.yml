@@ -1,0 +1,31 @@
+- name: Madrid
+  img: clients/madrid.jpg
+  url: http://www.madrid.es/portal/site/munimadrid
+
+- name: Generalitat de Catalunya
+  img: clients/gencat.png
+  url: http://web.gencat.cat/en/inici/index.html
+
+- name: Diputació de València
+  img: clients/dival.png
+  url: http://dival.es
+
+- name: San Sebastián de los Reyes
+  img: clients/sanse.png
+  url: http://ssreyes.es
+
+- name: The Cocktail
+  img: clients/the-cocktail.svg
+  url: https://the-cocktail.com/
+  
+- name: Pulitzer Center on Crisis Reporting
+  img: clients/pulitzer.png
+  url: http://pulitzercenter.org/
+  
+- name: Unidad Editorial
+  img: clients/unidad-editorial.svg
+  url: http://www.unidadeditorial.es/
+  
+- name: The International Consortium of Investigative Journalists
+  img: clients/icij.png
+  url: https://icij.org
