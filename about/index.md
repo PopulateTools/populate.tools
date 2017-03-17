@@ -1,5 +1,5 @@
 ---
 layout: page
-title: About Populate
+title: titles.about_populate
 ---
-Populate…
+{% translate_file about/about.md %}

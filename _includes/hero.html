@@ -2,7 +2,17 @@
   <div class="hero-logo">
     <div class="container">
       {% img 'logo' class:'pure-img' alt:'Populate' %}
-      <div class="lang-switcher"><a href="#" class="active">EN</a> <a href="#">ES</a></div>
+      <div class="lang-switcher">
+        {% if site.lang == "es" %}
+          {% capture link1 %}{{ site.baseurl_root }}/{% endcapture %}
+          <span>ES</span>
+          <span><a class="active" href="{{ link1 }}" >EN</a></span>
+        {% elsif site.lang == "en" %}
+          {% capture link2 %}{{ site.baseurl_root }}es{% endcapture %}
+          <span><a class="active" href="{{ link2 }}" >ES</a></span>
+          <span>EN</span>
+        {% endif %}
+      </div>
     </div>
   </div>
 
