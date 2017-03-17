@@ -12,19 +12,30 @@
         {% img 'logo' class:'logo-header pure-img' alt:'Populate' %}
       </a>
       <ul class="header-list">
-        <li class="header-item"><a class="header-link header-section" href="/#products">Products</a></li>
-        <li class="header-item"><a class="header-link header-section" href="/#projects">Projects</a></li>
-        <li class="header-item"><a class="header-link header-section" href="/#news">News</a></li>
-        <li class="header-item"><a class="header-link header-section" href="/#clients">Clients</a></li>
-        <li class="header-item"><a class="header-link header-section" href="/#team">Team</a></li>
-        <li class="header-item"><a class="header-link header-subsection" href="/about">About</a></li>
+        <!-- <li class="header-item"><a class="header-link header-section" href="/#products">Products</a></li> -->
+        <li class="header-item"><a class="header-link header-section" href="/#projects">{% t projects %}</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#news">{% t news %}</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#clients">{% t clients %}</a></li>
+        <li class="header-item"><a class="header-link header-section" href="/#team">{% t team %}</a></li>
+        <li class="header-item"><a class="header-link header-subsection" href="/about">{% t about %}</a></li>
+        <li class="header-item">
+          {% if site.lang == "es" %}
+            {% capture link1 %}{{ site.baseurl_root }}/{% endcapture %}
+            ES
+            <a href="{{ link1 }}" >EN</a>
+          {% elsif site.lang == "en" %}
+            {% capture link2 %}{{ site.baseurl_root }}es{% endcapture %}
+            <a href="{{ link2 }}" >ES</a>
+            EN
+          {% endif %}
+        </li>
       </ul>
 
       <div class="newsletter">
         <div id="revue-embed">
           <form action="https://www.getrevue.co/profile/populate/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
           <p class="revue-form-group">
-            <input class="revue-form-field" placeholder="{% t newsletter %}" name="member[email]" id="member_email" type="email">
+            <input class="revue-form-field" placeholder="{% t get_on_our_weekly_newsletter %}" name="member[email]" id="member_email" type="email">
             <input value="✓" name="member[subscribe]" id="member_submit" type="submit">
           </p>
           </form>
@@ -37,11 +48,11 @@
 
 <header class="mobile_menu modal mfp-hide" id="mobile_menu">
   <menu>
-    <a class="mobile-link no-underline" href="/#products">Products</a>
-    <a class="mobile-link no-underline" href="/#projects">Projects</a>
-    <a class="mobile-link no-underline" href="/#news">News</a>
-    <a class="mobile-link no-underline" href="/#clients">Clients</a>
-    <a class="mobile-link no-underline" href="/#team">Team</a>
-    <a class="mobile-link no-underline" href="/#">About</a>
+    <!-- <a class="mobile-link no-underline" href="/#products">{% t products %}</a> -->
+    <a class="mobile-link no-underline" href="/#projects">{% t projects %}</a>
+    <a class="mobile-link no-underline" href="/#news">{% t news %}</a>
+    <a class="mobile-link no-underline" href="/#clients">{% t clients %}</a>
+    <a class="mobile-link no-underline" href="/#team">{% t team %}</a>
+    <a class="mobile-link no-underline" href="/#">{% t about %}</a>
   </menu>
 </header>
