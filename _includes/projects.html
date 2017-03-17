@@ -1,7 +1,7 @@
 <h1 class="section-title">Projects</h1>
 
 <div class="project-gallery">
-  {% for project in site.data.projects %}
+  {% for project in site.data[site.lang].projects %}
   <a class="popup-with-zoom-anim project w{% cycle 1, 2, 3, 4 %}" href="#{{project.name | slugify}}">
     <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-teaser pure-img ">
       <span class="project-hover">
@@ -13,10 +13,10 @@
     </div>
   </a>
   {% endfor %}
-  
-  {% for project in site.data.projects %}
+
+  {% for project in site.data[site.lang].projects %}
   <div id="{{project.name | slugify}}" class="zoom-anim-dialog mfp-hide dialog">
-    
+
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-2-3">
         <img class="project-popup-img" src="{% asset_path {{project.screen_1}} %}">
@@ -25,9 +25,9 @@
         <div class="project-description">
           <h1 class="project-name">{{project.name}}</h1>
           <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</a></small>
-          
+
           <p class="project-text">{{project.description}}</p>
-          
+
           <a class="pure-button project-button" href="{{project.url}}">Go to project</a>
         </div>
       </div>
