@@ -1,6 +1,11 @@
 /* Base */
 $post-width: 700px;
 
+body.post .container {
+  max-width: 900px;
+  margin: 2em 0;
+}
+
 .post {
   h1 {
     color: $black;
@@ -18,7 +23,6 @@ $post-width: 700px;
   }
   h2 {
     margin-top: 2rem;
-    margin-bottom: 0.35rem;
     font-weight: 600;
   }
   h2.subtitle {
@@ -32,52 +36,52 @@ $post-width: 700px;
     font-weight: 600;
   }
   p {
-    font-size: $fpost;
-    line-height: 1.5;
     margin-bottom: 1.85rem;
-
-    @include min-screen(768) {
-      font-size: 1.15em;
-      line-height: 1.6;
-    }
   }
 
   .author-link {
     text-decoration: none;
   }
-  .content {
-    max-width: $post-width;
-    img {
-      // margin: 2.75rem 0;
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    a {
-      word-wrap: break-word;
-    }
-    hr {
-      margin: 2.5rem 0;
-      max-width: $post-width
-    }
-  }
 }
+
 .content {
+  font-size: $fpost;
+  line-height: 1.5;
+  // max-width: $post-width;
+
+  @include min-screen(768) {
+    font-size: 1.15em;
+    line-height: 1.6;
+  }
+
+  img {
+    // margin: 2.75rem 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #DFDFDF;
+  }
+  a {
+    word-wrap: break-word;
+  }
+  hr {
+    margin: 2.5rem 0;
+    max-width: $post-width
+  }
+  caption {
+    width: 100%;
+    display: block;
+    font-size: .85em;
+    color: #999;
+    line-height: 1.3em;
+    margin: .5em 0 0 0;
+  }
   blockquote {
     margin: 2rem 0;
     font-size: .9em;
     line-height: 1.8;
     padding-left: 1.5rem;
     border-left: 2px solid $gray;
-  }
-  ul,
-  ol {
-    font-size: $fpost;
-  }
-  ul,
-  ol,
-  .gist {
-    max-width: $post-width
   }
 }
 

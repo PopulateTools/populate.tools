@@ -3,11 +3,11 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem 0;
-  
+
   @include min-screen(768) {
     padding: 2rem 4rem 2rem 4rem;
   }
-  
+
   @include min-screen(1600) {
     padding: 2rem 0;
   }
@@ -15,12 +15,12 @@
 .header .wrapper {
   padding: 0 1rem;
   position: relative;
-  
+
   @include min-screen(768) {
     padding: 0 2rem;
   }
-  
-  @include min-screen(90em) { 
+
+  @include min-screen(90em) {
     padding: 0;
   }
 }
@@ -61,8 +61,8 @@
   border-bottom: 1px solid $border;
   width: 20rem;
   top: 5px;
-  
-  @include min-screen(64em) { 
+
+  @include min-screen(64em) {
     display: inline-block;
   }
 }
@@ -90,15 +90,15 @@
 /* Mobile menu */
 .desktop-menu {
   display: none;
-  
-  @include min-screen(768) { 
+
+  @include min-screen(768) {
     display: block;
   }
 }
 .open_mobile_menu {
   float: right;
-  
-  @include min-screen(768) { 
+
+  @include min-screen(768) {
     display: none;
   }
 }
@@ -106,7 +106,7 @@
   fill: $gray;
 }
 .mobile-menu .logo {
-  @include min-screen(768) { 
+  @include min-screen(768) {
     display: none;
   }
 }
@@ -165,28 +165,28 @@
   top: 0;
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
   padding: 1rem 0;
-  
+
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    
+
     @include min-screen(768) {
       padding: 0 6rem;
     }
-    
+
     @include min-screen(1600) {
       padding: 0;
     }
   }
-  
+
   .desktop-menu {
     position: relative;
   }
-  
+
   .desktop-menu .newsletter {
     right: 0;
   }
-  
+
   .header-list {
     margin-bottom: 0;
   }

@@ -1,11 +1,11 @@
 .footer {
   border-top: 1px solid $border_light;
-  padding: 1rem 1rem 20rem 1rem;
+  padding: 1rem 0 20rem 0;
   position: relative;
   font-family: $sans_headline;
-  
+
   @include min-screen(768) {
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 0 6rem 0;
   }
   @include min-screen(1600) {
     padding: 2rem 0 20rem 0;
@@ -15,7 +15,7 @@
   display: inline-block;
   margin-bottom: 2rem;
 }
-.links {  
+.links {
   @include min-screen(768) {
     float: right;
   }
@@ -24,7 +24,7 @@
   display: block;
   margin-bottom: 1rem;
   text-decoration: none;
-  
+
   @include min-screen(768) {
     display: inline-block;
   }

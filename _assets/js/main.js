@@ -22,20 +22,20 @@ $(document).ready(function() {
       }
     });
   });
-  
+
   /* Lazyload */
   var bLazy = new Blazy({
     selector: '.lazy',
     successClass: 'loaded'
   });
-  
+
   /* Stick header */
   if ($('.section_home .header').length > 0) {
     var sticky = new Waypoint.Sticky({
       element: $('.section_home .header')[0]
     });
   }
-  
+
   /* Mobile menu */
   $('.open_mobile_menu').magnificPopup({
     type: 'inline',
@@ -43,11 +43,11 @@ $(document).ready(function() {
     mainClass: 'mobile_menu',
     fixedContentPos: true
   });
-  
+
   $('.mobile-link').click(function(e) {
     $.magnificPopup.close();
   });
-  
+
   /* Build project grid */
   var $grid = $('.project-gallery').imagesLoaded(function() {
     $grid.packery({
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 		closeBtnInside: true,
 		preloader: false,
-		
+
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in',
@@ -78,5 +78,25 @@ $(document).ready(function() {
       enabled: true
     },
 	});
-});
 
+  // autocaptions for article images
+  $('article img.caption').after(function() {
+    if($(this).attr('title') !== undefined && $(this).attr('title').length > 0) {
+
+      var classesToAdd = '';
+      if($(this).hasClass('inline')) {
+        classesToAdd += ' inline ';
+      }
+      if($(this).hasClass('f_right')) {
+        classesToAdd += ' f_right ';
+      }
+      if($(this).hasClass('f_left')) {
+        classesToAdd += ' f_left ';
+      }
+
+      $(this).wrap('<div class="image ' + classesToAdd + ' "></div>');
+      $(this).after('<caption>' + $(this).attr('title') + '</caption></div>');
+    }
+  });
+
+});
