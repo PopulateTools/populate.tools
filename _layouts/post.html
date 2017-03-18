@@ -2,12 +2,21 @@
 layout: default
 ---
 {% assign author = site.data.[site.lang].team[page.author] %}
-
 {% include header.html %}
-
 <div class="container">
 
   <article>
+
+    {% if page.main_photo_big %}
+    <header>
+      {% if page.main_photo_big contains '://' %}
+        <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% img '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
     <h1>{{page.title}}</h1>
 
     {% if page.subtitle %}

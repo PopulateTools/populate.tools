@@ -6,7 +6,7 @@ body.post .container {
   margin: 2em 0;
 }
 
-.post {
+body.post {
   h1 {
     color: $black;
     margin-bottom: 1rem;
@@ -47,6 +47,9 @@ body.post .container {
 .content {
   font-size: $fpost;
   line-height: 1.5;
+  border-bottom: 1px solid $border_light;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
   // max-width: $post-width;
 
   @include min-screen(768) {
@@ -82,6 +85,29 @@ body.post .container {
     line-height: 1.8;
     padding-left: 1.5rem;
     border-left: 2px solid $gray;
+  }
+}
+
+.posts-index {
+  @include screen(768) {
+    h2 {
+      font-size: 1.2em;
+    }
+    .story {
+      padding: 0 2em 0 0;
+    }
+  }
+}
+.latest-articles {
+  margin: 3rem 0;
+  h4 {
+    margin: 2em 0;
+  }
+  article {
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
   }
 }
 
