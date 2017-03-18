@@ -38,13 +38,15 @@ layout: default
     </main>
 
     <div class="latest-articles">
-      <h4>Últimos artículos</h4>
+      <h4>{% t last_articles %}</h4>
       {% for post in site.posts limit:4 %}
         <article class="article">
           <h2 class="article-headline"><a class="article-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           <time class="article-time">{{post.date | date: "%b %-d, %Y"}}</time>
         </article>
       {% endfor %}
+
+      <p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">{% t view_all %}</p>
     </div>
 
   </article>
