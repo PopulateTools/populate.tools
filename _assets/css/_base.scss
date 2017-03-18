@@ -123,3 +123,34 @@ hr {
   width: 100%;
   height: 100%;
 }
+
+body.about .container {
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    font-size: .85em;
+    padding: 0 1em 0 0;
+  }
+  h1 {
+    color: $blue;
+  }
+  .main-msg {
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+  &.section-color-1 {
+    background: $blue;
+    color: #FFF;
+  }
+  &.section-color-2 {
+    background: #E1656D;
+    color: #FFF;
+  }
+  &.section-color-3 {
+    background: #419D78;
+    color: #FFF;
+  }
+}
