@@ -5,7 +5,7 @@ $page-width: 700px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem 6rem 1rem;
-  
+
   @include min-screen(768) {
     padding: 0 6rem 4rem 6rem;
   }
@@ -17,12 +17,12 @@ $page-width: 700px;
   color: $black;
   margin-bottom: 1rem;
   font-size: $f2;
-  
+
   @include min-screen(768) {
     font-size: $f1;
     max-width: $page-width * 1.25;
   }
-  
+
   @include min-screen(1600) {
     max-width: $page-width * 1.35;
   }
@@ -58,12 +58,11 @@ $page-width: 700px;
   max-width: $page-width
 }
 .content blockquote {
-  margin: 3rem 0;
+  margin: 1rem 0;
   font-style: italic;
   font-family: $serif;
-  margin-left: -1.5rem;
   padding-left: 1.5rem;
-  border-left: 2px solid $gray;
+  border-left: 2px solid $light_gray;
 }
 .content ul,
 .content ol {

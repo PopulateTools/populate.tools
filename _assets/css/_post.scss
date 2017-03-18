@@ -1,94 +1,91 @@
 /* Base */
 $post-width: 700px;
 
-.post article {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 3rem 1rem 6rem 1rem;
-  
-  @include min-screen(768) {
-    padding: 2rem 6rem 4rem 6rem;
-  }
-  @include min-screen(1600) {
-    padding: 2rem 2rem 6rem 2rem;
-  }
-}
-.post h1 {
-  color: $black;
-  margin-bottom: 1rem;
-  font-size: $f2;
-  
-  @include min-screen(768) {
-    font-size: $f1;
-    max-width: $post-width * 1.25;
-  }
-  
-  @include min-screen(1600) {
-    max-width: $post-width * 1.35;
-  }
-}
-.post .content p {
-  font-size: $fpost;
-  line-height: 1.5;
-  margin-bottom: 1.85rem;
-  max-width: $post-width;
+.post {
+  h1 {
+    color: $black;
+    margin-bottom: 1rem;
+    font-size: $f2;
 
-  @include min-screen(768) {
-    font-size: 1.15em;
-    line-height: 1.6;
+    @include min-screen(768) {
+      font-size: $f1;
+      // max-width: $post-width * 1.25;
+    }
+
+    @include min-screen(1600) {
+      // max-width: $post-width * 1.35;
+    }
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+  h2.subtitle {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin: 0 0 1em 0;
+  }
+  h3,
+  h4,
+  h5 {
+    font-weight: 600;
+  }
+  p {
+    font-size: $fpost;
+    line-height: 1.5;
+    margin-bottom: 1.85rem;
+
+    @include min-screen(768) {
+      font-size: 1.15em;
+      line-height: 1.6;
+    }
   }
 
+  .author-link {
+    text-decoration: none;
+  }
+  .content {
+    max-width: $post-width;
+    img {
+      // margin: 2.75rem 0;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      word-wrap: break-word;
+    }
+    hr {
+      margin: 2.5rem 0;
+      max-width: $post-width
+    }
+  }
 }
-.post .content a {
-  word-wrap: break-word;
-}
-.post .content h2 {
-  margin-top: 2rem;
-  margin-bottom: 0.35rem;
-  font-weight: 600;
-  max-width: $post-width;
-}
-.post .content h3,
-.post .content h4,
-.post .content h5 {
-  font-weight: 600;
-}
-.post .content img {
-  // margin: 2.75rem 0;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.post .content hr {
-  margin: 2.5rem 0;
-  max-width: $post-width
-}
-.post .author-link {
-  text-decoration: none;
-}
-.content blockquote {
-  margin: 3rem 0;
-  font-style: italic;
-  font-family: $serif;
-  margin-left: -1.5rem;
-  padding-left: 1.5rem;
-  border-left: 2px solid $gray;
-}
-.content ul,
-.content ol {
-  font-size: $fpost;
-}
-.content ul,
-.content ol,
-.content .gist {
-  max-width: $post-width
+.content {
+  blockquote {
+    margin: 2rem 0;
+    font-size: .9em;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    border-left: 2px solid $gray;
+  }
+  ul,
+  ol {
+    font-size: $fpost;
+  }
+  ul,
+  ol,
+  .gist {
+    max-width: $post-width
+  }
 }
 
 /* Post meta */
 .post .meta {
   color: $gray;
   margin-bottom: 1.5rem;
-  
+
   @include min-screen(768) {
     margin-bottom: 2.5rem;
   }
