@@ -24,11 +24,18 @@
       <div class="pure-u-1 pure-u-md-1-3">
         <div class="project-description">
           <h1 class="project-name">{{project.name}}</h1>
-          <small class="project-client">Client: <a class="client-url no-underline" href="{{project.client_url}}">{{project.client}}</a></small>
+          <small class="project-client">Client: {{project.client}}</small>
 
           <p class="project-text">{{project.description}}</p>
 
-          <a class="pure-button project-button" href="{{project.url}}">Go to project</a>
+          {% if project.more_info %}
+            <a class="pure-button project-button" href="{{project.more_info_es}}">{% t read_story %}</a>
+          {% endif %}
+        
+          {% if project.url %}
+            <a class="pure-button project-button" href="{{project.url}}">Live project</a>
+          {% endif %}
+
         </div>
       </div>
     </div>

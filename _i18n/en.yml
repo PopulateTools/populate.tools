@@ -9,6 +9,7 @@ strategy_for_citizen_experiences: Strategy for citizen experiences
 data_vis_and_anal: Data visualization and analysis
 ruby_on_rails_consultancy: Ruby on Rails development
 transparency_and_participation: Transparency & participation
+read_story: Read story
 home:
   claim_1: Strategic design and technology for civic engagement
   claim_2: We help you create engaging experiences for citizens using data, design and efficient technology

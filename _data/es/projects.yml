@@ -6,11 +6,41 @@
   url: https://panamapapers.icij.org/
   client_url: https://icij.org/
 
+- name: Legislación Colaborativa
+  client: Ayuntamiento de Madrid
+  description: Hemos conceptualizado, diseñado y desarrollado en colaboración con Medialab-Praco y el Área de Participación del Ayuntamiento, el módulo de Legislación Colaborativa para el software Cónsul, la herramienta open source creada por el Ayuntamiento de Madrid para su web de participación decide.madrid.es.
+  img: projects/Legislacion-Mini-1.jpg
+  screen_1: projects/screens/Legislacion-1.jpg
+  more_info_es: /es/blog/populate-ayuntamiento-madrid
+
+- name: Comparador de presupuestos
+  client: Generalitat de Catalunya
+  description: La Generalitat de Catalunya ha incorporado en su web de transparencia (transparenciacatalunya.cat) el Comparador de Presupuestos Municipales de Gobierto. Esta herramienta permite la consulta, análisis y comparación de los presupuestos de todos los municipios de Catalunya. Este proyecto <a href="/es/blog/gobierto-premio-socrata">ha sido premiado en la conferencia anual de Socrata</a>.
+  img: projects/screens/GencatPresupuestos-2.jpg
+  screen_1: projects/screens/GencatPresupuestos-2.jpg
+  more_info: /es/blog/generalitat-catalunya
+  url: http://pressupostosmunicipals.transparenciacatalunya.cat/
+  client_url: http://transparenciacatalunya.cat/
+
+- name: Consulta y visualización sobre presupuestos
+  client: Ayuntamiento de Sencelles
+  description: Hemos diseñado una herramienta de participación para consultar a los vecinos sobre las prioridades en los presupuestos municipales.
+  img: projects/screens/Sencelles-Consultas-2.jpg
+  screen_1: projects/screens/Sencelles-Consultas-1.jpg
+  more_info: /es/blog/sencelles-consultas
+
+- name: Gobierto Altos Cargos y Agendas
+  client: Diputación de Valencia
+  description: Implantamos el módulo de Altos Cargos y Agendas para la Diputación de Valencia. Además del uso para la propia Diputación, ésta proporcionará el software para todos los municipios que lo deseen utilizar.
+  img: projects/gencat-presupuestos.png
+  screen_1: projects/screens/gencat-presupuestos-1.jpg
+  more_info: /es/blog/diputacion-de-valencia-gobierto
+
 - name: Offshore Leaks
   client: International Consortium of Investigative Journalists
   description: Trabajamos con el ICIJ (Consorcio Internacional de Periodistas de Investigación), una organización internacional con base en Estados Unidos, ayudándoles con diseño, visualización de datos, proyectos interactivos, experiencia de usuario y desarrollo.  Nuestro último proyecto con ellos ha sido la web global de los Papeles de Panamá y la base de datos.
-  img: projects/offshore-leaks.png
-  screen_1: projects/screens/offshore-leaks-1.png
+  img: projects/screens/ICIJ-OffshoreLeaks-2.jpg
+  screen_1: projects/screens/ICIJ-OffshoreLeaks-2.jpg
   url: https://offshoreleaks.icij.org/
   client_url: https://icij.org/
 
@@ -46,13 +76,6 @@
   url: http://earningsinspector.org/
   client_url: https://icij.org/
 
-- name: Comparador de presupuestos
-  client: Generalitat de Catalunya
-  description: La Generalitat de Catalunya ha incorporado en su web de transparencia (transparenciacatalunya.cat) el Comparador de Presupuestos Municipales desarrollado por Gobierto. Esta herramienta permite la consulta, análisis y comparación de los presupuestos de todos los municipios de Catalunya.
-  img: projects/gencat-presupuestos.png
-  screen_1: projects/screens/gencat-presupuestos-1.jpg
-  url: http://pressupostosmunicipals.transparenciacatalunya.cat/
-  client_url: http://transparenciacatalunya.cat/
 
 - name: Evicted and Abandoned
   client: International Consortium of Investigative Journalists
