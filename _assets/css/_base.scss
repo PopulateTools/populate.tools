@@ -162,11 +162,22 @@ body.about .container {
 .toc {
   font-size: .80em;
   line-height: 1.4;
+  width: 17%;
   ol {
     margin: 0;
     padding: 0;
     ol {
       margin: 0 0 0 1em;
+      display: none;
+    }
+  }
+  .active > a,
+  .active-child > a {
+    font-weight: bold;
+  }
+  .active-child {
+    ol {
+      display: block;
     }
   }
 }
