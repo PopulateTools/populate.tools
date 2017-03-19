@@ -44,6 +44,14 @@ body.post {
   }
 }
 
+.content img,
+article header img {
+  // margin: 2.75rem 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #DFDFDF;
+}
 .content {
   font-size: $fpost;
   line-height: 1.5;
@@ -55,14 +63,6 @@ body.post {
   @include min-screen(768) {
     font-size: 1.15em;
     line-height: 1.6;
-  }
-
-  img {
-    // margin: 2.75rem 0;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid #DFDFDF;
   }
   a {
     word-wrap: break-word;

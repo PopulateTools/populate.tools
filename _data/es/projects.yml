@@ -11,7 +11,7 @@
   description: Hemos conceptualizado, diseñado y desarrollado en colaboración con Medialab-Praco y el Área de Participación del Ayuntamiento, el módulo de Legislación Colaborativa para el software Cónsul, la herramienta open source creada por el Ayuntamiento de Madrid para su web de participación decide.madrid.es.
   img: projects/Legislacion-Mini-1.jpg
   screen_1: projects/screens/Legislacion-1.jpg
-  more_info_es: /es/blog/populate-ayuntamiento-madrid
+  more_info: /es/blog/populate-ayuntamiento-madrid
 
 - name: Comparador de presupuestos
   client: Generalitat de Catalunya
@@ -29,7 +29,7 @@
   screen_1: projects/screens/espana-en-cifras-1.jpg
   url: http://espanaencifras.elespanol.com/
   client_url: http://www.elespanol.com/
-  
+
 - name: Consulta y visualización sobre presupuestos
   client: Ayuntamiento de Sencelles
   description: Hemos diseñado una herramienta de participación para consultar a los vecinos sobre las prioridades en los presupuestos municipales.

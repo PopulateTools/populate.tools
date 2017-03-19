@@ -33,7 +33,17 @@ layout: default
       </div>
     </div>
 
-    <main class="content {{page.title | slugify}}">
+    {% if page.main_photo %}
+    <header>
+      {% if page.main_photo contains '://' %}
+        <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% img '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+    
+    <main class="content">
       {{ content }}
     </main>
 
