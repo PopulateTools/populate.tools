@@ -5,3 +5,4 @@
     <time class="article-time">{{post.date | date: "%b %-d, %Y"}}</time>
   </article>
 {% endfor %}
+<p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">{% t view_all %}</a></p>

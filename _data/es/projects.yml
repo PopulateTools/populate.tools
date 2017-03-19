@@ -22,6 +22,14 @@
   url: http://pressupostosmunicipals.transparenciacatalunya.cat/
   client_url: http://transparenciacatalunya.cat/
 
+- name: España en cifras
+  client: El Español
+  description: Proyecto de periodismo y datos abiertos para el nuevo medio digital El Español. España en Cifras es una web que te permite entender el estado de tu comunidad autónoma, provincia o municipio a través de sus indicadores económicos, demográficos, empleo, criminalidad, políticos…  Reunimos y procesamos más de 85 datasets diferentes y creamos un motor donde los indexamos.  El usuario puede consultar todos los indicadores, consumir visualizaciones y crear sus propias tablas de comparación.
+  img: projects/espana-en-cifras.png
+  screen_1: projects/screens/espana-en-cifras-1.jpg
+  url: http://espanaencifras.elespanol.com/
+  client_url: http://www.elespanol.com/
+  
 - name: Consulta y visualización sobre presupuestos
   client: Ayuntamiento de Sencelles
   description: Hemos diseñado una herramienta de participación para consultar a los vecinos sobre las prioridades en los presupuestos municipales.
@@ -43,14 +51,6 @@
   screen_1: projects/screens/ICIJ-OffshoreLeaks-2.jpg
   url: https://offshoreleaks.icij.org/
   client_url: https://icij.org/
-
-- name: España en cifras
-  client: El Español
-  description: Proyecto de periodismo y datos abiertos para el nuevo medio digital El Español. España en Cifras es una web que te permite entender el estado de tu comunidad autónoma, provincia o municipio a través de sus indicadores económicos, demográficos, empleo, criminalidad, políticos…  Reunimos y procesamos más de 85 datasets diferentes y creamos un motor donde los indexamos.  El usuario puede consultar todos los indicadores, consumir visualizaciones y crear sus propias tablas de comparación.
-  img: projects/espana-en-cifras.png
-  screen_1: projects/screens/espana-en-cifras-1.jpg
-  url: http://espanaencifras.elespanol.com/
-  client_url: http://www.elespanol.com/
 
 - name: Fatal Extraction
   client: International Consortium of Investigative Journalists
