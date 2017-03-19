@@ -5,6 +5,7 @@
 //= require vendor/packery.pkgd.min.js
 //= require vendor/imagesloaded.pkgd.min.js
 //= require vendor/blazy.min.js
+//= require vendor/contents.js
 
 $(document).ready(function() {
   /* Smooth scroll to anchor */
@@ -30,9 +31,15 @@ $(document).ready(function() {
   });
 
   /* Stick header */
-  if ($('.section_home .header').length > 0) {
+  if ($('.header').length > 0) {
     var sticky = new Waypoint.Sticky({
-      element: $('.section_home .header')[0]
+      element: $('.header')[0]
+    });
+  }
+
+  if ($('.toc').length > 0) {
+    var sticky = new Waypoint.Sticky({
+      element: $('.toc')[0]
     });
   }
 
@@ -98,5 +105,64 @@ $(document).ready(function() {
       $(this).after('<caption>' + $(this).attr('title') + '</caption></div>');
     }
   });
+
+  // TOC generator
+
+  var tocPresent = document.getElementsByClassName("toc");
+  if ((tocPresent).length > 0) {
+
+    var link,
+        contents;
+
+    link = function (guide, article) {
+        var guideLink,
+            anchor,
+            articleAnchor,
+            articleName,
+            articleId;
+
+        guide = $(guide);
+        article = $(article);
+
+        guideLink = $('<a>'),
+        anchor = $('<hr>'),
+        articleAnchor = article.find('h1'),
+        articleName = articleAnchor.text(),
+        articleId = gajus.contents.id(articleName);
+
+        anchor
+            .attr('id', articleId)
+            .insertBefore(article);
+
+        guideLink
+            .text(articleName)
+            .attr('href', '#' + articleId)
+            .prependTo(guide);
+    };
+
+    contents = gajus
+        .contents({
+            contents: $('.toc')[0],
+            articles: document.querySelectorAll('main.content h1, main.content h2, main.content h4, main.content h4')
+        });
+
+    contents.eventProxy.on('ready', function () {
+        // $('a').smoothScroll();
+
+    })
+    contents.eventProxy.on('change', function (data) {
+        if (data.previous) {
+            $(data.previous.guide)
+                .removeClass('active')
+                .parents('li')
+                .removeClass('active-child');
+        }
+
+        $(data.current.guide)
+            .addClass('active')
+            .parents('li')
+            .addClass('active-child');
+    });
+  }
 
 });

@@ -1,12 +1,11 @@
 /* Base */
 $post-width: 700px;
 
-body.post .container {
-  max-width: 900px;
-  margin: 2em 0;
-}
-
-body.post {
+body.post, body.report {
+  .container {
+    max-width: 900px;
+    margin: 2em 0;
+  }
   h1 {
     color: $black;
     margin-bottom: 1rem;
@@ -42,8 +41,25 @@ body.post {
   .author-link {
     text-decoration: none;
   }
+  .meta {
+    color: $gray;
+    margin-bottom: 1.5rem;
+
+    @include min-screen(768) {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
+body.report {
+  .container {
+    max-width: 1050px;
+    margin: 2em 0;
+  }
+  .content {
+    font-size: .9em;
+  }
+}
 .content img,
 article header img {
   // margin: 2.75rem 0;
@@ -112,27 +128,18 @@ article header img {
 }
 
 /* Post meta */
-.post .meta {
-  color: $gray;
-  margin-bottom: 1.5rem;
-
-  @include min-screen(768) {
-    margin-bottom: 2.5rem;
-  }
-
-}
 .post .info {
   display: inline-block;
   vertical-align: 5px;
 
 }
-.post .meta p {
+.meta p {
   margin-bottom: 0;
 }
-.post .meta time {
+.meta time {
   display: block;
 }
-.post .avatar {
+.avatar {
   display: inline-block;
   margin-right: 0.5rem;
   max-width: 45px;

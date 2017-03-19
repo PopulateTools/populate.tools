@@ -158,3 +158,29 @@ body.about .container {
     color: #FFF;
   }
 }
+
+.toc {
+  font-size: .80em;
+  line-height: 1.4;
+  ol {
+    margin: 0;
+    padding: 0;
+    ol {
+      margin: 0 0 0 1em;
+    }
+  }
+}
+
+.stuck {
+  max-width: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.toc.stuck {
+  top: 100px;
+  @include screen(768) {
+    display: none;
+  }
+}
