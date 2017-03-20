@@ -139,10 +139,9 @@ Las plataformas de participación de Madrid y Barcelona ([https://decide.madrid.
 Lo que sí tienen en común tanto Madrid como Barcelona es que además de los procesos “grandes” sobre presupuestos participativos realizan consultas puntuales a la ciudadanía sobre otras cuestiones, como el proceso de debate sobre la situación del Teatro Arnau (Barcelona) o la remodelación de la Plaza de España (Madrid).
 
 
-# Objetivos de los presupuestos participativos
+# Objetivos
 
-¿Cuales son los motivos que lleva a un ayuntamiento a hacer un presupuesto participativo?
-El objetivo principal es conseguir que los ciudadanos tengan voz y voto a la hora de establecer las necesidades más importantes de su municipio, que puedan establecer prioridades entre estas necesidades y controlar en todo momento el seguimiento de los compromisos que se hayan alcanzado. Otros beneficios que se persiguen con el proceso son:
+¿Cuales son los motivos que lleva a un ayuntamiento a hacer un presupuesto participativo? El objetivo principal es conseguir que los ciudadanos tengan voz y voto a la hora de establecer las necesidades más importantes de su municipio, que puedan establecer prioridades entre estas necesidades y controlar en todo momento el seguimiento de los compromisos que se hayan alcanzado. Otros beneficios que se persiguen con el proceso son:
 
 Mejorar la eficiencia presupuestaria: Muchos ojos ven más que unos pocos. Al compartir la toma de decisiones con los ciudadanos se pretende buscar soluciones que mejoren la vida de un mayor número de habitantes, y por tanto, que el dinero público se gaste donde realmente se necesita.
 Movilizar a los ciudadanos y ciudadanas para que no sean simples observadores y tomen un papel más activo en los problemas de su municipio
@@ -159,11 +158,13 @@ Plano de la participación simbólica: Los ciudadanos pueden escuchar, tener voz
 Plano del poder ciudadano: la ciudadanía participa en la toma de decisiones a través de mecanismos de negociación y acuerdo, o mediante auténtica delegación del poder.
 
 Por tanto, es importante que los impulsores de procesos de presupuestos participativos sean conscientes de los mecanismos de manipulación de que se sirve el poder para simular mayores niveles de democracia. El objetivo a corto y a medio plazo de estos procesos no es la participación masiva sino mejorar la calidad democrática de los ayuntamientos, contribuir a una mayor apertura.
-# Características de los presupuestos participativos
+
+
+# Características
+
 ## Metodología
 
 Para el análisis de las características de los procesos se han recopilado datos de las siguientes fuentes:
-
 
 Información y estadísticas oficiales publicadas por 49 ayuntamientos que han realizado procesos de presupuestos participativos en 2016 (para incluir las propuestas en el presupuesto de 2017) o están inmersos en el proceso durante 2017.
 A través de un cuestionario de elaboración propia respondido por los responsables de participación de 11 ayuntamientos. El cuestionario sigue abierto y cada caso adicional se añadirá en nuevas versiones de este documento. Si eres responsable de participación de un ayuntamiento y quieres responder el cuestionario, puedes hacerlo en este enlace.
@@ -220,7 +221,7 @@ En alguno de los procesos no es posible asegurar la fiabilidad de las cifras de 
 
 Uno de los casos más representativos en cuanto a tasa de participación es el proceso de participación sobre el Plan de Inversiones Municipal (2015-2019) de Badalona, con un 4,37 %.
 
-#### Municipios con procesos participativos (aprobados o en proceso) para el presupuesto de 2017.
+#### Municipios con procesos en 2017
 
 ¿No ves tu municipio? ¿hay alguna errata? Envíanos los datos.
 
@@ -248,6 +249,7 @@ El sesgo tecnológico afecta a los ayuntamientos que implantan sistemas de votac
 El escaso control en el registro de los participantes lleva a tasas artificiales de participación, como ya hemos visto, en varios casos. Sin embargo, un control excesivo puede conseguir el efecto contrario: Cuanto más complejo sea el proceso de registro (por ejemplo, con certificado electrónico o excesivo papeleo en el registro presencial) menos ciudadanos se animarán a participar.
 
 ## Planificación previa
+
 ### Definición del tipo de proceso
 
 Al tratarse de procesos no estandarizados y basados en normativas distintas, los presupuestos participativos que se han realizado hasta ahora tienen características y configuraciones muy variadas. En general podemos identificar tres clases de procesos atendiendo al calado de las medidas que se pretenden aprobar:
@@ -261,6 +263,7 @@ En España se han llevado a cabo pocos, pero destacan las experiencias de Badalo
 
 Pequeña infografía: Grado de dificultad, de - a +, (medidor de volumen triangular o calor):
 Medidas concretas -> Medidas a nivel de distrito -> Presupuesto anual -> PAM
+
 ### Formación del grupo motor
 
 Para que el proceso sea realmente abierto, el núcleo de la organización debe estar formado por representantes del ayuntamiento, de las asociaciones y de la ciudadanía no organizada. En los casos estudiados lo normal es que formen parte de este grupo motor dos o más técnicos de participación (asegurando que existan perfiles que gestionen la plataforma online de participación) uno o dos representantes de cada consejo sectorial, un representante por cada asociación de vecinos y un número equivalente de ciudadanos que quieran formar parte de la organización a título individual.
@@ -274,6 +277,7 @@ Responsables participación
 Responsables asociaciones
 Representantes consejos sectoriales
 Ciudadanos individuales
+
 ### Definición de las fases
 
 Las primeras experiencias de ciudades como París –con un primer proceso apresurado sin propuestas ciudadanas– demuestran que la planificación previa de las fases del proceso es fundamental. Uno de los problemas más citados por los ayuntamientos consultados es la sobrecarga de propuestas ciudadanas y reuniones, que pilla desprevenidos a los técnicos del ayuntamiento. Se dan muchos casos de propuestas que, por esta sobrecarga de trabajo, no han podido ser valoradas. Como resultado, algunas de ellas salen ganadoras y tienen que ser anuladas a posteriori, lo que provoca un malestar comprensible entre los participantes.
