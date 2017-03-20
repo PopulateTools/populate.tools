@@ -184,3 +184,10 @@ body.about .container {
     display: none;
   }
 }
+
+.separator {
+  border-bottom: 1px solid $border_light;
+  height: 1px;
+  width: 100%;
+  margin: 0 0 1.85rem 0;
+}
