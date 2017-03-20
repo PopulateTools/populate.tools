@@ -143,7 +143,7 @@ $(document).ready(function() {
     contents = gajus
         .contents({
             contents: $('.toc')[0],
-            articles: document.querySelectorAll('main.content h1, main.content h2, main.content h4, main.content h4')
+            articles: document.querySelectorAll('main.content h1, main.content h2, main.content h3, main.content h4')
         });
 
     contents.eventProxy.on('ready', function () {

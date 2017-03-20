@@ -167,6 +167,16 @@ body.about .container {
     padding: 0;
     ol {
       margin: 0 0 0 1em;
+      display: none;
+    }
+  }
+  .active > a,
+  .active-child > a {
+    font-weight: bold;
+  }
+  .active-child {
+    > ol {
+      display: block;
     }
   }
 }
@@ -180,6 +190,7 @@ body.about .container {
 
 .toc.stuck {
   top: 100px;
+  width: 17%;
   @include screen(768) {
     display: none;
   }
