@@ -21,7 +21,7 @@
           <h4>Estrategia</h4>
           <ul>
             <li>Definición de servicios y experiencias</li>
-            <li>Engagament</li>
+            <li>Engagement</li>
             <li>Comunicación</li>
           </ul>
         </div>

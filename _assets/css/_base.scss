@@ -157,6 +157,13 @@ body.about .container {
     background: #419D78;
     color: #FFF;
   }
+  &.section-color-1,
+  &.section-color-2,
+  &.section-color-3 {
+    a {
+      color: #FFF;
+    }
+  }
 }
 
 .toc {
