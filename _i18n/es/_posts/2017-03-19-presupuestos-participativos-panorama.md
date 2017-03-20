@@ -25,8 +25,11 @@ Del mismo modo, la participación ciudadana –y en un marco más amplio, todos 
 
 Este texto cubre distintos aspectos del fenómeno del presupuesto participativo y se ciñe exclusivamente a este fenómeno a nivel municipal. No contempla otros aspectos de la participación, aunque se mencionen tangencialmente para contextualizar y enriquecer el tema tratado.
 
-# Antecedentes en el extranjero
-## La semilla: Porto Alegre (Brasil)[^1]
+# Antecedentes
+
+## Extranjero
+
+### La semilla: Porto Alegre (Brasil)[^1]
 
 {% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Wadus wadus" %}
 
@@ -44,7 +47,6 @@ Después se establece un debate público para decidir los criterios de distribuc
 
 Como resultado, el número de viviendas públicas para nuevos residentes pasó de 1.700 en 1986 a 27.000 en 1989. El trazado del alcantarillado y agua potable llegaba al 70% de los hogares en 1988. En 1997 ya alcanzaba el 98%.
 
-## Otros casos internacionales
 ### Rosario (Argentina)[^2]
 
 {% img 'reports/1703_pparticipativos/rosario_argentina_04.jpg' class:'inline caption' title:"Wadus wadus" %}
@@ -103,32 +105,32 @@ Las propuestas sólo pueden ser votadas por jóvenes de entre 12 y 25 residentes
 Seleccionar cuatro propuestas (de entre diez) para realizar actuaciones concretas en la ciudad. Cada propuesta tiene un presupuesto y se deben colocar por orden de prioridad. Las propuestas más votadas se realizarán con cargo al millón de dólares reservado.
 Seleccionar cuatro áreas de actuación (de nuevo, de entre diez opciones) para que sean prioritarias en la actuación del consistorio durante el siguiente año. Esta parte no contempla presupuesto sino líneas de actuación de gobierno. Las áreas a priorizar son muy amplias: Medio Ambiente, Urbanismo, Cultura, Salud pública, Educación, etc.
 
-# Antecedentes en España[^7]
-## Los municipios vascos
+## Antecedentes en España[^7]
+### Los municipios vascos
 Los primeros experimentos de propuestas ciudadanas para hacer uso del dinero público se pueden rastrear en los años 90 en Euskadi. Con frecuencia se citan los casos de municipios como Idiazábal o Astigarraga, donde se realizaron pequeñas consultas para decidir el emplazamiento de instalaciones deportivas (un campo de fútbol y un frontón).
 
 
-## Las iniciativas andaluzas
+### Las iniciativas andaluzas
 En 2001 en tres municipios de Andalucía se realizaron pruebas piloto de presupuestos participativos[^8]: Cabezas de San Juan, Córdoba y Puente Genil. En los años siguientes la experiencia se replicó en municipios grandes y pequeños como Sevilla, Torreperogil o Puerto Real. En 2008 Málaga y Sevilla fueron la cabeza visible de un intento de mejorar la participación en toda la comunidad Andaluza: La semilla se plantó en las Jornadas Internacionales de Presupuestos Participativos que convocó la Diputación de Málaga, con la colaboración de los Ayuntamientos de Córdoba y Sevilla, FAMSI y la Red FAL. En este encuentro se constituyó el Grupo de Trabajo de Presupuestos Participativos de la Red FAL y se aprobó la Declaración de Málaga como documento base del grupo. Posteriormente se redactó el anteproyecto de la Ley de Participación Ciudadana de Andalucía[^9], que ya contemplaba los presupuestos participativos, aunque como procesos de carácter consultivo y no vinculante.
 
 {% img 'reports/1703_pparticipativos/cordoba_01.jpg' class:'inline caption' title:"Wadus wadus" %}
 
-## Otros municipios
+### Otros municipios
 Además de los municipios andaluces, entre 2008 y 2011 se realizaron experiencias de presupuesto participativo en Albacete, San Sebastián, Getafe, Petrer, Sabadell, Leganés, Torrellano, Novelda y Santa Cristina d’Aro, entre otros.
 
 
-## Irekia
+### Irekia
 
 [http://www.irekia.euskadi.eus/](Irekia), (“Abierto” en euskera) es el portal pionero en llevar a la práctica las teorías de gobierno abierto en las autonomías. Entró en funcionamiento en 2010 y fue el primero en combinar transparencia y participación con un diseño pensado desde el principio para facilitar la experiencia de usuario (en este caso, ciudadano). El modelo de participación va en dos direcciones: Por un lado el ejecutivo vasco publica sus iniciativas de gobierno en forma de agenda legislativa. Esta agenda está abierta a las opiniones y aportaciones de toda la sociedad civil.
 
 Por otro lado, permite realizar propuestas ciudadanas, que se mantienen públicas y abiertas para recoger más aportaciones y generar debate público. No es un antecedente del presupuesto participativo tal y como lo entendemos en este texto pero sí una de las primeras iniciativas para que los ciudadanos puedan presentar sus propuestas de forma estructurada a través de una plataforma online.
 
 
-## Gobierno de Aragón
+### Gobierno de Aragón
 Además de producir un software open data propio, el [http://aragonparticipa.aragon.es/](Gobierno de Aragón) impulsa desde hace más de una década modelos participativos de corte clásico en su web: vertebra la participación en torno a procesos: el gobierno abre un determinado proceso (ley de seguridad vial, plan de empleo público…) y los ciudadanos aportan ideas que más tarde pasan el filtro técnico, después se someten a aprobación parlamentaria y finalmente se publican. Al igual que Irekia, es más un antecedente de adaptación tecnológica a los modelos de participación.
 
 
-## La nueva ola de participación post 15-M
+### La nueva ola de participación post 15-M
 Las agrupaciones que gobiernan las dos mayores ciudades de España –Ahora Madrid y Guanyem Barcelona– nacieron con la pretensión de dar respuesta política a las demandas ciudadanas surgidas en el 15-M. Por tanto, los gobiernos de Madrid y Barcelona vertebran su discurso político en torno a la participación ciudadana: ambos ayuntamientos cuentan con plataformas on-line de participación propias, así como estrategias  y áreas de participación con un peso específico considerable dentro del organigrama municipal. Durante los últimos dos años han lanzado procesos participativos experimentales que han seguido después otras ciudades españolas como A Coruña, Alicante, Cádiz, Palma de Mallorca, Oviedo, Tarragona o Valencia.
 
 {% img 'reports/1703_pparticipativos/barcelona_02.png' class:'inline caption' title:"Wadus wadus" %}
@@ -388,7 +390,7 @@ Votación de propuestas
 Difusión
 Seguimiento
 
-# Retos y dificultades de los presupuestos participativos
+# Retos y dificultades
 
 Los representantes de los procesos consultados han relatado en nuestro cuestionario los principales retos que se plantean de cara a su próximo presupuesto participativo. Unos acaban de hacer su primer proceso y tienen mucho margen de mejora, otros lo han realizado durante varios años y se plantean mejoras de calado más amplio. A continuación se detallan los más comunes:
 
@@ -476,7 +478,9 @@ Las propuestas ciudadanas que se presentan en la mayoría de procesos son muy co
 
 Por último, la transparencia sobre el propio proceso genera confianza y posibilidad de movilizar a otros sectores de la ciudadanía en el siguiente. Incluso si los resultados no son los esperados, es fundamental mostrar todos los datos del proceso, especialmente la tasa de participación. Del mismo modo, el seguimiento periódico y publicación transparente del estado de realización de las propuestas creará un clima de normalidad y confianza entre los ciudadanos.
 
-# Bibliografía
+# Bibliografía y Notas
+
+## Bibliografía
 
 [http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q](Guía metodológica de los presupuestos participativos), Francisco Francés García y Antonio Carrillo Cano.
 [http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto](Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
@@ -491,7 +495,7 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 [https://pbnetwork.org.uk/](PB Network)
 
 
-# Notas
+## Notas
 
 [^1]: [http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf](Participatory budgeting in Brazil, World Bank).
 [^2]: [http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo](Página web de los presupuestos participativos del Ayuntamiento de Rosario).
