@@ -2,20 +2,30 @@
   <div class="hero-logo">
     <div class="container">
       {% img 'logo' class:'pure-img' alt:'Populate' %}
-      <div class="lang-switcher"><a href="#" class="active">EN</a> <a href="#">ES</a></div>
+      <div class="lang-switcher">
+        {% if site.lang == "es" %}
+          {% capture link1 %}{{ site.baseurl_root }}/{% endcapture %}
+          <span>ES</span>
+          <span><a class="active" href="{{ link1 }}" >EN</a></span>
+        {% elsif site.lang == "en" %}
+          {% capture link2 %}{{ site.baseurl_root }}es{% endcapture %}
+          <span><a class="active" href="{{ link2 }}" >ES</a></span>
+          <span>EN</span>
+        {% endif %}
+      </div>
     </div>
   </div>
-  
+
   <div class="hero-content">
     <div class="container relative">
       <div class="hero-lead">
-        <h1 class="hero-headline">Strategic design and technology for civic engagement</h1>
-        <h2 class="hero-subheading">We help you create engaging experiences for citizens using data, design and efficient technology</h2>
+        <h1 class="hero-headline">{% t home.claim_1 %}</h1>
+        <h2 class="hero-subheading">{% t home.claim_2 %}</h2>
         <div class="hero-list pure-g">
-          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p>Strategy for citizen experiences</p></div>
-          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p>Data visualization and analysis</p></div>
-          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p>Ruby on Rails development</p></div>
-          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p>Transparency & participation</p></div>
+          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p><a href="">{% t strategy_for_citizen_experiences %}</a></p></div>
+          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p><a href="">{% t data_vis_and_anal %}</a></p></div>
+          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p><a href="">{% t ruby_on_rails_consultancy %}</a></p></div>
+          <div class="pure-u-1 pure-u-md-1-4 hero-point"><p><a href="">{% t transparency_and_participation %}</a></p></div>
         </div>
       </div>
     </div>

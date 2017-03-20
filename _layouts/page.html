@@ -1,17 +1,5 @@
 ---
 layout: default
 ---
-
 {% include header.html %}
-
-<article>
-<h1>{{page.title}}</h1>
-
-{% if page.subtitle %}
-  <h2>{{page.subtitle}}</h2>
-{% endif %}
-
-<main class="content {{page.title | slugify}}">
-  {{ content }}
-</main>
-</article>
+{{ content }}

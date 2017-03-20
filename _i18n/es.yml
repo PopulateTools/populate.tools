@@ -1,1 +1,21 @@
-newsletter: Apúntate a nuestra newsletter
+get_on_our_weekly_newsletter: Apúntate a nuestra newsletter
+products: Productos
+projects: Proyectos
+news: Noticias
+clients: Clientes
+about: Acerca de
+team: Equipo
+strategy_for_citizen_experiences: Estrategia para experiencias ciudadanas
+data_vis_and_anal: Visualización de datos
+ruby_on_rails_consultancy: Consultoría Ruby on Rails
+transparency_and_participation: Transparencia y participación
+read_story: Leer historia
+view_all: Ver todos
+last_articles: Últimos artículos
+home:
+  claim_1: Diseño estratégico y tecnología para la implicación ciudadana
+  claim_2: Te ayudamos a crear experiencias para ciudadanos a partir de datos, diseño y tecnología eficiente
+titles:
+  about_populate: Acerca de Populate
+meta_description:
+  home: Diseño y tecnología para la implicación ciudadana. Visualización de datos, desarrollo Ruby On Rails, implantación de herramientas y estrategias de participación y transparencia.
