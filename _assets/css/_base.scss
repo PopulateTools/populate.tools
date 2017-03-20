@@ -162,7 +162,6 @@ body.about .container {
 .toc {
   font-size: .80em;
   line-height: 1.4;
-  width: 17%;
   ol {
     margin: 0;
     padding: 0;
@@ -176,7 +175,7 @@ body.about .container {
     font-weight: bold;
   }
   .active-child {
-    ol {
+    > ol {
       display: block;
     }
   }
@@ -191,6 +190,7 @@ body.about .container {
 
 .toc.stuck {
   top: 100px;
+  width: 17%;
   @include screen(768) {
     display: none;
   }

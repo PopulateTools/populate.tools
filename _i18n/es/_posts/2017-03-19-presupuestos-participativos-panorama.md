@@ -28,8 +28,7 @@ Este texto cubre distintos aspectos del fenómeno del presupuesto participativo 
 # Antecedentes en el extranjero
 ## La semilla: Porto Alegre (Brasil)[^1]
 
-
-![imagen](Porto_Alegre_skyline.jpg)
+{% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Wadus wadus" %}
 
 A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty](pobreza extrema). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
 
@@ -48,7 +47,7 @@ Como resultado, el número de viviendas públicas para nuevos residentes pasó d
 ## Otros casos internacionales
 ### Rosario (Argentina)[^2]
 
-![imagen](rosario_argentina_04.jpg)
+{% img 'reports/1703_pparticipativos/rosario_argentina_04.jpg' class:'inline caption' title:"Wadus wadus" %}
 
 Este municipio argentino fue el primero de su país en implantar un presupuesto participativo. El proceso se inició por primera vez en 2002 [^3] para decidir los presupuestos de 2003. En la actualidad los ciudadanos votan dos tipos de propuestas: una para su barrio y otra para su distrito. Del 18 al 28 de noviembre de 2016 votaron 66.718 ciudadanos. Se presentaron 134 proyectos, ganaron 54 y se destinaron 209 millones de dólares del presupuesto.
 
@@ -63,8 +62,7 @@ Inclusión e integración social y urbana.
 
 ### Nueva York (EEUU)[^4]
 
-
-![imagen](new_york_01.png)
+{% img 'reports/1703_pparticipativos/new_york_01.png' class:'inline caption' title:"Wadus wadus" %}
 
 Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito. [http://council.nyc.gov/pb/](En el último proceso (2016-2017)) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
 
@@ -78,8 +76,7 @@ Para recoger propuestas se exige que existan al menos tres reuniones públicas c
 
 ### París (Francia)[^5]
 
-
-![imagen](paris_02.png)
+{% img 'reports/1703_pparticipativos/paris_02.png' class:'inline caption' title:"Wadus wadus" %}
 
 La capital francesa inició sus presupuestos participativos en 2014 y ha aumentado la participación cada año, pasando de 40.000 votantes (2014) a 158.000 (2016). En 2016 el importe para gastar en propuestas ciudadanas ascendía a 100 millones de euros.
 
@@ -93,8 +90,7 @@ Las primeras iniciativas presentadas por los ciudadanos eran de carácter muy es
 
 ### Boston (EEUU)[^6]
 
-
-![imagen](boston_02.jpg)
+{% img 'reports/1703_pparticipativos/boston_02.jpg' class:'inline caption' title:"Wadus wadus" %}
 
 En 2013-2014 Boston llevó a cabo la primera iniciativa de presupuestos participativos jóvenes de Estados Unidos. El proceso estaba abierto a todos los ciudadanos de edades comprendidas entre los 12 a los 25 años. Se asignó un millón de dólares y participaron 1.500 jóvenes de la ciudad. En 2016 la participación subió a 4.482.
 
@@ -115,13 +111,14 @@ Los primeros experimentos de propuestas ciudadanas para hacer uso del dinero pú
 ## Las iniciativas andaluzas
 En 2001 en tres municipios de Andalucía se realizaron pruebas piloto de presupuestos participativos[^8]: Cabezas de San Juan, Córdoba y Puente Genil. En los años siguientes la experiencia se replicó en municipios grandes y pequeños como Sevilla, Torreperogil o Puerto Real. En 2008 Málaga y Sevilla fueron la cabeza visible de un intento de mejorar la participación en toda la comunidad Andaluza: La semilla se plantó en las Jornadas Internacionales de Presupuestos Participativos que convocó la Diputación de Málaga, con la colaboración de los Ayuntamientos de Córdoba y Sevilla, FAMSI y la Red FAL. En este encuentro se constituyó el Grupo de Trabajo de Presupuestos Participativos de la Red FAL y se aprobó la Declaración de Málaga como documento base del grupo. Posteriormente se redactó el anteproyecto de la Ley de Participación Ciudadana de Andalucía[^9], que ya contemplaba los presupuestos participativos, aunque como procesos de carácter consultivo y no vinculante.
 
+{% img 'reports/1703_pparticipativos/cordoba_01.jpg' class:'inline caption' title:"Wadus wadus" %}
 
-![imagen](cordoba_01.jpg)
 ## Otros municipios
 Además de los municipios andaluces, entre 2008 y 2011 se realizaron experiencias de presupuesto participativo en Albacete, San Sebastián, Getafe, Petrer, Sabadell, Leganés, Torrellano, Novelda y Santa Cristina d’Aro, entre otros.
 
 
 ## Irekia
+
 [http://www.irekia.euskadi.eus/](Irekia), (“Abierto” en euskera) es el portal pionero en llevar a la práctica las teorías de gobierno abierto en las autonomías. Entró en funcionamiento en 2010 y fue el primero en combinar transparencia y participación con un diseño pensado desde el principio para facilitar la experiencia de usuario (en este caso, ciudadano). El modelo de participación va en dos direcciones: Por un lado el ejecutivo vasco publica sus iniciativas de gobierno en forma de agenda legislativa. Esta agenda está abierta a las opiniones y aportaciones de toda la sociedad civil.
 
 Por otro lado, permite realizar propuestas ciudadanas, que se mantienen públicas y abiertas para recoger más aportaciones y generar debate público. No es un antecedente del presupuesto participativo tal y como lo entendemos en este texto pero sí una de las primeras iniciativas para que los ciudadanos puedan presentar sus propuestas de forma estructurada a través de una plataforma online.
@@ -134,8 +131,8 @@ Además de producir un software open data propio, el [http://aragonparticipa.ara
 ## La nueva ola de participación post 15-M
 Las agrupaciones que gobiernan las dos mayores ciudades de España –Ahora Madrid y Guanyem Barcelona– nacieron con la pretensión de dar respuesta política a las demandas ciudadanas surgidas en el 15-M. Por tanto, los gobiernos de Madrid y Barcelona vertebran su discurso político en torno a la participación ciudadana: ambos ayuntamientos cuentan con plataformas on-line de participación propias, así como estrategias  y áreas de participación con un peso específico considerable dentro del organigrama municipal. Durante los últimos dos años han lanzado procesos participativos experimentales que han seguido después otras ciudades españolas como A Coruña, Alicante, Cádiz, Palma de Mallorca, Oviedo, Tarragona o Valencia.
 
-![imagen](barcelona_02.png)
-![imagen](madrid_01.png)
+{% img 'reports/1703_pparticipativos/barcelona_02.png' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/madrid_01.png' class:'inline caption' title:"Wadus wadus" %}
 
 Las plataformas de participación de Madrid y Barcelona ([https://decide.madrid.es/](Decide Madrid) y [https://decidim.barcelona](Decidim Barcelona)) son similares porque tienen un inicio común, pero sus procesos son ligeramente distintos. En Barcelona se ha realizado una consulta general con respecto al Plan de Acción Municipal (medidas a tomar durante los cuatro años de legislatura) y ahora se están realizando consultas a nivel de distrito. Estas consultas sirven como piloto para un presupuesto participativo anual completo el año próximo. En Madrid ya se ha realizado un presupuesto participativo de carácter anual para toda la ciudad; y está en proceso el siguiente, con un aumento del presupuesto destinado: de 58 a 100 millones de euros.
 
@@ -434,15 +431,14 @@ No poder combinar los espacios presenciales y las herramientas tecnológicas de 
 
 ## Problemas de la ciudadanía
 
-
-Falta de motivación y dificultades en la comprensión de conceptos presupuestarios.
-La acción de los lobbies a veces provoca tasas de participación artificiales y sesgos en la representatividad.
-Poca movilización en algunos sectores de la población, como jóvenes e inmigrantes.
-Dificultad para consensuar el papel de las asociaciones durante el proceso.
-Ciudadanos que se registran en la plataforma de participación pero no completan el proceso, por ser demasiado largo o poco comprensible.
-El papel de las asociaciones vecinales: Tradicionalmente las asociaciones han mediado entre el ayuntamiento y la ciudadanía. Esta mediación es indispensable en un proceso participativo, sobre todo en los aspectos de información, coordinación y movilización ciudadana. Pero esta relación no está exenta de fricciones. En muchos procesos, las asociaciones quieren seguir teniendo el mismo papel representativo que han tenido hasta ahora como catalizadoras de los intereses generales de los vecinos. Es decir, tener capacidad de aprobar o denegar propuestas en base a su criterio sobre el interés general. Algunos representantes de participación consideran que las asociaciones de vecinos tienen una visión más amplia y su mediación es beneficiosa, otros abogan directamente por suprimir ese papel decisorio (que no el informativo, de coordinación y movilización).
-Existen casos en los que se admite ese filtro previo –por ejemplo, en el último proceso de PAM en Barcelona– o en los presupuestos participativos de Logroño. Y otros en los que desaparece o tiene carácter orientativo. Es el caso del proceso del PAM de Badalona: Las asociaciones no tenían poder para aprobar o denegar propuestas pero sí un matiz de orientación: Ordenaban las propuestas que luego se presentaban al ciudadano. Es un matiz pequeño pero importante de cara a la toma de decisión final.
-El derecho a no participar: Nos encontramos en un momento de especial precariedad laboral y graves problemas de conciliación familiar. Muchos ciudadanos simplemente no tienen tiempo de estudiar todo lo que haría falta para presentar una propuesta viable sobre determinados temas. No pueden participar pero sí quieren decidir. Es especialmente en estos casos cuando las asociaciones vecinales reivindican su papel. Enrique Villalobos, presidente de la Federación Regional de Asociaciones Vecinales de Madrid, explica que “Por la experiencia, la gente realmente activista de las asociaciones acaba teniendo mucha experiencia sobre temas concretos: Cómo se hacen las licitaciones, competencias del ayuntamiento, tiempos de resolución… Muchos vecinos no tienen tiempo de estudiarse una ordenanza de ruidos, por eso delegan su poder de decisión en las asociaciones”.
+- Falta de motivación y dificultades en la comprensión de conceptos presupuestarios.
+- La acción de los lobbies a veces provoca tasas de participación artificiales y sesgos en la representatividad.
+- Poca movilización en algunos sectores de la población, como jóvenes e inmigrantes.
+- Dificultad para consensuar el papel de las asociaciones durante el proceso.
+- Ciudadanos que se registran en la plataforma de participación pero no completan el proceso, por ser demasiado largo o poco comprensible.
+- El papel de las asociaciones vecinales: Tradicionalmente las asociaciones han mediado entre el ayuntamiento y la ciudadanía. Esta mediación es indispensable en un proceso participativo, sobre todo en los aspectos de información, coordinación y movilización ciudadana. Pero esta relación no está exenta de fricciones. En muchos procesos, las asociaciones quieren seguir teniendo el mismo papel representativo que han tenido hasta ahora como catalizadoras de los intereses generales de los vecinos. Es decir, tener capacidad de aprobar o denegar propuestas en base a su criterio sobre el interés general. Algunos representantes de participación consideran que las asociaciones de vecinos tienen una visión más amplia y su mediación es beneficiosa, otros abogan directamente por suprimir ese papel decisorio (que no el informativo, de coordinación y movilización).
+- Existen casos en los que se admite ese filtro previo –por ejemplo, en el último proceso de PAM en Barcelona– o en los presupuestos participativos de Logroño. Y otros en los que desaparece o tiene carácter orientativo. Es el caso del proceso del PAM de Badalona: Las asociaciones no tenían poder para aprobar o denegar propuestas pero sí un matiz de orientación: Ordenaban las propuestas que luego se presentaban al ciudadano. Es un matiz pequeño pero importante de cara a la toma de decisión final.
+- El derecho a no participar: Nos encontramos en un momento de especial precariedad laboral y graves problemas de conciliación familiar. Muchos ciudadanos simplemente no tienen tiempo de estudiar todo lo que haría falta para presentar una propuesta viable sobre determinados temas. No pueden participar pero sí quieren decidir. Es especialmente en estos casos cuando las asociaciones vecinales reivindican su papel. Enrique Villalobos, presidente de la Federación Regional de Asociaciones Vecinales de Madrid, explica que “Por la experiencia, la gente realmente activista de las asociaciones acaba teniendo mucha experiencia sobre temas concretos: Cómo se hacen las licitaciones, competencias del ayuntamiento, tiempos de resolución… Muchos vecinos no tienen tiempo de estudiarse una ordenanza de ruidos, por eso delegan su poder de decisión en las asociaciones”.
 
 ## Problemas de organización
 
@@ -477,6 +473,7 @@ Las propuestas ciudadanas que se presentan en la mayoría de procesos son muy co
 Por último, la transparencia sobre el propio proceso genera confianza y posibilidad de movilizar a otros sectores de la ciudadanía en el siguiente. Incluso si los resultados no son los esperados, es fundamental mostrar todos los datos del proceso, especialmente la tasa de participación. Del mismo modo, el seguimiento periódico y publicación transparente del estado de realización de las propuestas creará un clima de normalidad y confianza entre los ciudadanos.
 
 # Bibliografía
+
 [http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q](Guía metodológica de los presupuestos participativos), Francisco Francés García y Antonio Carrillo Cano.
 [http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto](Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
 [www.ciudadesparticipativas.eu/app/download/5801028677/Estudio_comparativo.pdf](Estudio comparativo de los presupuestos participativos en República Dominicana, España y Uruguay), Giovanni Allegretti (coord.).
@@ -490,7 +487,7 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 [https://pbnetwork.org.uk/](PB Network)
 
 
-*Notas:*
+# Notas
 
 [^1]: [http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf](Participatory budgeting in Brazil, World Bank).
 [^2]: [http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo](Página web de los presupuestos participativos del Ayuntamiento de Rosario).
