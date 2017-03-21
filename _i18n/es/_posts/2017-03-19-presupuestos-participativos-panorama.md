@@ -28,11 +28,11 @@ Este texto cubre distintos aspectos del fenómeno del presupuesto participativo 
 
 ## Extranjero
 
-### La semilla: Porto Alegre (Brasil)[^1]
+### La semilla: Porto Alegre (Brasil)
 
 {% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Vista de la ciudad brasileña de Porto Alegre, por Eurivan Barbosa (CC BY-SA 3.0)" %}
 
-A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [pobreza extrema](http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
+A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil[^1]. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [pobreza extrema](http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
 
 El modelo de participación de Porto Alegre se cimenta sobre reuniones presenciales que tienen lugar a lo largo de varios meses. Hay tres tipos de reuniones:
 
@@ -46,11 +46,11 @@ Después se establece un debate público para decidir los criterios de distribuc
 
 Como resultado, el número de viviendas públicas para nuevos residentes pasó de 1.700 en 1986 a 27.000 en 1989. El trazado del alcantarillado y agua potable llegaba al 70% de los hogares en 1988. En 1997 ya alcanzaba el 98%.
 
-### Rosario (Argentina)[^2]
+### Rosario (Argentina)
 
 {% img 'reports/1703_pparticipativos/rosario_argentina_04.jpg' class:'inline caption' title:"Asambleas del presupuestos participativo de 2015 en en Rosario, Argentina. Imagen procedente de la página web de Rosario" %}
 
-Este municipio argentino fue el primero de su país en implantar un presupuesto participativo. El proceso se inició por primera vez en 2002 [^3] para decidir los presupuestos de 2003. En la actualidad los ciudadanos votan dos tipos de propuestas: una para su barrio y otra para su distrito. Del 18 al 28 de noviembre de 2016 votaron 66.718 ciudadanos. Se presentaron 134 proyectos, ganaron 54 y se destinaron 209 millones de dólares del presupuesto.
+Este municipio argentino fue el primero de su país en implantar un presupuesto participativo[^2]. El proceso se inició por primera vez en 2002 [^3] para decidir los presupuestos de 2003. En la actualidad los ciudadanos votan dos tipos de propuestas: una para su barrio y otra para su distrito. Del 18 al 28 de noviembre de 2016 votaron 66.718 ciudadanos. Se presentaron 134 proyectos, ganaron 54 y se destinaron 209 millones de dólares del presupuesto.
 
 Algunas particularidades del proceso:
 
@@ -60,11 +60,11 @@ Algunas particularidades del proceso:
   2. Sostenibilidad, higiene urbana y movilidad.
   3. Inclusión e integración social y urbana.
 
-### Nueva York (EEUU)[^4]
+### Nueva York (EEUU)
 
 {% img 'reports/1703_pparticipativos/new_york_01.png' class:'inline caption' title:"Visualización del gasto por distrito y tipo de proyectos aprobados. Página web del ayuntamiento de Nueva York" %}
 
-Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito. [En el último proceso (2016-2017)](http://council.nyc.gov/pb/) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
+Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito[^4]. [En el último proceso (2016-2017)](http://council.nyc.gov/pb/) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
 
 Algunas particularidades del proceso:
 
@@ -72,11 +72,11 @@ Algunas particularidades del proceso:
 * El proceso dura todo el año. Se programan reuniones informativas previas para que cualquier vecino y especialmente los delegados de distrito sepan qué tipo de propuestas entran dentro de las competencias del ayuntamiento.
 * Para recoger propuestas se exige que existan al menos tres reuniones públicas con miembros infrarrepresentados de la comunidad como residentes de habla no inglesa, mayores, beneficiarios de casas públicas… De esta forma se intenta corregir el sesgo producido por la sobrerrepresentación de otras grupos de vecinos y grupos de presión.
 
-### París (Francia)[^5]
+### París (Francia)
 
 {% img 'reports/1703_pparticipativos/paris_02.png' class:'inline caption' title:"Proyectos aprobados en la página web de los presupuestos participativos de París" %}
 
-La capital francesa inició sus presupuestos participativos en 2014 y ha aumentado la participación cada año, pasando de 40.000 votantes (2014) a 158.000 (2016). En 2016 el importe para gastar en propuestas ciudadanas ascendía a 100 millones de euros.
+La capital francesa inició sus presupuestos participativos en 2014 y ha aumentado la participación cada año, pasando de 40.000 votantes (2014) a 158.000 (2016). En 2016 el importe para gastar en propuestas ciudadanas ascendía a 100 millones de euros[^5].
 
 Algunas particularidades del proceso:
 
@@ -84,11 +84,11 @@ Algunas particularidades del proceso:
 * En 2015 el consistorio puso a disposición de todos los parisinos una plataforma web mediante la cual se presentaron 5.000 propuestas.
 * Las primeras iniciativas presentadas por los ciudadanos eran de carácter muy específico, como pequeñas mejoras de carácter urbanístico.
 
-### Boston (EEUU)[^6]
+### Boston (EEUU)
 
 {% img 'reports/1703_pparticipativos/boston_02.jpg' class:'inline caption' title:"Reuniones de presupuestos participativo del programa Youth Lead the Change. Imagen procedente de la página web del Ayuntamiento de Boston" %}
 
-En 2013-2014 Boston llevó a cabo la primera iniciativa de presupuestos participativos jóvenes de Estados Unidos. El proceso estaba abierto a todos los ciudadanos de edades comprendidas entre los 12 a los 25 años. Se asignó un millón de dólares y participaron 1.500 jóvenes de la ciudad. En 2016 la participación subió a 4.482.
+En 2013-2014 Boston llevó a cabo la primera iniciativa de presupuestos participativos jóvenes de Estados Unidos. El proceso estaba abierto a todos los ciudadanos de edades comprendidas entre los 12 a los 25 años. Se asignó un millón de dólares y participaron 1.500 jóvenes de la ciudad. En 2016 la participación subió a 4.482[^6].
 
 Algunas particularidades del proceso:
 
@@ -97,14 +97,15 @@ Algunas particularidades del proceso:
   1. Seleccionar cuatro propuestas (de entre diez) para realizar actuaciones concretas en la ciudad. Cada propuesta tiene un presupuesto y se deben colocar por orden de prioridad. Las propuestas más votadas se realizarán con cargo al millón de dólares reservado.
   2. Seleccionar cuatro áreas de actuación (de nuevo, de entre diez opciones) para que sean prioritarias en la actuación del consistorio durante el siguiente año. Esta parte no contempla presupuesto sino líneas de actuación de gobierno. Las áreas a priorizar son muy amplias: Medio Ambiente, Urbanismo, Cultura, Salud pública, Educación, etc.
 
-## Antecedentes en España[^7]
+## Antecedentes en España
 
 ### Los municipios vascos
 
 Los primeros experimentos de propuestas ciudadanas para hacer uso del dinero público se pueden rastrear en los años 90 en Euskadi. Con frecuencia se citan los casos de municipios como Idiazábal o Astigarraga, donde se realizaron pequeñas consultas para decidir el emplazamiento de instalaciones deportivas (un campo de fútbol y un frontón).
 
 ### Las iniciativas andaluzas
-En 2001 en tres municipios de Andalucía se realizaron pruebas piloto de presupuestos participativos[^8]: Cabezas de San Juan, Córdoba y Puente Genil. En los años siguientes la experiencia se replicó en municipios grandes y pequeños como Sevilla, Torreperogil o Puerto Real. En 2008 Málaga y Sevilla fueron la cabeza visible de un intento de mejorar la participación en toda la comunidad Andaluza: La semilla se plantó en las Jornadas Internacionales de Presupuestos Participativos que convocó la Diputación de Málaga, con la colaboración de los Ayuntamientos de Córdoba y Sevilla, FAMSI y la Red FAL. En este encuentro se constituyó el Grupo de Trabajo de Presupuestos Participativos de la Red FAL y se aprobó la Declaración de Málaga como documento base del grupo. Posteriormente se redactó el anteproyecto de la Ley de Participación Ciudadana de Andalucía[^9], que ya contemplaba los presupuestos participativos, aunque como procesos de carácter consultivo y no vinculante.
+
+En 2001 en tres municipios de Andalucía se realizaron pruebas piloto de presupuestos participativos[^7]: Cabezas de San Juan, Córdoba y Puente Genil. En los años siguientes la experiencia se replicó en municipios grandes y pequeños como Sevilla, Torreperogil o Puerto Real. En 2008 Málaga y Sevilla fueron la cabeza visible de un intento de mejorar la participación en toda la comunidad Andaluza: La semilla se plantó en las Jornadas Internacionales de Presupuestos Participativos que convocó la Diputación de Málaga, con la colaboración de los Ayuntamientos de Córdoba y Sevilla, FAMSI y la Red FAL. En este encuentro se constituyó el Grupo de Trabajo de Presupuestos Participativos de la Red FAL y se aprobó la Declaración de Málaga como documento base del grupo. Posteriormente se redactó el anteproyecto de la Ley de Participación Ciudadana de Andalucía[^8], que ya contemplaba los presupuestos participativos, aunque como procesos de carácter consultivo y no vinculante.
 
 {% img 'reports/1703_pparticipativos/cordoba_01.jpg' class:'inline caption' title:"Reunión vecinal en Córdoba. Imagen procedente de www.nuestracordoba.org" %}
 
@@ -144,7 +145,7 @@ Lo que sí tienen en común tanto Madrid como Barcelona es que además de los pr
 
 La demanda ciudadana surgida tras la crisis económica han empujado a muchos ayuntamientos a acelerar su cambio tecnológico para ampliar su espacio democrático. Pero muchas veces este proceso arranca sin un objetivo definido más allá del “lavado de cara” institucional. Por eso es importante tener presente la base teórica sobre la que se asientan las experiencias más exitosas.
 
-Las teorías más recientes sobre participación citan a menudo el artículo [A Ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), escrito por Sherry Arnstein en 1969. En él, Arnstein asegura que la participación se convierte en un elemento que redistribuye el poder, es decir, es un eje transversal a los tres poderes de Montesquieu (Ejecutivo, Legislativo y Judicial) que sitúa al ciudadano como comienzo y ﬁnal del proceso político. “La participación sin redistribución de poder es un proceso vacío y frustrante para los que carecen de poder. Permite a los poderosos declarar que han tenido en cuenta a todas las partes, cuando solo una se beneficia”, asegura Arnstein. Alberto Ortiz de Zárate señala en su aportación a la obra Gobierno Abierto[^10] los niveles de participación propuestos por Arnstein; que se agrupan en tres planos:
+Las teorías más recientes sobre participación citan a menudo el artículo [A Ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), escrito por Sherry Arnstein en 1969. En él, Arnstein asegura que la participación se convierte en un elemento que redistribuye el poder, es decir, es un eje transversal a los tres poderes de Montesquieu (Ejecutivo, Legislativo y Judicial) que sitúa al ciudadano como comienzo y ﬁnal del proceso político. “La participación sin redistribución de poder es un proceso vacío y frustrante para los que carecen de poder. Permite a los poderosos declarar que han tenido en cuenta a todas las partes, cuando solo una se beneficia”, asegura Arnstein. Alberto Ortiz de Zárate señala en su aportación a la obra Gobierno Abierto[^9] los niveles de participación propuestos por Arnstein; que se agrupan en tres planos:
 
 1. Plano de la no-participación: pretende sustituir a la genuina participación, mediante mecanismos de manipulación.
 2. Plano de la participación simbólica: Los ciudadanos pueden escuchar, tener voz y ser escuchados.
@@ -246,8 +247,7 @@ Al tratarse de procesos no estandarizados y basados en normativas distintas, los
 3. PAM - toda la legislatura (cuatro años): El Plan de Acción Municipal es el documento en el que el gobierno detalla sus líneas de actuación para toda la legislatura. Abrir el PAM a la participación ciudadana es el proceso más complejo y delicado de todos los presupuestos participativos, así que no es recomendable llevar a cabo un PAM participativo sin haber realizado antes alguna otra experiencia menor.
 En España se han llevado a cabo pocos, pero destacan las experiencias de Badalona, con un 4,37% de participación y Barcelona, con  un 2,81% . En Vitoria-Gasteiz se votan programas plurianuales: El último proceso destinó 1,588 millones de € para 2017 y 1,411 millones de € para 2018.  La tasa de participación fue del 1,1%.
 
-Pequeña infografía: Grado de dificultad, de - a +, (medidor de volumen triangular o calor):
-Medidas concretas -> Medidas a nivel de distrito -> Presupuesto anual -> PAM
+{% img 'reports/1703_pparticipativos/infogr_escala_dificultad.png' class:'inline caption' title:"Tipos de presupuestos participativos según su dificultad" %}
 
 ### Formación del grupo motor
 
@@ -257,7 +257,7 @@ El grupo motor permanece abierto a nuevas colaboraciones durante el proceso, per
 
 Este grupo motor se encarga de elaborar el autorreglamento del proceso, de la planificación del cronograma, de elaborar los documentos informativos y de coordinar en general la buena marcha del proceso.
 
-Esquema: Grupo motor.
+{% img 'reports/1703_pparticipativos/infogr_grupo_motor.png' class:'inline caption' title:"Esquema del grupo motor de un presupuesto participativo" %}
 
 ### Definición de las fases
 
@@ -354,18 +354,8 @@ Si la transparencia útil es fundamental al inicio y durante el proceso, aún lo
 La herramienta adecuada para centralizar el seguimiento del proceso y el estado de cumplimiento de las medidas aprobadas es el portal de gobierno abierto o de participación. Especialmente aquellos que permiten generar informes automáticos sobre el proceso y presentarlos de forma visual. De esta forma los datos están disponibles para ser compartidos no sólo en la propia plataforma, sino en otros canales online como redes sociales y se pueden exportar fácilmente para comunicaciones offline.
 
 ## Esquema básico de desarrollo del proceso
-(Elemento gráfico - Esquema)
 
-Fases del proceso:
-
-1. Planificación
-2. Informativa
-3. Recogida de propuestas
-4. Valoración de propuestas
-5. Aprobación de propuestas
-6. Votación de propuestas
-7. Difusión
-8. Seguimiento
+{% img 'reports/1703_pparticipativos/infogr_fases.png' class:'inline caption' title:"Fases de desarrollo del presupuesto participativo" %}
 
 # Retos y dificultades
 
@@ -465,7 +455,6 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 [Participatory Budgeting](https://www.participatorybudgeting.org/pb-map/). Documentación de *case studies*.
 [PB Network](https://pbnetwork.org.uk/). Documentación de *case studies*.
 
-
 ## Notas
 
 [^1]: [Participatory budgeting in Brazil, World Bank](http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf).
@@ -474,7 +463,6 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 [^4]: [New York City Council Participatory Budgeting Rulebook, New York City Council](http://council.nyc.gov/wp-content/uploads/2016/05/PBNYC-2016_2017-Rulebook.pdf).
 [^5]: [Why Paris is Building the World’s Biggest Participatory Budget, Pauline Véron, Deputy Mayor of Paris](http://www.newcitiesfoundation.org/why-paris-is-building-the-worlds-biggest-participatory-budget/).
 [^6]: [Youth Lead The Change: Participatory budgeting Boston 2016, Astraea Augsberger, Mary E. Collins, Whitney Gecker, Katharine Lusk, Meaghan Dougher](https://www.bu.edu/ioc/files/2017/01/Youth-Lead-the-Change_Report.pdf).
-[^7]: En la web [presupuestosparticipativos.com](http://www.presupuestosparticipativos.com/) se recogen la mayoría de municipios pioneros en este tipo de procesos, así como abundante documentación y estudios sobre el fenómeno.
-[^8]: [Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores](http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7).
-[^9]: [Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales](http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf).
-[^10]: [Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf).
+[^7]: [Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores](http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7).
+[^8]: [Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales](http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf).
+[^9]: [Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf).
