@@ -31,7 +31,7 @@ Este texto cubre distintos aspectos del fenómeno del presupuesto participativo 
 
 ### La semilla: Porto Alegre (Brasil)[^1]
 
-{% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Vista de la ciudad brasileña de Porto Alegre, por Eurivan Barbosa (CC BY-SA 3.0)" %}
 
 A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [pobreza extrema](http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
 
@@ -49,7 +49,7 @@ Como resultado, el número de viviendas públicas para nuevos residentes pasó d
 
 ### Rosario (Argentina)[^2]
 
-{% img 'reports/1703_pparticipativos/rosario_argentina_04.jpg' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/rosario_argentina_04.jpg' class:'inline caption' title:"Asambleas del presupuestos participativo de 2015 en en Rosario, Argentina. Imagen procedente de la página web de Rosario" %}
 
 Este municipio argentino fue el primero de su país en implantar un presupuesto participativo. El proceso se inició por primera vez en 2002 [^3] para decidir los presupuestos de 2003. En la actualidad los ciudadanos votan dos tipos de propuestas: una para su barrio y otra para su distrito. Del 18 al 28 de noviembre de 2016 votaron 66.718 ciudadanos. Se presentaron 134 proyectos, ganaron 54 y se destinaron 209 millones de dólares del presupuesto.
 
@@ -64,7 +64,7 @@ Inclusión e integración social y urbana.
 
 ### Nueva York (EEUU)[^4]
 
-{% img 'reports/1703_pparticipativos/new_york_01.png' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/new_york_01.png' class:'inline caption' title:"Visualización del gasto por distrito y tipo de proyectos aprobados. Página web del ayuntamiento de Nueva York" %}
 
 Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito. [En el último proceso (2016-2017)](http://council.nyc.gov/pb/) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
 
@@ -78,7 +78,7 @@ Para recoger propuestas se exige que existan al menos tres reuniones públicas c
 
 ### París (Francia)[^5]
 
-{% img 'reports/1703_pparticipativos/paris_02.png' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/paris_02.png' class:'inline caption' title:"Proyectos aprobados en la página web de los presupuestos participativos de París" %}
 
 La capital francesa inició sus presupuestos participativos en 2014 y ha aumentado la participación cada año, pasando de 40.000 votantes (2014) a 158.000 (2016). En 2016 el importe para gastar en propuestas ciudadanas ascendía a 100 millones de euros.
 
@@ -92,7 +92,7 @@ Las primeras iniciativas presentadas por los ciudadanos eran de carácter muy es
 
 ### Boston (EEUU)[^6]
 
-{% img 'reports/1703_pparticipativos/boston_02.jpg' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/boston_02.jpg' class:'inline caption' title:"Reuniones de presupuestos participativo del programa Youth Lead the Change. Imagen procedente de la página web del Ayuntamiento de Boston" %}
 
 En 2013-2014 Boston llevó a cabo la primera iniciativa de presupuestos participativos jóvenes de Estados Unidos. El proceso estaba abierto a todos los ciudadanos de edades comprendidas entre los 12 a los 25 años. Se asignó un millón de dólares y participaron 1.500 jóvenes de la ciudad. En 2016 la participación subió a 4.482.
 
@@ -113,7 +113,7 @@ Los primeros experimentos de propuestas ciudadanas para hacer uso del dinero pú
 ### Las iniciativas andaluzas
 En 2001 en tres municipios de Andalucía se realizaron pruebas piloto de presupuestos participativos[^8]: Cabezas de San Juan, Córdoba y Puente Genil. En los años siguientes la experiencia se replicó en municipios grandes y pequeños como Sevilla, Torreperogil o Puerto Real. En 2008 Málaga y Sevilla fueron la cabeza visible de un intento de mejorar la participación en toda la comunidad Andaluza: La semilla se plantó en las Jornadas Internacionales de Presupuestos Participativos que convocó la Diputación de Málaga, con la colaboración de los Ayuntamientos de Córdoba y Sevilla, FAMSI y la Red FAL. En este encuentro se constituyó el Grupo de Trabajo de Presupuestos Participativos de la Red FAL y se aprobó la Declaración de Málaga como documento base del grupo. Posteriormente se redactó el anteproyecto de la Ley de Participación Ciudadana de Andalucía[^9], que ya contemplaba los presupuestos participativos, aunque como procesos de carácter consultivo y no vinculante.
 
-{% img 'reports/1703_pparticipativos/cordoba_01.jpg' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/cordoba_01.jpg' class:'inline caption' title:"Reunión vecinal en Córdoba. Imagen procedente de www.nuestracordoba.org" %}
 
 ### Otros municipios
 Además de los municipios andaluces, entre 2008 y 2011 se realizaron experiencias de presupuesto participativo en Albacete, San Sebastián, Getafe, Petrer, Sabadell, Leganés, Torrellano, Novelda y Santa Cristina d’Aro, entre otros.
@@ -133,8 +133,8 @@ Además de producir un software open data propio, el [Gobierno de Aragón](http:
 ### La nueva ola de participación post 15-M
 Las agrupaciones que gobiernan las dos mayores ciudades de España –Ahora Madrid y Guanyem Barcelona– nacieron con la pretensión de dar respuesta política a las demandas ciudadanas surgidas en el 15-M. Por tanto, los gobiernos de Madrid y Barcelona vertebran su discurso político en torno a la participación ciudadana: ambos ayuntamientos cuentan con plataformas on-line de participación propias, así como estrategias  y áreas de participación con un peso específico considerable dentro del organigrama municipal. Durante los últimos dos años han lanzado procesos participativos experimentales que han seguido después otras ciudades españolas como A Coruña, Alicante, Cádiz, Palma de Mallorca, Oviedo, Tarragona o Valencia.
 
-{% img 'reports/1703_pparticipativos/barcelona_02.png' class:'inline caption' title:"Wadus wadus" %}
-{% img 'reports/1703_pparticipativos/madrid_01.png' class:'inline caption' title:"Wadus wadus" %}
+{% img 'reports/1703_pparticipativos/barcelona_02.png' class:'inline caption' title:"Propuestas presentadas en decidim.barcelona" %}
+{% img 'reports/1703_pparticipativos/madrid_01.png' class:'inline caption' title:"Fases del presupuesto participativo en decide.madrid.es" %}
 
 Las plataformas de participación de Madrid y Barcelona ([Decide Madrid](https://decide.madrid.es/) y [Decidim Barcelona](https://decidim.barcelona) son similares porque tienen un inicio común, pero sus procesos son ligeramente distintos. En Barcelona se ha realizado una consulta general con respecto al Plan de Acción Municipal (medidas a tomar durante los cuatro años de legislatura) y ahora se están realizando consultas a nivel de distrito. Estas consultas sirven como piloto para un presupuesto participativo anual completo el año próximo. En Madrid ya se ha realizado un presupuesto participativo de carácter anual para toda la ciudad; y está en proceso el siguiente, con un aumento del presupuesto destinado: de 58 a 100 millones de euros.
 
