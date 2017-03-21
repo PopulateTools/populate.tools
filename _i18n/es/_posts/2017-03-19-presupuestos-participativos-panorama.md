@@ -15,7 +15,7 @@ Durante las dos primeras décadas del siglo XXI estamos asistiendo al renacimien
 
 El presupuesto participativo es un proceso que permite a todos los habitantes de una ciudad decidir cómo se gasta el dinero público. A diferencia de otras iniciativas de carácter representativo o no vinculante, la esencia del presupuesto participativo es la participación directa de toda la ciudadanía. Son los ciudadanos los que proponen, debaten y deciden mediante votación cómo se gasta el dinero público. De esta forma las decisiones no se toman sólo a nivel político. Se introducen nuevos mecanismos de democracia directa que permiten redefinir y mejorar el modelo vigente.
 
-Existen varios estudios recientes sobre participación y presupuestos participativos. Este texto se basa en algunos de ellos (ver bibliografía) para analizar el contexto teórico en el que se basan la mayoría de los que se realizan en nuestro país. El propósito de este documento es recopilar y analizar los procesos que tienen lugar en España para identificar patrones, revelar aciertos y errores, destacar prácticas comunes y servir, en fin, como referencia para todos aquellos municipios que quieran poner en marcha un presupuesto participativo o mejorar el existente. Este documento es un repositorio abierto que se actualiza cada año con nuevos procesos. Si quieres contribuir te invitamos a hacerlo: [](envía tu contribución aquí).
+Existen varios estudios recientes sobre participación y presupuestos participativos. Este texto se basa en algunos de ellos (ver [bibliografía]()) para analizar el contexto teórico en el que se basan la mayoría de los que se realizan en nuestro país. El propósito de este documento es recopilar y analizar los procesos que tienen lugar en España para identificar patrones, revelar aciertos y errores, destacar prácticas comunes y servir, en fin, como referencia para todos aquellos municipios que quieran poner en marcha un presupuesto participativo o mejorar el existente. Este documento es un repositorio abierto que se actualiza cada año con nuevos procesos. Si quieres contribuir te invitamos a hacerlo: [envía tu contribución aquí]().
 
 La voluntad ciudadana de decidir sobre las cuentas públicas no es un fenómeno nuevo. Las protestas vecinales, manifestaciones, el asociacionismo, o simplemente el hecho de que un grupo de vecinos preocupados se reúnan con su alcalde para exponerle una necesidad o idea eran hasta ahora las formas de ejercer presión sobre nuestros gobernantes. Pero la democracia directa sobre el presupuesto municipal no tiene precedente histórico en nuestro país ni tenía legislación específica hasta las nuevas leyes y ordenanzas de participación que se están aprobando en algunos municipios, diputaciones y Comunidades Autónomas.
 
@@ -33,7 +33,7 @@ Este texto cubre distintos aspectos del fenómeno del presupuesto participativo 
 
 {% img 'reports/1703_pparticipativos/Porto_Alegre_skyline.jpg' class:'inline caption' title:"Wadus wadus" %}
 
-A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty](pobreza extrema). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
+A finales de los años 80 la ciudad de Porto Alegre tenía uno de los índices de desigualdad más altos de Brasil. La brecha entre entre ricos y pobres crecía hasta tal punto que un tercio de la población vivía hacinada en favelas en condiciones de [pobreza extrema](http://www.bancomundial.org/es/topic/poverty/lac-equity-lab1/poverty). En 1989 el ayuntamiento impulsó una serie de medidas para paliar la situación. Una de las más efectivas fue poner una parte del presupuesto municipal a disposición de la ciudadanía.
 
 El modelo de participación de Porto Alegre se cimenta sobre reuniones presenciales que tienen lugar a lo largo de varios meses. Hay tres tipos de reuniones:
 
@@ -66,7 +66,7 @@ Inclusión e integración social y urbana.
 
 {% img 'reports/1703_pparticipativos/new_york_01.png' class:'inline caption' title:"Wadus wadus" %}
 
-Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito. [http://council.nyc.gov/pb/](En el último proceso (2016-2017)) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
+Los primeros presupuestos participativos de la Gran Manzana arrancaron durante la legislatura 2011-2012. Actualmente se destina en torno a 1 millón de dólares por distrito. [En el último proceso (2016-2017)](http://council.nyc.gov/pb/) 67.000 neoyorkinos votan para decidir el destino de 38 millones de dólares distribuidos entre los 28 distritos de la ciudad.
 
 
 Algunas particularidades del proceso:
@@ -121,13 +121,13 @@ Además de los municipios andaluces, entre 2008 y 2011 se realizaron experiencia
 
 ### Irekia
 
-[http://www.irekia.euskadi.eus/](Irekia), (“Abierto” en euskera) es el portal pionero en llevar a la práctica las teorías de gobierno abierto en las autonomías. Entró en funcionamiento en 2010 y fue el primero en combinar transparencia y participación con un diseño pensado desde el principio para facilitar la experiencia de usuario (en este caso, ciudadano). El modelo de participación va en dos direcciones: Por un lado el ejecutivo vasco publica sus iniciativas de gobierno en forma de agenda legislativa. Esta agenda está abierta a las opiniones y aportaciones de toda la sociedad civil.
+[Irekia](http://www.irekia.euskadi.eus/), (“Abierto” en euskera) es el portal pionero en llevar a la práctica las teorías de gobierno abierto en las autonomías. Entró en funcionamiento en 2010 y fue el primero en combinar transparencia y participación con un diseño pensado desde el principio para facilitar la experiencia de usuario (en este caso, ciudadano). El modelo de participación va en dos direcciones: Por un lado el ejecutivo vasco publica sus iniciativas de gobierno en forma de agenda legislativa. Esta agenda está abierta a las opiniones y aportaciones de toda la sociedad civil.
 
 Por otro lado, permite realizar propuestas ciudadanas, que se mantienen públicas y abiertas para recoger más aportaciones y generar debate público. No es un antecedente del presupuesto participativo tal y como lo entendemos en este texto pero sí una de las primeras iniciativas para que los ciudadanos puedan presentar sus propuestas de forma estructurada a través de una plataforma online.
 
 
 ### Gobierno de Aragón
-Además de producir un software open data propio, el [http://aragonparticipa.aragon.es/](Gobierno de Aragón) impulsa desde hace más de una década modelos participativos de corte clásico en su web: vertebra la participación en torno a procesos: el gobierno abre un determinado proceso (ley de seguridad vial, plan de empleo público…) y los ciudadanos aportan ideas que más tarde pasan el filtro técnico, después se someten a aprobación parlamentaria y finalmente se publican. Al igual que Irekia, es más un antecedente de adaptación tecnológica a los modelos de participación.
+Además de producir un software open data propio, el [Gobierno de Aragón](http://aragonparticipa.aragon.es/) impulsa desde hace más de una década modelos participativos de corte clásico en su web: vertebra la participación en torno a procesos: el gobierno abre un determinado proceso (ley de seguridad vial, plan de empleo público…) y los ciudadanos aportan ideas que más tarde pasan el filtro técnico, después se someten a aprobación parlamentaria y finalmente se publican. Al igual que Irekia, es más un antecedente de adaptación tecnológica a los modelos de participación.
 
 
 ### La nueva ola de participación post 15-M
@@ -136,7 +136,7 @@ Las agrupaciones que gobiernan las dos mayores ciudades de España –Ahora Madr
 {% img 'reports/1703_pparticipativos/barcelona_02.png' class:'inline caption' title:"Wadus wadus" %}
 {% img 'reports/1703_pparticipativos/madrid_01.png' class:'inline caption' title:"Wadus wadus" %}
 
-Las plataformas de participación de Madrid y Barcelona ([https://decide.madrid.es/](Decide Madrid) y [https://decidim.barcelona](Decidim Barcelona)) son similares porque tienen un inicio común, pero sus procesos son ligeramente distintos. En Barcelona se ha realizado una consulta general con respecto al Plan de Acción Municipal (medidas a tomar durante los cuatro años de legislatura) y ahora se están realizando consultas a nivel de distrito. Estas consultas sirven como piloto para un presupuesto participativo anual completo el año próximo. En Madrid ya se ha realizado un presupuesto participativo de carácter anual para toda la ciudad; y está en proceso el siguiente, con un aumento del presupuesto destinado: de 58 a 100 millones de euros.
+Las plataformas de participación de Madrid y Barcelona ([Decide Madrid](https://decide.madrid.es/) y [Decidim Barcelona](https://decidim.barcelona) son similares porque tienen un inicio común, pero sus procesos son ligeramente distintos. En Barcelona se ha realizado una consulta general con respecto al Plan de Acción Municipal (medidas a tomar durante los cuatro años de legislatura) y ahora se están realizando consultas a nivel de distrito. Estas consultas sirven como piloto para un presupuesto participativo anual completo el año próximo. En Madrid ya se ha realizado un presupuesto participativo de carácter anual para toda la ciudad; y está en proceso el siguiente, con un aumento del presupuesto destinado: de 58 a 100 millones de euros.
 
 Lo que sí tienen en común tanto Madrid como Barcelona es que además de los procesos “grandes” sobre presupuestos participativos realizan consultas puntuales a la ciudadanía sobre otras cuestiones, como el proceso de debate sobre la situación del Teatro Arnau (Barcelona) o la remodelación de la Plaza de España (Madrid).
 
@@ -153,7 +153,7 @@ Mejorar la transparencia municipal, tanto entre ciudadanos y gobierno como entre
 
 La demanda ciudadana surgida tras la crisis económica han empujado a muchos ayuntamientos a acelerar su cambio tecnológico para ampliar su espacio democrático. Pero muchas veces este proceso arranca sin un objetivo definido más allá del “lavado de cara” institucional. Por eso es importante tener presente la base teórica sobre la que se asientan las experiencias más exitosas.
 
-Las teorías más recientes sobre participación citan a menudo el artículo [http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html](A Ladder of citizen participation), escrito por Sherry Arnstein en 1969. En él, Arnstein asegura que la participación se convierte en un elemento que redistribuye el poder, es decir, es un eje transversal a los tres poderes de Montesquieu (Ejecutivo, Legislativo y Judicial) que sitúa al ciudadano como comienzo y ﬁnal del proceso político. “La participación sin redistribución de poder es un proceso vacío y frustrante para los que carecen de poder. Permite a los poderosos declarar que han tenido en cuenta a todas las partes, cuando solo una se beneficia”, asegura Arnstein. Alberto Ortiz de Zárate señala en su aportación a la obra Gobierno Abierto[^10] los niveles de participación propuestos por Arnstein; que se agrupan en tres planos:
+Las teorías más recientes sobre participación citan a menudo el artículo [A Ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), escrito por Sherry Arnstein en 1969. En él, Arnstein asegura que la participación se convierte en un elemento que redistribuye el poder, es decir, es un eje transversal a los tres poderes de Montesquieu (Ejecutivo, Legislativo y Judicial) que sitúa al ciudadano como comienzo y ﬁnal del proceso político. “La participación sin redistribución de poder es un proceso vacío y frustrante para los que carecen de poder. Permite a los poderosos declarar que han tenido en cuenta a todas las partes, cuando solo una se beneficia”, asegura Arnstein. Alberto Ortiz de Zárate señala en su aportación a la obra Gobierno Abierto[^10] los niveles de participación propuestos por Arnstein; que se agrupan en tres planos:
 
 Plano de la no-participación: pretende sustituir a la genuina participación, mediante mecanismos de manipulación.
 Plano de la participación simbólica: Los ciudadanos pueden escuchar, tener voz y ser escuchados.
@@ -192,7 +192,7 @@ El coste material depende del tamaño del municipio y de la infraestructura asig
 
 Campaña de comunicación sobre el proceso: La mayoría de ayuntamientos consultados difunden información previa a través de su web, nota de prensa, redes sociales, email, correo postal y de forma presencial en juntas vecinales. Otros suman a estos canales el uso de carteles, flyers, publicaciones específicas y sesiones informativas en centros representativos de determinados sectores sociales (institutos, centros de mayores).
 
-La campaña de publicidad del proceso es fundamental. En el documento [http://www.presupuestosparticipativos.com/files/5600-3779-fichero/Guia%20metodol%C3%B3gica%20propia%20de%20los%20Presupuestos%20Participativos.pdf](Guía metodológica de los presupuestos participativos), de Francisco Francés García y Antonio Carrillo Cano se hace hincapié en que no se debe escatimar recursos en la publicidad. Los autores afirman que, por las experiencias analizadas es recomendable “Buscar publicistas profesionales que sepan hacer buenos diseños para la cartelería, trípticos, etc, ya que, a veces con el ánimo de gastar menos se hacen verdaderas chapuzas (con toda la buena intención del mundo)”.
+La campaña de publicidad del proceso es fundamental. En el documento [Guía metodológica de los presupuestos participativos](http://www.presupuestosparticipativos.com/files/5600-3779-fichero/Guia%20metodol%C3%B3gica%20propia%20de%20los%20Presupuestos%20Participativos.pdf), de Francisco Francés García y Antonio Carrillo Cano se hace hincapié en que no se debe escatimar recursos en la publicidad. Los autores afirman que, por las experiencias analizadas es recomendable “Buscar publicistas profesionales que sepan hacer buenos diseños para la cartelería, trípticos, etc, ya que, a veces con el ánimo de gastar menos se hacen verdaderas chapuzas (con toda la buena intención del mundo)”.
 
 
 Espacios de deliberación y presentación de propuestas: Los espacios de deliberación son básicamente dos, y son complementarios: El espacio online y el espacio presencial. La combinación de los dos es la forma idónea para atajar la brecha tecnológica y generacional.
@@ -305,9 +305,10 @@ Redactar un documento explicativo sobre el proceso de presupuesto participativo 
 La presentación de propuestas debe estar abierta a toda la ciudadanía. Lo más importante durante esta fase es proporcionar herramientas al ciudadano (de manera presencial u online) para que puedan:
 Presentar su propuesta de forma estructurada. Si es posible con un un modelo de propuesta a modo de ejemplo que sirva de guía, y con información sobre el tipo de propuesta que pueden presentar.
 Tener acceso al resto de propuestas presentadas previamente para evitar la repetición. Del mismo modo, posibilidad de comentar el resto de propuestas para llegar a un acuerdo si se quieren fusionar varias proposiciones.
-Algunos ayuntamientos consultados se limitan a presentar sus propias iniciativas y someterlas a votación ciudadana, sin dejar que los vecinos presenten sus propuestas. Es el caso de Guadalajara, que propuso en 2016 una consulta basada en cuatro puntos. En cada punto se ofrecía una lista de opciones disponibles. Otras experiencias similares, como [http://www.lavanguardia.com/vida/20100516/53928946995/el-fracaso-de-la-consulta-de-la-diagonal-se-lleva-por-delante-al-primer-teniente-de-alcalde.html](el fracaso de la consulta sobre la Diagonal de Barcelona en 2010) demuestran que este tipo de consultas de participación limitada son contraproducentes para el objetivo de mejora de calidad democrática que se pretende con los presupuestos participativos.
+Algunos ayuntamientos consultados se limitan a presentar sus propias iniciativas y someterlas a votación ciudadana, sin dejar que los vecinos presenten sus propuestas. Es el caso de Guadalajara, que propuso en 2016 una consulta basada en cuatro puntos. En cada punto se ofrecía una lista de opciones disponibles. Otras experiencias similares, como [el fracaso de la consulta sobre la Diagonal de Barcelona en 2010](http://www.lavanguardia.com/vida/20100516/53928946995/el-fracaso-de-la-consulta-de-la-diagonal-se-lleva-por-delante-al-primer-teniente-de-alcalde.html) demuestran que este tipo de consultas de participación limitada son contraproducentes para el objetivo de mejora de calidad democrática que se pretende con los presupuestos participativos.
 
 Uno de los grandes retos que se plantea durante esta fase es el abultado número de propuestas que se presentan y la poca o nula viabilidad de muchas de ellas. Por eso varios ayuntamientos consultados coinciden en el papel fundamental del grupo motor en esta fase para informar e incentivar el debate. Si previamente se informa de cuáles son las competencias del ayuntamiento, o se fomenta un debate para consensuar propuestas similares, la calidad y manejabilidad de las propuestas mejorará sensiblemente de cara a la siguiente fase.
+
 #### Fase de valoración de propuestas
 
 Cuando los ciudadanos han presentado sus propuestas, un grupo de técnicos del ayuntamiento debe valorar su viabilidad y asignar un presupuesto estimado a cada petición. Este proceso es complejo y suele exceder los límites temporales marcados en el cronograma. Es importante prever cuántos técnicos de cada área del ayuntamiento se van a involucrar en el proceso y cuál será el tiempo estimado de valoración de cada propuesta.
@@ -448,7 +449,6 @@ No poder combinar los espacios presenciales y las herramientas tecnológicas de 
 
 ## Problemas de organización
 
-
 Falta de apoyo político para poner en marcha el proceso.
 Escasez de tiempo y recursos para diseñar y difundir el presupuesto participativo.
 Se necesita mejorar la rapidez en la criba de propuestas para que no se generen falsas expectativas con la precisión en la respuesta.
@@ -458,21 +458,17 @@ Errores cometidos por los técnicos (ej: propuestas aprobadas que en un análisi
 
 # Conclusiones
 
-
 La ola de participación que recorre nuestro país ha creado mucha ilusión y expectativa entre los ciudadanos. En este momento inicial es fundamental tener presente que la participación no es un fin en sí mismo, sino un medio para llegar, poco a poco, a una nueva forma de colaboración entre instituciones y ciudadanos. Los resultados de los presupuestos participativos no siempre son visibles a corto plazo, y eso puede generar frustración tanto en las administraciones como entre los vecinos. Por eso es importante compartir datos y resultados de todas las iniciativas. Cuanto antes se aprenda de los errores y se mejoren las herramientas para participar, mejor. Tras el impulso inicial es necesario definir unas líneas generales comunes y replicar las acciones exitosas.
 
 Un gran proceso participativo sobre el presupuesto anual, complejo y con muchas fases requiere una planificación cuidadosa, varios meses de desarrollo y la implicación de muchas áreas del ayuntamiento. Un municipio que quiera hacer presupuestos participativos debería comprobar antes que tiene las herramientas necesarias para hacer transparencia útil y para gestionar un proceso de esa magnitud. Los portales de participación solucionan muchos de los problemas tradicionales de organización (sobre todo los relativos a espacios y tiempo) pero los espacios presenciales siguen siendo fundamentales para dinamizar el proceso. Y la labor de generación de contenido informativo sencillo y amigable tampoco es algo que pueda suplir la tecnología.
 
 Si no se ha hecho previamente un proceso largo es aconsejable lanzar procesos consultivos más pequeños, a modo de ensayo y como píldora informativa. Las herramientas de los portales de participación que permiten generar y personalizar este tipo de procesos pequeños pueden ayudar en esta primera fase de toma de contacto ciudadana.
 
-
 Los ayuntamientos que han realizado procesos totalmente abiertos, con presentación y votación de propuestas libres por parte de los vecinos, han recibido buena acogida y mejoran visiblemente sus tasas de participación en procesos posteriores. Por contra, los ayuntamientos que se limitan a presentar varios opciones predefinidas a los vecinos, los que aceptan propuestas pero no permiten votarlas, o los que no publican los resultados y el seguimiento del proyecto, han obtenido tasas muy bajas de participación y han generado desinterés entre los ciudadanos.
 
 Se observa una falta clara de recursos y de estructura en muchos ayuntamientos para sacar adelante procesos participativos con todas las garantías. Por eso es necesario que sean procesos transversales que involucren a varias áreas, no sólo a la de participación.
 
-
 La falta de movilización de determinados sectores sociales sigue siendo un reto importante y difícil de acometer. También es delicada la relación entre los modelos de participación tradicional (basados en el asociacionismo) y la nueva participación (directa y mediada por la tecnología). Esta relación debería ser una simbiosis que aproveche los beneficios de cada modelo. Al iniciar un presupuesto participativo es fundamental disponer de mediadores que faciliten el debate entre representantes municipales, representantes de asociaciones y ciudadanos individuales.
-
 
 Las propuestas ciudadanas que se presentan en la mayoría de procesos son muy concretas. De nuevo, es importante la información y diseño previo para ayudar a filtrar correctamente todas y ahorrar tiempo a los técnicos del ayuntamiento que estudian su viabilidad, caso por caso. Cuanto más cercana y concreta es la propuesta, mayor participación. Los asuntos de barrio generan más interés que las políticas de amplio calado.
 
@@ -482,28 +478,28 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 
 ## Bibliografía
 
-[http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q](Guía metodológica de los presupuestos participativos), Francisco Francés García y Antonio Carrillo Cano.
-[http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto](Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
-[www.ciudadesparticipativas.eu/app/download/5801028677/Estudio_comparativo.pdf](Estudio comparativo de los presupuestos participativos en República Dominicana, España y Uruguay), Giovanni Allegretti (coord.).
-[http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf](Gobierno abierto), César Calderón y Sebastián Lorenzo (coords.).
-[http://www.redalyc.org/pdf/676/67642415003.pdf](La participación ciudadana como instrumento del gobierno abierto), José Juan Sánchez González.
-[https://www.academia.edu/31530906/GU%C3%8DA_PR%C3%81CTICA_PARA_ABRIR_GOBIERNOS_MANUAL_DE_OPEN_GOVERNMENT_PARA_GOBERNANTES_Y_CIUDADANOS](Guía práctica para abrir gobiernos), César Calderón, Rafa Rubio, Mila Gascó, Alberto Ortiz de Zárate, Pablo Díaz.
-[http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html](A ladder of citizen participation), Sherry R Arnstein.
-[http://www.redcimas.org/experiencias/presupuestos-participativos/]Red Cimas
-[http://www.irekia.euskadi.eus/es/debates/946?stage=presentation](Libro blanco de la participación ciudadana en Euskadi), Gobierno de Euskadi.
-[https://www.participatorybudgeting.org/pb-map/](Participatory Budgeting).
-[https://pbnetwork.org.uk/](PB Network)
+[Guía metodológica de los presupuestos participativos](http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q), Francisco Francés García y Antonio Carrillo Cano.
+[Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?](http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
+[Estudio comparativo de los presupuestos participativos en República Dominicana, España y Uruguay](www.ciudadesparticipativas.eu/app/download/5801028677/Estudio_comparativo.pdf), Giovanni Allegretti (coord.).
+[Gobierno abierto](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf), César Calderón y Sebastián Lorenzo (coords.).
+[La participación ciudadana como instrumento del gobierno abierto](http://www.redalyc.org/pdf/676/67642415003.pdf), José Juan Sánchez González.
+[Guía práctica para abrir gobiernos](https://www.academia.edu/31530906/GU%C3%8DA_PR%C3%81CTICA_PARA_ABRIR_GOBIERNOS_MANUAL_DE_OPEN_GOVERNMENT_PARA_GOBERNANTES_Y_CIUDADANOS), César Calderón, Rafa Rubio, Mila Gascó, Alberto Ortiz de Zárate, Pablo Díaz.
+[A ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), Sherry R Arnstein.
+[Red Cimas](http://www.redcimas.org/experiencias/presupuestos-participativos/). Documentación.
+[Libro blanco de la participación ciudadana en Euskadi](http://www.irekia.euskadi.eus/es/debates/946?stage=presentation), Gobierno de Euskadi.
+[Participatory Budgeting](https://www.participatorybudgeting.org/pb-map/). Documentación de *case studies*.
+[PB Network](https://pbnetwork.org.uk/). Documentación de *case studies*.
 
 
 ## Notas
 
-[^1]: [http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf](Participatory budgeting in Brazil, World Bank).
-[^2]: [http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo](Página web de los presupuestos participativos del Ayuntamiento de Rosario).
-[^3]: [https://ssl.rosario.gov.ar/mr/normativa/otras-normas/ordenanzas/ordenanza-7326-2002](Ordenanza 7326/2002 del Ayuntamiento de Rosario)
-[^4]: [http://council.nyc.gov/wp-content/uploads/2016/05/PBNYC-2016_2017-Rulebook.pdf](New York City Council Participatory Budgeting Rulebook, New York City Council).
-[^5]: [http://www.newcitiesfoundation.org/why-paris-is-building-the-worlds-biggest-participatory-budget/](Why Paris is Building the World’s Biggest Participatory Budget, Pauline Véron, Deputy Mayor of Paris)
-[^6]:[https://www.bu.edu/ioc/files/2017/01/Youth-Lead-the-Change_Report.pdf](Youth Lead The Change: Participatory budgeting Boston 2016, Astraea Augsberger, Mary E. Collins, Whitney Gecker, Katharine Lusk, Meaghan Dougher)
-[^7]: En la web [http://www.presupuestosparticipativos.com/](presupuestosparticipativos.com) se recogen la mayoría de municipios pioneros en este tipo de procesos, así como abundante documentación y estudios sobre el fenómeno.
-[^8]:[http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7](Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores)
-[^9]: [http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf](Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales)
-[^10]: [http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf](Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores)
+[^1]: [Participatory budgeting in Brazil, World Bank](http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf).
+[^2]: [Página web de los presupuestos participativos del Ayuntamiento de Rosario](http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo).
+[^3]: [Ordenanza 7326/2002 del Ayuntamiento de Rosario](https://ssl.rosario.gov.ar/mr/normativa/otras-normas/ordenanzas/ordenanza-7326-2002).
+[^4]: [New York City Council Participatory Budgeting Rulebook, New York City Council](http://council.nyc.gov/wp-content/uploads/2016/05/PBNYC-2016_2017-Rulebook.pdf).
+[^5]: [Why Paris is Building the World’s Biggest Participatory Budget, Pauline Véron, Deputy Mayor of Paris](http://www.newcitiesfoundation.org/why-paris-is-building-the-worlds-biggest-participatory-budget/).
+[^6]: [Youth Lead The Change: Participatory budgeting Boston 2016, Astraea Augsberger, Mary E. Collins, Whitney Gecker, Katharine Lusk, Meaghan Dougher](https://www.bu.edu/ioc/files/2017/01/Youth-Lead-the-Change_Report.pdf).
+[^7]: En la web [presupuestosparticipativos.com](http://www.presupuestosparticipativos.com/) se recogen la mayoría de municipios pioneros en este tipo de procesos, así como abundante documentación y estudios sobre el fenómeno.
+[^8]: [Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores](http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7).
+[^9]: [Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales](http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf).
+[^10]: [Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf).
