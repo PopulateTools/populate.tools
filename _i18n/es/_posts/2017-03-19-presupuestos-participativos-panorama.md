@@ -443,26 +443,26 @@ Por último, la transparencia sobre el propio proceso genera confianza y posibil
 
 ## Bibliografía
 
-[Guía metodológica de los presupuestos participativos](http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q), Francisco Francés García y Antonio Carrillo Cano.
-[Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?](http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
-[Estudio comparativo de los presupuestos participativos en República Dominicana, España y Uruguay](www.ciudadesparticipativas.eu/app/download/5801028677/Estudio_comparativo.pdf), Giovanni Allegretti (coord.).
-[Gobierno abierto](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf), César Calderón y Sebastián Lorenzo (coords.).
-[La participación ciudadana como instrumento del gobierno abierto](http://www.redalyc.org/pdf/676/67642415003.pdf), José Juan Sánchez González.
-[Guía práctica para abrir gobiernos](https://www.academia.edu/31530906/GU%C3%8DA_PR%C3%81CTICA_PARA_ABRIR_GOBIERNOS_MANUAL_DE_OPEN_GOVERNMENT_PARA_GOBERNANTES_Y_CIUDADANOS), César Calderón, Rafa Rubio, Mila Gascó, Alberto Ortiz de Zárate, Pablo Díaz.
-[A ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), Sherry R Arnstein.
-[Red Cimas](http://www.redcimas.org/experiencias/presupuestos-participativos/). Documentación.
-[Libro blanco de la participación ciudadana en Euskadi](http://www.irekia.euskadi.eus/es/debates/946?stage=presentation), Gobierno de Euskadi.
-[Participatory Budgeting](https://www.participatorybudgeting.org/pb-map/). Documentación de *case studies*.
-[PB Network](https://pbnetwork.org.uk/). Documentación de *case studies*.
+* [Guía metodológica de los presupuestos participativos](http://www.presupuestosparticipativos.com/Gu%C3%ADa-metodol%C3%B3gica-de-presupuestos-partic/_C3VTDDatmVEmYYYsYdvRIsil_ngZxyrxbR-Co1vM8dPZXii7nhO1eoDdtJ5vvY_Q), Francisco Francés García y Antonio Carrillo Cano.
+* [Estudios Novagob Lab: ¿Qué es y qué se entiende por gobierno abierto?](http://novagob.org/file/view/232094/novagobacademia-1-%C2%BFque-es-y-que-se-entiende-por-gobierno-abierto), J. Ignacio Criado y Edgar A. Ruvalcaba Gómez.
+* [Estudio comparativo de los presupuestos participativos en República Dominicana, España y Uruguay](www.ciudadesparticipativas.eu/app/download/5801028677/Estudio_comparativo.pdf), Giovanni Allegretti (coord.).
+* [Gobierno abierto](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf), César Calderón y Sebastián Lorenzo (coords.).
+* [La participación ciudadana como instrumento del gobierno abierto](http://www.redalyc.org/pdf/676/67642415003.pdf), José Juan Sánchez González.
+* [Guía práctica para abrir gobiernos](https://www.academia.edu/31530906/GU%C3%8DA_PR%C3%81CTICA_PARA_ABRIR_GOBIERNOS_MANUAL_DE_OPEN_GOVERNMENT_PARA_GOBERNANTES_Y_CIUDADANOS), César Calderón, Rafa Rubio, Mila Gascó, Alberto Ortiz de Zárate, Pablo Díaz.
+* [A ladder of citizen participation](http://lithgow-schmidt.dk/sherry-arnstein/ladder-of-citizen-participation.html), Sherry R Arnstein.
+* [Red Cimas](http://www.redcimas.org/experiencias/presupuestos-participativos/). Documentación.
+* [Libro blanco de la participación ciudadana en Euskadi](http://www.irekia.euskadi.eus/es/debates/946?stage=presentation), Gobierno de Euskadi.
+* [Participatory Budgeting](https://www.participatorybudgeting.org/pb-map/). Documentación de *case studies*.
+* [PB Network](https://pbnetwork.org.uk/). Documentación de *case studies*.
 
 ## Notas
 
-[^1]: [Participatory budgeting in Brazil, World Bank](http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf).
-[^2]: [Página web de los presupuestos participativos del Ayuntamiento de Rosario](http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo).
-[^3]: [Ordenanza 7326/2002 del Ayuntamiento de Rosario](https://ssl.rosario.gov.ar/mr/normativa/otras-normas/ordenanzas/ordenanza-7326-2002).
-[^4]: [New York City Council Participatory Budgeting Rulebook, New York City Council](http://council.nyc.gov/wp-content/uploads/2016/05/PBNYC-2016_2017-Rulebook.pdf).
-[^5]: [Why Paris is Building the World’s Biggest Participatory Budget, Pauline Véron, Deputy Mayor of Paris](http://www.newcitiesfoundation.org/why-paris-is-building-the-worlds-biggest-participatory-budget/).
-[^6]: [Youth Lead The Change: Participatory budgeting Boston 2016, Astraea Augsberger, Mary E. Collins, Whitney Gecker, Katharine Lusk, Meaghan Dougher](https://www.bu.edu/ioc/files/2017/01/Youth-Lead-the-Change_Report.pdf).
-[^7]: [Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores](http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7).
-[^8]: [Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales](http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf).
-[^9]: [Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf).
+* [^1]: [Participatory budgeting in Brazil, World Bank](http://siteresources.worldbank.org/INTEMPOWERMENT/Resources/14657_Partic-Budg-Brazil-web.pdf).
+* [^2]: [Página web de los presupuestos participativos del Ayuntamiento de Rosario](http://www.rosario.gov.ar/web/gobierno/presupuestos/presupuesto-participativo).
+* [^3]: [Ordenanza 7326/2002 del Ayuntamiento de Rosario](https://ssl.rosario.gov.ar/mr/normativa/otras-normas/ordenanzas/ordenanza-7326-2002).
+* [^4]: [New York City Council Participatory Budgeting Rulebook, New York City Council](http://council.nyc.gov/wp-content/uploads/2016/05/PBNYC-2016_2017-Rulebook.pdf).
+* [^5]: [Why Paris is Building the World’s Biggest Participatory Budget, Pauline Véron, Deputy Mayor of Paris](http://www.newcitiesfoundation.org/why-paris-is-building-the-worlds-biggest-participatory-budget/).
+* [^6]: [Youth Lead The Change: Participatory budgeting Boston 2016, Astraea Augsberger, Mary E. Collins, Whitney Gecker, Katharine Lusk, Meaghan Dougher](https://www.bu.edu/ioc/files/2017/01/Youth-Lead-the-Change_Report.pdf).
+* [^7]: [Los presupuestos participativos en el Estado Español, Presupuestosparticipativos.com, varios autores](http://www.presupuestosparticipativos.com/documentos/_C3VTDDatmVEmYYYsYdvRIjX-z-feUsB7).
+* [^8]: [Anteproyecto de ley de Participación ciudadana de Andalucía, Consejería de Administración local y Relaciones Institucionales](http://www.juntadeandalucia.es/administracionlocalyrelacionesinstitucionales/cms/export/sites/default/portal/anteproyectoleyparticipacionciudadana.pdf).
+* [^9]: [Gobierno Abierto, César Calderón y Sebastián Lorenzo (coord.), varios autores](http://www.bibliotecadigital.org/bitstream/001/163/8/978-84-937218-5-5.pdf).
