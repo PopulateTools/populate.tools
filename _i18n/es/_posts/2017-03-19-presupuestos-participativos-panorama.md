@@ -22,7 +22,26 @@ Organizar un proceso de votación directa sobre las cuentas municipales es difí
 
 Del mismo modo, la participación ciudadana –y en un marco más amplio, todos los aspectos del gobierno abierto– está sufriendo una evolución motivada por los avances tecnológicos y culturales. Ahora la tecnología permite establecer un diálogo más inmediato, fluido y estructurado con la ciudadanía. El espacio democrático se ha ampliado y es necesario un nuevo contrato social que vaya más allá del acto de depositar una papeleta en una urna cada cuatro años. Esta ampliación permite un trasvase de competencias desde la democracia representativa a la democracia directa. Las nuevas formas de participación surgen como respuesta a la frustración social surgida tras la gran crisis económica de la última década y los presupuestos participativos son uno de los componentes de esta evolución.
 
+Como veremos, a pesar de que la mayoría de procesos participativos toman buena nota de las experiencias previas de la participación "clásica", el escenario de la participación mediada por la tecnología todavía es muy experimental. Los expertos, técnicos y asociaciones vecinales señalan una serie de dificultades para las que todavía no hay una receta clara: la baja participación, el sesgo generacional, tecnológico y socioeconómico, el "efecto rebote" de un proceso muy ilusionante que no consigue los resultados esperados (muchas veces por exceso de expectativas) y la falta de recursos municipales para canalizar y analizar debidamente todas las propuestas ciudadanas. 
+
+Con todo, los mismos actores de la participación coinciden en señalar que éste es un momento muy ilusionante. El número de procesos está creciendo, las reglas se reescriben día a día y se hacen con una voluntad de apertura sin parangón.
+
 Este texto cubre distintos aspectos del fenómeno del presupuesto participativo y se ciñe exclusivamente a este fenómeno a nivel municipal. No contempla otros aspectos de la participación, aunque se mencionen tangencialmente para contextualizar y enriquecer el tema tratado.
+
+Los puntos básicos que trataremos en este documento son:
+
+- Antecedentes del fenómeno en España y en el extranjero
+- Objetivos de los presupuestos participativos
+- Coste humano y material 
+- Cantidad destinada a las propuestas aprobadas
+- Tasas de participación
+- Errores frecuentes
+- Tipo de procesos
+- Cómo se define el grupo motor y las fases
+- El proceso, fase por fase
+- Medios necesarios
+- Difusión y seguimiento de los resultados
+- Retos y dificultades: Problemas técnicos, de la ciudadanía y de organización
 
 # Antecedentes
 
@@ -438,6 +457,123 @@ La falta de movilización de determinados sectores sociales sigue siendo un reto
 Las propuestas ciudadanas que se presentan en la mayoría de procesos son muy concretas. De nuevo, es importante la información y diseño previo para ayudar a filtrar correctamente todas y ahorrar tiempo a los técnicos del ayuntamiento que estudian su viabilidad, caso por caso. Cuanto más cercana y concreta es la propuesta, mayor participación. Los asuntos de barrio generan más interés que las políticas de amplio calado.
 
 Por último, la transparencia sobre el propio proceso genera confianza y posibilidad de movilizar a otros sectores de la ciudadanía en el siguiente. Incluso si los resultados no son los esperados, es fundamental mostrar todos los datos del proceso, especialmente la tasa de participación. Del mismo modo, el seguimiento periódico y publicación transparente del estado de realización de las propuestas creará un clima de normalidad y confianza entre los ciudadanos.
+
+# Anexo: Citas, extractos de las entrevistas y cuestionario
+
+## Citas
+
+“La participación sin redistribución de poder es un proceso vacío y frustrante para los que carecen de poder. Permite a los poderosos declarar que han tenido en cuenta a todas las partes, cuando solo una se beneficia” - Sherry Arnstein
+
+"Arnstein propone una tipología de niveles de participación, que asciende desde grados bajo cero hasta las alturas
+con mayor cantidad de participación. Define _ocho niveles_, agrupados en tres planos: 
+- Plano de la no-participación: pretende sustituir a la genuina participación, mediante mecanismos de manipulación.
+- Plano de la participación simbólica: se permite a la ciudadanía escuchar, tener voz e, incluso, ser escuchada.
+- Plano del poder ciudadano: la ciudadanía participa en la toma de decisiones, mediante mecanismos de negociación y acuerdo, o mediante auténtica delegación del poder". - Alberto Ortiz de Zárate.
+
+...
+
+## Extractos de las entrevistas
+
+...
+
+## Cuestionario a 11 ayuntamientos sobre sus presupuestos participativos
+
+Lista de ayuntamientos: 
+
+- Alcobendas
+- Badalona
+- Candelaria
+- Cornellà de Llobregat
+- Irún
+- Logroño
+- Madrid
+- Málaga
+- Molina de Segura
+- San Sebastián de los Reyes
+- Zaragoza
+
+### Canales de información
+
+(gráfico)
+
+### Origen del dinero
+
+(gráfico)
+
+### Presentación de propuestas
+
+(gráfico)
+
+### Forma presentacion propuestas
+
+(gráfico)
+
+### Filtros propuestas
+
+(gráfico)
+
+### Cómo pasan las propuestas a fase de votación
+
+(gráfico)
+
+### Numero mínimo de apoyos
+
+(gráfico)
+
+### Método de registro
+
+(gráfico)
+
+### Espacio de la votación
+
+(gráfico)
+
+### Número de funcionarios
+
+(gráfico)
+
+### ¿Qué problemas técnicos os habéis encontrado?
+
+- Dirimir propuestas que entran en capitulo 6 y competencias del Ayuntamiento. Combinar la rapidez en el cribado de propuestas para que no se generen falsas expectativas con la precision en la repuesta. Garantizar la ejecucion de las propuestas seleccionadas. Combinar en el sistema de identificacion seguridad y derecho a la participacion."
+- De difusión y diseño del proceso, así como falta de apoyo político para su puesta en marcha.
+- No técnicos u operativos, pero sí que ha afectado a la participación la inclusión en esta tercera edición la autenticación electrónica antes comentada (anteriormente se hacía mediante NIF+fecha de nacimiento,... y detectamos diversos problemas)
+- Ninguno de relevante, en este aspecto ha funcionado bastante bien
+- Ninguno destacable
+- Que la plataforma online en algunos momentos puntuales ha fallado.
+- Dificultad para conseguir participación vecinal en algunos casos
+- Dificultades en la comprensión del concepto inversión
+- Al no haber apoyos salieron muchas propuestas (más de 1.200), y al no contar con mucho tiempo para comprobar su viabilidad los técnicos cometieron algunos errores (afirmar que eran viables propuestas que finalmente no lo eran, por ejemplo). De hecho alguna propuesta salió votada con mayoría y finalmente no ha podido realizarse.
+- Adaptación tecnológica y unión de lo presencial con lo tecnológico. Necesidad de avanzar en el modelo y mejorarlo a lo largo de estos años.
+- Sí, puntualmente problemas con la plataforma para subir propuestas.
+
+## ¿Qué problemas os han trasladado los vecinos?
+
+- Pugna entre participacion individual y de entidades. Sobrecarga de reuniones y responsabilidad.
+- La falta de cultura participativa.
+- No han trasladado problemas, pero la participación ha caído por un conjunto de razones sobre las que hemos abierto un proceso de reflexión. No es sencillo el diagnóstico porque confluyen diversas cosas.
+- Fundamentalmente los relacionados con el micro urbanismo y espacio público
+- Ninguno destacable
+- Que la plataforma online en algunos momentos puntuales ha fallado. Que no se limite la votación al barrio donde está empadronado/a sino que también se pueda votar proyectos de otras zonas.
+- Utilizan las reuniones para trasladar problemas personales
+- Dificultades en la comprensión del concepto inversión
+- Básicamente se trata de problemas relativos a infraestructuras (calles, etc.). Además, el presupuesto estaba prorrogado, por lo que las propuestas debían de cumplir una serie de requisitos (inversiones financieramente sostenibles, entre otros)
+- Mejoras en la baremación de las propuestas
+- Que haya más difusión del proceso y más tiempo para trabajar las propuestas.
+
+## ¿Qué retos os planteáis de cara al siguiente proceso? ¿Cómo pensáis afrontarlos?
+
+- Mayor implicacion de los tecnicos implantados en el territorio. Ampliar a proyectos de ciudad, no solo de distrito. Potenciar aun mas la participacion juvenil. Llegar a mas sectores de poblacion. Consolidar y aumentar participacion.
+- Más dinero.
+- Recuperar participación, y volver a contar (este año ya lo teníamos) consenso total de todos los actores (grupos políticos municipales, representantes del asociacionismo local, técnicos municipales).
+- Mejorar la representividad, acotar los proyectos sujetos a votación
+- Mayor participación. Con la máxina difusión posible e implicando a los vecinos a participar.
+- Que no sólo puedan participar empadronados/as sino que también se abra el proceso a personas que trabajan en el municipio y/o que tengan una propiedad aunque no residan de forma permanente durante todo el año. Tenemos que establecer los medios, de forma práctica y sencilla, para que estas personas acrediten esa situación y puedan participar. Por otra parte, en la convocatoria para los presupuestos de 2018 pretendemos que los/as vecinos voten los proyectos de su barrio y también puedan votar al menos 1 proyecto de otra zona que frecuentan habitualmente. Que los/as vecinos/as sean los que definan los criterios que tienen que tener las propuestas para que sean viables. Actualmente, pueden participar en los presupuestos comunitarios las personas empadronadas mayores de 16 años. La idea en un futuro es ampliar el proceso desde la infancia con una metodología específica y paralela que se definirá y llevará a cabo a través de los centros educativos del municipios."
+- Conseguir mayor participación en los procesos
+- Introducir la posibilidad de presentar propuestas de manera presencial en formato papel
+- Mejorar la distribución del presupuesto por zonas, e incorporar herramientas para votar online
+- Extenderlo a otras áreas. Pensamos que no queríamos reducir todo al campo de la inversión en via publica aunque ahora daremos el salto. Fundamenteal tener la capacidad de asumir las acciones propuestas y usar el Presupuesto Participativo como herramienta más que como fin en si mismo. El principal reto es extenderlo a otras áreas y seguir conjugando las formas d eparticipar. 
+En este proceso que dura ya unos años, es fundamental que el vecino se involucre también en la realización de la propuesta (si es posible) o alguna fase posterior. En nuestro caso, es posible que el joven, a la hora de proponer actividad, proponga también que sea el / ellos si es un grupo, los que la realicen.
+- Mejorar la capacidad de los proponentes para elaborar las propuestas y su difusión; incorporar a los proponentes en la puesta en marcha del proyecto para que los técnicos tengan en cuenta la idea de los participantes; elaboración de prototipos. Contamos con una propuesta de proceso ya elaborada y queremos implementarla.
 
 # Bibliografía y Notas
 
