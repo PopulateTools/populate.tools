@@ -470,13 +470,26 @@ con mayor cantidad de participación. Define _ocho niveles_, agrupados en tres p
 - Plano de la participación simbólica: se permite a la ciudadanía escuchar, tener voz e, incluso, ser escuchada.
 - Plano del poder ciudadano: la ciudadanía participa en la toma de decisiones, mediante mecanismos de negociación y acuerdo, o mediante auténtica delegación del poder". - Alberto Ortiz de Zárate.
 
-...
+“Buscar publicistas profesionales que sepan hacer buenos diseños para la cartelería, trípticos, etc, ya que, a veces con el ánimo de gastar menos se hacen verdaderas chapuzas (con toda la buena intención del mundo)” - Francisco Francés García y Antonio Carrillo Cano, _Guía metodológica de los presupuestos participativos_.
 
 ## Extractos de las entrevistas
 
-...
+"Se implicó todo el ayuntamiento. Durante el verano, de junio a agosto, hicimos un trabajo técnico importante: validar técnicamente si las propuestas eran competencia del ayuntamiento o no, si pasaba el presupuesto... Los técnicos –los de urbanismo sobre todo– valoraban los proyectos, veían si eran viables o no y le ponían dinero". - Ricard Vilaregut, Coordinador de gobierno del Ayuntamiento de Badalona.
 
-## Cuestionario a 11 ayuntamientos sobre sus presupuestos participativos
+"Durante el proceso de votación (10-15 semanas)hicimos una campaña informativa bestial. Eso explica el tanto por ciento tan alto de participación que hemos conseguido. Por ejemplo, contratamos una empresa de 10 personas que durante 3 semanas se encargaron de ir a cada centro de mayores y hacer un taller para explicar el proyecto. A los que querían votar se les proporcionaba acceso a un ordenador ahi mismo. Con eso hemos atajado bastante la brecha generacional." - Ricard Vilaregut, Coordinador de gobierno del Ayuntamiento de Badalona.
+
+"Tras un primer año en el que, además de la ilusión por la novedad, detectamos una fuerte actividad de algunos lobbies locales que impulsaron varias de las iniciativas que recibieron los mayores apoyos, el segundo año la participación creció de manera inusitada. Algunas asociaciones de la ciudad recabaron el apoyo de personas (la autenticación en la votación se hacía simplemente con el par NIF+fecha de nacimiento), incluso puerta por puerta. Los niveles de participación, que superaron los 7.000 votantes para una ciudad de 62.000, eran totalmente artificiales.
+" - Javier Arranz, responsable de participación del Ayuntamiento de Irún.
+
+"La gente participa muy activamente cuando los temas les afectan desde la cercanía, directamente. Los procesos asociados a asuntos de barrio tienen muy buena participación, pero cuesta mucho conseguir implicación en asuntos de mayor alcance" - Javier Arranz, responsable de participación del Ayuntamiento de Irún.
+
+"El ciudadano medio no tiene tiempo para participar, pero quiere decidir. Es muy frecuente que digan que quieren votar, pero no tienen tiempo para bajar a la asociación y trababarse una propuesta" - Enrique Villalobos, Presidente de la Federación Regional de Asociaciones Vecinales de Madrid.
+
+"La gente realmente activista de las asociaciones de vecinos acaba sabiendo muchas cosas. Su experiencia es muy valiosa. Licitaciones, competencias del ayuntamiento, tiempos de resolución... Por eso su labor es tan importante en las fases de información y deliberación" - Enrique Villalobos, Presidente de la Federación Regional de Asociaciones Vecinales de Madrid.
+
+"Hemos intentado atajar la brecha digital a través de una vinculación con las bibliotecas públicas, que han trabajado codo a codo con nosotras en el proyecto para poder trabajar como espacio de mediación con la ciudadanía, organizando espacios de debate por un lado y apoyando a la ciudadanía durante todo el proceso por el otro" - Natalia Balseiro, responsable de participación del Ayuntamiento de A Coruña
+
+## Cuestionario propio respondido por representantes de participación de 11 ayuntamientos sobre sus presupuestos participativos
 
 Lista de ayuntamientos: 
 
@@ -492,43 +505,43 @@ Lista de ayuntamientos:
 - San Sebastián de los Reyes
 - Zaragoza
 
-### Canales de información
+### ¿Por qué canales se difunde la información sobre el proceso?
 
 (gráfico)
 
-### Origen del dinero
+### ¿De qué parte del presupuesto sale el dinero destinado a los presupuestos participativos?
 
 (gráfico)
 
-### Presentación de propuestas
+### ¿Quién presenta las propuestas?
 
 (gráfico)
 
-### Forma presentacion propuestas
+### ¿Cómo pueden presentar propuestas los vecinos?
 
 (gráfico)
 
-### Filtros propuestas
+### ¿Hay algún tipo de filtro por parte del ayuntamiento para aceptar propuestas?
 
 (gráfico)
 
-### Cómo pasan las propuestas a fase de votación
+### ¿Qué propuestas pasan a la fase de votación?
 
 (gráfico)
 
-### Numero mínimo de apoyos
+### ¿Cual es el número mínimo de apoyos que tiene que conseguir una propuesta para entrar en la fase de votación?
 
 (gráfico)
 
-### Método de registro
+### ¿Cómo se registran los vecinos para poder votar las propuestas?
 
 (gráfico)
 
-### Espacio de la votación
+### ¿Dónde se realiza la votación?
 
 (gráfico)
 
-### Número de funcionarios
+### ¿Cuantos funcionarios se encargan del proceso de presupuestos participativos?
 
 (gráfico)
 
