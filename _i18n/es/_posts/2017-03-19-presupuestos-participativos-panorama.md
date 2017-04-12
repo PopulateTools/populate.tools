@@ -559,7 +559,7 @@ Lista de ayuntamientos:
 - Adaptación tecnológica y unión de lo presencial con lo tecnológico. Necesidad de avanzar en el modelo y mejorarlo a lo largo de estos años.
 - Sí, puntualmente problemas con la plataforma para subir propuestas.
 
-## ¿Qué problemas os han trasladado los vecinos?
+### ¿Qué problemas os han trasladado los vecinos?
 
 - Pugna entre participacion individual y de entidades. Sobrecarga de reuniones y responsabilidad.
 - La falta de cultura participativa.
@@ -573,7 +573,7 @@ Lista de ayuntamientos:
 - Mejoras en la baremación de las propuestas
 - Que haya más difusión del proceso y más tiempo para trabajar las propuestas.
 
-## ¿Qué retos os planteáis de cara al siguiente proceso? ¿Cómo pensáis afrontarlos?
+### ¿Qué retos os planteáis de cara al siguiente proceso? ¿Cómo pensáis afrontarlos?
 
 - Mayor implicacion de los tecnicos implantados en el territorio. Ampliar a proyectos de ciudad, no solo de distrito. Potenciar aun mas la participacion juvenil. Llegar a mas sectores de poblacion. Consolidar y aumentar participacion.
 - Más dinero.
