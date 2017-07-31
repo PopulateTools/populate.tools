@@ -17,13 +17,19 @@ h2 {
   margin: 0 0 4em 0;
 }
 .container {
-  max-width: 934px;
+  max-width: 1200px;
   min-width: 300px;
-  margin: 0 5% 20% 20%;
+  margin: 0 5% 10% 16%;
 }
 .work {
   margin: 0 0 12em 0;
   overflow: auto;
+}
+.work .col-1-2 {
+  width: 65%;
+}
+.work .col-2-2 {
+  width: 30%;
 }
 .work h3 {
   margin: 0;
@@ -61,7 +67,6 @@ h2 {
   overflow: auto;
 }
 .who .person {
-  padding: 0 2em;
   box-sizing: border-box;
 }
 .who a {
@@ -95,7 +100,7 @@ h2 {
 }
 
 .column_t li {
-  list-style-type: square; 
+  list-style-type: square;
 }
 ul, li {
   margin: 0;
@@ -231,9 +236,19 @@ input[type=submit] {
     background-size: 40%;
   }
   .side {
-    display: none;
+    position: initial;
+    width: initial;
+    height: initial;
+    text-align: center;
+    padding: 0;
   }
-  .col-1-2, .col-2-2, .col-1-3, .col-2-3, .col-3-3 {
+  .side li {
+    display: inline-block;
+  }
+  .side a {
+    padding: 10px;
+  }
+  .col-1-2, .col-2-2, .col-1-3, .col-2-3, .col-3-3, .work .col-1-2, .work .col-2-2 {
     float: none;
     width: 100%;
   }
@@ -262,10 +277,12 @@ input[type=submit] {
   .work {
     margin: 0 0 5em 0;
   }
+  .work img {
+    border-right: initial;
+    border-left: initial;
+  }
   .who .person {
     margin: 0 0 3em 0;
   }
 
 }
-
-
