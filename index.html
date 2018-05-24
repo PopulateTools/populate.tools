@@ -1,42 +1,39 @@
 ---
 layout: default
-description: t meta_description.home
+description: meta description
 ---
 
 {% include hero.html %}
 
 <main>
+
   {% include header.html %}
 
   <div class="container">
-
-    <!--
-    <section id="products" class="section products">
-      {% include products.html %}
-    </section>
-    -->
 
     <section id="projects" class="section projects">
       {% include projects.html %}
     </section>
 
-    <section id="news" class="section news">
+    <!-- <section id="news" class="section news">
       {% include news.html %}
-    </section>
+    </section> -->
   </div>
 
   <div class="container-fluid">
     <div class="container">
-      <h1 class="section-title">{% t clients %}</h1>
+      <h1 class="section-title">Clients</h1>
     </div>
     <section id="clients" class="section clients">
       {% include clients.html %}
     </section>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <section id="team" class="section team">
       {% include team.html %}
     </section>
-  </div>
+  </div> -->
+
+  {% include about.html %}
 </main>

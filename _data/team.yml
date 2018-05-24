@@ -1,0 +1,11 @@
+alvaro:
+  name: Álvaro Ortiz
+  img: team/alvaro.jpg
+  role: Founder & Designer
+  handle: furilo
+
+blat:
+  name: Fernando Blat
+  img: team/blat.png
+  role: Founder & Backend engineer
+  handle: ferblape

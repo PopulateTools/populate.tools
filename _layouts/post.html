@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign author = site.data.[site.lang].team[page.author] %}
+{% assign author = site.data.team[page.author] %}
 {% include header.html %}
 <div class="container">
 
@@ -42,13 +42,13 @@ layout: default
       {% endif %}
     </header>
     {% endif %}
-    
+
     <main class="content">
       {{ content }}
     </main>
 
     <div class="latest-articles">
-      <h4>{% t last_articles %}</h4>
+      <h4>Últimos artículos</h4>
       {% for post in site.posts limit:4 %}
         <article class="article">
           <h2 class="article-headline"><a class="article-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -56,7 +56,7 @@ layout: default
         </article>
       {% endfor %}
 
-      <p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">{% t view_all %}</a></p>
+      <p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">ver todos</a></p>
     </div>
 
   </article>

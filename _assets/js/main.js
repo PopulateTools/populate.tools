@@ -5,6 +5,7 @@
 //= require vendor/packery.pkgd.min.js
 //= require vendor/imagesloaded.pkgd.min.js
 //= require vendor/blazy.min.js
+//= require vendor/slick.min.js
 //= require vendor/contents.js
 
 $(document).ready(function() {
@@ -30,12 +31,13 @@ $(document).ready(function() {
     successClass: 'loaded'
   });
 
-  /* Stick header */
+  /* Stick header
   if ($('.header').length > 0) {
     var sticky = new Waypoint.Sticky({
       element: $('.header')[0]
     });
   }
+  */
 
   if ($('.toc').length > 0) {
     var sticky = new Waypoint.Sticky({
@@ -64,27 +66,6 @@ $(document).ready(function() {
       percentPosition: true
     });
   });
-
-  /* Project gallery popup */
-	$('.project-gallery').magnificPopup({
-		type: 'inline',
-    delegate: '.project',
-
-		fixedContentPos: 'auto',
-		fixedBgPos: true,
-
-		overflowY: 'auto',
-
-		closeBtnInside: true,
-		preloader: false,
-
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in',
-    gallery: {
-      enabled: true
-    },
-	});
 
   // autocaptions for article images
   $('article img.caption').after(function() {
@@ -164,5 +145,15 @@ $(document).ready(function() {
             .addClass('active-child');
     });
   }
+
+  $('.img-slide').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
 });

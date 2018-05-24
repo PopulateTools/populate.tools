@@ -6,7 +6,7 @@ permalink: /blog/
 
 <div class="container posts-index">
 
-	<h2 class="section-title">Noticias</h2>
+	<h2 class="section-title">News</h2>
 
   {% for post in site.posts %}
     <article class="article">

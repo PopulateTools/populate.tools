@@ -29,8 +29,6 @@ GEM
       pathutil (>= 0.8)
       rack (> 1, < 2)
       sprockets (~> 3.3, < 3.7)
-    jekyll-multiple-languages-plugin (1.5.1)
-      jekyll (>= 2.0, < 4.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-seo-tag (2.1.0)
@@ -65,9 +63,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-assets
-  jekyll-multiple-languages-plugin
   jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH
-   1.13.7
+   1.14.6

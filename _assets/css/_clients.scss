@@ -1,5 +1,4 @@
 .clients {
-  background: $light_gray;
   text-align: center;
 }
 .clients-title {
@@ -11,7 +10,7 @@
   padding: 4rem 0;
   max-width: 1500px;
   margin: 0 auto;
-  
+
   @include min-screen(1200) {
     padding: 2rem 6rem;
   }
@@ -22,7 +21,7 @@
 .clients-grid .col-3,
 .clients-grid .col-4 {
   border-top: 1px solid $border;
-  
+
   @include min-screen(768) {
     border-top: none;
   }
@@ -48,14 +47,17 @@
 .client-wrapper {
   padding: 2rem;
   height: 120px;
-  
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 1s ease;
+
   @include min-screen(1200) {
     padding: 3rem;
   }
-  
-  @include min-screen(90em) {
-    padding: 2rem 6rem;
-  }
+}
+.client-wrapper:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .clients-grid .client-img {
   background-position: center;

@@ -9,41 +9,16 @@
       </div>
 
       <div class="desktop-menu">
-        <a class="no-underline logo" href="/{% if site.lang == "es" %}es/{% endif %}">
+        <a class="no-underline logo" href="/">
           {% img 'logo' class:'logo-header pure-img' alt:'Populate' %}
         </a>
         <ul class="header-list">
-          <!-- <li class="header-item"><a class="header-link header-section" href="/#products">Products</a></li> -->
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#projects">{% t projects %}</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}blog">{% t news %}</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#clients">{% t clients %}</a></li>
-          <!-- <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#team">{% t team %}</a></li> -->
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}about">{% t about %}</a></li>
-          <li class="header-item">
-
-              {% if site.lang == "es" %}
-                {% capture link1 %}{{ site.baseurl_root }}/{% endcapture %}
-                <span>ES</span>
-                <span><a class="active" href="{{ link1 }}" >EN</a></span>
-              {% elsif site.lang == "en" %}
-                {% capture link2 %}{{ site.baseurl_root }}/es{% endcapture %}
-                <span><a class="active" href="{{ link2 }}" >ES</a></span>
-                <span>EN</span>
-              {% endif %}
-
-          </li>
+          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#projects">work</a></li>
+          <!-- <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}blog">news</a></li> -->
+          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#clients">clients</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#about">about</a></li>
         </ul>
 
-        <div class="newsletter">
-          <div id="revue-embed">
-            <form action="https://www.getrevue.co/profile/populate/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-            <div class="revue-form-group">
-              <input class="revue-form-field" placeholder="{% t get_on_our_weekly_newsletter %}" name="member[email]" id="member_email" type="email">
-              <input value="✓" name="member[subscribe]" id="member_submit" type="submit">
-            </div>
-            </form>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -52,11 +27,9 @@
 
   <header class="mobile_menu modal mfp-hide" id="mobile_menu">
     <menu>
-      <!-- <a class="mobile-link no-underline" href="/#products">{% t products %}</a> -->
-      <a class="mobile-link no-underline" href="/#projects">{% t projects %}</a>
-      <a class="mobile-link no-underline" href="/#news">{% t news %}</a>
-      <a class="mobile-link no-underline" href="/#clients">{% t clients %}</a>
-      <!-- <a class="mobile-link no-underline" href="/#team">{% t team %}</a> -->
-      <a class="mobile-link no-underline" href="/#">{% t about %}</a>
+      <a class="mobile-link no-underline" href="/#projects">work</a>
+      <a class="mobile-link no-underline" href="/#news">news</a>
+      <a class="mobile-link no-underline" href="/#clients">clients</a>
+      <a class="mobile-link no-underline" href="/#">about</a>
     </menu>
   </header>

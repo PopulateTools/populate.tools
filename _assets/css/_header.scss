@@ -5,7 +5,7 @@
   padding: 2rem 0;
 
   @include min-screen(768) {
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2rem 4rem 6rem 4rem;
   }
 
   @include min-screen(1600) {
@@ -55,35 +55,41 @@
 }
 
 .newsletter {
-  display: none;
-  position: absolute;
-  right: 2rem;
-  border-bottom: 1px solid $border;
-  width: 20rem;
-  top: 5px;
+  display: block;
+  position: relative;
+  max-width: 3400px;
+  margin: 0 0 2rem;
 
-  @include min-screen(64em) {
-    display: inline-block;
+  .ml-subscribe-form {
+    margin: auto;
+    position: relative;
+    border-bottom: 1px solid $border;
+
   }
 }
 .newsletter #revue-embed {
   position: relative;
 }
 .newsletter #member_email {
-  background: transparent;
-  width: 95%;
+  background: #F3F3F3;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: .85em;
+  box-sizing: border-box;
 }
 .newsletter #member_submit {
   position: absolute;
-  right: 0;
+  right: 6px;
+  top: 7px;
+  font-size: 1.2em;
 }
 .newsletter p {
   margin-bottom: 0.5rem;
 }
-.newsletter input {
+.newsletter input, button {
   border: none;
 }
-.newsletter input[type="submit"] {
+.newsletter input[type="submit"], button {
   background: none;
 }
 
