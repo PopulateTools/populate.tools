@@ -1,23 +1,23 @@
 - name: Madrid
-  img: clients/Madrid.png
+  img: clients/madrid.png
 
 - name: Generalitat de Catalunya
-  img: clients/Gencat.png
+  img: clients/gencat.png
 
 - name: Pulitzer Center on Crisis Reporting
-  img: clients/Pulitzer.png
+  img: clients/pulitzer.png
 
 - name: The Cocktail
   img: clients/thecocktail.png
 
 - name: The International Consortium of Investigative Journalists
-  img: clients/ICIJ.png
+  img: clients/icij.png
 
 - name: Ecoembes
-  img: clients/Ecoembes.png
+  img: clients/ecoembes.png
 
 - name: Residencia de Estudiantes
-  img: clients/Residencia.png
+  img: clients/residencia.png
 
 - name: Ajuntament de Barcelona
-  img: clients/Barcelona.png
+  img: clients/barcelona.png
