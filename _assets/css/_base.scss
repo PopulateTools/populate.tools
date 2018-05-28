@@ -25,6 +25,7 @@ h4, h5, h6 {
   margin: 0 0 0.4em 0;
   font-family: $sans_headline;
   text-rendering: geometricPrecision;
+  color: $blue;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
 }
@@ -44,9 +45,6 @@ p, ul, ol, dl {
   text-rendering: geometricPrecision;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
-}
-ol, ul {
-  padding-left: 3rem;
 }
 ol ol, ul ul,
 ul ol, ol ul {

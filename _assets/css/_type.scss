@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:200,400,700");
+
 /* Variables */
-$sans_headline: "Avenir Next", sans-serif;
-$sans_copy: "acumin-pro", "Helvetica Neue", sans-serif;
-$serif: "Georgia", serif;
+// $sans_headline: "Avenir Next", sans-serif;
+$sans_headline: "Libre Franklin", sans-serif;
+$sans_copy: "Libre Franklin", sans-serif;
+$serif: "Libre Franklin", serif;
 
 $f1: 2.441rem;
 $f2: 1.953rem;
@@ -40,4 +43,10 @@ h6 {
 }
 .no-underline {
   text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
