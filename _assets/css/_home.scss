@@ -2,9 +2,9 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
-  
+
   @include min-screen(768) {
-    padding: 0 6rem;
+    padding: 0 6rem 3rem;
   }
 
   @include min-screen(1600) {
@@ -13,11 +13,11 @@
 }
 .section {
   margin-bottom: 2rem;
-  
+
   @include min-screen(768) {
     margin-bottom: 6rem;
   }
-  
+
   @include min-screen(1600) {
     margin-bottom: 7rem;
   }
