@@ -17,6 +17,7 @@ screens:
 public_url: https://panamapapers.icij.org/
 client_url: https://icij.org/
 width: wide
+weight: 1
 ---
 
 wadus

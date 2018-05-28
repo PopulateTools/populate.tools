@@ -20,6 +20,13 @@ collections:
     output: true
     permalink: projects/:name
 
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      weight: 100
+
 # Analytics
 ga_id: UA-70344922-1
 inspectlet_id: 761931177

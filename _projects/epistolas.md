@@ -20,4 +20,5 @@ screens:
   - projects/screens/epistolas-3.jpg
 # public_url: https://panamapapers.icij.org/
 # client_url: https://icij.org/
+weight: 4
 ---

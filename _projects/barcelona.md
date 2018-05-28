@@ -22,6 +22,7 @@ screens:
 screen_1: projects/screens/panama-papers-1.jpg
 public_url: https://panamapapers.icij.org/
 client_url: https://icij.org/
+weight: 3
 ---
 
 wadus

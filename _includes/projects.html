@@ -3,16 +3,20 @@
 <div class="project-gallery">
   {% assign projects = site.projects | sort: 'weight' %}
   {% for project in projects %}
-  <a class="project w{% cycle 1, 2, 3, 4 %} " href="{{ project.url }}">
-    <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-teaser pure-img ">
-      <span class="project-hover">
-        <div class="hover-content">
-          <div class="hover-name">{{project.name}}</div>
-          <div class="hover-client">{{project.client}}</div>
-        </div>
-      </span>
-    </div>
-  </a>
+    {% if project.width == 'wide' %}
+      <a class="project wide" href="{{ project.url }}">
+    {% else %}
+      <a class="project w{% cycle 1, 2, 3, 4, 5, 6 %} " href="{{ project.url }}">
+    {% endif %}
+      <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-teaser pure-img ">
+        <span class="project-hover">
+          <div class="hover-content">
+            <div class="hover-name">{{project.name}}</div>
+            <div class="hover-client">{{project.client}}</div>
+          </div>
+        </span>
+      </div>
+    </a>
   {% endfor %}
 
   {% for project in site.data.projects %}
