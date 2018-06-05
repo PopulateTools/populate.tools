@@ -7,8 +7,11 @@
     }
     .logo img {
       position: absolute;
-      max-width: 18rem;
-      bottom: 3rem;
+      bottom: 1rem;
+      @include min-screen(768) {
+        max-width: 18rem;
+        bottom: 3rem;
+      }
     }
   }
 }

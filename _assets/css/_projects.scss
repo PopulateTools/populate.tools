@@ -107,7 +107,9 @@
   margin-bottom: 0.5rem;
 }
 .project-description {
-  padding: 1rem 0 1rem 5rem;
+  @include min-screen(768) {
+    padding: 1rem 0 1rem 5rem;
+  }
 }
 .project-client {
   text-transform: uppercase;
@@ -172,6 +174,12 @@
       width: 100%;
       height: auto;
     }
+  }
+}
+@include screen(768) {
+  .slick-prev,
+  .slick-next {
+    display: none;
   }
 }
 .slick-dots {
