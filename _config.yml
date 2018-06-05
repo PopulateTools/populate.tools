@@ -19,6 +19,9 @@ collections:
   projects:
     output: true
     permalink: projects/:name
+  news:
+    output: true
+    permalink: news/:name
 
 defaults:
   - scope:

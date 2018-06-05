@@ -1,8 +1,8 @@
 .footer {
   border-top: 1px solid $border_light;
-  padding: 1rem 0 20rem 0;
   position: relative;
   font-family: $sans_copy;
+  padding: 2rem 0;
 
   a {
     text-decoration: none;
@@ -17,6 +17,8 @@
 
 .footer-link {
   font-family: $sans_copy;
+  margin-bottom: 2rem;
+  display: inline-block;
 }
 .footer-link:not(:last-child) {
   padding-right: 2rem;
