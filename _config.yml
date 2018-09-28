@@ -44,7 +44,8 @@ github_url: https://github.com/
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config']
+# Exclude _i18n due to Github compilation error
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_layouts/post.html']
 
 assets:
   features:
