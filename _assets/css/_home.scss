@@ -59,23 +59,36 @@
 }
 .pieces-sep {
   img {
-    margin: 8em auto;
+    margin: 6em auto;
     display: block;
   }
+  .rot-45 {
+    transform: rotate(45deg);
+    max-width: 200px;
+  }
+  .rot-90 {
+    transform: rotate(90deg);
+    max-width: 165px;
+  }
+  .rot-135 {
+    transform: rotate(135deg);
+    max-width: 175px;
+  }
+  .rot-180 {
+    transform: rotate(180deg);
+    max-width: 250px;
+  }
 }
-.rot-45 {
-  transform: rotate(45deg);
-  max-width: 200px;
-}
-.rot-90 {
-  transform: rotate(90deg);
-  max-width: 165px;
-}
-.rot-135 {
-  transform: rotate(135deg);
-  max-width: 175px;
-}
-.rot-180 {
-  transform: rotate(180deg);
-  max-width: 250px;
+
+
+#contact {
+  .fas {
+    margin: 0 1em 0 3em;
+    color: $red;
+  }
+  .contact_links {
+    p {
+      margin: 0 0 1.25em 0;
+    }
+  }
 }

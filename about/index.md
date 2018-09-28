@@ -164,6 +164,7 @@ class: about
           <p class="small">Do you have a project you think we might help with? Tell us: what you need, when, how we fit in, what is your budget range...</p>
           <p class="small">Write: <a href="mailto:lets@populate.tools">lets@populate.tools</a></p>
           <p class="small">Call: <a href="tel:34650552940">+34650552940</a> -- Álvaro Ortiz</p>
+          <p class="small">Visit: <a href="https://www.openstreetmap.org/node/4512495943#map=15/40.4307/-3.7120">C/ Meléndez Valdés, 47 · 28015 Madrid · Spain</a>
         </div>
 
         <div class="pure-u-1 pure-u-md-1-2 p_h_l_1">

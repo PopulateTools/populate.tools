@@ -17,6 +17,6 @@ screens:
   - projects/screens/revistas-0.jpg
   - projects/screens/revistas-1.jpg
   - projects/screens/revistas-2.jpg
-public_url: https://panamapapers.icij.org/
+# public_url: https://panamapapers.icij.org/
 # client_url: https://icij.org/
 ---
