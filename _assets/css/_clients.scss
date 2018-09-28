@@ -1,0 +1,72 @@
+.clients {
+  text-align: center;
+}
+.clients-title {
+  font-weight: 400;
+  color: $blue;
+  margin-bottom: 2rem;
+}
+.clients-grid {
+  padding: 4rem 0;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @include min-screen(1200) {
+    padding: 2rem 6rem;
+  }
+  @include min-screen(1600) {
+    padding: 2rem 0;
+  }
+}
+.clients-grid .col-3,
+.clients-grid .col-4 {
+  border-top: 1px solid $border;
+
+  @include min-screen(768) {
+    border-top: none;
+  }
+}
+.clients-grid .col-5,
+.clients-grid .col-6,
+.clients-grid .col-7,
+.clients-grid .col-8 {
+  border-top: 1px solid $border;
+}
+.clients-grid .col-1,
+.clients-grid .col-2,
+.clients-grid .col-3,
+.clients-grid .col-5,
+.clients-grid .col-6,
+.clients-grid .col-7 {
+  border-right: 1px solid $border;
+}
+.client {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.client-wrapper {
+  padding: 2rem;
+  height: 120px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 1s ease;
+
+  @include min-screen(1200) {
+    padding: 3rem;
+  }
+}
+.client-wrapper:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.clients-grid .client-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 100%;
+  width: 75%;
+  margin: auto;
+}

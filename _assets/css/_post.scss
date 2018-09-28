@@ -1,0 +1,147 @@
+/* Base */
+$post-width: 700px;
+
+body.post, body.report {
+  .container {
+    max-width: 900px;
+    margin: 2em 0;
+  }
+  h1 {
+    color: $black;
+    margin-bottom: 1rem;
+    font-size: $f2;
+
+    @include min-screen(768) {
+      font-size: $f1;
+      // max-width: $post-width * 1.25;
+    }
+
+    @include min-screen(1600) {
+      // max-width: $post-width * 1.35;
+    }
+  }
+  h2 {
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+  h2.subtitle {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin: 0 0 1em 0;
+  }
+  h3,
+  h4,
+  h5 {
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 1.85rem;
+  }
+
+  .author-link {
+    text-decoration: none;
+  }
+  .meta {
+    color: $gray;
+    margin-bottom: 1.5rem;
+
+    @include min-screen(768) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+body.report {
+  .container {
+    max-width: 1050px;
+    margin: 2em 0;
+  }
+  .content {
+    font-size: 1em;
+  }
+}
+.content img,
+article header img {
+  // margin: 2.75rem 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #DFDFDF;
+}
+.content {
+  font-size: $fpost;
+  line-height: 1.5;
+  border-bottom: 1px solid $border_light;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+  // max-width: $post-width;
+
+  @include min-screen(768) {
+    font-size: 1.15em;
+    line-height: 1.6;
+  }
+  a {
+    word-wrap: break-word;
+  }
+  hr {
+    margin: 2.5rem 0;
+    max-width: $post-width
+  }
+  caption {
+    width: 100%;
+    display: block;
+    font-size: .85em;
+    color: #999;
+    line-height: 1.3em;
+    margin: .5em 0 0 0;
+  }
+  blockquote {
+    margin: 2rem 0;
+    font-size: .9em;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    border-left: 2px solid $gray;
+  }
+}
+
+.posts-index {
+  @include screen(768) {
+    h2 {
+      font-size: 1.2em;
+    }
+    .story {
+      padding: 0 2em 0 0;
+    }
+  }
+}
+.latest-articles {
+  margin: 3rem 0;
+  h4 {
+    margin: 2em 0;
+  }
+  article {
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+  }
+}
+
+/* Post meta */
+.post .info {
+  display: inline-block;
+  vertical-align: 5px;
+
+}
+.meta p {
+  margin-bottom: 0;
+}
+.meta time {
+  display: block;
+}
+.avatar {
+  display: inline-block;
+  margin-right: 0.5rem;
+  max-width: 45px;
+  border-radius: 50%;
+}

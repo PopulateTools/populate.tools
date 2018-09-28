@@ -1,0 +1,12 @@
+<h1 class="section-title center">team</h1>
+
+<div class="team-grid">
+{% for member_hash in site.data.team %}
+{% assign member = member_hash[1] %}
+  <div class="member">
+    <img data-src="{% asset_path {{member.img}} %}" class="pure-img member-img lazy" alt='{{member.name}}'/>
+    <p class="member-name">{{member.name}}</p>
+    <p class="member-role">{{member.role}}</p>
+  </div>
+  {% endfor %}
+</div>

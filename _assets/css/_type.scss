@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:200,400,700");
+
+/* Variables */
+// $sans_headline: "Avenir Next", sans-serif;
+$sans_headline: "Libre Franklin", sans-serif;
+$sans_copy: "Libre Franklin", sans-serif;
+$serif: "Libre Franklin", serif;
+
+$f1: 2.441rem;
+$f2: 1.953rem;
+$f3: 1.563rem;
+$f4: 1.25rem;
+$f5: 1rem;
+$f6: 0.8rem;
+
+$fpost: .85rem;
+
+$lh: 1.5;
+
+/* Scale */
+h1 {
+  font-size: $f1;
+  text-indent: -3px;
+}
+h2 {
+  font-size: $f2;
+}
+h3 {
+  font-size: $f3
+}
+h4 {
+  font-size: $f4;
+}
+h5 {
+  font-size: $f5;
+}
+h6 {
+  font-size: $f6;
+}
+
+.center {
+  text-align: center;
+}
+.no-underline {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

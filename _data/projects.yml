@@ -1,0 +1,116 @@
+# ICIJ - OK
+## ONG
+# Residencia de Estudiantes: Revistas, Epístolas...
+## Private
+# Ecoembes
+# ingenio.xyz
+# Endesa
+# España en Cifras
+## Public
+# Decidim: Propuesta, UI
+# Diputación Barcelona
+# Ayto Madrid
+# GenCat
+# Alcobendas
+## Product
+# Gobierto
+# Populate Data
+# Reasons
+
+#
+# - name: Data Visualization
+#   client: Residencia de Estudiantes/CSIC
+#   description: wadus
+#   img: projects/panama-papers.jpg
+#   screen_1: projects/screens/panama-papers-1.jpg
+#   public_url: https://panamapapers.icij.org/
+#   client_url: https://icij.org/
+#
+# - name: Open Government
+#   client: Gobierto
+#   description: wadus
+#   img: projects/panama-papers.jpg
+#   screen_1: projects/screens/panama-papers-1.jpg
+#   public_url: https://panamapapers.icij.org/
+#   client_url: https://icij.org/
+#
+#
+#
+# - name: Legislación Colaborativa
+#   client: Madrid City Council
+#   description: We designed and developed the collaborative legislation module for Madrid City Council. This modules enables public bodies to comply with spanish law, which requires a public consultation online mechanism for any legislation change or adition. We created an interface to consult on general issues about legislation, and a collaborative text commenting interface to allow for debate and contributions over specific text parts.
+#   img: projects/Legislacion-Mini-1.jpg
+#   screen_1: projects/screens/Legislacion-1.jpg
+#   more_info_es: /es/blog/populate-ayuntamiento-madrid
+#
+# - name: Comparador de presupuestos
+#   client: Generalitat de Catalunya
+#   description: La Generalitat de Catalunya ha incorporado en su web de transparencia (transparenciacatalunya.cat) el Comparador de Presupuestos Municipales de Gobierto. Esta herramienta permite la consulta, análisis y comparación de los presupuestos de todos los municipios de Catalunya. Este proyecto <a href="/es/blog/gobierto-premio-socrata">ha sido premiado en la conferencia anual de Socrata</a>.
+#   img: projects/screens/GencatPresupuestos-2.jpg
+#   screen_1: projects/screens/GencatPresupuestos-2.jpg
+#   more_info: /es/blog/generalitat-catalunya
+#   public_url: http://pressupostosmunicipals.transparenciacatalunya.cat/
+#   client_url: http://transparenciacatalunya.cat/
+#
+# - name: Consulta y visualización sobre presupuestos
+#   client: Ayuntamiento de Sencelles
+#   description: Hemos diseñado una herramienta de participación para consultar a los vecinos sobre las prioridades en los presupuestos municipales.
+#   img: projects/screens/Sencelles-Consultas-2.jpg
+#   screen_1: projects/screens/Sencelles-Consultas-1.jpg
+#   more_info: /es/blog/sencelles-consultas
+#
+# - name: Gobierto Altos Cargos y Agendas
+#   client: Diputación de Valencia
+#   description: Implantamos el módulo de Altos Cargos y Agendas para la Diputación de Valencia. Además del uso para la propia Diputación, ésta proporcionará el software para todos los municipios que lo deseen utilizar.
+#   img: projects/gencat-presupuestos.png
+#   screen_1: projects/screens/gencat-presupuestos-1.jpg
+#   more_info: /es/blog/diputacion-de-valencia-gobierto
+#
+# - name: Offshore Leaks
+#   client: International Consortium of Investigative Journalists
+#   description: Trabajamos con el ICIJ (Consorcio Internacional de Periodistas de Investigación), una organización internacional con base en Estados Unidos, ayudándoles con diseño, visualización de datos, proyectos interactivos, experiencia de usuario y desarrollo.  Nuestro último proyecto con ellos ha sido la web global de los Papeles de Panamá y la base de datos.
+#   img: projects/screens/ICIJ-OffshoreLeaks-2.jpg
+#   screen_1: projects/screens/ICIJ-OffshoreLeaks-2.jpg
+#   public_url: https://offshoreleaks.icij.org/
+#   client_url: https://icij.org/
+#
+# - name: España en cifras
+#   client: El Español
+#   description: We compiled and proccessed more than 85 different datasets from different sources to provide a simple fact-sheet with key indicators about economy, demographics, employment, election results, budgets... for the +8.000 councils, provinces and spanish regions to give context for the coming elections. We also created interactive maps from the data, and tools to compare indicators from different councils or provinces. All data was indexed using Elastic Search and internal APIs were created to build new services from the data. More about the process.
+#   img: projects/espana-en-cifras.png
+#   screen_1: projects/screens/espana-en-cifras-1.jpg
+#   public_url: http://espanaencifras.populate.tools
+#   # client_url: http://www.elespanol.com/
+#
+# - name: Fatal Extraction
+#   client: International Consortium of Investigative Journalists
+#   description: We built the interactive map and web site where you can browse details about the companies. Data was parsed from a Google Doc the editorial team was working on. Import was automated through a script.
+#   img: projects/fatal-extraction.png
+#   screen_1: projects/screens/fatal-extraction-1.jpg
+#   public_url: http://icij.org/project/fatal-extraction/explore-data-where-australian-mining-leaves-its-mark
+#   client_url: https://icij.org/
+#
+# - name: Earnings Inspector
+#   client: Brown Institute (Columbia University / Stanford University)
+#   description: Trabajamos con el ICIJ (Consorcio Internacional de Periodistas de Investigación), una organización internacional con base en Estados Unidos, ayudándoles con diseño, visualización de datos, proyectos interactivos, experiencia de usuario y desarrollo. Nuestro último proyecto con ellos ha sido la web global de los Papeles de Panamá y la base de datos.
+#   img: projects/earnings-inspector.png
+#   screen_1: projects/screens/earnings-inspector-1.jpg
+#   public_url: http://earningsinspector.org/
+#   client_url: http://brown.columbia.edu/
+#
+# - name: Swiss Leaks
+#   client: International Consortium of Investigative Journalists
+#   description: Trabajamos con el ICIJ (Consorcio Internacional de Periodistas de Investigación), una organización internacional con base en Estados Unidos, ayudándoles con diseño, visualización de datos, proyectos interactivos, experiencia de usuario y desarrollo. Nuestro último proyecto con ellos ha sido la web global de los Papeles de Panamá y la base de datos.
+#   img: projects/swiss-leaks.png
+#   screen_1: projects/screens/swiss-leaks-1.jpg
+#   public_url: http://earningsinspector.org/
+#   client_url: https://icij.org/
+#
+#
+# - name: Evicted and Abandoned
+#   client: International Consortium of Investigative Journalists
+#   description: Trabajamos con el ICIJ (Consorcio Internacional de Periodistas de Investigación), una organización internacional con base en Estados Unidos, ayudándoles con diseño, visualización de datos, proyectos interactivos, experiencia de usuario y desarrollo. Nuestro último proyecto con ellos ha sido la web global de los Papeles de Panamá y la base de datos.
+#   img: projects/evicted-and-abandoned.png
+#   screen_1: projects/screens/evicted-and-abandoned-1.jpg
+#   public_url: http://www.icij.org/project/world-bank/explore-10-years-world-bank-resettlement-data
+#   client_url: https://icij.org/

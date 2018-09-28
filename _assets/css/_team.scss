@@ -1,0 +1,25 @@
+.team-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.member {
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+}
+.member-img {
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 100px;
+}
+.member-name {
+  margin-top: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.member-role {
+  opacity: .5;
+  font-size: .85rem;
+}

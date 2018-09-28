@@ -1,0 +1,13 @@
+<h1 class="section-title">{% t products %}</h1>
+
+<div class="product-list">
+  {% for product in site.data[site.lang].products %}
+  <div class="product {{product.name | slugify}}">
+    <h2 class="product-name"><a class="product-link" href="{{ product.url | prepend: site.baseurl }}">{{product.name}}</a></h2>
+    <a href="{{product.url}}">
+      <img data-src="{% asset_path {{product.img}} %}" class="product-img pure-img lazy" alt='{{product.name}}'/>
+    </a>
+    <p class="product-description">{{product.description}}</p>
+  </div>
+  {% endfor %}
+</div>

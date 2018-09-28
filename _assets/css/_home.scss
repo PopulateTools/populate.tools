@@ -1,0 +1,94 @@
+.section_home {
+  .header {
+    min-height: 22rem;
+    position: relative;
+    .wrapper {
+      position: initial;
+    }
+    .logo img {
+      position: absolute;
+      bottom: 1rem;
+      @include min-screen(768) {
+        max-width: 18rem;
+        bottom: 3rem;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include min-screen(768) {
+    padding: 0 6rem 3rem;
+  }
+
+  @include min-screen(1600) {
+    padding: 0 2rem;
+  }
+}
+.section {
+  margin-bottom: 2rem;
+
+  @include min-screen(768) {
+    margin-bottom: 6rem;
+  }
+
+  @include min-screen(1600) {
+    margin-bottom: 7rem;
+  }
+}
+.section-title {
+  color: $blue;
+  margin-bottom: 1rem;
+}
+.container#about {
+  margin-right: 5%;
+  margin-left: 5%;
+
+  @include min-screen(768) {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  @include min-screen(1600) {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+.pieces-sep {
+  img {
+    margin: 6em auto;
+    display: block;
+  }
+  .rot-45 {
+    transform: rotate(45deg);
+    max-width: 200px;
+  }
+  .rot-90 {
+    transform: rotate(90deg);
+    max-width: 165px;
+  }
+  .rot-135 {
+    transform: rotate(135deg);
+    max-width: 175px;
+  }
+  .rot-180 {
+    transform: rotate(180deg);
+    max-width: 250px;
+  }
+}
+
+
+#contact {
+  .fas {
+    margin: 0 1em 0 3em;
+    color: $red;
+  }
+  .contact_links {
+    p {
+      margin: 0 0 1.25em 0;
+    }
+  }
+}

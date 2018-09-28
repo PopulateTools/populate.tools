@@ -1,0 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Populate
+description: We conceptualize, design and build products for civic engagement
+baseurl: "" # the subpath of your site, e.g. /blog
+email: lets@populate.tools
+handle: populate_
+long_handle: populatetools
+
+# default permalink for blog posts
+permalink: blog/:title
+
+collections:
+  projects:
+    output: true
+    permalink: projects/:name
+  news:
+    output: true
+    permalink: news/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      weight: 100
+
+# Analytics
+ga_id: UA-70344922-1
+inspectlet_id: 761931177
+
+# Social handlers
+twitter_url: https://twitter.com/
+github_url: https://github.com/
+
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config']
+
+assets:
+  features:
+    automatic_img_size: false
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-assets
+  #- jekyll-multiple-languages-plugin
+
+#languages: ["en", "es"]
+#exclude_from_localizations: []

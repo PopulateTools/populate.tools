@@ -1,0 +1,113 @@
+.hero {
+  color: #FFF;
+  h1, h2, h3, h4, p {
+    color: #FFF;
+  }
+}
+.hero-logo {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  .container {
+    padding: 2rem 1rem;
+  }
+  @include min-screen(768) {
+    padding: 2rem 6rem 8rem;
+  }
+}
+.hero-logo img {
+  padding-top: 10vh;
+  max-width: 12rem;
+
+  @include min-screen(768) {
+    max-width: 12rem;
+  }
+  @include min-screen(1200) {
+    max-width: 14rem;
+  }
+
+}
+.lang-switcher {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+
+  @include min-screen(768) {
+    right: 6rem;
+  }
+  @include min-screen(1600) {
+    right: 2rem;
+  }
+}
+.lang-switcher {
+
+}
+.lang-switcher {
+  color: $gray;
+  span {
+    margin: 0 .5em;
+  }
+  a {
+    text-decoration: none;
+  }
+  a.active {
+    font-weight: 700;
+    opacity: 1;
+  }
+}
+
+/* Description */
+.hero-content {
+  background: $blue;
+  color: white;
+  position: relative;
+  margin-bottom: 7rem;
+}
+.hero-lead {
+  bottom: 0;
+  padding: 9rem 0 4rem;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.hero-headline {
+  font-size: $f2;
+
+  @include min-screen(1000) {
+    font-size: 2.5rem;
+  }
+  @include min-screen(1440) {
+    font-size: 4rem;
+  }
+
+}
+.hero-subheading {
+  font-size: $f4;
+  font-weight: 300;
+  font-family: $sans_copy;
+  margin-bottom: 5vh;
+
+  @include min-screen(768) {
+    max-width: 75%;
+    font-size: $f3;
+  }
+}
+
+.hero-list {
+  border-top: 1px solid $border_white;
+  padding-top: 2rem;
+
+  @include min-screen(768) {
+    padding-top: 2rem;
+  }
+}
+.hero-point {
+  font-weight: 400;
+  font-size: $f5;
+  line-height: 1.4rem;
+  opacity: .5;
+}
+.hero-point p {
+  @include min-screen(768) {
+    max-width: 70%;
+  }
+}

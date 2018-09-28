@@ -1,0 +1,75 @@
+/* Base */
+$page-width: 700px;
+
+.page article {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem 6rem 1rem;
+
+  @include min-screen(768) {
+    padding: 0 6rem 4rem 6rem;
+  }
+  @include min-screen(1600) {
+    padding: 0 2rem 6rem 2rem;
+  }
+}
+.page h1 {
+  color: $black;
+  margin-bottom: 1rem;
+  font-size: $f2;
+
+  @include min-screen(768) {
+    font-size: $f1;
+    max-width: $page-width * 1.25;
+  }
+
+  @include min-screen(1600) {
+    max-width: $page-width * 1.35;
+  }
+}
+.page .content p {
+  font-size: $fpost;
+  line-height: 1.6;
+  margin-bottom: 1.85rem;
+  max-width: $page-width
+}
+.page .content a {
+  word-wrap: break-word;
+}
+.page .content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  max-width: $page-width;
+}
+.page .content h3,
+.page .content h4,
+.page .content h5 {
+  font-weight: 600;
+}
+.page .content img {
+  // margin: 2.75rem 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.page .content hr {
+  margin: 2.5rem 0;
+  max-width: $page-width
+}
+.content blockquote {
+  margin: 1rem 0;
+  font-style: italic;
+  font-family: $serif;
+  padding-left: 1.5rem;
+  border-left: 2px solid $light_gray;
+}
+.content ul,
+.content ol {
+  font-size: $fpost;
+}
+.content ul,
+.content ol,
+.content .gist {
+  max-width: $page-width
+}

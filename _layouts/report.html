@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{% assign author = site.data.[site.lang].team[page.author] %}
+{% include header.html %}
+
+<div class="container">
+
+  <article>
+
+    {% if page.main_photo_big %}
+    <header>
+      {% if page.main_photo_big contains '://' %}
+        <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% img '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    <h1>{{page.title}}</h1>
+
+    {% if page.subtitle %}
+      <h2 class="subtitle">{{page.subtitle}}</h2>
+    {% endif %}
+
+    <div class="meta">
+      <a class="no-underline" href="{{author.handle | prepend: site.twitter_url}}">
+        {% img '{{author.img}}' class:'pure-img avatar' alt:'{{author.name}}' %}
+      </a>
+      <div class="info">
+        <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
+        <time>{{page.date | date: "%b %-d, %Y"}}</time>
+      </div>
+    </div>
+
+    {% if page.main_photo %}
+    <header>
+      {% if page.main_photo contains '://' %}
+        <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% img '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    <div class="pure-g">
+
+      <div class="pure-u-1 pure-u-md-1-4 ">
+        <div class="toc"></div>
+      </div>
+
+      <div class="pure-u-1 pure-u-md-3-4">
+
+        <main class="content">
+          {{ content }}
+        </main>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  <div class="latest-articles">
+    <h4>{% t last_articles %}</h4>
+    {% for post in site.posts limit:4 %}
+      <article class="article">
+        <h2 class="article-headline"><a class="article-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <time class="article-time">{{post.date | date: "%b %-d, %Y"}}</time>
+      </article>
+    {% endfor %}
+
+    <p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">{% t view_all %}</a></p>
+  </div>
+
+</div>

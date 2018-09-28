@@ -1,0 +1,32 @@
+.footer {
+  border-top: 1px solid $border_light;
+  position: relative;
+  font-family: $sans_copy;
+  padding: 2rem 0;
+
+  a {
+    text-decoration: none;
+  }
+  @include min-screen(768) {
+    padding: 2rem 0 6rem 0;
+  }
+  @include min-screen(1600) {
+    padding: 2rem 0 20rem 0;
+  }
+}
+
+.footer-link {
+  font-family: $sans_copy;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.footer-link:not(:last-child) {
+  padding-right: 2rem;
+
+}
+.social-links {
+  i {
+    font-size: 1.2em;
+    padding: 0 .8em;
+  }
+}

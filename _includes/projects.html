@@ -1,0 +1,59 @@
+<div class="project-gallery">
+  {% assign projects = site.projects | sort: 'weight' %}
+  {% for project in projects %}
+    {% if project.width == 'wide' %}
+      <a class="project wide" href="{{ project.url }}">
+    {% else %}
+      <a class="project w{% cycle 1, 2, 3, 4, 5, 6 %} " href="{{ project.url }}">
+    {% endif %}
+      <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-teaser pure-img ">
+        <span class="project-hover">
+          <div class="hover-content">
+            <div class="hover-name">{{project.name}}</div>
+            <div class="hover-client">{{project.client}}</div>
+          </div>
+        </span>
+      </div>
+    </a>
+  {% endfor %}
+
+  {% for project in site.data.projects %}
+  <div id="{{project.name | slugify}}" class="zoom-anim-dialog mfp-hide dialog">
+
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-2-3">
+        <div class="img-slide">
+
+          {% if project.screens == null }
+            wadus
+          {% elsif project.screens != null %}
+            <div><img class="project-popup-img " src="{% asset_path {{project.screen_1}} %}"></div>
+            hey
+          {% endif %}
+
+        </div>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="project-description">
+          <h1 class="project-name"><a href="{{ project.url | prepend: site.baseurl }}">{{project.name}}</a></h1>
+
+          <small class="project-client">Client: {{project.client}}</small>
+
+          <p class="project-text">{{project.description}}</p>
+
+
+          {% if project.more_info %}
+            <a class="pure-button project-button" href="{{project.more_info}}">read more</a>
+          {% endif %}
+
+          {% if project.url %}
+            <a class="pure-button project-button" href="{{project.public_url}}">Live project</a>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

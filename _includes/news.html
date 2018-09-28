@@ -1,0 +1,8 @@
+<h1 class="section-title">news</h1>
+{% for post in site.posts limit:5 %}
+  <article class="article">
+    <h2 class="article-headline"><a class="article-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <time class="article-time">{{post.date | date: "%b %-d, %Y"}}</time>
+  </article>
+{% endfor %}
+<p><a href="/{% if site.lang == "es" %}es/{% endif%}blog">view all</a></p>
