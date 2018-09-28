@@ -45,7 +45,7 @@ github_url: https://github.com/
 markdown: kramdown
 highlighter: rouge
 # Exclude _i18n due to Github compilation error
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_layouts/post.html']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_posts']
 
 assets:
   features:
