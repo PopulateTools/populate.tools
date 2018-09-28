@@ -11,6 +11,7 @@ description: We conceptualize, design and build products for civic engagement
 baseurl: "" # the subpath of your site, e.g. /blog
 email: lets@populate.tools
 handle: populate_
+long_handle: populatetools
 
 # default permalink for blog posts
 permalink: blog/:title
