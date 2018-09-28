@@ -4,12 +4,12 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
-    concurrent-ruby (1.0.4)
+    concurrent-ruby (1.0.5)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
     fastimage (2.0.1)
       addressable (~> 2)
-    ffi (1.9.17)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     jekyll (3.4.0)
       addressable (~> 2.4)
@@ -46,7 +46,7 @@ GEM
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
-    rack (1.6.5)
+    rack (1.6.10)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -67,4 +67,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   1.14.6
+   1.16.0
