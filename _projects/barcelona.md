@@ -20,8 +20,8 @@ screens:
   - projects/screens/BCN-Decidim-5.jpg
   - projects/screens/BCN-Decidim-6.jpg
 screen_1: projects/screens/panama-papers-1.jpg
-public_url: https://panamapapers.icij.org/
-client_url: https://icij.org/
+public_url: https://decidim.barcelona/
+client_url: https://ajuntament.barcelona.cat/
 weight: 3
 ---
 
