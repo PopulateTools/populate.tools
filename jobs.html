@@ -8,21 +8,30 @@ description: "Digital agency providing full service: from conceptualization and 
 
 <main>
 
-  <div class="container careers">
+  <div class="container careers page">
 
-    <h1>Work with us</h1>
-    <p>Intro...</p>
+    <article>
 
-    <h2>Openings</h2>
+      <main class="content">
 
-    <div class="careers-list">
-    {% for career in site.careers %}
-      <article class="careers-list-item">
-        <h2><a href="{{ career.url | prepend: career.baseurl }}">{{ career.title }}</a></h2>
-        <!-- <time class="article-time">{{career.date | date: "%b %-d, %Y"}}</time> -->
-      </article>
-    {% endfor %}
-    </div>
+        <h1>Work with us</h1>
+
+        {% include careers_general_text.html %}
+
+        <h2>Openings</h2>
+
+      </main>
+
+      <div class="careers-list">
+      {% for career in site.careers %}
+        <article class="careers-list-item">
+          <h2><a href="{{ career.url | prepend: career.baseurl }}">{{ career.title }}</a></h2>
+          <!-- <time class="article-time">{{career.date | date: "%b %-d, %Y"}}</time> -->
+        </article>
+      {% endfor %}
+      </div>
+
+    </article>
 
   </div>
 
