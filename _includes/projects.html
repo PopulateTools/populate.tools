@@ -6,7 +6,7 @@
     {% else %}
       <a class="project w{% cycle 1, 2, 3, 4, 5, 6 %} " href="{{ project.url }}">
     {% endif %}
-      <div style="background-image: url('{% asset_path {{project.img}} %}')" class="project-teaser pure-img ">
+      <div style="background-image: url('{% asset {{project.img}} @path %}')" class="project-teaser pure-img ">
         <span class="project-hover">
           <div class="hover-content">
             <div class="hover-name">{{project.name}}</div>
@@ -27,7 +27,7 @@
           {% if project.screens == null }
             wadus
           {% elsif project.screens != null %}
-            <div><img class="project-popup-img " src="{% asset_path {{project.screen_1}} %}"></div>
+            <div><img class="project-popup-img " src="{% asset {{project.screen_1}} @path %}"></div>
             hey
           {% endif %}
 

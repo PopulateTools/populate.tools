@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /career/
+description: "Digital agency providing full service: from conceptualization and research, design, front-end, back-end, data..."
+---
+
+{% include header.html %}
+
+<main>
+
+  <div class="container careers">
+
+    <h1>Work with us</h1>
+    <p>Intro...</p>
+
+    <h2>Openings</h2>
+
+    <div class="careers-list">
+    {% for career in site.careers %}
+      <article class="careers-list-item">
+        <h2><a href="{{ career.url | prepend: career.baseurl }}">{{ career.title }}</a></h2>
+        <!-- <time class="article-time">{{career.date | date: "%b %-d, %Y"}}</time> -->
+      </article>
+    {% endfor %}
+    </div>
+
+  </div>
+
+</main>

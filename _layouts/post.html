@@ -12,7 +12,7 @@ layout: default
       {% if page.main_photo_big contains '://' %}
         <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% img '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+        {% asset '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
       {% endif %}
     </header>
     {% endif %}
@@ -25,7 +25,7 @@ layout: default
 
     <div class="meta">
       <a class="no-underline" href="{{author.handle | prepend: site.twitter_url}}">
-        {% img '{{author.img}}' class:'pure-img avatar' alt:'{{author.name}}' %}
+        {% asset '{{author.img}}' class:'pure-img avatar' alt:'{{author.name}}' %}
       </a>
       <div class="info">
         <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
@@ -38,7 +38,7 @@ layout: default
       {% if page.main_photo contains '://' %}
         <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% img '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+        {% asset '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
       {% endif %}
     </header>
     {% endif %}
