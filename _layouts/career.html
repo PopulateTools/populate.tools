@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="container page">
+
+  <article>
+
+    <div class="breadcrumb m_v_3">
+      <a href="/{{ site.join_us }}">join us</a> /
+    </div>
+
+    <h1>{{page.title}}</h1>
+
+    {% if page.subtitle %}
+      <h2 class="subtitle">{{page.subtitle}}</h2>
+    {% endif %}
+
+    <div class="meta">
+      <div class="info">
+        <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
+        <!-- <time>{{page.date | date: "%b %-d, %Y"}}</time> -->
+      </div>
+    </div>
+
+    <main class="content">
+
+
+      {{ content }}
+
+      <hr>
+
+      {% include careers_general_text.html %}
+
+      <hr>
+
+      <h2>Interesed? Apply</h2>
+
+      <div class="m_v_3">
+        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+        <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrlru12HLbo4zOtx?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="1056" style="background: transparent; border: 1px solid #ccc;"></iframe>
+      </div>
+
+
+    </main>
+
+    <a href="/{{ site.join_us }}">join us</a> /
+
+  </article>
+
+</div>

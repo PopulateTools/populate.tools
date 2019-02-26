@@ -2,19 +2,17 @@
 $page-width: 700px;
 
 .page article {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1rem 6rem 1rem;
+  max-width: 1000px;
+  padding: 0 1rem 6rem 0;
 
   @include min-screen(768) {
-    padding: 0 6rem 4rem 6rem;
+    padding: 0 6rem 4rem 0;
   }
   @include min-screen(1600) {
-    padding: 0 2rem 6rem 2rem;
+    padding: 0 2rem 6rem 0;
   }
 }
 .page h1 {
-  color: $black;
   margin-bottom: 1rem;
   font-size: $f2;
 
@@ -27,20 +25,15 @@ $page-width: 700px;
     max-width: $page-width * 1.35;
   }
 }
-.page .content p {
-  font-size: $fpost;
-  line-height: 1.6;
-  margin-bottom: 1.85rem;
-  max-width: $page-width
-}
 .page .content a {
   word-wrap: break-word;
 }
 .page .content h2 {
   margin-top: 2rem;
-  margin-bottom: 0.35rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   max-width: $page-width;
+  font-size: $f4;
 }
 .page .content h3,
 .page .content h4,
@@ -65,11 +58,37 @@ $page-width: 700px;
   border-left: 2px solid $light_gray;
 }
 .content ul,
-.content ol {
-  font-size: $fpost;
-}
-.content ul,
 .content ol,
 .content .gist {
-  max-width: $page-width
+  max-width: $page-width;
+}
+
+
+.careers {
+  .careers-list {
+    display: flex;
+
+    margin-right: -1em;
+    margin-left: -1em;
+
+    .careers-list-item {
+      margin: 1em;
+      padding: 1em;
+      border-radius: 6px;
+      flex: 1;
+      background: $light_gray;
+      text-align: center;
+
+      h2 {
+        font-size: $f5;
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
+ul {
+  h2 {
+    font-size: $f4;
+  }
 }

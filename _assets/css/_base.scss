@@ -7,7 +7,6 @@ body {
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
-  text-rendering: geometricPrecision;
   // background-size: 40%;
 
   @include min-screen(768) {
@@ -24,7 +23,6 @@ h4, h5, h6 {
   line-height: 1.25;
   margin: 0 0 0.4em 0;
   font-family: $sans_headline;
-  text-rendering: geometricPrecision;
   color: $blue;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
@@ -42,7 +40,6 @@ p, ul, ol, dl {
   -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   margin: 0 0 1.75em 0;
-  text-rendering: geometricPrecision;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
 }
@@ -50,6 +47,15 @@ ol ol, ul ul,
 ul ol, ol ul {
   margin: 0 0 0.4em 0;
   padding-left: 2em;
+}
+ul.no_li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    padding: 0;
+  }
 }
 dl dt {
   float: left;
@@ -124,9 +130,9 @@ hr {
 
 body.about .container {
   ul, li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    // margin: 0;
+    // padding: 0;
+    // list-style-type: none;
   }
   li {
     font-size: .85em;

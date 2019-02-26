@@ -3,7 +3,7 @@
     {% for client in site.data.clients %}
       <div class="pure-u-1-2 pure-u-md-1-4">
         <div class="client-wrapper col-{{forloop.index}}">
-          <div data-src="{% asset_path {{client.img}} %}" class="client-img lazy"></div>
+          <div data-src="{% asset {{client.img}} @path %}" class="client-img lazy"></div>
         </div>
       </div>
     {% endfor %}

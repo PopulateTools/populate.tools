@@ -13,7 +13,7 @@ layout: default
         <div class="img-slide">
 
           {% for screen in page.screens %}
-            <div class="item"><img class="" src="{% asset_path {{screen}} %}"></div>
+            <div class="item"><img class="" src="{% asset {{screen}} @path %}"></div>
           {% endfor %}
 
         </div>

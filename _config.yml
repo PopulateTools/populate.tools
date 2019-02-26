@@ -23,6 +23,9 @@ collections:
   news:
     output: true
     permalink: news/:name
+  careers:
+    output: true
+    permalink: career/:name
 
 defaults:
   - scope:
@@ -39,6 +42,7 @@ inspectlet_id: 761931177
 twitter_url: https://twitter.com/
 github_url: https://github.com/
 
+join_us: career/
 
 
 # Build settings
@@ -51,7 +55,7 @@ assets:
   features:
     automatic_img_size: false
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-assets

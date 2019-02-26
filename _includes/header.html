@@ -3,14 +3,14 @@
     <div class="wrapper">
       <div class="mobile-menu">
         <a class="no-underline logo" href="/">
-          <img src="{% asset_path 'logo' %}" class="logo-header pure-img" alt="Populate" />
+          <img src="{% asset 'logo' @path %}" class="logo-header pure-img" alt="Populate" />
         </a>
         <a class="responsive menu_icon open_mobile_menu" href="#mobile_menu"><svg width="20" height="20" class="bars" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg></a>
       </div>
 
       <div class="desktop-menu">
         <a class="no-underline logo" href="/">
-          <img src="{% asset_path 'logo' %}" class="logo-header pure-img" alt="Populate" />
+          <img src="{% asset 'logo' @path %}" class="logo-header pure-img" alt="Populate" />
         </a>
         <ul class="header-list">
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#projects">work</a></li>
@@ -19,6 +19,7 @@
 
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#about">about</a></li>
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#contact">contact</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}{{ site.join_us }}">join us</a></li>
         </ul>
 
       </div>
