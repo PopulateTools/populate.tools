@@ -58,7 +58,7 @@ assets:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-assets
+  #- jekyll-assets
   #- jekyll-multiple-languages-plugin
 
 #languages: ["en", "es"]
