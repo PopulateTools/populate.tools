@@ -2,85 +2,349 @@
 title: Populate Data
 description: Un servicio para acceder a cientos de datasets públicos de forma unificada
 lang: es_ES
-layout: default
+layout: populate_data
 permalink: /data/
 ---
 
-{% include header.html %}
+<header class="top">
 
-<style media="screen">
-.page .content h2:first-child {
-  margin-top: 0;
-}
-</style>
+  {% asset 'data/PopulateData-Logo.svg' %}
 
-<main>
+  <menu>
+    <a href="#on_demand">On Demand</a>
+    <a href="#datos">Datos</a>
+    <a href="#casos">Casos de uso</a>
+    <a href="#como">Cómo usarlo</a>
+    <a href="#empieza">Empieza</a>
+  </menu>
 
-  <div class="container careers page">
+  <a href="/">{% asset 'data/Logo-UnProductoDe.svg' %}</a>
 
-    <article>
+</header>
 
-      <main class="content">
+<section class="intro">
 
-        <h1>Populate Data</h1>
+  <div class="column">
 
-        <div class="flex">
-          <div class="w-50">
-            <h2>Un servicio para acceder a cientos de datasets públicos de forma unificada</h2>
-            <ul>
-              <li>Consume datos de cientos de fuentes públicas de forma unificada</li>
-              <li>Accede en tiempo real via API, o prepara y descarga en CSV</li>
-              <li>Datos siempre actualizados</li>
-            </ul>
-          </div>
-          <div class="w-50 pl5">
-            <p>Populate Data es un agregador de datos públicos y abiertos que ofrece un interfaz único de acceso a datos de fuentes diversas, unificando la forma en la que se recuperan y simplificando su integración en sistemas propios. Con Populate Data no tendrás que malgastar tiempo descargando datos de fuentes y formatos diversos (integrarte con una API, descargar un CSV, parsear un PDF…): Populate Data se encarga de estas tareas y te ofrece un acceso único.</p>
-          </div>
+    <div class="intro_title">
 
+      <h1>Populate Data</h1>
+
+      <p class="intro">Un servicio para acceder a cientos de datasets públicos de forma unificada</p>
+
+    </div>
+
+    <div class="featured_items">
+
+      <div class="item">
+        <div>
+          <i class="far fa-magic icon"></i>
+          <p>Consume datos de cientos de fuentes públicas de forma unificada</p>
         </div>
+      </div>
 
-        <h2>Datos disponibles</h2>
+      <div class="item">
+        <div>
+          <i class="far fa-cloud icon"></i>
+          <p>Accede en tiempo real via API, o prepara y descarga en CSV</p>
+        </div>
+      </div>
 
-        <ul>
-          <li>Seguridad Social: Afiliados a la Seguridad Social</li>
-          <li>SEPE: Número de nuevos contratos; Demandantes de empleo</li>
-          <li>Ministerio de Hacienda y Administraciones Públicas: Deuda entidades locales, autonómica</li>
-          <li>Ministerio de Hacienda y Administraciones Públicas: Impuestos IBI, Vehículos, Actividades Económicas...</li>
-          <li>Ministerio del Interior: Datos de procesos electorales en España</li>
-          <li>INE - DIRCE: Datos de empresas en España por municipio</li>
-          <li>INE - Encuesta Población Activa: Tasa de paro provincial, autonómica, nacional</li>
-          <li>INE: Producto Interior Bruto</li>
-          <li>INE: Padrón municipal</li>
-          <li>...</li>
-        </ul>
+      <div class="item">
+        <div>
+          <i class="far fa-table icon"></i>
+          <p>Datos siempre actualizados</p>
+        </div>
+      </div>
 
-        <p>(en breve publicamos una lista completa de los datos que tenemos y ejemplos. <a href="mailto:lets@populate.tools?subject=Avísame con los datos completos">Escríbenos</a> y te avisamos)</p>
-
-
-        <h2>Populate Data Ondemand</h2>
-
-        <p>¿Necesitas datos que todavía no tenemos? Nos los pides y hacemos el trabajo sucio por ti: descarga, transformación y carga en Populate Data para que solo tengas que comenzar a usarlos para obtener valor. </p>
-
-        <h2>Qué puedes hacer</h2>
-
-        <ul>
-          <li>Gráficos interactivos</li>
-          <li>Descarga puntual de datos</li>
-          <li>Visualizaciones de datos en tiempo real</li>
-          <li>Integración con otras aplicaciones</li>
-        </ul>
-
-        <h2>Más información</h2>
-
-        <p>Escríbenos a <a href="mailto:lets@populate.tools?subject=Información sobre Populate Data">lets@populate.tools</a> y cuéntanos que necesitas.</p>
-
-
-      </main>
-
-
-
-    </article>
+    </div>
 
   </div>
 
-</main>
+</section>
+
+<section class="about">
+
+  <div class="inner">
+
+    <p>Populate Data es un agregador de datos públicos y abiertos que ofrece un interfaz único de acceso a datos de fuentes diversas, unificando la forma en la que se recuperan y simplificando su integración en sistemas propios.</p>
+
+    <p>Con Populate Data no tendrás que malgastar tiempo descargando datos de fuentes y formatos diversos (integrarte con una API, descargar un CSV, parsear un PDF…): Populate Data se encarga de estas tareas y te ofrece un acceso único.</p>
+
+    <a href="" class="button more_info">Más información</a>
+
+  </div>
+
+</section>
+
+<section class="on_demand" id="on_demand">
+
+  <div class="column">
+
+    <div class="box">
+
+      <h2>Populate Data OnDemand</h2>
+
+      <p>¿Necesitas datos que todavía no tenemos? Nos los pides y hacemos el trabajo sucio por ti: descarga, transformación y carga en Populate Data para que solo tengas que comenzar a usarlos para obtener valor. </p>
+
+      <a href="" class="button more_info">Más información</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="process">
+
+  <div class="column">
+
+    <h2>Mejora radicalmente tu proceso de trabajo con datos</h2>
+
+    {% asset 'data/diagram-process.svg' class='diagram-process' %}
+
+  </div>
+
+
+</section>
+
+
+<script type="text/javascript">
+
+</script>
+
+<section class="data" id="datos">
+
+  <div class="column">
+
+    <div class="pdb_container">
+
+      <div class="p_data_browser">
+
+        <div class="pdb_data_column pdb_data_list">
+
+          <a href="">Contratación</a>
+          <a href="" class="active">Demografía</a>
+          <a href="">Economía</a>
+          <a href="">Elecciones</a>
+          <a href="">Empleo</a>
+          <a href="">Impuestos</a>
+          <a href="">Industria</a>
+          <a href="">Presupuestos</a>
+          <a href="">Sociedad</a>
+          <a href="">Vivienda</a>
+
+        </div>
+
+
+        <div class="pdb_data_column pdb_data_list">
+
+          <a href="#" class="active">Población</a>
+          <a href="#">Nacimientos</a>
+          <a href="#">Defunciones</a>
+          <a href="#">Viviendas</a>
+
+        </div>
+
+
+        <div class="pdb_data_column pdb_data_list pdb_data_list_series">
+
+          <a href="#" class="active">Población autonomía</a>
+          <a href="#">Población por provincia</a>
+          <a href="#">Población por municipio</a>
+          <a href="#">Población por sexo</a>
+          <a href="#">Población por sexo y edad</a>
+          <a href="#">Población por edad</a>
+          <a href="#">Población activa</a>
+          <a href="#">Población activa por sexo</a>
+
+        </div>
+
+      </div>
+
+      <div class="pdb_data_column pdb_dataset_series">
+
+        <a href="" class="back_to_browse"><< Ver todo</a>
+
+        <header>
+
+          <div class="meta_main">
+            <h2>Población por municipio</h2>
+            <div class="pdb_dataset_series_description">Descripción del indicador. Descripción del indicador. Descripción del indicador. Descripción del indicador. </div>
+          </div>
+
+          <table class="meta_second">
+          <tr>
+            <th>Frecuencia</th>
+            <td>Anual</td>
+          </tr>
+          <tr>
+            <th>Actualizado</th>
+            <td>1 ene 2018</td>
+          </tr>
+          <tr>
+            <th>Ámbito Geo</th>
+            <td>Municipal</td>
+          </tr>
+          <tr>
+            <th>Fuente</th>
+            <td><a href="#">INE</a></td>
+          </tr>
+          </table>
+
+        </header>
+
+        <div class="pdb_how_to_useit">
+          <h3>Cómo usarlo</h3>
+          <div class="pdb_how_to_useit_example">
+            URL API / EJEMPLOS
+          </div>
+        </div>
+
+
+        <h3>Datos</h3>
+
+
+
+        <table class="pdb_serie_table">
+
+        <thead>
+          <tr>
+            <th></th>
+            <th>_id</th>
+            <th>value</th>
+            <th>location_id</th>
+            <th>date</th>
+            <th>autonomous_region_id</th>
+          </tr>
+        </thead>
+
+        <tbody class="pdb_stats_overview">
+          <tr>
+            <th>MIN</th>
+            <td>-</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>MAX</th>
+            <td>-</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>DISTINCT</th>
+            <td>-</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>MEAN</th>
+            <td>-</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>MEDIAN</th>
+            <td>-</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+
+        <tbody class="data">
+
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>1391273218948/&2121</td>
+            <td>123</td>
+            <td>123</td>
+            <td>2011</td>
+            <td>1</td>
+          </tr>
+
+        </tbody>
+
+
+
+        </table>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="casos" id="casos">
+
+  <h2>Casos de uso</h2>
+
+</section>
+
+
+<section class="como_usarlo" id="como">
+
+  <h2>Cómo usarlo</h2>
+
+</section>
+
+
+<section class="empieza" id="empieza">
+
+  <h2>Empieza a usarlo</h2>
+
+</section>
