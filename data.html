@@ -8,13 +8,13 @@ permalink: /data/
 
 <header class="top">
 
-  {% asset 'data/PopulateData-Logo.svg' %}
+  <a href="#what">{% asset 'data/PopulateData-Logo.svg' %}</a>
 
   <menu>
+    <a href="#what">Qué es</a>
     <a href="#on_demand">On Demand</a>
     <a href="#datos">Datos</a>
     <a href="#casos">Casos de uso</a>
-    <a href="#como">Cómo usarlo</a>
     <a href="#empieza">Empieza</a>
   </menu>
 
@@ -22,7 +22,7 @@ permalink: /data/
 
 </header>
 
-<section class="intro">
+<section class="intro" id="what">
 
   <div class="column">
 
@@ -71,27 +71,27 @@ permalink: /data/
 
     <p>Con Populate Data no tendrás que malgastar tiempo descargando datos de fuentes y formatos diversos (integrarte con una API, descargar un CSV, parsear un PDF…): Populate Data se encarga de estas tareas y te ofrece un acceso único.</p>
 
-    <a href="" class="button more_info">Más información</a>
+    <a href="#empieza" class="button more_info">Más información</a>
 
   </div>
 
-</section>
+  <section class="on_demand" id="on_demand">
 
-<section class="on_demand" id="on_demand">
+    <div class="column">
 
-  <div class="column">
+      <div class="box">
 
-    <div class="box">
+        <h2>Populate Data OnDemand</h2>
 
-      <h2>Populate Data OnDemand</h2>
+        <p>¿Necesitas datos que todavía no tenemos? Nos los pides y hacemos el trabajo sucio por ti: descarga, transformación y carga en Populate Data para que solo tengas que comenzar a usarlos para obtener valor. </p>
 
-      <p>¿Necesitas datos que todavía no tenemos? Nos los pides y hacemos el trabajo sucio por ti: descarga, transformación y carga en Populate Data para que solo tengas que comenzar a usarlos para obtener valor. </p>
+        <a href="#empieza" class="button more_info">Más información</a>
 
-      <a href="" class="button more_info">Más información</a>
+      </div>
 
     </div>
 
-  </div>
+  </section>
 
 </section>
 
@@ -117,6 +117,8 @@ permalink: /data/
 
   <div class="column">
 
+    <h2>Datos disponibles</h2>
+
     <div class="pdb_container">
       <iframe src="https://data.populate.tools/api_explorer" scrolling="no" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 1150px;"></iframe>
     </div>
@@ -125,22 +127,94 @@ permalink: /data/
 
 </section>
 
-<section class="casos" id="casos">
+<section class="use_cases" id="casos">
 
-  <h2>Casos de uso</h2>
+  <div class="column">
+
+    <h2>Casos de uso</h2>
+
+    <div class="use_case">
+
+      <div class="use_case_main">
+
+        <h3>
+          Comparador de presupuestos municipales
+        </h3>
+
+        <div class="user_case_description">
+          Herramienta de comparación y análisis de los presupuestos de los +8.000 municipios españoles. Se puede visualizar el presupuesto de un municipio; configurar rankings por partida, filtrando por distintos criterios; así como crear comparaciones de partidas entre distintos municipios. Todos los datos se extraen en tiempo real de la API de Populate Data.
+
+          <p><a href="https://presupuestos.gobierto.es" target="_blank">Visitar</a>.</p>
+        </div>
+
+      </div>
+
+      <div class="use_case_image">
+        {% asset 'data/cases-comparator.png' %}
+      </div>
+
+    </div>
+
+
+    <div class="use_case">
+
+      <div class="use_case_main">
+
+        <h3>
+          España en Cifras
+        </h3>
+
+        <div class="user_case_description">
+          Especial para las elecciones municipales y autonómicas de 2016, en el que se compara la situación de un municipio, provincia y autonomía a través de sus principales indicadores económicos, demográficos y de empleo. Los datos se preproceseraon en un índice de Elastic Search desde la API de Populate Data.
+
+          <p><a href="https://espanaencifras.populate.tools" target="_blank">Visitar</a>.</p>
+        </div>
+
+      </div>
+
+      <div class="use_case_image">
+        {% asset 'data/cases-espana.png' %}
+      </div>
+
+    </div>
+
+
+    <div class="use_case">
+
+      <div class="use_case_main">
+
+        <h3>
+          Observatorio Municipal
+        </h3>
+
+        <div class="user_case_description">
+          Módulo de <a href="https://gobierto.es">Gobierto</a> (plataforma de transparencia para administraciones públicas) que permite explorar indicadores estadísticos sobre un municipio.
+
+          <p><a href="https://portalobert.esplugues.cat/observatorio" target="_blank">Visitar</a>.</p>
+        </div>
+
+      </div>
+
+      <div class="use_case_image">
+        {% asset 'data/cases-observatorio.png' %}
+      </div>
+
+    </div>
+
+
+
+
+  </div>
 
 </section>
 
 
-<section class="como_usarlo" id="como">
+<section class="start_using" id="empieza">
 
-  <h2>Cómo usarlo</h2>
+  <div class="column">
 
-</section>
-
-
-<section class="empieza" id="empieza">
-
-  <h2>Empieza a usarlo</h2>
+    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shriIM3dTTbA4FuoT?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="997" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    
+  </div>
 
 </section>
