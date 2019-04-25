@@ -308,6 +308,16 @@ body.populate_data {
 
   section.data {
     padding: 5em 0;
+
+    h2 {
+      color: $color_pd_blue_dark;
+    }
+
+    .notice {
+      padding: 1em;
+      margin-bottom: 1em;
+      background: transparentize($color_pd_red, .9);
+    }
   }
 
   section.use_cases {
