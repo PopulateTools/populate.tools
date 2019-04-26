@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1057px" height="246px" viewBox="0 0 1057 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>diagram-process</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-7" transform="translate(-137.000000, -1974.000000)">
+            <rect id="Rectangle-Copy-10" fill="#0F2560" x="0" y="1649" width="1269" height="707"></rect>
+            <text id="Tu-proceso-actual" font-family="LibreFranklin-ExtraBold, Libre Franklin" font-size="20" font-weight="600" fill="#FFFFFF">
+                <tspan x="138" y="2022">Tu proceso actual </tspan>
+            </text>
+            <text id="vs." opacity="0.5" font-family="LibreFranklin-ExtraBold, Libre Franklin" font-size="20" font-weight="600" fill="#FFFFFF">
+                <tspan x="138" y="2097">vs.</tspan>
+            </text>
+            <text id="Tu-proceso-con-Popul" font-family="LibreFranklin-ExtraBold, Libre Franklin" font-size="20" font-weight="600" fill="#FFFFFF">
+                <tspan x="138" y="2156">Tu proceso con </tspan>
+                <tspan x="138" y="2180">Populate Data</tspan>
+            </text>
+            <text id="Localiza-datos-Copy" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="348.616" y="2132">Localiza datos</tspan>
+            </text>
+            <text id="Tareas-sin-valor-aña" opacity="0.5" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="344.102" y="2198">Tareas sin valor </tspan>
+                <tspan x="366.35" y="2213">añadido</tspan>
+            </text>
+            <text id="Obtención-de-valor-Copy" opacity="0.5" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="549.234" y="2198">Obtención de valor</tspan>
+            </text>
+            <text id="Analiza-Copy" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="504.602" y="2132">Analiza</tspan>
+            </text>
+            <rect id="Rectangle-Copy-9" fill="#EE3624" x="355" y="2148" width="69" height="25"></rect>
+            <path d="M355,2145.27193 L355,2175.89165" id="Line-2-Copy-2" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <text id="Crea-tu-aplicación-Copy" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="653.168" y="2132">Crea tu aplicación</tspan>
+            </text>
+            <text id="Localiza-datos" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="360.616" y="1995">Localiza datos</tspan>
+            </text>
+            <text id="Descarga,-Transforma" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="477.966" y="1995">Descarga, Transforma, Almacena</tspan>
+            </text>
+            <text id="Tareas-sin-valor-aña" opacity="0.5" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="526.198" y="2056">Tareas sin valor añadido</tspan>
+            </text>
+            <text id="Integra" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="760.06" y="1995">Integra</tspan>
+            </text>
+            <rect id="Rectangle-Copy" fill="#EE3624" x="353" y="2007" width="483" height="25"></rect>
+            <rect id="Rectangle-Copy-5" fill="#34C0CF" x="424" y="2148" width="358" height="25"></rect>
+            <path d="M353,2004.27193 L353,2034.89165" id="Line-2" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M450,2003.27193 L450,2033.89165" id="Line-2-Copy" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M726,2003.27193 L726,2033.89165" id="Line-2-Copy-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M424,2144.27193 L424,2174.89165" id="Line-2-Copy-6" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M627,2144.27193 L627,2174.89165" id="Line-2-Copy-9" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <text id="Obtención-de-valor-Copy-2" opacity="0.5" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="961.234" y="2057">Obtención de valor</tspan>
+            </text>
+            <text id="Analiza-Copy-2" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="916.602" y="1991">Analiza</tspan>
+            </text>
+            <text id="Crea-tu-aplicación-Copy-2" font-family="LibreFranklin-SemiBold, Libre Franklin" font-size="12" font-weight="500" fill="#FFFFFF">
+                <tspan x="1065.168" y="1991">Crea tu aplicación</tspan>
+            </text>
+            <rect id="Rectangle-Copy-11" fill="#34C0CF" x="836" y="2007" width="358" height="25"></rect>
+            <path d="M1039,2003.27193 L1039,2033.89165" id="Line-2-Copy-10" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M836,2003.27193 L836,2033.89165" id="Line-2-Copy-4" stroke="#FFFFFF" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

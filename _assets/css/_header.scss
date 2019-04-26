@@ -210,3 +210,9 @@
 .logo-header {
   display: inline-block;
 }
+
+.mobile_menu {
+  @include min-screen(768) {
+    display: none;
+  }
+}

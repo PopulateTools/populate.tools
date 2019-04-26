@@ -9,21 +9,6 @@
 //= require vendor/contents.js
 
 $(document).ready(function() {
-  /* Smooth scroll to anchor */
-  $(function() {
-    $('.desktop-menu a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 100
-          }, 300);
-          return false;
-        }
-      }
-    });
-  });
 
   /* Lazyload */
   var bLazy = new Blazy({
@@ -45,17 +30,44 @@ $(document).ready(function() {
     });
   }
 
-  /* Mobile menu */
-  $('.open_mobile_menu').magnificPopup({
-    type: 'inline',
-    removalDelay: 300,
-    mainClass: 'mobile_menu',
-    fixedContentPos: true
+  /* Menu */
+  $(".hamburger-container").click(function() {
+    $("#menu").slideToggle();
   });
 
-  $('.mobile-link').click(function(e) {
-    $.magnificPopup.close();
+  $("#menu a").click(function() {
+    $("#menu").slideToggle();
+    openCloseHam();
   });
+
+  //to fix issue that toggle adds style(hides) to nav
+  $(window).resize(function() {
+    if (window.innerWidth > 1024) {
+      $("#menu").removeAttr("style");
+    }
+  });
+
+  //icon animation
+  var topBar = $(".hamburger li:nth-child(1)"),
+    middleBar = $(".hamburger li:nth-child(2)"),
+    bottomBar = $(".hamburger li:nth-child(3)");
+
+  function openCloseHam() {
+    if (middleBar.hasClass("rot-45deg")) {
+      topBar.removeClass("rot45deg");
+      middleBar.removeClass("rot-45deg");
+      bottomBar.removeClass("hidden");
+    } else {
+      bottomBar.addClass("hidden");
+      topBar.addClass("rot45deg");
+      middleBar.addClass("rot-45deg");
+    }
+  }
+  $(".hamburger-container").on("click", function() {
+    openCloseHam();
+  });
+
+
 
   /* Build project grid */
   var $grid = $('.project-gallery').imagesLoaded(function() {
@@ -155,5 +167,34 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
+
+  $('.mobile_menu_handler').click(
+
+  );
+
+
+  // Populate Data Browser
+  // ToDo: Extract this code to its own files/repository
+
+  $(".pdb_data_list_series a").click(function(e) {
+    e.preventDefault();
+
+    $('.pdb_dataset_series').removeClass('slide-out-left');
+    $('.p_data_browser').removeClass('slide-in-left');
+
+    $('.p_data_browser').addClass('slide-out-left');
+    $('.pdb_dataset_series').addClass('slide-in-left');
+  });
+
+  $('.back_to_browse').click(function(e) {
+    e.preventDefault();
+    $('.p_data_browser').removeClass('slide-out-left');
+    $('.pdb_dataset_series').removeClass('slide-in-left');
+
+    $('.pdb_dataset_series').addClass('slide-out-left');
+    $('.p_data_browser').addClass('slide-in-left');
+  });
+
 
 });
