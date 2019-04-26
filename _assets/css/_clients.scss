@@ -52,7 +52,7 @@
   transition: all 1s ease;
 
   @include min-screen(1200) {
-    padding: 3rem;
+    padding: 1rem;
   }
 }
 .client-wrapper:hover {
