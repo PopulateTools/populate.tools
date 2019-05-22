@@ -101,6 +101,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-seo-tag
   jekyll-sitemap
+  rouge
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
