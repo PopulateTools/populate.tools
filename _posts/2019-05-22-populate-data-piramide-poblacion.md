@@ -3,9 +3,12 @@ layout: post
 title: "Cómo construir una pirámide de población con Populate Data y D3"
 date: 2019-05-22 8:00:00 +0100
 author: blat
+lang: es
+product: populate_data
+category: technology
 ---
 
-En este tutorial vamos a describir cómo utilizar [Populate Data](https://data.populate.tools) para obtener los datos necesarios para constuir una pirámide de población con HTML y D3.js como esta:
+En este tutorial vamos a describir cómo utilizar [Populate Data](/data) para obtener los datos necesarios para constuir una pirámide de población con HTML y D3.js como esta:
 
 <img class="rot-90" src="{% asset 'posts/190522-populate-data-population-pyramid.png' @path %}">
 
@@ -34,7 +37,14 @@ Siguiendo la <a href="https://data.populate.tools/docs/index.html#/datasets/get_
 
 Además, podemos indicar en qué formato queremos los datos concatenando `.csv` o `.json` después del nombre del dataset.
 
-La URL final, por tanto quedará así: `https://data.populate.tools/populate-data-tutorials/datasets/ds-poblacion-municipal-edad-sexo.csv?filter_by_date=2017&filter_by_location_id=28079&except_columns=_id,province_id,location_id,autonomous_region_id`
+La URL final, por tanto quedará así:
+
+```
+https://data.populate.tools/populate-data-tutorials/datasets/ds-poblacion-municipal-edad-sexo.csv?
+  filter_by_date=2017
+  &filter_by_location_id=28079
+  &except_columns=_id,province_id,location_id,autonomous_region_id
+```
 
 La respuesta de esta petición es un CSV con esta forma:
 
@@ -101,5 +111,3 @@ d3.queue()
   });
 
 {% endhighlight %}
-
-

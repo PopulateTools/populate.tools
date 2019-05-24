@@ -3,7 +3,10 @@ layout: post
 title: "Working efficiently with Spanish geographical entities"
 date: 2016-06-10 14:00:00 -0400
 author: blat
+lang: en
+category: technology
 ---
+
 We are big fans of the Open Source community since we learned to program. Everyday we use many libraries created by people like us in their spare time. Apart from the time we save in writting code, what’s also very valuable in using open source is the knowledge implicit in the code: open source is not just sharing code for free, but a solution to a given problem in the form of code, patterns and documentation.
 
 We want to give back to the community with a small project we use in many of our projects, it’s called [ine-places](http://populatetools.github.io/ine-places/). We are releasing it as a [Ruby gem](https://rubygems.org/gems/ine-places), but in the [README](https://github.com/PopulateTools/ine-places#ine-places-gem) you can find a bit of our experience working with Spanish regions, where the data can be found, in which format, and so on.

@@ -29,6 +29,9 @@ collections:
   posts:
     output: true
     permalink: blog/:title
+  category:
+    output: true
+    permalink: blog/:title/
 
 defaults:
   - scope:
@@ -61,6 +64,7 @@ assets:
   sources:
     - _assets/css
     - _assets/img
+    - _assets/img/posts
     - _assets/js
 
 plugins:

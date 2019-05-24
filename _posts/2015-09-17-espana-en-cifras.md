@@ -3,6 +3,8 @@ layout: post
 title: España en Cifras, a data journalism project by Populate
 date: 2015-09-17 14:00:00 -0400
 author: alvaro
+lang: en
+category: visualization
 ---
 
 El Español is a new digital-only newspaper, founded by Pedro J. Ramirez, one of the most renowned newspaper directors in Spain during the last 30 years. He has teamed with classics and young people (whom will surely will become classics), achieving a mix between old-school journalism and digital know-how (the co-founder’s blog, [No Hace Falta Papel](http://nohacefaltapapel.com/) -Paper Is Not Needed- gives a good sense of their attitude).

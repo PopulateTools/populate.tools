@@ -2,9 +2,10 @@
 $post-width: 700px;
 
 body.post, body.report {
-  .container {
-    max-width: 900px;
-    margin: 2em 0;
+  .post-page {
+    max-width: 800px;
+    margin: 0 auto 0 290px;
+    padding: 0;
   }
   h1 {
     color: $black;
@@ -113,6 +114,12 @@ article header img {
       padding: 0 2em 0 0;
     }
   }
+  .article {
+    padding: 0 4rem 0 0;
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
 .latest-articles {
   margin: 3rem 0;
@@ -125,6 +132,13 @@ article header img {
       margin-top: 0;
     }
   }
+}
+.small-title {
+  font-weight: bold;
+  color: $red;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase;
 }
 
 /* Post meta */
@@ -144,4 +158,24 @@ article header img {
   margin-right: 0.5rem;
   max-width: 45px;
   border-radius: 50%;
+}
+
+code {
+  padding: .2em .5em;
+  background: $light_gray;
+}
+figure {
+  margin: 0;
+}
+.highlight {
+  font-size: .85em;
+  margin: 0 0 2em 0;
+  padding: .5em;
+  code {
+    background: initial;
+    padding: initial;
+  }
+  pre {
+    margin: 0;
+  }
 }

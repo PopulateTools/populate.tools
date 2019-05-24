@@ -3,6 +3,8 @@ layout: post
 title: How we did Continent of Secrets, a project for ICIJ supported by the Pulitzer Center
 date: 2016-09-20 14:00:00 -0400
 author: alvaro
+lang: en
+category: design
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*YOwDPEA7gfys4buNdKvSnA.png)
