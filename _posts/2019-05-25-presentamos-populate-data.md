@@ -10,7 +10,7 @@ category: data
 
 En el transcurso de [nuestros](/#work) proyectos con datos públicos hemos ido construyendo una infraestructura que resuelve algunos de los principales problemas del trabajo con fuentes diversas de datos: distintas ubicaciones, distintos formatos, diferentes formas de recuperarlos y procesarlos...
 
-Con el tiempo hemos ido construyendo un almacén global donde indexamos datos públicos de fuentes diversas con un mismo formato y forma de acceso mediante una API común.
+Con el tiempo hemos creado un almacén global donde indexamos datos públicos de fuentes diversas con un mismo formato y forma de acceso mediante una API común.
 
 Esta API es la que usamos internamente en nuestros proyectos, y ahora damos el paso de ponerla a disposición de otras personas y equipos que tengan necesidades similares.
 
