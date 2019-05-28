@@ -3,6 +3,8 @@ layout: post
 title: "Using ElasticSearch as a super fast structured data storage in Populate projects"
 date: 2016-02-11 14:00:00 -0400
 author: blat
+lang: en
+category: technology
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*_-UHjQBIGgo877TvN-1-hw.png)

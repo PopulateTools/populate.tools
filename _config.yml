@@ -26,6 +26,12 @@ collections:
   careers:
     output: true
     permalink: career/:name
+  posts:
+    output: true
+    permalink: blog/:title
+  category:
+    output: true
+    permalink: blog/:title/
 
 defaults:
   - scope:
@@ -50,11 +56,16 @@ populate_data: data
 markdown: kramdown
 highlighter: rouge
 # Exclude _i18n due to Github compilation error
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '_posts']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n']
 
 assets:
   features:
     automatic_img_size: false
+  sources:
+    - _assets/css
+    - _assets/img
+    - _assets/img/posts
+    - _assets/js
 
 plugins:
   - jekyll-seo-tag

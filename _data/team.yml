@@ -9,3 +9,9 @@ blat:
   img: team/blat.png
   role: Founder & Backend engineer
   handle: ferblape
+
+amiedes:
+  name: Alberto Miedes
+  img: team/blat.png
+  role: Developer
+  handle: amiedes
