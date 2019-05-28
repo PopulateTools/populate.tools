@@ -43,9 +43,20 @@
 .header-item {
   vertical-align: 0.7rem;
   display: inline-block;
-}
-.header-item {
   padding-right: 2rem;
+}
+.header-item.sep {
+  padding-right: 2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.header-item.sep::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  margin: 0 0 0 -1.5em;
+  background: #DFDFDF;
 }
 .header-link {
   color: $link;

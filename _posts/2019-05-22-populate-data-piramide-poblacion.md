@@ -139,3 +139,5 @@ d3.queue()
 {% endhighlight %}
 
 El resultado de este snippet de código es un objeto `data` con un atributo `value` con el valor para cada edad y sexo y un atributo `value_pct` con el porcentaje del valor para cada sexo. Ese objeto ya se puede _bindear_ con D3 y utilizarse para construir la visualización.
+
+Consulta la página de [Populate Data](/data) para leer más o pedir más información. 

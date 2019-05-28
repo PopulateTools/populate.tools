@@ -13,14 +13,14 @@
         </a>
         <ul class="header-list">
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#projects">work</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}blog">blog</a></li>
-          <!-- <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#clients">clients</a></li> -->
-
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#about">about</a></li>
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#contact">contact</a></li>
           <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}{{ site.join_us }}">join us</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}blog">blog</a></li>
 
-          <li class="header-item"><a class="header-link header-section" href="/{{ site.populate_data }}">populate data</a></li>
+
+          <li class="sep header-item"><a class="header-link header-section" href="/{{ site.populate_data }}">populate data</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/projects/gobierto">gobierto</a></li>
         </ul>
 
       </div>
@@ -43,6 +43,7 @@
       <li><a href="/">about</a></li>
       <li><a href="/#contact">contact</a></li>
       <li><a href="/{{ site.join_us }}">join us</a></li>
+      <li><a href="/blog">blog</a></li>
       <li><a href="/{{ site.populate_data }}">populate data</a></li>
     </ul>
 

@@ -11,7 +11,7 @@ technology:
   - Ruby On Rails
   - Elastic Search
   - D3.js
-description: Gobierto is an open source open government plaftform to enable public administrations to efficiently set up transparency and participation initiatives. Implemented in various local and regional spanish public organizations. <a href="https://medium.com/lets-populate/gobierto-the-open-government-platform-a00406428004">Read more</a>.
+description: Gobierto is an open source open government plaftform to enable public administrations to efficiently set up transparency and participation initiatives. Implemented in various local and regional spanish public organizations.
 img: projects/screens/gobierto-0.jpg
 screens:
   - projects/screens/gobierto-1.jpg
@@ -21,6 +21,6 @@ screens:
   - projects/screens/gobierto-5.jpg
   - projects/screens/gobierto-6.jpg
 public_url: http://gobierto.es
-# client_url: https://icij.org/
+more_info: /blog/gobierto
 weight: 2
 ---
