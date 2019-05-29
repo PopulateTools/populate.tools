@@ -36,9 +36,14 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: img/populate-og.png
+  - scope:
+      path: ""
       type: projects
     values:
       weight: 100
+
 
 # Analytics
 ga_id: UA-70344922-1
