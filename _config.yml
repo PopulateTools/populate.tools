@@ -38,7 +38,7 @@ defaults:
   #     path: ""
   #   values:
   #     image: img/populate-og.png
-  # - scope:
+  - scope:
       path: ""
       type: projects
     values:
