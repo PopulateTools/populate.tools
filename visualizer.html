@@ -2,8 +2,79 @@
 layout: default
 ---
 
-<h1>H</h1>
 <script src="https://unpkg.com/vue"></script>
 <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
+<script>
+  const config = {
+    setup: {
+      baseURL: "https://data.populate.tools/visualizador/",
+      headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
+    },
+    endpoints: {
+      series: {
+        build: () => "datasets.json",
+        parse: data => {
+          return {
+            data: Object.values(data)
+              .filter(d =>
+                [
+                  "ds-defunciones-municipal",
+                  "ds-poblacion-municipal",
+                  "ds-autonomos-municipio",
+                  "ds-contratos-municipio",
+                  "ds-empresas-municipio",
+                  "ds-deuda-municipal",
+                  "ds-afiliados-ss-municipio",
+                  "ds-personas-paradas-municipio",
+                  "ds-renta-bruta-media-municipal",
+                  "ds-nacimientos-municipal"
+                ].includes(d.id)
+              )
+              .map(d => ({ id: d.id, name: d.name }))
+          };
+        }
+      },
+      data: {
+        build: params => [
+          `datasets/${params.varX}.json?filter_by_year=${params.range}`,
+          `datasets/${params.varY}.json?filter_by_year=${params.range}`
+        ],
+        parse: data => {
+          let response = {};
+          const arrMerged = [];
+
+          const [arr0, arr1] = data;
+          if (arr0.length && arr1.length) {
+            arr0.forEach(d => {
+              const itemMerged = {};
+              itemMerged.value0 = parseInt(d.value);
+              itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
+              itemMerged.province_id = parseInt(d.province_id);
+              itemMerged.location_id = parseInt(d.location_id);
+
+              arrMerged.push(itemMerged);
+            });
+
+            response = {
+              data: arrMerged,
+              props: {
+                xAxisProp: "value1",
+                yAxisProp: "value0",
+                aggregationProp: "province_id",
+                legendLabels: ["Más", "Menos"],
+                averageLabel: "Media",
+                medianLabel: "Mediana"
+              }
+            };
+          }
+
+          return response;
+        }
+      }
+    }
+  };
+
+  Vue.prototype.$config = config;
+</script>
 
 <my-visualizer></my-visualizer>
