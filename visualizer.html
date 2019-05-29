@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>H</h1>
+<script src="https://unpkg.com/vue"></script>
+<script src="http://data-visualizer.populate.tools/dist/visualizer.umd.min.js"></script>
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+  new Vue({
+    components: {
+      demo: visualizer
+    }
+  }).$mount("#app");
+</script>
