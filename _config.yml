@@ -34,11 +34,11 @@ collections:
     permalink: blog/:title/
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      image: img/populate-og.png
-  - scope:
+  # - scope:
+  #     path: ""
+  #   values:
+  #     image: img/populate-og.png
+  # - scope:
       path: ""
       type: projects
     values:
