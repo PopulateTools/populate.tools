@@ -4,14 +4,9 @@ layout: default
 
 {% include header.html %}
 
-
-
 <main>
-
   <div class="container careers page">
-
     <main class="content">
-
       <h1>Visualizer</h1>
 
       <p>Example...</p>
@@ -19,6 +14,256 @@ layout: default
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
       <script>
+        const PROVINCES = [
+          {
+            id: 1,
+            name: "Álava"
+          },
+          {
+            id: 2,
+            name: "Albacete"
+          },
+          {
+            id: 3,
+            name: "Alicante"
+          },
+          {
+            id: 4,
+            name: "Almería"
+          },
+          {
+            id: 33,
+            name: "Asturias"
+          },
+          {
+            id: 5,
+            name: "Ávila"
+          },
+          {
+            id: 6,
+            name: "Badajoz"
+          },
+          {
+            id: 8,
+            name: "Barcelona"
+          },
+          {
+            id: 9,
+            name: "Burgos"
+          },
+          {
+            id: 10,
+            name: "Cáceres"
+          },
+          {
+            id: 11,
+            name: "Cádiz"
+          },
+          {
+            id: 39,
+            name: "Cantabria"
+          },
+          {
+            id: 12,
+            name: "Castellón"
+          },
+          {
+            id: 51,
+            name: "Ceuta "
+          },
+          {
+            id: 13,
+            name: "Ciudad Real"
+          },
+          {
+            id: 14,
+            name: "Córdoba"
+          },
+          {
+            id: 16,
+            name: "Cuenca"
+          },
+          {
+            id: 17,
+            name: "Gerona"
+          },
+          {
+            id: 18,
+            name: "Granada"
+          },
+          {
+            id: 19,
+            name: "Guadalajara"
+          },
+          {
+            id: 20,
+            name: "Guipúzcoa"
+          },
+          {
+            id: 21,
+            name: "Huelva"
+          },
+          {
+            id: 22,
+            name: "Huesca"
+          },
+          {
+            id: 7,
+            name: "Islas Baleares"
+          },
+          {
+            id: 23,
+            name: "Jaén"
+          },
+          {
+            id: 15,
+            name: "La Coruña"
+          },
+          {
+            id: 26,
+            name: "La Rioja"
+          },
+          {
+            id: 35,
+            name: "Las Palmas"
+          },
+          {
+            id: 24,
+            name: "León"
+          },
+          {
+            id: 25,
+            name: "Lérida"
+          },
+          {
+            id: 27,
+            name: "Lugo"
+          },
+          {
+            id: 28,
+            name: "Madrid"
+          },
+          {
+            id: 29,
+            name: "Málaga"
+          },
+          {
+            id: 52,
+            name: "Melilla"
+          },
+          {
+            id: 30,
+            name: "Murcia"
+          },
+          {
+            id: 31,
+            name: "Navarra"
+          },
+          {
+            id: 32,
+            name: "Orense"
+          },
+          {
+            id: 34,
+            name: "Palencia"
+          },
+          {
+            id: 36,
+            name: "Pontevedra"
+          },
+          {
+            id: 37,
+            name: "Salamanca"
+          },
+          {
+            id: 38,
+            name: "Santa Cruz de Tenerife"
+          },
+          {
+            id: 40,
+            name: "Segovia"
+          },
+          {
+            id: 41,
+            name: "Sevilla"
+          },
+          {
+            id: 42,
+            name: "Soria"
+          },
+          {
+            id: 43,
+            name: "Tarragona"
+          },
+          {
+            id: 44,
+            name: "Teruel"
+          },
+          {
+            id: 45,
+            name: "Toledo"
+          },
+          {
+            id: 46,
+            name: "Valencia"
+          },
+          {
+            id: 47,
+            name: "Valladolid"
+          },
+          {
+            id: 48,
+            name: "Vizcaya"
+          },
+          {
+            id: 49,
+            name: "Zamora"
+          },
+          {
+            id: 50,
+            name: "Zaragoza"
+          }
+        ];
+        const populate = [
+          {
+            id: "ds-poblacion-municipal"
+          },
+          {
+            id: "ds-defunciones-municipal"
+          },
+          {
+            id: "ds-autonomos-municipio",
+            freq: "month"
+          },
+          {
+            id: "ds-contratos-municipio",
+            freq: "month"
+          },
+          {
+            id: "ds-empresas-municipio"
+          },
+          {
+            id: "ds-deuda-municipal"
+          },
+          {
+            id: "ds-afiliados-ss-municipio",
+            freq: "month"
+          },
+          {
+            id: "ds-personas-paradas-municipio",
+            freq: "month"
+          },
+          {
+            id: "ds-renta-bruta-media-municipal"
+          },
+          {
+            id: "ds-nacimientos-municipal"
+          },
+          {
+            id: "ds-presupuestos-municipales-total"
+          }
+        ];
+
         const config = {
           setup: {
             baseURL: "https://data.populate.tools/visualizador/",
@@ -30,29 +275,29 @@ layout: default
               parse: data => {
                 return {
                   data: Object.values(data)
-                    .filter(d =>
-                      [
-                        "ds-defunciones-municipal",
-                        "ds-poblacion-municipal",
-                        "ds-autonomos-municipio",
-                        "ds-contratos-municipio",
-                        "ds-empresas-municipio",
-                        "ds-deuda-municipal",
-                        "ds-afiliados-ss-municipio",
-                        "ds-personas-paradas-municipio",
-                        "ds-renta-bruta-media-municipal",
-                        "ds-nacimientos-municipal"
-                      ].includes(d.id)
-                    )
+                    .filter(d => populate.some(f => f.id === d.id))
                     .map(d => ({ id: d.id, name: d.name }))
                 };
               }
             },
             data: {
-              build: params => [
-                `datasets/${params.varX}.json?filter_by_year=${params.range}`,
-                `datasets/${params.varY}.json?filter_by_year=${params.range}`
-              ],
+              build: params => {
+                const isMonthlyVarX = populate.some(d => d.id === params.varX && d.freq === "month");
+                const isMonthlyVarY = populate.some(d => d.id === params.varY && d.freq === "month");
+
+                let rangeX = params.range;
+                let rangeY = params.range;
+
+                if (isMonthlyVarX) {
+                  rangeX = new Date().getFullYear() === rangeX ? `${rangeX}-01` : `${rangeX}-12`;
+                }
+
+                if (isMonthlyVarY) {
+                  rangeY = new Date().getFullYear() === rangeY ? `${rangeY}-01` : `${rangeY}-12`;
+                }
+
+                return [`datasets/${params.varX}.json?filter_by_date=${rangeX}`, `datasets/${params.varY}.json?filter_by_date=${rangeY}`];
+              },
               parse: data => {
                 let response = {};
                 const arrMerged = [];
@@ -60,13 +305,18 @@ layout: default
                 const [arr0, arr1] = data;
                 if (arr0.length && arr1.length) {
                   arr0.forEach(d => {
-                    const itemMerged = {};
-                    itemMerged.value0 = parseInt(d.value);
-                    itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
-                    itemMerged.province_id = parseInt(d.province_id);
-                    itemMerged.location_id = parseInt(d.location_id);
+                    // Ignore if there's no location. It won't match
+                    if (d.location_id) {
+                      const itemMerged = {};
 
-                    arrMerged.push(itemMerged);
+                      itemMerged.value0 = parseInt(d.value);
+                      itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
+                      itemMerged.province_id = parseInt(d.province_id);
+                      itemMerged.location_id = parseInt(d.location_id);
+                      itemMerged.province_desc = (PROVINCES.find(f => f.id === parseInt(d.province_id)) || {}).name;
+
+                      arrMerged.push(itemMerged);
+                    }
                   });
 
                   response = {
@@ -92,8 +342,6 @@ layout: default
       </script>
 
       <my-visualizer></my-visualizer>
-
     </main>
-
   </div>
 </main>
