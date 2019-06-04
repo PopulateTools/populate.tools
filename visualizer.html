@@ -328,7 +328,12 @@ layout: default
                       legendLabels: ["Más", "Menos"],
                       averageLabel: "Media",
                       medianLabel: "Mediana",
-                      btnPlaceholder: "Añadir provincia"
+                      btnPlaceholder: "Añadir provincia",
+                      tooltip: d => {
+                        return `<div style="padding: 1rem;"><div><strong>${d.location_id}</strong> (${d.province_desc})</div><div>${
+                          d.value0
+                        }</div></div>`;
+                      }
                     }
                   };
                 }
