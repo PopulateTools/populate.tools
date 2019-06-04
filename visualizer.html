@@ -330,8 +330,8 @@ layout: default
                       medianLabel: "Mediana",
                       btnPlaceholder: "Añadir provincia",
                       tooltip: d => {
-                        return `<div style="padding: 1rem;"><div><strong>${d.location_id}</strong> (${d.province_desc})</div><div>${
-                          d.value0
+                        return `<div style="padding: 1rem;"><div><strong>${d.province_desc}</strong></div><div>${
+                          d.value0.toLocaleString()
                         }</div></div>`;
                       }
                     }
