@@ -18,7 +18,8 @@ layout: default
           {
             id: "ds-poblacion-municipal",
             name: "Población",
-            units: "habitantes"
+            units: "habitantes",
+            ranges: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
           },
           {
             id: "ds-defunciones-municipal",
@@ -83,6 +84,14 @@ layout: default
           setup: {
             baseURL: "https://data.populate.tools/visualizador/",
             headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
+          },
+          ranges: dataset => {
+            if (!dataset) {
+              return [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019];
+            }
+
+            const { ranges } = populate.find(d => d.id === dataset);
+            return ranges;
           },
           endpoints: {
             series: {
