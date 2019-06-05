@@ -17,50 +17,61 @@ layout: default
         const populate = [
           {
             id: "ds-poblacion-municipal",
+            name: "Población",
             units: "habitantes"
           },
           {
             id: "ds-defunciones-municipal",
+            name: "Defunciones",
             units: "defunciones"
           },
           {
             id: "ds-autonomos-municipio",
             freq: "month",
+            name: "Número de autónomos",
             units: "autónomos"
           },
           {
             id: "ds-contratos-municipio",
             freq: "month",
+            name: "Número de contratos",
             units: "contratos"
           },
           {
             id: "ds-empresas-municipio",
+            name: "Empresas",
             units: "empresas"
           },
           {
             id: "ds-deuda-municipal",
+            name: "Deuda",
             units: "€"
           },
           {
             id: "ds-afiliados-ss-municipio",
             freq: "month",
-            units: "afiliados a la Seg. Social"
+            name: "Afiliados a la Seg. Social",
+            units: "afiliados"
           },
           {
             id: "ds-personas-paradas-municipio",
             freq: "month",
+            name: "Personas paradas",
             units: "desempleados"
           },
           {
             id: "ds-renta-bruta-media-municipal",
+            name: "Renta bruta media",
             units: "€"
           },
           {
             id: "ds-nacimientos-municipal",
+            name: "Nacimientos",
             units: "nacimientos"
           },
           {
             id: "ds-presupuestos-municipales",
+            name: "Presupuesto",
             units: "€"
           }
         ];
@@ -142,12 +153,12 @@ layout: default
                       medianLabel: "Mediana",
                       btnPlaceholder: "Añadir provincia",
                       tooltip: d => {
-                        const units0 = populate.find(d => d.id === dataset0).units;
-                        const units1 = populate.find(d => d.id === dataset1).units;
+                        const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
+                        const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
 
                         return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
                           d.province_desc
-                        })</div><div>Series 1: ${d.value0.toLocaleString()} ${units0}</div><div>Series 2: ${d.value1.toLocaleString()} ${units1}</div></div>`;
+                        })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
                       }
                     }
                   };
