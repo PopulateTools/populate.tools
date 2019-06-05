@@ -14,255 +14,59 @@ layout: default
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
       <script>
-        const PROVINCES = [
-          {
-            id: 1,
-            name: "Álava"
-          },
-          {
-            id: 2,
-            name: "Albacete"
-          },
-          {
-            id: 3,
-            name: "Alicante"
-          },
-          {
-            id: 4,
-            name: "Almería"
-          },
-          {
-            id: 33,
-            name: "Asturias"
-          },
-          {
-            id: 5,
-            name: "Ávila"
-          },
-          {
-            id: 6,
-            name: "Badajoz"
-          },
-          {
-            id: 8,
-            name: "Barcelona"
-          },
-          {
-            id: 9,
-            name: "Burgos"
-          },
-          {
-            id: 10,
-            name: "Cáceres"
-          },
-          {
-            id: 11,
-            name: "Cádiz"
-          },
-          {
-            id: 39,
-            name: "Cantabria"
-          },
-          {
-            id: 12,
-            name: "Castellón"
-          },
-          {
-            id: 51,
-            name: "Ceuta "
-          },
-          {
-            id: 13,
-            name: "Ciudad Real"
-          },
-          {
-            id: 14,
-            name: "Córdoba"
-          },
-          {
-            id: 16,
-            name: "Cuenca"
-          },
-          {
-            id: 17,
-            name: "Gerona"
-          },
-          {
-            id: 18,
-            name: "Granada"
-          },
-          {
-            id: 19,
-            name: "Guadalajara"
-          },
-          {
-            id: 20,
-            name: "Guipúzcoa"
-          },
-          {
-            id: 21,
-            name: "Huelva"
-          },
-          {
-            id: 22,
-            name: "Huesca"
-          },
-          {
-            id: 7,
-            name: "Islas Baleares"
-          },
-          {
-            id: 23,
-            name: "Jaén"
-          },
-          {
-            id: 15,
-            name: "La Coruña"
-          },
-          {
-            id: 26,
-            name: "La Rioja"
-          },
-          {
-            id: 35,
-            name: "Las Palmas"
-          },
-          {
-            id: 24,
-            name: "León"
-          },
-          {
-            id: 25,
-            name: "Lérida"
-          },
-          {
-            id: 27,
-            name: "Lugo"
-          },
-          {
-            id: 28,
-            name: "Madrid"
-          },
-          {
-            id: 29,
-            name: "Málaga"
-          },
-          {
-            id: 52,
-            name: "Melilla"
-          },
-          {
-            id: 30,
-            name: "Murcia"
-          },
-          {
-            id: 31,
-            name: "Navarra"
-          },
-          {
-            id: 32,
-            name: "Orense"
-          },
-          {
-            id: 34,
-            name: "Palencia"
-          },
-          {
-            id: 36,
-            name: "Pontevedra"
-          },
-          {
-            id: 37,
-            name: "Salamanca"
-          },
-          {
-            id: 38,
-            name: "Santa Cruz de Tenerife"
-          },
-          {
-            id: 40,
-            name: "Segovia"
-          },
-          {
-            id: 41,
-            name: "Sevilla"
-          },
-          {
-            id: 42,
-            name: "Soria"
-          },
-          {
-            id: 43,
-            name: "Tarragona"
-          },
-          {
-            id: 44,
-            name: "Teruel"
-          },
-          {
-            id: 45,
-            name: "Toledo"
-          },
-          {
-            id: 46,
-            name: "Valencia"
-          },
-          {
-            id: 47,
-            name: "Valladolid"
-          },
-          {
-            id: 48,
-            name: "Vizcaya"
-          },
-          {
-            id: 49,
-            name: "Zamora"
-          },
-          {
-            id: 50,
-            name: "Zaragoza"
-          }
-        ];
         const populate = [
           {
-            id: "ds-poblacion-municipal"
+            id: "ds-poblacion-municipal",
+            units: "habitantes"
           },
           {
-            id: "ds-defunciones-municipal"
+            id: "ds-defunciones-municipal",
+            units: "defunciones"
           },
           {
             id: "ds-autonomos-municipio",
-            freq: "month"
+            freq: "month",
+            units: "autónomos"
           },
           {
             id: "ds-contratos-municipio",
-            freq: "month"
+            freq: "month",
+            units: "contratos"
           },
           {
-            id: "ds-empresas-municipio"
+            id: "ds-empresas-municipio",
+            units: "empresas"
           },
           {
-            id: "ds-deuda-municipal"
+            id: "ds-deuda-municipal",
+            units: "€"
           },
           {
             id: "ds-afiliados-ss-municipio",
-            freq: "month"
+            freq: "month",
+            units: "afiliados a la Seg. Social"
           },
           {
             id: "ds-personas-paradas-municipio",
-            freq: "month"
+            freq: "month",
+            units: "desempleados"
           },
           {
-            id: "ds-renta-bruta-media-municipal"
+            id: "ds-renta-bruta-media-municipal",
+            units: "€"
           },
           {
-            id: "ds-nacimientos-municipal"
+            id: "ds-nacimientos-municipal",
+            units: "nacimientos"
           },
           {
-            id: "ds-presupuestos-municipales"
+            id: "ds-presupuestos-municipales",
+            units: "€"
           }
         ];
+
+        let dataset0;
+        let dataset1;
 
         const config = {
           setup: {
@@ -296,7 +100,14 @@ layout: default
                   rangeY = new Date().getFullYear() === rangeY ? `${rangeY}-01` : `${rangeY}-12`;
                 }
 
-                return [`datasets/${params.varX}.json?filter_by_date=${rangeX}`, `datasets/${params.varY}.json?filter_by_date=${rangeY}`];
+                // Handle user selections
+                dataset0 = params.varX;
+                dataset1 = params.varY;
+
+                return [
+                  `datasets/${params.varX}.json?filter_by_date=${rangeX}&include=municipality,province`,
+                  `datasets/${params.varY}.json?filter_by_date=${rangeY}&include=municipality,province`
+                ];
               },
               parse: data => {
                 let response = {};
@@ -311,9 +122,10 @@ layout: default
 
                       itemMerged.value0 = parseInt(d.value);
                       itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
-                      itemMerged.province_id = parseInt(d.province_id);
                       itemMerged.location_id = parseInt(d.location_id);
-                      itemMerged.province_desc = (PROVINCES.find(f => f.id === parseInt(d.province_id)) || {}).name;
+                      itemMerged.location_desc = d.municipality_name;
+                      itemMerged.province_id = parseInt(d.province_id);
+                      itemMerged.province_desc = d.province_name;
 
                       arrMerged.push(itemMerged);
                     }
@@ -330,9 +142,12 @@ layout: default
                       medianLabel: "Mediana",
                       btnPlaceholder: "Añadir provincia",
                       tooltip: d => {
-                        return `<div style="padding: 1rem;"><div><strong>${d.province_desc}</strong></div><div>${
-                          d.value0.toLocaleString()
-                        }</div></div>`;
+                        const units0 = populate.find(d => d.id === dataset0).units;
+                        const units1 = populate.find(d => d.id === dataset1).units;
+
+                        return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
+                          d.province_desc
+                        })</div><div>Series 1: ${d.value0.toLocaleString()} ${units0}</div><div>Series 2: ${d.value1.toLocaleString()} ${units1}</div></div>`;
                       }
                     }
                   };
