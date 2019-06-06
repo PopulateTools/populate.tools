@@ -100,10 +100,42 @@ layout: default
           2019
         ];
         const config = {
-          setup: {
-            baseURL: "https://data.populate.tools/visualizador/",
-            headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
-          },
+          charts: [
+            {
+              xAxisProp: "value1",
+              yAxisProp: "value0",
+              aggregationProp: "province_id",
+              btnPlaceholder: "Añadir provincia",
+              tooltip: d => {
+                const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
+                const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
+
+                return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
+                  d.province_desc
+                })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
+              },
+              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
+              yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
+            },
+            {
+              xAxisProp: "value1",
+              yAxisProp: "value0",
+              aggregationProp: "province_id",
+              legendLabels: ["Más", "Menos"],
+              averageLabel: "Media",
+              medianLabel: "Mediana",
+              tooltip: d => {
+                const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
+                const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
+
+                return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
+                  d.province_desc
+                })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
+              },
+              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
+              yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
+            }
+          ],
           ranges: dataset => {
             if (!dataset) {
               return RANGES_DEFAULT;
@@ -112,16 +144,17 @@ layout: default
             const { ranges } = populate.find(d => d.id === dataset);
             return ranges;
           },
+          setup: {
+            baseURL: "https://data.populate.tools/visualizador/",
+            headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
+          },
           endpoints: {
             series: {
               build: () => "datasets.json",
-              parse: data => {
-                return {
-                  data: Object.values(data)
-                    .filter(d => populate.some(f => f.id === d.id))
-                    .map(d => ({ id: d.id, name: d.name }))
-                };
-              }
+              parse: data =>
+                Object.values(data)
+                  .filter(d => populate.some(f => f.id === d.id))
+                  .map(d => ({ id: d.id, name: d.name }))
             },
             data: {
               build: params => {
@@ -149,7 +182,6 @@ layout: default
                 ];
               },
               parse: data => {
-                let response = {};
                 const arrMerged = [];
 
                 const [arr0, arr1] = data;
@@ -169,32 +201,9 @@ layout: default
                       arrMerged.push(itemMerged);
                     }
                   });
-
-                  response = {
-                    data: arrMerged,
-                    props: {
-                      xAxisProp: "value1",
-                      yAxisProp: "value0",
-                      aggregationProp: "province_id",
-                      legendLabels: ["Más", "Menos"],
-                      averageLabel: "Media",
-                      medianLabel: "Mediana",
-                      btnPlaceholder: "Añadir provincia",
-                      tooltip: d => {
-                        const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
-                        const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
-
-                        return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
-                          d.province_desc
-                        })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
-                      },
-                      xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
-                      yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
-                    }
-                  };
                 }
 
-                return response;
+                return arrMerged;
               }
             }
           }
