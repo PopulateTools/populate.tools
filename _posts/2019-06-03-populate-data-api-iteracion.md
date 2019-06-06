@@ -13,6 +13,22 @@ cantidades de datos en [Populate Data](/data). La API de Populate Data establece
 registros como máximo por petición. Sin embargo hay varios mecanismos para obtener el total del
 histórico de un dataset que podemos utilizar.
 
+## Determinar si necesitamos paginación
+
+Cuando utilicemos la API de Populate Data debemos determinar si necesitamos utilizar la paginación
+para obtener los datos de una serie.
+
+Estos dos escenarios nos indican si necesitamos pedir datos parcialmente:
+
+- Si realizamos una petición a la API que devuelve exactamente 100.000 registros es muy posible que
+  la API haya limitado la petición y que haya más registros en la serie.
+
+- Si el tiempo de respuesta de la API es más lento del habitual debemos de comprobar el número de
+  registros que nos devuelve. Si el número es muy elevado el tamaño de la petición puede ser muy
+  elevado, y si estamos utilizando la API directamente en una aplicación web cliente (con
+  Javascript) es posible que queramos hacer más peticiones pequeñas y rápidas que una muy grande.
+
+
 ## Utilizar paginación
 
 Un mecanismo muy habitual para obtener múltiples registros de un conjunto de datos es utilizar la
@@ -23,6 +39,41 @@ De acuerdo a lo descrito en [la
 documentación](https://data.populate.tools/docs/index.html#/datasets/get_datasets__dataset_id___format_),
 todas las peticiones llevan implícito un límite de 100.000 registros, pero podemos reducir ese
 valor. El parámetro offset debe de ser un número entero positivo mayor de 0.
+
+De momento la API no ofrece un total de registros, por lo que hay que implementar una estrategia
+para que las peticiones paren. Por ejemplo, se puede ir incrementando el valor del offset hasta que
+la API devuelva 0 registros, y en ese caso parar.
+
+El siguiente código en R ilustra esta técnica:
+
+```r
+# Credentials
+pd_account <- "populate-data-tutorials"
+pd_authorization <- "Bearer TOKEN"
+
+
+# Empty dataframe
+df_poblacion <- NULL
+
+# Pagination params
+limit <- 1000
+offset <- 0
+
+# Loop to get info from all years
+repeat {
+  url <- paste0("https://data.populate.tools/", pd_account, "/datasets/ds-poblacion-municipal.csv?limit=", limit, "&offset=", offset)
+  r <- GET(url, add_headers(authorization = pd_authorization, origin = TOKEN_ORIGIN))
+  partial_df <- content(r, "parsed")
+  if(nrow(partial_df) == 0) { break }
+
+  df_poblacion <- rbind(df_poblacion, partial_df)
+  offset <- offset + limit
+}
+```
+
+Se instancia un bucle infinito que va obteniendo elementos de 1000 en 1000 hasta que el resultado
+tenga 0 filas.
+
 
 ## Iterar por alguna dimensión
 
@@ -54,15 +105,18 @@ for(year in years) {
 }
 ```
 
-Además de las propiedades temporales también podemos utilizar las variables geospaciales, como podría ser la provincia o la comunidad autónoma. La API de Populate Data implementa filtros en todas las columnas del dataset de forma dinámica, y pueden ser construidos como `filter_by_<nombre del campo>`.
+Además de las propiedades temporales también podemos utilizar las variables geospaciales, como podría ser la provincia o la comunidad autónoma.
 
-## Notificación y detección de errores
+La API de Populate Data implementa filtros en todas las columnas del dataset de forma dinámica, y pueden ser construidos como `filter_by_<nombre del campo>`.
 
-Puede ocurrir que cuando usemos la API nos olvidemos de estas limitaciones del número de filas, en ese caso la API nos devolverá un error con código 0 o código 3, indicando en el cuerpo del mensaje el error.
 
-También debemos de estar atentos a la longitud de los datos de la respuesta, si el valor coincide
-que son 100.000 registros, el límite por defecto de la API, es muy posible que la petición haya
-alcanzado el límite de registros y en ese caso deberemos implementar alguna de las ideas expuestas
-de paginación.
+## Mejoras en la paginación
 
+Tenemos dos ideas para mejorar la paginación:
+
+1. La más directa es incluir el total de registros en los metadatos del dataset
+
+2. La más ambiciosa es que los metadatos incluyan la lista de todos los valores únicos de cada propiedad, o al menos de aquellas que tengan sentido (ej: la lista de fechas de una columna fecha).
+
+Sabiendo estos valores, se podrá implementar la paginación por por offset y por dimensiones de forma mucho más sencilla.
 
