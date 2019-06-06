@@ -114,9 +114,13 @@ La API de Populate Data implementa filtros en todas las columnas del dataset de 
 
 Tenemos dos ideas para mejorar la paginación:
 
-1. La más directa es incluir el total de registros en los metadatos del dataset
+1. Incluir el total de registros en los metadatos del dataset
 
-2. La más ambiciosa es que los metadatos incluyan la lista de todos los valores únicos de cada propiedad, o al menos de aquellas que tengan sentido (ej: la lista de fechas de una columna fecha).
+2. Que los metadatos incluyan la lista de todos los valores únicos de cada propiedad, o al menos de aquellas que tengan sentido (ej: la lista de fechas de una columna fecha).
 
 Sabiendo estos valores, se podrá implementar la paginación por por offset y por dimensiones de forma mucho más sencilla.
 
+
+<div class="separator"></div>
+
+Consulta los datos disponibles en [populate.tools/data](/data)
