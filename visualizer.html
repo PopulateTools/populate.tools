@@ -14,72 +14,91 @@ layout: default
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
       <script>
+        let dataset0;
+        let dataset1;
+
         const populate = [
           {
             id: "ds-poblacion-municipal",
             name: "Población",
             units: "habitantes",
-            ranges: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
+            ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
           },
           {
             id: "ds-defunciones-municipal",
             name: "Defunciones",
-            units: "defunciones"
-          },
-          {
-            id: "ds-autonomos-municipio",
-            freq: "month",
-            name: "Número de autónomos",
-            units: "autónomos"
+            units: "defunciones",
+            ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
           },
           {
             id: "ds-contratos-municipio",
             freq: "month",
             name: "Número de contratos",
-            units: "contratos"
+            units: "contratos",
+            ranges: [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
           },
           {
             id: "ds-empresas-municipio",
             name: "Empresas",
-            units: "empresas"
+            units: "empresas",
+            ranges: [2014]
           },
           {
             id: "ds-deuda-municipal",
             name: "Deuda",
-            units: "€"
+            units: "€",
+            ranges: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
           },
           {
             id: "ds-afiliados-ss-municipio",
             freq: "month",
             name: "Afiliados a la Seg. Social",
-            units: "afiliados"
+            units: "afiliados",
+            ranges: [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
           },
           {
             id: "ds-personas-paradas-municipio",
             freq: "month",
             name: "Personas paradas",
-            units: "desempleados"
+            units: "desempleados",
+            ranges: [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
           },
           {
             id: "ds-renta-bruta-media-municipal",
             name: "Renta bruta media",
-            units: "€"
+            units: "€",
+            ranges: [2014, 2016]
           },
           {
             id: "ds-nacimientos-municipal",
             name: "Nacimientos",
-            units: "nacimientos"
-          },
-          {
-            id: "ds-presupuestos-municipales",
-            name: "Presupuesto",
-            units: "€"
+            units: "nacimientos",
+            ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
           }
         ];
 
-        let dataset0;
-        let dataset1;
-
+        const RANGES_DEFAULT = [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ];
         const config = {
           setup: {
             baseURL: "https://data.populate.tools/visualizador/",
@@ -87,7 +106,7 @@ layout: default
           },
           ranges: dataset => {
             if (!dataset) {
-              return [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019];
+              return RANGES_DEFAULT;
             }
 
             const { ranges } = populate.find(d => d.id === dataset);
