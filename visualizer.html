@@ -16,6 +16,7 @@ layout: default
       <script>
         let dataset0;
         let dataset1;
+        let dataset2;
 
         const populate = [
           {
@@ -84,7 +85,7 @@ layout: default
             name: "Presupuestos, partidas económicas"
           }
         ];
-        const helperPrepareQuery = (param, range) => {
+        const helperDatasetQuery = (param, range) => {
           const isMonthly = populate.some(d => d.id === param && d.freq === "month");
 
           if (isMonthly) {
@@ -92,6 +93,14 @@ layout: default
           }
 
           return `datasets/${param}.json?filter_by_date=${range}&include=municipality,province`;
+        };
+        const helperCollectionQuery = (param, range) => {
+          const { code, area, kind } = dataset2.find(d => d.code === param.toString());
+
+          const dataset = area === "functional" ? "ds-presupuestos-municipales-funcional" : "ds-presupuestos-municipales-economica";
+          const type = kind === "expense" ? "G" : "I";
+
+          return `datasets/${dataset}.json?filter_by_code=${code}&filter_by_kind=${type}`;
         };
         const RANGES_DEFAULT = [
           2000,
@@ -112,8 +121,7 @@ layout: default
           2015,
           2016,
           2017,
-          2018,
-          2019
+          2018
         ];
         const config = {
           charts: [
@@ -165,25 +173,37 @@ layout: default
           setup: {
             baseURL: "https://data.populate.tools/visualizador/",
             headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
+            // timeout: 10000
           },
           endpoints: {
             series: {
-              build: () => "datasets.json",
-              parse: data =>
-                Object.values(data)
+              build: () => ["datasets.json", "collections/c-categorias-presupuestos-municipales/items.json"],
+              parse: data => {
+                const [datasets, collections] = data;
+
+                // Handle user selections
+                dataset2 = collections;
+
+                return Object.values(datasets)
                   .filter(d => populate.some(f => f.id === d.id))
                   .map(d => ({ id: d.id, name: d.name }))
                   .sort((a, b) => populate.findIndex(d => d.id === a.id) - populate.findIndex(d => d.id === b.id))
+                  .concat(collections.map(d => ({ id: parseInt(d.code), name: d.name })));
+              }
             },
             data: {
               build: params => {
                 const req = [];
 
                 if (params.varX) {
-                  req.push(helperPrepareQuery(params.varX, params.range));
+                  if (Number.isInteger(params.varX)) {
+                    req.push(helperCollectionQuery(params.varX, params.range));
+                  } else {
+                    req.push(helperDatasetQuery(params.varX, params.range));
+                  }
                 }
                 if (params.varY) {
-                  req.push(helperPrepareQuery(params.varY, params.range));
+                  req.push(helperDatasetQuery(params.varY, params.range));
                 }
 
                 // Handle user selections
@@ -195,22 +215,40 @@ layout: default
               parse: data => {
                 const arrMerged = [];
                 const [arr0 = [], arr1 = []] = data;
+
                 if (arr0.length && arr1.length) {
-                  arr0.forEach(d => {
-                    // Ignore if there's no location. It won't match
-                    if (d.location_id) {
+                  if (arr0.some(d => d.hasOwnProperty("organization_id"))) {
+                    arr0.forEach(d => {
                       const itemMerged = {};
+                      const matchedItem = arr1.find(g => parseInt(g.location_id) === parseInt(d.ine_code));
+                      if (matchedItem) {
+                        itemMerged.value0 = parseInt(d.amount);
+                        itemMerged.value1 = parseInt(matchedItem.value);
+                        itemMerged.location_id = parseInt(d.ine_code);
+                        itemMerged.location_desc = matchedItem.municipality_name;
+                        itemMerged.province_id = parseInt(d.province_id);
+                        itemMerged.province_desc = matchedItem.province_name;
 
-                      itemMerged.value0 = parseInt(d.value);
-                      itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
-                      itemMerged.location_id = parseInt(d.location_id);
-                      itemMerged.location_desc = d.municipality_name;
-                      itemMerged.province_id = parseInt(d.province_id);
-                      itemMerged.province_desc = d.province_name;
+                        arrMerged.push(itemMerged);
+                      }
+                    });
+                  } else {
+                    arr0.forEach(d => {
+                      // Ignore if there's no location. It won't match
+                      if (d.location_id) {
+                        const itemMerged = {};
 
-                      arrMerged.push(itemMerged);
-                    }
-                  });
+                        itemMerged.value0 = parseInt(d.value);
+                        itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
+                        itemMerged.location_id = parseInt(d.location_id);
+                        itemMerged.location_desc = d.municipality_name;
+                        itemMerged.province_id = parseInt(d.province_id);
+                        itemMerged.province_desc = d.province_name;
+
+                        arrMerged.push(itemMerged);
+                      }
+                    });
+                  }
                 } else if (arr0.length) {
                   arrMerged.concat(arr0);
                 } else if (arr1.length) {
