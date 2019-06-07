@@ -19,6 +19,13 @@ layout: default
 
         const populate = [
           {
+            id: "ds-contratos-municipio",
+            freq: "month",
+            name: "Número de contratos",
+            units: "contratos",
+            ranges: [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+          },
+          {
             id: "ds-poblacion-municipal",
             name: "Población",
             units: "habitantes",
@@ -29,13 +36,6 @@ layout: default
             name: "Defunciones",
             units: "defunciones",
             ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
-          },
-          {
-            id: "ds-contratos-municipio",
-            freq: "month",
-            name: "Número de contratos",
-            units: "contratos",
-            ranges: [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
           },
           {
             id: "ds-empresas-municipio",
@@ -74,9 +74,25 @@ layout: default
             name: "Nacimientos",
             units: "nacimientos",
             ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
+          },
+          {
+            id: "ds-presupuestos-municipales-funcional",
+            name: "Presupuestos, partidas funcionales"
+          },
+          {
+            id: "ds-presupuestos-municipales-economica",
+            name: "Presupuestos, partidas económicas"
           }
         ];
+        const helperPrepareQuery = (param, range) => {
+          const isMonthly = populate.some(d => d.id === param && d.freq === "month");
 
+          if (isMonthly) {
+            range = new Date().getFullYear() === range ? `${range}-01` : `${range}-12`;
+          }
+
+          return `datasets/${param}.json?filter_by_date=${range}&include=municipality,province`;
+        };
         const RANGES_DEFAULT = [
           2000,
           2001,
@@ -104,7 +120,7 @@ layout: default
             {
               xAxisProp: "value1",
               yAxisProp: "value0",
-              aggregationProp: "province_id",
+              aggregationProp: "province_desc",
               btnPlaceholder: "Añadir provincia",
               tooltip: d => {
                 const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
@@ -120,11 +136,12 @@ layout: default
             {
               xAxisProp: "value1",
               yAxisProp: "value0",
-              aggregationProp: "province_id",
+              aggregationProp: "province_desc",
               legendLabels: ["Más", "Menos"],
               averageLabel: "Media",
               medianLabel: "Mediana",
               sampleSize: 3,
+              baseDataset: "ds-poblacion-municipal",
               tooltip: d => {
                 const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
                 const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
@@ -156,36 +173,28 @@ layout: default
                 Object.values(data)
                   .filter(d => populate.some(f => f.id === d.id))
                   .map(d => ({ id: d.id, name: d.name }))
+                  .sort((a, b) => populate.findIndex(d => d.id === a.id) - populate.findIndex(d => d.id === b.id))
             },
             data: {
               build: params => {
-                const isMonthlyVarX = populate.some(d => d.id === params.varX && d.freq === "month");
-                const isMonthlyVarY = populate.some(d => d.id === params.varY && d.freq === "month");
+                const req = [];
 
-                let rangeX = params.range;
-                let rangeY = params.range;
-
-                if (isMonthlyVarX) {
-                  rangeX = new Date().getFullYear() === rangeX ? `${rangeX}-01` : `${rangeX}-12`;
+                if (params.varX) {
+                  req.push(helperPrepareQuery(params.varX, params.range));
                 }
-
-                if (isMonthlyVarY) {
-                  rangeY = new Date().getFullYear() === rangeY ? `${rangeY}-01` : `${rangeY}-12`;
+                if (params.varY) {
+                  req.push(helperPrepareQuery(params.varY, params.range));
                 }
 
                 // Handle user selections
                 dataset0 = params.varX;
                 dataset1 = params.varY;
 
-                return [
-                  `datasets/${params.varX}.json?filter_by_date=${rangeX}&include=municipality,province`,
-                  `datasets/${params.varY}.json?filter_by_date=${rangeY}&include=municipality,province`
-                ];
+                return req;
               },
               parse: data => {
                 const arrMerged = [];
-
-                const [arr0, arr1] = data;
+                const [arr0 = [], arr1 = []] = data;
                 if (arr0.length && arr1.length) {
                   arr0.forEach(d => {
                     // Ignore if there's no location. It won't match
@@ -202,6 +211,10 @@ layout: default
                       arrMerged.push(itemMerged);
                     }
                   });
+                } else if (arr0.length) {
+                  arrMerged.concat(arr0);
+                } else if (arr1.length) {
+                  arrMerged.concat(arr1);
                 }
 
                 return arrMerged;
