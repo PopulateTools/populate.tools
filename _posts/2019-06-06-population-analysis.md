@@ -73,3 +73,21 @@ Como vemos, no todos los que ahora son los más grandes lo eran en su día. Much
 {:/}
 
 Calculando el porcentaje de crecimiento, vemos que ciudades que ahora consideramos pueblos, como Lorca o Alcoi no han credido en relación a los habitantes que tenían. Entre las grandes ciudades, destaca especialmente Cádiz, donde la población se ha mantenido más o menos parecida.
+
+
+# Cómo te condiciona la proximidad a una capital
+
+¿Qué factores influyen el que una población haya crecido más o menos que otras? Nos hemos preguntado si la proximidad a la capital de provincia condiciona su crecimiento a largo plazo.
+
+Hemos calculado la distancia de los municipios a las capitales de provincia y a las ciudades de más de 100.000 habitantes en 2011.
+
+Si observamos el siguiente gráfico vemos como los municipios hasta 25km de distancia de la ciudad más cercana han crecido mucho más que aquellos que están más lejos. De hecho a partir de esa distance la correlación entre crecimiento y distancia a la capital desaparece, y parece que las dos variables ya no se influyen entre sí.
+
+{::nomarkdown}
+{% include analysis/population/raw_relacion_dist_pct.svg %}
+{:/}
+
+Hay provincias donde no se da esta relación, como es el caso de Ciudad Real.
+
+
+(Pintar Cartograma hexagonal de los municipios de una provincia y sus ciudades)
