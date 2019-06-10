@@ -107,7 +107,7 @@ layout: default
           const dataset = area === "functional" ? "ds-presupuestos-municipales-funcional" : "ds-presupuestos-municipales-economica";
           const type = kind === "expense" ? "G" : "I";
 
-          return `datasets/${dataset}.json?filter_by_code=${code}&filter_by_kind=${type}`;
+          return `datasets/${dataset}.json?filter_by_year=${range}filter_by_code=${code}&filter_by_kind=${type}`;
         };
         const RANGES_DEFAULT = [
           2000,
