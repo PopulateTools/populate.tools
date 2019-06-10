@@ -81,13 +81,21 @@ Calculando el porcentaje de crecimiento, vemos que ciudades que ahora consideram
 
 Hemos calculado la distancia de los municipios a las capitales de provincia y a las ciudades de más de 100.000 habitantes en 2011.
 
-Si observamos el siguiente gráfico vemos como los municipios hasta 25km de distancia de la ciudad más cercana han crecido mucho más que aquellos que están más lejos. De hecho a partir de esa distance la correlación entre crecimiento y distancia a la capital desaparece, y parece que las dos variables ya no se influyen entre sí.
+Si observamos el siguiente gráfico vemos como los municipios hasta 25km de distancia de la ciudad más cercana han crecido mucho más que aquellos que están más lejos. De hecho a partir de esa distance la correlación entre crecimiento y distancia a la capital desaparece.
 
 {::nomarkdown}
 {% include analysis/population/raw_relacion_dist_pct.svg %}
 {:/}
 
-Hay provincias donde no se da esta relación, como es el caso de Ciudad Real.
+Hay provincias donde no se da esta relación, como es el caso de Ciudad Real o Badajoz.
+
+{::nomarkdown}
+{% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}
+{:/}
+
+En otras provincias, como Madrid, Sevilla, Toledo o Málaga, las poblaciones más cercanas a la capital han crecido a un ritmo más rápido que el resto.
+
+Cádiz y Soria son las provincias con menos variación de población, y donde la distancia influye menos, posiblemente no por la distancia en sí, sino porque los municipios han crecido muy poco.
 
 
 (Pintar Cartograma hexagonal de los municipios de una provincia y sus ciudades)
