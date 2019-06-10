@@ -138,8 +138,7 @@ layout: default
                   d.province_desc
                 })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
               },
-              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
-              yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
+              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2)
             },
             {
               xAxisProp: "value1",
