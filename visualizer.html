@@ -33,6 +33,13 @@ layout: default
             ranges: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
           },
           {
+            id: "ds-autonomos-municipio",
+            name: "Autónomos",
+            units: "autónomos",
+            freq: "month",
+            ranges: [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+          },
+          {
             id: "ds-defunciones-municipal",
             name: "Defunciones",
             units: "defunciones",
@@ -138,7 +145,7 @@ layout: default
                   d.province_desc
                 })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
               },
-              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2)
+              xScaleFunction: d3 => d3.scaleLog()
             },
             {
               xAxisProp: "value1",
