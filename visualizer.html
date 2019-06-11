@@ -133,6 +133,7 @@ layout: default
         const config = {
           charts: [
             {
+              key: "Dispersion",
               xAxisProp: "value1",
               yAxisProp: "value0",
               aggregationProp: "province_desc",
@@ -146,27 +147,28 @@ layout: default
                 })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
               },
               xScaleFunction: d3 => d3.scaleLog()
-            },
-            {
-              xAxisProp: "value1",
-              yAxisProp: "value0",
-              aggregationProp: "province_desc",
-              legendLabels: ["Más", "Menos"],
-              averageLabel: "Media",
-              medianLabel: "Mediana",
-              sampleSize: 3,
-              baseDataset: "ds-poblacion-municipal",
-              tooltip: d => {
-                const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
-                const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
-
-                return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
-                  d.province_desc
-                })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
-              },
-              xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
-              yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
             }
+            // {
+            //   key: "Espectro",
+            //   xAxisProp: "value1",
+            //   yAxisProp: "value0",
+            //   aggregationProp: "province_desc",
+            //   legendLabels: ["Más", "Menos"],
+            //   averageLabel: "Media",
+            //   medianLabel: "Mediana",
+            //   sampleSize: 3,
+            //   baseDataset: "ds-poblacion-municipal",
+            //   tooltip: d => {
+            //     const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
+            //     const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
+
+            //     return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
+            //       d.province_desc
+            //     })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
+            //   },
+            //   xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
+            //   yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
+            // }
           ],
           ranges: dataset => {
             if (!dataset) {
