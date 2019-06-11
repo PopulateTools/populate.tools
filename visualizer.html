@@ -13,6 +13,9 @@ layout: default
 
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
+
+      <my-visualizer></my-visualizer>
+
       <script>
         let dataset0;
         let dataset1;
@@ -269,10 +272,8 @@ layout: default
           }
         };
 
-        Vue.prototype.$config = config;
+        document.getElementsByTagName("my-visualizer")[0].config = config;
       </script>
-
-      <my-visualizer></my-visualizer>
     </main>
   </div>
 </main>
