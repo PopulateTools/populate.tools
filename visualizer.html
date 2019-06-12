@@ -155,11 +155,11 @@ layout: default
                 })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
               },
               xScaleFunction: d3 => d3.scaleSymlog(),
-              defaults: {
-                x: "ds-nacimientos-municipal",
-                y: "ds-personas-paradas-municipio",
+                defaults: {
+                x: "ds-afiliados-ss-municipio",
+                y: "ds-poblacion-municipal",
                 range: 2018,
-                aggregation: ["Lugo", "León"]
+                aggregation: ["Barcelona", "Girona", "Tarragona", "Lleida"]
               }
             }
             // {
