@@ -149,7 +149,13 @@ layout: default
                   d.province_desc
                 })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
               },
-              xScaleFunction: d3 => d3.scaleLog()
+              xScaleFunction: d3 => d3.scaleSymlog(),
+              defaults: {
+                // x: "ds-nacimientos-municipal",
+                // y: "ds-personas-paradas-municipio",
+                // range: 2018,
+                aggregation: ["Lugo"]
+              }
             }
             // {
             //   key: "Espectro",
@@ -170,7 +176,13 @@ layout: default
             //     })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
             //   },
             //   xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
-            //   yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4)
+            //   yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4),
+            //   defaults: {
+            //     x: "ds-nacimientos-municipal",
+            //     y: "ds-personas-paradas-municipio",
+            //     range: 2017,
+            //     filter: ["Almería", "Albacete"]
+            //   }
             // }
           ],
           ranges: dataset => {
@@ -195,11 +207,12 @@ layout: default
                 // Handle user selections
                 dataset2 = collections;
 
+                // FIXME: Don't merge budgets, concat disabled
                 return Object.values(datasets)
                   .filter(d => populate.some(f => f.id === d.id))
                   .map(d => ({ id: d.id, name: d.name }))
-                  .sort((a, b) => populate.findIndex(d => d.id === a.id) - populate.findIndex(d => d.id === b.id))
-                  .concat(collections.map(d => ({ id: parseInt(d.code), name: d.name })));
+                  .sort((a, b) => populate.findIndex(d => d.id === a.id) - populate.findIndex(d => d.id === b.id));
+                // .concat(collections.map(d => ({ id: parseInt(d.code), name: d.name })));
               }
             },
             data: {
@@ -248,15 +261,18 @@ layout: default
                       // Ignore if there's no location. It won't match
                       if (d.location_id) {
                         const itemMerged = {};
+                        const matchedItem = arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id));
 
-                        itemMerged.value0 = parseInt(d.value);
-                        itemMerged.value1 = parseInt((arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id)) || {}).value);
-                        itemMerged.location_id = parseInt(d.location_id);
-                        itemMerged.location_desc = d.municipality_name;
-                        itemMerged.province_id = parseInt(d.province_id);
-                        itemMerged.province_desc = d.province_name;
+                        if (matchedItem) {
+                          itemMerged.value0 = parseInt(d.value);
+                          itemMerged.value1 = parseInt(matchedItem.value);
+                          itemMerged.location_id = parseInt(d.location_id);
+                          itemMerged.location_desc = d.municipality_name;
+                          itemMerged.province_id = parseInt(d.province_id);
+                          itemMerged.province_desc = d.province_name;
 
-                        arrMerged.push(itemMerged);
+                          arrMerged.push(itemMerged);
+                        }
                       }
                     });
                   }
