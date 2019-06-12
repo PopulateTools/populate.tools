@@ -107,7 +107,7 @@ layout: default
             range = new Date().getFullYear() === range ? `${range}-01` : `${range}-12`;
           }
 
-          return `datasets/${param}.json?filter_by_date=${range}&include=municipality,province&except_columns=municipality_slug,province_slug,municipality_lat,municipality_lon,province_lat,province_lon${ratioQuery}`;
+          return `datasets/${param}.csv?filter_by_date=${range}&include=municipality,province&except_columns=municipality_slug,province_slug,municipality_lat,municipality_lon,province_lat,province_lon${ratioQuery}`;
         };
         const helperCollectionQuery = (param, range) => {
           const { code, area, kind } = dataset2.find(d => d.code === param.toString());
