@@ -1,54 +1,5 @@
 "use strict";
 
-function _instanceof(left, right) {
-  if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) {
-    return right[Symbol.hasInstance](left);
-  } else {
-    return left instanceof right;
-  }
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-
-function _iterableToArrayLimit(arr, i) {
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-  return _arr;
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!_instanceof(instance, Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
@@ -60,8 +11,6 @@ function _defineProperty(obj, key, value) {
 
 var Connector = function Connector(params) {
   var _this = this;
-
-  _classCallCheck(this, Connector);
 
   _defineProperty(this, "series", []);
 
@@ -187,7 +136,7 @@ var Connector = function Connector(params) {
         }
       },
       {
-        key: "Espectro",
+        type: "Espectro",
         xAxisProp: "value1",
         yAxisProp: "value0",
         aggregationProp: "province_desc",
@@ -214,15 +163,25 @@ var Connector = function Connector(params) {
       units1 = _this$series$find2.units,
       name1 = _this$series$find2.name;
 
-    return '<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>'
-      .concat(d.location_desc, "</strong> (")
-      .concat(d.province_desc, ")</div><div>")
-      .concat(name0, ": ")
-      .concat(d.value0.toLocaleString(), " ")
-      .concat(units0, "</div><div>")
-      .concat(name1, ": ")
-      .concat(d.value1.toLocaleString(), " ")
-      .concat(units1, "</div></div>");
+    return (
+      '<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>' +
+      d.location_desc +
+      "</strong> (" +
+      d.province_desc +
+      ")</div><div>" +
+      name0 +
+      ": " +
+      d.value0.toLocaleString() +
+      " " +
+      units0 +
+      "</div><div>" +
+      name1 +
+      ": " +
+      d.value1.toLocaleString() +
+      " " +
+      units1 +
+      "</div></div>"
+    );
   });
 
   _defineProperty(this, "helperDatasetQuery", function(param, range, otherParam) {
@@ -237,20 +196,21 @@ var Connector = function Connector(params) {
     var ratioQuery = "";
 
     if (seriesWithRatio !== undefined) {
-      ratioQuery = "&divided_by=".concat(seriesWithRatio.ratio);
+      ratioQuery = "&divided_by=" + seriesWithRatio.ratio;
     }
 
     if (isMonthly) {
-      range = new Date().getFullYear() === range ? "".concat(range, "-01") : "".concat(range, "-12");
+      range = new Date().getFullYear() === range ? range + "-01" : range + "-12";
     }
 
-    return "datasets/"
-      .concat(param, ".csv?filter_by_date=")
-      .concat(
-        range,
-        "&include=municipality,province&except_columns=municipality_slug,province_slug,municipality_lat,municipality_lon,province_lat,province_lon"
-      )
-      .concat(ratioQuery);
+    return (
+      "datasets/" +
+      param +
+      ".csv?filter_by_date=" +
+      range +
+      "&include=municipality,province&except_columns=municipality_slug,province_slug,municipality_lat,municipality_lon,province_lat,province_lon" +
+      ratioQuery
+    );
   });
 
   _defineProperty(this, "helperCollectionQuery", function(param, range) {
@@ -263,11 +223,7 @@ var Connector = function Connector(params) {
 
     var dataset = area === "functional" ? "ds-presupuestos-municipales-funcional" : "ds-presupuestos-municipales-economica";
     var type = kind === "expense" ? "G" : "I";
-    return "datasets/"
-      .concat(dataset, ".json?filter_by_year=")
-      .concat(range, "&filter_by_code=")
-      .concat(code, "&filter_by_kind=")
-      .concat(type);
+    return "datasets/" + dataset + ".json?filter_by_year=" + range + "&filter_by_code=" + code + "&filter_by_kind=" + type;
   });
 
   this.charts = params || [];
@@ -305,9 +261,8 @@ var Connector = function Connector(params) {
           return ["datasets.json", "collections/c-categorias-presupuestos-municipales/items.json"];
         },
         parse: function parse(data) {
-          var _data = _slicedToArray(data, 2),
-            datasets = _data[0],
-            collections = _data[1]; // Handle user selections
+          var datasets = data[0],
+            collections = data[1]; // Handle user selections
 
           _this.dataset2 = collections; // FIXME: Don't merge budgets, concat disabled
 
@@ -357,12 +312,10 @@ var Connector = function Connector(params) {
         },
         parse: function parse(data) {
           var arrMerged = [];
-
-          var _data2 = _slicedToArray(data, 2),
-            _data2$ = _data2[0],
-            arr0 = _data2$ === void 0 ? [] : _data2$,
-            _data2$2 = _data2[1],
-            arr1 = _data2$2 === void 0 ? [] : _data2$2;
+          var _data$ = data[0],
+            arr0 = _data$ === void 0 ? [] : _data$,
+            _data$2 = data[1],
+            arr1 = _data$2 === void 0 ? [] : _data$2;
 
           if (arr0.length && arr1.length) {
             if (
