@@ -13,14 +13,11 @@ layout: default
 
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
+      <script src="https://data-visualizer.populate.tools/lib/connector.umd.js"></script>
 
       <my-visualizer></my-visualizer>
 
       <script>
-        let dataset0;
-        let dataset1;
-        let dataset2;
-
         const populate = [
           {
             id: "ds-contratos-municipio",
@@ -95,207 +92,20 @@ layout: default
             ratio: "ds-poblacion-municipal"
           }
         ];
-        const helperDatasetQuery = (param, range, otherParam) => {
-          const isMonthly = populate.some(d => d.id === param && d.freq === "month");
-          const seriesWithRatio = populate.find(d => d.id === param && d.ratio === otherParam);
-          let ratioQuery = "";
-          if (seriesWithRatio !== undefined) {
-            ratioQuery = `&divided_by=${seriesWithRatio.ratio}`;
-          }
-
-          if (isMonthly) {
-            range = new Date().getFullYear() === range ? `${range}-01` : `${range}-12`;
-          }
-
-          return `datasets/${param}.csv?filter_by_date=${range}&include=municipality,province&except_columns=municipality_slug,province_slug,municipality_lat,municipality_lon,province_lat,province_lon${ratioQuery}`;
-        };
-        const helperCollectionQuery = (param, range) => {
-          const { code, area, kind } = dataset2.find(d => d.code === param.toString());
-
-          const dataset = area === "functional" ? "ds-presupuestos-municipales-funcional" : "ds-presupuestos-municipales-economica";
-          const type = kind === "expense" ? "G" : "I";
-
-          return `datasets/${dataset}.json?filter_by_year=${range}&filter_by_code=${code}&filter_by_kind=${type}`;
-        };
-        const RANGES_DEFAULT = [
-          2000,
-          2001,
-          2002,
-          2003,
-          2004,
-          2005,
-          2006,
-          2007,
-          2008,
-          2009,
-          2010,
-          2011,
-          2012,
-          2013,
-          2014,
-          2015,
-          2016,
-          2017,
-          2018
-        ];
-        const config = {
+        const config = new Connector({
+          series: populate,
           charts: [
             {
               key: "Dispersion",
-              xAxisProp: "value1",
-              yAxisProp: "value0",
-              aggregationProp: "province_desc",
-              btnPlaceholder: "Añadir provincia",
-              tooltip: d => {
-                const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
-                const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
-
-                return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
-                  d.province_desc
-                })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
-              },
-              xScaleFunction: d3 => d3.scaleSymlog(),
-                defaults: {
+              defaults: {
                 x: "ds-afiliados-ss-municipio",
                 y: "ds-poblacion-municipal",
                 range: 2018,
                 aggregation: ["Barcelona", "Girona", "Tarragona", "Lleida"]
               }
             }
-            // {
-            //   key: "Espectro",
-            //   xAxisProp: "value1",
-            //   yAxisProp: "value0",
-            //   aggregationProp: "province_desc",
-            //   legendLabels: ["Más", "Menos"],
-            //   averageLabel: "Media",
-            //   medianLabel: "Mediana",
-            //   sampleSize: 3,
-            //   baseDataset: "ds-poblacion-municipal",
-            //   tooltip: d => {
-            //     const { units: units0, name: name0 } = populate.find(d => d.id === dataset0);
-            //     const { units: units1, name: name1 } = populate.find(d => d.id === dataset1);
-
-            //     return `<div style="padding: 1rem;"><div style="margin: 0 0 8px"><strong>${d.location_desc}</strong> (${
-            //       d.province_desc
-            //     })</div><div>${name0}: ${d.value0.toLocaleString()} ${units0}</div><div>${name1}: ${d.value1.toLocaleString()} ${units1}</div></div>`;
-            //   },
-            //   xScaleFunction: d3 => d3.scaleSqrt().exponent(0.2),
-            //   yScaleFunction: d3 => d3.scaleSqrt().exponent(0.4),
-            //   defaults: {
-            //     x: "ds-nacimientos-municipal",
-            //     y: "ds-personas-paradas-municipio",
-            //     range: 2017,
-            //     filter: ["Almería", "Albacete"]
-            //   }
-            // }
-          ],
-          ranges: dataset => {
-            if (!dataset) {
-              return RANGES_DEFAULT;
-            }
-
-            const { ranges } = populate.find(d => d.id === dataset);
-            return ranges;
-          },
-          setup: {
-            baseURL: "https://data.populate.tools/visualizador/",
-            headers: { Authorization: "Bearer WxVwwI-uTEVzvP6RF8FiFg" }
-            // timeout: 10000
-          },
-          endpoints: {
-            series: {
-              build: () => ["datasets.json", "collections/c-categorias-presupuestos-municipales/items.json"],
-              parse: data => {
-                const [datasets, collections] = data;
-
-                // Handle user selections
-                dataset2 = collections;
-
-                // FIXME: Don't merge budgets, concat disabled
-                return Object.values(datasets)
-                  .filter(d => populate.some(f => f.id === d.id))
-                  .map(d => ({ id: d.id, name: d.name }))
-                  .sort((a, b) => populate.findIndex(d => d.id === a.id) - populate.findIndex(d => d.id === b.id));
-                // .concat(collections.map(d => ({ id: parseInt(d.code), name: d.name })));
-              }
-            },
-            data: {
-              build: params => {
-                const req = [];
-
-                if (params.varX) {
-                  if (Number.isInteger(params.varX)) {
-                    req.push(helperCollectionQuery(params.varX, params.range));
-                  } else {
-                    req.push(helperDatasetQuery(params.varX, params.range, params.varY));
-                  }
-                }
-                if (params.varY) {
-                  req.push(helperDatasetQuery(params.varY, params.range, params.varX));
-                }
-
-                // Handle user selections
-                dataset0 = params.varX;
-                dataset1 = params.varY;
-
-                return req;
-              },
-              parse: data => {
-                const arrMerged = [];
-                const [arr0 = [], arr1 = []] = data;
-
-                if (arr0.length && arr1.length) {
-                  if (arr0.some(d => d.hasOwnProperty("organization_id"))) {
-                    arr0.forEach(d => {
-                      const itemMerged = {};
-                      const matchedItem = arr1.find(g => parseInt(g.location_id) === parseInt(d.ine_code));
-                      if (matchedItem) {
-                        itemMerged.value0 = parseInt(d.amount);
-                        itemMerged.value1 = parseFloat(
-                          matchedItem.hasOwnProperty("divided_by_value") ? matchedItem.divided_by_value : matchedItem.value
-                        );
-                        itemMerged.location_id = parseInt(d.ine_code);
-                        itemMerged.location_desc = matchedItem.municipality_name;
-                        itemMerged.province_id = parseInt(d.province_id);
-                        itemMerged.province_desc = matchedItem.province_name;
-
-                        arrMerged.push(itemMerged);
-                      }
-                    });
-                  } else {
-                    arr0.forEach(d => {
-                      // Ignore if there's no location. It won't match
-                      if (d.location_id) {
-                        const itemMerged = {};
-                        const matchedItem = arr1.find(g => parseInt(g.location_id) === parseInt(d.location_id));
-
-                        if (matchedItem) {
-                          itemMerged.value0 = parseFloat(d.hasOwnProperty("divided_by_value") ? d.divided_by_value : d.value);
-                          itemMerged.value1 = parseFloat(
-                            matchedItem.hasOwnProperty("divided_by_value") ? matchedItem.divided_by_value : matchedItem.value
-                          );
-                          itemMerged.location_id = parseInt(d.location_id);
-                          itemMerged.location_desc = d.municipality_name;
-                          itemMerged.province_id = parseInt(d.province_id);
-                          itemMerged.province_desc = d.province_name;
-
-                          arrMerged.push(itemMerged);
-                        }
-                      }
-                    });
-                  }
-                } else if (arr0.length) {
-                  arrMerged.concat(arr0);
-                } else if (arr1.length) {
-                  arrMerged.concat(arr1);
-                }
-
-                return arrMerged;
-              }
-            }
-          }
-        };
+          ]
+        });
 
         document.getElementsByTagName("my-visualizer")[0].config = config;
       </script>
