@@ -23,7 +23,7 @@ layout: default
       <my-visualizer></my-visualizer>
 
       <script>
-        var config = new Visualizer([
+        var config0 = new Visualizer([
           {
             type: "Dispersion",
             defaults: {
@@ -35,7 +35,20 @@ layout: default
           }
         ]);
 
-        document.getElementsByTagName("my-visualizer")[0].config = config;
+        var config1 = new Visualizer([
+          {
+            type: "Dispersion",
+            defaults: {
+              x: "ds-nacimientos-municipal",
+              y: "ds-renta-bruta-media-municipal",
+              range: 2016,
+              aggregation: ["Asturias"]
+            }
+          }
+        ]);
+
+        document.getElementsByTagName("my-visualizer")[0].config = config0;
+        document.getElementsByTagName("my-visualizer")[1].config = config1;
       </script>
     </main>
   </div>
