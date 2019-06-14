@@ -20,8 +20,7 @@ layout: default
       <!-- unscoped connector library -->
       <script src="https://data-visualizer.populate.tools/lib-comp/connector.populate.js"></script>
 
-      <my-visualizer></my-visualizer>
-      <my-visualizer></my-visualizer>
+      <my-visualizer id="visualizer-0"></my-visualizer>
 
       <script>
         var config0 = new Visualizer([
@@ -36,7 +35,7 @@ layout: default
           }
         ]);
 
-        document.getElementsByTagName("my-visualizer")[0].config = config0;
+        document.getElementById("visualizer-0").config = config0;
       </script>
     </main>
   </div>
