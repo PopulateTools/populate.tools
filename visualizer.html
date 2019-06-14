@@ -13,13 +13,17 @@ layout: default
 
       <script src="https://unpkg.com/vue"></script>
       <script src="https://data-visualizer.populate.tools/dist/my-visualizer.min.js"></script>
+
+      <!-- module-compatible connector library -->
       <!-- <script src="https://data-visualizer.populate.tools/lib/connector.populate.umd.js"></script> -->
-      <script src="connector.js"></script>
+
+      <!-- unscoped connector library -->
+      <script src="https://data-visualizer.populate.tools/lib-comp/connector.populate.js"></script>
 
       <my-visualizer></my-visualizer>
 
       <script>
-        var config = new Connector([
+        var config = new Visualizer([
           {
             type: "Dispersion",
             defaults: {
