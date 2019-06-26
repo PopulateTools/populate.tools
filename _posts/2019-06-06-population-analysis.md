@@ -99,3 +99,23 @@ Cádiz y Soria son las provincias con menos variación de población, y donde la
 
 
 (Pintar Cartograma hexagonal de los municipios de una provincia y sus ciudades)
+
+
+# Evolución de los sectores de empleo y la población
+
+La Contabilidad Histórica Nacional ofrece valores históricos de cuánto aporta cada sector al total del empleo:
+
+{::nomarkdown}
+{% include analysis/population/aporte_empleo_por_sector.svg %}
+{:/}
+
+Con un gráfico de doble eje podríamos relacionar esta tendencia con:
+
+- crecimiento grandes ciudades (Madrid y Barcelona)
+- decrecimiento zonas rurales
+
+{::nomarkdown}
+{% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
+{:/}
+
+
