@@ -1,0 +1,150 @@
+---
+layout: default
+---
+{% assign author = site.data.team[page.author] %}
+
+{% include header.html %}
+
+<style>
+#scrolly {
+  position: relative;
+}
+
+.step {
+  margin: 2rem auto 4rem auto;
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.step.is-active {
+  background-color: goldenrod;
+  color: #3b3b3b;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+</style>
+
+
+
+<header class="story">
+
+  <div class="container">
+
+    <div class="visual_feature"></div>
+
+    <h1>La Población en España: Pasado y futuro</h1>
+    <h2>Cómo ha cambiado la población española desde 1874, y cómo evolucionará hasta 2074</h2>
+
+  </div>
+
+</header>
+
+<div class="container post-page story-container">
+
+  <article>
+
+    {% if page.main_photo_big %}
+    <header>
+      {% if page.main_photo_big contains '://' %}
+        <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% asset '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    <!-- <h1>{{page.title}}</h1>
+
+    {% if page.subtitle %}
+      <h2 class="subtitle">{{page.subtitle}}</h2>
+    {% endif %}
+
+    <div class="meta">
+      <a class="no-underline" href="{{author.handle | prepend: site.twitter_url}}">
+        {% asset '{{author.img}}' class='pure-img avatar' alt='{{author.name}}' %}
+      </a>
+      <div class="info">
+        <a class="author-link" href="{{author.handle | prepend: site.twitter_url}}">{{ author.name }}</a>
+        <time>{{page.date | date: "%b %-d, %Y"}}</time>
+      </div>
+    </div>
+
+    -->
+
+    {% if page.main_photo %}
+    <header>
+      {% if page.main_photo contains '://' %}
+        <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% asset '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+
+  </article>
+
+</div>
+
+<!-- <div class='debug'></div> -->
+<script src='https://unpkg.com/d3@5.9.1/dist/d3.min.js'></script>
+<script src='https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js'></script>
+<!-- <script src='../stickyfill.min.js'></script> -->
+<script src="https://unpkg.com/scrollama"></script>
+
+<script>
+  var scrolly = document.querySelector('#scrolly');
+	var article = scrolly.querySelector('article');
+	var step = article.querySelectorAll('.step');
+
+	// initialize the scrollama
+	var scroller = scrollama();
+
+	// scrollama event handlers
+	function handleStepEnter(response) {
+		// response = { element, direction, index }
+		console.log(response);
+		// add to color to current step
+		response.element.classList.add('is-active');
+	}
+
+	function handleStepExit(response) {
+		// response = { element, direction, index }
+		console.log(response);
+		// remove color from current step
+		response.element.classList.remove('is-active');
+	}
+
+	function init() {
+		// set random padding for different step heights (not required)
+		step.forEach(function (step) {
+			var v = 100 + Math.floor(Math.random() * window.innerHeight / 4);
+			step.style.padding = v + 'px 0px';
+		});
+
+		// 1. setup the scroller with the bare-bones options
+		// 		this will also initialize trigger observations
+		// 2. bind scrollama event handlers (this can be chained like below)
+		scroller.setup({
+			step: '#scrolly article .step',
+			debug: true,
+			offset: 0.5
+		})
+			.onStepEnter(handleStepEnter)
+			.onStepExit(handleStepExit);
+
+		// 3. setup resize event
+		window.addEventListener('resize', scroller.resize);
+	}
+
+	// kick things off
+	init();
+</script>

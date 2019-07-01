@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: story
 title: "1877-2011: Cómo hemos cambiado"
 date: 2019-06-06 8:00:00 +0100
 author: blat
@@ -7,6 +7,52 @@ lang: es
 product: populate_data
 category: technology
 ---
+
+¿Cuántos personas vivían en España a finales del s. XIX? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?
+
+Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.
+
+
+
+
+
+## 1877-2018: Cómo hemos cambiado
+
+La década de 1870 fue muy movida en España. Comenzó la I República Española, que duró poco: el general Pavía dio un golpe de estado y tras el pronunciamiento de Sagunto por el General Martinez Campos se restaura a un Borbón en el trono: Alfonso XII. Cánovas del Castillo pone en marcha la Constitución de 1876, que hasta la fecha es la más lóngeva que ha tenido España (2025, pensamos en tí).
+
+Se inventó el teléfono y la dinamo. Peréz Galdós comenzaba a escribir sus Episodios Nacionales. Tuvimos un Ministro de Hacienda matemático y físico, que además ganó un Nóbel de Literatura (ay, qué diferencia con la actualidad, ¿eh?). Puedes pasear por "su" calle en el centro de Madrid: Echegaray.
+
+Pero, ¿y nosotros, el común de los mortales? ¿Cuántos éramos? ¿Dónde vivíamos?
+
+Comisión Estadística del Reino. Así se llamó en 1856 a lo que más tarde sería el INE, el actual Instituto Nacional de Estadística. Su primera tarea fue realizar el censo de población, que se completó en 1877. Desde entonces y cada 10 años el INE se encarga de contarnos, pueblo a pueblo, persona a persona. Y con estos datos podemos entender cómo hemos cambiado.
+
+{% asset 'posts/190701-Poblacion-PortadaCensoINE' class='' style='width: 75%; margin: 1em auto;' %}
+
+{% asset 'posts/190701-Poblacion-PortadaCensoINE-detalle.png' class='' style='width: 75%; margin: 1em auto;' %}
+
+<div class="source">
+  <small>Portada del Censo de 1877 - Fuente: <a href="https://www.ine.es/inebaseweb/treeNavigation.do?tn=192225&tns=192227#192227">INE</a></small>
+</div>
+
+- - -
+
+## De 15 a 48 millones
+
+
+
+En la década de 1870 se registraron en España 15,7 millones de habitantes. Así nos distribuíamos:
+
+MAPA
+
+
+Ahora somos 48 millones. Hemos crecido a un ritmo de 220.000 personas por año de una forma más o menos lineal:
+
+
+
+
+- - -
+
+XXXXXXXXX
 
 ¿Cómo ha evolucionado la población en los municipios españoles en los últimos 150 años? Por suerte, como siempre el INE al rescate. Existe un dataset maravilloso que cuenta habitantes por municipio desde 1874. Lo hemos metido en Populate Data y hemos cacharreado un poco para tratar de entender como ha evolucionado la población en los pueblos y ciudades españolas desde que existen datos.
 
@@ -117,5 +163,3 @@ Con un gráfico de doble eje podríamos relacionar esta tendencia con:
 {::nomarkdown}
 {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
 {:/}
-
-
