@@ -66,6 +66,12 @@ El municipio que más ha crecido de España es Coslada, pasando de 177 habitante
 tiene ahora. Todos los que más han crecido están en Madrid o Barcelona, excepto Sta Marta de Tormes, un municipio colidante con la ciudad de Salmanca.
 
 
+##
+
+Madrid, Madrid, Madrid. El centralismo mediático imperante hoy en día parece que siempre ha sido eterno. ¿Pero era realmente Madrid la ciudada más grande de España en 1877? Las cosas no siempre han sido lo que son, y Madrid solo era la quinta ciudad más grande de España.
+
+
+
 - - -
 
 XXXXXXXXX
