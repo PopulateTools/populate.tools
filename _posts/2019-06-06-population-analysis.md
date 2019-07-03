@@ -194,6 +194,34 @@ $(function () { // wait for document ready
 </div>
 
 
+### Población 1877 municipios
+
+{::nomarkdown}
+{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
+{:/}
+
+### Población 2011 municipios
+
+{::nomarkdown}
+{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
+{:/}
+
+
+### Población 1877 provincias
+
+{::nomarkdown}
+{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877.svg %}
+{:/}
+
+### Población 2011 provincias
+
+{::nomarkdown}
+{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}
+{:/}
+
+
+
+
 - - -
 
 XXXXXXXXX
