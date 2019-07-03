@@ -49,6 +49,22 @@ Ahora somos 48 millones. Hemos crecido a un ritmo de 220.000 personas por año d
 
 
 
+---- Nuevos datos blat
+
+Hay 5.144 municipios que han perdido habitantes. Ahora mismo suman 3.221.195 hab (un 7% de la
+población), pero en 1877 tenían 6.547.551 (un 41% de la población de 15.779.011 hab).
+
+Esos pueblos tenían de media 1.270 hab y de mediana 713. El más grande era Estrada (Pontevedra) con
+24.668 habitantes.
+
+De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.
+
+Hay 2.601 que han crecido, tenían de media 3.548 habitantes (1.511 de mediana) y el que más tenía
+era Madrid con 400.917 hab.
+
+El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73k que
+tiene ahora. Todos los que más han crecido están en Madrid o Barcelona, excepto Sta Marta de Tormes, un municipio colidante con la ciudad de Salmanca.
+
 
 - - -
 
