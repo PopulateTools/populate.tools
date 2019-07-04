@@ -1,8 +1,36 @@
 body.story {
+
   header.header {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
   }
 
+  header.story {
+    background: $blue;
+    padding: 4em 0;
+    color: #FFF;
+    margin: 0;
+    height: 80vh;
+
+    .container {
+      padding: 0;
+      margin: 20vh 10vw 20vh 0;
+    }
+
+    .visual_feature {
+      width: 50vw;
+      height: 400px;
+      float: left;
+    }
+
+    h1, h2 {
+      color: #FFF;
+    }
+    h2 {
+      font-weight: normal;
+      opacity: .6;
+    }
+
+  }
   .story-container {
     .content {
 
@@ -77,24 +105,4 @@ body.story {
 
   }
 
-}
-
-header.story {
-  background: $blue;
-  padding: 4em 0;
-  color: #FFF;
-  margin: 0 0 2em 0;
-
-  h1, h2 {
-    color: #FFF;
-  }
-  h2 {
-    font-weight: normal;
-    opacity: .6;
-  }
-  .visual_feature {
-    width: 40%;
-    height: 400px;
-    float: left;
-  }
 }

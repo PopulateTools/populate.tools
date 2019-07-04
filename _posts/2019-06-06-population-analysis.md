@@ -242,7 +242,128 @@ $(function () { // wait for document ready
 </div>
 
 
+<div class="section">
 
+  <div class="pure-g">
+
+    <div class="pure-u-1-4">
+
+      <div class="note">
+
+        <p>No todas las ciudades han crecido al mismo ritmo. Hay algunas que han crecido menos o mucho menos que la media.</p>
+
+        <p>Las razones son variadas; algunas ciudades cómo Cádiz no han crecido porque literalmente no tienen sitio: el municipio está practicamente rodeado de mar y no hay sitio donde construir.</p>
+
+      </div>
+
+    </div>
+
+    <div class="pure-u-3-4">
+
+      <div class="tab-group">
+
+        <div class="sub_section_header" style="margin-left: 160px;">
+
+          <h3>Las ciudades más grandes que menos han crecido</h3>
+
+        	<div class="button_small">1873</div>
+
+        </div>
+
+      	<div>
+          {% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}
+      	</div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="section" >
+
+  <div class="pure-g">
+
+    <div class="pure-u-1-2" style="padding-right: 3em; text-align: right;">
+
+      <div class="img_cont shadow" style="margin-bottom: 5em; margin-left: -7rem; ">
+        {% asset 'posts/190701-Puente' %}
+      </div>
+
+    </div>
+
+    <div class="pure-u-1-2" style="padding-top: 4em;">
+
+      <h2>Cómo condiciona la proximidad a una capital</h2>
+
+      <p>¿Qué factores influyen el que una población haya crecido más o menos que otras? Nos hemos preguntado si la proximidad a la capital de provincia condiciona su crecimiento a largo plazo.</p>
+
+      <p>La facilidad de desplazarte a otro sitio para buscar trabajo o nuevas oportunidades es un factor que condiciona el crecimiento de población.</p>
+
+      <p>Hemos calculado la distancia de los municipios a las capitales de provincia y a las ciudades de más de 100.000 habitantes en 2011.</p>
+
+    </div>
+
+  </div>
+
+  <p>Si observamos el siguiente gráfico vemos como los municipios hasta 25km de distancia de la ciudad más cercana han crecido mucho más que aquellos que están más lejos. De hecho a partir de esa distance la correlación entre crecimiento y distancia a la capital desaparece.</p>
+
+  {% asset 'posts/190701-Scatter-Distancia.png' %}
+
+
+  <p></p>
+
+  {% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}
+
+  <p>La conclusión general es que cuánto más cerca estás de una capital, más creces. El crecimiento va disminuyendo según te alejas. Y como se puede observar hay varias provincias que tienen una cola inversa: cuánto más se acercan al límite de la provincia más aumenta la población.</p>
+
+</div>
+
+
+<div class="embed_full_width" style="position: relative">
+  {% asset 'posts/190701-Empleo' style="width: 100%; margin-bottom: 3em; " %}
+  <h2 style="position: absolute; top: 2em; font-size: 2.5em; left: 6rem; color: #333; ">Empleo y población</h2>
+</div>
+
+<div style="width: 75%; margin: auto">
+
+  <p>PENDIENTE METER DATOS REALES En 1877 el 68% de la población vivía en núcleos de menos de 3.000 habitantes. Hoy en día solo el 23% de la gente vive en ciudades de menos de 25.000 habitantes. El sitio en el que vives condiciona el tipo de trabajo disponible. </p>
+
+  <p>Y en 1877 la mayor parte de la gente vivía en sitios pequeños, en el campo, donde el trabajo mayoritario era la agricultura y ganadería. Esto ha cambiado de forma radical en los últimos 100 años</p>
+
+  {% include analysis/population/aporte_empleo_por_sector.svg %}
+
+  <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población, se entiende todavía mejor:</p>
+
+  {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
+
+</div>
+
+
+<div class="separador"></div>
+
+
+
+<div class="sources">
+
+  Fuentes
+  - Populate Data
+  - INE
+  - Contabilidad Histórica Nacional
+
+
+  Atribución
+  - Mapa
+  - Facsimil Censo
+  - Puente
+  - Empleo https://ordorenascendi.blogspot.com/2012/07/los-problemas-agrarios-inicios-del_430.html
+
+
+</div>
 
 - - -
 
@@ -269,17 +390,6 @@ Y el crecimiento de la población tampoco ha sido constante a lo largo de las di
 {% include analysis/population/small_multiples_evo_poblacion_provincias.svg %}
 {:/}
 
-Observando cuáles eran las provincias más pobladas en 1877 y el valor actual, vemos que Barcelona, Valencia y Madrid se han mantenido entre las más pobladas, pero que otras como Asturias o Coruña no han seguido ese ritmo.
-
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_provincias.svg %}
-{:/}
-
-Algunos pueblos y ciudades han crecido mucho más que otros.
-
-¿Cuáles eran las ciudades más grandes en 1877?
-
-Las ciudades más grandes en 1877 eran Madrid, Barcelona, Valencia y Sevilla. Cabe destacar que entre las 30 más pobladas encontramos Lorca, Reus, Alcoi, Linares y S. Fernando, municipios que no han crecido tanto como los demás, pero que en esos años eran núcleos importantes de población.
 
 ****blat ignora cartograma****
 
@@ -293,25 +403,7 @@ Si comparamos con la foto de hoy, hay mucho cambio:
 
 ****blat ignora cartograma****
 
-Las ciudades que hoy son de tamaño medio, ¿cómo eran entonces?
 
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_ciudades_log.svg %}
-{:/}
-
-(en este gráfico se podría pintar la media de habitantes en las ciudades en 1877 y en 2011)
-
-En esa época las ciudades tenían de media 40.000 habitantes, mientras que en 2011 la media de las ciudades es de casi 200.000 habitantes. (Asumimos que una ciudad es aquel municipio que en 2011 tiene > 100k hab.)
-
-Como vemos, no todos los que ahora son los más grandes lo eran en su día. Muchas circunstancias han condicionado el crecimiento.
-
-¿Qué sitios que en su día eran los más grandes son los que menos han crecido?
-
-{::nomarkdown}
-{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}
-{:/}
-
-Calculando el porcentaje de crecimiento, vemos que ciudades que ahora consideramos pueblos, como Lorca o Alcoi no han credido en relación a los habitantes que tenían. Entre las grandes ciudades, destaca especialmente Cádiz, donde la población se ha mantenido más o menos parecida.
 
 
 # Cómo te condiciona la proximidad a una capital
@@ -341,18 +433,3 @@ Cádiz y Soria son las provincias con menos variación de población, y donde la
 
 
 # Evolución de los sectores de empleo y la población
-
-La Contabilidad Histórica Nacional ofrece valores históricos de cuánto aporta cada sector al total del empleo:
-
-{::nomarkdown}
-{% include analysis/population/aporte_empleo_por_sector.svg %}
-{:/}
-
-Con un gráfico de doble eje podríamos relacionar esta tendencia con:
-
-- crecimiento grandes ciudades (Madrid y Barcelona)
-- decrecimiento zonas rurales
-
-{::nomarkdown}
-{% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
-{:/}
