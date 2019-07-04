@@ -114,8 +114,7 @@ $(function () { // wait for document ready
 
   <h2>De 15 a 48 millones</h2>
 
-  <p style="width: 100%; height: 600px; padding: 3em; background: #DFDFDF; margin: 0 0 4em 0">MAP</p>
-
+  <iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;"></iframe>
 
   <div class="scrolling-text">
 
