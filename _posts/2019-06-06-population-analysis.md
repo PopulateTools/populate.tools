@@ -8,75 +8,196 @@ product: populate_data
 category: technology
 ---
 
-¿Cuántos personas vivían en España a finales del s. XIX? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?
-
-Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.
 
 
 
+<script type="text/javascript">
+$(function () { // wait for document ready
+
+  var controller = new ScrollMagic.Controller();
+
+  // Scene Handler
+  var scene1 = new ScrollMagic.Scene({
+    triggerElement: "#pinned-trigger1", // point of execution
+    duration: $(window).height() - 100, // pin element for the window height - 1
+    triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+    reverse: true // allows the effect to trigger when scrolled in the reverse direction
+  })
+  .addIndicators()
+  .setPin("#pinned-element1") // the element we want to pin
+  .addTo(controller);
 
 
-## 1877-2018: Cómo hemos cambiado
 
-La década de 1870 fue muy movida en España. Comenzó la I República Española, que duró poco: el general Pavía dio un golpe de estado y tras el pronunciamiento de Sagunto por el General Martinez Campos se restaura a un Borbón en el trono: Alfonso XII. Cánovas del Castillo pone en marcha la Constitución de 1876, que hasta la fecha es la más lóngeva que ha tenido España (2025, pensamos en tí).
+  $('.tabs a').click(function(e){
+    e.preventDefault();
 
-Se inventó el teléfono y la dinamo. Peréz Galdós comenzaba a escribir sus Episodios Nacionales. Tuvimos un Ministro de Hacienda matemático y físico, que además ganó un Nóbel de Literatura (ay, qué diferencia con la actualidad, ¿eh?). Puedes pasear por "su" calle en el centro de Madrid: Echegaray.
+    var tab_id = $(this).attr('data-tab');
 
-Pero, ¿y nosotros, el común de los mortales? ¿Cuántos éramos? ¿Dónde vivíamos?
+    $('.tabs a').removeClass('current');
+    $('.tab-content').removeClass('current');
 
-Comisión Estadística del Reino. Así se llamó en 1856 a lo que más tarde sería el INE, el actual Instituto Nacional de Estadística. Su primera tarea fue realizar el censo de población, que se completó en 1877. Desde entonces y cada 10 años el INE se encarga de contarnos, pueblo a pueblo, persona a persona. Y con estos datos podemos entender cómo hemos cambiado.
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
 
-{% asset 'posts/190701-Poblacion-PortadaCensoINE' class='' style='width: 75%; margin: 1em auto;' %}
+});
 
-{% asset 'posts/190701-Poblacion-PortadaCensoINE-detalle.png' class='' style='width: 75%; margin: 1em auto;' %}
 
-<div class="source">
-  <small>Portada del Censo de 1877 - Fuente: <a href="https://www.ine.es/inebaseweb/treeNavigation.do?tn=192225&tns=192227#192227">INE</a></small>
+
+
+</script>
+
+
+
+<div id="pinned-trigger1">
+
+  <div class="embed_full_width" id="pinned-element1">
+    {% asset 'posts/190701-CartaTelegrafica' class='' style='' %}
+    https://www.ign.es/web/catalogo-cartoteca/resources/html/003682.html
+  </div>
+
+  <div class="scrolling-text">
+
+    <p>¿Cuántos personas vivían en España a finales del s. XIX? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?</p>
+
+    <p>Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.</p>
+
+  </div>
+
 </div>
 
-- - -
+<div class="section" >
 
-## De 15 a 48 millones
+  <div class="pure-g">
 
+    <div class="pure-u-1-2" style="padding-right: 3em; text-align: right;">
 
+      <div class="img_cont shadow" style="margin-bottom: 5em; ">
+        {% asset 'posts/190701-Congreso' %}
+      </div>
 
-En la década de 1870 se registraron en España 15,7 millones de habitantes. Así nos distribuíamos:
-
-MAPA
-
-
-Ahora somos 48 millones. Hemos crecido a un ritmo de 220.000 personas por año de una forma más o menos lineal:
-
-
-
----- Nuevos datos blat
-
-Hay 5.144 municipios que han perdido habitantes. Ahora mismo suman 3.221.195 hab (un 7% de la
-población), pero en 1877 tenían 6.547.551 (un 41% de la población de 15.779.011 hab).
-
-Esos pueblos tenían de media 1.270 hab y de mediana 713. El más grande era Estrada (Pontevedra) con
-24.668 habitantes.
-
-De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.
-
-Hay 2.601 que han crecido, tenían de media 3.548 habitantes (1.511 de mediana) y el que más tenía
-era Madrid con 400.917 hab.
-
-El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73k que
-tiene ahora. Todos los que más han crecido están en Madrid o Barcelona, excepto Sta Marta de Tormes, un municipio colidante con la ciudad de Salmanca.
+      <div class="img_cont shadow" style=" margin-bottom: 2em; margin-left: 18%; ">
+        {% asset 'posts/190701-INE-Historico' %}
+      </div>
 
 
-##
+      <div class="source">
+        <small>Portada del Censo de 1877 - Fuente: <a href="https://www.ine.es/inebaseweb/treeNavigation.do?tn=192225&tns=192227#192227">INE</a></small>
+      </div>
 
-Madrid, Madrid, Madrid. El centralismo mediático imperante hoy en día parece que siempre ha sido eterno. ¿Pero era realmente Madrid la ciudada más grande de España en 1877? Las cosas no siempre han sido lo que son, y Madrid solo era la quinta ciudad más grande de España.
+    </div>
 
+    <div class="pure-u-1-2" style="padding-top: 4em;">
+
+      <h2>1877-2018: Cómo hemos cambiado</h2>
+
+      <p>La década de 1870 fue muy movida en España. Comenzó la I República Española, que duró poco: el general Pavía dio un golpe de estado y tras el pronunciamiento de Sagunto por el General Martinez Campos se restaura a un Borbón en el trono: Alfonso XII. Cánovas del Castillo pone en marcha la Constitución de 1876, que hasta la fecha es la más lóngeva que ha tenido España (2025, pensamos en tí).</p>
+
+      <p>Se inventó el teléfono y la dinamo. Peréz Galdós comenzaba a escribir sus Episodios Nacionales. Tuvimos un Ministro de Hacienda matemático y físico, que además ganó un Nóbel de Literatura (ay, qué diferencia con la actualidad, ¿eh?). Puedes pasear por "su" calle en el centro de Madrid: Echegaray.</p>
+
+      <p>Pero, ¿y nosotros, el común de los mortales? ¿Cuántos éramos? ¿Dónde vivíamos?</p>
+
+      <p>Comisión Estadística del Reino. Así se llamó en 1856 a lo que más tarde sería el INE, el actual Instituto Nacional de Estadística. Su primera tarea fue realizar el censo de población, que se completó en 1877. Desde entonces y cada 10 años el INE se encarga de contarnos, pueblo a pueblo, persona a persona. Y con estos datos podemos entender cómo hemos cambiado.</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="separator"></div>
+
+
+
+<div class="section">
+
+  <h2>De 15 a 48 millones</h2>
+
+  <p style="width: 100%; height: 600px; padding: 3em; background: #DFDFDF; margin: 0 0 4em 0">MAP</p>
+
+
+  <div class="scrolling-text">
+
+    <p>En la década de 1870 se registraron en España 15,7 millones de habitantes.</p>
+
+    <p>Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
+
+  </div>
+
+
+  <div class="scrolling-text">
+    <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
+
+    <p>Estos pueblos ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
+
+    <p>De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
+
+    <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era Estrada (Pontevedra) con 24.668 habitantes.</p>
+  </div>
+
+  <div class="scrolling-text">
+
+    <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
+
+    <p>Tenían de media 3.548 habitantes (1.511 de mediana).</p>
+
+    <p>El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400). Todos los que más han crecido están en Madrid o Barcelona, excepto Santa Marta de Tormes, un municipio colidante con la ciudad de Salmanca.</p>
+
+  </div>
+
+</div>
+
+
+<div class="section">
+
+  <div class="pure-g">
+
+    <div class="pure-u-1-4">
+
+      <div class="note">
+        <p>Casi todas las ciudades más grandes en 1877 han mantenido su posición en el ranking.</p>
+
+        <p>Entre las medianas han sucedido muchos cambios. Algunas han crecido mucho más que otras.</p>
+
+        <p>Se puede observar como centros industriales han surgido, y cómo otras ciudades con industrias antaño relevantes han bajado mucho su actividad. </p>
+
+      </div>
+
+    </div>
+
+    <div class="pure-u-3-4">
+
+      <div class="sub_section_header" style="margin-left: 160px;">
+
+        <h3>Las ciudades más grandes entonces y ahora</h3>
+
+        <div class="tabs">
+      		<a href="" class="tab-link current button_small" data-tab="tab-1">1873</a>
+      		<a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
+      	</div>
+
+      </div>
+
+    	<div id="tab-1" class="tab-content current">
+        {% include analysis/population/barras_horiz_evolucion_poblacion_provincias.svg %}
+    	</div>
+    	<div id="tab-2" class="tab-content">
+    		 WADUS
+    	</div>
+
+
+    </div>
+
+  </div>
+
+</div>
 
 
 - - -
 
 XXXXXXXXX
 
-¿Cómo ha evolucionado la población en los municipios españoles en los últimos 150 años? Por suerte, como siempre el INE al rescate. Existe un dataset maravilloso que cuenta habitantes por municipio desde 1874. Lo hemos metido en Populate Data y hemos cacharreado un poco para tratar de entender como ha evolucionado la población en los pueblos y ciudades españolas desde que existen datos.
 
 ## 15.7M Habitantes
 

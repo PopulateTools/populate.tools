@@ -5,9 +5,77 @@ body.story {
 
   .story-container {
     .content {
-      
+
+      img {
+        border: none;
+      }
+      .img_cont.shadow {
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
+
+    .section {
+      margin: 5em 0;
+    }
+
+    .separator {
+      margin: 5em 0;
+    }
+
+    .scrolling-text {
+      position: relative;
+      z-index: 100;
+      max-width: 700px;
+      padding: 3em;
+      border-radius: 5px;
+      background: #FFF;
+      margin: auto;
+      background: #FFFFFF;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+      margin-bottom: 4em;
+    }
+
+    .tabs {
+      margin: 0 0 1em 0;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.current{
+      display: inherit;
+    }
+
+    .button_small {
+      background: rgba($blue, .1);
+      color: rgba($blue, .3);
+      padding: .5em 1em;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 0 1em 0 0;
+      text-decoration: none;
+    }
+    .button_small.current {
+      background: rgba($blue, .2);
+      color: $blue;
+    }
+
+    .note {
+      border-radius: 5px;
+      padding: 2em;
+      font-size: .7em;
+      line-height: 1.4;
+      color: $gray;
+      background: rgba($gray, .1);
+    }
+
   }
+
 }
 
 header.story {
