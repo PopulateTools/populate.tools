@@ -19,15 +19,37 @@ $(function () { // wait for document ready
   // Scene Handler
   var scene1 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger1", // point of execution
-    duration: $(window).height() - 100, // pin element for the window height - 1
+    duration: $('#pinned-trigger1').position().top,
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
   .addIndicators()
   .setPin("#pinned-element1") // the element we want to pin
-  .addTo(controller);
+  .addTo(controller)
+  .on("update", function (e) {
+  console.log("update");
+					})
+					.on("enter leave", function (e) {
+  console.log("enter leave");
+					})
+					.on("start end", function (e) {
+  console.log("start / end");
+					})
+					.on("progress", function (e) {
+  console.log("progress");
+					});;
 
 
+  // // Scene Handler
+  // var scene2 = new ScrollMagic.Scene({
+  //   triggerElement: "#pinned-trigger2", // point of execution
+  //   duration: $('#pinned-trigger3').position().top,
+  //   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+  //   reverse: true // allows the effect to trigger when scrolled in the reverse direction
+  // })
+  // .addIndicators()
+  // .setPin("#pinned-element2") // the element we want to pin
+  // .addTo(controller);
 
   $('.tabs a').click(function(e){
     e.preventDefault();
@@ -110,11 +132,11 @@ $(function () { // wait for document ready
 
 
 
-<div class="section">
+<div class="section" id="pinned-trigger2">
 
   <h2>De 15 a 48 millones</h2>
 
-  <iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;"></iframe>
+  <!-- iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;" id="pinned-element2"></iframe -->
 
   <div class="scrolling-text">
 
@@ -148,7 +170,7 @@ $(function () { // wait for document ready
 </div>
 
 
-<div class="section">
+<div class="section" id="pinned-trigger3">
 
   <div class="pure-g">
 
@@ -174,14 +196,14 @@ $(function () { // wait for document ready
           <h3>Las ciudades más grandes entonces y ahora</h3>
 
           <div class="tabs">
-        		<a href="" class="tab-link current button_small" data-tab="tab-1">1873</a>
+        		<a href="" class="tab-link current button_small" data-tab="tab-1">1877</a>
         		<a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
         	</div>
 
         </div>
 
       	<div id="tab-1" class="tab-content current">
-          {% include analysis/population/barras_horiz_evolucion_poblacion_provincias.svg %}
+      		{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
       	</div>
       	<div id="tab-2" class="tab-content">
       		{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
@@ -219,7 +241,7 @@ $(function () { // wait for document ready
           <h3>Las provincias más grandes entonces y ahora</h3>
 
           <div class="tabs">
-        		<a href="" class="tab-link current button_small" data-tab="tab-provincias-1">1873</a>
+        		<a href="" class="tab-link current button_small" data-tab="tab-provincias-1">1877</a>
         		<a href="" class="tab-link button_small" data-tab="tab-provincias-2">2011</a>
         	</div>
 
@@ -253,6 +275,8 @@ $(function () { // wait for document ready
         <p>No todas las ciudades han crecido al mismo ritmo. Hay algunas que han crecido menos o mucho menos que la media.</p>
 
         <p>Las razones son variadas; algunas ciudades cómo Cádiz no han crecido porque literalmente no tienen sitio: el municipio está practicamente rodeado de mar y no hay sitio donde construir.</p>
+
+        <p>Alrededor de Cádiz sí que ha habido crecimiento: Chiclana, Jerez de la Frontera, Puerto Real o el Puerto de Santa María suman entre todos más de 400.000 habitantes de crecimiento.</p>
 
       </div>
 
