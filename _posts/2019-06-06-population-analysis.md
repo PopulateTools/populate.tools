@@ -34,8 +34,8 @@ $(function () { // wait for document ready
 
     var tab_id = $(this).attr('data-tab');
 
-    $('.tabs a').removeClass('current');
-    $('.tab-content').removeClass('current');
+    $(this).parent().find('a').removeClass('current');
+    $(this).closest('.tab-group').find('.tab-content').removeClass('current');
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
@@ -168,23 +168,27 @@ $(function () { // wait for document ready
 
     <div class="pure-u-3-4">
 
-      <div class="sub_section_header" style="margin-left: 160px;">
+      <div class="tab-group">
 
-        <h3>Las ciudades más grandes entonces y ahora</h3>
+        <div class="sub_section_header" style="margin-left: 160px;">
 
-        <div class="tabs">
-      		<a href="" class="tab-link current button_small" data-tab="tab-1">1873</a>
-      		<a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
+          <h3>Las ciudades más grandes entonces y ahora</h3>
+
+          <div class="tabs">
+        		<a href="" class="tab-link current button_small" data-tab="tab-1">1873</a>
+        		<a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
+        	</div>
+
+        </div>
+
+      	<div id="tab-1" class="tab-content current">
+          {% include analysis/population/barras_horiz_evolucion_poblacion_provincias.svg %}
+      	</div>
+      	<div id="tab-2" class="tab-content">
+      		{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
       	</div>
 
       </div>
-
-    	<div id="tab-1" class="tab-content current">
-        {% include analysis/population/barras_horiz_evolucion_poblacion_provincias.svg %}
-    	</div>
-    	<div id="tab-2" class="tab-content">
-    		 WADUS
-    	</div>
 
 
     </div>
@@ -194,30 +198,49 @@ $(function () { // wait for document ready
 </div>
 
 
-### Población 1877 municipios
+<div class="section">
 
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
-{:/}
+  <div class="pure-g">
 
-### Población 2011 municipios
+    <div class="pure-u-1-4">
 
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
-{:/}
+      <div class="note">
+        <p>Wadus...</p>
+
+      </div>
+
+    </div>
+
+    <div class="pure-u-3-4">
+
+      <div class="tab-group">
+
+        <div class="sub_section_header" style="margin-left: 160px;">
+
+          <h3>Las provincias más grandes entonces y ahora</h3>
+
+          <div class="tabs">
+        		<a href="" class="tab-link current button_small" data-tab="tab-provincias-1">1873</a>
+        		<a href="" class="tab-link button_small" data-tab="tab-provincias-2">2011</a>
+        	</div>
+
+        </div>
+
+      	<div id="tab-provincias-1" class="tab-content current">
+          {% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877.svg %}
+      	</div>
+      	<div id="tab-provincias-2" class="tab-content">
+      		{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}
+      	</div>
+
+      </div>
 
 
-### Población 1877 provincias
+    </div>
 
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877.svg %}
-{:/}
+  </div>
 
-### Población 2011 provincias
-
-{::nomarkdown}
-{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}
-{:/}
+</div>
 
 
 

@@ -49,6 +49,7 @@ body.story {
 
     .tab-content.current{
       display: inherit;
+      transition: opacity 0.5s ease-in-out;
     }
 
     .button_small {
