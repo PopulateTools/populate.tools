@@ -9,6 +9,27 @@ category: technology
 ---
 
 
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 150px;
+  margin-bottom: 40px;
+  width: 300px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+</style>
 
 
 <script type="text/javascript">
@@ -26,19 +47,6 @@ $(function () { // wait for document ready
   .addIndicators()
   .setPin("#pinned-element1") // the element we want to pin
   .addTo(controller)
-  .on("update", function (e) {
-  console.log("update");
-					})
-					.on("enter leave", function (e) {
-  console.log("enter leave");
-					})
-					.on("start end", function (e) {
-  console.log("start / end");
-					})
-					.on("progress", function (e) {
-  console.log("progress");
-					});;
-
 
   // // Scene Handler
   // var scene2 = new ScrollMagic.Scene({
@@ -137,6 +145,74 @@ $(function () { // wait for document ready
   <h2>De 15 a 48 millones</h2>
 
   <!-- iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;" id="pinned-element2"></iframe -->
+
+  <div id="map" style="width:100%; height:700px;"></div>
+  <div class="map-overlay" id="legend"></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
+    center: [-3.68041, 40.4449045],
+    zoom: 5.5
+  });
+
+  map.on('load', function() {
+    map.scrollZoom.disable();
+    map.addControl(new mapboxgl.NavigationControl());
+    map.getCanvas().style.cursor = 'default';
+
+    var popup = new mapboxgl.Popup; // Initialize a new popup
+
+    map.on('mousemove', function (e) {
+     map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
+
+     var municipalities = map.queryRenderedFeatures(e.point, {
+      layers: ['municipios']
+     });
+
+     if(municipalities[0] === undefined){
+       popup.remove();
+       return;
+     }
+
+     var properties = municipalities[0].properties;
+
+     var content = '<h3>' + properties.plac_nm + '</h3>';
+     content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
+     content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
+     content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
+
+     var lon = properties.plac_ln;
+     var lat = properties.plac_lt;
+     var coordinates = new mapboxgl.LngLat(lon, lat);
+
+     popup.setLngLat(coordinates)
+       .setHTML(content)
+       .addTo(map);
+    });
+
+
+    var layers = ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'];
+    var colors = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
+
+    for (i = 0; i < layers.length; i++) {
+      var layer = layers[i];
+      var color = colors[i];
+      var item = document.createElement('div');
+      var key = document.createElement('span');
+      key.className = 'legend-key';
+      key.style.backgroundColor = color;
+
+      var value = document.createElement('span');
+      value.innerHTML = layer;
+      item.appendChild(key);
+      item.appendChild(value);
+      legend.appendChild(item);
+    }
+  });
+
+</script>
 
   <div class="scrolling-text">
 
