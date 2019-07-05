@@ -444,7 +444,7 @@ $(function () { // wait for document ready
 
   {% include analysis/population/aporte_empleo_por_sector.svg %}
 
-  <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población, se entiende todavía mejor:</p>
+  <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población ocupada en total y para cada sector, se entiende todavía mejor:</p>
 
   {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
 
