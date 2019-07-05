@@ -438,7 +438,7 @@ $(function () { // wait for document ready
 
 <div style="width: 75%; margin: auto">
 
-  <p>PENDIENTE METER DATOS REALES En 1877 el 68% de la población vivía en núcleos de menos de 3.000 habitantes. Hoy en día solo el 23% de la gente vive en ciudades de menos de 25.000 habitantes. El sitio en el que vives condiciona el tipo de trabajo disponible. </p>
+  <p>En 1877 el 39% de la población vivía en núcleos de menos de 3.000 habitantes. Hoy en día solo el 36% de la gente vive en ciudades de menos de 25.000 habitantes. El sitio en el que vives condiciona el tipo de trabajo disponible. </p>
 
   <p>Y en 1877 la mayor parte de la gente vivía en sitios pequeños, en el campo, donde el trabajo mayoritario era la agricultura y ganadería. Esto ha cambiado de forma radical en los últimos 100 años</p>
 
