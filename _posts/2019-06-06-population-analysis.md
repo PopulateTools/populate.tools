@@ -302,8 +302,11 @@ $(function () { // wait for document ready
     <div class="pure-u-1-4">
 
       <div class="note">
-        <p>Wadus...</p>
+        <p>Aunque las provincias más habitadas en 1877 ya eran las zonas costeras, esa tendencia no
+        ha hecho más que mantenerse estos años.</p>
 
+        <p>Asturias ha pasado de ser la tercera provincia más habitado a ocupar el puesto número 12. Las islas y el País Vasco, por el contrario, han pasado a ser provincias
+        con un crecimiento similar a Málaga, Murcia o Sevilla.</p>
       </div>
 
     </div>
@@ -319,6 +322,7 @@ $(function () { // wait for document ready
           <div class="tabs">
         		<a href="" class="tab-link current button_small" data-tab="tab-provincias-1">1877</a>
         		<a href="" class="tab-link button_small" data-tab="tab-provincias-2">2011</a>
+        		<a href="" class="tab-link button_small" data-tab="tab-provincias-3">Diferencias</a>
         	</div>
 
         </div>
@@ -328,6 +332,9 @@ $(function () { // wait for document ready
       	</div>
       	<div id="tab-provincias-2" class="tab-content">
       		{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}
+      	</div>
+        <div id="tab-provincias-3" class="tab-content">
+      		{% include analysis/population/diff_provincias_1877_2011.svg %}
       	</div>
 
       </div>
