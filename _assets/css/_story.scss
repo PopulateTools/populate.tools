@@ -111,6 +111,15 @@ body.story {
       position: fixed;
       top: 0;
     }
+
+    .scrolling-container {
+      position: relative;
+
+      .scrolling-content {
+        position: absolute;
+        top: 800px;
+      }
+    }
   }
 
 }
