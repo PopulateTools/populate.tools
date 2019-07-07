@@ -38,26 +38,28 @@ $(function () { // wait for document ready
   var controller = new ScrollMagic.Controller();
 
   // Scene Handler
+
   var scene1 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger1", // point of execution
     duration: $('#pinned-trigger1').position().top,
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
+  .on("enter", function () {
+		// trigger animation by changing inline style.
+    // $('#pinned-element1').addClass('sticky');
+    console.log('enter');
+	})
+	.on("leave", function () {
+		// reset style
+    // $('#pinned-element1').removeClass('sticky');
+    console.log('exit');
+	})
   .addIndicators()
-  .setPin("#pinned-element1") // the element we want to pin
-  .addTo(controller)
-
-  // // Scene Handler
-  // var scene2 = new ScrollMagic.Scene({
-  //   triggerElement: "#pinned-trigger2", // point of execution
-  //   duration: $('#pinned-trigger3').position().top,
-  //   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
-  //   reverse: true // allows the effect to trigger when scrolled in the reverse direction
-  // })
-  // .addIndicators()
-  // .setPin("#pinned-element2") // the element we want to pin
+  // .setPin("#pinned-element1") // the element we want to pin
   // .addTo(controller);
+
+
 
   $('.tabs a').click(function(e){
     e.preventDefault();
@@ -80,9 +82,9 @@ $(function () { // wait for document ready
 
 
 
-<div id="pinned-trigger1">
+<div id="pinned-trigger1" >
 
-  <div class="embed_full_width" id="pinned-element1">
+  <div class="embed_full_width" id="pinned-element1" class="sticky">
     {% asset 'posts/190701-CartaTelegrafica' class='' style='' %}
     https://www.ign.es/web/catalogo-cartoteca/resources/html/003682.html
   </div>
@@ -97,7 +99,7 @@ $(function () { // wait for document ready
 
 </div>
 
-<div class="section" >
+<div class="section" style="padding-top: 8em;">
 
   <div class="pure-g">
 
@@ -230,7 +232,7 @@ $(function () { // wait for document ready
 
     <p>De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
 
-    <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era Estrada (Pontevedra) con 24.668 habitantes.</p>
+    <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
   </div>
 
   <div class="scrolling-text">
