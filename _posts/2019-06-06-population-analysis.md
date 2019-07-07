@@ -54,7 +54,7 @@ $(function () { // wait for document ready
   // Intro
   var scene1 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger1", // point of execution
-    duration: "1500px",
+    duration: window.innerHeight * 1.7,
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
@@ -63,14 +63,39 @@ $(function () { // wait for document ready
   .addTo(controller);
 
   // Map
-  var scene1 = new ScrollMagic.Scene({
+  var cards = $('#pinned-trigger2 .scrolling-text').length;
+  var scene2 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger2", // point of execution
-    duration: "2000px",
+    duration: window.innerHeight * cards * 1.5, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
   .addIndicators()
-  .setPin("#map") // the element we want to pin
+  .setPin("#pinned_map") // the element we want to pin
+  .addTo(controller);
+
+  // Ciudades
+  var cards = $('#pinned_ciudades .scrolling-text').length;
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: "#pinned_ciudades", // point of execution
+    duration: window.innerHeight * cards * .9, // # of cards
+    triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+    reverse: true // allows the effect to trigger when scrolled in the reverse direction
+  })
+  .addIndicators()
+  .setPin("#pinned_ciudades_graf") // the element we want to pin
+  .addTo(controller);
+
+  // Empleo
+  var cards = $('#pinned_empleo .scrolling-text').length;
+  var scene4 = new ScrollMagic.Scene({
+    triggerElement: "#pinned_empleo", // point of execution
+    duration: window.innerHeight * cards * 1.5, // # of cards
+    triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+    reverse: true // allows the effect to trigger when scrolled in the reverse direction
+  })
+  .addIndicators()
+  .setPin("#pinned_empleo_img") // the element we want to pin
   .addTo(controller);
 
 });
@@ -147,107 +172,118 @@ $(function () { // wait for document ready
 
 
 
-<div class="section scrolling-container" id="pinned-trigger2">
+<div class="section" >
 
   <h2>De 15 a 48 millones</h2>
 
-  <!-- iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;" id="pinned-element2"></iframe -->
+  <div class="scrolling-container" id="pinned-trigger2">
 
-  <div id="map" class="embed_full_width" style="height:700px;"></div>
-  <div class="map-overlay" id="legend"></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
-      center: [-3.68041, 40.4449045],
-      zoom: 5.5
-    });
+    <!-- iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;" id="pinned-element2"></iframe -->
 
-    map.on('load', function() {
-      map.scrollZoom.disable();
-      map.addControl(new mapboxgl.NavigationControl());
-      map.getCanvas().style.cursor = 'default';
-
-      var popup = new mapboxgl.Popup; // Initialize a new popup
-
-      map.on('mousemove', function (e) {
-        map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
-
-        var municipalities = map.queryRenderedFeatures(e.point, {
-        layers: ['municipios']
+    <div id="pinned_map" class="embed_full_width">
+      <div id="map" class="" style="height:700px;"></div>
+      <div class="map-overlay" id="legend"></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
+          center: [-3.68041, 40.4449045],
+          zoom: 5.5
         });
 
-        if(municipalities[0] === undefined){
-         popup.remove();
-         return;
-        }
+        map.on('load', function() {
+          map.scrollZoom.disable();
+          map.addControl(new mapboxgl.NavigationControl());
+          map.getCanvas().style.cursor = 'default';
 
-        var properties = municipalities[0].properties;
+          var popup = new mapboxgl.Popup; // Initialize a new popup
 
-        var content = '<h3>' + properties.plac_nm + '</h3>';
-        content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
-        content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
-        content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
+          map.on('mousemove', function (e) {
+            map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
 
-        var lon = properties.plac_ln;
-        var lat = properties.plac_lt;
-        var coordinates = new mapboxgl.LngLat(lon, lat);
+            var municipalities = map.queryRenderedFeatures(e.point, {
+            layers: ['municipios']
+            });
 
-        popup.setLngLat(coordinates)
-         .setHTML(content)
-         .addTo(map);
-      });
+            if(municipalities[0] === undefined){
+             popup.remove();
+             return;
+            }
 
-      var layers = ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'];
-      var colors = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
+            var properties = municipalities[0].properties;
 
-      for (i = 0; i < layers.length; i++) {
-        var layer = layers[i];
-        var color = colors[i];
-        var item = document.createElement('div');
-        var key = document.createElement('span');
-        key.className = 'legend-key';
-        key.style.backgroundColor = color;
+            var content = '<h3>' + properties.plac_nm + '</h3>';
+            content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
+            content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
+            content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
 
-        var value = document.createElement('span');
-        value.innerHTML = layer;
-        item.appendChild(key);
-        item.appendChild(value);
-        legend.appendChild(item);
-      }
+            var lon = properties.plac_ln;
+            var lat = properties.plac_lt;
+            var coordinates = new mapboxgl.LngLat(lon, lat);
 
-    });
+            popup.setLngLat(coordinates)
+             .setHTML(content)
+             .addTo(map);
+          });
 
-  </script>
+          var layers = ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'];
+          var colors = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
 
-  <div class="scrolling-content">
+          for (i = 0; i < layers.length; i++) {
+            var layer = layers[i];
+            var color = colors[i];
+            var item = document.createElement('div');
+            var key = document.createElement('span');
+            key.className = 'legend-key';
+            key.style.backgroundColor = color;
 
-    <div class="scrolling-text">
+            var value = document.createElement('span');
+            value.innerHTML = layer;
+            item.appendChild(key);
+            item.appendChild(value);
+            legend.appendChild(item);
+          }
 
-      <p>En la década de 1870 se registraron en España 15,7 millones de habitantes.</p>
+        });
 
-      <p>Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
-
+      </script>
     </div>
 
-    <div class="scrolling-text">
-      <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
+    <div class="scrolling-content">
 
-      <p>Estos pueblos ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
+      <div class="scrolling-text">
 
-      <p>De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
+        <p>En la década de 1870 se registraron en España 15,7 millones de habitantes. Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
 
-      <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
-    </div>
+      </div>
 
-    <div class="scrolling-text">
+      <div class="scrolling-text">
+        <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
 
-      <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
+        <p>Estos pueblos ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
 
-      <p>Tenían de media 3.548 habitantes (1.511 de mediana).</p>
+      </div>
 
-      <p>El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400). Todos los que más han crecido están en Madrid o Barcelona, excepto Santa Marta de Tormes, un municipio colidante con la ciudad de Salmanca.</p>
+      <div class="scrolling-text">
+        <p>De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
+
+        <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
+      </div>
+
+      <div class="scrolling-text">
+
+        <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
+
+        <p>Tenían de media 3.548 habitantes (1.511 de mediana).</p>
+
+      </div>
+
+      <div class="scrolling-text">
+
+        <p>El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400). Todos los que más han crecido están en Madrid o Barcelona, excepto Santa Marta de Tormes, un municipio colidante con la ciudad de Salmanca.</p>
+
+      </div>
 
     </div>
 
@@ -255,49 +291,42 @@ $(function () { // wait for document ready
 
 </div>
 
+<div class="section scrolling-container" id="pinned_ciudades">
 
-<div class="section" id="pinned-trigger3">
+  <div class="tab-group" id="pinned_ciudades_graf" >
 
-  <div class="pure-g">
+    <div class="sub_section_header" style="margin-left: 160px;">
 
-    <div class="pure-u-1-4">
+      <h3>Las ciudades más grandes entonces y ahora</h3>
 
-      <div class="note">
-        <p>Casi todas las ciudades más grandes en 1877 han mantenido su posición en el ranking.</p>
-
-        <p>Entre las medianas han sucedido muchos cambios. Algunas han crecido mucho más que otras.</p>
-
-        <p>Se puede observar como centros industriales han surgido, y cómo otras ciudades con industrias antaño relevantes han bajado mucho su actividad. </p>
-
+      <div class="tabs">
+        <a href="" class="tab-link current button_small" data-tab="tab-1">1877</a>
+        <a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
       </div>
 
     </div>
 
-    <div class="pure-u-3-4">
+    <div id="tab-1" class="tab-content current">
+      {% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
+    </div>
+    <div id="tab-2" class="tab-content">
+      {% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
+    </div>
 
-      <div class="tab-group">
+  </div>
 
-        <div class="sub_section_header" style="margin-left: 160px;">
+  <div class="scrolling-content">
 
-          <h3>Las ciudades más grandes entonces y ahora</h3>
+    <div class="scrolling-text note">
+      <p>Casi todas las ciudades más grandes en 1877 han mantenido su posición en el ranking.</p>
+    </div>
 
-          <div class="tabs">
-        		<a href="" class="tab-link current button_small" data-tab="tab-1">1877</a>
-        		<a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
-        	</div>
+    <div class="scrolling-text note">
+      <p>Entre las medianas han sucedido muchos cambios. Algunas han crecido mucho más que otras.</p>
+    </div>
 
-        </div>
-
-      	<div id="tab-1" class="tab-content current">
-      		{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
-      	</div>
-      	<div id="tab-2" class="tab-content">
-      		{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
-      	</div>
-
-      </div>
-
-
+    <div class="scrolling-text note">
+      <p>Se puede observar como centros industriales han surgido, y cómo otras ciudades con industrias antaño relevantes han bajado mucho su actividad. </p>
     </div>
 
   </div>
@@ -440,26 +469,34 @@ $(function () { // wait for document ready
 
 </div>
 
+<div class="section scrolling-container" id="pinned_empleo">
 
-<div class="embed_full_width" style="position: relative">
-  {% asset 'posts/190701-Empleo' style="width: 100%; margin-bottom: 3em; " %}
-  <h2 style="position: absolute; top: 2em; font-size: 2.5em; left: 6rem; color: #333; ">Empleo y población</h2>
+  <div class="embed_full_width" id="pinned_empleo_img" >
+    {% asset 'posts/190701-Empleo' style="width: 100%; margin-bottom: 3em; " %}
+    <h2 style="position: absolute; top: 2em; font-size: 2.5em; left: 6rem; color: #333; ">Empleo y población</h2>
+  </div>
+
+  <div class="scrolling-content">
+
+    <div class="scrolling-text">
+      <p>En 1877 el 39% de la población vivía en núcleos de menos de 3.000 habitantes. Hoy en día solo el 36% de la gente vive en ciudades de menos de 25.000 habitantes. El sitio en el que vives condiciona el tipo de trabajo disponible. </p>
+    </div>
+
+    <div class="scrolling-text">
+      <p>Y en 1877 la mayor parte de la gente vivía en sitios pequeños, en el campo, donde el trabajo mayoritario era la agricultura y ganadería. Esto ha cambiado de forma radical en los últimos 100 años</p>
+
+      {% include analysis/population/aporte_empleo_por_sector.svg %}
+    </div>
+
+    <div class="scrolling-text">
+      <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población ocupada en total y para cada sector, se entiende todavía mejor:</p>
+
+      {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
+    </div>
+
+  </div>
+
 </div>
-
-<div style="width: 75%; margin: auto">
-
-  <p>En 1877 el 39% de la población vivía en núcleos de menos de 3.000 habitantes. Hoy en día solo el 36% de la gente vive en ciudades de menos de 25.000 habitantes. El sitio en el que vives condiciona el tipo de trabajo disponible. </p>
-
-  <p>Y en 1877 la mayor parte de la gente vivía en sitios pequeños, en el campo, donde el trabajo mayoritario era la agricultura y ganadería. Esto ha cambiado de forma radical en los últimos 100 años</p>
-
-  {% include analysis/population/aporte_empleo_por_sector.svg %}
-
-  <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población ocupada en total y para cada sector, se entiende todavía mejor:</p>
-
-  {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
-
-</div>
-
 
 <div class="separador"></div>
 
