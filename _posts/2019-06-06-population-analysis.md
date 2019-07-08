@@ -47,6 +47,106 @@ $(function () { // wait for document ready
     $("#"+tab_id).addClass('current');
   })
 
+  function activeMapLayer(layer){
+    for(var i = 0; i < Object.keys(mapLayers).length; i++){
+      map.setLayoutProperty(Object.keys(mapLayers)[i], 'visibility', 'none');
+    }
+    map.setLayoutProperty(layer, 'visibility', 'visible');
+
+    map.on('click', function (e) {
+      map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
+
+      var municipalities = map.queryRenderedFeatures(e.point, {
+        layers: [currentLayer] // Any layer is fine
+      });
+
+      if(municipalities[0] === undefined){
+        popup.remove();
+        return;
+      }
+
+      var properties = municipalities[0].properties;
+
+      var content = '<h3>' + properties.plac_nm + '</h3>';
+      content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
+      content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
+      content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
+
+      var lon = properties.plac_ln;
+      var lat = properties.plac_lt;
+      var coordinates = new mapboxgl.LngLat(lon, lat);
+
+      popup.setLngLat(coordinates)
+       .setHTML(content)
+       .addTo(map);
+    });
+
+    var options = mapLayers[currentLayer].options;
+    var colors = mapLayers[currentLayer].colors || ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
+
+    for (i = 0; i < options.length; i++) {
+      var layer = options[i];
+      var color = colors[i];
+      var item = document.createElement('div');
+      var key = document.createElement('span');
+      key.className = 'legend-key';
+      key.style.backgroundColor = color;
+
+      var value = document.createElement('span');
+      value.innerHTML = layer;
+      item.appendChild(key);
+      item.appendChild(value);
+      legend.appendChild(item);
+    }
+
+  }
+
+  var mapLayers = {
+    value_1877: {
+      options: ['0 - 1000 hab.', '1000 - 3000 hab.', '3000 - 10k hab.', '10k - 25k hab.', '25k - 50k hab.', '50k - 100k hab.', '>= 100k hab.'],
+    },
+    value_2011: {
+      options: ['0 - 1000 hab.', '1000 - 5000 hab.', '5000 - 10k hab.', '10k - 50k hab.', '50k - 100k hab.', '100k - 500k hab.', '>= 500k hab.'],
+    },
+    value_diff: {
+      options: ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'],
+    },
+    biggest_in_1877: {
+      options: ['Más habitantes en 1877'],
+      colors: ['#235fa9'],
+    },
+    biggest_in_2011: {
+      options: ['Más habitantes en 2011'],
+      colors: ['#235fa9'],
+    },
+    value_idx_increased: {
+      options: ['Han crecido desde 1877'],
+      colors: ['#468e29']
+    },
+    value_idx_decreased: {
+      options: ['Han perdido habitantes desde 1877'],
+      colors: ['#f2abb7']
+    }
+  };
+  var currentLayer = "value_1877";
+  var popup = new mapboxgl.Popup; // Initialize a new popup
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
+    center: [-3.68041, 40.4449045],
+    zoom: 5.5
+  });
+
+  map.on('load', function() {
+    map.scrollZoom.disable();
+    map.addControl(new mapboxgl.NavigationControl());
+    map.getCanvas().style.cursor = 'default';
+
+    activeMapLayer(currentLayer);
+
+  });
 
 
   var controller = new ScrollMagic.Controller();
@@ -178,76 +278,9 @@ $(function () { // wait for document ready
 
   <div class="scrolling-container" id="pinned-trigger2">
 
-    <!-- iframe src="/population_map.html" scrolling="auto" style="border: 0; padding: 0; margin: 0;  width: 100%; height: 900px;" id="pinned-element2"></iframe -->
-
     <div id="pinned_map" class="embed_full_width">
       <div id="map" class="" style="height:700px;"></div>
       <div class="map-overlay" id="legend"></div>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
-          center: [-3.68041, 40.4449045],
-          zoom: 5.5
-        });
-
-        map.on('load', function() {
-          map.scrollZoom.disable();
-          map.addControl(new mapboxgl.NavigationControl());
-          map.getCanvas().style.cursor = 'default';
-
-          var popup = new mapboxgl.Popup; // Initialize a new popup
-
-          map.on('mousemove', function (e) {
-            map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
-
-            var municipalities = map.queryRenderedFeatures(e.point, {
-            layers: ['municipios']
-            });
-
-            if(municipalities[0] === undefined){
-             popup.remove();
-             return;
-            }
-
-            var properties = municipalities[0].properties;
-
-            var content = '<h3>' + properties.plac_nm + '</h3>';
-            content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
-            content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
-            content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
-
-            var lon = properties.plac_ln;
-            var lat = properties.plac_lt;
-            var coordinates = new mapboxgl.LngLat(lon, lat);
-
-            popup.setLngLat(coordinates)
-             .setHTML(content)
-             .addTo(map);
-          });
-
-          var layers = ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'];
-          var colors = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
-
-          for (i = 0; i < layers.length; i++) {
-            var layer = layers[i];
-            var color = colors[i];
-            var item = document.createElement('div');
-            var key = document.createElement('span');
-            key.className = 'legend-key';
-            key.style.backgroundColor = color;
-
-            var value = document.createElement('span');
-            value.innerHTML = layer;
-            item.appendChild(key);
-            item.appendChild(value);
-            legend.appendChild(item);
-          }
-
-        });
-
-      </script>
     </div>
 
     <div class="scrolling-content">
