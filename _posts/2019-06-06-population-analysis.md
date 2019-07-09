@@ -47,6 +47,16 @@ $(function () { // wait for document ready
     $("#"+tab_id).addClass('current');
   })
 
+  var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
   function activeMapLayer(layer){
     for(var i = 0; i < Object.keys(mapLayers).length; i++){
       map.setLayoutProperty(Object.keys(mapLayers)[i], 'visibility', 'none');
@@ -147,16 +157,10 @@ $(function () { // wait for document ready
     map.addControl(new mapboxgl.NavigationControl());
     map.getCanvas().style.cursor = 'default';
     activeMapLayer(currentLayer);
-<<<<<<< HEAD
-
-    setTimeout(function(){
-      activeMapLayer("value_diff");
-    }, 7000);
-=======
->>>>>>> Animation tests
   });
 
   var controller = new ScrollMagic.Controller();
+
 
   // Intro
   var scene1 = new ScrollMagic.Scene({
@@ -170,15 +174,24 @@ $(function () { // wait for document ready
   .addTo(controller);
 
 
-  function changeMapLayer(){
-    // map.activeMapLayer("value_2011");
-    console.log('wadus');
-    map.flyTo({
-      center: [
-      -74.50 + (Math.random() - 0.5) * 10,
-      40 + (Math.random() - 0.5) * 10]
-    });
-  }
+  window.onscroll = function() {
+    if (isInViewport(document.querySelector('#map_step_2'))) {
+      activeMapLayer('value_idx_decreased');
+    }
+    if (isInViewport(document.querySelector('#map_step_3'))) {
+      activeMapLayer('biggest_in_1877');
+    }
+    if (isInViewport(document.querySelector('#map_step_4'))) {
+      activeMapLayer('value_idx_increased');
+    }
+    if (isInViewport(document.querySelector('#map_step_5'))) {
+      map.flyTo({
+        center: [-3.8331813, 40.428762],
+        zoom: 10
+      });
+    }
+  };
+
 
   // Map
   var cards = $('#pinned-trigger2 .scrolling-text').length;
@@ -188,10 +201,7 @@ $(function () { // wait for document ready
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
-  // .setTween("#pinned-trigger2 .scrolling-text", 0.2, {backgroundColor: "green"}) // trigger a TweenMax.to tween
-  .setTween("#pinned-trigger2 .scrolling-text", .4, {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7, onStart:changeMapLayer})
-  // .setTween("#pinned-trigger2 .scrolling-text", .6, {backgroundColor: "orange"}) // trigger a TweenMax.to tween
-  // .setTween("#pinned-trigger2 .scrolling-text", .8, {backgroundColor: "blue"}) // trigger a TweenMax.to tween
+  // .setTween("#map_step_1", .2, {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7})
   .addIndicators()
   .setPin("#pinned_map") // the element we want to pin
   .addTo(controller);
@@ -308,26 +318,26 @@ $(function () { // wait for document ready
 
     <div class="scrolling-content">
 
-      <div class="scrolling-text">
+      <div class="scrolling-text" id="map_step_1">
 
         <p>En la década de 1870 se registraron en España 15,7 millones de habitantes. Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
 
       </div>
 
-      <div class="scrolling-text">
+      <div class="scrolling-text" id="map_step_2">
         <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
 
         <p>Estos pueblos ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
 
       </div>
 
-      <div class="scrolling-text">
+      <div class="scrolling-text" id="map_step_3">
         <p>De los 100 pueblos más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
 
         <p>Esos pueblos tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
       </div>
 
-      <div class="scrolling-text">
+      <div class="scrolling-text"  id="map_step_4">
 
         <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
 
@@ -335,7 +345,7 @@ $(function () { // wait for document ready
 
       </div>
 
-      <div class="scrolling-text">
+      <div class="scrolling-text"  id="map_step_5">
 
         <p>El municipio que más ha crecido de España es Coslada, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400). Todos los que más han crecido están en Madrid o Barcelona, excepto Santa Marta de Tormes, un municipio colidante con la ciudad de Salmanca.</p>
 
