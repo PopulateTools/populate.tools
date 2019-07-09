@@ -146,12 +146,14 @@ $(function () { // wait for document ready
     map.scrollZoom.disable();
     map.addControl(new mapboxgl.NavigationControl());
     map.getCanvas().style.cursor = 'default';
-
     activeMapLayer(currentLayer);
+<<<<<<< HEAD
 
     setTimeout(function(){
       activeMapLayer("value_diff");
     }, 7000);
+=======
+>>>>>>> Animation tests
   });
 
   var controller = new ScrollMagic.Controller();
@@ -167,6 +169,17 @@ $(function () { // wait for document ready
   .setPin("#pinned-element1") // the element we want to pin
   .addTo(controller);
 
+
+  function changeMapLayer(){
+    // map.activeMapLayer("value_2011");
+    console.log('wadus');
+    map.flyTo({
+      center: [
+      -74.50 + (Math.random() - 0.5) * 10,
+      40 + (Math.random() - 0.5) * 10]
+    });
+  }
+
   // Map
   var cards = $('#pinned-trigger2 .scrolling-text').length;
   var scene2 = new ScrollMagic.Scene({
@@ -175,9 +188,14 @@ $(function () { // wait for document ready
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
+  // .setTween("#pinned-trigger2 .scrolling-text", 0.2, {backgroundColor: "green"}) // trigger a TweenMax.to tween
+  .setTween("#pinned-trigger2 .scrolling-text", .4, {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7, onStart:changeMapLayer})
+  // .setTween("#pinned-trigger2 .scrolling-text", .6, {backgroundColor: "orange"}) // trigger a TweenMax.to tween
+  // .setTween("#pinned-trigger2 .scrolling-text", .8, {backgroundColor: "blue"}) // trigger a TweenMax.to tween
   .addIndicators()
   .setPin("#pinned_map") // the element we want to pin
   .addTo(controller);
+
 
   // Ciudades
   var cards = $('#pinned_ciudades .scrolling-text').length;
