@@ -53,11 +53,12 @@ $(function () { // wait for document ready
     }
     map.setLayoutProperty(layer, 'visibility', 'visible');
 
-    map.on('click', function (e) {
+    map.off('click', layer);
+    map.on('click', layer, function(e) {
       map.getCanvas().style.cursor = 'pointer'; // When the cursor enters a feature, set it to a pointer
 
       var municipalities = map.queryRenderedFeatures(e.point, {
-        layers: [currentLayer] // Any layer is fine
+        layers: [layer]
       });
 
       if(municipalities[0] === undefined){
@@ -81,11 +82,13 @@ $(function () { // wait for document ready
        .addTo(map);
     });
 
-    var options = mapLayers[currentLayer].options;
-    var colors = mapLayers[currentLayer].colors || ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
+    var options = mapLayers[layer].options;
+    var colors = mapLayers[layer].colors || ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"];
 
+    var legend = document.getElementById("legend");
+    legend.innerHTML = "";
     for (i = 0; i < options.length; i++) {
-      var layer = options[i];
+      var option = options[i];
       var color = colors[i];
       var item = document.createElement('div');
       var key = document.createElement('span');
@@ -93,7 +96,7 @@ $(function () { // wait for document ready
       key.style.backgroundColor = color;
 
       var value = document.createElement('span');
-      value.innerHTML = layer;
+      value.innerHTML = option;
       item.appendChild(key);
       item.appendChild(value);
       legend.appendChild(item);
@@ -146,8 +149,10 @@ $(function () { // wait for document ready
 
     activeMapLayer(currentLayer);
 
+    setTimeout(function(){
+      activeMapLayer("value_diff");
+    }, 7000);
   });
-
 
   var controller = new ScrollMagic.Controller();
 
