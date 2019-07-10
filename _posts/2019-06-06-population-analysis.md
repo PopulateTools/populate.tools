@@ -62,11 +62,16 @@ $(function () { // wait for document ready
       return;
     }
     currentLayer = layer;
-    console.log("activeMapLayer: ", layer);
     for(var i = 0; i < Object.keys(mapLayers).length; i++){
       map.setLayoutProperty(Object.keys(mapLayers)[i], 'visibility', 'none');
     }
     map.setLayoutProperty(layer, 'visibility', 'visible');
+
+    if(layer !== "coslada"){
+      map.flyTo({
+        zoom: 5.5
+      });
+    }
 
     map.off('click', layer);
     map.on('click', layer, function(e) {
@@ -84,9 +89,12 @@ $(function () { // wait for document ready
       var properties = municipalities[0].properties;
 
       var content = '<h3>' + properties.plac_nm + '</h3>';
-      content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
-      content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
-      content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
+      if(properties.base_vl !== undefined)
+        content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
+      if(properties.value !== undefined)
+        content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
+      if(properties.valu_dx !== undefined)
+        content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
 
       var lon = properties.plac_ln;
       var lat = properties.plac_lt;
@@ -116,7 +124,6 @@ $(function () { // wait for document ready
       item.appendChild(value);
       legend.appendChild(item);
     }
-
   }
 
   var mapLayers = {
@@ -149,7 +156,7 @@ $(function () { // wait for document ready
   mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp?optimize=true',
+    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
     center: [-3.68041, 40.4449045],
     zoom: 5.5
   });
