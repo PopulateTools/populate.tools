@@ -58,6 +58,11 @@ $(function () { // wait for document ready
   };
 
   function activeMapLayer(layer){
+    if(layer === currentLayer){
+      return;
+    }
+    currentLayer = layer;
+    console.log("activeMapLayer: ", layer);
     for(var i = 0; i < Object.keys(mapLayers).length; i++){
       map.setLayoutProperty(Object.keys(mapLayers)[i], 'visibility', 'none');
     }
@@ -118,18 +123,11 @@ $(function () { // wait for document ready
     value_1877: {
       options: ['0 - 1000 hab.', '1000 - 3000 hab.', '3000 - 10k hab.', '10k - 25k hab.', '25k - 50k hab.', '50k - 100k hab.', '>= 100k hab.'],
     },
-    value_2011: {
-      options: ['0 - 1000 hab.', '1000 - 5000 hab.', '5000 - 10k hab.', '10k - 50k hab.', '50k - 100k hab.', '100k - 500k hab.', '>= 500k hab.'],
-    },
     value_diff: {
       options: ['No han crecido', '0 - 100 %', '100 - 500 %', '500 - 1000 %', '1000 - 5000 %', '5000 - 10000 %', '>= 10000 %'],
     },
     biggest_in_1877: {
       options: ['Más habitantes en 1877'],
-      colors: ['#235fa9'],
-    },
-    biggest_in_2011: {
-      options: ['Más habitantes en 2011'],
       colors: ['#235fa9'],
     },
     value_idx_increased: {
@@ -139,15 +137,19 @@ $(function () { // wait for document ready
     value_idx_decreased: {
       options: ['Han perdido habitantes desde 1877'],
       colors: ['#f2abb7']
+    },
+    coslada: {
+      options: ['Coslada'],
+      colors: ['#468e29']
     }
   };
-  var currentLayer = "value_1877";
+  var currentLayer = null;
   var popup = new mapboxgl.Popup; // Initialize a new popup
 
   mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
+    style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp?optimize=true',
     center: [-3.68041, 40.4449045],
     zoom: 5.5
   });
@@ -156,7 +158,7 @@ $(function () { // wait for document ready
     map.scrollZoom.disable();
     map.addControl(new mapboxgl.NavigationControl());
     map.getCanvas().style.cursor = 'default';
-    activeMapLayer(currentLayer);
+    activeMapLayer("value_1877");
   });
 
   var controller = new ScrollMagic.Controller();
@@ -185,6 +187,7 @@ $(function () { // wait for document ready
       activeMapLayer('value_idx_increased');
     }
     if (isInViewport(document.querySelector('#map_step_5'))) {
+      activeMapLayer('coslada');
       map.flyTo({
         center: [-3.8331813, 40.428762],
         zoom: 10
