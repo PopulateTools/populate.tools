@@ -26,9 +26,18 @@
   }
 
   @include min-screen(1600) {
-    
+
   }
 }
+
+.embed_full_width {
+  @include min-screen(768) {
+    font-size: 1rem;
+    margin-left: -6em;
+    margin-right: -6em;
+  }
+}
+
 .section {
   margin-bottom: 2rem;
 
