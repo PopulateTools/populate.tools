@@ -274,9 +274,9 @@ $(function () { // wait for document ready
 </div>
 -->
 
-<div id="pinned-trigger1" class="scrolling-container">
+<div id="pinned-trigger1" >
 
-  <div >
+  <div class="scrolling-container">
 
     <div id="pinned-element1">
       <div class="embed_full_width" >
@@ -346,11 +346,14 @@ $(function () { // wait for document ready
 <div class="separator"></div>
 
 
-<div class="section" >
+<div class="section" id="pinned-trigger2">
 
   <h2>De 15 a 48 millones</h2>
 
-  <div class="scrolling-container" id="pinned-trigger2">
+
+  <div ></div>
+
+  <div class="scrolling-container">
 
     <div id="pinned_map" class="embed_full_width">
       <div id="map"></div>
@@ -403,6 +406,9 @@ $(function () { // wait for document ready
     </div>
 
   </div>
+
+
+
 
 </div>
 
