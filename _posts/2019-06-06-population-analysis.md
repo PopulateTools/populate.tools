@@ -510,7 +510,7 @@ $(function () { // wait for document ready
 
       <div class="text-container">
         <h3>Las ciudades más grandes que menos han crecido</h3>
-    	   <div class="button_small">1873</div>
+    	   <div class="button_small">1877</div>
       </div>
 
     </div>
