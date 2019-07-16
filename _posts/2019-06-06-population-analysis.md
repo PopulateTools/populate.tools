@@ -199,7 +199,9 @@ $(function () { // wait for document ready
 
 
   // Map
-  var cards = $('#pinned-trigger2 .scrolling-text').length;
+  // var cards = $('#pinned-trigger2 .scrolling-text').length;
+  var cards = $('.section_map .scrolling-text').length;
+  console.log(cards);
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger2", // point of execution
     duration: window.innerHeight * cards * 1.5, // # of cards
@@ -252,7 +254,7 @@ $(function () { // wait for document ready
   var cards = $('#pinned_empleo .scrolling-text').length;
   var scene6 = new ScrollMagic.Scene({
     triggerElement: "#pinned_empleo", // point of execution
-    duration: window.innerHeight * cards * 1.5, // # of cards
+    duration: window.innerHeight * cards * 1.75, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
@@ -302,7 +304,7 @@ $(function () { // wait for document ready
 
 </div>
 
-<div class="section" style="padding-top: 8em;">
+<div class="section section-text" style="padding-top: 8em;">
 
   <div class="pure-g">
 
@@ -346,69 +348,67 @@ $(function () { // wait for document ready
 <div class="separator"></div>
 
 
-<div class="section" id="pinned-trigger2">
+<div class="section section_map" >
 
   <h2>De 15 a 48 millones</h2>
 
+  <div id="pinned-trigger2">
 
-  <div ></div>
+    <div class="scrolling-container">
 
-  <div class="scrolling-container">
-
-    <div id="pinned_map" class="embed_full_width">
-      <div id="map"></div>
-      <div class="map-overlay" id="legend"></div>
-    </div>
-
-    <div class="scrolling-content">
-
-      <div class="scrolling-text" id="map_step_1">
-
-        <p>En la década de 1870 se registraron en España 15,7 millones de habitantes. Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
-
+      <div id="pinned_map" class="embed_full_width">
+        <div id="map"></div>
+        <div class="map-overlay" id="legend"></div>
       </div>
 
-      <div class="scrolling-text" id="map_step_2">
-        <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
+      <div class="scrolling-content">
 
-        <p>Estos municipios ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
+        <div class="scrolling-text" id="map_step_1">
 
-      </div>
+          <p>En la década de 1870 se registraron en España 15,7 millones de habitantes. Nos hemos multiplicado por 3: En 2018 hemos pasado los 48 millones.</p>
 
-      <div class="scrolling-text" id="map_step_3">
-        <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
+        </div>
 
-        <p>Tenían de media 3.548 habitantes (1.511 de mediana).</p>
+        <div class="scrolling-text" id="map_step_2">
+          <p>Hay 5.144 municipios que han perdido habitantes. Estos municipios sumaban en 1877 6,5M de habitantes, un 41% de la población.</p>
 
-      </div>
+          <p>Estos municipios ahora suman 3,2M, lo que supone solo un 7% de la población.</p>
 
-      <div class="scrolling-text"  id="map_step_4">
-        <p>De los 100 municipios más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
+        </div>
 
-        <p>Esos municipios tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
+        <div class="scrolling-text" id="map_step_3">
+          <p>El resto de municipios, 2.601, han crecido. El más grande ya era Madrid, con 400.000 habitantes (ahora tiene 3,2M. Mientras España se ha multiplicado por 3, Madrid lo ha hecho por 8).</p>
 
-      </div>
+          <p>Tenían de media 3.548 habitantes (1.511 de mediana).</p>
 
-      <div class="scrolling-text"  id="map_step_5">
+        </div>
 
-        <p>El municipio que más ha crecido de España es Coslada, un municipio con mucha extensión muy próximo a Madrid, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400).</p>
+        <div class="scrolling-text"  id="map_step_4">
+          <p>De los 100 municipios más grandes de esa época, más de la mitad estaban entre Galicia y Asturias: 18 estaban en Asturias, 7 en Coruña, 17 en Lugo  y 16 más entre Pontevedra y Orense.</p>
 
-        <p>Todos los que más han crecido están en Madrid o Barcelona (excepto Santa Marta de Tormes, un municipio pegado a Salmanca.</p>
+          <p>Esos municipios tenían de media 1.270 habitantes y de mediana 713 (la mitad eran más pequeños de esta cantidad). El más grande era A Estrada (Pontevedra) con 24.668 habitantes.</p>
 
-      </div>
+        </div>
 
-      <div class="scrolling-text"  id="map_step_6">
+        <div class="scrolling-text"  id="map_step_5">
 
-        <p>La geografía ha limitado el crecimiento de algunos municipios. Cádiz es el ejemplo más extremo: Su población apenas se ha incrementado porque ya en 1870 estaba llena de gente.</p>
+          <p>El municipio que más ha crecido de España es Coslada, un municipio con mucha extensión muy próximo a Madrid, pasando de 177 habitantes a los más de 73.000 que tiene ahora (se ha multiplicado por más de 400).</p>
+
+          <p>Todos los que más han crecido están en Madrid o Barcelona (excepto Santa Marta de Tormes, un municipio pegado a Salmanca.</p>
+
+        </div>
+
+        <div class="scrolling-text"  id="map_step_6">
+
+          <p>La geografía ha limitado el crecimiento de algunos municipios. Cádiz es el ejemplo más extremo: Su población apenas se ha incrementado porque ya en 1870 estaba llena de gente.</p>
+
+        </div>
 
       </div>
 
     </div>
 
   </div>
-
-
-
 
 </div>
 

@@ -1,5 +1,18 @@
 body.story {
 
+  .container {
+    margin: auto;
+    max-width: 1400px;
+  }
+  .embed_full_width {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .section-text {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
   header.header {
     padding-bottom: 0;
   }
@@ -205,6 +218,20 @@ body.story {
           margin-bottom: 110vh;
         }
 
+      }
+    }
+
+    .section.section_map {
+      .scrolling-container {
+        .scrolling-content {
+          width: 25vw;
+          right: 51px;
+
+          .scrolling-text {
+            padding: 1em;
+            font-size: .8rem;
+          }
+        }
       }
     }
 
