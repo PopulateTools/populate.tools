@@ -11,6 +11,11 @@ body.story {
   .section-text {
     padding-left: 3em;
     padding-right: 3em;
+
+    @include screen(768) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
   }
 
   header.header {
@@ -43,7 +48,7 @@ body.story {
       opacity: .6;
     }
     p.author {
-      margin: 2em 0;
+      margin: 4em 0;
       opacity: .6;
     }
 
@@ -156,6 +161,12 @@ body.story {
       margin-right: 0;
       font-size: .7em;
       padding: 1.5em 2em;
+
+      @include screen(768) {
+        font-size: .9em;
+        width: 94%;
+      }
+
     }
 
     .scrolling-text.biggy {
@@ -212,12 +223,16 @@ body.story {
 
       .scrolling-content {
         width: 100%;
-        // top: 800px;
         top: 120vh;
         position: absolute;
+        height: 0;
 
         .scrolling-text {
           margin-bottom: 110vh;
+        }
+
+        @include screen(768) {
+          top: 120vh;
         }
 
       }
@@ -226,8 +241,14 @@ body.story {
     .section.section_map {
       .scrolling-container {
         .scrolling-content {
+
           width: 25vw;
           right: 51px;
+
+          @include screen(768) {
+            width: 75vw;
+            right: 51px;
+          }
 
           .scrolling-text {
             padding: 1em;
@@ -236,6 +257,21 @@ body.story {
         }
       }
     }
+
+    // #pinned-trigger1 {
+    //   .scrolling-container {
+    //     .scrolling-content {
+    //       top: initial;
+    //       position: initial;
+    //       height: initial;
+    //       margin: 3em 0;
+    //
+    //       .scrolling-text {
+    //             margin-bottom: initial;
+    //       }
+    //     }
+    //   }
+    // }
 
     #pinned_map {
       position: relative;

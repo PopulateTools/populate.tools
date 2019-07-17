@@ -135,12 +135,19 @@ $(function () { // wait for document ready
   var currentLayer = null;
   var popup = new mapboxgl.Popup; // Initialize a new popup
 
+  if (window.innerWidth > 768) { // desktop
+    var zoom = 5.5;
+  }
+  else { // mobile
+    var zoom = 4;
+  }
+
   mapboxgl.accessToken = 'pk.eyJ1IjoicG9wdWxhdGUiLCJhIjoiZWE3NWQzZjA5NjY3NGQ5ZjU1YzlkYmRhMWE1MjEwMTMifQ.2gXfaomaWSEfdESul35_-g';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/populate/cjxpty6902kio1co79fzck5wp',
     center: [-3.68041, 40.4449045],
-    zoom: 5.5
+    zoom: zoom
   });
 
   map.on('load', function() {
@@ -202,7 +209,6 @@ $(function () { // wait for document ready
   // Map
   // var cards = $('#pinned-trigger2 .scrolling-text').length;
   var cards = $('.section_map .scrolling-text').length;
-  console.log(cards);
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger2", // point of execution
     duration: window.innerHeight * cards * 1.2, // # of cards
@@ -287,17 +293,31 @@ $(function () { // wait for document ready
       </div>
     </div>
 
-    <div class="scrolling-content">
+    <div class="desktop">
 
-      <div class="scrolling-text">
+      <div class="scrolling-content">
 
-        <h2>Año 1870</h2>
+        <div class="scrolling-text">
 
-        <p>¿Cuántos personas vivían en España? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?</p>
+          <h2>Año 1870</h2>
 
-        <p>Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.</p>
+          <p>¿Cuántos personas vivían en España? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?</p>
+
+          <p>Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.</p>
+
+        </div>
 
       </div>
+
+    </div>
+
+    <div class="mobile section section-text">
+
+      <h2>Año 1870</h2>
+
+      <p>¿Cuántos personas vivían en España? ¿Dónde vivían? ¿Qué ciudades y pueblos eran los más grandes entonces? ¿Cómo han evolucionado hasta ahora? ¿Los más grandes entonces lo siguen siendo ahora? ¿Cuántas nuevas ciudades han surgido? La España Vacía... ¿desde cuándo está vacía?</p>
+
+      <p>Nos zambullimos en los datos de población por municipio más antiguos que se registran para entender cómo hemos cambiado y hacia donde nos dirigimos.</p>
 
     </div>
 
@@ -305,7 +325,7 @@ $(function () { // wait for document ready
 
 </div>
 
-<div class="section section-text" style="padding-top: 8em;">
+<div class="section section-text">
 
   <div class="pure-g">
 
@@ -325,19 +345,15 @@ $(function () { // wait for document ready
 
     <div class="pure-u-1 pure-u-md-1-2" style="padding-top: 4em;">
 
-      <div class="text-container">
+      <h2>1877-2018: Cómo hemos cambiado</h2>
 
-        <h2>1877-2018: Cómo hemos cambiado</h2>
+      <p>La década de 1870 fue muy movida en España. Comenzó la I República Española, que duró poco: el general Pavía dio un golpe de estado y tras el pronunciamiento de Sagunto por el General Martinez Campos se restaura a un Borbón en el trono: Alfonso XII. Cánovas del Castillo pone en marcha la Constitución de 1876, que hasta la fecha es la más lóngeva que ha tenido España (2025, pensamos en tí).</p>
 
-        <p>La década de 1870 fue muy movida en España. Comenzó la I República Española, que duró poco: el general Pavía dio un golpe de estado y tras el pronunciamiento de Sagunto por el General Martinez Campos se restaura a un Borbón en el trono: Alfonso XII. Cánovas del Castillo pone en marcha la Constitución de 1876, que hasta la fecha es la más lóngeva que ha tenido España (2025, pensamos en tí).</p>
+      <p>Se inventó el teléfono y la dinamo. Peréz Galdós comenzaba a escribir sus Episodios Nacionales. Tuvimos un Ministro de Hacienda matemático y físico, que además ganó un Nóbel de Literatura (ay, qué diferencia con la actualidad, ¿eh?). Puedes pasear por "su" calle en el centro de Madrid: Echegaray.</p>
 
-        <p>Se inventó el teléfono y la dinamo. Peréz Galdós comenzaba a escribir sus Episodios Nacionales. Tuvimos un Ministro de Hacienda matemático y físico, que además ganó un Nóbel de Literatura (ay, qué diferencia con la actualidad, ¿eh?). Puedes pasear por "su" calle en el centro de Madrid: Echegaray.</p>
+      <p>Pero, ¿y nosotros, el común de los mortales? ¿Cuántos éramos? ¿Dónde vivíamos?</p>
 
-        <p>Pero, ¿y nosotros, el común de los mortales? ¿Cuántos éramos? ¿Dónde vivíamos?</p>
-
-        <p>Comisión Estadística del Reino. Así se llamó en 1856 a lo que más tarde sería el INE, el actual Instituto Nacional de Estadística. Su primera tarea fue realizar el censo de población, que se completó en 1877. Desde entonces y cada 10 años el INE se encarga de contarnos, pueblo a pueblo, persona a persona. Y con estos datos podemos entender cómo hemos cambiado.</p>
-
-      </div>
+      <p>Comisión Estadística del Reino. Así se llamó en 1856 a lo que más tarde sería el INE, el actual Instituto Nacional de Estadística. Su primera tarea fue realizar el censo de población, que se completó en 1877. Desde entonces y cada 10 años el INE se encarga de contarnos, pueblo a pueblo, persona a persona. Y con estos datos podemos entender cómo hemos cambiado.</p>
 
     </div>
 
@@ -351,7 +367,9 @@ $(function () { // wait for document ready
 
 <div class="section section_map" >
 
-  <h2>De 15 a 48 millones</h2>
+  <div class="section-text">
+    <h2>De 15 a 48 millones</h2>
+  </div>
 
   <div id="pinned-trigger2">
 
@@ -551,7 +569,7 @@ $(function () { // wait for document ready
 
     </div>
 
-    <div class="pure-u-1 pure-u-md-1-2">
+    <div class="pure-u-1 pure-u-md-1-2 section-text">
 
       <h2>Cerca de la capital</h2>
 
@@ -614,7 +632,7 @@ $(function () { // wait for document ready
 <div class="separator"></div>
 
 
-<div class="section narrow-col" id="next">
+<div class="section section-text narrow-col" id="next">
 
   <h2>¿Qué nos depara el futuro?</h2>
 
