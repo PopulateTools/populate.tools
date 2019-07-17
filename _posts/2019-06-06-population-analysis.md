@@ -69,13 +69,14 @@ $(function () { // wait for document ready
 
       var properties = municipalities[0].properties;
 
-      var content = '<h3>' + properties.plac_nm + '</h3>';
+      var content = '<h3>' + properties.plac_nm + '</h3><table>';
       if(properties.base_vl !== undefined)
-        content += '<p>Población en 1877: ' + properties.base_vl.toLocaleString() + ' hab.</p>';
+        content += '<tr><td>Población en 1877:</td><td> ' + properties.base_vl.toLocaleString() + ' hab.</td></tr>';
       if(properties.value !== undefined)
-        content += '<p>Población en 2011: ' + properties.value.toLocaleString() + ' hab.</p>';
+        content += '<tr><td>Población en 2011:</td><td>  ' + properties.value.toLocaleString() + ' hab.</td></tr>';
       if(properties.valu_dx !== undefined)
-        content += '<p>Incremento desde 1877: ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</p>';
+        content += '<tr><td>Dif. 1877-2011:</td><td>  ' + properties.valu_dx.toFixed(2).toLocaleString() + '%</td></tr>';
+      content += '</table>';
 
       var lon = properties.plac_ln;
       var lat = properties.plac_lt;
@@ -204,7 +205,7 @@ $(function () { // wait for document ready
   console.log(cards);
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger2", // point of execution
-    duration: window.innerHeight * cards * 1.5, // # of cards
+    duration: window.innerHeight * cards * 1.2, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
@@ -412,9 +413,9 @@ $(function () { // wait for document ready
 
 </div>
 
-<div class="section scrolling-container" id="pinned_ciudades">
+<div class="section scrolling-container graph-container" id="pinned_ciudades">
 
-  <div class="tab-group" id="pinned_ciudades_graf" >
+  <div class="tab-group " id="pinned_ciudades_graf" >
 
     <div class="sub_section_header">
 
@@ -432,11 +433,13 @@ $(function () { // wait for document ready
     </div>
 
     <div id="tab-1" class="tab-content current">
-      {% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}
+      <div class="desktop">{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877.svg %}</div>
+      <div class="mobile">{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_1877_small.svg %}</div>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
     </div>
     <div id="tab-2" class="tab-content">
-      {% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}
+      <div class="desktop">{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011.svg %}</div>
+      <div class="mobile">{% include analysis/population/barras_horiz_evolucion_poblacion_municipios_2011_small.svg %}</div>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
     </div>
 
@@ -455,7 +458,7 @@ $(function () { // wait for document ready
 </div>
 
 
-<div class="section scrolling-container" id="pinned_provincias">
+<div class="section scrolling-container graph-container" id="pinned_provincias">
 
   <div class="tab-group" id="pinned_provincias_graf">
 
@@ -474,11 +477,13 @@ $(function () { // wait for document ready
     </div>
 
   	<div id="tab-provincias-1" class="tab-content current">
-      {% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877.svg %}
+      <div class="desktop">{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877.svg %}</div>
+      <div class="mobile">{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_1877_small.svg %}</div>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
   	<div id="tab-provincias-2" class="tab-content">
-  		{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}
+  		<div class="desktop">{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011.svg %}</div>
+  		<div class="mobile">{% include analysis/population/barras_horiz_evolucion_poblacion_provincias_2011_small.svg %}</div>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
     <div id="tab-provincias-3" class="tab-content">
@@ -502,7 +507,7 @@ $(function () { // wait for document ready
 </div>
 
 
-<div class="section scrolling-container" id="pinned_ciudades_no">
+<div class="section scrolling-container graph-container" id="pinned_ciudades_no">
 
   <div class="tab-group" id="pinned_ciudades_no_graf">
 
@@ -516,7 +521,8 @@ $(function () { // wait for document ready
     </div>
 
   	<div>
-      {% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}
+      <div class="desktop">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}</div>
+      <div class="mobile">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento_small.svg %}</div>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
 
@@ -526,7 +532,6 @@ $(function () { // wait for document ready
 
     <div class="scrolling-text note">
       <p>No todas las ciudades han crecido al mismo ritmo. Algunas ciudades cómo Cádiz no han crecido porque literalmente no tienen sitio: el municipio está practicamente rodeado de mar. Pero el crecimiento se contagia a los municipios limítrofes: Chiclana, Jerez de la Frontera, Puerto Real o el Puerto de Santa María suman entre todos más de 400.000 habitantes de crecimiento.</p>
-
     </div>
 
   </div>
@@ -558,17 +563,20 @@ $(function () { // wait for document ready
 
   </div>
 
-  <p>Hemos visualizado el aumento o disminución de la población en relación con la distancia de un municipio a la capital de su provincia: </p>
+  <div class="section-text">
 
-  <div class="m_v_2">
-    {% asset 'posts/190701-Scatter-Distancia.png' %}
-    <div class="source">Fuente: <a href="#sources">Elaboración propia / INE / Populate Data</a></div>
+    <p>Hemos visualizado el aumento o disminución de la población en relación con la distancia de un municipio a la capital de su provincia: </p>
+
+    <div class="m_v_2">
+      {% asset 'posts/190701-Scatter-Distancia.png' %}
+      <div class="source">Fuente: <a href="#sources">Elaboración propia / INE / Populate Data</a></div>
+    </div>
+
+    <p>La conclusión general es que cuánto más cerca estás de una capital, más creces. El crecimiento va disminuyendo según te alejas. Y como se puede observar hay varias provincias que tienen una cola inversa: cuánto más se acercan al límite de la provincia más aumenta la población. Esto es debido a que se han ido formando ciudades de tamaño relevante cerca de los límites de la provincia.</p>
+
+    {% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}
+
   </div>
-
-  <p>La conclusión general es que cuánto más cerca estás de una capital, más creces. El crecimiento va disminuyendo según te alejas. Y como se puede observar hay varias provincias que tienen una cola inversa: cuánto más se acercan al límite de la provincia más aumenta la población. Esto es debido a que se han ido formando ciudades de tamaño relevante cerca de los límites de la provincia.</p>
-
-  {% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}
-
 
 </div>
 

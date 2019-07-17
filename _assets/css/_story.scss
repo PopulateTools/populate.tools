@@ -114,7 +114,8 @@ body.story {
     }
 
     .section {
-      margin: 5em 0;
+      margin-top: 5em;
+      margin-bottom: 5em;
     }
 
     .separator {
@@ -211,7 +212,8 @@ body.story {
 
       .scrolling-content {
         width: 100%;
-        top: 800px;
+        // top: 800px;
+        top: 120vh;
         position: absolute;
 
         .scrolling-text {
@@ -292,5 +294,34 @@ body.story {
     }
 
   }
+
+  .graph-container {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .mapboxgl-popup-content {
+    td {
+      padding-right: 15px;
+    }
+  }
+
+  @include screen(768) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
+  @include min-screen(768) {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+
 
 }
