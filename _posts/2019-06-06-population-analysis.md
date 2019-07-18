@@ -505,7 +505,8 @@ $(function () { // wait for document ready
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
     <div id="tab-provincias-3" class="tab-content">
-  		{% include analysis/population/diff_provincias_1877_2011.svg %}
+      <div class="flourish-embed" data-src="visualisation/513287"></div>
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
 
@@ -619,6 +620,7 @@ $(function () { // wait for document ready
 
     <div class="scrolling-text biggy">
       <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población ocupada en total y para cada sector, se entiende todavía mejor:</p>
+      <!-- TODO: yo añadiría una anotación en 1950 donde la población crece mucho pero el numero de personas dedicada a la agricultura ya no -->
 
       {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
