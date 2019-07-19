@@ -1,6 +1,7 @@
 ---
 layout: story
 title: "1877-2011: Cómo hemos cambiado"
+description: Cómo ha cambiado la población española desde 1874, y cómo evolucionará hasta 2074
 date: 2019-07-18 8:00:00 +0100
 author: blat
 lang: es
@@ -174,7 +175,7 @@ $(function () { // wait for document ready
       triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
       reverse: true // allows the effect to trigger when scrolled in the reverse direction
     })
-    .addIndicators()
+    // .addIndicators()
     .setPin("#pinned-element1") // the element we want to pin
     .addTo(controller);
 
@@ -216,12 +217,12 @@ $(function () { // wait for document ready
   var cards = $('.section_map .scrolling-text').length;
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#pinned-trigger2", // point of execution
-    duration: window.innerHeight * cards * 1.2, // # of cards
+    duration: window.innerHeight * cards * 1.3, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
   // .setTween("#map_step_1", .2, {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7})
-  .addIndicators()
+  // .addIndicators()
   .setPin("#pinned_map") // the element we want to pin
   .addTo(controller);
 
@@ -230,11 +231,11 @@ $(function () { // wait for document ready
   var cards = $('#pinned_ciudades .scrolling-text').length;
   var scene3 = new ScrollMagic.Scene({
     triggerElement: "#pinned_ciudades", // point of execution
-    duration: window.innerHeight * cards * .9, // # of cards
+    duration: window.innerHeight * cards * 1.2, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
-  .addIndicators()
+  // .addIndicators()
   .setPin("#pinned_ciudades_graf") // the element we want to pin
   .addTo(controller);
 
@@ -242,11 +243,11 @@ $(function () { // wait for document ready
   var cards = $('#pinned_provincias .scrolling-text').length;
   var scene4 = new ScrollMagic.Scene({
     triggerElement: "#pinned_provincias", // point of execution
-    duration: window.innerHeight * cards * .9, // # of cards
+    duration: window.innerHeight * cards * 1.2, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
-  .addIndicators()
+  // .addIndicators()
   .setPin("#pinned_provincias_graf") // the element we want to pin
   .addTo(controller);
 
@@ -258,7 +259,7 @@ $(function () { // wait for document ready
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
-  .addIndicators()
+  // .addIndicators()
   .setPin("#pinned_ciudades_no_graf") // the element we want to pin
   .addTo(controller);
 
@@ -266,11 +267,11 @@ $(function () { // wait for document ready
   var cards = $('#pinned_empleo .scrolling-text').length;
   var scene6 = new ScrollMagic.Scene({
     triggerElement: "#pinned_empleo", // point of execution
-    duration: window.innerHeight * cards * 1.75, // # of cards
+    duration: window.innerHeight * cards * 1.7, // # of cards
     triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
     reverse: true // allows the effect to trigger when scrolled in the reverse direction
   })
-  .addIndicators()
+  // .addIndicators()
   .setPin("#pinned_empleo_img") // the element we want to pin
   .addTo(controller);
 
