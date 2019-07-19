@@ -548,10 +548,6 @@ $(function () { // wait for document ready
       <div class="flourish-embed" data-src="visualisation/513287"></div>
       <script src="https://public.flourish.studio/resources/embed.js"></script>
 
-
-      <div class="flourish-embed" data-src="visualisation/513287"></div>
-      <script src="https://public.flourish.studio/resources/embed.js"></script>
-
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
   	</div>
 
