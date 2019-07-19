@@ -622,7 +622,9 @@ $(function () { // wait for document ready
     <div class="scrolling-text biggy">
       <p>En 1877 el 39% de la población vivía en núcleos de menos de 3.000 habitantes, sitios pequeños en el campo, donde el trabajo mayoritario era la agricultura y ganadería. Desde entonces, la estructura del mercado de trabajo ha cambiado radicalmente.</p>
 
-      {% include analysis/population/aporte_empleo_por_sector.svg %}
+      <div class="desktop">{% include analysis/population/aporte_empleo_por_sector.svg %}</div>
+      <div class="mobile">{% include analysis/population/aporte_empleo_por_sector_small.svg %}</div>
+
       <div class="source right">Fuente: <a href="#sources">FRP / Contabilidad Histórica Nacional</a></div>
 
       <p>Hoy en día solo el 36% de la gente vive en ciudades de menos de 25.000 habitantes.</p>
@@ -633,7 +635,9 @@ $(function () { // wait for document ready
       <p>Si ponemos en contexto los tipos de ocupación y la evolución de la población ocupada en total y para cada sector, se entiende todavía mejor:</p>
       <!-- TODO: yo añadiría una anotación en 1950 donde la población crece mucho pero el numero de personas dedicada a la agricultura ya no -->
 
-      {% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}
+      <div class="desktop">{% include analysis/population/evolucion_pb_aporte_empleo_por_sector.svg %}</div>
+      <div class="mobile">{% include analysis/population/evolucion_pb_aporte_empleo_por_sector_small.svg %}</div>
+
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
     </div>
 
