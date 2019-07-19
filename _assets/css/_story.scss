@@ -332,6 +332,22 @@ body.story {
 
     }
 
+    #pinned_empleo {
+      h2 {
+        position: absolute;
+        top: 2em;
+        font-size: 2.5em;
+        left: 6rem;
+        color: #333;
+
+        @include screen(768) {
+          top: 1em;
+          font-size: 2em;
+          left: 2rem;
+        }
+      }
+    }
+
     @include screen(768) {
       .text-container {
         padding: 1em;
