@@ -435,15 +435,15 @@ $(function () { // wait for document ready
 
   <div class="tab-group " id="pinned_ciudades_graf" >
 
-    <div class="sub_section_header">
+    <div class="">
 
       <div class="text-container">
 
         <h3>Las ciudades más grandes entonces y ahora</h3>
 
         <div class="tabs">
-          <a href="" class="tab-link current button_small" data-tab="tab-1">1877</a>
-          <a href="" class="tab-link button_small" data-tab="tab-2">2011</a>
+          <a href="" class="tab-link current button_small color-start" data-tab="tab-1">1877</a>
+          <a href="" class="tab-link button_small color-end" data-tab="tab-2">2011</a>
         </div>
 
       </div>
@@ -476,18 +476,51 @@ $(function () { // wait for document ready
 </div>
 
 
+<div class="section scrolling-container graph-container" id="pinned_ciudades_no">
+
+  <div class="tab-group" id="pinned_ciudades_no_graf">
+
+    <div class="">
+
+      <div class="text-container">
+        <h3>Las ciudades más grandes que menos han crecido</h3>
+    	   <div class="button_small">1877</div>
+      </div>
+
+    </div>
+
+  	<div>
+      <div class="desktop">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}</div>
+      <div class="mobile">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento_small.svg %}</div>
+      <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
+  	</div>
+
+  </div>
+
+  <div class="scrolling-content">
+
+    <div class="scrolling-text note">
+      <p>No todas las ciudades han crecido al mismo ritmo. Algunas ciudades cómo Cádiz no han crecido porque literalmente no tienen sitio: el municipio está practicamente rodeado de mar. Pero el crecimiento se contagia a los municipios limítrofes: Chiclana, Jerez de la Frontera, Puerto Real o el Puerto de Santa María suman entre todos más de 400.000 habitantes de crecimiento.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
 <div class="section scrolling-container graph-container" id="pinned_provincias">
 
   <div class="tab-group" id="pinned_provincias_graf">
 
-    <div class="sub_section_header">
+    <div class="">
 
       <div class="text-container">
         <h3>Las provincias más grandes entonces y ahora</h3>
 
         <div class="tabs">
-      		<a href="" class="tab-link current button_small" data-tab="tab-provincias-1">1877</a>
-      		<a href="" class="tab-link button_small" data-tab="tab-provincias-2">2011</a>
+      		<a href="" class="tab-link current button_small color-start" data-tab="tab-provincias-1">1877</a>
+      		<a href="" class="tab-link button_small color-end" data-tab="tab-provincias-2">2011</a>
       		<a href="" class="tab-link button_small" data-tab="tab-provincias-3">Diferencias</a>
       	</div>
       </div>
@@ -526,37 +559,6 @@ $(function () { // wait for document ready
 </div>
 
 
-<div class="section scrolling-container graph-container" id="pinned_ciudades_no">
-
-  <div class="tab-group" id="pinned_ciudades_no_graf">
-
-    <div class="sub_section_header">
-
-      <div class="text-container">
-        <h3>Las ciudades más grandes que menos han crecido</h3>
-    	   <div class="button_small">1877</div>
-      </div>
-
-    </div>
-
-  	<div>
-      <div class="desktop">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento.svg %}</div>
-      <div class="mobile">{% include analysis/population/barras_horiz_top_municipios_menos_crecimiento_small.svg %}</div>
-      <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
-  	</div>
-
-  </div>
-
-  <div class="scrolling-content">
-
-    <div class="scrolling-text note">
-      <p>No todas las ciudades han crecido al mismo ritmo. Algunas ciudades cómo Cádiz no han crecido porque literalmente no tienen sitio: el municipio está practicamente rodeado de mar. Pero el crecimiento se contagia a los municipios limítrofes: Chiclana, Jerez de la Frontera, Puerto Real o el Puerto de Santa María suman entre todos más de 400.000 habitantes de crecimiento.</p>
-    </div>
-
-  </div>
-
-</div>
-
 
 <div class="section" id="proximity">
 
@@ -593,7 +595,8 @@ $(function () { // wait for document ready
 
     <p>La conclusión general es que cuánto más cerca estás de una capital, más creces. El crecimiento va disminuyendo según te alejas. Y como se puede observar hay varias provincias que tienen una cola inversa: cuánto más se acercan al límite de la provincia más aumenta la población. Esto es debido a que se han ido formando ciudades de tamaño relevante cerca de los límites de la provincia.</p>
 
-    {% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}
+    <div class="desktop">{% include analysis/population/raw_relacion_dist_pct_small_multiples.svg %}</div>
+    <div class="mobile">{% include analysis/population/raw_relacion_dist_pct_small_multiples_small.svg %}</div>
 
   </div>
 

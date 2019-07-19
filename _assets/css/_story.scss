@@ -187,6 +187,7 @@ body.story {
     }
 
     .button_small {
+      position: relative;
       background: rgba($blue, .1);
       color: rgba($blue, .3);
       padding: .5em 1em;
@@ -198,6 +199,33 @@ body.story {
     .button_small.current {
       background: rgba($blue, .2);
       color: $blue;
+    }
+
+    .color-start {
+      padding-left: 2em;
+    }
+    .color-start:before {
+      content: "";
+      position: absolute;
+      border-radius: 50px;
+      width: .65em;
+      height: .65em;
+      background: #FAAB18;
+      top: .95em;
+      left: .75em;
+    }
+    .color-end {
+      padding-left: 2em;
+    }
+    .color-end:before {
+      content: "";
+      position: absolute;
+      border-radius: 50px;
+      width: .65em;
+      height: .65em;
+      background: #1380A1;
+      top: .95em;
+      left: .75em;
     }
 
     .note {
