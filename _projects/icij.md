@@ -19,5 +19,3 @@ client_url: https://icij.org/
 width: wide
 weight: 1
 ---
-
-wadus

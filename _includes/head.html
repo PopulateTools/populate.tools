@@ -18,12 +18,17 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 
+<meta name="google-site-verification" content="eBFnQedqY8a2_b0wl5UBBQmYmrPS_KiopfD-qTOJIFI" />
+
+
 {% asset main.css %}
 
 {% seo %}
 
 {% if page.main_photo %}
   <meta property="og:image" content="{% asset '{{ page.main_photo }}' @path %}" />
+{% elsif page.img %}
+  <meta property="og:image" content="{% asset '{{ page.img }}' @path %}" />
 {% else %}
   <meta property="og:image" content="{% asset 'populate-og.png' @path %}" />
 {% endif %}

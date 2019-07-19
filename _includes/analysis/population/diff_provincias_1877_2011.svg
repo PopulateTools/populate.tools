@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 680.31 850.39'>
+<defs>
+  <style type='text/css'><![CDATA[
+    line, polyline, polygon, path, rect, circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<rect x='0.00' y='0.00' width='680.31' height='850.39' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+<defs>
+  <clipPath id='cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg='>
+    <rect x='8.22' y='5.48' width='666.62' height='836.70' />
+  </clipPath>
+</defs>
+<polyline points='68.82,90.08 614.23,183.22 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.73,187.85 614.23,183.22 603.97,174.70 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,804.14 614.23,664.44 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='604.70,673.76 614.23,664.44 601.39,660.84 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,586.82 614.23,571.30 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.88,578.29 614.23,571.30 602.50,564.96 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,214.27 614.23,105.60 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='604.21,114.40 614.23,105.60 601.61,101.32 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,322.93 614.23,400.54 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.86,405.52 614.23,400.54 603.74,392.32 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,74.56 614.23,229.79 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.30,233.04 614.23,229.79 604.95,220.22 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,664.44 614.23,742.05 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.86,747.02 614.23,742.05 603.74,733.82 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,198.74 614.23,385.02 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.15,387.60 614.23,385.02 605.46,374.98 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,43.51 614.23,59.03 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,65.37 614.23,59.03 602.88,52.04 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,711.00 614.23,167.70 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='610.76,180.57 614.23,167.70 601.35,171.12 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,478.16 614.23,586.82 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.61,591.10 614.23,586.82 604.21,578.03 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,400.54 614.23,555.77 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.30,559.02 614.23,555.77 604.95,546.20 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,229.79 614.23,152.17 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.74,160.40 614.23,152.17 601.86,147.20 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,524.73 614.23,462.63 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.52,470.56 614.23,462.63 602.01,457.32 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,431.59 614.23,447.11 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,453.45 614.23,447.11 602.88,440.12 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,493.68 614.23,493.68 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.69,500.35 614.23,493.68 602.69,487.01 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,307.40 614.23,322.93 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,329.26 614.23,322.93 602.88,315.93 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,602.34 614.23,711.00 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.61,715.29 614.23,711.00 604.21,702.21 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,695.48 614.23,353.97 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='607.99,365.75 614.23,353.97 600.91,354.45 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,447.11 614.23,338.45 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='604.21,347.24 614.23,338.45 601.61,334.17 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,183.22 614.23,291.88 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.61,296.16 614.23,291.88 604.21,283.09 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,679.96 614.23,679.96 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.69,686.62 614.23,679.96 602.69,673.29 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,617.87 614.23,509.20 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='604.21,518.00 614.23,509.20 601.61,504.92 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,633.39 614.23,695.48 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.01,700.80 614.23,695.48 603.52,687.55 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,416.07 614.23,198.74 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='605.98,209.21 614.23,198.74 601.04,196.82 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,276.36 614.23,416.07 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.39,419.66 614.23,416.07 604.70,406.74 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,648.91 614.23,648.91 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.69,655.58 614.23,648.91 602.69,642.25 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,773.10 614.23,214.27 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='610.94,227.18 614.23,214.27 601.40,217.87 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,369.50 614.23,524.73 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.30,527.98 614.23,524.73 604.95,515.15 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,571.30 614.23,540.25 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.09,547.56 614.23,540.25 602.33,534.25 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,245.31 614.23,617.87 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='600.94,616.86 614.23,617.87 608.46,605.85 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,105.60 614.23,43.51 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.52,51.44 614.23,43.51 602.01,38.19 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,136.65 614.23,121.13 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.88,128.12 614.23,121.13 602.50,114.79 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,152.17 614.23,136.65 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.88,143.64 614.23,136.65 602.50,130.31 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,385.02 614.23,431.59 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.16,437.25 614.23,431.59 603.30,423.96 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,291.88 614.23,633.39 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='600.91,632.91 614.23,633.39 607.99,621.61 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,742.05 614.23,757.57 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,763.91 614.23,757.57 602.88,750.58 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,167.70 614.23,276.36 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.61,280.64 614.23,276.36 604.21,267.56 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,462.63 614.23,602.34 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.39,605.94 614.23,602.34 604.70,593.02 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,726.53 614.23,245.31 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='609.99,257.95 614.23,245.31 601.17,247.95 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,757.57 614.23,773.10 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,779.43 614.23,773.10 602.88,766.10 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,121.13 614.23,90.08 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.09,97.39 614.23,90.08 602.33,84.08 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,788.62 614.23,804.14 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,810.48 614.23,804.14 602.88,797.15 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,353.97 614.23,307.40 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.30,315.03 614.23,307.40 602.16,301.74 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,540.25 614.23,788.62 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='600.96,789.90 614.23,788.62 606.49,777.77 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,338.45 614.23,369.50 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.33,375.50 614.23,369.50 603.09,362.18 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,59.03 614.23,74.56 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.50,80.89 614.23,74.56 602.88,67.57 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,509.20 614.23,478.16 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='603.09,485.47 614.23,478.16 602.33,472.16 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,555.77 614.23,726.53 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='601.22,729.44 614.23,726.53 605.21,716.72 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='68.82,260.83 614.23,260.83 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<polyline points='602.69,267.50 614.23,260.83 602.69,254.17 ' style='stroke-width: 1.07; stroke: #1380A1; stroke-linecap: butt;' clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)' />
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='9.25' y='48.17' style='font-size: 12.80px; font-family: Arial;' textLength='58.54px' lengthAdjust='spacingAndGlyphs'>Barcelona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.59' y='63.69' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Valencia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='15.04' y='79.21' style='font-size: 12.80px; font-family: Arial;' textLength='46.96px' lengthAdjust='spacingAndGlyphs'>Asturias</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='11.06' y='94.74' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>A Coruña</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='18.65' y='110.26' style='font-size: 12.80px; font-family: Arial;' textLength='39.74px' lengthAdjust='spacingAndGlyphs'>Madrid</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='19.37' y='125.78' style='font-size: 12.80px; font-family: Arial;' textLength='38.30px' lengthAdjust='spacingAndGlyphs'>Sevilla</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='17.20' y='141.31' style='font-size: 12.80px; font-family: Arial;' textLength='42.64px' lengthAdjust='spacingAndGlyphs'>Málaga</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='19.02' y='156.83' style='font-size: 12.80px; font-family: Arial;' textLength='39.01px' lengthAdjust='spacingAndGlyphs'>Murcia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='5.27' y='172.35' style='font-size: 12.80px; font-family: Arial;' textLength='66.49px' lengthAdjust='spacingAndGlyphs'>Pontevedra</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.22' y='187.88' style='font-size: 12.80px; font-family: Arial;' textLength='50.59px' lengthAdjust='spacingAndGlyphs'>Granada</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='15.03' y='203.40' style='font-size: 12.80px; font-family: Arial;' textLength='46.98px' lengthAdjust='spacingAndGlyphs'>Badajoz</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='15.40' y='218.92' style='font-size: 12.80px; font-family: Arial;' textLength='46.25px' lengthAdjust='spacingAndGlyphs'>Alicante</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='21.90' y='234.44' style='font-size: 12.80px; font-family: Arial;' textLength='33.24px' lengthAdjust='spacingAndGlyphs'>Cádiz</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='24.06' y='249.97' style='font-size: 12.80px; font-family: Arial;' textLength='28.92px' lengthAdjust='spacingAndGlyphs'>Lugo</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='11.06' y='265.49' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>Zaragoza</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='24.42' y='281.01' style='font-size: 12.80px; font-family: Arial;' textLength='28.19px' lengthAdjust='spacingAndGlyphs'>Jaén</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.59' y='296.54' style='font-size: 12.80px; font-family: Arial;' textLength='49.86px' lengthAdjust='spacingAndGlyphs'>Ourense</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.59' y='312.06' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Córdoba</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='16.13' y='327.58' style='font-size: 12.80px; font-family: Arial;' textLength='44.79px' lengthAdjust='spacingAndGlyphs'>Almería</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='18.65' y='343.11' style='font-size: 12.80px; font-family: Arial;' textLength='39.75px' lengthAdjust='spacingAndGlyphs'>Toledo</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='8.53' y='358.63' style='font-size: 12.80px; font-family: Arial;' textLength='59.98px' lengthAdjust='spacingAndGlyphs'>Tarragona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='24.06' y='374.15' style='font-size: 12.80px; font-family: Arial;' textLength='28.92px' lengthAdjust='spacingAndGlyphs'>León</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='15.40' y='389.68' style='font-size: 12.80px; font-family: Arial;' textLength='46.24px' lengthAdjust='spacingAndGlyphs'>Navarra</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='14.32' y='405.20' style='font-size: 12.80px; font-family: Arial;' textLength='48.41px' lengthAdjust='spacingAndGlyphs'>Cáceres</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='-2.31' y='420.72' style='font-size: 12.80px; font-family: Arial;' textLength='81.65px' lengthAdjust='spacingAndGlyphs'>Islas Baleares</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='11.42' y='436.24' style='font-size: 12.80px; font-family: Arial;' textLength='54.20px' lengthAdjust='spacingAndGlyphs'>Castellón</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='19.01' y='451.77' style='font-size: 12.80px; font-family: Arial;' textLength='39.02px' lengthAdjust='spacingAndGlyphs'>Girona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='6.00' y='467.29' style='font-size: 12.80px; font-family: Arial;' textLength='65.04px' lengthAdjust='spacingAndGlyphs'>Salamanca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='17.92' y='482.81' style='font-size: 12.80px; font-family: Arial;' textLength='41.19px' lengthAdjust='spacingAndGlyphs'>Burgos</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='2.75' y='498.34' style='font-size: 12.80px; font-family: Arial;' textLength='71.54px' lengthAdjust='spacingAndGlyphs'>Ciudad Real</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='10.33' y='513.86' style='font-size: 12.80px; font-family: Arial;' textLength='56.37px' lengthAdjust='spacingAndGlyphs'>Valladolid</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='10.34' y='529.38' style='font-size: 12.80px; font-family: Arial;' textLength='56.37px' lengthAdjust='spacingAndGlyphs'>Cantabria</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='20.10' y='544.91' style='font-size: 12.80px; font-family: Arial;' textLength='36.85px' lengthAdjust='spacingAndGlyphs'>Teruel</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='16.13' y='560.43' style='font-size: 12.80px; font-family: Arial;' textLength='44.79px' lengthAdjust='spacingAndGlyphs'>Zamora</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='21.17' y='575.95' style='font-size: 12.80px; font-family: Arial;' textLength='34.70px' lengthAdjust='spacingAndGlyphs'>Lleida</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.22' y='591.48' style='font-size: 12.80px; font-family: Arial;' textLength='50.59px' lengthAdjust='spacingAndGlyphs'>Albacete</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='16.12' y='607.00' style='font-size: 12.80px; font-family: Arial;' textLength='44.81px' lengthAdjust='spacingAndGlyphs'>Cuenca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='18.29' y='622.52' style='font-size: 12.80px; font-family: Arial;' textLength='40.47px' lengthAdjust='spacingAndGlyphs'>Huelva</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='16.48' y='638.05' style='font-size: 12.80px; font-family: Arial;' textLength='44.08px' lengthAdjust='spacingAndGlyphs'>Huesca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='14.67' y='653.57' style='font-size: 12.80px; font-family: Arial;' textLength='47.70px' lengthAdjust='spacingAndGlyphs'>La Rioja</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='24.43' y='669.09' style='font-size: 12.80px; font-family: Arial;' textLength='28.18px' lengthAdjust='spacingAndGlyphs'>Ávila</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='3.11' y='684.61' style='font-size: 12.80px; font-family: Arial;' textLength='70.83px' lengthAdjust='spacingAndGlyphs'>Guadalajara</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='11.06' y='700.14' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>Gipuzkoa</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='17.57' y='715.66' style='font-size: 12.80px; font-family: Arial;' textLength='41.91px' lengthAdjust='spacingAndGlyphs'>Bizkaia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='-28.68' y='731.18' style='font-size: 12.80px; font-family: Arial;' textLength='134.41px' lengthAdjust='spacingAndGlyphs'>Santa Cruz de Tenerife</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='13.59' y='746.71' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Palencia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='15.03' y='762.23' style='font-size: 12.80px; font-family: Arial;' textLength='46.98px' lengthAdjust='spacingAndGlyphs'>Segovia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='4.56' y='777.75' style='font-size: 12.80px; font-family: Arial;' textLength='67.92px' lengthAdjust='spacingAndGlyphs'>Las Palmas</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='23.35' y='793.28' style='font-size: 12.80px; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>Soria</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='22.26' y='808.80' style='font-size: 12.80px; font-family: Arial;' textLength='32.52px' lengthAdjust='spacingAndGlyphs'>Álava</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='624.67' y='48.17' style='font-size: 12.80px; font-family: Arial;' textLength='39.74px' lengthAdjust='spacingAndGlyphs'>Madrid</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='615.27' y='63.69' style='font-size: 12.80px; font-family: Arial;' textLength='58.54px' lengthAdjust='spacingAndGlyphs'>Barcelona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.60' y='79.21' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Valencia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='625.39' y='94.74' style='font-size: 12.80px; font-family: Arial;' textLength='38.30px' lengthAdjust='spacingAndGlyphs'>Sevilla</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='621.41' y='110.26' style='font-size: 12.80px; font-family: Arial;' textLength='46.25px' lengthAdjust='spacingAndGlyphs'>Alicante</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='623.22' y='125.78' style='font-size: 12.80px; font-family: Arial;' textLength='42.64px' lengthAdjust='spacingAndGlyphs'>Málaga</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='625.03' y='141.31' style='font-size: 12.80px; font-family: Arial;' textLength='39.01px' lengthAdjust='spacingAndGlyphs'>Murcia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='627.92' y='156.83' style='font-size: 12.80px; font-family: Arial;' textLength='33.24px' lengthAdjust='spacingAndGlyphs'>Cádiz</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='623.58' y='172.35' style='font-size: 12.80px; font-family: Arial;' textLength='41.91px' lengthAdjust='spacingAndGlyphs'>Bizkaia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='617.07' y='187.88' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>A Coruña</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='603.71' y='203.40' style='font-size: 12.80px; font-family: Arial;' textLength='81.65px' lengthAdjust='spacingAndGlyphs'>Islas Baleares</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='610.57' y='218.92' style='font-size: 12.80px; font-family: Arial;' textLength='67.92px' lengthAdjust='spacingAndGlyphs'>Las Palmas</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='621.05' y='234.44' style='font-size: 12.80px; font-family: Arial;' textLength='46.96px' lengthAdjust='spacingAndGlyphs'>Asturias</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='577.33' y='249.97' style='font-size: 12.80px; font-family: Arial;' textLength='134.41px' lengthAdjust='spacingAndGlyphs'>Santa Cruz de Tenerife</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='617.07' y='265.49' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>Zaragoza</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='611.29' y='281.01' style='font-size: 12.80px; font-family: Arial;' textLength='66.49px' lengthAdjust='spacingAndGlyphs'>Pontevedra</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.24' y='296.54' style='font-size: 12.80px; font-family: Arial;' textLength='50.59px' lengthAdjust='spacingAndGlyphs'>Granada</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='614.55' y='312.06' style='font-size: 12.80px; font-family: Arial;' textLength='59.98px' lengthAdjust='spacingAndGlyphs'>Tarragona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.60' y='327.58' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Córdoba</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='625.03' y='343.11' style='font-size: 12.80px; font-family: Arial;' textLength='39.02px' lengthAdjust='spacingAndGlyphs'>Girona</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='617.07' y='358.63' style='font-size: 12.80px; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>Gipuzkoa</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='624.66' y='374.15' style='font-size: 12.80px; font-family: Arial;' textLength='39.75px' lengthAdjust='spacingAndGlyphs'>Toledo</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='621.05' y='389.68' style='font-size: 12.80px; font-family: Arial;' textLength='46.98px' lengthAdjust='spacingAndGlyphs'>Badajoz</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='622.14' y='405.20' style='font-size: 12.80px; font-family: Arial;' textLength='44.79px' lengthAdjust='spacingAndGlyphs'>Almería</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='630.44' y='420.72' style='font-size: 12.80px; font-family: Arial;' textLength='28.19px' lengthAdjust='spacingAndGlyphs'>Jaén</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='621.42' y='436.24' style='font-size: 12.80px; font-family: Arial;' textLength='46.24px' lengthAdjust='spacingAndGlyphs'>Navarra</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='617.44' y='451.77' style='font-size: 12.80px; font-family: Arial;' textLength='54.20px' lengthAdjust='spacingAndGlyphs'>Castellón</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='616.35' y='467.29' style='font-size: 12.80px; font-family: Arial;' textLength='56.37px' lengthAdjust='spacingAndGlyphs'>Cantabria</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='616.35' y='482.81' style='font-size: 12.80px; font-family: Arial;' textLength='56.37px' lengthAdjust='spacingAndGlyphs'>Valladolid</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='608.76' y='498.34' style='font-size: 12.80px; font-family: Arial;' textLength='71.54px' lengthAdjust='spacingAndGlyphs'>Ciudad Real</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='624.30' y='513.86' style='font-size: 12.80px; font-family: Arial;' textLength='40.47px' lengthAdjust='spacingAndGlyphs'>Huelva</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='630.07' y='529.38' style='font-size: 12.80px; font-family: Arial;' textLength='28.92px' lengthAdjust='spacingAndGlyphs'>León</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='627.19' y='544.91' style='font-size: 12.80px; font-family: Arial;' textLength='34.70px' lengthAdjust='spacingAndGlyphs'>Lleida</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='620.33' y='560.43' style='font-size: 12.80px; font-family: Arial;' textLength='48.41px' lengthAdjust='spacingAndGlyphs'>Cáceres</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.24' y='575.95' style='font-size: 12.80px; font-family: Arial;' textLength='50.59px' lengthAdjust='spacingAndGlyphs'>Albacete</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='623.94' y='591.48' style='font-size: 12.80px; font-family: Arial;' textLength='41.19px' lengthAdjust='spacingAndGlyphs'>Burgos</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='612.02' y='607.00' style='font-size: 12.80px; font-family: Arial;' textLength='65.04px' lengthAdjust='spacingAndGlyphs'>Salamanca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='630.07' y='622.52' style='font-size: 12.80px; font-family: Arial;' textLength='28.92px' lengthAdjust='spacingAndGlyphs'>Lugo</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.60' y='638.05' style='font-size: 12.80px; font-family: Arial;' textLength='49.86px' lengthAdjust='spacingAndGlyphs'>Ourense</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='620.69' y='653.57' style='font-size: 12.80px; font-family: Arial;' textLength='47.70px' lengthAdjust='spacingAndGlyphs'>La Rioja</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='628.28' y='669.09' style='font-size: 12.80px; font-family: Arial;' textLength='32.52px' lengthAdjust='spacingAndGlyphs'>Álava</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='609.12' y='684.61' style='font-size: 12.80px; font-family: Arial;' textLength='70.83px' lengthAdjust='spacingAndGlyphs'>Guadalajara</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='622.50' y='700.14' style='font-size: 12.80px; font-family: Arial;' textLength='44.08px' lengthAdjust='spacingAndGlyphs'>Huesca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='622.13' y='715.66' style='font-size: 12.80px; font-family: Arial;' textLength='44.81px' lengthAdjust='spacingAndGlyphs'>Cuenca</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='622.14' y='731.18' style='font-size: 12.80px; font-family: Arial;' textLength='44.79px' lengthAdjust='spacingAndGlyphs'>Zamora</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='630.45' y='746.71' style='font-size: 12.80px; font-family: Arial;' textLength='28.18px' lengthAdjust='spacingAndGlyphs'>Ávila</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='619.60' y='762.23' style='font-size: 12.80px; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>Palencia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='621.05' y='777.75' style='font-size: 12.80px; font-family: Arial;' textLength='46.98px' lengthAdjust='spacingAndGlyphs'>Segovia</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='626.11' y='793.28' style='font-size: 12.80px; font-family: Arial;' textLength='36.85px' lengthAdjust='spacingAndGlyphs'>Teruel</text></g>
+<g clip-path='url(#cpOC4yMnw2NzQuODR8ODQyLjE3fDUuNDg=)'><text x='629.36' y='808.80' style='font-size: 12.80px; font-family: Arial;' textLength='30.35px' lengthAdjust='spacingAndGlyphs'>Soria</text></g>
+<defs>
+  <clipPath id='cpMC4wMHw2ODAuMzF8ODUwLjM5fDAuMDA='>
+    <rect x='0.00' y='0.00' width='680.31' height='850.39' />
+  </clipPath>
+</defs>
+</svg>

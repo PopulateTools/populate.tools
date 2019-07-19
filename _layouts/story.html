@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% assign author = site.data.team[page.author] %}
+
+{% include header.html %}
+
+<header class="story" id="story-start">
+
+  <div class="container">
+
+    <div class="visual_feature"></div>
+
+    <h1>La Población en España: Pasado y futuro</h1>
+    <h2>Cómo ha cambiado la población española desde 1874, y cómo evolucionará hasta 2074</h2>
+
+    <p class="author">Una exploración de datos por Fernando Blat y Álvaro Ortiz</p>
+
+  </div>
+
+</header>
+
+<div class="container post-page story-container">
+
+  <article>
+
+    {% if page.main_photo_big %}
+    <header>
+      {% if page.main_photo_big contains '://' %}
+        <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% asset '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    {% if page.main_photo %}
+    <header>
+      {% if page.main_photo contains '://' %}
+        <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
+      {% else %}
+        {% asset '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+      {% endif %}
+    </header>
+    {% endif %}
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+
+  </article>
+
+</div>
