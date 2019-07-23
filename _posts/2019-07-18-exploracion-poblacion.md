@@ -672,6 +672,7 @@ $(function () { // wait for document ready
   <ul>
     <li><a href="http://www.ine.es/intercensal/intercensal.do?search=1&cmbTipoBusq=0&textoMunicipio=Ponferrada&btnBuscarDenom=Consultar+selecci%F3n">INE</a> / <a href="https://populate.tools/data">Populate Data</a></li>
     <li><a href="https://espacioinvestiga.org/g-table-16/">FRP / Leantro Prados de la Escosura / Contabilidad Histórica Nacional</a></li>
+    <li><a href="https://github.com/PopulateTools/spanish-census-exploration">Código fuente análisis en R</a></li>
   </ul>
 
 
