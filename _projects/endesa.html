@@ -5,23 +5,225 @@ img: projects/screens/BCN-Decidim-0.jpg
 ---
 
 <style>
-.hero {
-  height: 427px;
-  background-image: linear-gradient(180deg, #0656F9 45%, #033CAE 100%);
-}
+  .hero {
+    height: 427px;
+    background-image: linear-gradient(180deg, #0656f9 45%, #033cae 100%);
+  }
+
+  .bg {
+    background-color: #fafafa;
+  }
+
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+  }
 </style>
 
-<div class="w-100 hero">
+<div class="w-100 mt5 mb7 hero">
   <div class="container h-100 flex items-center justify-between">
-    <div><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
-    <div>
-      <strong class="db">Exploración y visualización de datosy storytelling para Endesa</strong>
-      <span class="db">Cómo convertir datos complejos en historias</span>
+    <div class="w-20"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
+    <div class="w-50 f3">
+      <strong class="db mb2"
+        >Exploración y visualización de datos<br />
+        y storytelling para Endesa</strong
+      >
+      <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
-    <div class="w-40">
-        <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
+    <div class="mr5 nl5">
+      <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
     </div>
   </div>
 </div>
 
-<div class="container"></div>
+<div class="container cf">
+  {% include sidebar_project_endesa.html %}
+  <div class="main fl w-100 w-70-ns">
+    <section class="mb6">
+      <div class="cf w-100 mb6">
+        <h3 class="fl w-100 w-third-ns">Proyecto</h3>
+        <div class="fl w-100 w-two-thirds-ns">
+          <p>
+            Tu energía cuenta es un site que explica cómo somos los hogares españoles de acuerdo a nuestro consumo de energía a través de
+            análisis de datos, visualizaciones interactivas y reportajes periodísticos.
+          </p>
+          <p>
+            Hemos analizado los datos de consumo eléctrico de millones de hogares españoles para definir una serie de tipos de hogares en
+            base a su consumo eléctrico, su composición, y sus actividades.
+          </p>
+          <p>
+            Hemos puesto en contexto los datos de consumo de Endesa con diversas fuentes externas para darles contexto y entender mejor cómo
+            somos los hogares españoles.
+          </p>
+        </div>
+      </div>
+      <div class="cf w-100">
+        <h3 class="fl w-100 w-third-ns">Claves</h3>
+        <div class="fl w-100 w-two-thirds-ns">
+          <div class="flex mb5">
+            <div class="w-50 pr5">
+              <img class="db mb4 h3" src="{% asset 'project_full/claves-1' @path %}" alt="Exploración y análisis de datos" />
+              <strong class="db mb2">Exploración y análisis de datos</strong>
+              <p>
+                Análisis de millones de registros de consumo eléctrico horario y búsqueda de fuentes de datos públicas y abiertas para
+                contextualizar y enriquecer los datos.
+              </p>
+            </div>
+            <div class="w-50">
+              <img class="db mb4 h3" src="{% asset 'project_full/claves-2' @path %}" alt="Visualizaciones" />
+              <strong class="db mb2">Visualizaciones</strong>
+              <p>
+                Transformamos los datos complejos en visualizaciones que permiten comprender de forma intuitiva distintas facetas de los
+                mismos.
+              </p>
+            </div>
+          </div>
+          <div class="flex mb5">
+            <div class="w-50 pr5">
+              <img class="db mb4 h3" src="{% asset 'project_full/claves-3' @path %}" alt="Storytelling" />
+              <strong class="db mb2">Storytelling</strong>
+              <p>Creamos historias a partir de los datos para conectar con los lectores.</p>
+            </div>
+            <div class="w-50">
+              <img class="db mb4 h3" src="{% asset 'project_full/claves-4' @path %}" alt="Storytelling" />
+              <strong class="db mb2">Mobile-first</strong>
+              <p>Visualizaciones e historias pensadas para que funcionen en móvil de forma nativa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="w-100 cf bg mb6">
+  <h3 class="center mv5">Iteraciones</h3>
+  <div class="flex justify-center">
+    <img src="{% asset 'project_full/iterations_01' @path %}" />
+    <img src="{% asset 'project_full/iterations_02' @path %}" />
+    <img src="{% asset 'project_full/iterations_03' @path %}" />
+    <img src="{% asset 'project_full/iterations_04' @path %}" />
+    <img src="{% asset 'project_full/iterations_05' @path %}" />
+  </div>
+</div>
+
+<div class="container cf">
+  {% include sidebar_project_endesa.html %}
+  <div class="main fl w-100 w-70-ns">
+    <section class="flex items-center mb6">
+      <div class="w-50">
+        <h3>Storytelling</h3>
+        <p>
+          ¿Cómo contar una historia compleja (qué dice el consumo eléctrico de los hogares españoles) en la que el lector a priori puede que
+          no tenga demasiado interés?
+        </p>
+        <p>
+          Propusimos utilizar un formato moderno que permite ser profuso en visualizaciones y elementos visuales al tiempo que se mantiene
+          el patrón de interacción básico (el scroll). Con el scrollytelling combinamos textos y enfoque periodístico con visualizaciones
+          que se transforman y actualizan para acompañar la historia y reforzar los elementos comunicativos.
+        </p>
+      </div>
+      <div class="w-50">
+        <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" />
+      </div>
+    </section>
+
+    <section class="mb6">
+      <img src="{% asset 'project_full/laptop_screenshot_1' @path %}" />
+    </section>
+
+    <section class="mb6">
+      <h3>Visualizando cómo se consume la energía</h3>
+      <p>
+        Para complementar el scrollytelling hemos diseñado e implementado una serie de <strong>visualizaciones interactivas</strong> que
+        exploran y profundizan en distintas dimensiones de los datos.
+      </p>
+      <p>
+        ¿Qué hace cada hogar en cada momento? Analizando datos de consumo eléctrico horario y de la Encuesta de Empleo del Tiempo del INE,
+        <strong>visualizamos qué está haciendo cada hogar en cada momento</strong>. Puedes ver de un vistazo cómo cambian las actividades en
+        el mismo momento de un tipo de hogar a otro.
+      </p>
+    </section>
+
+    <section class="center mb6">
+      <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
+    </section>
+
+    <section class="mb6">
+      <p>
+        <strong>¿Qué ocurre en las grandes ciudades cuando llega el verano?</strong> Analizamos las series temporales de datos para ver cómo
+        afecta la llegada del verano en distintas localidades. ¿Se vacían las grandes ciudades? ¿El consumo en las zonas vacaciones aumenta
+        considerablemente? La respuesta, de un vistazo.
+      </p>
+    </section>
+
+    <section class="center mb6">
+      <img src="{% asset 'project_full/laptop_screenshot_2' @path %}" />
+    </section>
+
+    <section class="mb6">
+      <h3>Análisis de datos, ¿cómo lo hemos hecho?</h3>
+      <p>
+        Los datos esenciales han sido las curvas de consumo en Watios hora de millones de clientes de Endesa a lo largo de distintos
+        periodos.
+      </p>
+      <p>
+        Estas curvas han sido procesadas mediante técnicas de análisis de series temporales, lo que ha permitido eliminar el ruido y
+        determinar la curva modelo de cada hogar. Sobre estas curvas ha realizado un proceso iterativo de entrenamiento y análisis de
+        clusters hasta determinar unos conjuntos de hogares representativos, utilizando una función de entrenamiento que minimizaba la
+        distancia de las curvas a todos los clusters.
+      </p>
+      <p>
+        Estos clústers han permitido crear un modelo matemático de clasificación que ha sido empleado a lo largo del proyecto para
+        clasificar subconjuntos de curvas, por ejemplo, curvas de cada una de las provincias españolas.
+      </p>
+      <p>
+        Estos modelos también se han aplicado en la Encuesta de Empleo del Tiempo del INE. Para cada una de las actividades principales y
+        secundarias y según si sucedían dentro o fuera de casa se han creado unas curvas “virtuales” de consumo eléctrico. Al aplicar dicho
+        modelo se han extraído los hogares y las personas de cada una de las tipologías definidas por el cluster. Esto ha permitido extraer
+        conclusiones de las actividades y los hábitos por tipología de hogar.
+      </p>
+
+      <img class="w-100" src="{% asset 'project_full/source_code' @path %}" />
+    </section>
+
+    <section class="mb6">
+      <div class="cf">
+        <h3 class="fl w-20">Resultado</h3>
+        <div class="fl w-80">
+          De una base de datos con cientos
+          <strong
+            >de millones de registros de clientes repartidos por toda España a visualizaciones que te permiten entender los datos</strong
+          >
+          de un vistazo y una historia para guiarte en su exploración, contextualizando con fuentes de datos externas para explicar otras
+          facetas de los datos.
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="w-100 mb6">
+  <img src="{% asset 'project_full/mockup_project' @path %}" />
+</div>
+
+<div class="container cf">
+  {% include sidebar_project_endesa.html %}
+  <div class="main fl w-100 w-70-ns">
+    <section class="mb6">
+      <h3>Iconos e ilustraciones</h3>
+      <div>fotos</div>
+
+      <div class="cf">
+        <h3>Skills</h3>
+        <div>
+          <p>Análisis de datos</p>
+          <p>Visualización</p>
+          <p>Front-end</p>
+          <p>Diseño visual</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
