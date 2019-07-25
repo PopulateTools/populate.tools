@@ -14,28 +14,55 @@ img: projects/screens/BCN-Decidim-0.jpg
     position: -webkit-sticky;
     position: sticky;
     top: 1rem;
+    height: 50%;
+  }
+
+  .full-width {
+    width: 100vw;
+    width: calc(100vw - 7px);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 </style>
 
-<div class="w-100 mt5 mb5 mb7-ns hero">
-  <div class="container h-100 flex items-center justify-between">
-    <div class="w-20"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
-    <div class="w-50 f3">
+<div class="w-100 mt5 mb7 hero">
+  <div class="container h-100 flex flex-wrap flex-nowrap-ns items-center justify-between">
+    <div class="w-100 w-20-ns mt5 mb4 mt0-ns mb0-ns"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
+    <div class="w-100 w-50-ns f3">
       <strong class="db mb2"
         >Exploración y visualización de datos<br />
         y storytelling para Endesa</strong
       >
       <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
-    <div class="nl5 mt5 mr4">
+    <div class="w-auto-ns mt5-ns mr4-ns nl5 nr4">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
     </div>
   </div>
 </div>
 
+<div class="dn-ns">
+  <div class="mb7 cf"></div>
+  <div class="mb6 cf"></div>
+</div>
+
 <div class="container cf">
-  {% include sidebar_project_endesa.html %}
-  <div class="main fl w-100 w-70-ns">
+  <div class="sidebar fl dn db-ns w-20-ns">
+    <ul class="list f7 pl0 pr3">
+      <li class="mb3 pointer"><a class="link" href="#proyecto">El proyecto</a></li>
+      <li class="mb3 pointer"><a class="link" href="#claves">Claves</a></li>
+      <li class="mb3 pointer"><a class="link" href="#storytelling">Storytelling</a></li>
+      <li class="mb3 pointer"><a class="link" href="#consumo-energia">Visualizando cómo se consume energía</a></li>
+      <li class="mb3 pointer"><a class="link" href="#reto">Te retamos</a></li>
+      <li class="mb3 pointer"><a class="link" href="#analisis">Análisis de datos</a></li>
+      <li class="mb3 pointer"><a class="link" href="#resultado">El resultado</a></li>
+    </ul>
+  </div>
+
+  <div class="main fl w-100 w-60-ns">
     <section class="mb5 mb6-ns">
       <div id="proyecto" class="cf w-100 mb5 mb6-ns">
         <h3 class="fl w-100 w-third-ns mb4">Proyecto</h3>
@@ -90,23 +117,18 @@ img: projects/screens/BCN-Decidim-0.jpg
         </div>
       </div>
     </section>
-  </div>
-</div>
 
-<div class="w-100 cf mb5 mb6-ns overflow-hidden" style="background-color: #fafafa">
-  <h3 class="center mv4 mv5-ns">Iteraciones</h3>
-  <div class="flex justify-center" style="margin-bottom: -20px">
-    <img src="{% asset 'project_full/iterations_01' @path %}" />
-    <img src="{% asset 'project_full/iterations_02' @path %}" />
-    <img src="{% asset 'project_full/iterations_03' @path %}" />
-    <img src="{% asset 'project_full/iterations_04' @path %}" />
-    <img src="{% asset 'project_full/iterations_05' @path %}" />
-  </div>
-</div>
+    <div class="full-width cf mb5 mb6-ns overflow-hidden" style="background-color: #fafafa">
+      <h3 class="center mv4 mv5-ns">Iteraciones</h3>
+      <div class="flex justify-center" style="margin-bottom: -20px">
+        <img src="{% asset 'project_full/iterations_01' @path %}" />
+        <img src="{% asset 'project_full/iterations_02' @path %}" />
+        <img src="{% asset 'project_full/iterations_03' @path %}" />
+        <img src="{% asset 'project_full/iterations_04' @path %}" />
+        <img src="{% asset 'project_full/iterations_05' @path %}" />
+      </div>
+    </div>
 
-<div class="container cf">
-  {% include sidebar_project_endesa.html %}
-  <div class="main fl w-100 w-70-ns">
     <section class="flex flex-wrap-reverse justify-center items-center mb5 mb6-ns">
       <div id="storytelling" class="w-100 w-50-ns">
         <h3 class="mb4">Storytelling</h3>
@@ -197,16 +219,11 @@ img: projects/screens/BCN-Decidim-0.jpg
         </div>
       </div>
     </section>
-  </div>
-</div>
 
-<div class="w-100 mb5 mb6-ns">
-  <img src="{% asset 'project_full/mockup_project' @path %}" />
-</div>
+    <div class="full-width mb5 mb6-ns">
+      <img src="{% asset 'project_full/mockup_project' @path %}" />
+    </div>
 
-<div class="container cf">
-  {% include sidebar_project_endesa.html %}
-  <div class="main fl w-100 w-70-ns">
     <section class="mb5 mb6-ns">
       <h3 class="mb4">Iconos e ilustraciones</h3>
       <div class="flex flex-wrap justify-between items-end mb5">
