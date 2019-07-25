@@ -10,10 +10,6 @@ img: projects/screens/BCN-Decidim-0.jpg
     background-image: linear-gradient(180deg, #0656f9 45%, #033cae 100%);
   }
 
-  .bg {
-    background-color: #fafafa;
-  }
-
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
@@ -21,7 +17,7 @@ img: projects/screens/BCN-Decidim-0.jpg
   }
 </style>
 
-<div class="w-100 mt5 mb7 hero">
+<div class="w-100 mt5 mb5 mb7-ns hero">
   <div class="container h-100 flex items-center justify-between">
     <div class="w-20"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
     <div class="w-50 f3">
@@ -31,7 +27,7 @@ img: projects/screens/BCN-Decidim-0.jpg
       >
       <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
-    <div class="mr5 nl5">
+    <div class="nl5 mt5 mr4">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
     </div>
   </div>
@@ -40,9 +36,9 @@ img: projects/screens/BCN-Decidim-0.jpg
 <div class="container cf">
   {% include sidebar_project_endesa.html %}
   <div class="main fl w-100 w-70-ns">
-    <section class="mb6">
-      <div id="proyecto" class="cf w-100 mb6">
-        <h3 class="fl w-100 w-third-ns">Proyecto</h3>
+    <section class="mb5 mb6-ns">
+      <div id="proyecto" class="cf w-100 mb5 mb6-ns">
+        <h3 class="fl w-100 w-third-ns mb4">Proyecto</h3>
         <div class="fl w-100 w-two-thirds-ns">
           <p>
             Tu energía cuenta es un site que explica cómo somos los hogares españoles de acuerdo a nuestro consumo de energía a través de
@@ -59,10 +55,10 @@ img: projects/screens/BCN-Decidim-0.jpg
         </div>
       </div>
       <div id="claves" class="cf w-100">
-        <h3 class="fl w-100 w-third-ns">Claves</h3>
+        <h3 class="fl w-100 w-third-ns mb4">Claves</h3>
         <div class="fl w-100 w-two-thirds-ns">
           <div class="flex mb5">
-            <div class="w-50 pr5">
+            <div class="w-50 pr3 pr5-ns">
               <img class="db mb4 h3" src="{% asset 'project_full/claves-1' @path %}" alt="Exploración y análisis de datos" />
               <strong class="db mb2">Exploración y análisis de datos</strong>
               <p>
@@ -79,8 +75,8 @@ img: projects/screens/BCN-Decidim-0.jpg
               </p>
             </div>
           </div>
-          <div class="flex mb5">
-            <div class="w-50 pr5">
+          <div class="flex">
+            <div class="w-50 pr3 pr5-ns">
               <img class="db mb4 h3" src="{% asset 'project_full/claves-3' @path %}" alt="Storytelling" />
               <strong class="db mb2">Storytelling</strong>
               <p>Creamos historias a partir de los datos para conectar con los lectores.</p>
@@ -97,9 +93,9 @@ img: projects/screens/BCN-Decidim-0.jpg
   </div>
 </div>
 
-<div class="w-100 cf bg mb6">
-  <h3 class="center mv5">Iteraciones</h3>
-  <div class="flex justify-center">
+<div class="w-100 cf mb5 mb6-ns overflow-hidden" style="background-color: #fafafa">
+  <h3 class="center mv4 mv5-ns">Iteraciones</h3>
+  <div class="flex justify-center" style="margin-bottom: -20px">
     <img src="{% asset 'project_full/iterations_01' @path %}" />
     <img src="{% asset 'project_full/iterations_02' @path %}" />
     <img src="{% asset 'project_full/iterations_03' @path %}" />
@@ -111,8 +107,8 @@ img: projects/screens/BCN-Decidim-0.jpg
 <div class="container cf">
   {% include sidebar_project_endesa.html %}
   <div class="main fl w-100 w-70-ns">
-    <section class="flex items-center mb6">
-      <div id="storytelling" class="w-50">
+    <section class="flex flex-wrap-reverse justify-center items-center mb5 mb6-ns">
+      <div id="storytelling" class="w-100 w-50-ns">
         <h3 class="mb4">Storytelling</h3>
         <p>
           ¿Cómo contar una historia compleja (qué dice el consumo eléctrico de los hogares españoles) en la que el lector a priori puede que
@@ -129,11 +125,11 @@ img: projects/screens/BCN-Decidim-0.jpg
       </div>
     </section>
 
-    <section class="mb6">
+    <section class="mb5 mb6-ns">
       <img src="{% asset 'project_full/laptop_screenshot_1' @path %}" />
     </section>
 
-    <section id="consumo-energia" class="mb6">
+    <section id="consumo-energia" class="mb5 mb6-ns">
       <h3 class="mb4">Visualizando cómo se consume la energía</h3>
       <p>
         Para complementar el scrollytelling hemos diseñado e implementado una serie de <strong>visualizaciones interactivas</strong> que
@@ -146,11 +142,11 @@ img: projects/screens/BCN-Decidim-0.jpg
       </p>
     </section>
 
-    <section class="center mb6">
+    <section class="center mb5 mb6-ns">
       <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
     </section>
 
-    <section id="reto" class="mb6">
+    <section id="reto" class="mb5 mb6-ns">
       <p>
         <strong>¿Qué ocurre en las grandes ciudades cuando llega el verano?</strong> Analizamos las series temporales de datos para ver cómo
         afecta la llegada del verano en distintas localidades. ¿Se vacían las grandes ciudades? ¿El consumo en las zonas vacaciones aumenta
@@ -158,11 +154,11 @@ img: projects/screens/BCN-Decidim-0.jpg
       </p>
     </section>
 
-    <section class="center mb6">
+    <section class="center mb5 mb6-ns">
       <img src="{% asset 'project_full/laptop_screenshot_2' @path %}" />
     </section>
 
-    <section id="analisis" class="mb6">
+    <section id="analisis" class="mb5 mb6-ns">
       <h3 class="mb4">Análisis de datos, ¿cómo lo hemos hecho?</h3>
       <p>
         Los datos esenciales han sido las curvas de consumo en Watios hora de millones de clientes de Endesa a lo largo de distintos
@@ -188,7 +184,7 @@ img: projects/screens/BCN-Decidim-0.jpg
       <img class="w-100 mt4" src="{% asset 'project_full/source_code' @path %}" />
     </section>
 
-    <section class="mb6">
+    <section class="mb5 mb6-ns">
       <div id="resultado" class="cf">
         <h3 class="fl w-100 w-30-ns">Resultado</h3>
         <div class="fl w-100 w-70-ns">
@@ -204,25 +200,109 @@ img: projects/screens/BCN-Decidim-0.jpg
   </div>
 </div>
 
-<div class="w-100 mb6">
+<div class="w-100 mb5 mb6-ns">
   <img src="{% asset 'project_full/mockup_project' @path %}" />
 </div>
 
 <div class="container cf">
   {% include sidebar_project_endesa.html %}
   <div class="main fl w-100 w-70-ns">
-    <section class="mb6">
-      <h3>Iconos e ilustraciones</h3>
-      <div>fotos</div>
-
-      <div class="cf">
-        <h3>Skills</h3>
-        <div>
-          <p>Análisis de datos</p>
-          <p>Visualización</p>
-          <p>Front-end</p>
-          <p>Diseño visual</p>
+    <section class="mb5 mb6-ns">
+      <h3 class="mb4">Iconos e ilustraciones</h3>
+      <div class="flex flex-wrap justify-between items-end mb5">
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-0' @path %}" />
         </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-1' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-2' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-3' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-4' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-5' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-6' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-7' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-8' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-9' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-10' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-11' @path %}" />
+        </div>
+        <div class="ma1 pa1">
+          <img src="{% asset 'project_full/icon-12' @path %}" />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between items-end mb5">
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-1' @path %}" />
+        </div>
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-2' @path %}" />
+        </div>
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-3' @path %}" />
+        </div>
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-4' @path %}" />
+        </div>
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-5' @path %}" />
+        </div>
+        <div class="pa1 ma1">
+          <img src="{% asset 'project_full/user-6' @path %}" />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center items-end mb5">
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion1' @path %}" />
+        </div>
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion2' @path %}" />
+        </div>
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion3' @path %}" />
+        </div>
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion4' @path %}" />
+        </div>
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion5' @path %}" />
+        </div>
+        <div class="ma2 pa2">
+          <img src="{% asset 'project_full/ilustracion6' @path %}" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cf">
+        <h3 class="fl w-100 w-30-ns">Skills</h3>
+        <ul class="fl w-100 w-70-ns list pl0">
+          <li class="mb2">Análisis de datos</li>
+          <li class="mb2">Visualización</li>
+          <li class="mb2">Front-end</li>
+          <li class="mb2">Diseño visual</li>
+        </ul>
       </div>
     </section>
   </div>
