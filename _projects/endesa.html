@@ -7,6 +7,11 @@ img: project_full/mockup_project.png
 ---
 
 <style>
+  :root {
+    --sidebar-width: 17.18%;
+    --column-width: 26.08%;
+  }
+
   .hero {
     height: 427px;
     background-image: linear-gradient(180deg, #0656f9 45%, #033cae 100%);
@@ -17,6 +22,8 @@ img: project_full/mockup_project.png
     position: sticky;
     top: 1rem;
     height: 50%;
+    width: 17.18%;
+    width: var(--sidebar-width, 17.18%);
   }
 
   .full-width {
@@ -27,6 +34,23 @@ img: project_full/mockup_project.png
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+  }
+
+  @media screen and (min-width:30em) {
+    .main {
+      width: calc(100% - (17.18% * 2));
+      width: calc(100% - (var(--sidebar-width, 17.18%) * 2));
+    }
+
+    .w-col-a-ns {
+      width: 26.08%;
+      width: var(--column-width, 26.08%);
+    }
+
+    .w-col-b-ns {
+      width: calc(100% - 26.08%);
+      width: calc(100% - var(--column-width, 26.08%));
+    }
   }
 </style>
 
@@ -57,8 +81,8 @@ img: project_full/mockup_project.png
 </div>
 
 <div class="container cf">
-  <div class="sidebar fl dn db-ns w-20-ns">
-    <ul class="list f7 pl0 pr3">
+  <div class="sidebar fl dn db-ns">
+    <ul class="list f7 pl0 pr4">
       <li class="mb3 pointer"><a class="link" href="#proyecto">El proyecto</a></li>
       <li class="mb3 pointer"><a class="link" href="#claves">Claves</a></li>
       <li class="mb3 pointer"><a class="link" href="#storytelling">Storytelling</a></li>
@@ -69,11 +93,11 @@ img: project_full/mockup_project.png
     </ul>
   </div>
 
-  <div class="main fl w-100 w-60-ns">
+  <div class="main fl w-100">
     <section class="mb5 mb6-ns">
       <div id="proyecto" class="cf w-100 mb5 mb6-ns">
-        <h3 class="fl w-100 w-third-ns mb4">Proyecto</h3>
-        <div class="fl w-100 w-two-thirds-ns">
+        <h3 class="fl w-100 w-col-a-ns mb4">Proyecto</h3>
+        <div class="fl w-100 w-col-b-ns">
           <p>
             Tu energía cuenta es un site que explica cómo somos los hogares españoles de acuerdo a nuestro consumo de energía a través de
             análisis de datos, visualizaciones interactivas y reportajes periodísticos.
@@ -89,8 +113,8 @@ img: project_full/mockup_project.png
         </div>
       </div>
       <div id="claves" class="cf w-100">
-        <h3 class="fl w-100 w-third-ns mb4">Claves</h3>
-        <div class="fl w-100 w-two-thirds-ns">
+        <h3 class="fl w-100 w-col-a-ns mb4">Claves</h3>
+        <div class="fl w-100 w-col-b-ns">
           <div class="flex mb5">
             <div class="w-50 pr3 pr5-ns">
               <img class="db mb4 h3" src="{% asset 'project_full/claves-1' @path %}" alt="Exploración y análisis de datos" />
@@ -159,8 +183,11 @@ img: project_full/mockup_project.png
       </div>
     </section>
 
-    <section class="mb5 mb6-ns">
+    <section class="mb5 mb6-ns relative">
       <img src="{% asset 'project_full/laptop_screenshot_1' @path %}" />
+      <div class="absolute" style="top: 7.328%; left: 16.127%; width: 68.056%; height: 80.029%;">
+        <video class="w-100 h-100" src="{% asset 'project_full/video/portatil_scrollytelling.mp4' @path %}" controls></video>
+      </div>
     </section>
 
     <section id="consumo-energia" class="mb5 mb6-ns">
@@ -176,8 +203,13 @@ img: project_full/mockup_project.png
       </p>
     </section>
 
-    <section class="center mb5 mb6-ns">
+    <section class="center mb5 mb6-ns relative">
       <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
+      <div class="absolute" style="top: 9.182%; left: 35.4%; width: 32.78%; height: 100%;">
+        <div class="absolute overflow-y-hidden" style="height: 77.6%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
+          <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" controls></video>
+        </div>
+      </div>
     </section>
 
     <section id="reto" class="mb5 mb6-ns">
@@ -220,8 +252,8 @@ img: project_full/mockup_project.png
 
     <section class="mb5 mb6-ns">
       <div id="resultado" class="cf">
-        <h3 class="fl w-100 w-30-ns">Resultado</h3>
-        <div class="fl w-100 w-70-ns">
+        <h3 class="fl w-100 w-col-a-ns">Resultado</h3>
+        <div class="fl w-100 w-col-b-ns">
           De una base de datos con cientos
           <strong
             >de millones de registros de clientes repartidos por toda España a visualizaciones que te permiten entender los datos</strong
@@ -325,8 +357,8 @@ img: project_full/mockup_project.png
 
     <section>
       <div class="cf">
-        <h3 class="fl w-100 w-30-ns">Skills</h3>
-        <ul class="fl w-100 w-70-ns list pl0">
+        <h3 class="fl w-100 w-col-a-ns">Skills</h3>
+        <ul class="fl w-100 w-col-b-ns list pl0">
           <li class="mb2">Análisis de datos</li>
           <li class="mb2">Visualización</li>
           <li class="mb2">Front-end</li>
