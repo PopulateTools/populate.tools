@@ -8,13 +8,14 @@ img: project_full/mockup_project.png
 
 <style>
   :root {
+    --sidebar-top: 5rem;
     --sidebar-width: 17.18%;
     --column-width: 26.08%;
   }
 
   .project_full {
     color: #4a4a4a;
-    line-height: 21px;
+    line-height: 1.15;
   }
 
   .hero {
@@ -25,10 +26,11 @@ img: project_full/mockup_project.png
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 1rem;
+    top: 5rem;
+    top: var(--sidebar-top);
     height: 50%;
     width: 17.18%;
-    width: var(--sidebar-width, 17.18%);
+    width: var(--sidebar-width);
   }
 
   .full-width {
@@ -41,20 +43,27 @@ img: project_full/mockup_project.png
     margin-right: -50vw;
   }
 
+  .anchor {
+    height: 5rem;
+    height: var(--sidebar-top);
+    margin-top: -5rem;
+    margin-top: calc(-1 * var(--sidebar-top));
+  }
+
   @media screen and (min-width:30em) {
     .main {
       width: calc(100% - (17.18% * 2));
-      width: calc(100% - (var(--sidebar-width, 17.18%) * 2));
+      width: calc(100% - (var(--sidebar-width) * 2));
     }
 
     .w-col-a-ns {
       width: 26.08%;
-      width: var(--column-width, 26.08%);
+      width: var(--column-width);
     }
 
     .w-col-b-ns {
       width: calc(100% - 26.08%);
-      width: calc(100% - var(--column-width, 26.08%));
+      width: calc(100% - var(--column-width));
     }
   }
 </style>
@@ -100,7 +109,8 @@ img: project_full/mockup_project.png
 
   <div class="main fl w-100">
     <section class="mb5 mb6-ns">
-      <div id="proyecto" class="cf w-100 mb5 mb6-ns">
+      <div id="proyecto" class="anchor"></div>
+      <div class="cf w-100 mb5 mb6-ns">
         <h3 class="fl w-100 w-col-a-ns mb4">Proyecto</h3>
         <div class="fl w-100 w-col-b-ns">
           <p>
@@ -117,7 +127,8 @@ img: project_full/mockup_project.png
           </p>
         </div>
       </div>
-      <div id="claves" class="cf w-100">
+      <div id="claves" class="anchor"></div>
+      <div class="cf w-100">
         <h3 class="fl w-100 w-col-a-ns mb4">Claves</h3>
         <div class="fl w-100 w-col-b-ns">
           <div class="flex mb5">
@@ -165,8 +176,9 @@ img: project_full/mockup_project.png
       </div>
     </div>
 
+    <div id="storytelling" class="anchor"></div>
     <section class="flex flex-wrap-reverse justify-center items-center mb5 mb6-ns">
-      <div id="storytelling" class="w-100 w-50-ns">
+      <div class="w-100 w-50-ns">
         <h3 class="mb4">Storytelling</h3>
         <p>
           ¿Cómo contar una historia compleja (qué dice el consumo eléctrico de los hogares españoles) en la que el lector a priori puede que
@@ -195,7 +207,8 @@ img: project_full/mockup_project.png
       </div>
     </section>
 
-    <section id="consumo-energia" class="mb5 mb6-ns">
+    <div id="consumo-energia" class="anchor"></div>
+    <section class="mb5 mb6-ns">
       <h3 class="mb4">Visualizando cómo se consume la energía</h3>
       <p>
         Para complementar el scrollytelling hemos diseñado e implementado una serie de <strong>visualizaciones interactivas</strong> que
@@ -217,7 +230,8 @@ img: project_full/mockup_project.png
       </div>
     </section>
 
-    <section id="reto" class="mb5 mb6-ns">
+    <div id="reto" class="anchor"></div>
+    <section  class="mb5 mb6-ns">
       <p>
         <strong>¿Qué ocurre en las grandes ciudades cuando llega el verano?</strong> Analizamos las series temporales de datos para ver cómo
         afecta la llegada del verano en distintas localidades. ¿Se vacían las grandes ciudades? ¿El consumo en las zonas vacaciones aumenta
@@ -229,7 +243,8 @@ img: project_full/mockup_project.png
       <img src="{% asset 'project_full/laptop_screenshot_2' @path %}" />
     </section>
 
-    <section id="analisis" class="mb5 mb6-ns">
+    <div id="analisis" class="anchor"></div>
+    <section  class="mb5 mb6-ns">
       <h3 class="mb4">Análisis de datos, ¿cómo lo hemos hecho?</h3>
       <p>
         Los datos esenciales han sido las curvas de consumo en Watios hora de millones de clientes de Endesa a lo largo de distintos
@@ -256,7 +271,8 @@ img: project_full/mockup_project.png
     </section>
 
     <section class="mb5 mb6-ns">
-      <div id="resultado" class="cf">
+      <div id="resultado" class="anchor"></div>
+      <div class="cf">
         <h3 class="fl w-100 w-col-a-ns">Resultado</h3>
         <div class="fl w-100 w-col-b-ns">
           De una base de datos con cientos
