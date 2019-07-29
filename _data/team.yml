@@ -15,3 +15,9 @@ amiedes:
   img: team/amiedes.jpg
   role: Developer
   handle: amiedes94
+
+pedro:
+  name: Pedro Álvarez
+  img: team/roxu.png
+  role: Project Manager
+  handle: RXnetwalker
