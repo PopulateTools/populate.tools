@@ -1,81 +1,19 @@
 ---
-layout: project_full
+layout: project_v2
 title: Endesa
 name: Tu energía cuenta
-client: Endesa españoles
+client: Endesa
 img: project_full/mockup_project.png
+weight: 1
 ---
-
-<style>
-  :root {
-    --sidebar-top: 5rem;
-    --sidebar-width: 17.18%;
-    --column-width: 26.08%;
-  }
-
-  .project_full {
-    color: #4a4a4a;
-    line-height: 1.31;
-  }
-
-  .hero {
-    height: 427px;
-    background-image: linear-gradient(180deg, #0656f9 45%, #033cae 100%);
-  }
-
-  .sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5rem;
-    top: var(--sidebar-top);
-    height: 50%;
-    width: 17.18%;
-    width: var(--sidebar-width);
-  }
-
-  .full-width {
-    width: 100vw;
-    width: calc(100vw - 7px);
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-
-  .anchor {
-    height: 5rem;
-    height: var(--sidebar-top);
-    margin-top: -5rem;
-    margin-top: calc(-1 * var(--sidebar-top));
-  }
-
-  @media screen and (min-width:30em) {
-    .main {
-      width: calc(100% - (17.18% * 2));
-      width: calc(100% - (var(--sidebar-width) * 2));
-    }
-
-    .w-col-a-ns {
-      width: 26.08%;
-      width: var(--column-width);
-    }
-
-    .w-col-b-ns {
-      width: calc(100% - 26.08%);
-      width: calc(100% - var(--column-width));
-    }
-  }
-</style>
 
 <div class="w-100 mt5 mb7 hero">
   <div class="container h-100 flex flex-wrap flex-nowrap-ns items-center justify-between">
     <div class="w-100 w-20-ns mt5 mb4 mt0-ns mb0-ns"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
     <div class="w-100 w-40-ns f3">
-      <strong class="db mb2"
-        >Exploración y visualización de datos<br />
-        y storytelling para Endesa</strong
-      >
+      <strong class="db mb2">
+        Exploración y visualización de datos<br />
+        y storytelling para Endesa</strong>
       <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
     <div class="w-34-ns mt5-ns mr4-ns nl5 nr4 relative">
@@ -96,12 +34,11 @@ img: project_full/mockup_project.png
 
 <div class="container cf">
   <div class="sidebar fl dn db-ns">
-    <ul class="list f7 pl0 pr4">
+    <ul class="list f7 pl0 pr5">
       <li class="mb3 pointer"><a class="link" href="#proyecto">El proyecto</a></li>
       <li class="mb3 pointer"><a class="link" href="#claves">Claves</a></li>
       <li class="mb3 pointer"><a class="link" href="#storytelling">Storytelling</a></li>
-      <li class="mb3 pointer"><a class="link" href="#consumo-energia">Visualizando cómo se consume energía</a></li>
-      <li class="mb3 pointer"><a class="link" href="#reto">Te retamos</a></li>
+      <li class="mb3 pointer"><a class="link" href="#consumo-energia">Visualización</a></li>
       <li class="mb3 pointer"><a class="link" href="#analisis">Análisis de datos</a></li>
       <li class="mb3 pointer"><a class="link" href="#resultado">El resultado</a></li>
     </ul>
@@ -123,7 +60,7 @@ img: project_full/mockup_project.png
           </p>
           <p>
             Hemos puesto en contexto los datos de consumo de Endesa con diversas fuentes externas para darles contexto y entender mejor cómo
-            somos los hogares españoles.
+            somos los hogares españoles. En colaboración con <a href="https://www.webedia.es" target="_blank">Webedia</a>. Visita el proyecto en <a href="https://tuenergiacuenta.es">tuenergiacuenta.es</a>.
           </p>
         </div>
       </div>
@@ -165,7 +102,7 @@ img: project_full/mockup_project.png
       </div>
     </section>
 
-    <div class="full-width cf mb5 mb6-ns overflow-hidden" style="background-color: #fafafa">
+    <div class="full-width cf mb5 mb6-ns overflow-hidden image-gallery" style="background-color: #fafafa">
       <h3 class="center mv4 mv5-ns">Iteraciones</h3>
       <div class="flex justify-center" style="margin-bottom: -20px">
         <img src="{% asset 'project_full/iterations_01' @path %}" />
