@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Datos del censo en Populate Data"
+title: "Nuevos datos en Populate Data: censo municipal desde 1877"
 date: 2019-07-29 8:00:00 +0100
 author: pedro
 lang: es
@@ -8,7 +8,9 @@ product: populate_data
 category: technology
 ---
 
-Hace unos días publicamos una [exploración de datos sobre la evolución de la población española desde 1870](/blog/exploracion-poblacion). Hemos querido hacer de este estudio de investigación y análisis, y posterior trabajo de diseño y visualización, un ejemplo para dar a conocer Populate Data y mostrar sus potencialidades.
+Hace unos días publicamos una [exploración de datos sobre la evolución de la población española desde 1870](/blog/exploracion-poblacion). Nos hemos basado en un nuevo dataset que hemos incluído en Populate Data: el censo municipal más antiguo que existe. En este post te mostramos como utilizar este dataset usando R. 
+
+Hemos querido hacer de este estudio de investigación y análisis, y posterior trabajo de diseño y visualización, un ejemplo para dar a conocer Populate Data y mostrar sus potencialidades.
 
 Se ha actualizado [Populate Data](/data/#datos) con el conjunto completo utilizado para la exploración. Lo puedes encontrar en _Demografía → Censo_.
 
@@ -24,11 +26,11 @@ Además se ha aprovechado para actualizar los indicadores. Con estos indicadores
 
 Después de estas actualizaciones disponemos en Populate Data del censo historico dispuesto para ser explorado en busca de respuestas.
 
-### Cómo usar Populate Data
+### Utilizar datos de Populate Data con R
 
-Veamos ahora un ejemplo de uso. Una vez hemos comprendido las diferentes dimensiones del conjunto de datos es necesario dedicar tiempo a estudiar su evolución en el tiempo. De esta investigación es de donde sacaremos los casos más singulares para, una vez identificados y seleccionados, poder pararnos en cada uno de ellos con detenimiento.
+Una vez hemos comprendido las diferentes dimensiones del conjunto de datos es necesario dedicar tiempo a estudiar su evolución en el tiempo. De esta investigación es de donde sacaremos los casos más singulares para, una vez identificados y seleccionados, poder pararnos en cada uno de ellos con detenimiento.
 
-Como ejemplo ilustrativo mostramos cómo realizar una extracción de los datos de Populate Data para el primer y último año (1877 y 2011) y comparamos el tamaño de los municipios más grandes en ambas fechas:
+Como ejemplo ilustrativo mostramos cómo realizar una extracción de los datos de Populate Data y generar una visualización con R:
 
 ```r
 # Load dependencies
