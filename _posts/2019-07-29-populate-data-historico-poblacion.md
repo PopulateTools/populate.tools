@@ -8,9 +8,9 @@ product: populate_data
 category: technology
 ---
 
-Hace unos días publicamos una un pequeño estudio sobre cómo había evolucionado la población española desde 1870 (puedes verlo en nuestro blog). Hemos querido hacer de este estudio de investigación y análisis, y posterior trabajo de diseño y visualización, un ejemplo para dar a conocer Populate Data y mostrar sus potencialidades.
+Hace unos días publicamos una [exploración de datos sobre la evolución de la población española desde 1870](/blog/exploracion-poblacion). Hemos querido hacer de este estudio de investigación y análisis, y posterior trabajo de diseño y visualización, un ejemplo para dar a conocer Populate Data y mostrar sus potencialidades.
 
-Se ha actualizado Populate Data con el conjunto completo utilizado para nuestro estudio. Lo puedes encontrar en _Demografía → Censo_.
+Se ha actualizado [Populate Data](/data/#datos) con el conjunto completo utilizado para la exploración. Lo puedes encontrar en _Demografía → Censo_.
 
 {% asset 'posts/190729-datasets.png' %}
 
