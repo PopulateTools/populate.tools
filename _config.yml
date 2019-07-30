@@ -80,5 +80,5 @@ plugins:
 
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css"]
+exclude_from_localization: ["javascript", "images", "css", "assets"]
 parallel_localization: false
