@@ -5,7 +5,7 @@ name: Tu energía cuenta
 client: Endesa
 img: project_full/mockup_project.png
 weight: 1
-lang: en
+lang: es
 permalink: projects/endesa
 ---
 

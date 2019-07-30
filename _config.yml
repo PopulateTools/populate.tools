@@ -7,7 +7,7 @@
 
 # Site settings
 title: Populate
-description: We conceptualize, design and build products for civic engagement
+
 baseurl: "" # the subpath of your site, e.g. /blog
 email: lets@populate.tools
 handle: populate_
@@ -76,7 +76,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-assets
-  #- jekyll-multiple-languages-plugin
+  - jekyll-polyglot
 
-#languages: ["en", "es"]
-#exclude_from_localizations: []
+languages: ["en", "es"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: false

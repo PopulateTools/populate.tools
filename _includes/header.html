@@ -12,13 +12,29 @@
           <img src="{% asset 'logo' @path %}" class="logo-header pure-img" alt="Populate" />
         </a>
         <ul class="header-list">
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#projects">projects</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}blog">stories</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/{% if site.lang == "es" %}es/{% endif %}#about">about</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/#projects">{{ site.data.strings.projects }}</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/blog">{{ site.data.strings.stories }}</a></li>
+          <li class="header-item"><a class="header-link header-section" href="/#about">{{ site.data.strings.about }}</a></li>
 
 
           <li class="sep header-item"><a class="header-link header-section" href="/{{ site.populate_data }}">populate data</a></li>
           <li class="header-item"><a class="header-link header-section" href="/projects/gobierto">gobierto</a></li>
+
+          <li class="sep header-item">
+          {% for tongue in site.languages %}
+            <a class="header-link header-section"
+              {% if tongue == site.active_lang %}
+                style="font-weight: bold;"
+              {% endif %}
+              href="
+                {% if tongue == site.default_lang %}
+                  {{site.baseurl}}{{page.url}}
+                {% else %}
+                  {{site.baseurl}}/{{ tongue }}{{page.url}}
+                {% endif %}">{{ tongue }}</a>
+          {% endfor %}
+          </li>
+
         </ul>
 
       </div>
