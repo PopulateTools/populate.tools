@@ -17,14 +17,14 @@ permalink: projects/endesa
         Exploración y visualización de datos<br />
         y storytelling para Endesa</strong
       >
-      <span class="db fw3">Cómo convertir datos complejos en historias DE MIEDO</span>
+      <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
     <div class="mt5-ns mr4-ns nl5 nr4 relative">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
       <div class="absolute" style="top: 14.65%; left: 21.5%; width: 67.53%; height: 100%;">
         <div
           class="absolute w-100 overflow-y-hidden"
-          style="height: 71.8%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
+          style="height: 71.8%; border-bottom-left-radius: 8.66% 4.21%; border-bottom-right-radius: 8.66% 4.21%;"
         >
           <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
         </div>
@@ -139,7 +139,7 @@ permalink: projects/endesa
         <div class="absolute" style="top: 14.65%; left: 21.5%; width: 67.53%; height: 100%;">
           <div
             class="absolute w-100 overflow-y-hidden"
-            style="height: 71.8%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
+            style="height: 71.8%; border-bottom-left-radius: 8.66% 4.21%; border-bottom-right-radius: 8.66% 4.21%;"
           >
             <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
           </div>
@@ -174,7 +174,7 @@ permalink: projects/endesa
         <div class="absolute" style="top: 9.182%; left: 35.44%; width: 32.72%; height: 100%;">
           <div
             class="absolute w-100 overflow-y-hidden"
-            style="height: 77.74%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
+            style="height: 77.74%; border-bottom-left-radius: 8.66% 4.21%; border-bottom-right-radius: 8.66% 4.21%;"
           >
             <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
           </div>
