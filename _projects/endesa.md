@@ -19,12 +19,12 @@ permalink: projects/endesa
       >
       <span class="db fw3">Cómo convertir datos complejos en historias DE MIEDO</span>
     </div>
-    <div class="w-34-ns mt5-ns mr4-ns nl5 nr4 relative">
+    <div class="mt5-ns mr4-ns nl5 nr4 relative">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
-      <div class="absolute" style="top: 14.5%; left: 21%; width: 65.5%; height: 100%;">
+      <div class="absolute" style="top: 14.65%; left: 21.5%; width: 67.53%; height: 100%;">
         <div
           class="absolute w-100 overflow-y-hidden"
-          style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
+          style="height: 71.8%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
         >
           <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
         </div>
@@ -134,12 +134,12 @@ permalink: projects/endesa
           que se transforman y actualizan para acompañar la historia y reforzar los elementos comunicativos.
         </p>
       </div>
-      <div class="w-50 relative">
+      <div class="relative">
         <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" />
-        <div class="absolute" style="top: 14.615%; left: 21.457%; width: 67.715%; height: 100%;">
+        <div class="absolute" style="top: 14.65%; left: 21.5%; width: 67.53%; height: 100%;">
           <div
-            class="absolute overflow-y-hidden"
-            style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
+            class="absolute w-100 overflow-y-hidden"
+            style="height: 71.8%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
           >
             <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
           </div>
@@ -168,14 +168,16 @@ permalink: projects/endesa
       </p>
     </section>
 
-    <section class="center mb5 mb6-ns relative">
-      <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
-      <div class="absolute" style="top: 9.182%; left: 35.4%; width: 32.78%; height: 100%;">
-        <div
-          class="absolute overflow-y-hidden"
-          style="height: 77.6%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
-        >
-          <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
+    <section class="mb5 mb6-ns flex justify-center">
+      <div class="relative">
+        <img class="db" src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
+        <div class="absolute" style="top: 9.182%; left: 35.44%; width: 32.72%; height: 100%;">
+          <div
+            class="absolute w-100 overflow-y-hidden"
+            style="height: 77.74%; border-bottom-left-radius: 26px; border-bottom-right-radius: 26px;"
+          >
+            <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
+          </div>
         </div>
       </div>
     </section>
