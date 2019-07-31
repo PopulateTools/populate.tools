@@ -17,17 +17,12 @@
 }
 
 .container {
+  --container-padding-x: 1rem;
+
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
-
-  @include min-screen(768) {
-    margin: 0 6rem 3rem;
-  }
-
-  @include min-screen(1600) {
-
-  }
+  padding: 0 var(--container-padding-x);
 }
 
 .embed_full_width {

@@ -15,13 +15,17 @@ permalink: projects/endesa
     <div class="w-100 w-40-ns f3">
       <strong class="db mb2">
         Exploración y visualización de datos<br />
-        y storytelling para Endesa</strong>
-      <span class="db fw3">Cómo convertir datos complejos en historias</span>
+        y storytelling para Endesa</strong
+      >
+      <span class="db fw3">Cómo convertir datos complejos en historias DE MIEDO</span>
     </div>
     <div class="w-34-ns mt5-ns mr4-ns nl5 nr4 relative">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
-      <div class="absolute" style="top: 14.615%; left: 21.457%; width: 67.715%; height: 100%;">
-        <div class="absolute overflow-y-hidden" style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
+      <div class="absolute" style="top: 14.5%; left: 21%; width: 65.5%; height: 100%;">
+        <div
+          class="absolute w-100 overflow-y-hidden"
+          style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
+        >
           <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
         </div>
       </div>
@@ -62,7 +66,8 @@ permalink: projects/endesa
           </p>
           <p>
             Hemos puesto en contexto los datos de consumo de Endesa con diversas fuentes externas para darles contexto y entender mejor cómo
-            somos los hogares españoles. En colaboración con <a href="https://www.webedia.es" target="_blank">Webedia</a>. Visita el proyecto en <a href="https://tuenergiacuenta.es">tuenergiacuenta.es</a>.
+            somos los hogares españoles. En colaboración con <a href="https://www.webedia.es" target="_blank">Webedia</a>. Visita el
+            proyecto en <a href="https://tuenergiacuenta.es">tuenergiacuenta.es</a>.
           </p>
         </div>
       </div>
@@ -132,7 +137,10 @@ permalink: projects/endesa
       <div class="w-50 relative">
         <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" />
         <div class="absolute" style="top: 14.615%; left: 21.457%; width: 67.715%; height: 100%;">
-          <div class="absolute overflow-y-hidden" style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
+          <div
+            class="absolute overflow-y-hidden"
+            style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
+          >
             <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
           </div>
         </div>
@@ -163,14 +171,17 @@ permalink: projects/endesa
     <section class="center mb5 mb6-ns relative">
       <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
       <div class="absolute" style="top: 9.182%; left: 35.4%; width: 32.78%; height: 100%;">
-        <div class="absolute overflow-y-hidden" style="height: 77.6%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
+        <div
+          class="absolute overflow-y-hidden"
+          style="height: 77.6%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;"
+        >
           <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
         </div>
       </div>
     </section>
 
     <div id="reto" class="anchor"></div>
-    <section  class="mb5 mb6-ns">
+    <section class="mb5 mb6-ns">
       <p>
         <strong>¿Qué ocurre en las grandes ciudades cuando llega el verano?</strong> Analizamos las series temporales de datos para ver cómo
         afecta la llegada del verano en distintas localidades. ¿Se vacían las grandes ciudades? ¿El consumo en las zonas vacaciones aumenta
@@ -183,7 +194,7 @@ permalink: projects/endesa
     </section>
 
     <div id="analisis" class="anchor"></div>
-    <section  class="mb5 mb6-ns">
+    <section class="mb5 mb6-ns">
       <h3 class="mb4">Análisis de datos, ¿cómo lo hemos hecho?</h3>
       <p>
         Los datos esenciales han sido las curvas de consumo en Watios hora de millones de clientes de Endesa a lo largo de distintos
@@ -224,8 +235,8 @@ permalink: projects/endesa
       </div>
     </section>
 
-    <div class="full-width mb5 mb6-ns">
-      <img src="{% asset 'project_full/mockup_project' @path %}" />
+    <div class="full-width mb5 mb6-ns flex justify-center" style="background-color: #ebebeb">
+      <img class="db" src="{% asset 'project_full/mockup_project' @path %}" />
     </div>
 
     <section class="mb5 mb6-ns">
