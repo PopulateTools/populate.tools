@@ -20,7 +20,7 @@ permalink: projects/endesa
     </div>
     <div class="w-34-ns mt5-ns mr4-ns nl5 nr4 relative">
       <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
-      <div class="absolute" style="top: 14.615%; left: 21.457%; width: 67.715%; height: 100%;">
+      <div class="absolute" style="top: 14.4%; left: 21%; width: 67.715%; height: 100%;">
         <div class="absolute overflow-y-hidden" style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
           <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
         </div>
@@ -326,5 +326,6 @@ permalink: projects/endesa
         </ul>
       </div>
     </section>
+
   </div>
 </div>
