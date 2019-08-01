@@ -1,33 +1,27 @@
 .section_home {
   .header {
-    min-height: 22rem;
+    min-height: 18rem;
     position: relative;
-    .wrapper {
-      position: initial;
-    }
-    .logo img {
-      position: absolute;
-      bottom: 1rem;
-      @include min-screen(768) {
-        max-width: 18rem;
-        bottom: 3rem;
-      }
-    }
   }
 }
 
 .container {
-  max-width: 1440px;
+  --container-padding-x: 2rem;
+
+  @include screen(768px) {
+    --container-padding-x: 1rem;
+  }
+
   margin: 0 auto;
-  padding: 0 1rem;
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
+  max-width: 1100px;
 
-  @include min-screen(768) {
-    margin: 0 6rem 3rem;
+  @include min-screen(1400px) {
+    max-width: 1200px;
   }
 
-  @include min-screen(1600) {
 
-  }
 }
 
 .embed_full_width {

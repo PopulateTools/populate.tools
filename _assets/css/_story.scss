@@ -1,23 +1,5 @@
 body.story {
 
-  .container {
-    margin: auto;
-    max-width: 1400px;
-  }
-  .embed_full_width {
-    margin-left: initial;
-    margin-right: initial;
-  }
-  .section-text {
-    padding-left: 3em;
-    padding-right: 3em;
-
-    @include screen(768) {
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-  }
-
   header.header {
     padding-bottom: 0;
   }
@@ -103,6 +85,24 @@ body.story {
 
   .story-container {
     padding: 0;
+
+    &.container {
+      margin: auto;
+      max-width: 1400px;
+    }
+    .embed_full_width {
+      margin-left: initial;
+      margin-right: initial;
+    }
+    .section-text {
+      padding-left: 3em;
+      padding-right: 3em;
+
+      @include screen(768) {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
 
     .content {
 
