@@ -1,38 +1,22 @@
 .header {
-  margin-bottom: 4rem;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 1rem 0;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
 
-  @include min-screen(768) {
-    padding: 2rem 4rem 6rem 4rem;
+  @include screen(768) {
+    // padding: 2rem 4rem 6rem 4rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
   }
 
   @include min-screen(1600) {
-    padding: 2rem 0;
+    // padding: 2rem 0;
   }
 }
-.header .wrapper {
-  padding: 0 1rem;
-  position: relative;
 
-  @include min-screen(768) {
-    padding: 0 2rem;
-  }
-
-  @include min-screen(90em) {
-    padding: 0;
-  }
-}
 .logo-header {
   display: none;
   max-width: 8rem;
   padding-right: 4rem;
-}
-.section_home {
-  .logo-header {
-    max-width: 14rem;
-  }
 }
 .header-list {
   display: inline-block;

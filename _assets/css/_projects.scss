@@ -231,10 +231,10 @@ body.project_v2 {
     .full-width {
       width: calc(100vw - 12px);
       position: relative;
-      left: calc(50% - (26.08% / 2) - 1rem);
-      left: calc(50% - var(--sidebar-width) / 2 - var(--container-padding-x));
-      right: calc(50% - (26.08% / 2) - 1rem);
-      right: calc(50% - var(--sidebar-width) / 2 - var(--container-padding-x));
+      // left: calc(50% - (26.08% / 2) - 1rem);
+      left: calc(50% - var(--sidebar-width) / 2 - 1rem);
+      // right: calc(50% - (26.08% / 2) - 1rem);
+      right: calc(50% - var(--sidebar-width) / 2 - 1rem);
       margin-left: -50vw;
       margin-right: -50vw;
     }
