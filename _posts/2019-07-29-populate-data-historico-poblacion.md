@@ -8,7 +8,7 @@ product: populate_data
 category: technology
 ---
 
-Hace unos días publicamos una [exploración de datos sobre la evolución de la población española desde 1870](/blog/exploracion-poblacion). Nos hemos basado en un nuevo dataset que hemos incluído en Populate Data: el censo municipal más antiguo que existe. En este post te mostramos como utilizar este dataset usando R. 
+Hace unos días publicamos una [exploración de datos sobre la evolución de la población española desde 1870](/blog/exploracion-poblacion). Nos hemos basado en un nuevo dataset que hemos incluído en Populate Data: el censo municipal más antiguo que existe. En este post te contamos más sobre este dataset y como explotarlo usando R.
 
 Hemos querido hacer de este estudio de investigación y análisis, y posterior trabajo de diseño y visualización, un ejemplo para dar a conocer Populate Data y mostrar sus potencialidades.
 
@@ -16,21 +16,23 @@ Se ha actualizado [Populate Data](/data/#datos) con el conjunto completo utiliza
 
 {% asset 'posts/190729-datasets.png' %}
 
-Antes de seguir vamos a mirar cómo se construye el censo y así facilitar el desarrollo de nuevos estudios o aplicaciones con él. En primer lugar debemos saber que el censo consta de tres variables:  población de hecho, población de derecho y hogares. El INE define estas variables de la siguiente manera:
+Antes de seguir vamos a mirar cómo se construye el censo y así facilitar el desarrollo de nuevos estudios o aplicaciones con él. En primer lugar debemos saber que estos datos los proporciona el INE dentro de su sección [Cifras de Población y Censos demográficos](https://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254735572981), donde además de los censos más recientes, se incluye una sección llamada _Alteraciones de los municipios en los Censos de Población desde 1842_, que contiene la información del censo que nos ocupa.
+
+Se trata de una recopilación de los diferentes censos registrados en España desde 1842, y que en transcurso de su historia han sufrido algunas modificaciones en cuanto a metodología:
 
 - _Población de hecho_: Número de personas que pernoctaron en el municipio en la fecha de referencia del Censo
 - _Población de derecho_: Número de personas que oficialmente tenían su residencia en el municipio en la fecha de referencia
-- _Hogares_: recoge conceptos parecidos pero no idénticos en cada Censo. Más o menos coincide con el grupo formado por un vecino y los domiciliados que conviven con él.
+- _Hogares_: Conjunto de personas censadas en un mismo hogar. Esta definición ha ido modificándose en los diferentes censos, llamándose vecinos, células de inscripción, número de familias. Es una variable que habría que estudiar cuidadosamente tienendo en cuenta [la metodología del INE](https://www.ine.es/alteraciones/alteraciones_municipios_metodologia.pdf)
 
-Además se ha aprovechado para actualizar los indicadores. Con estos indicadores completamos el catálogo de datos de fenómenos demográficos (natalidad, mortalidad, población) que ofrece Populate Data.
+Con estos datos del censo completamos el catálogo de datos de fenómenos demográficos (natalidad, mortalidad, población) que ofrece Populate Data.
 
-Después de estas actualizaciones disponemos en Populate Data del censo historico dispuesto para ser explorado en busca de respuestas.
-
-### Utilizar datos de Populate Data con R
+### Utilizar datos del censo desde Populate Data con R
 
 Una vez hemos comprendido las diferentes dimensiones del conjunto de datos es necesario dedicar tiempo a estudiar su evolución en el tiempo. De esta investigación es de donde sacaremos los casos más singulares para, una vez identificados y seleccionados, poder pararnos en cada uno de ellos con detenimiento.
 
-Como ejemplo ilustrativo mostramos cómo realizar una extracción de los datos de Populate Data y generar una visualización con R:
+Como ejemplo ilustrativo mostramos cómo realizar una extracción de los datos de Populate Data y generar una visualización con R de los municipios que más han crecido desde 1877 hasta 2011.
+
+Primero cargaremos las dependencias y prepararemos el entorno de trabajo:
 
 ```r
 # Load dependencies
@@ -44,7 +46,11 @@ set.seed(14723)
 
 # Set working directory
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```
 
+Posteriormente nos conectaremos a Populate Data y obtendremos los datos para esos dos años. Nosotros trabajamos con variables de entorno para guardar los credenciales, lo que resulta muy cómodo para compartir ficheros y publicarlos:
+
+```r
 # Populate Data parameters
 dataset <- "ds-censo-municipal-poblacion-derecho"
 account <- Sys.getenv('POPULATE_DATA_ACCOUNT')
@@ -63,7 +69,16 @@ for(year in years){
 
   df <- rbind(df, partial_df)
 }
+```
 
+Finalmente, utilizamos el paquete gráfico `ggplot2` para crear una visualización. Esta pieza de código tendría dos partes:
+
+- en la primera parte (antes de llamar a `ggplot`), agrupamos los datos por municipio, extraemos la población del primer y último grupo, ordenamos y sacamos el top 50
+- en la segunda creamos el gráfico, de tipo `geom_dumbell` con los datos ya preparados
+
+Utilizamos intensivamente el operador pipe `%>%` que proporciona `dplyr`:
+
+```r
 # Plot differences between 1877 and 2011
 df %>% group_by(municipality_name, date) %>% summarize(total = sum(value)) %>%
   mutate(total0 = first(total), total1 = last(total)) %>%
@@ -92,7 +107,7 @@ df %>% group_by(municipality_name, date) %>% summarize(total = sum(value)) %>%
 
 Como se puede observar, una vez obtenidos los datos de Populate Data hay no hay que realizar ninguna limpieza de datos, y ya podemos trabajar en agrupaciones y cálculos. Toda esa limpieza y preprocesamiento son realizadas en la fase previa de ETL antes de la carga de datos en la API.
 
-El código utiliza `ggplot`, una conocida librería de visualización en R para generar un gráfico como este:
+El gráfico resultante tiene este aspecto:
 
 {% asset 'posts/190729-chart.png' %}
 
