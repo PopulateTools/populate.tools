@@ -1,5 +1,9 @@
 body.story {
 
+  a {
+    transition: all .15s ease-in-out;
+  }
+
   header.header {
     padding-bottom: 0;
   }
@@ -81,14 +85,6 @@ body.story {
     padding: .5em 1em;
   }
 
-
-  .content {
-    // display: flex;
-    // justify-content: space-around;
-    // width: 1000px;
-    // margin: auto;
-  }
-
   .row-col {
     display: flex;
     justify-content: space-around;
@@ -119,7 +115,13 @@ body.story {
   .story-content.with-story-menu {
     width: 800px;
     padding-left: 50px;
+
+    .story-content-full {
+      margin-left: -200px;
+    }
   }
+
+
 
   .narrow-col {
     max-width: 700px;
@@ -141,6 +143,10 @@ body.story {
     font-size: .75em;
     background: $light_gray;
     color: $gray;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .flex {
@@ -148,15 +154,140 @@ body.story {
   }
 
 
+  table {
+    width: 100%;
+
+    th {
+      font-size: 12px;
+      font-weight: 200;
+      color: rgba($black, .5);
+      text-transform: uppercase;
+    }
+
+    th.tb-kilos {
+      min-width: 100px;
+    }
+
+    th.tb-percentage {
+      min-width: 100px;
+    }
+
+    td {
+      padding: 6px;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(#D8D8D8, .3);
+
+      i.fas {
+        margin-right: 1em;
+        color: rgba(#4A4A4A, .3);
+        transition: color .15s ease-in-out;
+      }
+
+      a {
+        color: $blue;
+      }
+
+    }
+
+    tbody.tb-secondary {
+      td {
+        padding: 3px;
+        font-size: .75rem;
+        border-bottom: 1px solid rgba(#D8D8D8, .15);
+      }
+    }
+
+    td.tb-kilos, td.tb-percentage {
+      font-weight: 200;
+    }
+
+    td.td-bar-chart {
+      width: 300px;
+      padding-left: 16px;
+    }
+
+    td.td-big {
+      font-size: 1.25rem;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        i.fas {
+          color: $blue;
+        }
+      }
+    }
+
+    td.tb-percentage {
+      opacity: .5;
+    }
+
+  }
+
+  input {
+    border-radius: 3px;
+    padding: 4px;
+  }
+
+  .bar-chart-cont {
+    position: relative;
+    background: $light_gray;
+    border-radius: 3px;
+    height: 9px;
+  }
+  .bar-chart {
+    position: absolute;
+    background: $blue;
+    border-radius: 3px;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+
   // Mercamadrid story
 
   .product-browser {
+    padding: 0 2em;
+
+    .product-browser-sidebar {
+      width: 20%;
+      padding-right: 5%;
+
+      input {
+        width: 100%;
+        font-size: .85em;
+      }
+    }
+
+    .product-browser-content {
+      width: 75%;
+
+      tbody.category_products {
+        display: none;
+      }
+
+    }
+
     .item-list {
+      line-height: 1.2;
       a {
+        padding: .25em;
+        border-radius: 3px;
+        background: #FFF;
         display: block;
+        color: $blue;
+        font-size: .75em;
+      }
+      a:hover {
+        background: rgba($blue, .1);
       }
     }
   }
+
 
   // Populatation Vizz specific CSS
 

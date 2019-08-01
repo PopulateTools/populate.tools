@@ -10,6 +10,13 @@ category: technology
 img: posts/190701-CartaTelegrafica.jpg
 ---
 
+<!-- Sandbox purposes -->
+{% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,BarcelonaSevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
+
+{% assign categories = "Fruta,Verdura,Patata,Carne,Pescado,Pescado congelado,Pollo,Marisco,Huevos" | split: ',' %}
+
+{% assign products = "naranja,tomate,patata,manzana,cebolla,porcino,freson,vacuno,platano,platanos,zanahorias,peras,sandia,lechugas,pollo,lechuga,mandarina,elaborados,limon,pimientos,melones,pimiento,cerezas,calabacin,kiwi,albaricoque" | split: ',' %}
+
 <div class="row-col">
 
   <div class="story-menu">
@@ -50,7 +57,9 @@ img: posts/190701-CartaTelegrafica.jpg
 
       <p><strong>Tu sabes lo que compras - pero de forma agregada, ¿qué consumimos más en Madrid?</strong></p>
 
-      <iframe title="" aria-label="Table" id="datawrapper-chart-ZnEY5" src="//datawrapper.dwcdn.net/ZnEY5/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="477"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
+      <div class="m_v_2 story-content-full">
+        <iframe title="" aria-label="Table" id="datawrapper-chart-ZnEY5" src="//datawrapper.dwcdn.net/ZnEY5/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="477"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
+      </div>
 
 
       <div class="insights">
@@ -67,21 +76,43 @@ img: posts/190701-CartaTelegrafica.jpg
 
       <h2>¿De dónde vienen los productos?</h2>
 
-      <iframe title="" aria-label="Spain provinces (2018) choropleth map" id="datawrapper-chart-JYAPB" src="//datawrapper.dwcdn.net/JYAPB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
+      <p>Estas son las provincias que alimentan a Madrid.</p>
 
-      <p>¿Qué provincias son las que alimentan a los madrileños?
+      <div class="m_v_2 story-content-full">
+        <iframe title="" aria-label="Spain provinces (2018) choropleth map" id="datawrapper-chart-JYAPB" src="//datawrapper.dwcdn.net/JYAPB/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="800"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
+      </div>
+
+      <p>Más del 50% de los productos vienen de solo 5 provincias: Almería, Valencia, Murcia, Toledo y Valladolid (y ahora te preguntarás que cuáles son los productos estrella de cada una de esas provincias... te lo contamos más abajo).</p>
+
+      <p><strong>¿Kilómetro cero?</strong> Parece que a nivel general nos queda mucho por avanzar (o poco, según se mire). Sólo un 2,3% de los productos tienen como origen la propia provincia de Madrid (obviamente, habrá mucho producto de proximidad que precisamente por serlo no pasará por Mercamadrid).</p>
+
+      <p><strong>¿Y cuánto producto viene de fuera de España?</strong> Si mezclamos provincias y paises, estas son las geografías que más alimentan Madrid:</p>
 
 
-      - Más del 50% de los productos vienen de solo 5 provincias:
-      ALMERIA
-      VALENCIA
-      MURCIA
-      TOLEDO
-      VALLADOLID
-      ZARAGOZA
+      <div class="m_v_2">
+
+        <iframe title="Origen de los productos por provincia y pa&iacute;s" aria-label="Table" id="datawrapper-chart-I29Bo" src="//datawrapper.dwcdn.net/I29Bo/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="766"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
+
+      </div>
 
 
-      - 2,3% del propio Madrid</p>
+      <p>TABLA TOP PAISES</p>
+
+
+      <p>Regresando a España: Estos son los productos top de cada provincia. ¿Qué gana en la tuya?</p>
+
+      <div class="m_v_2 story-content-full">
+        {% asset 'posts/190901-TEST-SmallMultiples.svg' %}
+      </div>
+
+
+      <p>Y aquí los principales productos de cada provincia (mostramos solo productos con más de 100.000 kilos vendidos en Mercamadrid durante el periodo).</p>
+
+      <div class="m_v_2 story-content-full">
+        <div class="flourish-embed" data-src="visualisation/557814"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+
+
 
     </div>
 
@@ -91,66 +122,83 @@ img: posts/190701-CartaTelegrafica.jpg
 
 <div class="row-full flex product-browser">
 
-  <div class="item-list" style="width: 25%; padding: 1em;">
+  <div class="item-list product-browser-sidebar">
 
-    <a href="">ALMERIA</a>
-    <a href="">VALENCIA</a>
-    <a href="">MURCIA</a>
-    <a href="">TOLEDO</a>
-    <a href="">VALLADOLID</a>
-    <a href="">ZARAGOZA</a>
-    <a href="">HUELVA</a>
-    <a href="">SEGOVI</a>
-    <a href="">STA.CR</a>
-    <a href="">PONTEV</a>
-    <a href="">LAS PALMAS</a>
-    <a href="">LERIDA</a>
-    <a href="">MADRID</a>
-    <a href="">CACERES</a>
-    <a href="">NAVARRA</a>
-    <a href="">SEVILLA</a>
-    <a href="">CUENCA</a>
-    <a href="">MALAGA</a>
-    <a href="">GUIPUZCOA</a>
-    <a href="">GRANADA</a>
-    <a href="">LA RIOJA</a>
-    <a href="">ALICANTE</a>
+    <input type="text" placeholder="Provincia..." class="m_v_2">
 
-    <!-- CASTELLON
-    BURGOS
-    BARCELONA
-    CADIZ
-    GERONA
-    BADAJOZ
-    LEON
-    LA CORUÑA
-    SALAMANCA
-    VIZCAYA
-    ASTURIAS
-    HUESCA
-    ALAVA
-    ORENSE
-    ALBACETE
-    LUGO
-    CIUDAD REAL
-    SORIA
-    CANTABRIA
-    AVILA
-    ZAMORA
-    TERUEL
-    TARRAGONA
-    JAEN
-    GUADALAJARA
-    CORDOBA
-    PALENCIA -->
+    {% for province in provincias %}
+      <a href="">{{ province }}</a>
+    {% endfor %}
 
   </div>
 
-  <div style="width: 75%">
+  <div class="product-browser-content">
 
     <p>Seleccina una provincia para ver sus principales producciones</p>
 
     <h2>Top productos de Almería</h2>
+
+    <table>
+    <tr>
+      <th></th>
+      <th class="right tb-kilos">Kilos</th>
+      <th class="right tb-percentage">% Total</th>
+      <th></th>
+    </tr>
+    {% for category in categories %}
+
+    <tbody class="category">
+      <tr>
+        <td class="td-big">
+          <a href="">
+            <i class="fas fa-plus-circle"></i>
+            {{ category }}
+          </a>
+        </td>
+        <td class="right tb-kilos">133.456.789</td>
+        <td class="right tb-percentage">82.5%</td>
+        <td class="td-bar-chart">
+          <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
+        </td>
+      </tr>
+    </tbody>
+
+      <tbody class="category_products tb-secondary" id="category_{{ category }}">
+      {% for product in products %}
+        <tr>
+          <td class="td-big">
+            <a href="">
+              <i class="fas fa-plus-circle"></i>
+              {{ product }}
+            </a>
+          </td>
+          <td class="right tb-kilos">133.456.789</td>
+          <td class="right tb-percentage">82.5%</td>
+          <td class="td-bar-chart">
+            <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+
+    {% endfor %}
+    </table>
+
+
+
+  </div>
+
+</div>
+
+
+<div class="row-col">
+
+  <div class="story-content with-story-menu">
+
+    Origen de los productos
+
+    <h2>Provincia</h2>
+
 
 
 
