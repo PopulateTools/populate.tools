@@ -78,8 +78,7 @@ body.story {
 
   }
 
-  .story-menu {
-    visibility: hidden;
+  .header-story-menu {
     display: flex;
     padding: .35em 1em;
     background: $blue;
@@ -96,10 +95,88 @@ body.story {
     }
   }
 
-  .story-menu.is-sticky {
+  .header-story-menu.is-sticky {
     padding: .5em 1em;
   }
 
+
+  .content {
+    // display: flex;
+    // justify-content: space-around;
+    // width: 1000px;
+    // margin: auto;
+  }
+
+  .row-col {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+  }
+
+  .row-full {
+
+  }
+
+  .story-menu {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    align-self: flex-start;
+    border: 1px solid red;
+    width: 200px;
+    position: sticky;
+    padding: .35em 1em;
+
+    a {
+      font-size: .75em;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  .story-content.with-story-menu {
+    width: 800px;
+    padding-left: 50px;
+  }
+
+  .narrow-col {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .sources {
+    font-size: .85em;
+    color: #777;
+  }
+
+  .notes {
+    padding: 1.5em;
+    font-size: .75em;
+    background: $light_gray;
+    color: $gray;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+
+  // Mercamadrid story
+
+  .product-browser {
+    .item-list {
+      a {
+        display: block;
+      }
+    }
+  }
+
+  // Populatation Vizz specific CSS
 
   .story-container {
     padding: 0;
@@ -116,11 +193,6 @@ body.story {
           height: auto;
         }
       }
-    }
-
-    .section {
-      margin-top: 5em;
-      margin-bottom: 5em;
     }
 
     .separator {
@@ -361,16 +433,6 @@ body.story {
       a {
         color: #999;
       }
-    }
-
-    .narrow-col {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .sources {
-      font-size: .85em;
-      color: #777;
     }
 
   }
