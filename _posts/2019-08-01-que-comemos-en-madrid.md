@@ -415,7 +415,7 @@ $(function() {
   // Build small multiples
   $.ajax({
      type: "GET",
-     url: "/datasets/analysis/mercamadrid/summary_per_province.csv",
+     url: "/datasets/190901_mercamadrid_summary_per_province.csv",
      dataType: "text",
      success: function(data) {
        processSummaryCSV(data);
@@ -426,7 +426,7 @@ $(function() {
   var currentProvince = null;
   $.ajax({
      type: "GET",
-     url: "/datasets/analysis/mercamadrid/data_per_province.csv",
+     url: "/datasets/190901_mercamadrid_data_per_province.csv",
      dataType: "text",
      success: function(data) {
        processDataCSV(data);
@@ -434,5 +434,3 @@ $(function() {
   });
 });
 </script>
-
-
