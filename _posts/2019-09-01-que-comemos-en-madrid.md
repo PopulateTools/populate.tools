@@ -82,13 +82,13 @@ $(function() {
 
 <div class="row-col">
 
-  <div class="story-menu">
+  <!-- <div class="story-menu">
     <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
     <a href="#section-1">¿De dónde vienen los productos?</a>
     <a href="#section-1">¿Qué productos vienen de cada sitio?</a>
-  </div>
+  </div> -->
 
-  <div class="story-content with-story-menu">
+  <div class="story-content">
 
     <div class="section">
 
@@ -109,7 +109,9 @@ $(function() {
     </div>
 
     <div class="">
-      SUBSCRIPTION BOX
+
+      <div>{% include subscription_form_es.html %}</div>
+
     </div>
 
     <div class="section" id="section-1">
