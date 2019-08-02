@@ -210,3 +210,16 @@ body.about .container {
   width: 100%;
   margin: 0 0 1.85rem 0;
 }
+
+
+
+// Horizontal Newsletter
+#mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+  padding: 0;
+  width: 50%;
+
+  @include screen(768) {
+    width: 100%;
+  }
+  
+}

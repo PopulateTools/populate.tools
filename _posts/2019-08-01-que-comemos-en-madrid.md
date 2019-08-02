@@ -45,9 +45,11 @@ img: posts/190701-CartaTelegrafica.jpg
 
     </div>
 
-    <div class="">
+    <div class="story-newsletter-promo">
 
-      <div>{% include subscription_form_es.html %}</div>
+      <p>Te puedes suscribir para recibir nuevas exploraciones de datos como esta. Aprox. 1 mail al mes</p>
+
+      <div>{% include subscription_form_es_horizontal.html %}</div>
 
     </div>
 
@@ -76,15 +78,16 @@ img: posts/190701-CartaTelegrafica.jpg
 
     <div class="section" id="section-1">
 
-      <h2>¿De dónde vienen los productos?</h2>
-
-      <p>Estas son las provincias que alimentan a Madrid.</p>
-
       <div class="m_v_2 story-content-overcolumn">
+
+        <h2>¿De dónde vienen los productos?</h2>
+
+        <p>Estas son las provincias que alimentan a Madrid.</p>
+
         <iframe title="" aria-label="Spain provinces (2018) choropleth map" id="datawrapper-chart-JYAPB" src="//datawrapper.dwcdn.net/JYAPB/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="800"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
       </div>
 
-      <p>Más del 50% de los productos vienen de solo 5 provincias: Almería, Valencia, Murcia, Toledo y Valladolid (y ahora te preguntarás que cuáles son los productos estrella de cada una de esas provincias... te lo contamos más abajo).</p>
+      <p><strong>Más del 50% de los productos vienen de solo 5 provincias</strong>: Almería, Valencia, Murcia, Toledo y Valladolid (y ahora te preguntarás que cuáles son los productos estrella de cada una de esas provincias... te lo contamos más abajo).</p>
 
       <p><strong>¿Kilómetro cero?</strong> Parece que a nivel general nos queda mucho por avanzar (o poco, según se mire). Sólo un 2,3% de los productos tienen como origen la propia provincia de Madrid (obviamente, habrá mucho producto de proximidad que precisamente por serlo no pasará por Mercamadrid).</p>
 
@@ -184,7 +187,7 @@ img: posts/190701-CartaTelegrafica.jpg
     {% for province in provincias %}
     <tbody class="category">
       <tr>
-        <td class="td-big">
+        <td>
           <a href="" class="toggle-target" data-target="category_{{ category }}">
             {{ province }}
           </a>
