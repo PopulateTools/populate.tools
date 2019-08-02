@@ -126,8 +126,6 @@ body.story {
     }
   }
 
-
-
   .narrow-col {
     max-width: 700px;
     margin: auto;
@@ -312,16 +310,21 @@ body.story {
         width: 100%;
         font-size: .85em;
       }
+
+      .category_products {
+        padding-left: 1em;
+      }
+
     }
 
     .product-browser-content {
       width: 75%;
-
-      tbody.category_products {
-        display: none;
-      }
-
     }
+
+    .category_products {
+      display: none;
+    }
+
 
     .item-list {
       line-height: 1.2;

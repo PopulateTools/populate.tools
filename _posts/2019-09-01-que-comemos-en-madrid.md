@@ -62,7 +62,7 @@ $(function() {
   }
 
   // Build small multiples
-  var url = "/datasets/analysis/mercamadrid/summary_per_province.csv";
+  var url = "/datasets/190901_mercamadrid_summary_per_province.csv";
   $.ajax({
       type: "GET",
       url: url,
@@ -211,12 +211,12 @@ $(function() {
       <th class="right tb-percentage">% Total</th>
       <th></th>
     </tr>
-    {% for category in categories %}
 
+    {% for category in categories %}
     <tbody class="category">
       <tr>
         <td class="td-big">
-          <a href="" class="toggle-target" data-target="category_{{ category }}">
+          <a href="" class="toggle-target" data-target="by_place_category_{{ category }}">
             <i class="fas fa-plus-circle"></i>
             {{ category }}
           </a>
@@ -229,7 +229,7 @@ $(function() {
       </tr>
     </tbody>
 
-      <tbody class="category_products tb-secondary category_{{ category }}" id="category_{{ category }}">
+      <tbody class="category_products tb-secondary" id="by_place_category_{{ category }}">
       {% for product in products %}
         <tr>
           <td class="td-big">
@@ -244,8 +244,7 @@ $(function() {
           </td>
         </tr>
       {% endfor %}
-      </tbody>
-
+    </tbody>
     {% endfor %}
     </table>
 
@@ -256,14 +255,60 @@ $(function() {
 </div>
 
 
-<div class="row-col">
 
-  <div class="story-content with-story-menu">
 
-    Origen de los productos
 
-    <h2>Provincia</h2>
+<div class="row-full flex product-browser">
 
+  <div class="item-list product-browser-sidebar">
+
+    <input type="text" placeholder="Producto..." class="m_v_2">
+
+    {% for category in categories %}
+      <a href="" class="toggle-target" data-target="by_product_category_{{ category }}">{{ category }}</a>
+
+      <div class="category_products" id="by_product_category_{{ category }}">
+      {% for product in products %}
+        <a href="">{{ product }}</a>
+      {% endfor %}
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+  <div class="product-browser-content">
+
+    <p>Seleccina un producto para ver sus principales orígenes</p>
+
+    <h2>Top provincias de PRODUCTO</h2>
+
+    <table>
+    <tr>
+      <th></th>
+      <th class="right tb-kilos">Kilos</th>
+      <th class="right tb-percentage">% Total</th>
+      <th></th>
+    </tr>
+
+    {% for province in provincias %}
+    <tbody class="category">
+      <tr>
+        <td class="td-big">
+          <a href="" class="toggle-target" data-target="category_{{ category }}">
+            {{ province }}
+          </a>
+        </td>
+        <td class="right tb-kilos">133.456.789</td>
+        <td class="right tb-percentage">82.5%</td>
+        <td class="td-bar-chart">
+          <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
+        </td>
+      </tr>
+    </tbody>
+
+    {% endfor %}
+    </table>
 
 
 
