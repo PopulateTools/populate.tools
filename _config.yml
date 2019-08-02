@@ -32,6 +32,8 @@ collections:
   category:
     output: true
     permalink: blog/:title/
+  datasets:
+    output: true
 
 defaults:
   # - scope:

@@ -10,6 +10,69 @@ category: technology
 img: posts/190701-CartaTelegrafica.jpg
 ---
 
+<script type="text/javascript">
+$(function() {
+
+  function lowerCaseAllWordsExceptFirstLetters(string) {
+    return string.replace(/\w\S*/g, function (word) {
+      return word.charAt(0) + word.slice(1).toLowerCase();
+    });
+   }
+
+  function processCSV(allText) {
+   var allTextLines = allText.split(/\r\n|\n/);
+   var entries = allTextLines.slice(1, allTextLines.length -1);
+   var origins
+   var data = {};
+   var provinces = [];
+   for(var i = 0; i < entries.length; i++) {
+     var dataRow = entries[i].split(',');
+     var province = dataRow[0];
+     if(provinces.indexOf(province) === -1){
+       provinces.push(province);
+     }
+
+     if(data[province] === undefined) {
+       data[province] = [];
+     }
+
+     data[province].push({
+       product: dataRow[1],
+       perc: parseFloat(dataRow[2])
+     });
+   }
+   provinces.sort();
+   var $container = $("#small-multiples-provinces");
+
+   for(var i = 0; i < provinces.length; i++){
+     var province = provinces[i];
+     var content = '<div class="multiple"><h3>' + province + '</h3><table>';
+     data[province].sort(function(i1, i2){
+       return (i2.perc - i1.perc);
+     });
+     for(var j = 0; j < 3; j++){
+       var product = data[province][j].product;
+       var perc = data[province][j].perc;
+       content += '<tr><th>' + lowerCaseAllWordsExceptFirstLetters(product) + '</th><td class="tb-percentage">' +perc+'%</td>' +
+       '<td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: '+perc+'%;"></div></div></td></tr>';
+     }
+     content += '</table></div>';
+     $(content).appendTo($container);
+   }
+  }
+
+  // Build small multiples
+  var url = "/datasets/analysis/mercamadrid/summary_per_province.csv";
+  $.ajax({
+      type: "GET",
+      url: url,
+      dataType: "text",
+      success: function(data) {processCSV(data);}
+   });
+});
+</script>
+
+
 <!-- Sandbox purposes -->
 {% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,Barcelona,Sevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
 
@@ -103,33 +166,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
       <div class="m_v_2 story-content-full">
 
-        <!-- {% asset 'posts/190901-TEST-SmallMultiples.svg' %} -->
-
-        <div class="small-multiples">
-
-          {% for province in provincias %}
-          <div class="multiple">
-            <h3>{{ province }}</h3>
-            <table>
-            <tr>
-              <th>Naranja</th>
-              <td class="tb-percentage">45%</td>
-              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: 45%;"></div></div></td>
-            </tr>
-            <tr>
-              <th>Fresón</th>
-              <td class="tb-percentage">25%</td>
-              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: 12%; "></div></div></td>
-            </tr>
-            <tr>
-              <th>Manzana</th>
-              <td class="tb-percentage">15%</td>
-              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="bar-chart-cont "><div class="bar-chart" style="width: 3%;"></div></div></td>
-            </tr>
-            </table>
-          </div>
-          {% endfor %}
-
+        <div class="small-multiples" id="small-multiples-provinces">
         </div>
 
       </div>
@@ -140,8 +177,6 @@ img: posts/190701-CartaTelegrafica.jpg
       <div class="m_v_2 story-content-full">
         <div class="flourish-embed" data-src="visualisation/557814"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
       </div>
-
-
 
     </div>
 
