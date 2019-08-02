@@ -137,7 +137,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
   <div class="product-browser-content">
 
-    <p>Seleccina una provincia para ver sus principales producciones</p>
+    <p>Selecciona una provincia para ver sus principales producciones</p>
 
     <h2>Top productos de <span id="current-province"></span></h2>
 
@@ -172,7 +172,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
   <div class="product-browser-content">
 
-    <p>Seleccina un producto para ver sus principales orígenes</p>
+    <p>Selecciona un producto para ver sus principales orígenes</p>
 
     <h2>Top provincias de PRODUCTO</h2>
 
