@@ -378,6 +378,17 @@ $(function() {
       renderProvinces(provinces, currentProvince);
       renderTable(provinces, data, currentProvince);
     });
+
+    $('#search-province').on('keyup', function(){
+      var suggestion = $(this).val().toLowerCase();
+      if(suggestion.length <= 1){
+        renderProvinces(provinces, currentProvince);
+      } else {
+        renderProvinces(provinces.filter(function(p){
+          return p.toLowerCase().indexOf(suggestion) !== -1;
+        }), currentProvince);
+      }
+    });
   }
 
   // Build small multiples
