@@ -11,7 +11,7 @@ img: posts/190701-CartaTelegrafica.jpg
 ---
 
 <!-- Sandbox purposes -->
-{% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,BarcelonaSevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
+{% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,Barcelona,Sevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
 
 {% assign categories = "Fruta,Verdura,Patata,Carne,Pescado,Pescado congelado,Pollo,Marisco,Huevos" | split: ',' %}
 
@@ -102,7 +102,36 @@ img: posts/190701-CartaTelegrafica.jpg
       <p>Regresando a España: Estos son los productos top de cada provincia. ¿Qué gana en la tuya?</p>
 
       <div class="m_v_2 story-content-full">
-        {% asset 'posts/190901-TEST-SmallMultiples.svg' %}
+
+        <!-- {% asset 'posts/190901-TEST-SmallMultiples.svg' %} -->
+
+        <div class="small-multiples">
+
+          {% for province in provincias %}
+          <div class="multiple">
+            <h3>{{ province }}</h3>
+            <table>
+            <tr>
+              <th>Naranja</th>
+              <td class="tb-percentage">45%</td>
+              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: 45%;"></div></div></td>
+            </tr>
+            <tr>
+              <th>Fresón</th>
+              <td class="tb-percentage">25%</td>
+              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: 12%; "></div></div></td>
+            </tr>
+            <tr>
+              <th>Manzana</th>
+              <td class="tb-percentage">15%</td>
+              <td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="bar-chart-cont "><div class="bar-chart" style="width: 3%;"></div></div></td>
+            </tr>
+            </table>
+          </div>
+          {% endfor %}
+
+        </div>
+
       </div>
 
 
