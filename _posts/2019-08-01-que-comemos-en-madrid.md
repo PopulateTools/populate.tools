@@ -10,69 +10,6 @@ category: technology
 img: posts/190701-CartaTelegrafica.jpg
 ---
 
-<script type="text/javascript">
-$(function() {
-
-  function lowerCaseAllWordsExceptFirstLetters(string) {
-    return string.replace(/\w\S*/g, function (word) {
-      return word.charAt(0) + word.slice(1).toLowerCase();
-    });
-   }
-
-  function processCSV(allText) {
-   var allTextLines = allText.split(/\r\n|\n/);
-   var entries = allTextLines.slice(1, allTextLines.length -1);
-   var origins
-   var data = {};
-   var provinces = [];
-   for(var i = 0; i < entries.length; i++) {
-     var dataRow = entries[i].split(',');
-     var province = dataRow[0];
-     if(provinces.indexOf(province) === -1){
-       provinces.push(province);
-     }
-
-     if(data[province] === undefined) {
-       data[province] = [];
-     }
-
-     data[province].push({
-       product: dataRow[1],
-       perc: parseFloat(dataRow[2])
-     });
-   }
-   provinces.sort();
-   var $container = $("#small-multiples-provinces");
-
-   for(var i = 0; i < provinces.length; i++){
-     var province = provinces[i];
-     var content = '<div class="multiple"><h3>' + province + '</h3><table>';
-     data[province].sort(function(i1, i2){
-       return (i2.perc - i1.perc);
-     });
-     for(var j = 0; j < 3; j++){
-       var product = data[province][j].product;
-       var perc = data[province][j].perc;
-       content += '<tr><th>' + lowerCaseAllWordsExceptFirstLetters(product) + '</th><td class="tb-percentage">' +perc+'%</td>' +
-       '<td class="td-bar-chart tooltipped" data-tooltip="Total de kilos"><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: '+perc+'%;"></div></div></td></tr>';
-     }
-     content += '</table></div>';
-     $(content).appendTo($container);
-   }
-  }
-
-  // Build small multiples
-  var url = "/datasets/190901_mercamadrid_summary_per_province.csv";
-  $.ajax({
-      type: "GET",
-      url: url,
-      dataType: "text",
-      success: function(data) {processCSV(data);}
-   });
-});
-</script>
-
-
 <!-- Sandbox purposes -->
 {% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,Barcelona,Sevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
 
@@ -190,66 +127,18 @@ $(function() {
 <div class="row-full flex product-browser">
 
   <div class="item-list product-browser-sidebar">
+    <input type="text" placeholder="Provincia..." class="m_v_2" id="search-province" />
 
-    <input type="text" placeholder="Provincia..." class="m_v_2">
-
-    {% for province in provincias %}
-      <a href="">{{ province }}</a>
-    {% endfor %}
-
+    <div id="provinces"></div>
   </div>
 
   <div class="product-browser-content">
 
     <p>Seleccina una provincia para ver sus principales producciones</p>
 
-    <h2>Top productos de Almería</h2>
+    <h2>Top productos de <span id="current-province"></span></h2>
 
-    <table>
-    <tr>
-      <th></th>
-      <th class="right tb-kilos">Kilos</th>
-      <th class="right tb-percentage">% Total</th>
-      <th></th>
-    </tr>
-
-    {% for category in categories %}
-    <tbody class="category">
-      <tr>
-        <td class="td-big">
-          <a href="" class="toggle-target" data-target="by_place_category_{{ category }}">
-            <i class="fas fa-plus-circle"></i>
-            {{ category }}
-          </a>
-        </td>
-        <td class="right tb-kilos">133.456.789</td>
-        <td class="right tb-percentage">82.5%</td>
-        <td class="td-bar-chart">
-          <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
-        </td>
-      </tr>
-    </tbody>
-
-      <tbody class="category_products tb-secondary" id="by_place_category_{{ category }}">
-      {% for product in products %}
-        <tr>
-          <td class="td-big">
-            <a href="">
-              {{ product }}
-            </a>
-          </td>
-          <td class="right tb-kilos">133.456.789</td>
-          <td class="right tb-percentage">82.5%</td>
-          <td class="td-bar-chart">
-            <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
-          </td>
-        </tr>
-      {% endfor %}
-    </tbody>
-    {% endfor %}
-    </table>
-
-
+    <table id="table-products"> </table>
 
   </div>
 
@@ -316,3 +205,200 @@ $(function() {
   </div>
 
 </div>
+
+
+<script type="text/javascript">
+$(function() {
+
+  function toId(str){
+    return str.split(" ").join("_");
+  }
+
+  function lowerCaseAllWordsExceptFirstLetters(string) {
+    return string.replace(/\w\S*/g, function (word) {
+      return word.charAt(0) + word.slice(1).toLowerCase();
+    });
+  }
+
+  function processSummaryCSV(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var entries = allTextLines.slice(1, allTextLines.length -1);
+    var origins
+    var data = {};
+    var provinces = [];
+    for(var i = 0; i < entries.length; i++) {
+      var dataRow = entries[i].split(',');
+      var province = dataRow[0];
+      if(provinces.indexOf(province) === -1){
+        provinces.push(province);
+      }
+
+      if(data[province] === undefined) {
+        data[province] = [];
+      }
+
+      data[province].push({
+        product: lowerCaseAllWordsExceptFirstLetters(dataRow[1]),
+        pct: parseFloat(dataRow[2]),
+        kg: parseInt(dataRow[3]),
+      });
+    }
+    provinces.sort();
+    var $container = $("#small-multiples-provinces");
+
+    for(var i = 0; i < provinces.length; i++){
+      var province = provinces[i];
+      var content = '<div class="multiple"><h3>' + province + '</h3><table>';
+      data[province].sort(function(i1, i2){
+        return (i2.pct - i1.pct);
+      });
+      for(var j = 0; j < 3; j++){
+        var product = data[province][j].product;
+        var pct = data[province][j].pct;
+        var kg = data[province][j].kg;
+        content += '<tr><th>' + product + '</th><td class="tb-percentage">' +pct+'%</td>' +
+        '<td class="td-bar-chart tooltipped" data-tooltip="'+kg.toLocaleString()+' kg."><div class="td-bar-chart bar-chart-cont"><div class="bar-chart" style="width: '+pct+'%;"></div></div></td></tr>';
+      }
+      content += '</table></div>';
+      $(content).appendTo($container);
+    }
+  }
+
+  function renderProvinces(provinces, currentProvince){
+    var $provinces = $('#provinces');
+    var provincesList = "";
+    for(var i = 0; i < provinces.length; i++){
+      provincesList += '<a href="#">' + provinces[i] + '</a>' + "\n";
+    }
+    $provinces.html('');
+    $(provincesList).appendTo($provinces);
+
+    $('#current-province').html(currentProvince);
+  }
+
+  function renderTable(provinces, data, currentProvince){
+    var $container = $("#table-products");
+    var tableHTML = '<thead><tr><th></th><th class="right tb-kilos">Kilos</th><th class="right tb-percentage">% Total</th><th></th></tr></thead>';
+
+    var provinceData = data[currentProvince];
+    provinceData.sort(function(c1, c2){
+      return c2.kg - c1.kg;
+    });
+
+    var categories = [];
+    var categoriesData = {};
+    var totalKg = 0;
+    for(var i = 0; i < provinceData.length; i++){
+      var d = provinceData[i];
+      var category = d.category;
+
+      if(categories.indexOf(category) === -1) { categories.push(category); }
+      if(categoriesData[category] === undefined) {
+        categoriesData[category] = { kg: 0, pct: null };
+      }
+      categoriesData[category].kg += d.kg;
+      totalKg += d.kg;
+    }
+    categories.sort(function(c1, c2){
+      return categoriesData[c2].kg - categoriesData[c1].kg;
+    });
+
+    for(var i = 0; i < categories.length; i++){
+      var category = categories[i];
+      categoriesData[category].pct = ((categoriesData[category].kg / totalKg)*100).toFixed(1) + "%";
+
+      tableHTML += '<tbody class="category"><tr>' +
+        ' <td class="td-big">' +
+        '   <a href="" class="toggle-target" data-target="category_'+toId(category)+'">' +
+        '     <i class="fas fa-plus-circle"></i>' + category +
+        '   </a>' +
+        ' </td>' +
+        ' <td class="right tb-kilos">'+categoriesData[category].kg.toLocaleString()+' kg.</td>' +
+        ' <td class="right tb-percentage">'+categoriesData[category].pct+'</td>' +
+        ' <td class="td-bar-chart">' +
+        '   <div class="bar-chart-cont"><div class="bar-chart" style="width:'+categoriesData[category].pct+';"></div></div> ' +
+        ' </td></tr></tbody>' +
+        ' <tbody class="category_products tb-secondary category_'+category+'" id="category_'+toId(category)+'">';
+
+      for(var j = 0; j < provinceData.length; j++){
+        if(provinceData[j].category === category){
+          var pct = (provinceData[j].kg / categoriesData[category].kg) * 100;
+          tableHTML += ' <tr>'+
+                       '   <td class="td-big">' +
+                       '     <a href="">'+provinceData[j].product+'</a>' +
+                       '   </td>' +
+                       '   <td class="right tb-kilos">'+provinceData[j].kg.toLocaleString()+' kg.</td>' +
+                       '   <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
+                       '   <td class="td-bar-chart">' +
+                       '     <div class="bar-chart-cont"><div class="bar-chart" style="width:'+pct+'%"></div></div>' +
+                       '   </td>' +
+                       ' </tr>';
+        }
+      }
+      tableHTML += '</tbody>';
+    }
+
+    $container.html("");
+    $container.html(tableHTML);
+  }
+
+  function processDataCSV(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var entries = allTextLines.slice(1, allTextLines.length -1);
+    var origins
+    var data = {};
+    var provinces = [];
+    for(var i = 0; i < entries.length; i++) {
+      var dataRow = entries[i].split(',');
+      var province = dataRow[0];
+      if(provinces.indexOf(province) === -1){ provinces.push(province); }
+
+      if(data[province] === undefined) {
+        data[province] = [];
+      }
+
+      data[province].push({
+        product: lowerCaseAllWordsExceptFirstLetters(dataRow[1]),
+        pct: parseFloat(dataRow[2]),
+        kg: parseInt(dataRow[3]),
+        category: dataRow[4],
+      });
+    }
+    provinces.sort();
+    renderProvinces(provinces, currentProvince);
+    renderTable(provinces, data, currentProvince);
+
+    $('#provinces a').click(function(e){
+      e.preventDefault();
+      currentProvince = $(this).html();
+      console.log('click', currentProvince);
+
+      renderProvinces(provinces, currentProvince);
+      renderTable(provinces, data, currentProvince);
+    });
+  }
+
+  // Build small multiples
+  $.ajax({
+     type: "GET",
+     url: "/datasets/analysis/mercamadrid/summary_per_province.csv",
+     dataType: "text",
+     success: function(data) {
+       processSummaryCSV(data);
+     }
+  });
+
+  // Build data explorer
+  var currentProvince = "VALENCIA";
+  $.ajax({
+     type: "GET",
+     url: "/datasets/analysis/mercamadrid/data_per_province.csv",
+     dataType: "text",
+     success: function(data) {
+       processDataCSV(data);
+     }
+  });
+});
+</script>
+
+

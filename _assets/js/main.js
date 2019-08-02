@@ -171,7 +171,8 @@ $(document).ready(function() {
 
   // Toggler
   // <a href="" class="toggle-target" data-target="id_element_to_toggle">
-  $('.toggle-target').on('click', function () {
+  $(document).on('click', '.toggle-target', function (e) {
+    e.preventDefault();
     $("#" + $(this).data('target')).toggle();
     return false;
   });
