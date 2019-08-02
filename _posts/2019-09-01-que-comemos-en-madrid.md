@@ -179,7 +179,7 @@ img: posts/190701-CartaTelegrafica.jpg
     <tbody class="category">
       <tr>
         <td class="td-big">
-          <a href="">
+          <a href="" class="toggle-target" data-target="category_{{ category }}">
             <i class="fas fa-plus-circle"></i>
             {{ category }}
           </a>
@@ -192,12 +192,11 @@ img: posts/190701-CartaTelegrafica.jpg
       </tr>
     </tbody>
 
-      <tbody class="category_products tb-secondary" id="category_{{ category }}">
+      <tbody class="category_products tb-secondary category_{{ category }}" id="category_{{ category }}">
       {% for product in products %}
         <tr>
           <td class="td-big">
             <a href="">
-              <i class="fas fa-plus-circle"></i>
               {{ product }}
             </a>
           </td>

@@ -178,7 +178,9 @@ body.story {
       border-bottom: 1px solid rgba(#D8D8D8, .3);
 
       i.fas {
-        margin-right: 1em;
+        margin-right: 10px;
+        width: 30px;
+        text-align: center;
         color: rgba(#4A4A4A, .3);
         transition: color .15s ease-in-out;
       }
@@ -191,9 +193,17 @@ body.story {
 
     tbody.tb-secondary {
       td {
-        padding: 3px;
+        padding: 3px 6px;
         font-size: .75rem;
         border-bottom: 1px solid rgba(#D8D8D8, .15);
+      }
+
+      td.td-big {
+        padding-left: 50px;
+      }
+
+      td.td-bar-chart {
+        padding-left: 16px;
       }
     }
 

@@ -169,9 +169,13 @@ $(document).ready(function() {
   });
 
 
-  $('.mobile_menu_handler').click(
+  // Toggler
+  // <a href="" class="toggle-target" data-target="id_element_to_toggle">
+  $('.toggle-target').on('click', function () {
+    $("#" + $(this).data('target')).toggle();
+    return false;
+  });
 
-  );
 
 
   // Populate Data Browser
@@ -195,8 +199,6 @@ $(document).ready(function() {
     $('.pdb_dataset_series').addClass('slide-out-left');
     $('.p_data_browser').addClass('slide-in-left');
   });
-
-
 
 
 });
