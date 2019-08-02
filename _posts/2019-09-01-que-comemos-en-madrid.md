@@ -80,13 +80,13 @@ $(function() {
 
 {% assign products = "naranja,tomate,patata,manzana,cebolla,porcino,freson,vacuno,platano,platanos,zanahorias,peras,sandia,lechugas,pollo,lechuga,mandarina,elaborados,limon,pimientos,melones,pimiento,cerezas,calabacin,kiwi,albaricoque" | split: ',' %}
 
-<div class="row-col">
+<!-- <div class="story-menu">
+  <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
+  <a href="#section-1">¿De dónde vienen los productos?</a>
+  <a href="#section-1">¿Qué productos vienen de cada sitio?</a>
+</div> -->
 
-  <!-- <div class="story-menu">
-    <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
-    <a href="#section-1">¿De dónde vienen los productos?</a>
-    <a href="#section-1">¿Qué productos vienen de cada sitio?</a>
-  </div> -->
+<div class="row-col">
 
   <div class="story-content">
 
@@ -102,7 +102,7 @@ $(function() {
 
         <p>Los datos están extraidos del portal de datos abiertos del Ayuntamiento de Madrid. El periodo al que se refieren todas las visualizaciones en esta página es de Enero a Junio de 2019, ambos incluídos. Si publican más histórico puede que lo incluyamos.</p>
 
-        <p><strong>Importante</strong>: No todos los productos pasan por Mercamadrid, así que esto no pretende comunicar las cantidades exactas que consumimos. Pero dado que gran parte de la alimentación si pasa por Mercamadrid, consideramos interesante realizar esta exploración.</p>
+        <p><strong>Importante</strong>: No todos los productos que se comen en Madrid pasan por Mercamadrid, claro. Pero si una parte importante, por lo que consideramos interesante hacer esta exploración. No te tomes estos datos como absolutos y completos.</p>
 
       </div>
 
