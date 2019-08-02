@@ -371,10 +371,9 @@ $(function() {
     renderProvinces(provinces, currentProvince);
     renderTable(provinces, data, currentProvince);
 
-    $('#provinces a').click(function(e){
+    $(document).on('click', '#provinces a', function(e){
       e.preventDefault();
       currentProvince = $(this).html();
-      console.log('click', currentProvince);
 
       renderProvinces(provinces, currentProvince);
       renderTable(provinces, data, currentProvince);
