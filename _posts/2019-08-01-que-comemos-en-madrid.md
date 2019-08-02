@@ -2,7 +2,7 @@
 layout: story
 title: "¿Qué comemos en Madrid, y de donde viene?"
 description: Una exploración sobre los alimentos que pasan por Mercamadrid
-date: 2019-09-01 8:00:00 +0100
+date: 2019-08-01 8:00:00 +0100
 author: blat
 lang: es
 # product: populate_data
@@ -122,7 +122,7 @@ $(function() {
 
       <p><strong>Tu sabes lo que compras - pero de forma agregada, ¿qué consumimos más en Madrid?</strong></p>
 
-      <div class="m_v_2 story-content-full">
+      <div class="m_v_2 story-content-overcolumn">
         <iframe title="" aria-label="Table" id="datawrapper-chart-ZnEY5" src="//datawrapper.dwcdn.net/ZnEY5/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="477"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
       </div>
 
@@ -143,7 +143,7 @@ $(function() {
 
       <p>Estas son las provincias que alimentan a Madrid.</p>
 
-      <div class="m_v_2 story-content-full">
+      <div class="m_v_2 story-content-overcolumn">
         <iframe title="" aria-label="Spain provinces (2018) choropleth map" id="datawrapper-chart-JYAPB" src="//datawrapper.dwcdn.net/JYAPB/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="800"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
       </div>
 
@@ -154,7 +154,7 @@ $(function() {
       <p><strong>¿Y cuánto producto viene de fuera de España?</strong> Si mezclamos provincias y paises, estas son las geografías que más alimentan Madrid:</p>
 
 
-      <div class="m_v_2">
+      <div class="m_v_2 ">
 
         <iframe title="Origen de los productos por provincia y pa&iacute;s" aria-label="Table" id="datawrapper-chart-I29Bo" src="//datawrapper.dwcdn.net/I29Bo/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="766"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
 
@@ -166,7 +166,7 @@ $(function() {
 
       <p>Regresando a España: Estos son los productos top de cada provincia. ¿Qué gana en la tuya?</p>
 
-      <div class="m_v_2 story-content-full">
+      <div class="m_v_3 story-content-full">
 
         <div class="small-multiples" id="small-multiples-provinces">
         </div>
@@ -174,9 +174,10 @@ $(function() {
       </div>
 
 
-      <p>Y aquí los principales productos de cada provincia (mostramos solo productos con más de 100.000 kilos vendidos en Mercamadrid durante el periodo).</p>
+      <div class="m_v_3 story-content-overcolumn">
 
-      <div class="m_v_2 story-content-full">
+        <p>Y aquí los principales productos de cada provincia (mostramos solo productos con más de 100.000 kilos vendidos en Mercamadrid durante el periodo).</p>
+
         <div class="flourish-embed" data-src="visualisation/557814"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
       </div>
 

@@ -86,7 +86,7 @@ body.story {
   }
 
   .row-col {
-    display: flex;
+    // display: flex;
     justify-content: space-around;
     max-width: 800px;
     margin: auto;
@@ -95,6 +95,25 @@ body.story {
       margin: 0 2em;
     }
 
+  }
+
+  .story-content-full {
+    width: 96vw;
+    margin-left: calc(-47vw + 380px);
+  }
+
+  .story-content-overcolumn {
+    margin-left: -100px;
+    margin-right: -100px;
+
+    @include screen(1000) {
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+    @include screen(768) {
+      margin-left: initial;
+      margin-right: initial;
+    }
   }
 
   .row-full {
