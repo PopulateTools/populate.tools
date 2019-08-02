@@ -139,7 +139,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
     <p>Selecciona una provincia para ver sus principales producciones</p>
 
-    <h2>Top productos de <span id="current-province"></span></h2>
+    <h2>Top productos <span id="current-province"></span></h2>
 
     <table id="table-products"> </table>
 
@@ -276,14 +276,20 @@ $(function() {
     $provinces.html('');
     $(provincesList).appendTo($provinces);
 
-    $('#current-province').html(currentProvince);
+    if(currentProvince !== null) {
+      $('#current-province').html(" de " + currentProvince);
+    }
   }
 
   function renderTable(provinces, data, currentProvince){
     var $container = $("#table-products");
     var tableHTML = '<thead><tr><th></th><th class="right tb-kilos">Kilos</th><th class="right tb-percentage">% Total</th><th></th></tr></thead>';
 
-    var provinceData = data[currentProvince];
+    if(currentProvince !== null){
+      var provinceData = data[currentProvince];
+    } else {
+      var provinceData = data;
+    }
     provinceData.sort(function(c1, c2){
       return c2.kg - c1.kg;
     });
@@ -350,6 +356,8 @@ $(function() {
     var entries = allTextLines.slice(1, allTextLines.length -1);
     var origins
     var data = {};
+    var globalData = [];
+    var tempData = {};
     var provinces = [];
     for(var i = 0; i < entries.length; i++) {
       var dataRow = entries[i].split(',');
@@ -366,10 +374,23 @@ $(function() {
         kg: parseInt(dataRow[3]),
         category: dataRow[4],
       });
+
+      var product = lowerCaseAllWordsExceptFirstLetters(dataRow[1]);
+      if(tempData[product] === undefined) {
+        tempData[product] = { pct: 0, kg: 0, category: dataRow[4] };
+      }
+      tempData[product].pct += parseFloat(dataRow[2]);
+      tempData[product].kg += parseFloat(dataRow[3]);
     }
+    var products = Object.keys(tempData);
+    for(var i = 0; i < products.length; i++) {
+      var d = tempData[products[i]];
+      globalData.push({ product: products[i], pct: d.pct, kg: d.kg, category: d.category });
+    }
+
     provinces.sort();
     renderProvinces(provinces, currentProvince);
-    renderTable(provinces, data, currentProvince);
+    renderTable(provinces, globalData, currentProvince);
 
     $(document).on('click', '#provinces a', function(e){
       e.preventDefault();
@@ -402,7 +423,7 @@ $(function() {
   });
 
   // Build data explorer
-  var currentProvince = "VALENCIA";
+  var currentProvince = null;
   $.ajax({
      type: "GET",
      url: "/datasets/analysis/mercamadrid/data_per_province.csv",
