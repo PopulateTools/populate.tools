@@ -347,7 +347,7 @@ body.story {
 
     transition: all .2s ease-in-out;
 
-    background: #FFFFFF;
+    background: #FFF;
     border: 1px solid #EAEAEA;
     box-shadow: 0 0 13px 0 rgba(0,0,0,0.12);
     border-radius: 3px;
@@ -355,9 +355,10 @@ body.story {
     &:hover {
       height: 40vh;
       width: 65vw;
+      background: linear-gradient(90deg, $blue 50%, #FFF 50%);
 
       .menu-story-open {
-        display: block;
+        visibility: visible;
       }
     }
 
@@ -374,16 +375,30 @@ body.story {
       }
     }
 
+    .menu-story-container {
+      color: #FFF;
+
+      .menu-story-items {
+        a {
+          display: block;
+          margin-bottom: .5em;
+          color: #FFF;
+        }
+        a:hover {
+          font-weight: bold;
+        }
+      }
+    }
     .menu-story-open {
-      display: none;
+      visibility: hidden;
       padding: 1em;
     }
 
-    .menu-story-items {
-      a {
-        display: block;
-      }
+    #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+      padding: 0;
+      width: 100%;
     }
+
   }
 
   // Mercamadrid story

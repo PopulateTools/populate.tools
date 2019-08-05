@@ -29,7 +29,7 @@ img: posts/190701-CartaTelegrafica.jpg
   <div class="menu-story-open">
     <div class="pure-g">
 
-      <div class="pure-u-1 pure-u-md-1-2">
+      <div class="pure-u-1 pure-u-md-1-2 menu-story-container">
         <p><strong>¿Qué comemos en Madrid, y de donde viene?</strong></p>
         <div class="menu-story-items">
           <a href="#section-0">Lo primero</a>
@@ -41,12 +41,23 @@ img: posts/190701-CartaTelegrafica.jpg
         </div>
       </div>
 
-      <div class="pure-u-1 pure-u-md-1-2 p_h_v_4">
-        <p><strong>Populate News</strong> realiza exploraciones de datos sobre temas que nos interesan.  .</p>
+      <div class="pure-u-1 pure-u-md-1-2 p_h_l_2">
+        <p><strong>Populate News</strong> realiza exploraciones de datos sobre temas que nos llaman la atención.</p>
 
         <p>Te puedes suscribir para recibir nuevas exploraciones de datos como esta. Aprox. 1 mail al mes</p>
 
         <div>{% include subscription_form_es_horizontal.html %}</div>
+
+        <div class="share-icons">
+
+          Comparte
+
+          <a href="https://www.facebook.com/sharer/sharer.php?u=URL" class="share facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/intent/tweet?url=URL&text=TEXT&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
+          <a href="http://www.linkedin.com/shareArticle?mini=true&url=URL&" class="share linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:?subject=Historia interesante&body=URL" class="share email"><i class="fas fa-envelope-open"></i></a>
+
+        </div>
 
       </div>
     </div>

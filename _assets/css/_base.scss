@@ -213,6 +213,46 @@ body.about .container {
 }
 
 
+.share-icons {
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #FFF;
+  }
+  i {
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 0 0 6px;
+    transition: background $transitionRegular ease-in-out;
+
+  }
+  i.fa-twitter {
+    background: $color_twitter;
+  }
+  i.fa-facebook {
+    background: $color_facebook;
+  }
+  i.fa-linkedin-in {
+    background: $color_linkedin;
+  }
+  i.fa-envelope-open {
+    background: $blue;
+  }
+  i.fa-twitter:hover {
+    background: darken($color_twitter, 10%);
+  }
+  i.fa-facebook:hover {
+    background: darken($color_facebook, 10%);
+  }
+  i.fa-linkedin-in:hover {
+    background: darken($color_linkedin, 10%);
+  }
+  i.fa-envelope-open:hover {
+    background: darken($blue, 10%);
+  }
+}
 
 // Horizontal Newsletter
 #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
