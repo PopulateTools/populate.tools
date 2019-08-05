@@ -261,7 +261,6 @@ $(function() {
   function processSummaryCSV(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var entries = allTextLines.slice(1, allTextLines.length -1);
-    var origins
     var data = {};
     var provinces = [];
     for(var i = 0; i < entries.length; i++) {
@@ -487,7 +486,6 @@ $(function() {
   function processDataCSV(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var entries = allTextLines.slice(1, allTextLines.length -1);
-    var origins
     var dataPerProvince = {};
     var globalDataPerProvince = [];
     var dataPerProduct = {};
