@@ -23,9 +23,9 @@ img: posts/190701-CartaTelegrafica.jpg
     <div class="pure-g">
 
       <div class="pure-u-1 pure-u-md-1-2 menu-story-container">
-        <p><strong>¿Qué comemos en Madrid, y de donde viene?</strong></p>
+        <h2>{{ page.title }}</h2>
         <div class="menu-story-items">
-          <a href="#section-0">Lo primero</a>
+          <a href="#top">Lo primero</a>
           <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
           <a href="#section-2">¿De dónde vienen los productos?</a>
           <a href="#section-3">¿Qué productos vienen de cada sitio?</a>
@@ -43,14 +43,14 @@ img: posts/190701-CartaTelegrafica.jpg
 
         <div class="share-icons">
 
-          Comparte
+          Si te gusta, comparte
 
           {% capture full_url %}{{site.url}}{{page.url}}{% endcapture %}
 
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" class="share facebook"><i class="fab fa-facebook"></i></a>
           <a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&text={{ page.title | url_encode }}&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
           <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ full_url | url_encode }}&" class="share linkedin"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:?subject={{ page.title | url_encode }}&body=Echale un vistazo: {{ full_url | url_encode }}" class="share email"><i class="fas fa-envelope-open"></i></a>
+          <a href="mailto:?subject={{ page.title | url_encode }}&body=Echale un vistazo: {{ full_url | url_encode }}" class="email"><i class="fas fa-envelope-open"></i></a>
 
         </div>
 
@@ -173,7 +173,7 @@ img: posts/190701-CartaTelegrafica.jpg
 </div>
 
 
-<div class="row-full flex product-browser">
+<div class="row-full flex product-browser" id="browser-products">
 
   <div class="item-list product-browser-sidebar">
     <input type="text" placeholder="Provincia..." id="search-province" />
@@ -206,18 +206,17 @@ img: posts/190701-CartaTelegrafica.jpg
 
 </div>
 
-<div class="row-full flex product-browser">
+<div class="row-full flex product-browser" id="browser-provinces">
 
   <div class="item-list product-browser-sidebar">
 
-    <input type="text" placeholder="Producto..." class="m_v_2" id="search-product">
+    <input type="text" placeholder="Producto..." id="search-product">
 
-    <div id="products"></div>
+    <div class="m_v_2" id="products"></div>
+
   </div>
 
   <div class="product-browser-content">
-
-    <p>Selecciona un producto para ver sus principales orígenes</p>
 
     <h2>Top provincias <span id="current-product"></span></h2>
     <small><a href="#" data-reset="product-filter">ver todo</a></small>
@@ -387,7 +386,7 @@ $(function() {
         categoriesData[category].pct = ((categoriesData[category].kg / totalKg)*100).toFixed(1) + "%";
 
         tableHTML += '<tbody class="category"><tr>' +
-          ' <td class="td-big">' +
+          ' <td class="">' +
           '   <a href="" class="toggle-target" data-target="category_'+toId(category)+'">' +
           '     <i class="fas fa-plus-circle"></i>' + category +
           '   </a>' +
@@ -427,7 +426,7 @@ $(function() {
       for(var i = 0; i < flatProducts.length; i++){
         var pct = (flatProducts[i].kg / totalKg) * 100;
         tableHTML += ' <tr>'+
-          '   <td class="td-big">' +
+          '   <td class="">' +
           '     <a href="" data-navigate-product="'+flatProducts[i].product+'">'+flatProducts[i].product+'</a>' +
           '   </td>' +
           '   <td class="right tb-kilos">'+flatProducts[i].kg.toLocaleString()+' kg.</td>' +
@@ -599,8 +598,9 @@ $(function() {
       e.preventDefault();
 
       $([document.documentElement, document.body]).animate({
-        scrollTop: $("#table-provinces").offset().top
-      }, 1000);
+        // scrollTop: $("#table-provinces").offset().top
+        scrollTop: $("#browser-provinces").offset().top
+      }, 100);
 
       currentProduct = $(this).data('navigate-product');
       $('a[data-reset="product-filter"]').show();
@@ -612,8 +612,9 @@ $(function() {
       e.preventDefault();
 
       $([document.documentElement, document.body]).animate({
-        scrollTop: $("#table-products").offset().top
-      }, 1000);
+        // scrollTop: $("#table-products").offset().top
+        scrollTop: $("#browser-products").offset().top
+      }, 100);
 
       currentProvince = $(this).data('navigate-province');
       $('a[data-reset="province-filter"]').show();
@@ -710,14 +711,14 @@ $(function() {
      }
   });
 
-  // Show menu + scrollToTop
+  // Show menu
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 500) {
-      $('.scroll-to-top').fadeIn();
+      // $('.scroll-to-top').fadeIn();
       $('.menu-story').fadeIn();
     } else {
-      $('.scroll-to-top').fadeOut();
+      // $('.scroll-to-top').fadeOut();
       $('.menu-story').fadeOut();
     }
   });
