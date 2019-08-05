@@ -204,55 +204,18 @@ img: posts/190701-CartaTelegrafica.jpg
 
   <div class="item-list product-browser-sidebar">
 
-    <input type="text" placeholder="Producto..." class="m_v_2">
+    <input type="text" placeholder="Producto..." class="m_v_2" id="search-product">
 
-    {% for category in categories %}
-      <a href="" class="toggle-target" data-target="by_product_category_{{ category }}">{{ category }}</a>
-
-      <div class="category_products" id="by_product_category_{{ category }}">
-      {% for product in products %}
-        <a href="">{{ product }}</a>
-      {% endfor %}
-      </div>
-
-    {% endfor %}
-
+    <div id="products"></div>
   </div>
 
   <div class="product-browser-content">
 
     <p>Selecciona un producto para ver sus principales orígenes</p>
 
-    <h2>Top provincias de PRODUCTO</h2>
+    <h2>Top provincias <span id="current-product"></span></h2>
 
-    <table>
-    <tr>
-      <th></th>
-      <th class="right tb-kilos">Kilos</th>
-      <th class="right tb-percentage">% Total</th>
-      <th></th>
-    </tr>
-
-    {% for province in provincias %}
-    <tbody class="category">
-      <tr>
-        <td>
-          <a href="" class="toggle-target" data-target="category_{{ category }}">
-            {{ province }}
-          </a>
-        </td>
-        <td class="right tb-kilos">133.456.789</td>
-        <td class="right tb-percentage">82.5%</td>
-        <td class="td-bar-chart">
-          <div class="bar-chart-cont"><div class="bar-chart" style="width: 45%; "></div></div>
-        </td>
-      </tr>
-    </tbody>
-
-    {% endfor %}
-    </table>
-
-
+    <table id="table-provinces"> </table>
 
   </div>
 
@@ -332,6 +295,32 @@ $(function() {
     }
   }
 
+  function renderProducts(categories, products, currentProduct){
+    var $products = $('#products');
+    var productsList = "";
+    if(Array.isArray(products)) {
+      for(var i = 0; i < products.length; i++){
+        productsList += '<a href="#" data-product>'+products[i]+'</a>';
+      }
+    } else {
+      for(var i = 0; i < categories.length; i++){
+        var category = categories[i];
+        productsList += '<a href="#" class="toggle-target" data-target="by_product_category_'+toId(category)+'">' + category + '</a>' + "\n";
+        productsList += '<div class="category_products" id="by_product_category_'+toId(category)+'">';
+        for(var j = 0; j < products[category].length; j++){
+          productsList += '<a href="#" data-product>'+products[category][j]+'</a>';
+        }
+        productsList += '</div>';
+      }
+    }
+    $products.html('');
+    $(productsList).appendTo($products);
+
+    if(currentProduct !== null) {
+      $('#current-product').html(" de " + currentProduct);
+    }
+  }
+
   function renderProvinces(provinces, currentProvince){
     var $provinces = $('#provinces');
     var provincesList = "";
@@ -346,7 +335,7 @@ $(function() {
     }
   }
 
-  function renderTable(provinces, data, currentProvince){
+  function renderProductsPerProvinceTable(provinces, data, currentProvince){
     var $container = $("#table-products");
     var tableHTML = '<thead><tr><th></th><th class="right tb-kilos">Kilos</th><th class="right tb-percentage">% Total</th><th></th></tr></thead>';
 
@@ -416,53 +405,154 @@ $(function() {
     $container.html(tableHTML);
   }
 
+  function renderProvincesPerProductTable(data, currentProduct) {
+    var $container = $("#table-provinces");
+    var tableHTML = '<thead><tr><th></th><th class="right tb-kilos">Kilos</th><th class="right tb-percentage">% Total</th><th></th></tr></thead>';
+
+    if(currentProduct !== null){
+      var productData = data[currentProduct];
+    } else {
+      var productData = data;
+    }
+    productData.sort(function(c1, c2){
+      return c2.kg - c1.kg;
+    });
+
+    var totalKg = 0;
+    for(var i = 0; i < productData.length; i++){
+      totalKg += productData[i].kg;
+    }
+
+    for(var i = 0; i < productData.length; i++){
+      var d = productData[i];
+
+      var pct = (d.kg/totalKg)*100;
+
+      tableHTML += '<tbody class="category"><tr>' +
+        ' <td>' +
+        '   <a href="">'+d.province+'</a>' +
+        ' </td>' +
+        ' <td class="right tb-kilos">'+d.kg.toLocaleString()+' kg.</td>' +
+        ' <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
+        ' <td class="td-bar-chart">' +
+        '   <div class="bar-chart-cont"><div class="bar-chart" style="width:'+pct+'%"></div></div>' +
+        ' </td>' +
+        ' </tr>';
+      tableHTML += '</tbody>';
+    }
+    $container.html("");
+    $container.html(tableHTML);
+  }
+
   function processDataCSV(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var entries = allTextLines.slice(1, allTextLines.length -1);
     var origins
-    var data = {};
-    var globalData = [];
-    var tempData = {};
+    var dataPerProvince = {};
+    var globalDataPerProvince = [];
+    var dataPerProduct = {};
+    var globalDataPerProduct = [];
+
+    var tempDataPerProvince = {};
+    var tempDataPerProduct = {};
     var provinces = [];
+    var products = {};
+    var allProducts = [];
     for(var i = 0; i < entries.length; i++) {
       var dataRow = entries[i].split(',');
       var province = dataRow[0];
+      var category = dataRow[4];
+      var product = lowerCaseAllWordsExceptFirstLetters(dataRow[1]);
+
       if(provinces.indexOf(province) === -1){ provinces.push(province); }
 
-      if(data[province] === undefined) {
-        data[province] = [];
+      if(dataPerProvince[province] === undefined) {
+        dataPerProvince[province] = [];
       }
 
-      data[province].push({
-        product: lowerCaseAllWordsExceptFirstLetters(dataRow[1]),
+      if(dataPerProduct[product] === undefined) {
+        dataPerProduct[product] = [];
+      }
+
+      if(products[category] === undefined) {
+        products[category] = [];
+      }
+
+      if(products[category].indexOf(product) === -1){
+        products[category].push(product);
+      }
+
+      if(allProducts.indexOf(product) === -1){
+        allProducts.push(product);
+      }
+
+      dataPerProvince[province].push({
+        product: product,
         pct: parseFloat(dataRow[2]),
         kg: parseInt(dataRow[3]),
-        category: dataRow[4],
+        category: category,
       });
 
-      var product = lowerCaseAllWordsExceptFirstLetters(dataRow[1]);
-      if(tempData[product] === undefined) {
-        tempData[product] = { pct: 0, kg: 0, category: dataRow[4] };
+      dataPerProduct[product].push({
+        province: province,
+        pct: parseFloat(dataRow[2]),
+        kg: parseInt(dataRow[3]),
+        category: category,
+      });
+
+      if(tempDataPerProvince[product] === undefined) {
+        tempDataPerProvince[product] = { pct: 0, kg: 0, category: category };
       }
-      tempData[product].pct += parseFloat(dataRow[2]);
-      tempData[product].kg += parseFloat(dataRow[3]);
+
+      if(tempDataPerProduct[province] === undefined) {
+        tempDataPerProduct[province] = { pct: 0, kg: 0 };
+      }
+
+      var kg = parseFloat(dataRow[3]);
+
+      tempDataPerProvince[product].pct += parseFloat(dataRow[2]);
+      tempDataPerProvince[product].kg += kg;
+
+      tempDataPerProduct[province].kg += kg;
+
     }
-    var products = Object.keys(tempData);
-    for(var i = 0; i < products.length; i++) {
-      var d = tempData[products[i]];
-      globalData.push({ product: products[i], pct: d.pct, kg: d.kg, category: d.category });
+    var tempProducts = Object.keys(tempDataPerProvince);
+    for(var i = 0; i < tempProducts.length; i++) {
+      var d = tempDataPerProvince[tempProducts[i]];
+      globalDataPerProvince.push({ product: tempProducts[i], kg: d.kg, category: d.category });
+    }
+
+    for(var i = 0; i < provinces.length; i++) {
+      var d = tempDataPerProduct[provinces[i]];
+      globalDataPerProduct.push({ province: provinces[i], kg: d.kg});
     }
 
     provinces.sort();
+    var categories = Object.keys(products).sort();
+
+    for(var i = 0; i < categories.length; i++) {
+      products[categories[i]].sort();
+    }
+
     renderProvinces(provinces, currentProvince);
-    renderTable(provinces, globalData, currentProvince);
+    renderProductsPerProvinceTable(provinces, globalDataPerProvince, currentProvince);
+    renderProducts(categories, products, currentProduct);
+    renderProvincesPerProductTable(globalDataPerProduct, currentProduct);
 
     $(document).on('click', '#provinces a', function(e){
       e.preventDefault();
       currentProvince = $(this).html();
 
       renderProvinces(provinces, currentProvince);
-      renderTable(provinces, data, currentProvince);
+      renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince);
+    });
+
+    $(document).on('click', '#products a[data-product]', function(e){
+      e.preventDefault();
+      currentProduct = $(this).html();
+
+      renderProducts(categories, products, currentProduct);
+      renderProvincesPerProductTable(dataPerProduct, currentProduct);
     });
 
     $('#search-province').on('keyup', function(){
@@ -475,6 +565,18 @@ $(function() {
         }), currentProvince);
       }
     });
+
+    $('#search-product').on('keyup', function(){
+      var suggestion = $(this).val().toLowerCase();
+      if(suggestion.length <= 1){
+        renderProducts(categories, products, currentProduct);
+      } else {
+        renderProducts(categories, allProducts.filter(function(p){
+          return p.toLowerCase().indexOf(suggestion) !== -1;
+        }), currentProduct);
+      }
+    });
+
   }
 
   // Build small multiples
@@ -489,6 +591,7 @@ $(function() {
 
   // Build data explorer
   var currentProvince = null;
+  var currentProduct = null;
   $.ajax({
      type: "GET",
      url: "/datasets/190901_mercamadrid_data_per_province.csv",
