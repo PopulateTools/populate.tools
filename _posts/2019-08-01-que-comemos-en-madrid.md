@@ -671,16 +671,6 @@ $(function() {
     });
   }
 
-  // Build small multiples
-  $.ajax({
-     type: "GET",
-     url: "/datasets/190901_mercamadrid_summary_per_province.csv",
-     dataType: "text",
-     success: function(data) {
-       processSummaryCSV(data);
-     }
-  });
-
   // Build data explorer
   var currentProvince = null;
   var currentProduct = null;
@@ -690,6 +680,16 @@ $(function() {
      dataType: "text",
      success: function(data) {
        processDataCSV(data);
+     }
+  });
+
+  // Build small multiples
+  $.ajax({
+     type: "GET",
+     url: "/datasets/190901_mercamadrid_summary_per_province.csv",
+     dataType: "text",
+     success: function(data) {
+       processSummaryCSV(data);
      }
   });
 
