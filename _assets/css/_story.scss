@@ -155,6 +155,11 @@ body.story {
     margin-bottom: 5em;
   }
 
+  .section-cover {
+    background: $blue;
+    padding: 2em;
+  }
+
   .sources {
     font-size: .85em;
     color: #777;
@@ -328,13 +333,66 @@ body.story {
     }
   }
 
+
+  .menu-story {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    padding: .5em;
+    font-size: 12px;
+    z-index: 100;
+
+    height: 33px;
+    width: 90px;
+
+    transition: all .2s ease-in-out;
+
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.12);
+    border-radius: 3px;
+
+    &:hover {
+      height: 40vh;
+      width: 65vw;
+
+      .menu-story-open {
+        display: block;
+      }
+    }
+
+    .menu-story-cue {
+      position: absolute;
+      bottom: .5em;
+      left: .5em;
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+
+      }
+    }
+
+    .menu-story-open {
+      display: none;
+      padding: 1em;
+    }
+
+    .menu-story-items {
+      a {
+        display: block;
+      }
+    }
+  }
+
   // Mercamadrid story
 
   .product-browser {
     padding: 0 2em;
 
     .product-browser-sidebar {
-      width: 20%;
+      width: 25%;
       padding-right: 5%;
 
       input {
@@ -350,6 +408,21 @@ body.story {
 
     .product-browser-content {
       width: 75%;
+    }
+
+    .product-browser-content-header {
+      h2 {
+        margin: 0;
+        line-height: 1;
+        font-size: 1.5em;
+
+        .button_small {
+          padding: .35em .45em .25em;
+          margin: 0 .12em;
+          font-size: 1.5rem;
+        }
+      }
+
     }
 
     .category_products {
@@ -484,7 +557,7 @@ body.story {
       margin: 0 1em 0 0;
       text-decoration: none;
     }
-    .button_small.current {
+    .button_small.current, .button_small:hover {
       background: rgba($blue, .2);
       color: $blue;
     }

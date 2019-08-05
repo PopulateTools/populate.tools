@@ -17,17 +17,48 @@ img: posts/190701-CartaTelegrafica.jpg
 
 {% assign products = "naranja,tomate,patata,manzana,cebolla,porcino,freson,vacuno,platano,platanos,zanahorias,peras,sandia,lechugas,pollo,lechuga,mandarina,elaborados,limon,pimientos,melones,pimiento,cerezas,calabacin,kiwi,albaricoque" | split: ',' %}
 
-<!-- <div class="story-menu">
-  <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
-  <a href="#section-1">¿De dónde vienen los productos?</a>
-  <a href="#section-1">¿Qué productos vienen de cada sitio?</a>
-</div> -->
+<div class="menu-story">
+
+  <div class="menu-story-cue">
+    <a href="">
+      <i class="fas fa-bars"></i>
+      Movidas
+    </a>
+  </div>
+
+  <div class="menu-story-open">
+    <div class="pure-g">
+
+      <div class="pure-u-1 pure-u-md-1-2">
+        <p><strong>¿Qué comemos en Madrid, y de donde viene?</strong></p>
+        <div class="menu-story-items">
+          <a href="#section-0">Lo primero</a>
+          <a href="#section-1">¿Cuáles son los productos más vendidos?</a>
+          <a href="#section-2">¿De dónde vienen los productos?</a>
+          <a href="#section-3">¿Qué productos vienen de cada sitio?</a>
+          <a href="#section-4">¿Qué sitios exportan más productos?</a>
+          <a href="#section-5">Fuentes y metodología</a>
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-md-1-2 p_h_v_4">
+        <p><strong>Populate News</strong> realiza exploraciones de datos sobre temas que nos interesan.  .</p>
+
+        <p>Te puedes suscribir para recibir nuevas exploraciones de datos como esta. Aprox. 1 mail al mes</p>
+
+        <div>{% include subscription_form_es_horizontal.html %}</div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <div class="row-col">
 
   <div class="story-content">
 
-    <div class="section">
+    <div class="section" id="section-0">
 
       <p>Lo primero: disculpas a los no-madrileños, una mayoría aplastante de la población española. Nosotros, a pesar de ser residentes en Madrid (unos oriundos y otros no),  somos conscientes del centralismo mediático, y nada más lejos de nuestra intención que seguir perpetuándolo.</p>
 
@@ -37,7 +68,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
       <div class="notes">
 
-        <p>Los datos están extraidos del portal de datos abiertos del Ayuntamiento de Madrid. El periodo al que se refieren todas las visualizaciones en esta página es de Enero a Junio de 2019, ambos incluídos. Si publican más histórico puede que lo incluyamos.</p>
+        <p>Los datos están extraidos del <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=a4df993ae322b610VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">portal de datos abiertos del Ayuntamiento de Madrid</a>. El periodo al que se refieren todas las visualizaciones en esta página es de Enero a Junio de 2019, ambos incluídos. Si publican más histórico puede que lo incluyamos.</p>
 
         <p><strong>Importante</strong>: No todos los productos que se comen en Madrid pasan por Mercamadrid, claro. Pero si una parte importante, por lo que consideramos interesante hacer esta exploración. No te tomes estos datos como absolutos y completos.</p>
 
@@ -76,7 +107,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
     </div>
 
-    <div class="section" id="section-1">
+    <div class="section" id="section-2">
 
       <div class="m_v_2 story-content-overcolumn">
 
@@ -127,19 +158,36 @@ img: posts/190701-CartaTelegrafica.jpg
 
 </div>
 
+
+
+
+
+<div class="row-full section-cover section" id="section-3">
+
+</div>
+
+
 <div class="row-full flex product-browser">
 
   <div class="item-list product-browser-sidebar">
-    <input type="text" placeholder="Provincia..." class="m_v_2" id="search-province" />
+    <input type="text" placeholder="Provincia..." id="search-province" />
 
-    <div id="provinces"></div>
+    <div class="m_v_2" id="provinces"></div>
   </div>
 
   <div class="product-browser-content">
 
-    <p>Selecciona una provincia para ver sus principales producciones</p>
+    <div class=" m_v_b_1 product-browser-content-header">
 
-    <h2>Top productos <span id="current-province"></span></h2>
+      <h2>
+        Top
+        <a href="" class="tab-link current button_small" data-tab="tab-provincias-1">categorías</a>
+        <a href="" class="tab-link button_small" data-tab="tab-provincias-2">productos</a>
+        <span id="current-province"></span>
+      </h2>
+      <small><a href="">ver todo</a></small>
+
+    </div>
 
     <table id="table-products"> </table>
 
@@ -148,8 +196,9 @@ img: posts/190701-CartaTelegrafica.jpg
 </div>
 
 
+<div class="row-full section-cover section" id="section-4">
 
-
+</div>
 
 <div class="row-full flex product-browser">
 
@@ -209,6 +258,22 @@ img: posts/190701-CartaTelegrafica.jpg
 
 </div>
 
+
+<div class="row-col" id="section-5">
+
+  <div class="story-content">
+
+    <div class="section" id="section-0">
+
+      <h2>Cómo lo hemos hecho: Fuentes y metodología</h2>
+
+      <p>wadus</p>
+
+    </div>
+
+  </div>
+
+</div>
 
 <script type="text/javascript">
 $(function() {
@@ -431,6 +496,18 @@ $(function() {
      success: function(data) {
        processDataCSV(data);
      }
+  });
+
+  // Show menu + scrollToTop
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 500) {
+      $('.scroll-to-top').fadeIn();
+      $('.menu-story').fadeIn();
+    } else {
+      $('.scroll-to-top').fadeOut();
+      $('.menu-story').fadeOut();
+    }
   });
 });
 </script>

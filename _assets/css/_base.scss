@@ -125,6 +125,11 @@ hr {
   height: 100%;
 }
 
+.small {
+  font-size: .8em;
+  line-height: 1.3;
+}
+
 body.about .container {
   ul, li {
     // margin: 0;
@@ -137,10 +142,6 @@ body.about .container {
   }
   h1 {
     color: $blue;
-  }
-  .small {
-    font-size: .8em;
-    line-height: 1.3;
   }
   .main-msg {
     font-size: 1.4em;
@@ -221,5 +222,5 @@ body.about .container {
   @include screen(768) {
     width: 100%;
   }
-  
+
 }

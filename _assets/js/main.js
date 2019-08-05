@@ -173,6 +173,7 @@ $(document).ready(function() {
   // <a href="" class="toggle-target" data-target="id_element_to_toggle">
   $(document).on('click', '.toggle-target', function (e) {
     e.preventDefault();
+    $(this).toggleClass("is-toggled");
     $("#" + $(this).data('target')).toggle();
     return false;
   });
