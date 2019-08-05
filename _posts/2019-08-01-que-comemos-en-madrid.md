@@ -52,10 +52,12 @@ img: posts/190701-CartaTelegrafica.jpg
 
           Comparte
 
-          <a href="https://www.facebook.com/sharer/sharer.php?u=URL" class="share facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/intent/tweet?url=URL&text=TEXT&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
-          <a href="http://www.linkedin.com/shareArticle?mini=true&url=URL&" class="share linkedin"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:?subject=Historia interesante&body=URL" class="share email"><i class="fas fa-envelope-open"></i></a>
+          {% capture full_url %}{{site.url}}{{page.url}}{% endcapture %}
+
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" class="share facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&text={{ page.title | url_encode }}&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
+          <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ full_url | url_encode }}&" class="share linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:?subject={{ page.title | url_encode }}&body=Echale un vistazo: {{ full_url | url_encode }}" class="share email"><i class="fas fa-envelope-open"></i></a>
 
         </div>
 
