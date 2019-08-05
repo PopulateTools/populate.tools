@@ -198,7 +198,7 @@ img: posts/190701-CartaTelegrafica.jpg
         <a href="" class="tab-link button_small" data-tab="tab-provincias-2">productos</a>
         <span id="current-province"></span>
       </h2>
-      <small><a href="">ver todo</a></small>
+      <small><a href="#" data-reset="province-filter">ver todo</a></small>
 
     </div>
 
@@ -227,6 +227,7 @@ img: posts/190701-CartaTelegrafica.jpg
     <p>Selecciona un producto para ver sus principales orígenes</p>
 
     <h2>Top provincias <span id="current-product"></span></h2>
+    <small><a href="#" data-reset="product-filter">ver todo</a></small>
 
     <table id="table-provinces"> </table>
 
@@ -331,6 +332,10 @@ $(function() {
 
     if(currentProduct !== null) {
       $('#current-product').html(" de " + currentProduct);
+      $('a[data-reset="product-filter"]').show();
+    } else {
+      $('#current-product').html("");
+      $('a[data-reset="product-filter"]').hide();
     }
   }
 
@@ -345,6 +350,10 @@ $(function() {
 
     if(currentProvince !== null) {
       $('#current-province').html(" de " + currentProvince);
+      $('a[data-reset="province-filter"]').show();
+    } else {
+      $('#current-province').html("");
+      $('a[data-reset="province-filter"]').hide();
     }
   }
 
@@ -556,6 +565,7 @@ $(function() {
       e.preventDefault();
       currentProvince = $(this).html();
 
+      $('a[data-reset="province-filter"]').show();
       renderProvinces(provinces, currentProvince);
       renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince);
     });
@@ -564,6 +574,7 @@ $(function() {
       e.preventDefault();
       currentProduct = $(this).html();
 
+      $('a[data-reset="product-filter"]').show();
       renderProducts(categories, products, currentProduct);
       renderProvincesPerProductTable(dataPerProduct, currentProduct);
     });
@@ -590,6 +601,23 @@ $(function() {
       }
     });
 
+    $('a[data-reset="product-filter"]').click(function(e){
+      e.preventDefault();
+
+      currentProduct = null;
+      renderProducts(categories, products, currentProduct);
+      renderProvincesPerProductTable(globalDataPerProduct, currentProduct);
+      $(this).hide();
+    });
+
+    $('a[data-reset="province-filter"]').click(function(e){
+      e.preventDefault();
+
+      currentProvince = null;
+      renderProvinces(provinces, currentProvince);
+      renderProductsPerProvinceTable(provinces, globalDataPerProvince, currentProvince);
+      $(this).hide();
+    });
   }
 
   // Build small multiples
