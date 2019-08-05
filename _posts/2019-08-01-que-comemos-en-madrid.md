@@ -10,13 +10,6 @@ category: technology
 img: posts/190701-CartaTelegrafica.jpg
 ---
 
-<!-- Sandbox purposes -->
-{% assign provincias = "A Coruña,Álava,Albacete,Alicante,Almería,Asturias,Ávila,Badajoz,Baleares,Barcelona,Sevilla,Soria,Sta Cruz de Tenerife,Tarragona,Teruel,Toledo,Valencia,Valladolid,Zamora,Zaragoza,Lugo,Madrid,Málaga,Murcia,Navarra,Ourense,Palencia,Pontevedra,Salamanca,Segovia,Girona,Granada,Guadalajara,Huelva,Huesca,Jaén,La Rioja,Las Palmas,León,Lleida,Bizkaia,Burgos,Cáceres,Cádiz,Cantabria,Castellón,Ciudad Real,Córdoba,Cuenca,Gipuzkoa" | split: ',' %}
-
-{% assign categories = "Fruta,Verdura,Patata,Carne,Pescado,Pescado congelado,Pollo,Marisco,Huevos" | split: ',' %}
-
-{% assign products = "naranja,tomate,patata,manzana,cebolla,porcino,freson,vacuno,platano,platanos,zanahorias,peras,sandia,lechugas,pollo,lechuga,mandarina,elaborados,limon,pimientos,melones,pimiento,cerezas,calabacin,kiwi,albaricoque" | split: ',' %}
-
 <div class="menu-story">
 
   <div class="menu-story-cue">
@@ -202,7 +195,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
     </div>
 
-    <table id="table-products"> </table>
+    <table id="table-products"></table>
 
   </div>
 
@@ -229,7 +222,7 @@ img: posts/190701-CartaTelegrafica.jpg
     <h2>Top provincias <span id="current-product"></span></h2>
     <small><a href="#" data-reset="product-filter">ver todo</a></small>
 
-    <table id="table-provinces"> </table>
+    <table id="table-provinces"></table>
 
   </div>
 
@@ -412,7 +405,7 @@ $(function() {
             var pct = (provinceData[j].kg / categoriesData[category].kg) * 100;
             tableHTML += ' <tr>'+
               '   <td class="td-big">' +
-              '     <a href="">'+provinceData[j].product+'</a>' +
+              '     <a href="" data-navigate-product="'+provinceData[j].product+'">'+provinceData[j].product+'</a>' +
               '   </td>' +
               '   <td class="right tb-kilos">'+provinceData[j].kg.toLocaleString()+' kg.</td>' +
               '   <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -436,7 +429,7 @@ $(function() {
         var pct = (flatProducts[i].kg / totalKg) * 100;
         tableHTML += ' <tr>'+
           '   <td class="td-big">' +
-          '     <a href="">'+flatProducts[i].product+'</a>' +
+          '     <a href="" data-navigate-product="'+flatProducts[i].product+'">'+flatProducts[i].product+'</a>' +
           '   </td>' +
           '   <td class="right tb-kilos">'+flatProducts[i].kg.toLocaleString()+' kg.</td>' +
           '   <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -477,7 +470,7 @@ $(function() {
 
       tableHTML += '<tbody class="category"><tr>' +
         ' <td>' +
-        '   <a href="">'+d.province+'</a>' +
+        '   <a href="" data-navigate-province="'+d.province+'">'+d.province+'</a>' +
         ' </td>' +
         ' <td class="right tb-kilos">'+d.kg.toLocaleString()+' kg.</td>' +
         ' <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -602,6 +595,32 @@ $(function() {
       $('a[data-reset="product-filter"]').show();
       renderProducts(categories, products, currentProduct);
       renderProvincesPerProductTable(dataPerProduct, currentProduct);
+    });
+
+    $(document).on('click', '[data-navigate-product]', function(e){
+      e.preventDefault();
+
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#table-provinces").offset().top
+      }, 1000);
+
+      currentProduct = $(this).data('navigate-product');
+      $('a[data-reset="product-filter"]').show();
+      renderProducts(categories, products, currentProduct);
+      renderProvincesPerProductTable(dataPerProduct, currentProduct);
+    });
+
+    $(document).on('click', '[data-navigate-province]', function(e){
+      e.preventDefault();
+
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#table-products").offset().top
+      }, 1000);
+
+      currentProvince = $(this).data('navigate-province');
+      $('a[data-reset="province-filter"]').show();
+      renderProvinces(provinces, currentProvince);
+      renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince, true);
     });
 
     $('#search-province').on('keyup', function(){
