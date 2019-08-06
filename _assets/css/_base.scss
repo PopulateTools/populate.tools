@@ -264,3 +264,12 @@ body.about .container {
   }
 
 }
+
+@media only screen and (max-width: 400px) {
+  .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal {
+    width: auto;
+  }
+  .ml-form-formContent.horozintalForm .ml-button-horizontal {
+    
+  }
+}

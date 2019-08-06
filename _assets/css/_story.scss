@@ -394,9 +394,9 @@ body.story {
       }
 
       @include screen(768) {
-        height: 40vh;
-        width: 65vw;
-        background: linear-gradient(180deg, $blue 50%, #FFF 50%);
+        height: 80vh;
+        width: 90vw;
+        background: #FFF;
       }
     }
 
@@ -416,6 +416,11 @@ body.story {
     .menu-story-container {
       padding-right: 1em;
       color: #FFF;
+
+      @include screen(768) {
+        padding-right: 0;
+        padding-bottom: 4em;
+      }
 
       h2 {
         font-size: 1.5em;

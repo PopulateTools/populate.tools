@@ -184,7 +184,47 @@ img: posts/190701-CartaTelegrafica.jpg
 </div>
 
 
+<div class="row-full section-cover section" id="section-4">
 
+</div>
+
+<div class="row-full flex product-browser" id="browser-provinces">
+
+  <div class="item-list product-browser-sidebar">
+
+    <input type="text" placeholder="Producto..." id="search-product">
+
+    <div class="m_v_2" id="products"></div>
+
+  </div>
+
+  <div class="product-browser-content">
+
+    <h2>Top provincias <span id="current-product"></span></h2>
+    <small><a href="#" data-reset="product-filter">ver todo</a></small>
+
+    <table id="table-provinces"></table>
+
+  </div>
+
+</div>
+
+
+<div class="row-col" id="section-5">
+
+  <div class="story-content">
+
+    <div class="section" id="section-0">
+
+      <h2>Cómo lo hemos hecho: Fuentes y metodología</h2>
+
+      <p>wadus</p>
+
+    </div>
+
+  </div>
+
+</div>
 
 <script type="text/javascript">
 $(function() {
