@@ -288,7 +288,7 @@ $(function() {
     var productsList = "";
     if(Array.isArray(products)) {
       for(var i = 0; i < products.length; i++){
-        productsList += '<a href="#" data-product>'+products[i]+'</a>';
+        productsList += '<a href="#table-provinces-'+products[i]+'" data-product>'+products[i]+'</a>';
       }
     } else {
       for(var i = 0; i < categories.length; i++){
@@ -296,7 +296,7 @@ $(function() {
         productsList += '<a href="#" class="toggle-target" data-target="by_product_category_'+toId(category)+'">' + category + '</a>';
         productsList += '<div class="category_products" id="by_product_category_'+toId(category)+'">';
         for(var j = 0; j < products[category].length; j++){
-          productsList += '<a href="#" data-product>'+products[category][j]+'</a>';
+          productsList += '<a href="#table-provinces-'+products[category][i]+'" data-product>'+products[category][j]+'</a>';
         }
         productsList += '</div>';
       }
@@ -317,7 +317,7 @@ $(function() {
     var $provinces = $('#provinces');
     var provincesList = "";
     for(var i = 0; i < provinces.length; i++){
-      provincesList += '<a href="#">' + provinces[i] + '</a>' + "\n";
+      provincesList += '<a href="#table-products-'+provinces[i]+'">' + provinces[i] + '</a>' + "\n";
     }
     $provinces.html('');
     $(provincesList).appendTo($provinces);
@@ -386,7 +386,7 @@ $(function() {
             var pct = (provinceData[j].kg / categoriesData[category].kg) * 100;
             tableHTML += ' <tr>'+
               '   <td class="td-big">' +
-              '     <a href="" data-navigate-product="'+provinceData[j].product+'">'+provinceData[j].product+'</a>' +
+              '     <a href="#table-provinces-'+provinceData[j].product+'" data-navigate-product="'+provinceData[j].product+'">'+provinceData[j].product+'</a>' +
               '   </td>' +
               '   <td class="right tb-kilos">'+provinceData[j].kg.toLocaleString()+' kg.</td>' +
               '   <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -410,7 +410,7 @@ $(function() {
         var pct = (flatProducts[i].kg / totalKg) * 100;
         tableHTML += ' <tr>'+
           '   <td class="">' +
-          '     <a href="" data-navigate-product="'+flatProducts[i].product+'">'+flatProducts[i].product+'</a>' +
+          '     <a href="#table-provinces-'+flatProducts[i].product+'" data-navigate-product="'+flatProducts[i].product+'">'+flatProducts[i].product+'</a>' +
           '   </td>' +
           '   <td class="right tb-kilos">'+flatProducts[i].kg.toLocaleString()+' kg.</td>' +
           '   <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -451,7 +451,7 @@ $(function() {
 
       tableHTML += '<tbody class="category"><tr>' +
         ' <td>' +
-        '   <a href="" data-navigate-province="'+d.province+'">'+d.province+'</a>' +
+        '   <a href="#table-products-'+d.province+'" data-navigate-province="'+d.province+'">'+d.province+'</a>' +
         ' </td>' +
         ' <td class="right tb-kilos">'+d.kg.toLocaleString()+' kg.</td>' +
         ' <td class="right tb-percentage">'+pct.toFixed(1)+'%</td>' +
@@ -554,11 +554,41 @@ $(function() {
       products[categories[i]].sort();
     }
 
+    // Handle URLS
+    var urlSegment = window.location.hash;
+    if(urlSegment.match(/^#table-products/gi)) {
+      console.log("table products");
+      var elements = urlSegment.split("-");
+      if(elements.length === 3){
+        currentProvince = elements[2];
+      }
+    } else if(urlSegment.match(/^#table-provinces/gi)) {
+      console.log("table provinces");
+      var elements = urlSegment.split("-");
+      if(elements.length === 3){
+        currentProduct = elements[2];
+      }
+    }
+
     renderProvinces(provinces, currentProvince);
-    renderProductsPerProvinceTable(provinces, globalDataPerProvince, currentProvince, true);
+    if(currentProvince === null) {
+      renderProductsPerProvinceTable(provinces, globalDataPerProvince, currentProvince, true);
+    } else {
+      renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince, true);
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#browser-products").offset().top
+      }, 100);
+    }
+
     renderProducts(categories, products, currentProduct);
     renderProvincesPerProductTable(globalDataPerProduct, currentProduct);
+    if(currentProduct !== null) {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#browser-provinces").offset().top
+      }, 100);
+    }
 
+    // Handle events
     $(document).on('click', '#provinces a', function(e){
       e.preventDefault();
       currentProvince = $(this).html();
@@ -566,6 +596,7 @@ $(function() {
       $('a[data-reset="province-filter"]').show();
       renderProvinces(provinces, currentProvince);
       renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince, true);
+      window.location.hash = $(this).attr('href');
     });
 
     $(document).on('click', '#products a[data-product]', function(e){
@@ -575,13 +606,13 @@ $(function() {
       $('a[data-reset="product-filter"]').show();
       renderProducts(categories, products, currentProduct);
       renderProvincesPerProductTable(dataPerProduct, currentProduct);
+      window.location.hash = $(this).attr('href');
     });
 
     $(document).on('click', '[data-navigate-product]', function(e){
       e.preventDefault();
 
       $([document.documentElement, document.body]).animate({
-        // scrollTop: $("#table-provinces").offset().top
         scrollTop: $("#browser-provinces").offset().top
       }, 100);
 
@@ -589,13 +620,13 @@ $(function() {
       $('a[data-reset="product-filter"]').show();
       renderProducts(categories, products, currentProduct);
       renderProvincesPerProductTable(dataPerProduct, currentProduct);
+      window.location.hash = $(this).attr('href');
     });
 
     $(document).on('click', '[data-navigate-province]', function(e){
       e.preventDefault();
 
       $([document.documentElement, document.body]).animate({
-        // scrollTop: $("#table-products").offset().top
         scrollTop: $("#browser-products").offset().top
       }, 100);
 
@@ -603,6 +634,7 @@ $(function() {
       $('a[data-reset="province-filter"]').show();
       renderProvinces(provinces, currentProvince);
       renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince, true);
+      window.location.hash = $(this).attr('href');
     });
 
     $('#search-province').on('keyup', function(){
