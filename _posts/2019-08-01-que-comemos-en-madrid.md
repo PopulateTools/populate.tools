@@ -1,5 +1,6 @@
 ---
 layout: story
+body_class: story_merca
 title: "¿Qué comemos en Madrid, y de donde viene?"
 description: Una exploración sobre los alimentos que pasan por Mercamadrid
 date: 2019-08-01 8:00:00 +0100

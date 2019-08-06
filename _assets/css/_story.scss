@@ -8,6 +8,54 @@ body.story {
     padding-bottom: 0;
   }
 
+  // pending refactoring for next issues...
+  &.story_merca {
+    header.story {
+      height: initial;
+      padding: 0;
+
+      .container {
+        margin: 0;
+        max-width: initial;
+        display: flex;
+        padding: initial;
+        justify-content: flex-end;
+
+      }
+
+      .visual_feature {
+        align-self: stretch;
+        background: url(asset_path('190901-mercamadrid-ilu-intro.png')) center right no-repeat;
+        width: 605px;
+        height: 534px;
+      }
+
+      .header-text {
+        align-self: center;
+        padding: 0 5em 0 2em;
+        width: 50%;
+
+        p.author {
+          margin-bottom: 0;
+        }
+      }
+
+      @include screen(768) {
+        .container {
+          flex-flow: column-reverse;
+        }
+        .visual_feature {
+          width: 100%;
+          height: 325px;
+        }
+        .header-text {
+          width: 100%;
+          padding: 1.5em;
+        }
+      }
+    }
+  }
+
   header.story {
     background: $blue;
     padding: 4em 0;
@@ -15,16 +63,16 @@ body.story {
     margin: 0;
     height: 80vh;
 
-    .container {
-      padding: 0;
-      margin: 20vh 10vw 20vh 0;
-    }
-
-    .visual_feature {
-      width: 15vw;
-      height: 400px;
-      float: left;
-    }
+    // .container {
+    //   padding: 0;
+    //   margin: 20vh 10vw 20vh 0;
+    // }
+    //
+    // .visual_feature {
+    //   width: 15vw;
+    //   height: 400px;
+    //   float: left;
+    // }
 
     h1, h2 {
       color: #FFF;

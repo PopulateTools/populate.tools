@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="{{ page.layout }} {% if page.url == '/' %}section_home{% endif %} {{ page.class }}" id="top">
+<body class="{{ page.layout }} {{ page.body_class}} {% if page.url == '/' %}section_home{% endif %} {{ page.class }}" id="top">
 
 <!--
 <div>Site languages: {{ site.languages }}</div>
