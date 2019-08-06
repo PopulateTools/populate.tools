@@ -3,8 +3,6 @@
 
 {% include head.html %}
 
-{% asset main.js %}
-
 <body class="{{ page.layout }} {% if page.url == '/' %}section_home{% endif %} {{ page.class }}" id="top">
 
 <!--
@@ -16,6 +14,10 @@
 {{ content }}
 
 {% include footer.html %}
+
+{% asset main.js %}
+
+{% contentblock js %}
 
 <!-- MailerLite Universal -->
 <script>

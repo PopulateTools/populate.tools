@@ -226,6 +226,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
 </div>
 
+{% contentfor js %}
 <script type="text/javascript">
 $(function() {
 
@@ -706,3 +707,4 @@ $(function() {
   });
 });
 </script>
+{% endcontentfor %}

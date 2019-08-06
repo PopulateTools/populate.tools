@@ -7,5 +7,5 @@ gem "jekyll-sitemap"
 gem "jekyll-assets"
 gem "jekyll-polyglot"
 gem "rouge"
-
+gem "jekyll-contentblocks"
 # gem 'jekyll-multiple-languages-plugin'
