@@ -597,6 +597,9 @@ $(function() {
       renderProvinces(provinces, currentProvince);
       renderProductsPerProvinceTable(provinces, dataPerProvince, currentProvince, true);
       window.location.hash = $(this).attr('href');
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#browser-products").offset().top
+      }, 100);
     });
 
     $(document).on('click', '#products a[data-product]', function(e){
