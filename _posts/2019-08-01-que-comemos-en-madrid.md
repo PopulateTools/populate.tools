@@ -34,26 +34,8 @@ img: posts/190701-CartaTelegrafica.jpg
         </div>
       </div>
 
-      <div class="pure-u-1 pure-u-md-1-2 p_h_l_2">
-        <p><strong>Populate News</strong> realiza exploraciones de datos sobre temas que nos llaman la atención.</p>
-
-        <p>Te puedes suscribir para recibir nuevas exploraciones de datos como esta. Aprox. 1 mail al mes</p>
-
-        <div>{% include subscription_form_es_horizontal.html %}</div>
-
-        <div class="share-icons">
-
-          Si te gusta, comparte
-
-          {% capture full_url %}{{site.url}}{{page.url}}{% endcapture %}
-
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" class="share facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&text={{ page.title | url_encode }}&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
-          <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ full_url | url_encode }}&" class="share linkedin"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:?subject={{ page.title | url_encode }}&body=Echale un vistazo: {{ full_url | url_encode }}" class="email"><i class="fas fa-envelope-open"></i></a>
-
-        </div>
-
+      <div class="pure-u-1 pure-u-md-1-2 menu-story-about">
+        {% include populate_news_about.html %}
       </div>
     </div>
   </div>
@@ -202,47 +184,7 @@ img: posts/190701-CartaTelegrafica.jpg
 </div>
 
 
-<div class="row-full section-cover section" id="section-4">
 
-</div>
-
-<div class="row-full flex product-browser" id="browser-provinces">
-
-  <div class="item-list product-browser-sidebar">
-
-    <input type="text" placeholder="Producto..." id="search-product">
-
-    <div class="m_v_2" id="products"></div>
-
-  </div>
-
-  <div class="product-browser-content">
-
-    <h2>Top provincias <span id="current-product"></span></h2>
-    <small><a href="#" data-reset="product-filter">ver todo</a></small>
-
-    <table id="table-provinces"></table>
-
-  </div>
-
-</div>
-
-
-<div class="row-col" id="section-5">
-
-  <div class="story-content">
-
-    <div class="section" id="section-0">
-
-      <h2>Cómo lo hemos hecho: Fuentes y metodología</h2>
-
-      <p>wadus</p>
-
-    </div>
-
-  </div>
-
-</div>
 
 <script type="text/javascript">
 $(function() {

@@ -92,7 +92,7 @@ body.story {
     margin: auto;
 
     @include screen(768) {
-      margin: 0 2em;
+      margin: 0 1em;
     }
 
   }
@@ -218,7 +218,7 @@ body.story {
       border-bottom: 1px solid rgba(#D8D8D8, .3);
 
       @include screen(768) {
-        font-size: .85rem;
+        font-size: .8rem;
       }
 
       i.fas {
@@ -258,6 +258,10 @@ body.story {
     td.td-bar-chart {
       width: 300px;
       padding-left: 16px;
+
+      @include screen(768) {
+        width: 20%;
+      }
     }
 
     td.td-big {
@@ -306,12 +310,18 @@ body.story {
     flex-wrap: wrap;
     margin: 0 -15px;
 
+    @include screen(768) {
+      margin: 0 -10px;
+    }
+
     .multiple {
       width: 20%;
       padding: 15px;
 
       @include screen(768) {
-        width: 33%;
+        width: calc(100%/3);
+        overflow: hidden;
+        padding: 10px;
       }
 
       h3 {
@@ -382,6 +392,12 @@ body.story {
       .menu-story-open {
         visibility: visible;
       }
+
+      @include screen(768) {
+        height: 40vh;
+        width: 65vw;
+        background: linear-gradient(180deg, $blue 50%, #FFF 50%);
+      }
     }
 
     .menu-story-cue {
@@ -405,6 +421,10 @@ body.story {
         font-size: 1.5em;
         margin-bottom: 1.5em;
         color: #FFF;
+
+        @include screen(768) {
+          color: initial;
+        }
       }
 
       .menu-story-items {
@@ -413,12 +433,26 @@ body.story {
           margin-bottom: .5em;
           color: #FFF;
           transition: font-weight $transitionRegular ease-in-out;
+
+          @include screen(768) {
+            color: initial;
+          }
         }
         a:hover {
           font-weight: bold;
         }
       }
     }
+
+    .menu-story-about {
+      padding-left: 2em;
+
+      @include screen(768) {
+        padding-left: 0;
+      }
+
+    }
+
     .menu-story-open {
       visibility: hidden;
       padding: 1em;

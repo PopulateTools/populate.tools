@@ -237,6 +237,13 @@ $(document).ready(function() {
         }
         return !!popup;
     }
-  }()); 
+  }());
+
+
+  $('.menu-story-cue a').click(function(e) {
+    e.preventDefault();
+  });
+
+
 
 });
