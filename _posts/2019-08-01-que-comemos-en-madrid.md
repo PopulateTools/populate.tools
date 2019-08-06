@@ -8,7 +8,7 @@ author: blat
 lang: es
 # product: populate_data
 category: technology
-img: posts/190701-CartaTelegrafica.jpg
+img: posts/190901-mercamadrid-ilu-intro.png
 ---
 
 <div class="menu-story">
