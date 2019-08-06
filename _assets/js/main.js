@@ -1,12 +1,14 @@
 //= require vendor/jquery-3.1.1.min.js
 //= require vendor/jquery.waypoints.min.js
 //= require vendor/sticky.min.js
-//= require vendor/jquery.magnific-popup.min.js
 //= require vendor/packery.pkgd.min.js
 //= require vendor/imagesloaded.pkgd.min.js
 //= require vendor/blazy.min.js
 //= require vendor/slick.min.js
 //= require vendor/contents.js
+//= require vendor/ScrollMagic.min.js
+//= require vendor/TweenMax.min.js
+//= require vendor/ScrollMagic/animation.gsap.min.js
 
 $(document).ready(function() {
 
@@ -243,7 +245,6 @@ $(document).ready(function() {
   $('.menu-story-cue a').click(function(e) {
     e.preventDefault();
   });
-
 
 
 });
