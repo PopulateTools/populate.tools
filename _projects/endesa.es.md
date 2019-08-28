@@ -62,7 +62,7 @@ permalink: projects/endesa
           </p>
           <p>
             Hemos puesto en contexto los datos de consumo de Endesa con diversas fuentes externas para darles contexto y entender mejor cómo
-            somos los hogares españoles. En colaboración con <a href="https://www.webedia.es" target="_blank">Webedia</a>. Visita el proyecto en <a href="https://tuenergiacuenta.es">tuenergiacuenta.es</a>.
+            somos los hogares españoles. En colaboración con <a href="https://www.webedia.es" target="_blank">Webedia</a> y <a href="https://visualizados.com" target="_blank">Visualizados</a>. Visita el proyecto en <a href="https://tuenergiacuenta.com">tuenergiacuenta.com</a>.
           </p>
         </div>
       </div>
