@@ -15,7 +15,7 @@ layout: default
       <p class="author">Una exploración de datos por Fernando Blat y Álvaro Ortiz</p>
     </div>
 
-    <div class="visual_feature"></div>
+    <div class="visual_feature" style="background-url: {% asset {{page.img}} @path %}" ></div>
 
   </div>
 
@@ -48,6 +48,8 @@ layout: default
     <main class="content">
       {{ content }}
     </main>
+
+    {% include populate_news_latest.html %}
 
   </article>
 

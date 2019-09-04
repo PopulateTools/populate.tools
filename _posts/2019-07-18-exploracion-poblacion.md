@@ -6,7 +6,7 @@ date: 2019-07-18 8:00:00 +0100
 author: blat
 lang: es
 product: populate_data
-category: technology
+category: populate_news
 img: posts/190701-CartaTelegrafica.jpg
 ---
 

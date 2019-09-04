@@ -1,0 +1,25 @@
+
+<div class="container">
+
+  <h2>Recientemente...</h2>
+
+  <div class="news_list">
+
+    {% assign news = site.posts | where: "category","populate_news" %}
+    {% for item in news %}
+      {% if item.url != page.url %}
+      <div class="news_item">
+        <a href="{{ site.baseurl }}/es{{ item.url }}">
+          <div class="visual_feature" style="background-image: url('{% asset {{item.img}} @path %}')" ></div>
+          <div class="header-text">
+            <h1>{{ item.title }}</h1>
+            <h2>{{ item.description }}</h2>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+</div>

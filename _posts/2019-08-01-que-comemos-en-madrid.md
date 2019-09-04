@@ -3,11 +3,10 @@ layout: story
 body_class: story_merca
 title: "¿Qué comemos en Madrid, y de donde viene?"
 description: Una exploración sobre los alimentos que pasan por Mercamadrid
-date: 2019-08-01 8:00:00 +0100
+date: 2019-09-01 8:00:00 +0100
 author: blat
 lang: es
-# product: populate_data
-category: technology
+category: populate_news
 img: posts/190901-mercamadrid-ilu-intro.png
 ---
 
@@ -31,7 +30,6 @@ img: posts/190901-mercamadrid-ilu-intro.png
           <a href="#section-2">¿De dónde vienen los productos?</a>
           <a href="#section-3">¿Qué productos vienen de cada sitio?</a>
           <a href="#section-4">¿Qué sitios exportan más productos?</a>
-          <a href="#section-5">Fuentes y metodología</a>
         </div>
       </div>
 
@@ -90,7 +88,11 @@ img: posts/190901-mercamadrid-ilu-intro.png
 
         <p>"Hay que comer fruta y verdura". El tesón de tus progenitores para que te alimentases bien ha dado sus <em>frutos</em> (🥁): Fruta y verdura es lo que más comemos, con mucha diferencia. ¡A tope con la dieta mediterranea! Así estamos de sanos y así nuestra esperanza de vida continua aumentando.</p>
 
-        <p>INCLUIR NOTA SOBRE EL POLLO? PROBABLEMENTE NO APARECE AQUI TODO EL QUE SE VENDE. Los caminos de la distribución son inexcrutables.</p>
+        <div class="notes">
+          <p><strong>¿Tan poco pollo?</strong> Mercamadrid está dividido en mercados: los principales son carnes, pescados y frutas. Hay naves de polivalencia donde se venden todo tipo de productos y en donde se aprecia un crecimiento muy notable en los últimos años pues cada vez hay mas productos de la denominada cuarta y quinta gama.</p>
+
+          <p>En Mercamadrid no hay mercado de aves, el (poco) pollo que hay es distribuido en las naves de polivalencia. Por eso es un producto tan residual en los datos globales de entrada y salida de alimentos.</p>
+        </div>
 
       </div>
 
@@ -119,9 +121,6 @@ img: posts/190901-mercamadrid-ilu-intro.png
         <iframe title="Origen de los productos por provincia y pa&iacute;s" aria-label="Table" id="datawrapper-chart-I29Bo" src="//datawrapper.dwcdn.net/I29Bo/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="766"></iframe><script type="text/javascript">(function() {    'use strict';    window.addEventListener('message', function(event) {        if (typeof event.data['datawrapper-height'] !== 'undefined') {            for (var chartId in event.data['datawrapper-height']) {                var iframe = document.getElementById('datawrapper-chart-' + chartId) || document.querySelector("iframe[src*='" + chartId + "']");                if (!iframe) {                    continue;                }                iframe.style.height = event.data['datawrapper-height'][chartId] + 'px';            }        }    });})();</script>
 
       </div>
-
-
-      <p>TABLA TOP PAISES</p>
 
 
       <p>Regresando a España: Estos son los productos top de cada provincia. ¿Qué gana en la tuya?</p>
@@ -205,23 +204,6 @@ img: posts/190901-mercamadrid-ilu-intro.png
     <small><a href="#" data-reset="product-filter">ver todo</a></small>
 
     <table id="table-provinces"></table>
-
-  </div>
-
-</div>
-
-
-<div class="row-col" id="section-5">
-
-  <div class="story-content">
-
-    <div class="section" id="section-0">
-
-      <h2>Cómo lo hemos hecho: Fuentes y metodología</h2>
-
-      <p>wadus</p>
-
-    </div>
 
   </div>
 

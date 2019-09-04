@@ -56,6 +56,51 @@ body.story {
     }
   }
 
+  .news_list {
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+
+    .news_item {
+      background: $blue;
+      width: 50%;
+      margin: 1em;
+      transition: box-shadow .15s ease-in-out;
+
+      a {
+        color: #FFF;
+        text-decoration: none;
+
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+      }
+
+      .header-text {
+        padding: 1em;
+        h1 {
+          font-size: $f4;
+          color: #FFF;
+        }
+        h2 {
+          font-size: $f6;
+          font-weight: normal;
+          color: #FFF;
+          opacity: .5;
+        }
+      }
+
+      .visual_feature {
+        height: 100px;
+        background: url(asset_path('190901-mercamadrid-ilu-intro.png')) center right no-repeat;
+      }
+    }
+
+
+  }
+
   header.story {
     background: $blue;
     padding: 4em 0;
@@ -227,6 +272,15 @@ body.story {
     p:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .note {
+    border-radius: 5px;
+    padding: 2em;
+    font-size: .7em;
+    line-height: 1.4;
+    color: $gray;
+    background: rgba(244, 244, 244, 1);
   }
 
   .flex {
@@ -723,15 +777,6 @@ body.story {
       background: #1380A1;
       top: .95em;
       left: .75em;
-    }
-
-    .note {
-      border-radius: 5px;
-      padding: 2em;
-      font-size: .7em;
-      line-height: 1.4;
-      color: $gray;
-      background: rgba(244, 244, 244, 1);
     }
 
     .sticky {
