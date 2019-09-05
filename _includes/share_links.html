@@ -1,4 +1,4 @@
-{% capture full_url %}{{ site.baseurl }}/{{page.url}}{% endcapture %}
+{% capture full_url %}{{ site.url }}{{page.url}}{% endcapture %}
 
 <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" class="share facebook"><i class="fab fa-facebook"></i></a>
 <a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&text={{ page.title | url_encode }}&via=twitter" class="share twitter"><i class="fab fa-twitter"></i></a>
