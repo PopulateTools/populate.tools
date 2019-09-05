@@ -125,6 +125,11 @@ hr {
   height: 100%;
 }
 
+.small {
+  font-size: .8em;
+  line-height: 1.3;
+}
+
 body.about .container {
   ul, li {
     // margin: 0;
@@ -137,10 +142,6 @@ body.about .container {
   }
   h1 {
     color: $blue;
-  }
-  .small {
-    font-size: .8em;
-    line-height: 1.3;
   }
   .main-msg {
     font-size: 1.4em;
@@ -209,4 +210,85 @@ body.about .container {
   height: 1px;
   width: 100%;
   margin: 0 0 1.85rem 0;
+}
+
+
+.share-icons {
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #FFF;
+  }
+  i {
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 0 0 6px;
+    transition: background $transitionRegular ease-in-out;
+
+  }
+  i.fa-twitter {
+    background: $color_twitter;
+  }
+  i.fa-facebook {
+    background: $color_facebook;
+  }
+  i.fa-linkedin-in {
+    background: $color_linkedin;
+  }
+  i.fa-envelope-open {
+    background: $blue;
+  }
+  i.fa-twitter:hover {
+    background: darken($color_twitter, 10%);
+  }
+  i.fa-facebook:hover {
+    background: darken($color_facebook, 10%);
+  }
+  i.fa-linkedin-in:hover {
+    background: darken($color_linkedin, 10%);
+  }
+  i.fa-envelope-open:hover {
+    background: darken($blue, 10%);
+  }
+}
+
+body.story header.story {
+  .share-icons {
+    i.fa-twitter,
+    i.fa-facebook,
+    i.fa-linkedin-in,
+    i.fa-envelope-open {
+      background: #FFF;
+      color: $blue;
+      transition: opacity $transitionRegular ease-in-out;
+    }
+    i.fa-twitter:hover,
+    i.fa-facebook:hover,
+    i.fa-linkedin-in:hover,
+    i.fa-envelope-open:hover {
+      opacity: .8;
+    }
+  }
+}
+
+// Horizontal Newsletter
+#mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+  padding: 0;
+  width: 50%;
+
+  @include screen(768) {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal {
+    width: auto;
+  }
+  .ml-form-formContent.horozintalForm .ml-button-horizontal {
+
+  }
 }

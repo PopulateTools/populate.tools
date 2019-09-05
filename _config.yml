@@ -32,6 +32,8 @@ collections:
   category:
     output: true
     permalink: blog/:title/
+  datasets:
+    output: true
 
 defaults:
   # - scope:
@@ -77,6 +79,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-assets
   - jekyll-polyglot
+  - jekyll-contentblocks
 
 languages: ["en", "es"]
 default_lang: "en"

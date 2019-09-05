@@ -47,6 +47,8 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
+    jekyll-contentblocks (1.2.0)
+      jekyll
     jekyll-polyglot (1.3.1)
       jekyll (>= 3.0)
     jekyll-sanity (1.2.0)
@@ -101,6 +103,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-assets (>= 3.0.12)
+  jekyll-contentblocks
   jekyll-polyglot
   jekyll-seo-tag
   jekyll-sitemap
