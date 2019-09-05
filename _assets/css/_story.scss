@@ -38,6 +38,7 @@ body.story {
         p.author {
           margin-bottom: 0;
         }
+
       }
 
       @include screen(768) {
@@ -256,6 +257,14 @@ body.story {
   .section-cover {
     background: $blue;
     padding: 2em;
+    h2 {
+      color: #FFF;
+    }
+    p {
+      color: #FFF;
+      margin: 0;
+
+    }
   }
 
   .sources {

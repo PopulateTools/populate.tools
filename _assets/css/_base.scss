@@ -254,6 +254,25 @@ body.about .container {
   }
 }
 
+body.story header.story {
+  .share-icons {
+    i.fa-twitter,
+    i.fa-facebook,
+    i.fa-linkedin-in,
+    i.fa-envelope-open {
+      background: #FFF;
+      color: $blue;
+      transition: opacity $transitionRegular ease-in-out;
+    }
+    i.fa-twitter:hover,
+    i.fa-facebook:hover,
+    i.fa-linkedin-in:hover,
+    i.fa-envelope-open:hover {
+      opacity: .8;
+    }
+  }
+}
+
 // Horizontal Newsletter
 #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-1431216.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
   padding: 0;
@@ -270,6 +289,6 @@ body.about .container {
     width: auto;
   }
   .ml-form-formContent.horozintalForm .ml-button-horizontal {
-    
+
   }
 }

@@ -63,6 +63,16 @@ img: posts/190901-mercamadrid-ilu-intro.png
 
     </div>
 
+  </div>
+
+</div>
+
+{% asset 'posts/190901-Merca-Foto' class='' style='' %}
+
+<div class="row-col">
+
+  <div class="story-content">
+
     <div class="story-newsletter-promo">
 
       <p>Te puedes suscribir para recibir nuevas exploraciones de datos como esta. Aprox. 1 mail al mes</p>
@@ -150,8 +160,18 @@ img: posts/190901-mercamadrid-ilu-intro.png
 
 
 
-<div class="row-full section-cover section" id="section-3">
-
+<div class="row-full section-cover section center" id="section-3" style="margin-top: 8em;">
+  <div class="container">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-6">
+        {% asset 'posts/190901-Sparra' class='' style='margin: auto; margin-top: -81%; margin-bottom: -50%; ' %}
+      </div>
+      <div class="pure-u-1 pure-u-md-5-6">
+        <h2>Top productos</h2>
+        <p>¿Cuáles son los principales productos que exporta cada provincia a (Merca)Madrid?</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -184,9 +204,20 @@ img: posts/190901-mercamadrid-ilu-intro.png
 </div>
 
 
-<div class="row-full section-cover section" id="section-4">
-
+<div class="row-full section-cover section center" id="section-4" style="margin-top: 8em;">
+  <div class="container">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-3">
+        {% asset 'posts/190901-Spain' class='' style='margin-top: -18%; margin-bottom: -23%; ' %}
+      </div>
+      <div class="pure-u-1 pure-u-md-2-3">
+        <h2>Top provincias</h2>
+        <p>¿Cuál es el origen de cada uno de los productos que llegan a (Merca)Madrid?</p>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <div class="row-full flex product-browser" id="browser-provinces">
 
@@ -208,6 +239,23 @@ img: posts/190901-mercamadrid-ilu-intro.png
   </div>
 
 </div>
+
+
+<div class="separator"></div>
+
+<div class="sources section-text narrow-col" id="sources">
+
+  <h2>Créditos</h2>
+
+  <ul>
+    <li>Análisis de datos y textos: Fernando Blat y Álvaro Ortiz</li>
+    <li>Ilustraciones: Belén Temprado</li>
+    <li>Fotografía Mercamadrid: <a href="https://lostiumproject.com/">Juanjo Gaspar</a></li>
+  </ul>
+
+</div>
+
+
 
 {% contentfor js %}
 <script type="text/javascript">
