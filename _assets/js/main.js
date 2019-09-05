@@ -223,6 +223,9 @@ $(document).ready(function() {
     function PopupHandler(e) {
         e = (e ? e : window.event);
         var t = (e.target ? e.target : e.srcElement);
+        if(t.tagName !== "A"){
+          t = t.parentElement;
+        }
         // popup position
         var
             px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
