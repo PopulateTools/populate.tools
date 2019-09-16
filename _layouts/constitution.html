@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign author = site.data.team[page.author] %}
+
+{% include header.html %}
+
+<div class="container post-page story-container">
+
+
+      <div id="app">
+          {{ content }}
+      </div>
+
+    {% include populate_news_latest.html %}
+    {% include scripts.html %}
+
+  </article>
+
+</div>

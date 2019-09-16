@@ -1,0 +1,79 @@
+.browser-container {
+    height: 100vh;
+    font-size: 0;
+}
+
+.browser-columns {
+    width: 30%;
+    display: inline-block;
+    background-color: $blackgrey;
+    padding: 1rem;
+    vertical-align: top;
+    height: 100%;
+    &:last-child {
+        background-color: $grey;
+    }
+}
+
+.browser-column-center {
+    width: 40%;
+    background-color: $lightgrey;
+    padding: 1rem 3rem;
+}
+
+.browser-title {
+    font-size: 2rem;
+    font-family: $title;
+    color: $white;
+}
+
+.browser-chapter {
+    width: 30%;
+    display: block;
+    font-size: 1rem;
+    font-family: $text;
+    color: $colorchapter;
+    margin-bottom: .75rem;
+}
+
+.browser-chapter-left {
+    display: inline-block;
+}
+
+.browser-chapter-group {
+    font-size: 0;
+}
+
+.browser-chapter-titles {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    font-family: $text;
+}
+
+.browser-chapter-text {
+    font-size: 1rem;
+    color: $white;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.browser-constitution {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.browser-constitution-title {
+    font-size: 1.5rem;
+    font-family: $title;
+    color: $black;
+}
+
+.browser-constitution-paragraph {
+    font-size: 1rem;
+    font-family: $text;
+    color: $black;
+
+}
+.browser-constitution-title {
+}

@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "env":
+    {
+        "browser": true,
+        "node": true
+    },
+    "extends": ["standard", "plugin:vue/strongly-recommended"],
+    "rules":
+    {
+        "indent": ["error", 4],
+        "space-before-function-paren": ["error", "never"]
+    },
+    "plugins": [
+        "vue"
+    ]
+}
