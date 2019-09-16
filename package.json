@@ -15,10 +15,6 @@
     "jekyll",
     "vue"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PopulateTools/constitucion"
-  },
   "dependencies": {
     "vue": "^2.6.10",
     "vue-router": "^3.1.3"

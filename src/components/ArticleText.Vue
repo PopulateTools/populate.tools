@@ -1,15 +1,20 @@
 <template>
-    <div v-for="(entry, index) in json" :item="entry" :key="index" class="browser-constitution">
-        <h4 class="browser-constitution-title"> {{ entry.title }}</h4>
-        <p class="browser-constitution-paragraph"> {{ entry.text }} </p>
-    </div>
+    <article class="browser-columns browser-column-center">
+        <div v-for="item in items" class="browser-constitution">
+            <h4 class="browser-constitution-title"> {{item.title}}</h4>
+            <p class="browser-constitution-paragraph"> {{item.text}} </p>
+        </div>
+    </article>
 </template>
 <script>
+import articles from './../json/articles.json'
+console.log(articles)
+
 export default {
-    name: 'ArticleText',
-    props: {
-        title: String,
-        text: String
+    data() {
+        return {
+            items: articles
+        }
     }
 }
 </script>

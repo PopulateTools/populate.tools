@@ -1,7 +1,7 @@
 ---
 layout: constitution
-title: "1877-2011: Cómo hemos cambiado"
-description: Cómo ha cambiado la población española desde 1874, y cómo evolucionará hasta 2074
+title: "La constitución"
+description: Analisis de La Constitución Española
 date: 2019-07-18 8:00:00 +0100
 author: blat
 lang: es

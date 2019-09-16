@@ -1,16 +1,18 @@
 <template>
     <div id="app">
-        <ul class="nav navbar-nav">
-            <router-link tag="li" to="/" exact>
+        <ul>
+            <router-link tag="li" exact to="/">
                 <a>Home</a>
             </router-link>
-            <router-link tag="li" to="/article">
+            <router-link tag="li" exact to="/article">
                 <a>Articulo</a>
             </router-link>
-            <router-link tag="li" to="/browser">
+            <router-link tag="li" exact to="/browser">
                 <a>Explorador</a>
             </router-link>
+
         </ul>
+        <router-view/>
     </div>
 </template>
 
