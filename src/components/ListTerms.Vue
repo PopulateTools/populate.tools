@@ -10,7 +10,7 @@
 export default {
     data() {
         return {
-            terms: ['Artículo', 'España', 'Estado', 'Derechos', 'Bienestar']
+            terms: ['Estado', 'Articulo', 'Derechos', 'Poderes']
         }
     },
     methods: {
@@ -18,7 +18,7 @@ export default {
             this.$nextTick(() => {
                 const wordBold = new RegExp(word, 'g')
                 const element = document.getElementById('constitution-text')
-                element.innerHTML = element.innerHTML.replace(wordBold, '<span class="term-selected">$&</span>')
+                element.innerHTML = element.innerHTML.replace(wordBold, `<span class="term-selected-${word}">$&</span>`)
             })
         }
     }
