@@ -16,31 +16,9 @@ export default {
     methods: {
         getWords: function wrapWord(word) {
             this.$nextTick(() => {
+                const wordBold = new RegExp(word, 'g')
                 const element = document.getElementById('constitution-text')
-                element.innerHTML = element.innerText || element.textContent
-                console.log(element.innerText)
-                const expr = new RegExp(word, 'i')
-                const nodes = [].slice.call(element.childNodes, 0)
-                for (var i = 0; i < nodes.length; i++) {
-                    const node = nodes[i]
-                    if (node.nodeType === 3) {
-                        const matches = node.nodeValue.match(expr)
-                        if (matches) {
-                            const parts = node.nodeValue.split(expr)
-                            for (var n = 0; n < parts.length; n++) {
-                                if (n) {
-                                    const span = element.insertBefore(document.createElement('span'), node)
-                                    span.appendChild(document.createTextNode(matches[0]))
-                                    span.setAttribute('class', 'term-selected')
-                                }
-                                if (parts[n]) {
-                                    element.insertBefore(document.createTextNode(parts[n]), node)
-                                }
-                            }
-                            element.removeChild(node)
-                        }
-                    }
-                }
+                element.innerHTML = element.innerHTML.replace(wordBold, '<span class="term-selected">$&</span>')
             })
         }
     }
