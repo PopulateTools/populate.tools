@@ -1,24 +1,21 @@
 <template>
     <div class="browser">
         <section class="browser-container">
+            <list-terms></list-terms>
             <article-text></article-text>
         </section>
     </div>
 </template>
 
 <script>
-import products from './../json/articles.json'
 import ArticleText from './../components/ArticleText'
+import ListTerms from './../components/ListTerms'
 
 export default {
     name: 'browser',
     components: {
-        ArticleText
-    },
-    data() {
-        return {
-            items: products
-        }
+        ArticleText,
+        ListTerms
     }
 }
 </script>
