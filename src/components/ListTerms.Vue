@@ -30,7 +30,7 @@ export default {
                             for (var n = 0; n < parts.length; n++) {
                                 if (n) {
                                     const span = element.insertBefore(document.createElement('span'), node)
-                                    span.appendChild(document.createTextNode(matches[n - 1]))
+                                    span.appendChild(document.createTextNode(matches[0]))
                                     span.setAttribute('class', 'term-selected')
                                 }
                                 if (parts[n]) {
