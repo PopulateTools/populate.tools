@@ -6,25 +6,34 @@
 }
 
 .browser-list-terms {
-    width: 15%;
+    width: 7rem;
     display: inline-block;
+    vertical-align: top;
 }
 
 .browser-terms {
-    width: 85%;
+    width: calc(100% - 7rem);
     display: inline-block;
     column-count: 15;
+    font-size: 3px;
 }
 
 .browser-list-terms-title {
     font-size: 1rem;
     font-family: $title;
+    color: $black;
 }
 
-.browser-list-term-text {
-    font-size: .75rem;
+.browser-list-btn {
+    font-size: .5rem;
     font-weight: bold;
     font-family: $text;
+    cursor: pointer;
+    padding: .5rem;
+    background-color: $lightgrey;
+    border-radius: .25rem;
+    display: block;
+    margin-bottom: .5rem;
 }
 
 .browser-columns {
@@ -100,6 +109,11 @@
     white-space: pre-line;
 }
 
-.browser-text-terms {
+.browser-text-terms,
+.term-selected {
     font-size: 3px;
+}
+
+.term-selected {
+    background-color: red;
 }

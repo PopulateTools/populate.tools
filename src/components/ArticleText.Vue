@@ -1,5 +1,5 @@
 <template>
-    <article class="browser-terms">
+    <article id="constitution-text" class="browser-terms">
         <div v-for="item in items" class="browser-constitution">
             <h4 class="browser-constitution-title browser-text-terms"> {{item.title}}</h4>
             <template v-for="paragraph in item.text">
