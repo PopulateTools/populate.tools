@@ -1,3 +1,13 @@
+.container-constitution {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+}
+
+.browser {
+    height: 100vh;
+}
+
 .browser-container {
     font-size: 0;
     width: 100%;
@@ -9,12 +19,13 @@
     width: 7rem;
     display: inline-block;
     vertical-align: top;
+    height: 100%;
 }
 
 .browser-terms {
     width: calc(100% - 7rem);
     display: inline-block;
-    column-count: 15;
+    column-count: 5;
     font-size: 3px;
 }
 

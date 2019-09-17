@@ -15,9 +15,11 @@ export default {
     },
     methods: {
         getWords: function wrapWord(word) {
+
             this.$nextTick(() => {
                 const wordBold = new RegExp(word, 'g')
                 const element = document.getElementById('constitution-text')
+                element.classList.remo
                 element.innerHTML = element.innerHTML.replace(wordBold, `<span class="term-selected-${word}">$&</span>`)
             })
         }
