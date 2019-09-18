@@ -89,31 +89,29 @@
 }
 
 .browser-chapter {
-    width: 30%;
+    width: 100%;
+    text-decoration: underline;
     display: block;
-    font-size: 1rem;
-    font-family: $text;
-    color: $colorchapter;
     margin-bottom: .75rem;
     cursor: pointer;
 }
 
-.browser-chapter-group {
-    font-size: 0;
-}
-
-.browser-chapter-titles {
-    width: 70%;
-    display: inline-block;
-    vertical-align: top;
-    font-family: $text;
-}
-
-.browser-chapter-text {
+.browser-chapter-title {
     font-size: 1rem;
+    font-family: $title;
     color: $white;
+    &:hover {
+        color: $white;
+        font-weight: bold;
+    }
+}
+
+.browser-chapter-subtitle {
+    font-size: .75rem;
+    font-family: $text;
     display: block;
-    margin-bottom: .5rem;
+    padding-left: .5rem;
+    color: $white;
 }
 
 .browser-constitution-title {

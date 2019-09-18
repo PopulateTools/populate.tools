@@ -1,7 +1,7 @@
 {
     "1":
     {
-        "title": "PREÁMBULO",
+        "title": "Preámbulo",
         "articles":
         {
             "text": [
@@ -18,8 +18,8 @@
     },
     "2":
     {
-        "title": "CONSTITUCIÓN",
-        "subtitle": "TÍTULO PRELIMINAR",
+        "title": "Constitución",
+        "subtitle": "Título Preliminar",
         "articles": [
         {
             "title": "Artículo 1",
@@ -100,7 +100,7 @@
     },
     "3":
     {
-        "title": "TÍTULO 1",
+        "title": "Título 1",
         "subtitle": "De los derechos y deberes fundamentales",
         "articles": [
         {
@@ -115,7 +115,7 @@
     },
     "4":
     {
-        "title": "CAPÍTULO PRIMERO",
+        "title": "Capítulo Primero",
         "subtitle": "De los españoles y los extranjeros",
         "articles": [
         {
@@ -149,7 +149,7 @@
     },
     "5":
     {
-        "title": "CAPÍTULO 2",
+        "title": "Capítulo Segundo",
         "subtitle": "Derechos y libertades",
         "articles": [
         {
@@ -161,7 +161,7 @@
     },
     "6":
     {
-        "title": "SECCIÓN 1.ª",
+        "title": "Sección 1.ª",
         "subtitle": "De los derechos fundamentales y de las libertades públicas",
         "articles": [
         {
@@ -337,7 +337,7 @@
     },
     "7":
     {
-        "title": "SECCIÓN 2.ª",
+        "title": "Sección 2.ª",
         "subtitle": "De los derechos y deberes de los ciudadanos",
         "articles": [
         {
@@ -413,7 +413,7 @@
     },
     "8":
     {
-        "title": "CAPÍTULO TERCERO",
+        "title": "Capítulo Tercero",
         "subtitle": "De los principios rectores de la política social y económica",
         "articles": [
         {
@@ -510,7 +510,7 @@
     },
     "9":
     {
-        "title": "CAPÍTULO CUARTO",
+        "title": "Capítulo Cuarto",
         "subtitle": "De las garantías de las libertades y derechos fundamentales",
         "articles": [
         {
@@ -532,7 +532,7 @@
     },
     "10":
     {
-        "title": "CAPÍTULO QUINTO",
+        "title": "Capítulo Quinto",
         "subtitle": "De la suspensión de los derechos y libertades",
         "articles": [
         {
@@ -548,7 +548,7 @@
     },
     "11":
     {
-        "title": "TÍTULO II",
+        "title": "Título II",
         "subtitle": "De la Corona",
         "articles": [
         {
