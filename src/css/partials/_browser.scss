@@ -4,11 +4,62 @@
     padding: 1rem 0;
 }
 
-.browser-container {
-    font-size: 0;
+.browser-main {
     width: 100%;
+    background-color: $lightgrey;
+    font-size: 0;
+    height: 100vh;
+}
+
+.browser {
+    height: 100%;
+    overflow-y: scroll;
+}
+.browser-constitution-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.browser-constitution-paragraph {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
+.browser-constitution {
+    margin-bottom: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.browser-main-columns {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
     padding: 1rem;
-    background-color: $bgBrowserTerms;
+    height: 100%;
+}
+
+.browser-main-columns-left {
+    background-color: $blackgrey;
+}
+
+.browser-main-columns-center {
+    background-color: $lightgrey;
+    overflow-y: scroll;
+    max-height: 100vh;
+    width: 50%;
+}
+
+.browser-main-columns-right {
+    background-color: $grey;
+}
+
+.browser-common-word {
+    font-size: 1rem;
+    font-family: $text;
+    color: $black;
+    display: block;
+    margin: .25rem;
+    cursor: pointer;
 }
 
 .browser-list-terms {
@@ -31,36 +82,6 @@
     color: $textBrowserTerms;
 }
 
-.browser-list-btn {
-    font-size: .5rem;
-    font-weight: bold;
-    font-family: $text;
-    cursor: pointer;
-    padding: .5rem;
-    background-color: $lightgrey;
-    border-radius: .25rem;
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.browser-columns {
-    width: 30%;
-    display: inline-block;
-    background-color: $blackgrey;
-    padding: 1rem;
-    vertical-align: top;
-    height: 100%;
-    &:last-child {
-        background-color: $grey;
-    }
-}
-
-.browser-column-center {
-    width: 40%;
-    background-color: $lightgrey;
-    padding: 1rem 3rem;
-}
-
 .browser-title {
     font-size: 2rem;
     font-family: $title;
@@ -75,10 +96,6 @@
     color: $colorchapter;
     margin-bottom: .75rem;
     cursor: pointer;
-}
-
-.browser-chapter-left {
-    display: inline-block;
 }
 
 .browser-chapter-group {
@@ -110,97 +127,4 @@
     font-family: $text;
     color: $black;
     white-space: pre-line;
-}
-
-.browser-text-terms,
-.term-selected {
-    font-size: 4px;
-    margin-bottom: .25rem;
-}
-
-.Estado {
-    background-color: #2968c8;
-}
-
-.Articulo {
-    background-color: #7d0736;
-}
-
-.Derechos {
-    background-color: #bd0e47;
-}
-
-.Poderes {
-    background-color: #4375fc;
-}
-
-.browser-main {
-    width: 100%;
-    background-color: $lightgrey;
-    font-size: 0;
-    .browser {
-        height: 100%;
-        overflow-y: scroll;
-    }
-    .browser-constitution-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    .browser-constitution-paragraph {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        margin-left: .5rem;
-    }
-    .browser-constitution {
-        margin-bottom: 1.5rem;
-        width: 70%;
-        margin: 0 auto;
-    }
-}
-
-.browser-main-columns {
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    padding: 1rem;
-    height: 100vh;
-}
-
-.browser-main-columns-left {
-    background-color: $blackgrey;
-}
-
-.browser-main-columns-center {
-    background-color: $lightgrey;
-    overflow-y: scroll;
-    max-height: 100vh;
-    width: 50%;
-}
-
-.browser-main-columns-right {
-    background-color: $grey;
-}
-
-.common-words {
-    padding: 1rem;
-    height: 70vh;
-}
-
-.browser-common-word {
-    font-size: 1rem;
-    display: inline-block;
-    margin: .5rem 1rem 0;
-    text-decoration: underline;
-    position: relative;
-    &:hover:after {
-        content: 'Esta es la palabra que más veces aparece en la constitución. ';
-        padding: 1rem;
-        width: 10rem;
-        background-color: $black;
-        color: $white;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 2;
-    }
 }
