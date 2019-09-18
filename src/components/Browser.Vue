@@ -1,5 +1,5 @@
 <template>
-    <article id="constitution-text" class="browser-terms" >
+    <article id="constitution-text" class="browser">
         <div v-for="(item, index) in items" class="browser-constitution" :id="'articulo_' + index">
             <h4 class="browser-constitution-title browser-text-terms"> {{item.title}}</h4>
             <template v-for="paragraph in item.text">

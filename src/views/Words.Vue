@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'article'
+    name: 'palabras'
 }
 </script>
 

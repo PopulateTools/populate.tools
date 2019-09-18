@@ -1,17 +1,17 @@
 <template>
     <div id="app">
-        <ul>
-            <router-link tag="li" exact to="/">
-                <a>Home</a>
-            </router-link>
-            <router-link tag="li" exact to="/article">
-                <a>Articulo</a>
-            </router-link>
-            <router-link tag="li" exact to="/browser">
-                <a>Explorador</a>
-            </router-link>
+        <nav class="nav-constitution">
+            <router-link class="nav-constitution-element" tag="li" exact to="/">
+                <a class="nav-constitution-link">La Constitución</a>
+            </router-link class="nav-constitution-element">
+            <router-link class="nav-constitution-element" tag="li" exact to="/terms">
+                <a class="nav-constitution-link">Términos</a>
+            </router-link class="nav-constitution-element">
+            <router-link class="nav-constitution-element" tag="li" exact to="/words">
+                <a class="nav-constitution-link">Palabras</a>
+            </router-link class="nav-constitution-element">
 
-        </ul>
+        </nav>
         <router-view/>
     </div>
 </template>

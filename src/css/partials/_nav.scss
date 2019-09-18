@@ -1,0 +1,27 @@
+.nav-constitution {
+    display: block;
+    margin: 1rem auto;
+    border-radius: .15rem;
+    border: 1px solid #EFEFEF;
+    width: 60%;
+    background-color: #FBFBFB;
+}
+
+.nav-constitution-element {
+    display: inline-block;
+    width: 32%;
+    padding: 1rem;
+    &:not(:last-child) {
+        border-right: 1px solid #EFEFEF;
+    }
+
+}
+.nav-constitution-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: $title;
+    text-align: center;
+    color: $black;
+    width: 100%;
+    display: block;
+}

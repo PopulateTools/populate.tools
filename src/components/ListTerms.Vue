@@ -1,4 +1,3 @@
-
 <!-- eslint no-undef: "warning" -->
 <template>
     <article class="browser-list-terms">
@@ -15,12 +14,22 @@ export default {
     },
     methods: {
         getWords: function wrapWord(word) {
-
             this.$nextTick(() => {
-                const wordBold = new RegExp(word, 'g')
-                const element = document.getElementById('constitution-text')
-                element.classList.remo
-                element.innerHTML = element.innerHTML.replace(wordBold, `<span class="term-selected-${word}">$&</span>`)
+                const element = document.getElementById(word)
+
+                if (element !== null) {
+                    const otros = document.querySelectorAll(`span.${word}`).length
+                    for (var i = 0; i < otros; i++) {
+                        const span = document.getElementsByTagName('span')[0]
+                        const pa = span.parentNode
+                        while (span.firstChild) pa.insertBefore(span.firstChild, span)
+                        pa.removeChild(span)
+                    }
+                } else {
+                    const wordBold = new RegExp(word, 'g')
+                    const element = document.getElementById('constitution-text')
+                    element.innerHTML = element.innerHTML.replace(wordBold, `<span class="${word}" id="${word}">$&</span>`)
+                }
             })
         }
     }

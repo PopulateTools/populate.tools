@@ -12,7 +12,7 @@ import ArticleText from './../components/ArticleText'
 import ListTerms from './../components/ListTerms'
 
 export default {
-    name: 'browser',
+    name: 'terminos',
     components: {
         ArticleText,
         ListTerms
