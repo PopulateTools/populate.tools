@@ -74,6 +74,7 @@
     font-family: $text;
     color: $colorchapter;
     margin-bottom: .75rem;
+    cursor: pointer;
 }
 
 .browser-chapter-left {
@@ -178,4 +179,28 @@
 
 .browser-main-columns-right {
     background-color: $grey;
+}
+
+.common-words {
+    padding: 1rem;
+    height: 70vh;
+}
+
+.browser-common-word {
+    font-size: 1rem;
+    display: inline-block;
+    margin: .5rem 1rem 0;
+    text-decoration: underline;
+    position: relative;
+    &:hover:after {
+        content: 'Esta es la palabra que más veces aparece en la constitución. ';
+        padding: 1rem;
+        width: 10rem;
+        background-color: $black;
+        color: $white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+    }
 }
