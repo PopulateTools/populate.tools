@@ -30,7 +30,13 @@
     margin: 0 auto;
 }
 
-.browser-main-columns {
+.browser-center {
+    width: 75%;
+    display: inline-block;
+}
+
+.browser-main-columns-left {
+    background-color: $blackgrey;
     display: inline-block;
     width: 25%;
     vertical-align: top;
@@ -38,19 +44,23 @@
     height: 100%;
 }
 
-.browser-main-columns-left {
-    background-color: $blackgrey;
-}
-
-.browser-main-columns-center {
-    background-color: $lightgrey;
-    overflow-y: scroll;
+.browser-center-columns-first,
+.browser-center-columns-second {
     max-height: 100vh;
     width: 50%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.browser-main-columns-right {
+.browser-center-columns-first {
+    background-color: $lightgrey;
+    overflow-y: scroll;
+}
+
+.browser-center-columns-second {
     background-color: $grey;
+    height: 100vh;
+    width: 50%;
 }
 
 .browser-common-word {

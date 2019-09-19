@@ -1,15 +1,13 @@
 <template>
     <div class="browser-center">
-        <div class="browser-main-columns browser-main-columns-center">
+        <div class="browser-main-columns browser-center-columns-first">
             <template v-for="(item, index) in filteredData" v-if="item !== null">
-                <div class="browser-constitution" :id="'seccion_' + item.index">
-                <browser :key="index" :item="item"></browser>
-            </div>
+                    <browser :key="index" :item="item"></browser>
             </template>
         </div>
-        <div class="browser-main-columns browser-main-columns-right">
+        <div class="browser-main-columns browser-center-columns-second">
             <div v-for="(word,index) in commond_words" :key="index">
-                <input class="form-check-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData">
+                <input class="form-check-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData('regiones')">
                 <label class="browser-common-word">
                     {{ word.value }}
                 </label>
@@ -19,7 +17,7 @@
 </template>
 <script>
 import Browser from './Browser'
-import data from './../json/constitution-titles.json'
+import data from './../json/data'
 
 export default {
     name: 'palabras',
@@ -28,49 +26,58 @@ export default {
     },
     computed: {
         selectedFilters: function() {
-            let filters = []
-            let checkedFiters = this.commond_words.filter(obj => obj.checked)
+            let filters = [];
+            let checkedFiters = this.commond_words.filter(obj => obj.checked);
             checkedFiters.forEach(element => {
-                filters.push(element.value)
-            })
-            return filters
+                filters.push(element.value);
+            });
+            return filters;
         }
     },
     data() {
         return {
             filteredData: [],
-            search: '',
             commond_words: [{
-                checked: false,
-                value: 'Constitución'
-            },
-            {
-                checked: false,
-                value: 'Estado'
-            },
-            {
-                checked: false,
-                value: 'democrático'
-            },
-            {
-                checked: false,
-                value: 'española'
-            }
+                    checked: false,
+                    value: 'Constitución'
+                },
+                {
+                    checked: false,
+                    value: 'Estado'
+                },
+                {
+                    checked: false,
+                    value: 'democrático'
+                },
+                {
+                    checked: false,
+                    value: 'española'
+                }
             ]
-        }
+        };
     },
     methods: {
-        getfilteredData: function() {
-            this.filteredData = data
-            let filteredDataByfilters = []
+        getfilteredData: function(word) {
+            const dataAsArray = Object.values(data)
+            let filteredDataByfilters = [];
             if (this.selectedFilters.length > 0) {
-                filteredDataByfilters = this.filteredData.filter(obj => this.selectedFilters.every(val => obj.text.indexOf(val) >= 0))
-                this.filteredData = filteredDataByfilters
+                filteredDataByfilters = dataAsArray.filter(dataValue => {
+                    return dataValue.articles.some(article => {
+                        return article.text.some(articleText => {
+                            return articleText.toLowerCase().indexOf(word.toLowerCase()) > -1;
+                        })
+                    })
+                })
+                this.filteredData = filteredDataByfilters;
+            } else {
+                console.log('unchecked')
+                this.filteredData = data;
+
             }
         }
     },
     mounted() {
-        this.getfilteredData()
+        this.getfilteredData('regiones');
     }
 }
 </script>

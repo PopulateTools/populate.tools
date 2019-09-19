@@ -1,7 +1,7 @@
 <template>
     <div class="browser">
         <section class="browser-main">
-            <article class="browser-main-columns browser-main-columns-left ">
+            <article class="browser-main-columns-left ">
                 <index></index>
             </article>
             <words></words>
