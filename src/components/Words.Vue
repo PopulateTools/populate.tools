@@ -1,12 +1,13 @@
 <template>
     <div class="browser-center">
         <div class="browser-main-columns browser-center-columns-first">
-            <template v-for="(item, index) in filteredData" v-if="item !== null">
+            <template v-for="(item, index) in filteredData">
                     <browser :key="index" :item="item"></browser>
             </template>
         </div>
         <div class="browser-main-columns browser-center-columns-second">
             <div v-for="(word,index) in commond_words" :key="index">
+                <!-- TODO: change for radio-button pass value v-on -->
                 <input class="form-check-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData('regiones')">
                 <label class="browser-common-word">
                     {{ word.value }}
@@ -26,12 +27,12 @@ export default {
     },
     computed: {
         selectedFilters: function() {
-            let filters = [];
-            let checkedFiters = this.commond_words.filter(obj => obj.checked);
+            let filters = []
+            let checkedFiters = this.commond_words.filter(obj => obj.checked)
             checkedFiters.forEach(element => {
-                filters.push(element.value);
-            });
-            return filters;
+                filters.push(element.value)
+            })
+            return filters
         }
     },
     data() {
@@ -59,25 +60,23 @@ export default {
     methods: {
         getfilteredData: function(word) {
             const dataAsArray = Object.values(data)
-            let filteredDataByfilters = [];
+            let filteredDataByfilters = []
             if (this.selectedFilters.length > 0) {
                 filteredDataByfilters = dataAsArray.filter(dataValue => {
                     return dataValue.articles.some(article => {
                         return article.text.some(articleText => {
-                            return articleText.toLowerCase().indexOf(word.toLowerCase()) > -1;
+                            return articleText.toLowerCase().indexOf(word.toLowerCase()) > -1
                         })
                     })
                 })
-                this.filteredData = filteredDataByfilters;
+                this.filteredData = filteredDataByfilters
             } else {
-                console.log('unchecked')
-                this.filteredData = data;
-
+                this.filteredData = data
             }
         }
     },
     mounted() {
-        this.getfilteredData('regiones');
+        this.getfilteredData('regiones')
     }
 }
 </script>

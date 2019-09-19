@@ -1,6 +1,7 @@
 <template>
     <article id="constitution-text" class="browser">
-        <div class="browser-constitution" :id="'seccion_' + item.index">
+        <!-- TODO: get index -->
+        <div class="browser-constitution" :id="'seccion_'">
             <h2 class="browser-constitution-title browser-text-terms"> {{item.title}}</h2>
             <h2 class="browser-constitution-title browser-text-terms"> {{item.subtitle}}</h2>
             <template v-for="article in item.articles">
