@@ -104,13 +104,14 @@
     text-decoration: underline;
     display: block;
     margin-bottom: .75rem;
-    cursor: pointer;
 }
 
 .browser-chapter-title {
     font-size: 1rem;
     font-family: $title;
     color: $white;
+    cursor: pointer;
+    font-weight: normal;
     &:hover {
         color: $white;
         font-weight: bold;
@@ -161,4 +162,11 @@
     text-transform: uppercase;
     font-family: $text;
     color: $white;
+}
+
+.browser-center-columns-second-title {
+    font-size: 1.25em;
+    font-family: $title;
+    color: $black;
+    margin-bottom: 1rem;
 }

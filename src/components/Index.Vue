@@ -8,7 +8,7 @@
     </article>
 </template>
 <script>
-import titles from './../json/constitution-titles.json'
+import titles from './../json/data-index'
 
 export default {
     name: 'index',

@@ -6,6 +6,7 @@
             </template>
         </div>
         <div class="browser-main-columns browser-center-columns-second">
+            <h3 class="browser-center-columns-second-title">Conceptos más utilizados</h3>
             <div class="browser-common-word-container" v-for="(word,index) in commond_words" :key="index">
                 <input :id="word.value" class="browser-commond-word-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData($event, word.value)">
                 <label :for="word.value" class="browser-common-word-label">
