@@ -12,7 +12,7 @@
     </article>
 </template>
 <script>
-import titles from './../json/data-index'
+import titles from './../data/data-index'
 
 export default {
     name: 'index',

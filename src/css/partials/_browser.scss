@@ -57,13 +57,6 @@
     display: inline-block;
 }
 
-//HACK
-div {
-    &:empty {
-        display: none;
-    }
-}
-
 .browser-main-columns-left {
     background-color: $blackgrey;
     display: inline-block;
@@ -169,7 +162,7 @@ div {
 
 .browser-common-word-container {
     padding: .5rem;
-    width: max-content;
+    width: 50%;
     cursor: pointer;
     font-family: $text;
 }
@@ -182,7 +175,6 @@ div {
 .browser-common-word-label {
     display: inline-block;
     font-size: 1rem;
-    text-transform: uppercase;
     font-family: $text;
     color: #414141;
     cursor: pointer;
@@ -208,4 +200,21 @@ div {
 
 .browser-chapter-container {
     margin-bottom: .5rem;
+}
+
+.browser-common-word-columns {
+    display: inline-block;
+    width: 45%;
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.border-indicator {
+    height: 12px;
+    background-color: #C1C0C1;
+    width: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    float: right;
 }

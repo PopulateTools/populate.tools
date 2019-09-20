@@ -8,17 +8,22 @@
         <div class="browser-main-columns browser-center-columns-second">
             <h3 class="browser-center-columns-second-title">CONCEPTOS MÁS UTILIZADOS</h3>
             <div class="browser-common-word-container" v-for="(word,index) in commond_words" :key="index">
-                <input :id="word.value" class="browser-commond-word-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData($event, word.value)">
-                <label :for="word.value" class="browser-common-word-label">
-                    {{ word.value }}
-                </label>
+                <div class="browser-common-word-columns">
+                    <div class="border-indicator" v-for="rect in word.indicator"></div>
+                </div>
+                <div class="browser-common-word-columns">
+                    <input :id="word.value" class="browser-commond-word-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData($event, word.value)">
+                    <label :for="word.value" class="browser-common-word-label">
+                        {{ word.value }}
+                    </label>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <script>
 import Browser from './Browser'
-import data from './../json/data'
+import data from './../data/data'
 
 export default {
     name: 'palabras',
@@ -39,396 +44,494 @@ export default {
         return {
             filteredData: [],
             commond_words: [{
-                    value: 'ley',
-                    checked: false
+                    value: 'Ley',
+                    checked: false,
+                    indicator: 20
                 },
                 {
-                    value: 'gobierno',
-                    checked: false
+                    value: 'Gobierno',
+                    checked: false,
+                    indicator: 19
                 },
                 {
-                    value: 'derecho',
-                    checked: false
+                    value: 'Derecho',
+                    checked: false,
+                    indicator: 17
                 },
                 {
-                    value: 'generales',
-                    checked: false
+                    value: 'Generales',
+                    checked: false,
+                    indicator: 16
                 },
                 {
-                    value: 'constitución',
-                    checked: false
+                    value: 'Constitución',
+                    checked: false,
+                    indicator: 15
                 },
                 {
-                    value: 'comunidades',
-                    checked: false
+                    value: 'Comunidades',
+                    checked: false,
+                    indicator: 14
                 },
                 {
-                    value: 'autónomas',
-                    checked: false
+                    value: 'Autónomas',
+                    checked: false,
+                    indicator: 13
                 },
                 {
-                    value: 'congreso',
-                    checked: false
+                    value: 'Congreso',
+                    checked: false,
+                    indicator: 12
                 },
                 {
-                    value: 'miembros',
-                    checked: false
+                    value: 'Miembros',
+                    checked: false,
+                    indicator: 11
                 },
                 {
-                    value: 'derechos',
-                    checked: false
+                    value: 'Derechos',
+                    checked: false,
+                    indicator: 10
                 },
                 {
-                    value: 'públicos',
-                    checked: false
+                    value: 'Públicos',
+                    checked: false,
+                    indicator: 9
                 },
                 {
-                    value: 'cortes',
-                    checked: false
+                    value: 'Cortes',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'mayoría',
-                    checked: false
+                    value: 'Mayoría',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'ejercicio',
-                    checked: false
+                    value: 'Ejercicio',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'mediante',
-                    checked: false
+                    value: 'Mediante',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'rey',
-                    checked: false
+                    value: 'Rey',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'cámaras',
-                    checked: false
+                    value: 'Cámaras',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'acuerdo',
-                    checked: false
+                    value: 'Acuerdo',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'general',
-                    checked: false
+                    value: 'General',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'poderes',
-                    checked: false
+                    value: 'Poderes',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'leyes',
-                    checked: false
+                    value: 'Leyes',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'tribunal',
-                    checked: false
+                    value: 'Tribunal',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'orgánica',
-                    checked: false
+                    value: 'Orgánica',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'diputados',
-                    checked: false
+                    value: 'Diputados',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'funciones',
-                    checked: false
+                    value: 'Funciones',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'presidente',
-                    checked: false
+                    value: 'Presidente',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'constitucional',
-                    checked: false
+                    value: 'Constitucional',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'comunidad',
-                    checked: false
+                    value: 'Comunidad',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'regulará',
-                    checked: false
+                    value: 'Regulará',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'términos',
-                    checked: false
+                    value: 'Términos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'judicial',
-                    checked: false
+                    value: 'Judicial',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'apartado',
-                    checked: false
+                    value: 'Apartado',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'título',
-                    checked: false
+                    value: 'Título',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'régimen',
-                    checked: false
+                    value: 'Régimen',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'estatutos',
-                    checked: false
+                    value: 'Estatutos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'autónoma',
-                    checked: false
+                    value: 'Autónoma',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'españa',
-                    checked: false
+                    value: 'España',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'forma',
-                    checked: false
+                    value: 'Forma',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'plazo',
-                    checked: false
+                    value: 'Plazo',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'administración',
-                    checked: false
+                    value: 'Administración',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'interés',
-                    checked: false
+                    value: 'Interés',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'estatuto',
-                    checked: false
+                    value: 'Estatuto',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'perjuicio',
-                    checked: false
+                    value: 'Perjuicio',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'consejo',
-                    checked: false
+                    value: 'Consejo',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'social',
-                    checked: false
+                    value: 'Social',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'españoles',
-                    checked: false
+                    value: 'Españoles',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'absoluta',
-                    checked: false
+                    value: 'Absoluta',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'normas',
-                    checked: false
+                    value: 'Normas',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'territorio',
-                    checked: false
+                    value: 'Territorio',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'legislación',
-                    checked: false
+                    value: 'Legislación',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'anterior',
-                    checked: false
+                    value: 'Anterior',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'senado',
-                    checked: false
+                    value: 'Senado',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'principios',
-                    checked: false
+                    value: 'Principios',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'ciudadanos',
-                    checked: false
+                    value: 'Ciudadanos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'tratados',
-                    checked: false
+                    value: 'Tratados',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'procedimiento',
-                    checked: false
+                    value: 'Procedimiento',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'mismo',
-                    checked: false
+                    value: 'Mismo',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'propuesta',
-                    checked: false
+                    value: 'Propuesta',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'iniciativa',
-                    checked: false
+                    value: 'Iniciativa',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'autonomía',
-                    checked: false
+                    value: 'Autonomía',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'territorial',
-                    checked: false
+                    value: 'Territorial',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'libertades',
-                    checked: false
+                    value: 'Libertades',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'público',
-                    checked: false
+                    value: 'Público',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'casos',
-                    checked: false
+                    value: 'Casos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'establezca',
-                    checked: false
+                    value: 'Establezca',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'reconoce',
-                    checked: false
+                    value: 'Reconoce',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'seguridad',
-                    checked: false
+                    value: 'Seguridad',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'años',
-                    checked: false
+                    value: 'Años',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'efectos',
-                    checked: false
+                    value: 'Efectos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'tribunales',
-                    checked: false
+                    value: 'Tribunales',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'política',
-                    checked: false
+                    value: 'Política',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'dentro',
-                    checked: false
+                    value: 'Dentro',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'defensa',
-                    checked: false
+                    value: 'Defensa',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'corresponde',
-                    checked: false
+                    value: 'Corresponde',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'edad',
-                    checked: false
+                    value: 'Edad',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'cualquier',
-                    checked: false
+                    value: 'Cualquier',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'competencias',
-                    checked: false
+                    value: 'Competencias',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'cámara',
-                    checked: false
+                    value: 'Cámara',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'senadores',
-                    checked: false
+                    value: 'Senadores',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'proyecto',
-                    checked: false
+                    value: 'Proyecto',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'libertad',
-                    checked: false
+                    value: 'Libertad',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'deberán',
-                    checked: false
+                    value: 'Deberán',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'bases',
-                    checked: false
+                    value: 'Bases',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'ámbito',
-                    checked: false
+                    value: 'Ámbito',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'dispuesto',
-                    checked: false
+                    value: 'Dispuesto',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'mandato',
-                    checked: false
+                    value: 'Mandato',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'presupuestos',
-                    checked: false
+                    value: 'Presupuestos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'órgano',
-                    checked: false
+                    value: 'Órgano',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'órganos',
-                    checked: false
+                    value: 'Órganos',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'organización',
-                    checked: false
+                    value: 'Organización',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'condiciones',
-                    checked: false
+                    value: 'Condiciones',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'desarrollo',
-                    checked: false
+                    value: 'Desarrollo',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'establecido',
-                    checked: false
+                    value: 'Establecido',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'ningún',
-                    checked: false
+                    value: 'Ningún',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'competencia',
-                    checked: false
+                    value: 'Competencia',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'poder',
-                    checked: false
+                    value: 'Poder',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'español',
-                    checked: false
+                    value: 'Español',
+                    checked: false,
+                    indicator: 7
                 },
                 {
-                    value: 'protección',
-                    checked: false
+                    value: 'Protección',
+                    checked: false,
+                    indicator: 7
                 }
 
             ]
