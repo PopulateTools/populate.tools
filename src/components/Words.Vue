@@ -57,6 +57,18 @@ export default {
             {
                 checked: false,
                 value: 'villa'
+            },
+            {
+                checked: false,
+                value: 'tribunal'
+            },
+            {
+                checked: false,
+                value: 'estatuto'
+            },
+            {
+                checked: false,
+                value: 'senadores'
             }
         ]
         }

@@ -12,20 +12,25 @@
 }
 
 .browser {
-    height: 100%;
     overflow-y: scroll;
 }
+
 .browser-constitution-title {
     font-size: 2rem;
     font-family: $title;
     color: $black;
     font-weight: bold;
     margin-top: 1.5rem;
+    &.article {
+        font-size: 1.25rem;
+    }
 }
 
 .browser-constitution-subtitle {
     font-size: 1.5rem;
+    font-family: $title;
     font-weight: bold;
+    padding-left: .5rem;
     color: $black;
 }
 
@@ -52,6 +57,13 @@
     display: inline-block;
 }
 
+//HACK
+div {
+    &:empty {
+        display: none;
+    }
+}
+
 .browser-main-columns-left {
     background-color: #40409D;
     display: inline-block;
@@ -59,6 +71,7 @@
     vertical-align: top;
     padding: 1rem;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .browser-center-columns-first,
@@ -79,6 +92,7 @@
     background-color: $grey;
     height: 100vh;
     width: 35%;
+    padding: 0;
 }
 
 .browser-common-word {
@@ -149,7 +163,7 @@
     display: block;
     color: #b9b2b2;
     &.chapter {
-        padding-left: .1rem;
+        padding-left: 1rem;
     }
     &.section-index {
         padding-left: 1.5rem;
@@ -167,9 +181,13 @@
 .browser-common-word-container {
     margin-bottom: .5rem;
     background-color: #c23739;
-    padding: 1rem;
+    padding: .5rem;
     width: max-content;
     cursor: pointer;
+    font-size: .75rem;
+    font-family: $text;
+    border-radius-top-right: .25rem;
+    border-radius-bottom-right: .25rem;
     transition: background-color .3s ease-in;
     &:hover {
         background-color: rgba(29, 26, 56, .6);
@@ -191,8 +209,11 @@
 }
 
 .browser-center-columns-second-title {
-    font-size: 1.25em;
-    font-family: $title;
-    color: $black;
+    font-size: 1.5rem;
+    font-family: $text;
+    background-color: #111;
     margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    color: white;
 }
