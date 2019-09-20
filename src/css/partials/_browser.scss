@@ -23,6 +23,7 @@
     margin-top: 1.5rem;
     &.article {
         font-size: 1.25rem;
+        margin-bottom: 0;
     }
 }
 
@@ -30,7 +31,6 @@
     font-size: 1.5rem;
     font-family: $title;
     font-weight: bold;
-    padding-left: .5rem;
     color: $black;
 }
 
@@ -65,13 +65,16 @@ div {
 }
 
 .browser-main-columns-left {
-    background-color: #40409D;
+    background-color: $blackgrey;
     display: inline-block;
     width: 25%;
     vertical-align: top;
     padding: 1rem;
     height: 100%;
     overflow-y: scroll;
+    .browser {
+        font-size: 0;
+    }
 }
 
 .browser-center-columns-first,
@@ -84,7 +87,7 @@ div {
 }
 
 .browser-center-columns-first {
-    background-color: #f4f4f4;
+    background-color: #F2F2F2;
     overflow-y: scroll;
 }
 
@@ -92,7 +95,8 @@ div {
     background-color: $grey;
     height: 100vh;
     width: 35%;
-    padding: 0;
+    padding: 1rem;
+    overflow-y: scroll;
 }
 
 .browser-common-word {
@@ -138,22 +142,14 @@ div {
 }
 
 .browser-chapter-title {
-    font-size: 1.5rem;
-    font-family: $title;
-    color: $white;
+    font-size: .75rem;
+    font-family: $text;
+    color: #9A9A9A;
     cursor: pointer;
     font-weight: normal;
     &:hover {
         color: $white;
         font-weight: bold;
-    }
-    &.chapter {
-        padding-left: .5rem;
-        font-size: 1.25rem;
-    }
-    &.section-index {
-        padding-left: 1rem;
-        font-size: 1rem;
     }
 }
 
@@ -161,14 +157,7 @@ div {
     font-size: .75rem;
     font-family: $text;
     display: block;
-    color: #b9b2b2;
-    &.chapter {
-        padding-left: 1rem;
-    }
-    &.section-index {
-        padding-left: 1.5rem;
-    }
-
+    color: $white;
 }
 
 .browser-constitution-paragraph {
@@ -179,19 +168,10 @@ div {
 }
 
 .browser-common-word-container {
-    margin-bottom: .5rem;
-    background-color: #c23739;
     padding: .5rem;
     width: max-content;
     cursor: pointer;
-    font-size: .75rem;
     font-family: $text;
-    border-radius-top-right: .25rem;
-    border-radius-bottom-right: .25rem;
-    transition: background-color .3s ease-in;
-    &:hover {
-        background-color: rgba(29, 26, 56, .6);
-    }
 }
 
 .browser-commond-word-input {
@@ -204,16 +184,28 @@ div {
     font-size: 1rem;
     text-transform: uppercase;
     font-family: $text;
-    color: $white;
+    color: #414141;
     cursor: pointer;
 }
 
 .browser-center-columns-second-title {
-    font-size: 1.5rem;
+    font-size: 12px;
     font-family: $text;
-    background-color: #111;
     margin-bottom: 1rem;
     display: inline-block;
-    padding: 1rem;
-    color: white;
+    color: #989898;
+}
+
+.browser-chapter-columns {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.browser-chapter-columns-left {
+    width: 35%;
+}
+
+.browser-chapter-container {
+    margin-bottom: .5rem;
 }
