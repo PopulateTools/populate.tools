@@ -16,9 +16,26 @@
     overflow-y: scroll;
 }
 .browser-constitution-title {
+    font-size: 2rem;
+    font-family: $title;
+    color: $black;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.browser-constitution-subtitle {
     font-size: 1.5rem;
     font-weight: bold;
+    color: $black;
 }
+
+.browser-constitution-title-article,
+.browser-constitution-paragraph {
+    &:empty {
+        display: none;
+    }
+}
+
 .browser-constitution-paragraph {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -36,7 +53,7 @@
 }
 
 .browser-main-columns-left {
-    background-color: $blackgrey;
+    background-color: #40409D;
     display: inline-block;
     width: 25%;
     vertical-align: top;
@@ -46,7 +63,7 @@
 
 .browser-center-columns-first,
 .browser-center-columns-second {
-    max-height: 100vh;
+    height: 100vh;
     width: 65%;
     display: inline-block;
     vertical-align: top;
@@ -54,7 +71,7 @@
 }
 
 .browser-center-columns-first {
-    background-color: $lightgrey;
+    background-color: #f4f4f4;
     overflow-y: scroll;
 }
 
@@ -107,7 +124,7 @@
 }
 
 .browser-chapter-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: $title;
     color: $white;
     cursor: pointer;
@@ -116,20 +133,28 @@
         color: $white;
         font-weight: bold;
     }
+    &.chapter {
+        padding-left: .5rem;
+        font-size: 1.25rem;
+    }
+    &.section-index {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
 }
 
 .browser-chapter-subtitle {
     font-size: .75rem;
     font-family: $text;
     display: block;
-    padding-left: .5rem;
-    color: $white;
-}
+    color: #b9b2b2;
+    &.chapter {
+        padding-left: .1rem;
+    }
+    &.section-index {
+        padding-left: 1.5rem;
+    }
 
-.browser-constitution-title {
-    font-size: 1.5rem;
-    font-family: $title;
-    color: $black;
 }
 
 .browser-constitution-paragraph {
@@ -141,7 +166,7 @@
 
 .browser-common-word-container {
     margin-bottom: .5rem;
-    background-color: #1d1a38;
+    background-color: #c23739;
     padding: 1rem;
     width: max-content;
     cursor: pointer;
@@ -162,6 +187,7 @@
     text-transform: uppercase;
     font-family: $text;
     color: $white;
+    cursor: pointer;
 }
 
 .browser-center-columns-second-title {

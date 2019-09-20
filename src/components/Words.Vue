@@ -64,7 +64,6 @@ export default {
     methods: {
         getfilteredData: function(event, word) {
             const dataAsArray = Object.values(data)
-            console.log(dataAsArray)
             let filteredDataByfilters = []
             if (this.selectedFilters.length > 0) {
                 filteredDataByfilters = dataAsArray.filter(dataValue => {
@@ -74,7 +73,6 @@ export default {
                         })
                     })
                 })
-                console.log(filteredDataByfilters)
                 this.filteredData = filteredDataByfilters
             } else {
                 this.filteredData = data

@@ -29,10 +29,10 @@ const data = {
             "text": [""]
         }]
     },
-    "13":
+    "12":
     {
-        "title": "Título 1",
-        "index": "13",
+        "title": "Título I",
+        "index": "12",
         "class": "title",
         "subtitle": "De los derechos y deberes fundamentales",
         "articles": [
@@ -42,11 +42,37 @@ const data = {
             ]
         }]
     },
+    "14":
+    {
+        "title": "Capítulo Primero",
+        "index": "14",
+        "class": "chapter",
+        "subtitle": "De los españoles y los extranjeros",
+        "articles": [
+        {
+            "text": [
+                ""
+            ]
+        }]
+    },
     "19":
     {
-        "title": "Sección 1.ª",
-        "class": "title",
+        "title": "Capítulo Segundo",
         "index": "19",
+        "class": "chapter",
+        "subtitle": "Derechos y libertades",
+        "articles": [
+        {
+            "text": [
+                ""
+            ]
+        }]
+    },
+    "20":
+    {
+        "title": "Sección 1.ª",
+        "index": "20",
+        "class": "section-index",
         "subtitle": "De los derechos fundamentales y de las libertades públicas",
         "articles": [
         {
@@ -55,247 +81,195 @@ const data = {
             ]
         }]
     },
-    "35":
+    "36":
     {
         "title": "Sección 2.ª",
-        "class": "title",
-        "index": "35",
+        "index": "36",
+        "class": "section-index",
         "subtitle": "De los derechos y deberes de los ciudadanos",
         "articles": [
         {
             "text": [""]
         }]
     },
-    "45":
+    "46":
     {
         "title": "Capítulo Tercero",
-        "class": "title",
-        "index": "45",
+        "index": "46",
+        "class": "chapter",
         "subtitle": "De los principios rectores de la política social y económica",
         "articles": [
         {
             "text": [""]
         }]
     },
-    "60":
-    {
+    "61": {
         "title": "Capítulo Cuarto",
-        "class": "title",
-        "index": "60",
+        "index": "61",
+        "class": "chapter",
         "subtitle": "De las garantías de las libertades y derechos fundamentales",
-        "articles": [
-        {
+        "articles": [{
             "text": [""]
         }]
     },
-    "63":
-    {
-        "title": "Capítulo Quinto",
-        "class": "title",
-        "index": "63",
-        "subtitle": "De la suspensión de los derechos y libertades",
-        "articles": [
-        {
-            "text": [""]
-        }]
-    },
-    "65":
-    {
-        "title": "Título II",
-        "index": "65",
-        "class": "title",
-        "subtitle": "De la Corona",
-        "articles": [
-        {
-            "text": [""]
-        }]
-    },
-    "76":
-    {
-        "title": "TÍTULO III",
-        "index": "76",
+        "64": {
+            "title": "Capítulo Quinto",
+            "index": "64",
+            "class": "chapter",
+            "subtitle": "De la suspensión de los derechos y libertades",
+            "articles": [{
+                "text": [""]
+            }]
+        },
+        "66": {
+            "title": "Título II",
+            "index": "66",
+            "class": "title",
+            "subtitle": "De la Corona",
+            "articles": [{
+                "text": [""]
+            }]
+        },
+    "77": {
+        "title": "Título III",
+        "index": "77",
         "class": "title",
         "subtitle": "De las Cortes Generales",
-        "articles": [
-        {
+        "articles": [{
             "text": [""]
         }]
     },
-    "77":
-    {
-        "title": "CAPÍTULO PRIMERO",
-        "class": "title",
-        "index": "77",
+    "78": {
+        "title": "Capítulo Primero",
+        "index": "78",
+        "class": "chapter",
         "subtitle": "De las Cortes Cámaras",
-        "articles": [
-        {
+        "articles": [{
             "text": [""]
         }]
     },
-    "93":
-    {
-        "title": "CAPÍTULO SEGUNDO",
-        "class": "title",
-        "index": "93",
+    "94": {
+        "title": "Capítulo Segundo",
+        "index": "94",
+        "class": "chapter",
         "subtitle": "De la elaboración de las leyes",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "106":
-    {
-        "title": "CAPÍTULO TERCERO",
-        "class": "title",
-        "index": "106",
+    "107": {
+        "title": "Capítulo Tercero",
+        "index": "107",
+        "class": "chapter",
         "subtitle": "De los Tratados Internacionales",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "111":
-    {
-        "title": "TÍTULO IV",
-        "index": "111",
+    "112": {
+        "title": "Título IV",
+        "index": "112",
         "class": "title",
         "subtitle": "Del Gobierno y de la Administración",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "123":
-    {
-        "title": "TÍTULO V",
-        "index": "123",
+    "124": {
+        "title": "Título V",
+        "index": "124",
         "class": "title",
         "subtitle": "De las relaciones entre el Gobierno y las Cortes Generales",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "133":
-    {
-        "title": "TÍTULO VI",
-        "index": "133",
+    "134": {
+        "title": "Título VI",
+        "index": "134",
         "class": "title",
         "subtitle": "Del Poder Judicial",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "145":
-    {
-        "title": "TÍTULO VII",
-        "index": "145",
+    "146": {
+        "title": "Título VII",
+        "index": "146",
         "class": "title",
         "subtitle": "Economía y Hacienda",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "155":
-    {
-        "title": "TÍTULO VIII",
-        "index": "155",
+    "156": {
+        "title": "Título VIII",
+        "index": "156",
         "class": "title",
         "subtitle": "De la Organización Territorial del Estado",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "156":
-    {
-        "title": "CAPÍTULO PRIMERO",
-        "class": "title",
-        "index": "156",
+    "157": {
+        "title": "Capítulo Primero",
+        "index": "157",
+        "class": "chapter",
         "subtitle": "Principios generales",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "160":
-    {
-        "title": "CAPÍTULO SEGUNDO",
-        "class": "title",
-        "index": "160",
+    "161": {
+        "title": "Capítulo Segundo",
+        "index": "161",
+        "class": "chapter",
         "subtitle": "De la Administración Local",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "164":
-    {
-        "title": "CAPÍTULO TERCERO",
-        "class": "title",
-        "index": "164",
+    "165": {
+        "title": "Capítulo Tercero",
+        "index": "165",
+        "class": "chapter",
         "subtitle": "De las Comunidades Autónomas",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "181":
-    {
-        "title": "TÍTULO IX",
-        "index": "181",
+    "182": {
+        "title": "Título IX",
+        "index": "182",
         "class": "title",
         "subtitle": "Del Tribunal Constitucional",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "189":
-    {
-        "title": "TÍTULO X",
-        "index": "189",
+    "190": {
+        "title": "Título X",
+        "index": "190",
         "class": "title",
         "subtitle": "De la reforma constitucional",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "194":
-    {
-        "title": "DISPOSICIONES ADICIONALES",
+    "195": {
+        "title": "Disposiciones Adicionales",
+        "index": "195",
         "class": "title",
-        "index": "194",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     },
-    "199":
-    {
-        "title": "DISPOSICIONES TRANSITORIAS.",
+    "200": {
+        "title": "Disposiciones Transitorias.",
+        "index": "200",
         "class": "title",
-        "index": "199",
-        "articles": [
-        {
-            "text": [""
-            ]
+        "articles": [{
+            "text": [""]
         }]
     }
 }
