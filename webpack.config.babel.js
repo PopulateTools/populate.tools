@@ -61,8 +61,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            filename: './../_includes/scripts.html',
-            template: './_includes/_scripts.html'
+            // Input file
+            template: './src/_jekyll_includes/_scripts.html',
+            // Output file
+            filename: './../_includes/scripts.html'
         }),
         new MiniCssExtractPlugin({
           filename: "bundle.css"
