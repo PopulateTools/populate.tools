@@ -23,7 +23,7 @@
 </template>
 <script>
 import Browser from './Browser'
-import data from './../data/data'
+import data from './../data/constitution/data'
 
 export default {
     name: 'palabras',
