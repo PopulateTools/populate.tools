@@ -1,15 +1,14 @@
 <template>
     <div class="browser-center">
-        <div class="browser-main-columns browser-center-columns-first">
+        <div id="constitution-text" class="browser-main-columns browser-center-columns-first">
             <template v-for="(item, index) in filteredData">
-                    <browser :key="index" :item="item"></browser>
+                <browser :key="index" :item="item"></browser>
             </template>
         </div>
         <div class="browser-main-columns browser-center-columns-second">
-            <div v-for="(word,index) in commond_words" :key="index">
-                <!-- TODO: change for radio-button pass value v-on -->
-                <input class="form-check-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData('regiones')">
-                <label class="browser-common-word">
+            <div class="browser-common-word-container" v-for="(word,index) in commond_words" :key="index">
+                <input :id="word.value" class="browser-commond-word-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData($event, word.value)">
+                <label :for="word.value" class="browser-common-word-label">
                     {{ word.value }}
                 </label>
             </div>
@@ -39,27 +38,28 @@ export default {
         return {
             filteredData: [],
             commond_words: [{
-                    checked: false,
-                    value: 'Constitución'
-                },
-                {
-                    checked: false,
-                    value: 'Estado'
-                },
-                {
-                    checked: false,
-                    value: 'democrático'
-                },
-                {
-                    checked: false,
-                    value: 'española'
-                }
-            ]
-        };
+                checked: false,
+                value: 'Forma'
+            },
+            {
+                checked: false,
+                value: 'Estado'
+            },
+            {
+                checked: false,
+                value: 'villa'
+            },
+            {
+                checked: false,
+                value: 'española'
+            }
+        ]
+        }
     },
     methods: {
-        getfilteredData: function(word) {
+        getfilteredData: function(event, word) {
             const dataAsArray = Object.values(data)
+            console.log(dataAsArray)
             let filteredDataByfilters = []
             if (this.selectedFilters.length > 0) {
                 filteredDataByfilters = dataAsArray.filter(dataValue => {
@@ -69,6 +69,7 @@ export default {
                         })
                     })
                 })
+                console.log(filteredDataByfilters)
                 this.filteredData = filteredDataByfilters
             } else {
                 this.filteredData = data
@@ -76,7 +77,7 @@ export default {
         }
     },
     mounted() {
-        this.getfilteredData('regiones')
+        this.getfilteredData('Constitución')
     }
 }
 </script>

@@ -1,7 +1,6 @@
 <template>
-    <article id="constitution-text" class="browser">
-        <!-- TODO: get index -->
-        <div class="browser-constitution" :id="'seccion_'">
+    <article class="browser">
+        <div class="browser-constitution" :id="'seccion_' + item.index">
             <h2 class="browser-constitution-title browser-text-terms"> {{item.title}}</h2>
             <h2 class="browser-constitution-title browser-text-terms"> {{item.subtitle}}</h2>
             <template v-for="article in item.articles">
@@ -14,7 +13,7 @@
             </template>
         </div>
         <div>
-          <span v-for="(group, index) in item.word">{{ group }}</span>
+            <span v-for="(group, index) in item.word">{{ group }}</span>
         </div>
     </article>
 </template>

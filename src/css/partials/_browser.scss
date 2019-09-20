@@ -47,9 +47,10 @@
 .browser-center-columns-first,
 .browser-center-columns-second {
     max-height: 100vh;
-    width: 50%;
+    width: 65%;
     display: inline-block;
     vertical-align: top;
+    padding: 1rem;
 }
 
 .browser-center-columns-first {
@@ -60,7 +61,7 @@
 .browser-center-columns-second {
     background-color: $grey;
     height: 100vh;
-    width: 50%;
+    width: 35%;
 }
 
 .browser-common-word {
@@ -135,4 +136,29 @@
     font-family: $text;
     color: $black;
     white-space: pre-line;
+}
+
+.browser-common-word-container {
+    margin-bottom: .5rem;
+    background-color: #1d1a38;
+    padding: 1rem;
+    width: max-content;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+    &:hover {
+        background-color: rgba(29, 26, 56, .6);
+    }
+}
+
+.browser-commond-word-input {
+    display: inline-block;
+    display: none;
+}
+
+.browser-common-word-label {
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $text;
+    color: $white;
 }
