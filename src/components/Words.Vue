@@ -39,19 +39,23 @@ export default {
             filteredData: [],
             commond_words: [{
                 checked: false,
-                value: 'Forma'
+                value: 'ley'
             },
             {
                 checked: false,
-                value: 'Estado'
+                value: 'gobierno'
+            },
+            {
+                checked: false,
+                value: 'derecho'
+            },
+            {
+                checked: false,
+                value: 'libertades'
             },
             {
                 checked: false,
                 value: 'villa'
-            },
-            {
-                checked: false,
-                value: 'española'
             }
         ]
         }
