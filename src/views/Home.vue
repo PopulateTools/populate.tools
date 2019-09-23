@@ -8,6 +8,7 @@
         </section>
     </div>
 </template>
+
 <script>
 import Index from './../components/Index'
 import Browser from './../components/Browser'
