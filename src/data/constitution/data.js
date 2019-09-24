@@ -1,4 +1,4 @@
-const data = {
+const wholeText = {
     "1": {
         "title": "Preámbulo",
         "index": "1",
@@ -2088,6 +2088,4 @@ const data = {
     }
 }
 
-
-
-export default data;
+export default wholeText;
