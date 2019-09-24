@@ -4,7 +4,7 @@
             <div class="nav-constitution-element">
                 <h2 class="browser-title">La Constitución Española de 1978</h2>
             </div>
-            <router-link class="nav-constitution-element nav-center" tag="div" exact to="/">
+            <router-link class="nav-constitution-element nav-center" tag="div" exact to="/about">
                 <a class="nav-constitution-link">Acerca de</a>
             </router-link class="nav-constitution-element">
             <div class="nav-constitution-element nav-constitution-logo">

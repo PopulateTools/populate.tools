@@ -1,493 +1,787 @@
 const mostUsedWords = [
   {
-    value: 'Ley',
+    value: 'ley',
+    ocurrences: 157,
+    articles: 60,
     checked: false,
-    indicator: 20
+    indicator: 20,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Gobierno',
+    value: 'gobierno',
+    ocurrences: 81,
+    articles: 59,
     checked: false,
-    indicator: 19
+    indicator: 19,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Derecho',
+    value: 'derecho',
+    ocurrences: 69,
+    articles: 58,
     checked: false,
-    indicator: 17
+    indicator: 17,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Generales',
+    value: 'generales',
+    ocurrences: 56,
+    articles: 57,
     checked: false,
-    indicator: 16
+    indicator: 16,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Constitución',
+    value: 'constitución',
+    ocurrences: 54,
+    articles: 56,
     checked: false,
-    indicator: 15
+    indicator: 15,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Comunidades',
+    value: 'comunidades',
+    ocurrences: 54,
+    articles: 55,
     checked: false,
-    indicator: 14
+    indicator: 14,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Autónomas',
+    value: 'autónomas',
+    ocurrences: 54,
+    articles: 54,
     checked: false,
-    indicator: 13
+    indicator: 13,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Congreso',
+    value: 'congreso',
+    ocurrences: 52,
+    articles: 53,
     checked: false,
-    indicator: 12
+    indicator: 12,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Miembros',
+    value: 'miembros',
+    ocurrences: 51,
+    articles: 52,
     checked: false,
-    indicator: 11
+    indicator: 11,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Derechos',
+    value: 'derechos',
+    ocurrences: 48,
+    articles: 51,
     checked: false,
-    indicator: 10
+    indicator: 10,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Públicos',
+    value: 'públicos',
+    ocurrences: 46,
+    articles: 50,
     checked: false,
-    indicator: 9
+    indicator: 9,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Cortes',
+    value: 'cortes',
+    ocurrences: 46,
+    articles: 49,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Mayoría',
+    value: 'mayoría',
+    ocurrences: 44,
+    articles: 48,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Ejercicio',
+    value: 'ejercicio',
+    ocurrences: 42,
+    articles: 47,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Mediante',
+    value: 'mediante',
+    ocurrences: 41,
+    articles: 46,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Rey',
+    value: 'rey',
+    ocurrences: 41,
+    articles: 45,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Cámaras',
+    value: 'cámaras',
+    ocurrences: 41,
+    articles: 44,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Acuerdo',
+    value: 'acuerdo',
+    ocurrences: 38,
+    articles: 43,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'General',
+    value: 'general',
+    ocurrences: 38,
+    articles: 42,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Poderes',
+    value: 'poderes',
+    ocurrences: 35,
+    articles: 41,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Leyes',
+    value: 'leyes',
+    ocurrences: 34,
+    articles: 40,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Tribunal',
+    value: 'tribunal',
+    ocurrences: 33,
+    articles: 39,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Orgánica',
+    value: 'orgánica',
+    ocurrences: 32,
+    articles: 38,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Diputados',
+    value: 'diputados',
+    ocurrences: 32,
+    articles: 37,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Funciones',
+    value: 'funciones',
+    ocurrences: 31,
+    articles: 36,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Presidente',
+    value: 'constitucional',
+    ocurrences: 30,
+    articles: 35,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Constitucional',
+    value: 'presidente',
+    ocurrences: 30,
+    articles: 34,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Comunidad',
+    value: 'comunidad',
+    ocurrences: 29,
+    articles: 33,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Regulará',
+    value: 'regulará',
+    ocurrences: 28,
+    articles: 32,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Términos',
+    value: 'términos',
+    ocurrences: 27,
+    articles: 31,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Judicial',
+    value: 'judicial',
+    ocurrences: 27,
+    articles: 30,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Apartado',
+    value: 'apartado',
+    ocurrences: 27,
+    articles: 29,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Título',
+    value: 'título',
+    ocurrences: 24,
+    articles: 28,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Régimen',
+    value: 'régimen',
+    ocurrences: 24,
+    articles: 27,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Estatutos',
+    value: 'estatutos',
+    ocurrences: 23,
+    articles: 26,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Autónoma',
+    value: 'autónoma',
+    ocurrences: 23,
+    articles: 25,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'España',
+    value: 'españa',
+    ocurrences: 22,
+    articles: 24,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Forma',
+    value: 'forma',
+    ocurrences: 22,
+    articles: 23,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Plazo',
+    value: 'plazo',
+    ocurrences: 22,
+    articles: 22,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Administración',
+    value: 'administración',
+    ocurrences: 22,
+    articles: 21,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Interés',
+    value: 'interés',
+    ocurrences: 22,
+    articles: 20,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Estatuto',
+    value: 'estatuto',
+    ocurrences: 22,
+    articles: 19,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Perjuicio',
+    value: 'perjuicio',
+    ocurrences: 21,
+    articles: 18,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Consejo',
+    value: 'consejo',
+    ocurrences: 21,
+    articles: 17,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Social',
+    value: 'social',
+    ocurrences: 20,
+    articles: 16,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Españoles',
+    value: 'españoles',
+    ocurrences: 20,
+    articles: 15,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Absoluta',
+    value: 'absoluta',
+    ocurrences: 20,
+    articles: 14,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Normas',
+    value: 'normas',
+    ocurrences: 19,
+    articles: 13,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Territorio',
+    value: 'territorio',
+    ocurrences: 19,
+    articles: 12,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Legislación',
+    value: 'legislación',
+    ocurrences: 19,
+    articles: 11,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Anterior',
+    value: 'anterior',
+    ocurrences: 19,
+    articles: 10,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Senado',
+    value: 'senado',
+    ocurrences: 19,
+    articles: 9,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Principios',
+    value: 'principios',
+    ocurrences: 18,
+    articles: 8,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Ciudadanos',
+    value: 'ciudadanos',
+    ocurrences: 18,
+    articles: 60,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Tratados',
+    value: 'tratados',
+    ocurrences: 18,
+    articles: 59,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Procedimiento',
+    value: 'procedimiento',
+    ocurrences: 18,
+    articles: 58,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Mismo',
+    value: 'mismo',
+    ocurrences: 18,
+    articles: 57,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Propuesta',
+    value: 'propuesta',
+    ocurrences: 18,
+    articles: 56,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Iniciativa',
+    value: 'iniciativa',
+    ocurrences: 18,
+    articles: 55,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Autonomía',
+    value: 'autonomía',
+    ocurrences: 17,
+    articles: 54,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Territorial',
+    value: 'territorial',
+    ocurrences: 17,
+    articles: 53,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Libertades',
+    value: 'libertades',
+    ocurrences: 17,
+    articles: 52,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Público',
+    value: 'público',
+    ocurrences: 17,
+    articles: 51,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Casos',
+    value: 'casos',
+    ocurrences: 17,
+    articles: 50,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Establezca',
+    value: 'establezca',
+    ocurrences: 17,
+    articles: 49,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Reconoce',
+    value: 'reconoce',
+    ocurrences: 16,
+    articles: 48,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Seguridad',
+    value: 'seguridad',
+    ocurrences: 16,
+    articles: 47,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Años',
+    value: 'años',
+    ocurrences: 16,
+    articles: 46,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Efectos',
+    value: 'efectos',
+    ocurrences: 16,
+    articles: 45,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Tribunales',
+    value: 'tribunales',
+    ocurrences: 16,
+    articles: 44,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Política',
+    value: 'política',
+    ocurrences: 15,
+    articles: 43,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Dentro',
+    value: 'dentro',
+    ocurrences: 15,
+    articles: 42,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Defensa',
+    value: 'defensa',
+    ocurrences: 15,
+    articles: 41,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Corresponde',
+    value: 'corresponde',
+    ocurrences: 15,
+    articles: 40,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Edad',
+    value: 'edad',
+    ocurrences: 15,
+    articles: 39,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Cualquier',
+    value: 'cualquier',
+    ocurrences: 15,
+    articles: 38,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Competencias',
+    value: 'competencias',
+    ocurrences: 15,
+    articles: 37,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Cámara',
+    value: 'cámara',
+    ocurrences: 15,
+    articles: 36,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Senadores',
+    value: 'senadores',
+    ocurrences: 15,
+    articles: 35,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Proyecto',
+    value: 'proyecto',
+    ocurrences: 15,
+    articles: 34,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Libertad',
+    value: 'libertad',
+    ocurrences: 14,
+    articles: 33,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Deberán',
+    value: 'deberán',
+    ocurrences: 14,
+    articles: 32,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Bases',
+    value: 'bases',
+    ocurrences: 14,
+    articles: 31,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Ámbito',
+    value: 'ámbito',
+    ocurrences: 14,
+    articles: 30,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Dispuesto',
+    value: 'dispuesto',
+    ocurrences: 14,
+    articles: 29,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Mandato',
+    value: 'mandato',
+    ocurrences: 14,
+    articles: 28,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Presupuestos',
+    value: 'presupuestos',
+    ocurrences: 14,
+    articles: 27,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Órgano',
+    value: 'órgano',
+    ocurrences: 14,
+    articles: 26,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Órganos',
+    value: 'órganos',
+    ocurrences: 14,
+    articles: 25,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Organización',
+    value: 'organización',
+    ocurrences: 13,
+    articles: 24,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Condiciones',
+    value: 'condiciones',
+    ocurrences: 13,
+    articles: 23,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Desarrollo',
+    value: 'desarrollo',
+    ocurrences: 13,
+    articles: 22,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Establecido',
+    value: 'establecido',
+    ocurrences: 13,
+    articles: 21,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Ningún',
+    value: 'ningún',
+    ocurrences: 13,
+    articles: 20,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Competencia',
+    value: 'competencia',
+    ocurrences: 13,
+    articles: 19,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Poder',
+    value: 'poder',
+    ocurrences: 13,
+    articles: 18,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Español',
+    value: 'español',
+    ocurrences: 12,
+    articles: 17,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   },
   {
-    value: 'Protección',
+    value: 'protección',
+    ocurrences: 12,
+    articles: 16,
     checked: false,
-    indicator: 7
+    indicator: 7,
+    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
   }
 ];
 

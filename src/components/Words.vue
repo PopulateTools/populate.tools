@@ -1,8 +1,15 @@
 <template>
     <div class="browser-center">
         <div id="constitution-text" class="browser-main-columns browser-center-columns-first">
-            <div class="browser-header">
-                <h4 class="browser-header-title" v-if="selectedWord !== null">{{selectedWord}} se usa en <span>20 artículos</span> en <span>10 ocasiones</span></h4>
+            <div class="browser-header" v-if="selectedWord !== null">
+                <div class="browser-header-container">
+                <h4 class="browser-header-title">El término {{selectedWord}} se usa en <span>30 artículos</span> en <span>20 ocasiones</span>
+                </h4>
+                <a class="browser-header-close" href="#" @click="resetSelectedWord">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>
+                    </a>
+                </div>
+
             </div>
             <template v-for="(item, index) in filteredData">
                 <browser :key="index" :item="item" :term-selected="selectedWord"></browser>
@@ -18,8 +25,15 @@
                     <input :id="word.value" :value="word.value" class="browser-commond-word-input" name="filtros" type="radio" v-model="selectedWord" />
                     <label :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
-                        <a href="#" v-if="selectedWord === word.value" @click="resetSelectedWord"> X </a>
                     </label>
+                    <a href="#" v-if="selectedWord === word.value" @click="resetSelectedWord"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>
+                    </a>
+                    <div class="browser-word-related" v-if="selectedWord === word.value">
+                        <span class="browser-word-related-title">relacionados</span>
+                        <span class="browser-word-related-text" v-for="(words, index) in word.related">
+                            {{words}}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
