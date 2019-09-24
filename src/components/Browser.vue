@@ -6,7 +6,7 @@
             <template v-for="article in item.articles">
                 <div class="browser-constitution-container-article" :id="article.number">
                     <template v-for="text in article.text">
-                        <p class="browser-constitution-paragraph"> {{text}} </p>
+                        <p class="browser-constitution-paragraph" v-html="wordWrap(text)"></p>
                     </template>
                 </div>
             </template>
@@ -16,9 +16,21 @@
 <script>
 export default {
     props: {
+        termSelected: {
+            type: String
+        },
         item: {
             type: Object,
             required: true
+        }
+    },
+    methods: {
+        wordWrap: function(text) {
+            if(this.termSelected === null) {
+                return text;
+            }
+            const wordBold = new RegExp(`\\b${this.termSelected}\\b`, 'gi')
+            return text.replace(wordBold, `<span class='term-selected'>$&</span>`)
         }
     }
 }
