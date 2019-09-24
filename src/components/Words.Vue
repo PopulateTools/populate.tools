@@ -12,7 +12,7 @@
                     <div class="border-indicator" v-for="rect in word.indicator"></div>
                 </div>
                 <div class="browser-common-word-columns">
-                    <input :id="word.value" class="browser-commond-word-input" type="checkbox" v-model="word.checked" v-on:change="getfilteredData($event, word.value)">
+                    <input :id="word.value" class="browser-commond-word-input" name="filtros" type="radio" @change="getfilteredData($event, word.value);">
                     <label :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
                     </label>
@@ -30,19 +30,10 @@ export default {
     components: {
         Browser
     },
-    computed: {
-        selectedFilters: function() {
-            let filters = []
-            let checkedFiters = this.commond_words.filter(obj => obj.checked)
-            checkedFiters.forEach(element => {
-                filters.push(element.value)
-            })
-            return filters
-        }
-    },
     data() {
         return {
-            filteredData: [],
+            filteredData: data,
+            selectedWord: 'ejemplo',
             commond_words: [{
                     value: 'Ley',
                     checked: false,
@@ -538,27 +529,38 @@ export default {
         }
     },
     methods: {
+        wordWrap: function(word) {
+            const wordBold = new RegExp(`\\b${word}\\b`, 'gi')
+            const element = document.getElementById('constitution-text')
+            element.innerHTML = element.innerHTML.replace(wordBold, `<span class='term-selected'>$&</span>`)
+        },
+        unWrap: function() {
+            setTimeout(function() {
+                const wordMark = new RegExp('<span class="term-selected">', 'gi')
+                const twoWordMark = new RegExp('</span>', 'gi')
+                const element = document.getElementById('constitution-text')
+                element.innerHTML = element.innerHTML.replace(wordMark, '')
+                element.innerHTML = element.innerHTML.replace(twoWordMark, '')
+                console.log('limpiamos html')
+                this.filteredData = data
+            }, 2)
+        },
         getfilteredData: function(event, word) {
             const dataAsArray = Object.values(data)
             let filteredDataByfilters = []
-            if (this.selectedFilters.length > 0) {
-                filteredDataByfilters = dataAsArray.filter(dataValue => {
-                    return dataValue.articles.some(article => {
-                        return article.text.some(articleText => {
-                            return articleText.toLowerCase().indexOf(word.toLowerCase()) > -1
-                        })
+            filteredDataByfilters = dataAsArray.filter(dataValue => {
+                return dataValue.articles.some(article => {
+                    return article.text.some(articleText => {
+                        return articleText.toLowerCase().indexOf(word.toLowerCase()) > -1
                     })
                 })
-                this.filteredData = filteredDataByfilters
-            } else {
-                this.filteredData = data
-            }
+            })
+            this.filteredData = filteredDataByfilters
+            this.selectedWord = word
         }
     },
-    mounted() {
-        this.getfilteredData('Constitución')
+    updated: function() {
+        this.wordWrap(this.selectedWord)
     }
 }
 </script>
-<!--
-common_words: ['ley', 'gobierno', 'derecho', 'generales', 'constitución', 'comunidades', 'autónomas', 'congreso', 'miembros', 'derechos', 'públicos', 'cortes', 'mayoría', 'ejercicio', 'mediante', 'rey', 'cámaras', 'acuerdo', 'general', 'poderes', 'leyes', 'tribunal', 'orgánica', 'diputados', 'funciones', 'presidente', 'constitucional', 'comunidad', 'regulará', 'términos', 'judicial', 'apartado', 'título', 'régimen', 'estatutos', 'autónoma', 'españa', 'forma', 'plazo', 'administración', 'interés', 'estatuto', 'perjuicio', 'consejo', 'social', 'españoles', 'absoluta', 'normas', 'territorio', 'legislación', 'anterior', 'senado', 'principios', 'ciudadanos', 'tratados', 'procedimiento', 'mismo', 'propuesta', 'iniciativa', 'autonomía', 'territorial', 'libertades', 'público', 'casos', 'establezca', 'reconoce', 'seguridad', 'años', 'efectos', 'tribunales', 'política', 'dentro', 'defensa', 'corresponde', 'edad', 'cualquier', 'competencias', 'cámara', 'senadores', 'proyecto', 'libertad', 'deberán', 'bases', 'ámbito', 'dispuesto', 'mandato', 'presupuestos', 'órgano', 'órganos', 'organización', 'condiciones', 'desarrollo', 'establecido', 'ningún', 'competencia', 'poder', 'español', 'protección'] -->

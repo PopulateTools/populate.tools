@@ -161,8 +161,8 @@
 }
 
 .browser-common-word-container {
-    padding: .5rem;
-    width: 50%;
+    padding: .75rem .5rem;
+    width: 70%;
     cursor: pointer;
     font-family: $text;
 }
@@ -170,11 +170,18 @@
 .browser-commond-word-input {
     display: inline-block;
     display: none;
+    &:checked {
+        + .browser-common-word-label {
+            background-color: #C7C7C7;
+        }
+    }
 }
 
 .browser-common-word-label {
+    background-color: transparent;
     display: inline-block;
     font-size: 1rem;
+    padding: 0 .25rem;
     font-family: $text;
     color: #414141;
     cursor: pointer;
@@ -217,4 +224,8 @@
     margin-right: 2px;
     display: inline-block;
     float: right;
+}
+
+.term-selected {
+    background-color: #C1C0C1;
 }
