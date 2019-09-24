@@ -1,3 +1,7 @@
+.constitution {
+    background: none;
+}
+
 .container-constitution {
     width: 100%;
     max-width: 100%;
@@ -15,10 +19,6 @@
     height: 100vh;
 }
 
-.browser {
-    overflow-y: scroll;
-}
-
 .browser-constitution-title {
     font-size: 2rem;
     font-family: $title;
@@ -28,6 +28,8 @@
     &.article {
         font-size: 1.25rem;
         margin-bottom: 0;
+        font-family: $text;
+        color: #4F4F4F;
     }
 }
 
@@ -129,12 +131,6 @@
     color: $textBrowserTerms;
 }
 
-.browser-title {
-    font-size: 2rem;
-    font-family: $title;
-    color: $white;
-}
-
 .browser-chapter {
     width: 100%;
     text-decoration: underline;
@@ -146,8 +142,10 @@
     font-size: .75rem;
     font-family: $text;
     color: #9A9A9A;
-    cursor: pointer;
     font-weight: normal;
+    &:hover {
+        color: #9A9A9A;
+    }
 }
 
 .browser-chapter-subtitle {
@@ -211,6 +209,7 @@
 
 .browser-chapter-container {
     margin-bottom: .5rem;
+    cursor: pointer;
 }
 
 .browser-common-word-columns {
@@ -237,7 +236,7 @@
 .browser-header {
     background-color: #D5D5D5;
     padding: 1rem;
-    max-width: 70%;
+    width: 100%;
     &:empty {
         display: none;
     }
@@ -247,6 +246,8 @@
     font-size: 1rem;
     font-family: $text;
     color: $black;
+    max-width: 70%;
+    margin: 0 auto;
     span {
         font-weight: bold;
     }

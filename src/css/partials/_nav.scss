@@ -1,27 +1,62 @@
 .nav-constitution {
-    display: block;
-    margin: 1rem auto;
-    border-radius: .15rem;
-    border: 1px solid #EFEFEF;
-    width: 60%;
-    background-color: #FBFBFB;
+    width: 100%;
+    padding: .5rem;
+    font-size: 0;
+}
+
+.browser-title {
+    font-size: 1.5rem;
+    font-family: $text;
+    color: $black;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .nav-constitution-element {
     display: inline-block;
-    width: 32%;
-    padding: 1rem;
-    &:not(:last-child) {
-        border-right: 1px solid #EFEFEF;
+    width: 33.33%;
+    vertical-align: middle;
+    &.nav-constitution-logo {
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
     }
-
 }
+
 .nav-constitution-link {
     text-decoration: none;
     font-size: 1.5rem;
     font-family: $title;
-    text-align: center;
     color: $black;
     width: 100%;
     display: block;
+}
+
+.nav-constitution-link {
+    color: #969696;
+    font-size: 12px;
+    font-family: $text;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: $text;
+    padding-right: .5rem;
+    color: #BBBBBB;
+
+}
+
+.nav-logo-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-logo-image {
+    max-width: 95px !important;
+    border: 0 !important;
 }

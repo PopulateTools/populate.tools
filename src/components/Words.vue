@@ -9,7 +9,7 @@
             </template>
         </div>
         <div class="browser-main-columns browser-center-columns-second">
-            <h3 class="browser-center-columns-second-title">CONCEPTOS MÁS UTILIZADOS</h3>
+            <h3 class="browser-center-columns-second-title">TÉRMINOS MÁS UTILIZADOS</h3>
             <div class="browser-common-word-container" v-for="(word, index) in commond_words" :key="index">
                 <div class="browser-common-word-columns">
                     <div class="border-indicator" v-for="rect in word.indicator"></div>
