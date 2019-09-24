@@ -58,9 +58,6 @@ export default {
     methods: {
         resetSelectedWord() {
           this.selectedWord = null
-        },
-        isChecked(word) {
-            return this.selectedWord === word 
         }
     }
 }
