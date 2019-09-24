@@ -1,6 +1,6 @@
 <template>
+    <h2 class="browser-title">La Constitución Española de 1978</h2>
     <article class="browser">
-        <h2 class="browser-title">La Constitución Española de 1978</h2>
         <div class="browser-chapter-container" v-for="(item, index) in items">
             <div class="browser-chapter-columns browser-chapter-columns-left">
                 <a

@@ -1,7 +1,9 @@
 <template>
     <div class="browser-center">
         <div id="constitution-text" class="browser-main-columns browser-center-columns-first">
-            <h4 v-if="selectedWord !== null">Filtrando por {{selectedWord}}</h4>
+            <div class="browser-header">
+                <h4 class="browser-header-title" v-if="selectedWord !== null">{{selectedWord}} se usa en <span>20 artículos</span> en <span>10 ocasiones</span></h4>
+            </div>
             <template v-for="(item, index) in filteredData">
                 <browser :key="index" :item="item"></browser>
             </template>
@@ -84,7 +86,7 @@ export default {
             }
         },
         isChecked(word) {
-            this.selectedWord === word 
+            this.selectedWord === word
         }
     },
     updated: function() {

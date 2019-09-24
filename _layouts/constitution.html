@@ -1,11 +1,10 @@
----
-layout: default
----
-<!-- {% assign author = site.data.team[page.author] %}
+<!DOCTYPE html>
+<html>
 
-{% include header.html %} -->
+{% include head.html %}
 
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Libre+Caslon+Display&display=swap" rel="stylesheet">
+<body class="{{ page.layout }} {{ page.body_class}} {% if page.url == '/' %}section_home{% endif %} {{ page.class }}" id="top">
 
 <div class="container post-page container-constitution">
     <main class="content">
@@ -14,7 +13,6 @@ layout: default
       </div>
     </main>
 
-    <!-- {% include populate_news_latest.html %} -->
 </div>
 
 {% include scripts.html %}
