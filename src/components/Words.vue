@@ -5,7 +5,7 @@
                 <h4 class="browser-header-title" v-if="selectedWord !== null">{{selectedWord}} se usa en <span>20 artículos</span> en <span>10 ocasiones</span></h4>
             </div>
             <template v-for="(item, index) in filteredData">
-                <browser :key="index" :item="item"></browser>
+                <browser :key="index" :item="item" :term-selected="selectedWord"></browser>
             </template>
         </div>
         <div class="browser-main-columns browser-center-columns-second">
@@ -15,9 +15,10 @@
                     <div class="border-indicator" v-for="rect in word.indicator"></div>
                 </div>
                 <div class="browser-common-word-columns">
-                    <input :id="word.value" class="browser-commond-word-input" name="filtros" type="radio" :checked="isChecked(word.value)" />
-                    <label :for="word.value" class="browser-common-word-label" @click="setFilter($event, word.value)">
+                    <input :id="word.value" :value="word.value" class="browser-commond-word-input" name="filtros" type="radio" v-model="selectedWord" />
+                    <label :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
+                        <a href="#" v-if="selectedWord === word.value" @click="resetSelectedWord"> X </a>
                     </label>
                 </div>
             </div>
@@ -28,7 +29,6 @@
 import Browser from './Browser'
 import wholeText from './../data/constitution/data'
 import mostUsedWords from './../data/constitution/most_used_words'
-
 export default {
     name: 'palabras',
     components: {
@@ -57,42 +57,12 @@ export default {
         }
     },
     methods: {
-        wordWrap: function(word) {
-            console.log("wordWrap: ", word);
-            if(word === null) {
-                return;
-            }
-
-            const wordBold = new RegExp(`\\b${word}\\b`, 'gi')
-            const element = document.getElementById('constitution-text')
-            element.innerHTML = element.innerHTML.replace(wordBold, `<span class='term-selected'>$&</span>`)
-        },
-        unWrap: function() {
-            setTimeout(function() {
-                const wordMark = new RegExp('<span class="term-selected">', 'gi')
-                const twoWordMark = new RegExp('</span>', 'gi')
-                const element = document.getElementById('constitution-text')
-                element.innerHTML = element.innerHTML.replace(wordMark, '')
-                element.innerHTML = element.innerHTML.replace(twoWordMark, '')
-                console.log('limpiamos html')
-            }, 2)
-        },
-        setFilter: function(event, word) {
-            console.log(event.target, word);
-            if(word === this.selectedWord) {
-                this.selectedWord = null
-            } else {
-                this.selectedWord = word
-            }
+        resetSelectedWord() {
+          this.selectedWord = null
         },
         isChecked(word) {
-            this.selectedWord === word
+            return this.selectedWord === word
         }
-    },
-    updated: function() {
-      this.$nextTick(function () {
-        this.wordWrap(this.selectedWord)
-      });
     }
 }
 </script>

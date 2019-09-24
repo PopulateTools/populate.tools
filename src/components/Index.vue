@@ -1,19 +1,21 @@
 <template>
-    <h2 class="browser-title">La Constitución Española de 1978</h2>
-    <article class="browser">
-        <div class="browser-chapter-container" v-for="(item, index) in items">
-            <div class="browser-chapter-columns browser-chapter-columns-left">
-                <a
-                v-scroll-to="{el: '#seccion_' + index, container: '#constitution-text' }"
-                class="browser-chapter-title"
-                :class="item.class"
-                >{{item.title}}</a >
-            </div>
-            <div class="browser-chapter-columns">
-                <span class="browser-chapter-subtitle" :class="item.class" >{{item.subtitle}}</span>
-            </div>
-        </div>
-    </article>
+   <div>
+        <h2 class="browser-title">La Constitución Española de 1978</h2>
+       <article class="browser">
+           <div class="browser-chapter-container" v-for="(item, index) in items">
+               <div class="browser-chapter-columns browser-chapter-columns-left">
+                   <a
+                   v-scroll-to="{el: '#seccion_' + index, container: '#constitution-text' }"
+                   class="browser-chapter-title"
+                   :class="item.class"
+                   >{{item.title}}</a >
+               </div>
+               <div class="browser-chapter-columns">
+                   <span class="browser-chapter-subtitle" :class="item.class" >{{item.subtitle}}</span>
+               </div>
+           </div>
+       </article>
+   </div>
 </template>
 <script>
 import titles from './../data/constitution/data-index'
