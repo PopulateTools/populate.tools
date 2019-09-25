@@ -32,7 +32,7 @@
                 </div>
                 <div class="browser-common-word-columns">
                     <router-link :to="{ name: 'terms', params: { term: word.value} }">
-                      <label :for="word.value" class="browser-common-word-label">
+                      <label :class="{checked: word.value === selected}" @click="selected = word.value" :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
                         </label>
                     </router-link>
@@ -70,6 +70,7 @@ export default {
     },
     data() {
         return {
+            selected: undefined,
             commond_words: mostUsedWords
         }
     },
@@ -93,6 +94,7 @@ export default {
     methods: {
         scrollToRelated: function(related) {
             this.$scrollTo('#' + related, 300, { easing: 'linear', container: '#browser-common-words' })
+            this.selected === related
         }
     }
 }
