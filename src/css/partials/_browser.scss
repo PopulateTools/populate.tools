@@ -89,6 +89,8 @@
     background-color: #F2F2F2;
     overflow-y: scroll;
     padding: 0;
+    padding-top: 54px;
+    position: relative;
     .browser-center {
         padding: 0 1rem 1rem 1rem;
     }
@@ -164,7 +166,7 @@
 
 .browser-common-word-container {
     padding: .75rem .5rem;
-    width: 75%;
+    width: 85%;
     font-family: $text;
 }
 
@@ -239,6 +241,9 @@
     padding: 1rem;
     width: 100%;
     position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     &:empty {
         display: none;
     }
@@ -298,7 +303,7 @@
 }
 
 .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
