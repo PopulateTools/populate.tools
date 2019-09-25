@@ -155,7 +155,7 @@ const wholeText = {
         "title": "Capítulo Primero",
         "index": "14",
         "class": "title",
-        "subtitle": "De los derechos y deberes fundamentales",
+        "subtitle": "De los españoles y los extranjeros",
         "articles": [{
             "text": [
                 ""
