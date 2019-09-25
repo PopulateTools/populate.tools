@@ -4,15 +4,14 @@
             <div id="constitution-text-top">
                 <transition name="fade" mode="out-in" appear>
                     <template v-for="(word, index) in commond_words">
-                    <div id="browser-header-top" :key="index" class="browser-header" v-if="selectedWord === word.value">
+                    <div id="browser-header-top" :key="index" class="browser-header" v-if="termSelected === word.value">
                         <div class="browser-header-container">
-                            <h4 class="browser-header-title">El término <span>{{selectedWord}}</span> se usa en <span>{{word.articles}} artículos</span> en <span>{{word.ocurrences}} ocasiones</span>
-                            </h4>
-                            <a class="browser-header-close" href="#" @click="resetSelectedWord">
+                            <h4 class="browser-header-title">El término <span>{{termSelected}}</span> se usa en <span>{{word.articles}} artículos</span> en <span>{{word.ocurrences}} ocasiones</span></h4>
+                            <router-link :to="{ name: 'home'}" class="browser-header-close">
                                 <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path>
                                 </svg>
-                            </a>
+                            </router-link>
 
                         </div>
                     </div>
@@ -21,39 +20,33 @@
             </div>
             <template v-for="(item, index) in filteredData">
                 <transition name="fade" mode="out-in" appear>
-                    <browser :key="index" :item="item" :term-selected="selectedWord"></browser>
+                    <browser :key="index" :item="item" :term-selected="termSelected"></browser>
                 </transition>
             </template>
         </div>
-        <div class="browser-main-columns browser-center-columns-second">
+        <div id="browser-common-words" class="browser-main-columns browser-center-columns-second">
             <h3 class="browser-center-columns-second-title">TÉRMINOS MÁS UTILIZADOS</h3>
             <div class="browser-common-word-container" v-for="(word, index) in commond_words" :key="index">
                 <div class="browser-common-word-columns">
                     <div class="border-indicator" v-for="rect in word.indicator"></div>
                 </div>
-                <div class="browser-common-word-columns">
-                    <input
-                    :id="word.value"
-                    :value="word.value"
-                    class="browser-commond-word-input"
-                    name="filtros"
-                    type="radio"
-                    v-model="selectedWord" />
-                    <label
-                    :for="word.value" class="browser-common-word-label">
+                <div :id="word.value" class="browser-common-word-columns">
+                    <router-link  :to="{ name: 'terms', params: { term: word.value} }">
+                      <label :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
-                    </label>
-                    <a
-                        href="#" v-if="selectedWord === word.value"
-                        @click="resetSelectedWord">
+                        </label>
+                    </router-link>
+                    <router-link :to="{ name: 'home' }" v-if="termSelected === word.value">
                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path>
                         </svg>
-                    </a>
-                    <div class="browser-word-related" v-if="selectedWord === word.value">
+                    </router-link>
+                    <div class="browser-word-related" v-if="termSelected === word.value">
                         <span class="browser-word-related-title">relacionados</span>
-                        <span class="browser-word-related-text" v-for="(words, index) in word.related">
-                            {{words}}
+                        <span @click="scrollToRelated(termSelected)" class="browser-word-related-text" v-for="(relatedTerm, index) in word.related">
+                          <router-link :to="{ name: 'terms', params: {term: relatedTerm}}">
+                              {{relatedTerm}}
+                          </router-link>
                         </span>
                     </div>
                 </div>
@@ -61,24 +54,29 @@
         </div>
     </div>
 </template>
+
 <script>
 import Browser from './Browser'
 import wholeText from './../data/constitution/data'
 import mostUsedWords from './../data/constitution/most_used_words'
 export default {
-    name: 'palabras',
     components: {
         Browser
     },
+    props: {
+        termSelected: {
+            type: String
+        },
+    },
     data() {
         return {
-            selectedWord: null,
             commond_words: mostUsedWords
         }
     },
     computed: {
         filteredData: function() {
             this.$scrollTo('#browser-header-top', 300, { easing: 'linear', container: '#constitution-text' })
+
             if (this.selectedWord === null) {
                 return wholeText;
             } else {
@@ -86,21 +84,17 @@ export default {
                 return dataAsArray.filter(dataValue => {
                     return dataValue.articles.some(article => {
                         return article.text.some(articleText => {
-                            return articleText.toLowerCase().indexOf(this.selectedWord.toLowerCase()) > -1
+                            return articleText.toLowerCase().indexOf(this.termSelected.toLowerCase()) > -1
                         })
                     })
                 })
             }
-        }
+        },
+
     },
     methods: {
-        resetSelectedWord() {
-            this.selectedWord = null
-            this.$scrollTo('#constitution-text-top', 300, { easing: 'linear', container: '#constitution-text' })
-
-        },
-        isChecked(word) {
-            return this.selectedWord === word
+        scrollToRelated: function(related) {
+            this.$scrollTo('#' + related, 300, { easing: 'linear', container: '#browser-common-words' })
         }
     }
 }

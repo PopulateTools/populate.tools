@@ -19,10 +19,18 @@
 import titles from './../data/constitution/data-index'
 
 export default {
-    name: 'index',
     data() {
         return {
             items: titles
+        }
+    },
+    methods: {
+        filterIndex: function(text) {
+            if(this.termSelected === null) {
+                return text;
+            } else {
+
+            }
         }
     }
 }

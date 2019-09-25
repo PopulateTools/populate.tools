@@ -13,7 +13,7 @@ const mostUsedWords = [
     articles: 50,
     checked: false,
     indicator: 19,
-    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
+    related: ['miembros', 'gobierno', 'presidente', 'congreso', 'consejo', 'propuesta']
   },
   {
     value: 'derecho',
@@ -21,7 +21,7 @@ const mostUsedWords = [
     articles: 59,
     checked: false,
     indicator: 17,
-    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
+    related: ['reconoce', 'españoles', 'comunidades', 'derecho', 'caso', 'normas']
   },
   {
     value: 'generales',
@@ -29,7 +29,7 @@ const mostUsedWords = [
     articles: 37,
     checked: false,
     indicator: 16,
-    related: ['regulará' ,'derecho' , 'orgánica', 'términos']
+    related: ['determinará' ,'derecho' , 'orgánica', 'términos']
   },
   {
     value: 'constitución',
