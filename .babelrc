@@ -1,3 +1,15 @@
 {
-  "presets": [["@babel/env"]]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "> 1%"
+        },
+        "useBuiltIns": "entry",
+        "corejs": 2
+      }
+    ]
+  ]
 }
+
