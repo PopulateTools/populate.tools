@@ -32,7 +32,7 @@
                 </div>
                 <div class="browser-common-word-columns">
                     <router-link :to="{ name: 'terms', params: { term: word.value} }">
-                      <label :class="{checked: termSelected === word.value}" @click="termSelected === word.value" :for="word.value" class="browser-common-word-label">
+                      <label :class="{checked: termSelected === word.value}" :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
                         </label>
                     </router-link>
