@@ -18,11 +18,11 @@
                     </template>
                 </transition>
             </div>
-            <template v-for="(item, index) in filteredData">
-                <transition name="fade" mode="out-in" appear>
+            <transition name="fade" mode="out-in" appear>
+                <template v-for="(item, index) in filteredData">
                     <browser :key="index" :item="item" :term-selected="termSelected"></browser>
-                </transition>
-            </template>
+                </template>
+            </transition>
         </div>
         <div id="browser-common-words" class="browser-main-columns browser-center-columns-second">
             <h3 class="browser-center-columns-second-title">TÉRMINOS MÁS UTILIZADOS</h3>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="browser-common-word-columns">
                     <router-link :to="{ name: 'terms', params: { term: word.value} }">
-                      <label :class="{checked: word.value === selected}" @click="selected = word.value" :for="word.value" class="browser-common-word-label">
+                      <label :class="{checked: termSelected === word.value}" @click="termSelected === word.value" :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
                         </label>
                     </router-link>
@@ -70,7 +70,6 @@ export default {
     },
     data() {
         return {
-            selected: undefined,
             commond_words: mostUsedWords
         }
     },
@@ -94,7 +93,6 @@ export default {
     methods: {
         scrollToRelated: function(related) {
             this.$scrollTo('#' + related, 300, { easing: 'linear', container: '#browser-common-words' })
-            this.selected === related
         }
     }
 }
