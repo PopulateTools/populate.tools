@@ -19,7 +19,6 @@
 import titles from './../data/constitution/data-index'
 
 export default {
-    name: 'index',
     data() {
         return {
             items: titles

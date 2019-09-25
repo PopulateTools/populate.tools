@@ -4,7 +4,7 @@
             <article class="browser-main-columns-left ">
                 <index></index>
             </article>
-            <words :term-selected="null"></words>
+            <words :term-selected="$route.params.term"></words>
         </section>
     </div>
 </template>
