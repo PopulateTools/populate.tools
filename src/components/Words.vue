@@ -27,11 +27,11 @@
         <div id="browser-common-words" class="browser-main-columns browser-center-columns-second">
             <h3 class="browser-center-columns-second-title">TÉRMINOS MÁS UTILIZADOS</h3>
             <div class="browser-common-word-container" v-for="(word, index) in commond_words" :key="index">
-                <div class="browser-common-word-columns">
+                <div :id="word.value" class="browser-common-word-columns">
                     <div class="border-indicator" v-for="rect in word.indicator"></div>
                 </div>
-                <div :id="word.value" class="browser-common-word-columns">
-                    <router-link  :to="{ name: 'terms', params: { term: word.value} }">
+                <div class="browser-common-word-columns">
+                    <router-link :to="{ name: 'terms', params: { term: word.value} }">
                       <label :for="word.value" class="browser-common-word-label">
                         {{ word.value }}
                         </label>
@@ -76,8 +76,7 @@ export default {
     computed: {
         filteredData: function() {
             this.$scrollTo('#browser-header-top', 300, { easing: 'linear', container: '#constitution-text' })
-
-            if (this.selectedWord === null) {
+            if (this.termSelected === null) {
                 return wholeText;
             } else {
                 const dataAsArray = Object.values(wholeText)
@@ -89,8 +88,7 @@ export default {
                     })
                 })
             }
-        },
-
+        }
     },
     methods: {
         scrollToRelated: function(related) {
