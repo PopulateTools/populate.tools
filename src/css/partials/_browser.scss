@@ -5,7 +5,7 @@
 .container-constitution {
     width: 100%;
     max-width: 100%;
-    padding: 1rem 0;
+    padding: 0;
     .content {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -16,7 +16,7 @@
     width: 100%;
     background-color: $lightgrey;
     font-size: 0;
-    height: 100vh;
+    height: calc(100vh - 57px);
 }
 
 .browser-constitution-title {
@@ -25,7 +25,8 @@
     color: $black;
     font-weight: bold;
     margin-top: 1.5rem;
-    &.article {
+    &.article,
+    &.section {
         font-size: 1.25rem;
         margin-bottom: 0;
         font-family: $text;
@@ -34,7 +35,7 @@
 }
 
 .browser-constitution-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: $title;
     font-weight: bold;
     color: $black;
@@ -78,7 +79,7 @@
 
 .browser-center-columns-first,
 .browser-center-columns-second {
-    height: 100vh;
+    height: calc(100vh - 59px);
     width: 65%;
     display: inline-block;
     vertical-align: top;
@@ -98,10 +99,13 @@
 
 .browser-center-columns-second {
     background-color: $grey;
-    height: 100vh;
     width: 35%;
     padding: 1rem;
     overflow-y: scroll;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 .browser-common-word {
@@ -183,6 +187,7 @@
 .browser-common-word-label {
     background-color: transparent;
     display: inline-block;
+    vertical-align: middle;
     font-size: 1rem;
     padding: 0 .25rem;
     font-family: $text;

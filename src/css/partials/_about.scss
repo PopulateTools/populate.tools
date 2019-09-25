@@ -1,10 +1,44 @@
 .about {
+    width: 100%;
+    margin: 0 auto;
+    height: calc(100vh - 57px);
+    background-color: #E1E1E1;
+}
+
+.about-container {
     width: 60%;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding-top: 10rem;
 }
 
 .about-text {
     font-size: 1rem;
     font-family: $text;
     color: #5D5D5D;
+    max-width: 25rem;
+}
+
+.stories-element {
+    width: 22rem;
+    display: inline-block;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+}
+
+.header-text {
+    background-color: #038ba4;
+    padding: 1rem;
+    h1,
+    h2 {
+        font-size: 1.25rem;
+        color: #FFF;
+        text-align: left;
+    }
+    h2 {
+        font-size: .8rem;
+        font-weight: normal;
+        opacity: .5;
+    }
 }

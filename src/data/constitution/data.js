@@ -224,7 +224,7 @@ const wholeText = {
     "20": {
         "title": "Sección 1.ª",
         "index": "20",
-        "class": "title",
+        "class": "section",
         "subtitle": "De los derechos fundamentales y de las libertades públicas",
         "articles": [{
             "text": [
@@ -450,7 +450,7 @@ const wholeText = {
     "36": {
         "title": "Sección 2.ª",
         "index": "36",
-        "class": "title",
+        "class": "section",
         "subtitle": "De los derechos y deberes de los ciudadanos",
         "articles": [{
             "text": [""]

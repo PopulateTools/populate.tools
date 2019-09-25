@@ -2,7 +2,7 @@ const mostUsedWords = [
   {
     value: 'ley',
     ocurrences: 157,
-    articles: 60,
+    articles: 108,
     checked: false,
     indicator: 20,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -10,7 +10,7 @@ const mostUsedWords = [
   {
     value: 'gobierno',
     ocurrences: 81,
-    articles: 59,
+    articles: 50,
     checked: false,
     indicator: 19,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -18,7 +18,7 @@ const mostUsedWords = [
   {
     value: 'derecho',
     ocurrences: 69,
-    articles: 58,
+    articles: 59,
     checked: false,
     indicator: 17,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -26,7 +26,7 @@ const mostUsedWords = [
   {
     value: 'generales',
     ocurrences: 56,
-    articles: 57,
+    articles: 37,
     checked: false,
     indicator: 16,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -34,7 +34,7 @@ const mostUsedWords = [
   {
     value: 'constitución',
     ocurrences: 54,
-    articles: 56,
+    articles: 38,
     checked: false,
     indicator: 15,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -42,7 +42,7 @@ const mostUsedWords = [
   {
     value: 'comunidades',
     ocurrences: 54,
-    articles: 55,
+    articles: 28,
     checked: false,
     indicator: 14,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -50,7 +50,7 @@ const mostUsedWords = [
   {
     value: 'autónomas',
     ocurrences: 54,
-    articles: 54,
+    articles: 28,
     checked: false,
     indicator: 13,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -58,7 +58,7 @@ const mostUsedWords = [
   {
     value: 'congreso',
     ocurrences: 52,
-    articles: 53,
+    articles: 30,
     checked: false,
     indicator: 12,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -66,7 +66,7 @@ const mostUsedWords = [
   {
     value: 'miembros',
     ocurrences: 51,
-    articles: 52,
+    articles: 28,
     checked: false,
     indicator: 11,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -74,7 +74,7 @@ const mostUsedWords = [
   {
     value: 'derechos',
     ocurrences: 48,
-    articles: 51,
+    articles: 33,
     checked: false,
     indicator: 10,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -82,7 +82,7 @@ const mostUsedWords = [
   {
     value: 'públicos',
     ocurrences: 46,
-    articles: 50,
+    articles: 29,
     checked: false,
     indicator: 9,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -90,7 +90,7 @@ const mostUsedWords = [
   {
     value: 'cortes',
     ocurrences: 46,
-    articles: 49,
+    articles: 33,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -98,7 +98,7 @@ const mostUsedWords = [
   {
     value: 'mayoría',
     ocurrences: 44,
-    articles: 48,
+    articles: 24,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -106,7 +106,7 @@ const mostUsedWords = [
   {
     value: 'ejercicio',
     ocurrences: 42,
-    articles: 47,
+    articles: 32,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -114,7 +114,7 @@ const mostUsedWords = [
   {
     value: 'mediante',
     ocurrences: 41,
-    articles: 46,
+    articles: 30,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -122,7 +122,7 @@ const mostUsedWords = [
   {
     value: 'rey',
     ocurrences: 41,
-    articles: 45,
+    articles: 24,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -130,7 +130,7 @@ const mostUsedWords = [
   {
     value: 'cámaras',
     ocurrences: 41,
-    articles: 44,
+    articles: 25,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -138,7 +138,7 @@ const mostUsedWords = [
   {
     value: 'acuerdo',
     ocurrences: 38,
-    articles: 43,
+    articles: 33,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -146,7 +146,7 @@ const mostUsedWords = [
   {
     value: 'general',
     ocurrences: 38,
-    articles: 42,
+    articles: 56,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -154,7 +154,7 @@ const mostUsedWords = [
   {
     value: 'poderes',
     ocurrences: 35,
-    articles: 41,
+    articles: 24,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -162,7 +162,7 @@ const mostUsedWords = [
   {
     value: 'leyes',
     ocurrences: 34,
-    articles: 40,
+    articles: 29,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -170,7 +170,7 @@ const mostUsedWords = [
   {
     value: 'tribunal',
     ocurrences: 33,
-    articles: 39,
+    articles: 29,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -178,7 +178,7 @@ const mostUsedWords = [
   {
     value: 'orgánica',
     ocurrences: 32,
-    articles: 38,
+    articles: 31,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -186,7 +186,7 @@ const mostUsedWords = [
   {
     value: 'diputados',
     ocurrences: 32,
-    articles: 37,
+    articles: 21,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -194,7 +194,7 @@ const mostUsedWords = [
   {
     value: 'funciones',
     ocurrences: 31,
-    articles: 36,
+    articles: 25,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -202,7 +202,7 @@ const mostUsedWords = [
   {
     value: 'constitucional',
     ocurrences: 30,
-    articles: 35,
+    articles: 26,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -210,7 +210,7 @@ const mostUsedWords = [
   {
     value: 'presidente',
     ocurrences: 30,
-    articles: 34,
+    articles: 22,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -218,7 +218,7 @@ const mostUsedWords = [
   {
     value: 'comunidad',
     ocurrences: 29,
-    articles: 33,
+    articles: 37,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -226,7 +226,7 @@ const mostUsedWords = [
   {
     value: 'regulará',
     ocurrences: 28,
-    articles: 32,
+    articles: 28,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -234,7 +234,7 @@ const mostUsedWords = [
   {
     value: 'términos',
     ocurrences: 27,
-    articles: 31,
+    articles: 21,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -242,7 +242,7 @@ const mostUsedWords = [
   {
     value: 'judicial',
     ocurrences: 27,
-    articles: 30,
+    articles: 21,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -250,7 +250,7 @@ const mostUsedWords = [
   {
     value: 'apartado',
     ocurrences: 27,
-    articles: 29,
+    articles: 18,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -258,7 +258,7 @@ const mostUsedWords = [
   {
     value: 'título',
     ocurrences: 24,
-    articles: 28,
+    articles: 24,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -266,7 +266,7 @@ const mostUsedWords = [
   {
     value: 'régimen',
     ocurrences: 24,
-    articles: 27,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -274,7 +274,7 @@ const mostUsedWords = [
   {
     value: 'estatutos',
     ocurrences: 23,
-    articles: 26,
+    articles: 15,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -282,7 +282,7 @@ const mostUsedWords = [
   {
     value: 'autónoma',
     ocurrences: 23,
-    articles: 25,
+    articles: 34,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -290,7 +290,7 @@ const mostUsedWords = [
   {
     value: 'españa',
     ocurrences: 22,
-    articles: 24,
+    articles: 18,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -298,7 +298,7 @@ const mostUsedWords = [
   {
     value: 'forma',
     ocurrences: 22,
-    articles: 23,
+    articles: 52,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -306,7 +306,7 @@ const mostUsedWords = [
   {
     value: 'plazo',
     ocurrences: 22,
-    articles: 22,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -314,7 +314,7 @@ const mostUsedWords = [
   {
     value: 'administración',
     ocurrences: 22,
-    articles: 21,
+    articles: 20,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -322,7 +322,7 @@ const mostUsedWords = [
   {
     value: 'interés',
     ocurrences: 22,
-    articles: 20,
+    articles: 14,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -330,7 +330,7 @@ const mostUsedWords = [
   {
     value: 'estatuto',
     ocurrences: 22,
-    articles: 19,
+    articles: 25,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -338,7 +338,7 @@ const mostUsedWords = [
   {
     value: 'perjuicio',
     ocurrences: 21,
-    articles: 18,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -346,7 +346,7 @@ const mostUsedWords = [
   {
     value: 'consejo',
     ocurrences: 21,
-    articles: 17,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -354,7 +354,7 @@ const mostUsedWords = [
   {
     value: 'social',
     ocurrences: 20,
-    articles: 16,
+    articles: 22,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -362,7 +362,7 @@ const mostUsedWords = [
   {
     value: 'españoles',
     ocurrences: 20,
-    articles: 15,
+    articles: 18,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -370,7 +370,7 @@ const mostUsedWords = [
   {
     value: 'absoluta',
     ocurrences: 20,
-    articles: 14,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -386,7 +386,7 @@ const mostUsedWords = [
   {
     value: 'territorio',
     ocurrences: 19,
-    articles: 12,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -394,7 +394,7 @@ const mostUsedWords = [
   {
     value: 'legislación',
     ocurrences: 19,
-    articles: 11,
+    articles: 7,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -402,7 +402,7 @@ const mostUsedWords = [
   {
     value: 'anterior',
     ocurrences: 19,
-    articles: 10,
+    articles: 17,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -410,7 +410,7 @@ const mostUsedWords = [
   {
     value: 'senado',
     ocurrences: 19,
-    articles: 9,
+    articles: 20,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -418,7 +418,7 @@ const mostUsedWords = [
   {
     value: 'principios',
     ocurrences: 18,
-    articles: 8,
+    articles: 15,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -426,7 +426,7 @@ const mostUsedWords = [
   {
     value: 'ciudadanos',
     ocurrences: 18,
-    articles: 60,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -434,7 +434,7 @@ const mostUsedWords = [
   {
     value: 'tratados',
     ocurrences: 18,
-    articles: 59,
+    articles: 9,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -442,7 +442,7 @@ const mostUsedWords = [
   {
     value: 'procedimiento',
     ocurrences: 18,
-    articles: 58,
+    articles: 17,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -450,7 +450,7 @@ const mostUsedWords = [
   {
     value: 'mismo',
     ocurrences: 18,
-    articles: 57,
+    articles: 33,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -458,7 +458,7 @@ const mostUsedWords = [
   {
     value: 'propuesta',
     ocurrences: 18,
-    articles: 56,
+    articles: 14,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -466,7 +466,7 @@ const mostUsedWords = [
   {
     value: 'iniciativa',
     ocurrences: 18,
-    articles: 55,
+    articles: 9,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -474,7 +474,7 @@ const mostUsedWords = [
   {
     value: 'autonomía',
     ocurrences: 17,
-    articles: 54,
+    articles: 12,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -482,7 +482,7 @@ const mostUsedWords = [
   {
     value: 'territorial',
     ocurrences: 17,
-    articles: 53,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -490,7 +490,7 @@ const mostUsedWords = [
   {
     value: 'libertades',
     ocurrences: 17,
-    articles: 52,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -498,7 +498,7 @@ const mostUsedWords = [
   {
     value: 'público',
     ocurrences: 17,
-    articles: 51,
+    articles: 38,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -506,7 +506,7 @@ const mostUsedWords = [
   {
     value: 'casos',
     ocurrences: 17,
-    articles: 50,
+    articles: 17,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -514,7 +514,7 @@ const mostUsedWords = [
   {
     value: 'establezca',
     ocurrences: 17,
-    articles: 49,
+    articles: 20,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -522,7 +522,7 @@ const mostUsedWords = [
   {
     value: 'reconoce',
     ocurrences: 16,
-    articles: 48,
+    articles: 17,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -530,7 +530,7 @@ const mostUsedWords = [
   {
     value: 'seguridad',
     ocurrences: 16,
-    articles: 47,
+    articles: 12,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -538,7 +538,7 @@ const mostUsedWords = [
   {
     value: 'años',
     ocurrences: 16,
-    articles: 46,
+    articles: 11,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -546,7 +546,7 @@ const mostUsedWords = [
   {
     value: 'efectos',
     ocurrences: 16,
-    articles: 45,
+    articles: 12,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -554,7 +554,7 @@ const mostUsedWords = [
   {
     value: 'tribunales',
     ocurrences: 16,
-    articles: 44,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -562,7 +562,7 @@ const mostUsedWords = [
   {
     value: 'política',
     ocurrences: 15,
-    articles: 43,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -570,7 +570,7 @@ const mostUsedWords = [
   {
     value: 'dentro',
     ocurrences: 15,
-    articles: 42,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -578,7 +578,7 @@ const mostUsedWords = [
   {
     value: 'defensa',
     ocurrences: 15,
-    articles: 41,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -586,7 +586,7 @@ const mostUsedWords = [
   {
     value: 'corresponde',
     ocurrences: 15,
-    articles: 40,
+    articles: 15,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -594,7 +594,7 @@ const mostUsedWords = [
   {
     value: 'edad',
     ocurrences: 15,
-    articles: 39,
+    articles: 16,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -602,7 +602,7 @@ const mostUsedWords = [
   {
     value: 'cualquier',
     ocurrences: 15,
-    articles: 38,
+    articles: 19,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -610,7 +610,7 @@ const mostUsedWords = [
   {
     value: 'competencias',
     ocurrences: 15,
-    articles: 37,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -618,7 +618,7 @@ const mostUsedWords = [
   {
     value: 'cámara',
     ocurrences: 15,
-    articles: 36,
+    articles: 29,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -626,7 +626,7 @@ const mostUsedWords = [
   {
     value: 'senadores',
     ocurrences: 15,
-    articles: 35,
+    articles: 9,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -634,7 +634,7 @@ const mostUsedWords = [
   {
     value: 'proyecto',
     ocurrences: 15,
-    articles: 34,
+    articles: 14,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -642,7 +642,7 @@ const mostUsedWords = [
   {
     value: 'libertad',
     ocurrences: 14,
-    articles: 33,
+    articles: 21,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -650,7 +650,7 @@ const mostUsedWords = [
   {
     value: 'deberán',
     ocurrences: 14,
-    articles: 32,
+    articles: 15,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -658,7 +658,7 @@ const mostUsedWords = [
   {
     value: 'bases',
     ocurrences: 14,
-    articles: 31,
+    articles: 7,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -666,7 +666,7 @@ const mostUsedWords = [
   {
     value: 'ámbito',
     ocurrences: 14,
-    articles: 30,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -674,7 +674,7 @@ const mostUsedWords = [
   {
     value: 'dispuesto',
     ocurrences: 14,
-    articles: 29,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -682,7 +682,7 @@ const mostUsedWords = [
   {
     value: 'mandato',
     ocurrences: 14,
-    articles: 28,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -690,7 +690,7 @@ const mostUsedWords = [
   {
     value: 'presupuestos',
     ocurrences: 14,
-    articles: 27,
+    articles: 8,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -698,7 +698,7 @@ const mostUsedWords = [
   {
     value: 'órgano',
     ocurrences: 14,
-    articles: 26,
+    articles: 18,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -706,7 +706,7 @@ const mostUsedWords = [
   {
     value: 'órganos',
     ocurrences: 14,
-    articles: 25,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -714,7 +714,7 @@ const mostUsedWords = [
   {
     value: 'organización',
     ocurrences: 13,
-    articles: 24,
+    articles: 10,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -722,7 +722,7 @@ const mostUsedWords = [
   {
     value: 'condiciones',
     ocurrences: 13,
-    articles: 23,
+    articles: 12,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -730,7 +730,7 @@ const mostUsedWords = [
   {
     value: 'desarrollo',
     ocurrences: 13,
-    articles: 22,
+    articles: 11,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -738,7 +738,7 @@ const mostUsedWords = [
   {
     value: 'establecido',
     ocurrences: 13,
-    articles: 21,
+    articles: 12,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -746,7 +746,7 @@ const mostUsedWords = [
   {
     value: 'ningún',
     ocurrences: 13,
-    articles: 20,
+    articles: 13,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -754,7 +754,7 @@ const mostUsedWords = [
   {
     value: 'competencia',
     ocurrences: 13,
-    articles: 19,
+    articles: 18,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -762,7 +762,7 @@ const mostUsedWords = [
   {
     value: 'poder',
     ocurrences: 13,
-    articles: 18,
+    articles: 32,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -770,7 +770,7 @@ const mostUsedWords = [
   {
     value: 'español',
     ocurrences: 12,
-    articles: 17,
+    articles: 27,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
@@ -778,7 +778,7 @@ const mostUsedWords = [
   {
     value: 'protección',
     ocurrences: 12,
-    articles: 16,
+    articles: 8,
     checked: false,
     indicator: 7,
     related: ['regulará' ,'derecho' , 'orgánica', 'términos']
