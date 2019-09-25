@@ -265,7 +265,7 @@ const data = {
         }]
     },
     "200": {
-        "title": "Disposiciones Transitorias.",
+        "title": "Disposiciones Transitorias",
         "index": "200",
         "class": "title",
         "articles": [{
