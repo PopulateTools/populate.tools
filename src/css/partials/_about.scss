@@ -8,7 +8,7 @@
 .about-container {
     width: 60%;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding-top: 4rem;
 }
 
 .about-text {
@@ -19,12 +19,15 @@
 }
 
 .stories-element {
-    width: 22rem;
-    display: inline-block;
-    text-align: center;
+    width: 36rem;
+    margin-bottom: .5rem;
     a {
         text-decoration: none;
     }
+}
+
+.visual_feature {
+    height: 100px;
 }
 
 .header-text {
