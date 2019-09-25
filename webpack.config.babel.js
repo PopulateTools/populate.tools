@@ -1,14 +1,16 @@
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 const path = require('path')
 const webpack = require('webpack') // eslint-disable-line
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const outputDir = "dist";
 
 module.exports = {
     entry: ["./src/main.js", "./src/css/app.scss"],
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, outputDir),
         publicPath: '/dist',
         filename: '[name].[chunkhash].js'
     },
@@ -24,7 +26,7 @@ module.exports = {
             }
         }
     },
-    mode: 'development',
+    mode: process.env.NODE_ENV === "production" ? "production" : "development",
     module: {
         rules: [{
                 test: /\.vue$/,
@@ -77,8 +79,4 @@ module.exports = {
         },
         extensions: ['*', '.js', '.vue', '.json']
     }
-}
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports.mode = 'production'
 }
