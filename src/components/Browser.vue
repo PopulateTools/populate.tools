@@ -31,8 +31,8 @@ export default {
             if(this.termSelected === null) {
                 return text;
             }
-            const wordBold = new RegExp(`\\b${this.termSelected}\\b`, 'gi')
-            return text.replace(wordBold, `<span class='term-selected'>$&</span>`)
+            const wordBold = new RegExp(`\\b(${this.termSelected})(\s|$|.|,|:)`, 'gi')
+            return text.replace(wordBold, `<span class='term-selected'>$1</span>$2`)
         }
     }
 }
