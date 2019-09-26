@@ -16,9 +16,8 @@
                         <div class="browser-chapter-sections-element" v-for="(chapters, index) in item.articles">
                             <transition name="fade" mode="out-in" appear>
                                 <a
-
+                                    v-scroll-to="{el: '#seccion_' + chapters.index, container: '#constitution-text' }"
                                     :class="chapters.class"
-                                    @click="resetData('#seccion_' + chapters.index, 300, '#constitution-text')"
                                     >
                                    <div class="browser-chapter-columns browser-chapter-columns-left">
                                        <span class="browser-chapter-title">{{chapters.title}}</span >
@@ -185,10 +184,6 @@ export default {
                     element.classList.remove('active-index');
                 }
             });
-        },
-        resetData: function(element, duration, options) {
-            console.log('Resetdata')
-          this.$router.push({ path: 'home'},() => {this.$scrollTo(element, duration, options)})
         }
     },
     mounted() {
