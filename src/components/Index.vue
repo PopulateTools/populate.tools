@@ -2,7 +2,7 @@
        <article class="browser">
            <div class="browser-chapter-container" v-for="(item, index) in items" :id="'browser-title-' + index">
                 <a
-                    v-scroll-to="{el: '#seccion_' + index, container: '#constitution-text' }"
+                    @click="resetData('#seccion_' + index, 300, '#constitution-text')"
                     :class="item.class"
                     >
                    <div class="browser-chapter-columns browser-chapter-columns-left">
@@ -186,9 +186,12 @@ export default {
                 }
             });
         },
-        resetData: function(element, duration, options) {
-            console.log('Resetdata')
-          this.$router.push({ path: 'home'},() => {this.$scrollTo(element, duration, options)})
+        resetData: function(element, duration, container) {
+          if(this.$router.currentRoute.name === 'home') {
+            this.$scrollTo(element, duration, {container: container})
+          } else {
+            this.$router.push({ name: 'home'}, () => {setTimeout(this.$scrollTo(element, duration, {container: container}), 2500)})
+          }
         }
     },
     mounted() {
