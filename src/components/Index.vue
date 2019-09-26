@@ -1,38 +1,31 @@
 <template>
-       <article class="browser">
-           <div class="browser-chapter-container" v-for="(item, index) in items" :id="'browser-title-' + index">
-                <a
-                    v-scroll-to="{el: '#seccion_' + index, container: '#constitution-text' }"
-                    :class="item.class"
-                    >
-                   <div class="browser-chapter-columns browser-chapter-columns-left">
-                       <span class="browser-chapter-title">{{item.title}}</span >
-                   </div>
-                   <div class="browser-chapter-columns">
-                       <span class="browser-chapter-subtitle" :class="item.class" >{{item.subtitle}}</span>
-                   </div>
-                </a>
-                    <div :id="'indice_' + index" class="browser-chapter-sections">
-                        <div class="browser-chapter-sections-element" v-for="(chapters, index) in item.articles">
-                            <transition name="fade" mode="out-in" appear>
-                                <a
-                                    v-scroll-to="{el: '#seccion_' + chapters.index, container: '#constitution-text' }"
-                                    :class="chapters.class"
-                                    >
-                                   <div class="browser-chapter-columns browser-chapter-columns-left">
-                                       <span class="browser-chapter-title">{{chapters.title}}</span >
-                                   </div>
-                                   <div class="browser-chapter-columns">
-                                       <span class="browser-chapter-subtitle" :class="chapters.class" >{{chapters.subtitle}}</span>
-                                   </div>
-                                </a>
-                            </transition>
-                        </div>
-                    </div>
-           </div>
-       </article>
+    <article class="browser">
+        <div class="browser-chapter-container" v-for="(item, index) in items" :id="'browser-title-' + index">
+            <a @click="resetData('#seccion_' + index, 300, '#constitution-text')" :class="item.class">
+                <div class="browser-chapter-columns browser-chapter-columns-left">
+                    <span class="browser-chapter-title">{{item.title}}</span>
+                </div>
+                <div class="browser-chapter-columns">
+                    <span class="browser-chapter-subtitle" :class="item.class">{{item.subtitle}}</span>
+                </div>
+            </a>
+            <div :id="'indice_' + index" class="browser-chapter-sections">
+                <div class="browser-chapter-sections-element" v-for="(chapters, index) in item.articles">
+                    <transition name="fade" mode="out-in" appear>
+                        <a v-scroll-to="{el: '#seccion_' + chapters.index, container: '#constitution-text' }" :class="chapters.class">
+                            <div class="browser-chapter-columns browser-chapter-columns-left">
+                                <span class="browser-chapter-title">{{chapters.title}}</span>
+                            </div>
+                            <div class="browser-chapter-columns">
+                                <span class="browser-chapter-subtitle" :class="chapters.class">{{chapters.subtitle}}</span>
+                            </div>
+                        </a>
+                    </transition>
+                </div>
+            </div>
+        </div>
+    </article>
 </template>
-
 <script>
 import titles from './../data/constitution/data-index'
 import enterView from 'enter-view';
@@ -184,6 +177,16 @@ export default {
                     element.classList.remove('active-index');
                 }
             });
+        },
+        resetData: function(element, duration, container) {
+            if (this.$router.currentRoute.name === 'home') {
+                this.$scrollTo(element, duration, { container: container })
+            } else {
+                this.$router.push(
+                                  { name: 'home' },
+                                  () => setTimeout(() => this.$scrollTo(element, duration, { container: container }), 1))
+
+            }
         }
     },
     mounted() {

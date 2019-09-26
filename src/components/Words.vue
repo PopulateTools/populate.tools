@@ -72,10 +72,10 @@ export default {
     },
     computed: {
         filteredData: function() {
-            this.$scrollTo('#browser-header-top', 300, { easing: 'linear', container: '#constitution-text' })
             if (this.termSelected === null) {
                 return wholeText;
             } else {
+                this.$scrollTo('#constitution-text-top', 300, { easing: 'linear', container: '#constitution-text' })
                 const dataAsArray = Object.values(wholeText)
                 return dataAsArray.filter(dataValue => {
                     return dataValue.articles.some(article => {
