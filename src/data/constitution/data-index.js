@@ -48,6 +48,7 @@ const data = {
         "index": "14",
         "class": "chapter",
         "subtitle": "De los españoles y los extranjeros",
+        "scroll": "scroll-hide-one",
         "articles": [
         {
             "text": [
@@ -61,6 +62,7 @@ const data = {
         "index": "19",
         "class": "chapter",
         "subtitle": "Derechos y libertades",
+        "scroll": "scroll-hide-one",
         "articles": [
         {
             "text": [
@@ -74,6 +76,7 @@ const data = {
         "index": "20",
         "class": "section-index",
         "subtitle": "De los derechos fundamentales y de las libertades públicas",
+        "scroll": "scroll-hide-one",
         "articles": [
         {
             "text": [
@@ -87,6 +90,7 @@ const data = {
         "index": "36",
         "class": "section-index",
         "subtitle": "De los derechos y deberes de los ciudadanos",
+        "scroll": "scroll-hide-one",
         "articles": [
         {
             "text": [""]
@@ -98,6 +102,7 @@ const data = {
         "index": "46",
         "class": "chapter",
         "subtitle": "De los principios rectores de la política social y económica",
+        "scroll": "scroll-hide-one",
         "articles": [
         {
             "text": [""]
@@ -105,6 +110,7 @@ const data = {
     },
     "61": {
         "title": "Capítulo Cuarto",
+        "scroll": "scroll-hide-one",
         "index": "61",
         "class": "chapter",
         "subtitle": "De las garantías de las libertades y derechos fundamentales",
@@ -117,6 +123,7 @@ const data = {
             "index": "64",
             "class": "chapter",
             "subtitle": "De la suspensión de los derechos y libertades",
+            "scroll": "scroll-hide-one",
             "articles": [{
                 "text": [""]
             }]
@@ -144,6 +151,7 @@ const data = {
         "index": "78",
         "class": "chapter",
         "subtitle": "De las Cortes Cámaras",
+        "scroll": "scroll-hide-third",
         "articles": [{
             "text": [""]
         }]
@@ -153,6 +161,7 @@ const data = {
         "index": "94",
         "class": "chapter",
         "subtitle": "De la elaboración de las leyes",
+        "scroll": "scroll-hide-third",
         "articles": [{
             "text": [""]
         }]
@@ -162,6 +171,7 @@ const data = {
         "index": "107",
         "class": "chapter",
         "subtitle": "De los Tratados Internacionales",
+        "scroll": "scroll-hide-third",
         "articles": [{
             "text": [""]
         }]
@@ -216,6 +226,7 @@ const data = {
         "index": "157",
         "class": "chapter",
         "subtitle": "Principios generales",
+        "scroll": "scroll-hide-eighth",
         "articles": [{
             "text": [""]
         }]
@@ -225,6 +236,7 @@ const data = {
         "index": "161",
         "class": "chapter",
         "subtitle": "De la Administración Local",
+        "scroll": "scroll-hide-eighth",
         "articles": [{
             "text": [""]
         }]
@@ -234,6 +246,7 @@ const data = {
         "index": "165",
         "class": "chapter",
         "subtitle": "De las Comunidades Autónomas",
+        "scroll": "scroll-hide-eighth",
         "articles": [{
             "text": [""]
         }]
@@ -260,6 +273,7 @@ const data = {
         "title": "Disposiciones Adicionales",
         "index": "195",
         "class": "title",
+        "scroll": "scroll-hide-tenth",
         "articles": [{
             "text": [""]
         }]
@@ -268,6 +282,7 @@ const data = {
         "title": "Disposiciones Transitorias",
         "index": "200",
         "class": "title",
+        "scroll": "scroll-hide-tenth",
         "articles": [{
             "text": [""]
         }]

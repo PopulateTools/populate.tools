@@ -13,7 +13,6 @@
         </div>
     </article>
 </template>
-
 <script>
 export default {
     props: {

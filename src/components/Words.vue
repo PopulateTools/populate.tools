@@ -4,25 +4,24 @@
             <div id="constitution-text-top">
                 <transition name="fade" mode="out-in" appear>
                     <template v-for="(word, index) in commond_words">
-                    <div id="browser-header-top" :key="index" class="browser-header" v-if="termSelected === word.value">
-                        <div class="browser-header-container">
-                            <h4 class="browser-header-title">El término <span>{{termSelected}}</span> se usa en <span>{{word.articles}} artículos</span> en <span>{{word.ocurrences}} ocasiones</span></h4>
-                            <router-link :to="{ name: 'home'}" class="browser-header-close">
-                                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path>
-                                </svg>
-                            </router-link>
-
+                        <div id="browser-header-top" :key="index" class="browser-header" v-if="termSelected === word.value">
+                            <div class="browser-header-container">
+                                <h4 class="browser-header-title">El término <span>{{termSelected}}</span> se usa en <span>{{word.articles}} artículos</span> en <span>{{word.ocurrences}} ocasiones</span></h4>
+                                <router-link :to="{ name: 'home'}" class="browser-header-close">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="browser-button-close" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path>
+                                    </svg>
+                                </router-link>
+                            </div>
                         </div>
-                    </div>
                     </template>
                 </transition>
             </div>
-            <transition name="fade" mode="out-in" appear>
-                <template v-for="(item, index) in filteredData">
+            <template v-for="(item, index) in filteredData">
+                <transition name="fade" mode="out-in" appear>
                     <browser :key="index" :item="item" :term-selected="termSelected"></browser>
-                </template>
-            </transition>
+                </transition>
+            </template>
         </div>
         <div id="browser-common-words" class="browser-main-columns browser-center-columns-second">
             <h3 class="browser-center-columns-second-title">TÉRMINOS MÁS UTILIZADOS</h3>
@@ -32,8 +31,8 @@
                 </div>
                 <div class="browser-common-word-columns">
                     <router-link :to="{ name: 'terms', params: { term: word.value} }">
-                      <label :class="{checked: termSelected === word.value}" @click="termSelected === word.value" :for="word.value" class="browser-common-word-label">
-                        {{ word.value }}
+                        <label :class="{checked: termSelected === word.value}" @click="termSelected === word.value" :for="word.value" class="browser-common-word-label">
+                            {{ word.value }}
                         </label>
                     </router-link>
                     <router-link :to="{ name: 'home' }" v-if="termSelected === word.value">
@@ -44,9 +43,9 @@
                     <div class="browser-word-related" v-if="termSelected === word.value">
                         <span class="browser-word-related-title">relacionados</span>
                         <span @click="scrollToRelated(termSelected)" class="browser-word-related-text" v-for="(relatedTerm, index) in word.related">
-                          <router-link :to="{ name: 'terms', params: {term: relatedTerm}}">
-                              {{relatedTerm}}
-                          </router-link>
+                            <router-link :to="{ name: 'terms', params: {term: relatedTerm}}">
+                                {{relatedTerm}}
+                            </router-link>
                         </span>
                     </div>
                 </div>
@@ -54,11 +53,11 @@
         </div>
     </div>
 </template>
-
 <script>
 import Browser from './Browser'
 import wholeText from './../data/constitution/data'
 import mostUsedWords from './../data/constitution/most_used_words'
+
 export default {
     components: {
         Browser

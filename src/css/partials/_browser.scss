@@ -16,12 +16,12 @@
     width: 100%;
     background-color: $lightgrey;
     font-size: 0;
-    height: calc(100vh - 57px);
+    height: calc(100vh - 58px);
 }
 
 .browser-constitution-title {
-    font-size: 2rem;
-    font-family: $title;
+    font-size: 1.5rem;
+    font-family: $text;
     color: $black;
     font-weight: bold;
     margin-top: 1.5rem;
@@ -35,8 +35,8 @@
 }
 
 .browser-constitution-subtitle {
-    font-size: 1.25rem;
-    font-family: $title;
+    font-size: 1rem;
+    font-family: $text;
     font-weight: bold;
     color: $black;
 }
@@ -158,7 +158,7 @@
     font-size: .75rem;
     font-family: $text;
     display: block;
-    color: $white;
+    color: #ccc;
 }
 
 .browser-constitution-paragraph {
@@ -308,7 +308,7 @@
 }
 
 .fade-leave-active {
-  transition: opacity 2s;
+  transition: opacity .3s;
 }
 .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -316,4 +316,22 @@
 
 .checked {
     background-color: #C7C7C7;
+}
+
+.browser-chapter-sections {
+    display: none;
+    margin: .5rem 0;
+    height: 0;
+}
+
+.active-index {
+    margin: .5rem 0;
+    display: block;
+}
+
+.browser-chapter-sections-element {
+    margin-bottom: .5rem;
+    &:empty {
+        display: none;
+    }
 }
