@@ -320,13 +320,22 @@
 
 .browser-chapter-sections {
     display: none;
-    margin: .5rem 0;
-    height: 0;
+    margin: .5rem 0 1rem;
+    padding-left: .25rem;
 }
 
 .active-index {
-    margin: .5rem 0;
-    display: block;
+    .browser-chapter-sections {
+        display: block;
+    }
+    .title {
+        .browser-chapter-title,
+        .browser-chapter-subtitle {
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
 }
 
 .browser-chapter-sections-element {
