@@ -28,7 +28,7 @@ const data = {
         "subtitle": "De los derechos y deberes fundamentales",
         "articles": [
             {
-                "title": "Capítulo Primero",
+                "title": "Cap. Primero",
                 "index": "14",
                 "class": "chapter",
                 "subtitle": "De los españoles y los extranjeros",
@@ -40,7 +40,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Segundo",
+                "title": "Cap. Segundo",
                 "index": "19",
                 "class": "chapter",
                 "subtitle": "Derechos y libertades",
@@ -74,7 +74,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Tercero",
+                "title": "Cap. Tercero",
                 "index": "46",
                 "class": "chapter",
                 "subtitle": "De los principios rectores de la política social y económica",
@@ -84,7 +84,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Cuarto",
+                "title": "Cap. Cuarto",
                 "index": "61",
                 "class": "chapter",
                 "subtitle": "De las garantías de las libertades y derechos fundamentales",
@@ -94,7 +94,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Quinto",
+                "title": "Cap. Quinto",
                 "index": "64",
                 "class": "chapter",
                 "subtitle": "De la suspensión de los derechos y libertades",
@@ -124,7 +124,7 @@ const data = {
         "subtitle": "De las Cortes Generales",
         "articles": [
             {
-                "title": "Capítulo Primero",
+                "title": "Cap. Primero",
                 "index": "78",
                 "class": "chapter",
                 "subtitle": "De las Cortes Cámaras",
@@ -134,7 +134,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Segundo",
+                "title": "Cap. Segundo",
                 "index": "94",
                 "class": "chapter",
                 "subtitle": "De la elaboración de las leyes",
@@ -144,7 +144,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Tercero",
+                "title": "Cap. Tercero",
                 "index": "107",
                 "class": "chapter",
                 "subtitle": "De los Tratados Internacionales",
@@ -206,7 +206,7 @@ const data = {
         "subtitle": "De la Organización Territorial del Estado",
         "articles": [
             {
-                "title": "Capítulo Primero",
+                "title": "Cap. Primero",
                 "index": "157",
                 "class": "chapter",
                 "subtitle": "Principios generales",
@@ -216,7 +216,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Segundo",
+                "title": "Cap. Segundo",
                 "index": "161",
                 "class": "chapter",
                 "subtitle": "De la Administración Local",
@@ -226,7 +226,7 @@ const data = {
                 }]
             },
             {
-                "title": "Capítulo Tercero",
+                "title": "Cap. Tercero",
                 "index": "165",
                 "class": "chapter",
                 "subtitle": "De las Comunidades Autónomas",
@@ -253,26 +253,6 @@ const data = {
         "index": "190",
         "class": "title",
         "subtitle": "De la reforma constitucional",
-        "articles": [
-        {
-            "text": [""]
-        }]
-    },
-    "195":
-    {
-        "title": "Disposiciones Adicionales",
-        "index": "195",
-        "class": "title",
-        "articles": [
-        {
-            "text": [""]
-        }]
-    },
-    "200":
-    {
-        "title": "Disposiciones Transitorias",
-        "index": "200",
-        "class": "title",
         "articles": [
         {
             "text": [""]

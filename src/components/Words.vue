@@ -18,9 +18,7 @@
                 </transition>
             </div>
             <template v-for="(item, index) in filteredData">
-                <transition name="fade" mode="out-in" appear>
-                    <browser :key="index" :item="item" :term-selected="termSelected"></browser>
-                </transition>
+                <browser :key="index" :item="item" :term-selected="termSelected"></browser>
             </template>
         </div>
         <div id="browser-common-words" class="browser-main-columns browser-center-columns-second">
@@ -31,9 +29,8 @@
                 </div>
                 <div class="browser-common-word-columns">
                     <router-link :to="{ name: 'terms', params: { term: word.value} }">
-
-                      <label :class="{checked: termSelected === word.value}" :for="word.value" class="browser-common-word-label">
-                        {{ word.value }}
+                        <label :class="{checked: termSelected === word.value}" :for="word.value" class="browser-common-word-label">
+                            {{ word.value }}
                         </label>
                     </router-link>
                     <router-link :to="{ name: 'home' }" v-if="termSelected === word.value">

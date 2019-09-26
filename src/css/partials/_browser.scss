@@ -79,7 +79,7 @@
 
 .browser-center-columns-first,
 .browser-center-columns-second {
-    height: calc(100vh - 59px);
+    height: calc(100vh - 79px);
     width: 65%;
     display: inline-block;
     vertical-align: top;
@@ -90,7 +90,7 @@
     background-color: #F2F2F2;
     overflow-y: scroll;
     padding: 0;
-    padding-top: 54px;
+    padding-top: 74px;
     position: relative;
     .browser-center {
         padding: 0 1rem 1rem 1rem;
@@ -169,7 +169,7 @@
 }
 
 .browser-common-word-container {
-    padding: .75rem .5rem;
+    padding: .35rem .5rem;
     width: 85%;
     font-family: $text;
 }
@@ -296,7 +296,7 @@
     font-style: italic;
     display: block;
     color: #999999;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .browser-word-related-text {
@@ -320,16 +320,23 @@
 
 .browser-chapter-sections {
     display: none;
-    margin: .5rem 0 1rem;
-    padding-left: .25rem;
+    .browser-chapter-title {
+        color: #616161;
+    }
+    .browser-chapter-subtitle {
+        color: #AFAFAF;
+    }
+    &:empty {
+        display: none;
+    }
 }
 
 .active-index {
     .browser-chapter-sections {
         display: block;
+        margin: .5rem 0 1rem;
     }
     .title {
-        .browser-chapter-title,
         .browser-chapter-subtitle {
             font-weight: bold;
             color: $white;
