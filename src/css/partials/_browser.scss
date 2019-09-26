@@ -48,11 +48,6 @@
     }
 }
 
-.browser-constitution-paragraph {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-left: .5rem;
-}
 .browser-constitution {
     margin-bottom: 1.5rem;
     width: 70%;
@@ -90,7 +85,6 @@
     background-color: #F2F2F2;
     overflow-y: scroll;
     padding: 0;
-    padding-top: 74px;
     position: relative;
     .browser-center {
         padding: 0 1rem 1rem 1rem;
@@ -99,6 +93,7 @@
 
 .browser-center-columns-second {
     background-color: $grey;
+    height: calc(100vh - 59px);
     width: 35%;
     padding: 1rem;
     overflow-y: scroll;
@@ -165,7 +160,7 @@
     font-size: 1rem;
     font-family: $text;
     color: $black;
-    white-space: pre-line;
+    margin-bottom: 1rem;
 }
 
 .browser-common-word-container {
@@ -245,10 +240,6 @@
     background-color: #D5D5D5;
     padding: 1rem;
     width: 100%;
-    position: relative;
-    position: absolute;
-    top: 0;
-    left: 0;
     &:empty {
         display: none;
     }
@@ -342,7 +333,6 @@
             color: $white;
         }
     }
-
 }
 
 .browser-chapter-sections-element {
@@ -350,4 +340,11 @@
     &:empty {
         display: none;
     }
+}
+
+#constitution-text-top {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0;
 }

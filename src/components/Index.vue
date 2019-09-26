@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import titles from './../data/constitution/data-index-articles'
+import titles from './../data/constitution/data-index'
 import enterView from 'enter-view';
 
 export default {
@@ -184,7 +184,6 @@ export default {
                     element.classList.remove('active-index');
                 }
             });
-
         }
     },
     mounted() {
