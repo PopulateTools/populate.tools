@@ -2,9 +2,9 @@
     <div class="browser">
         <section class="browser-main">
             <article class="browser-main-columns-left ">
-                <index @resetFilteredData="resetToWords($event)"></index>
+                <index></index>
             </article>
-            <words :newData="newData" :term-selected="null"></words>
+            <words :term-selected="null"></words>
         </section>
     </div>
 </template>
