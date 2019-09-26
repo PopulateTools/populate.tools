@@ -2,9 +2,9 @@
     <div class="browser">
         <section class="browser-main">
             <article class="browser-main-columns-left ">
-                <index></index>
+                <index @resetFilteredData="resetToWords($event)"></index>
             </article>
-            <words :term-selected="null"></words>
+            <words :newData="newData" :term-selected="null"></words>
         </section>
     </div>
 </template>
@@ -18,6 +18,11 @@ export default {
         Index,
         Browser,
         Words
+    },
+    methods: {
+        resetToWords() {
+            console.log('emit from index')
+        }
     }
 }
 </script>

@@ -18,6 +18,7 @@
                                 <a
                                     v-scroll-to="{el: '#seccion_' + chapters.index, container: '#constitution-text' }"
                                     :class="chapters.class"
+                                    @click="resetData"
                                     >
                                    <div class="browser-chapter-columns browser-chapter-columns-left">
                                        <span class="browser-chapter-title">{{chapters.title}}</span >
@@ -184,6 +185,9 @@ export default {
                     element.classList.remove('active-index');
                 }
             });
+        },
+        handleClick: function() {
+          this.$root.$emit('clickedSomething')
         }
     },
     mounted() {
