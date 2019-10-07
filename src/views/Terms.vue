@@ -2,14 +2,16 @@
     <div class="browser">
         <section class="browser-main">
             <article class="browser-main-columns-left ">
-                <index></index>
+                <index :text="text"></index>
             </article>
-            <words :term-selected="$route.params.term"></words>
+            <words :term-selected="$route.params.term" :text="text"></words>
         </section>
     </div>
 </template>
 
 <script>
+import text from './../data/constitution/text'
+
 import Index from './../components/Index'
 import Browser from './../components/Browser'
 import Words from './../components/Words'
@@ -18,6 +20,11 @@ export default {
         Index,
         Browser,
         Words
+    },
+    data() {
+        return {
+            text: text
+        }
     }
 }
 </script>

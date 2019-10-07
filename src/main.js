@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       maxRadius = 16;
 
   let m = 18, // number of distinct clusters
-      z = d3.scaleOrdinal(d3.schemeDark2),
+      z = d3.scaleOrdinal(d3.schemePaired),
       clusters = new Array(m);
 
   let svg = d3.select('#cluster')
@@ -41,7 +41,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   var url = "/datasets/constitucion/clusters.csv";
   d3.csv(url).then((data) => {
-    console.log(data);
     let nodes = data.map((el) => {
       let radius = radiusScale(+el.totals);
       let d = {cluster: +el.cluster, r: radius, label: el.labels};

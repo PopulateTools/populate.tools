@@ -1,4 +1,4 @@
-const wholeText = {
+const text = {
     "1": {
         "title": "Preámbulo",
         "index": "1",
@@ -2009,7 +2009,7 @@ const wholeText = {
     "200": {
         "title": "DISPOSICIONES TRANSITORIAS.",
         "index": "200",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": [""]
         }]
@@ -2017,7 +2017,7 @@ const wholeText = {
     "201": {
         "title": "Primera.",
         "index": "201",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["En los territorios dotados de un régimen provisional de autonomía, sus órganos colegiados superiores, mediante acuerdo adoptado por la mayoría absoluta de sus miembros, podrán sustituir la iniciativa que en el apartado 2 del Articulo 143 atribuye a las Diputaciones Provinciales o a los órganos interinsulares correspondientes."]
         }]
@@ -2025,7 +2025,7 @@ const wholeText = {
     "202": {
         "title": "Segunda.",
         "index": "202",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["Los territorios que en el pasado hubiesen plebiscitado afirmativamente proyectos de Estatuto de autonomía y cuenten, al tiempo de promulgarse esta Constitución, con regímenes provisionales de autonomía podrán proceder inmediatamente en la forma que se prevé en el apartado 2 del Articulo 148, cuando así lo acordaren, por mayoría absoluta, sus órganos preautonómicos colegiados superiores, comunicándolo al Gobierno. El proyecto de Estatuto será elaborado de acuerdo con lo establecido en el Articulo 151, número 2, a convocatoria del órgano colegiado preautonómico."]
         }]
@@ -2033,7 +2033,7 @@ const wholeText = {
     "203": {
         "title": "Tercera.",
         "index": "203",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["La iniciativa del proceso autonómico por parte de las Corporaciones locales o de sus miembros, prevista en el apartado 2 del Articulo 143, se entiende diferida, con todos sus efectos, hasta la celebración de las primeras elecciones locales una vez vigente la Constitución."]
         }]
@@ -2041,7 +2041,7 @@ const wholeText = {
     "204": {
         "title": "Cuarta.",
         "index": "204",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["1. En el caso de Navarra, y a efectos de su incorporación al Consejo General Vasco o al régimen autonómico vasco que le sustituya, en lugar de lo que establece el Articulo 143 de la Constitución, la iniciativa corresponde al Órgano Foral competente, el cual adoptará su decisión por mayoría de los miembros que lo componen. Para la validez de dicha iniciativa será preciso, además, que la decisión del Órgano Foral competente sea ratificada por referéndum expresamente convocado al efecto, y aprobado por mayoría de los votos válidos emitidos.", "2. Si la iniciativa no prosperase, solamente se podrá reproducir la misma en distinto período del mandato del Órgano Foral competente, y en todo caso, cuando haya transcurrido el plazo mínimo que establece el Articulo 143."]
         }]
@@ -2049,7 +2049,7 @@ const wholeText = {
     "205": {
         "title": "Quinta.",
         "index": "205",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["Las ciudades de Ceuta y Melilla podrán constituirse en Comunidades Autónomas si así lo deciden sus respectivos Ayuntamientos, mediante acuerdo adoptado por la mayoría absoluta de sus miembros y así lo autorizan las Cortes Generales, mediante una ley orgánica, en los términos previstos en el Articulo 144."]
         }]
@@ -2057,7 +2057,7 @@ const wholeText = {
     "206": {
         "title": "Sexta.",
         "index": "206",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["Cuando se remitieran a la Comisión Constitucional del Congreso varios proyectos de Estatuto, se dictaminarán por el orden de entrada en aquélla, y el plazo de dos meses a que se refiere el Articulo 151 empezará a contar desde que la Comisión termine el estudio del proyecto o proyectos de que sucesivamente haya conocido."]
         }]
@@ -2065,7 +2065,7 @@ const wholeText = {
     "207": {
         "title": "Séptima.",
         "index": "207",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["Los organismos provisionales autonómicos se considerarán disueltos en los siguientes casos:", "a) Una vez constituidos los órganos que establezcan los Estatutos de Autonomía aprobados conforme a esta Constitución.", "b) En el supuesto de que la iniciativa del proceso autonómico no llegara a prosperar por no cumplir los requisitos previstos en el Articulo 143.", "c) Si el organismo no hubiera ejercido el derecho que le reconoce la disposición transitoria primera en el plazo de tres años."]
         }]
@@ -2073,7 +2073,7 @@ const wholeText = {
     "208": {
         "title": "Octava.",
         "index": "208",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["1. Las Cámaras que han aprobado la presente Constitución asumirán, tras la entrada en vigor de la misma, las funciones y competencias que en ella se señalan, respectivamente, para el Congreso y el Senado, sin que en ningún caso su mandato se extienda más allá del 15 de junio de 1981.", "2. A los efectos de lo establecido en el Articulo 99, la promulgación de la Constitución se considerará como supuesto constitucional en el que procede su aplicación. A tal efecto, a partir de la citada promulgación se abrirá un período de treinta días para la aplicación de lo dispuesto en dicho Articulo.", "Durante este período, el actual Presidente del Gobierno, que asumirá las funciones y competencias que para dicho cargo establece la Constitución, podrá optar por utilizar la facultad que le reconoce el Articulo 115 o dar paso, mediante la dimisión, a la aplicación de lo establecido en el Articulo 99, quedando en este último caso en la situación prevista en el apartado 2 del Articulo 101.", "3. En caso de disolución, de acuerdo con lo previsto en el Articulo 115, y si no se hubiera desarrollado legalmente lo previsto en los Articulos 68 y 69, serán de aplicación en las elecciones las normas vigentes con anterioridad, con las solas excepciones de que en lo referente a inelegibilidades e incompatibilidades se aplicará directamente lo previsto en el inciso segundo de la letra b) del apartado 1 del Articulo 70 de la Constitución, así como lo dispuesto en la misma respecto a la edad para el voto y lo establecido en el Articulo 69,3."]
         }]
@@ -2081,11 +2081,11 @@ const wholeText = {
     "209": {
         "title": "Novena.",
         "index": "209",
-        "class": "title",
+        "class": "disposition",
         "articles": [{
             "text": ["A los tres años de la elección por vez primera de los miembros del Tribunal Constitucional se procederá por sorteo para la designación de un grupo de cuatro miembros de la misma procedencia electiva que haya de cesar y renovarse. A estos solos efectos se entenderán agrupados como miembros de la misma procedencia a los dos designados a propuesta del Gobierno y a los dos que proceden de la formulada por el Consejo General del Poder Judicial. Del mismo modo se procederá transcurridos otros tres años entre los dos grupos no afectados por el sorteo anterior. A partir de entonces se estará a lo establecido en el número 3 del Articulo 159."]
         }]
     }
 }
 
-export default wholeText;
+export default text;

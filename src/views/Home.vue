@@ -2,14 +2,16 @@
     <div class="browser">
         <section class="browser-main">
             <article class="browser-main-columns-left ">
-                <index></index>
+                <index :text="text"></index>
             </article>
-            <words :term-selected="null"></words>
+            <words :term-selected="null" :text="text"></words>
         </section>
     </div>
 </template>
 
 <script>
+import text from './../data/constitution/text'
+
 import Index from './../components/Index'
 import Browser from './../components/Browser'
 import Words from './../components/Words'
@@ -19,9 +21,9 @@ export default {
         Browser,
         Words
     },
-    methods: {
-        resetToWords() {
-            console.log('emit from index')
+    data() {
+        return {
+            text: text
         }
     }
 }

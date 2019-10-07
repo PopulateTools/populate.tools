@@ -53,7 +53,6 @@
 </template>
 <script>
 import Browser from './Browser'
-import wholeText from './../data/constitution/data'
 import mostUsedWords from './../data/constitution/most_used_words'
 
 export default {
@@ -61,6 +60,10 @@ export default {
         Browser
     },
     props: {
+        text: {
+           type: Object,
+           required: true
+        },
         termSelected: {
             type: String
         },
@@ -73,10 +76,10 @@ export default {
     computed: {
         filteredData: function() {
             if (this.termSelected === null) {
-                return wholeText;
+                return this.text;
             } else {
                 this.$scrollTo('#constitution-text-top', 300, { easing: 'linear', container: '#constitution-text' })
-                const dataAsArray = Object.values(wholeText)
+                const dataAsArray = Object.values(this.text)
                 return dataAsArray.filter(dataValue => {
                     return dataValue.articles.some(article => {
                         return article.text.some(articleText => {
