@@ -743,7 +743,7 @@ $(function() {
   var currentProduct = null;
   $.ajax({
      type: "GET",
-     url: "/datasets/190901_mercamadrid_data_per_province.csv",
+     url: "/datasets/mercamadrid/190901_mercamadrid_data_per_province.csv",
      dataType: "text",
      success: function(data) {
        processDataCSV(data);
@@ -753,7 +753,7 @@ $(function() {
   // Build small multiples
   $.ajax({
      type: "GET",
-     url: "/datasets/190901_mercamadrid_summary_per_province.csv",
+     url: "/datasets/mercamadrid/190901_mercamadrid_summary_per_province.csv",
      dataType: "text",
      success: function(data) {
        processSummaryCSV(data);

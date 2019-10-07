@@ -10,4 +10,8 @@ category: populate_news
 img: posts/la-constitucion.png
 ---
 
+<div id="cluster"></div>
+
+<div id="app"></div>
+
 
