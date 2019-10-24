@@ -18,7 +18,7 @@ screens:
   - projects/screens/epistolas-1.jpg
   - projects/screens/epistolas-2.jpg
   - projects/screens/epistolas-3.jpg
-# public_url: https://panamapapers.icij.org/
-# client_url: https://icij.org/
+public_url: http://epistolas.edaddeplata.org
+client_url: http://www.residencia.csic.es
 weight: 4
 ---
