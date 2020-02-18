@@ -9,9 +9,9 @@ outtro: no
 
 We are a small design and tech consultancy building digital products. We do projects around digital strategy, UX, (open) data, visualization... We work together with organizations to define their digital presence and tell their stories with great UX, data visualization and fine code.
 
-We are also building our own product: Gobierto, an open source open government platform to enable public administrations to launch engaging, beautiful and data-centric transparency, participation and accountability initiatives to better connect with their constituents. 
+We are also building our own product: Gobierto, an open source open government platform to enable public administrations to launch engaging, beautiful and data-centric transparency, participation and accountability initiatives to better connect with their constituents.
 
-We value 
+We value
 
 - **open**: source, data, knowledge
 - **balance**: design your work schedule around your life, not the other way round
@@ -22,11 +22,11 @@ We value
 
 ## How we work
 
-In the backend team you will participate in the development of Ruby On Rails applications. We mainly spend our time working on Gobierto, and participate in other open source projects such as Decidim and Consul (also ROR). We work with other applications from time to time. We use some Vue.js, so you will be working producing APIs and doing some integration work. 
+In the backend team you will participate in the development of Ruby On Rails applications. We mainly spend our time working on Gobierto, and participate in other open source projects such as Decidim and Consul (also ROR). We work with other applications from time to time. We use some Vue.js, so you will be working producing APIs and doing some integration work.
 
-We work on [Github](http://github.com/populatetools/) using a git workflow with CI/CD. In Gobierto we have a pretty robust test suite to assure this is possible. Our workflow has been polished throughout a few years, so have automated many things (monitoring, error tracking, server setups & updates, deployments, various checks...). You can take a look at the [Gobierto repo to see how we actually work](http://github.com/populatetools/gobierto). 
+We work on [Github](http://github.com/populatetools/) using a git workflow with CI/CD. In Gobierto we have a pretty robust test suite to assure this is possible. Our workflow has been polished throughout a few years, so have automated many things (monitoring, error tracking, server setups & updates, deployments, various checks...). You can take a look at the [Gobierto repo to see how we actually work](http://github.com/populatetools/gobierto).
 
-Depending on your skills and interests, you may participate in: 
+Depending on your skills and interests, you may participate in:
 
 - Data analysis work: using SQL, R, Python
 - Systems work: servers setup, management, deploys. We use Ansible, some Docker
@@ -44,7 +44,7 @@ Depending on your skills and interests, you may participate in:
 
 (in no particular order)
 
-- Meet the team! 
+- Meet the team!
 - Set up your tools, install Gobierto and some other app we are working on now
 - Browser our internal doc wiki to check out how we work, where to find things, etc.
 - Check documentation about some projects to get a grip on the setup and how we document work
@@ -64,15 +64,15 @@ Depending on your skills and interests, you may participate in:
 
 - Responsible of one or more apps/modules/big features
 - Master Gobierto and have provided ideas to improve code and features
-- Speak with clients autonomously 
-- Are fluent code reviews
+- Speak with clients autonomously
+- Do fluent code reviews
 - Have made suggestions to improve our processes
 - Have attended some conferences and proposed books to our book club
 - Given internal talks about tech and non-tech things
 - Have traveled with the rest of the team to one or more retreats
 
 
-## This role is for you if... 
+## This role is for you if...
 
 - **You want to work on meaningful projects around civic engagement, open data, participation and accountability**
 - Are looking for a stable job in a rewarding environment, with mission-driven projects, where you'll spend your next few years
@@ -80,7 +80,7 @@ Depending on your skills and interests, you may participate in:
 - Enjoy working in a small team interested in understanding and contributing to our different systems (code, tools, processes)
 - Have developed Ruby on Rails applications with a level of complexity similar to Gobierto and follow the Ruby on Rails ecosystem
 - Value clean code with good abstractions and good communication skills both in the code and in the submitted PRs
-- Understand and value testing and have been doing this systematically in recent times 
+- Understand and value testing and have been doing this systematically in recent times
 - Prioritize understanding and analyzing problems to come up with effective solutions
 - Are familiar with PostgreSQL, Git, Linux systems, the Unix shell
 - Being Ruby your main language, are not afraid to use Python, Javascript or another one
@@ -101,11 +101,11 @@ Depending on your skills and interests, you may participate in:
 
 ## The salary
 
-If you are looking to maximize your salary over the type of projects/life-work balance/culture, we are not the best fit for you. We are not the latest giga-funded startup with the mission to change the world of * (really, in those startups they are changing the world about anything!) so we won't match top paying equivalent jobs in Spain. 
+If you are looking to maximize your salary over the type of projects/life-work balance/culture, we are not the best fit for you. We are not the latest giga-funded startup with the mission to change the world of * (really, in those startups they are changing the world about anything!) so we won't match top paying equivalent jobs in Spain.
 
-We are building an independent, self-financed, sustainable company with the objective of being in business for many years working on projects we believe in and that we think make the world a better place, bit by bit. Projects that are respectful with people and don't prioritize revenue over everything. 
+We are building an independent, self-financed, sustainable company with the objective of being in business for many years working on projects we believe in and that we think make the world a better place, bit by bit. Projects that are respectful with people and don't prioritize revenue over everything.
 
-We are growing the business and aim to pay as best as we can. We look forward to growing with you: you'll join a place that we are all defining together so it's the best possible place to work we can imagine of: Interesting projects, intelligent people, with stimulating challenges, that provides good work-life balance and freedom to organize your schedule. You'll contribute to delivering projects with more efficiency so we can grow faster. 
+We are growing the business and aim to pay as best as we can. We look forward to growing with you: you'll join a place that we are all defining together so it's the best possible place to work we can imagine of: Interesting projects, intelligent people, with stimulating challenges, that provides good work-life balance and freedom to organize your schedule. You'll contribute to delivering projects with more efficiency so we can grow faster.
 
 Current salary for this position is between 32,000 € and 40,000 € depending on experience, with a 5-10% yearly bonus according to your performance and company results. Yearly salary revisions.
 
@@ -116,7 +116,7 @@ Current salary for this position is between 32,000 € and 40,000 € depending 
 - We look at the work you have done and some code samples (bonus points if it's on open source repos)
 - We do a short chat over the phone. Do a longer one if everything is fine
 - If we want you to join us, we'll make a salary proposal
-- **Paid project**: 
+- **Paid project**:
   - we want to test the relationship before committing full time so we (you and us) are sure it's a good fit. Changing jobs is stressful and time consuming and we don't want to lose anybody's time.
   - we'll propose a project of around 20-40 hours so you can combine it with your current job. We agree on the fee and you complete it when you can, without stress (2-3 weeks)
   - alternately, you can do this project in the office
