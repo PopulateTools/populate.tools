@@ -30,13 +30,15 @@ layout: default
 
       {{ content }}
 
-      <hr>
-
-      {% include careers_general_text.html %}
+      {% if page.include_general_text %}
+        <hr>
+        {% include careers_general_text.html %}
+      {% endif %}
 
       <hr>
 
       <h2>Interesed? Apply</h2>
+      <p>We'll only consider applications that take the time to answer all questions ;) </p>
 
       <div class="m_v_3">
         <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
