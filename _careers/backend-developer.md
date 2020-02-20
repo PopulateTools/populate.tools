@@ -118,7 +118,7 @@ Current salary for this position is between 32,000 € and 40,000 € depending 
 - If we want you to join us, we'll make a salary proposal
 - **Paid project**:
   - we want to test the relationship before committing full time so we (you and us) are sure it's a good fit. Changing jobs is stressful and time consuming and we don't want to lose anybody's time.
-  - we'll propose a project of around 20-40 hours so you can combine it with your current job. We agree on the fee and you complete it when you can, without stress (2-3 weeks)
+  - we'll propose a project of around 20-40 hours so you can combine it with your current job. We agree on the fee and you complete it when you can, without stress (2-3 weeks, but we are flexible and we can define an agreement based on personal circumstances)
   - alternately, you can do this project in the office
   - we pay you this project, no matter what
 - If project is OK, everything is ready ;)
