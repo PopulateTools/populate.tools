@@ -2,6 +2,7 @@
 layout: career
 title: Project & Decidim Manager
 date: 2019-02-11
+active: true
 ---
 
 We are searching for a project/operations manager that will be a key figure managing our ongoing projects and relationships, and making our work and services known to potential clients and the community. You will also manage our Decidim-related projects, from definition to implementation and support. 
