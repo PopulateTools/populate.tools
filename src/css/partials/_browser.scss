@@ -1,0 +1,350 @@
+.constitution {
+    background: none;
+}
+
+.container-constitution {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    .content {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.browser-main {
+    width: 100%;
+    background-color: $lightgrey;
+    font-size: 0;
+    height: calc(100vh - 58px);
+}
+
+.browser-constitution-title {
+    font-size: 1.5rem;
+    font-family: $text;
+    color: $black;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    &.article,
+    &.section {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+        font-family: $text;
+        color: #4F4F4F;
+    }
+}
+
+.browser-constitution-subtitle {
+    font-size: 1rem;
+    font-family: $text;
+    font-weight: bold;
+    color: $black;
+}
+
+.browser-constitution-title-article,
+.browser-constitution-paragraph {
+    &:empty {
+        display: none;
+    }
+}
+
+.browser-constitution {
+    margin-bottom: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.browser-center {
+    width: 75%;
+    display: inline-block;
+}
+
+.browser-main-columns-left {
+    background-color: $blackgrey;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 1rem;
+    height: 100%;
+    overflow-y: scroll;
+    .browser {
+        font-size: 0;
+    }
+}
+
+.browser-center-columns-first,
+.browser-center-columns-second {
+    height: calc(100vh - 79px);
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem;
+}
+
+.browser-center-columns-first {
+    background-color: #F2F2F2;
+    overflow-y: scroll;
+    padding: 0;
+    position: relative;
+    .browser-center {
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
+.browser-center-columns-second {
+    background-color: $grey;
+    height: calc(100vh - 59px);
+    width: 35%;
+    padding: 1rem;
+    overflow-y: scroll;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.browser-common-word {
+    font-size: 1rem;
+    font-family: $text;
+    color: $black;
+    display: block;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+.browser-list-terms {
+    width: 7rem;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+.browser-terms {
+    width: calc(100% - 7rem);
+    display: inline-block;
+    column-count: 5;
+    font-size: 3px;
+}
+
+.browser-list-terms-title {
+    font-size: 1rem;
+    font-family: $title;
+    color: $textBrowserTerms;
+}
+
+.browser-chapter {
+    width: 100%;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.browser-chapter-title {
+    font-size: .75rem;
+    font-family: $text;
+    color: #9A9A9A;
+    font-weight: normal;
+    &:hover {
+        color: #9A9A9A;
+    }
+}
+
+.browser-chapter-subtitle {
+    font-size: .75rem;
+    font-family: $text;
+    display: block;
+    color: #ccc;
+}
+
+.browser-constitution-paragraph {
+    font-size: 1rem;
+    font-family: $text;
+    color: $black;
+    margin-bottom: 1rem;
+}
+
+.browser-common-word-container {
+    padding: .35rem .5rem;
+    width: 85%;
+    font-family: $text;
+}
+
+.browser-commond-word-input {
+    display: inline-block;
+    display: none;
+    &:checked {
+        + .browser-common-word-label {
+            background-color: #C7C7C7;
+        }
+    }
+}
+
+.browser-common-word-label {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0 .25rem;
+    font-family: $text;
+    color: #414141;
+    cursor: pointer;
+}
+
+.browser-center-columns-second-title {
+    font-size: 12px;
+    font-family: $text;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #989898;
+}
+
+.browser-chapter-columns {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.browser-chapter-columns-left {
+    width: 35%;
+}
+
+.browser-chapter-container {
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.browser-common-word-columns {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.border-indicator {
+    height: 12px;
+    background-color: #C1C0C1;
+    width: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    float: right;
+    margin-top: 6px;
+}
+
+.term-selected {
+    background-color: #C1C0C1;
+}
+
+.browser-header {
+    background-color: #D5D5D5;
+    padding: 1rem;
+    width: 100%;
+    &:empty {
+        display: none;
+    }
+}
+
+.browser-header-container {
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+.browser-header-title {
+    font-size: 1rem;
+    font-family: $text;
+    color: $black;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    span {
+        font-weight: bold;
+    }
+
+}
+
+.browser-header-close {
+    position: absolute;
+    top: 37%;
+    left: 95%;
+    cursor: pointer;
+}
+
+.browser-button-close {
+    width: 1rem;
+    height: 1rem;
+}
+
+.browser-word-related {
+    padding-left: 4px;
+}
+
+.browser-word-related-title {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: $text;
+    font-style: italic;
+    display: block;
+    color: #999999;
+    margin: 5px 0;
+}
+
+.browser-word-related-text {
+    font-size: 12px;
+    font-family: $text;
+    display: block;
+    color: #A3A3A3;
+    margin-bottom: 10px;
+}
+
+.fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.checked {
+    background-color: #C7C7C7;
+}
+
+.browser-chapter-sections {
+    display: none;
+    .browser-chapter-title {
+        color: #616161;
+    }
+    .browser-chapter-subtitle {
+        color: #AFAFAF;
+    }
+    &:empty {
+        display: none;
+    }
+}
+
+.active-index {
+    .browser-chapter-sections {
+        display: block;
+        margin: .5rem 0 1rem;
+    }
+    .title {
+        .browser-chapter-subtitle {
+            font-weight: bold;
+            color: $white;
+        }
+    }
+}
+
+.browser-chapter-sections-element {
+    margin-bottom: .5rem;
+    &:empty {
+        display: none;
+    }
+}
+
+#constitution-text-top {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0;
+}
