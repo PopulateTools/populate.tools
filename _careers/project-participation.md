@@ -3,6 +3,7 @@ layout: career
 title: Project & Decidim Manager
 date: 2019-02-11
 active: true
+place: "Remote (Spain), onsite (Madrid), or mixed"
 ---
 
 We are searching for a project/operations manager that will be a key figure managing our ongoing projects and relationships, and making our work and services known to potential clients and the community. You will also manage our Decidim-related projects, from definition to implementation and support. 
@@ -26,9 +27,9 @@ We value
 ## Key activities
 
 - **Project Management** Project planning and control, client support...
-- **Proposals**: Creation and followup of proposals, estimates and budgets; Management and exectution of procurement processes
-- **Participation**: Definition and management of citizen participation projects based on Decidim (also Consul and Gobierto)
-- **Communications**: Show our work through blog posts, case studies, public talks and other initiaves (ie. [ConversacionesGobierto](https://gobierto.es/conversaciones/))
+- **Proposals**: Creation and followup of proposals, estimates and budgets; Management and execution of procurement processes
+- **Participation**: Definition and management of citizen participation projects based on Decidim (also Consul)
+- **Communications**: Show our work through innovative and creative ways (ie. [ConversacionesGobierto](https://gobierto.es/conversaciones/)), on top of blog posts, case studies, public talks...
 - **Training and documentation**: document and train clients in the projects we develop
 - **Outreach**: Present Gobierto and Populate product and service portfolio to potential leads (companies, ngos, public administrations and government: city councils, provinces, regions...); 
 - **Strategy and definition**: Ideally, you contribute to the definition and strategy of projects (or can develop this competency): special consultancy projects, Gobierto product definition...
@@ -73,19 +74,19 @@ We value
 - Value a work environment which strives for excellence, from process to results, from design to code
 - Prioritize understanding and analyzing problems to come up with effective solutions
 - Can manage the status of several projects at different stages, coordinating the team and creating strong relationships with clients
-- Are interested in citizen participation, open data, data visualization
 - Are fluent in written and spoken English
 - Are experienced with Decidim
 
 ## Bonus points (not a strong requirement)
 
 - Have experience working with public administrations in Spain
+- Speak Catalan
 
 
 
 ## Benefits
 
-- **Remote, mixed or onsite**: some of us works regularly in our sunny Madrid office, others are fully remote, others mix. You are free to choose your place of work.
+- **Remote, mixed or onsite**: some of us works regularly in our sunny Madrid office, others are fully remote (within Spain), others mix. You are free to choose your place of work.
 - **Flexible schedule and hours**: You design your work schedule around your life, not the other way round.
 - **Events:** We get together a few time a years to work, share and have fun (this was before certain pandemic, let's see what 2021 bring us!)
 - **Choose your hardware & software**: Linux, Mac... your choice
@@ -95,7 +96,7 @@ We value
 
 ## The salary
 
-Current salary for this position is up to XX.000 € depending on experience, with a 5-10% yearly bonus according to your performance and company results. Yearly salary revisions.
+Salary range for this position is 24.000 - 36.000 € depending on experience, with a 5-10% yearly bonus according to your performance and company results. Yearly salary revisions.
 
 <!--
 <details>
