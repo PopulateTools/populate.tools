@@ -22,14 +22,29 @@ description: "Digital agency providing full service: from conceptualization and 
 
       </main>
 
+      <p>We are actively looking for:</p>
       <div class="careers-list">
-      {% for career in site.careers %}
+      {% assign site_careers_active = site.careers | where: "active",true %}
+      {% for career in site_careers_active %}
         <article class="careers-list-item">
           <h2><a href="{{ career.url | prepend: career.baseurl }}">{{ career.title }}</a></h2>
           <!-- <time class="article-time">{{career.date | date: "%b %-d, %Y"}}</time> -->
         </article>
       {% endfor %}
       </div>
+
+      <p style="margin-top: 3em">We are passively looking for these other roles. If you'd like to work with us, we'd be happy to meet you to explore the future (but don't expect a specific proposal in the short term -2-3 months) </p>
+      <div class="careers-list">
+        {% assign site_careers_active = site.careers %}
+        {% for career in site_careers_active %}
+          {% if career.active != true %}
+          <article class="careers-list-item">
+            <h2><a href="{{ career.url | prepend: career.baseurl }}">{{ career.title }}</a></h2>
+            <!-- <time class="article-time">{{career.date | date: "%b %-d, %Y"}}</time> -->
+          </article>
+          {% endif %}
+        {% endfor %}
+        </div>
 
     </article>
 
