@@ -3,6 +3,7 @@ layout: career
 title: Ruby On Rails Developer
 date: 2019-03-18
 outtro: no
+active: true
 ---
 
 ## About Populate
