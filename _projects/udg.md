@@ -18,6 +18,4 @@ screens:
   - projects/screens/udg-2.png
   - projects/screens/udg-3.png
   - projects/screens/udg-4.png
-public_url: https://udgexperience.udg.edu/
-# client_url: https://icij.org/
 ---
