@@ -1,11 +1,12 @@
 ---
 layout: career
-title: Ruby On Rails Developer
-date: 2019-03-18
+title: Data Engineer for Gobierto Contracts
+date: 2021-07-01
 outtro: no
 active: true
 place: "Remote (Spain), onsite (Madrid), or mixed"
 ---
+
 
 ## About Populate
 
@@ -24,18 +25,24 @@ We value
 - **independence**: responsibility for your own work, not micromanaging
 
 
-## How we work
+## The job
 
-Gobierto Contracts is a relatively young RoR project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, and many other fun things.
+One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. There are some many insights that can be extracted from this data, but hardly no one is doing it. We want to put this data to work to improve public spending on different dimensions (efficiency, control, transparency...). Some of the tasks:
 
-You'll also be contributing from time to time to Gobierto Transparency, our open source solution for setting transparency and accountability initiatives.
+- Data extraction: from structured sources and not structured ones (web pages, PDFs). We already have many data ingestion processes running, you'll help improve them if needed.
+- Quality control of data: we have started to build some automated checks to validate the quality of new data. You'll help consolidate and improve it
+- Data cleaning: you know the drill :)
+- Data analysis and exploratory visualizations to build, communicate and reason about hipothesis
+- Prediction and clasification: we have already built some initial models to predict the number of offers a tender will receive. We want to do many other things in this front. Predict prices, discounts, detect possible frauds...
+- Entity extraction: we have tons of PDFs with unstructured content (companies, concepts, contract clauses...). Once we have extracted them, many important products can be built.
+
+And many other challenges that will appear along the way. We'll start bit by bit and grow the team which you may end up managing (if that's something you'd want, that is).
+
+We use Jenkins to automate tasks. We are a Ruby On Rails shop, so some Ruby knowledge would be ideal, but we understand you'll be using Python and the usual suspects.
+
+You'll also be contributing from time to time to Gobierto Transparency, our open source solution for transparency and accountability initiatives.
 
 We work on [Github](http://github.com/populatetools/) using a git workflow with CI/CD, tests, different automations... Our workflow has been polished throughout a few years, so have automated many things (monitoring, error tracking, server setups & updates, deployments, various checks...). You can take a look at the [Gobierto repo to see how we actually work](http://github.com/populatetools/gobierto).
-
-Depending on your skills and interests, you may participate in:
-
-- Data analysis work: using SQL, R, Python
-- Systems work: servers setup, management, deploys. We use Ansible, some Docker
 
 
 ## Day to day work
@@ -80,19 +87,19 @@ Depending on your skills and interests, you may participate in:
 ## This role is for you if...
 
 - **You want to work on meaningful projects around civic engagement, open data, participation and accountability**
+- Have solid experience with data: extracting, cleaning, analyzing, visualizing, building models...
+- Master SQL
+- Are familiar with PostgreSQL, Git, Linux systems, the Unix shell
 - Are looking for a stable job in a rewarding environment, with mission-driven projects, where you'll spend your next few years
 - Value a work environment which strives for excellence, from process to results, from design to code
 - Enjoy working in a small team interested in understanding and contributing to our different systems (code, tools, processes)
-- Have developed Ruby on Rails applications with a level of complexity similar to Gobierto and follow the Ruby on Rails ecosystem
+- Prioritize understanding and analyzing problems to come up with effective solutions
 - Value clean code with good abstractions and good communication skills both in the code and in the submitted PRs
 - Understand and value testing and have been doing this systematically in recent times
-- Prioritize understanding and analyzing problems to come up with effective solutions
-- Are familiar with PostgreSQL, Git, Linux systems, the Unix shell
-- Being Ruby your main language, are not afraid to use Python, Javascript or another one
 - Enjoy hacking in the Unix shell to automate tasks
 - You are interested in open data, free software, data visualization
 - You are fluent in written and spoken English
-
+- Bonus track: You are familiar with Ruby/Ruby On Rails
 
 ## Benefits
 
