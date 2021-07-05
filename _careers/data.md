@@ -29,12 +29,12 @@ We value
 
 One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. There are some many insights that can be extracted from this data, but hardly no one is doing it. We want to put this data to work to improve public spending on different dimensions (efficiency, control, transparency...). Some of the tasks:
 
-- Data extraction: from structured sources and not structured ones (web pages, PDFs). We already have many data ingestion processes running, you'll help improve them if needed.
-- Quality control of data: we have started to build some automated checks to validate the quality of new data. You'll help consolidate and improve it
-- Data cleaning: you know the drill :)
-- Data analysis and exploratory visualizations to build, communicate and reason about hipothesis
-- Prediction and clasification: we have already built some initial models to predict the number of offers a tender will receive. We want to do many other things in this front. Predict prices, discounts, detect possible frauds...
-- Entity extraction: we have tons of PDFs with unstructured content (companies, concepts, contract clauses...). Once we have extracted them, many important products can be built.
+- **Data extraction**: from structured sources and not structured ones (web pages, PDFs). We already have many data ingestion processes running, you'll help improve them if needed.
+- **Quality control of data**: we have started to build some automated checks to validate the quality of new data. You'll help consolidate and improve it.
+- **Data cleaning**: you know the drill :)
+- **Data analysis and exploratory visualizations** to build, communicate and reason about hipothesis
+- **Prediction and clasification**: we have already built some initial models to predict the number of offers a tender will receive. We want to do many other things in this front. Predict prices, discounts, detect possible frauds...
+- **Entity extraction**: we have tons of PDFs with unstructured content (companies, concepts, contract clauses...). Once we have extracted them, many important products can be built.
 
 And many other challenges that will appear along the way. We'll start bit by bit and grow the team which you may end up managing (if that's something you'd want, that is).
 
@@ -62,7 +62,7 @@ We work on [Github](http://github.com/populatetools/) using a git workflow with 
 - Get assigned initial issues to navigate around our development process: tests, deploy, code reviews...
 
 
-## Your first quarter
+## Your first month
 
 - You understand Gobierto contratos data model
 - You are tasked with some small projects
@@ -71,11 +71,11 @@ We work on [Github](http://github.com/populatetools/) using a git workflow with 
 
 ## Your first year
 
-- Responsible of data in Populate
+- You are Responsible of data in Populate
 - Our workflows and pipelines are more mature
 - Creating new data projects is a smooth process
 - Data analysis has been used in different projects, not only Gobierto Contratos
-- There are different ML models deployed
+- You have deployed different ML models
 
 ## This role is for you if...
 

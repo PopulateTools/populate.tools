@@ -24,7 +24,7 @@ We value
 - **independence**: responsibility for your own work, not micromanaging
 
 
-## How we work
+## The job
 
 Gobierto Contracts is a relatively young RoR project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, and many other fun things.
 
