@@ -47,11 +47,9 @@ We work on [Github](http://github.com/populatetools/) using a git workflow with 
 
 ## Day to day work
 
-- **Plan** new features of Gobierto and existing applications, and contribute to new apps from scratch
-- **Implement** defined features, manage your sprints, do sprint reviews
-- **Collaborate** with other team members: provide feedback and do code reviews
-- **Improve** and maintain existing code of production applications
-
+- **Plan** analyze and suggest new analysis over the data
+- **Implement** your scripts and visualizations, prepare notebooks
+- **Present results** to the team, review suggestions and iterate
 
 ## Your first week
 
@@ -66,23 +64,18 @@ We work on [Github](http://github.com/populatetools/) using a git workflow with 
 
 ## Your first quarter
 
-- Master all of our internal tools and processes
-- You are tasked with planning a medium-sized feature in Gobierto that will take you several weeks to implement
-- Propose the work plan and work with a designer and a front-end engineer to implement it
-- Deploy code to staging, demo your work to the team/client, write documentation, polish it and merge it to master
+- You understand Gobierto contratos data model
+- You are tasked with some small projects
+- A project has been released and is in production, adding value to the product
 
 
 ## Your first year
 
-- Responsible of one or more apps/modules/big features
-- Master Gobierto and have provided ideas to improve code and features
-- Speak with clients autonomously if needed
-- Do fluent code reviews
-- Have made suggestions to improve our processes
-- Have attended some conferences and proposed books to our book club
-- Given internal talks about tech and non-tech things
-- Have traveled with the rest of the team to one or more retreats (if global pandemics allow it)
-
+- Responsible of data in Populate
+- Our workflows and pipelines are more mature
+- Creating new data projects is a smooth process
+- Data analysis has been used in different projects, not only Gobierto Contratos
+- There are different ML models deployed
 
 ## This role is for you if...
 
