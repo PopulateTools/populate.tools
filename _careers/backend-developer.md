@@ -98,9 +98,9 @@ Depending on your skills and interests, you may participate in:
 
 - **Remote, mixed or onsite**: some of us works regularly in our sunny Madrid office, others are fully remote, others mix. You are free to choose your place of work.
 - **Flexible schedule and hours**: You design your work schedule around your life, not the other way round.
-- **Events:** We get together a few time a years to work, share and have fun
+- **Events:** We get together a few time a years to work (when COVID allows), share and have fun
 - **Choose your hardware & software**: Linux, Mac... your choice
-- **Education & Conferences stipend**
+- **Education & Conferences stipend** 1.200 € per year
 - **Indefinite contract**
 
 
