@@ -2,7 +2,7 @@
 layout: career
 title: Project & Decidim Manager
 date: 2019-02-11
-active: true
+active: false
 place: "Remote (Spain), onsite (Madrid), or mixed"
 ---
 
