@@ -9,7 +9,7 @@ place: "Remote (Spain), onsite (Madrid), or mixed"
 
 ## About Populate
 
-We are a design and tech consultancy building digital products around civic engagement. We are hiring for [Gobierto Contracts](contratos.gobierto.es), which is our main focus right now: a tool to help public administrations control, plan and research about their contracting activity. Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!
+We are a design and tech consultancy building digital products around civic engagement. We are hiring for [Gobierto Contracts](https://contratos.gobierto.es), which is our main focus right now: a tool to help public administrations control, plan and research about their contracting activity. Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!
 
 During the last 12 months we'd have a pretty sweet customer discovery process, talking with tens of organizations to understand where their pains are. Now, a typical product presentation ends up with a "I want this now" (being "now" in the public administration land a process of many months... :D)
 
@@ -128,6 +128,5 @@ We are growing the business and aim to pay as best as we can. We look forward to
   - alternately, you can do this project in the office
   - we pay you this project, no matter what
 - If project is OK, everything is ready ;)
-
 
 
