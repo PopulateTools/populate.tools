@@ -1,6 +1,6 @@
 ---
 layout: career
-title: Data Engineer for Gobierto Contracts
+title: Data Scientist for Gobierto Contracts
 date: 2021-07-01
 outtro: no
 active: true
