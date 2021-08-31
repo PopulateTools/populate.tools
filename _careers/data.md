@@ -3,7 +3,7 @@ layout: career
 title: Data Scientist for Gobierto Contracts
 date: 2021-07-01
 outtro: no
-active: true
+active: false
 place: "Remote (Spain), onsite (Madrid), or mixed"
 ---
 
