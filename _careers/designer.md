@@ -14,7 +14,7 @@ We are a design and tech consultancy building digital products around civic enga
 
 Decidim is the citizen participation software created by the Barcelona City Council and used by many institutions all over the world. You'll participate in the evolution of the platform, creation of a design system, designing new features, solving usability issues... [Read about how is working in Decidim](https://gobierto.es/blog/20180123-decidim-diseno-populate.html#c%C3%B3mo-se-trabaja-en-decidim) (spanish).
 
-Gobiert Contracts is the tool to help public administrations control, plan and research about their contracting activity. Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!
+Gobierto Contracts is the tool to help public administrations control, plan and research about their contracting activity. Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!
 
 We value
 
@@ -56,7 +56,7 @@ We use Figma and prepare interactive prototypes to showcase our work. You'll wor
 
 ## Benefits
 
-- **Remote, mixed or onsite**: some of us works regularly in our sunny Madrid office, others are fully remote, others mix. You are free to choose your place of work.
+- **Remote, mixed or onsite**: some of us work regularly in our sunny Madrid office, others are fully remote, others mix. You are free to choose your place of work.
 - **Flexible schedule and hours**: You design your work schedule around your life, not the other way round.
 - **Events:** We get together a few time a years to work (when COVID allows), share and have fun
 - **Choose your hardware & software**: Linux, Mac... your choice
