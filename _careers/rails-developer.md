@@ -1,10 +1,10 @@
 ---
 layout: career
-title: Backend Developer
-date: 2021-09-21
+title: Ruby On Rails Developer
+date: 2019-03-18
 outtro: no
 active: true
-place: "Remote (Spain)"
+place: "Remote (Spain), onsite (Madrid), or mixed"
 ---
 
 ## About Populate
@@ -26,10 +26,7 @@ We value
 
 ## The job
 
-We are searching for a backend developer with experience in modern MVC frameworks. We are a Ruby On Rails shop, but we'll train you if you don't have experience with Rails and are willing to learn it ([After 17 years, we keep thinking that Rails is a great option](https://twitter.com/furilo/status/1435211488331923462)).
-
-
-Gobierto Contracts is a relatively young Ruby On Rails project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, and many other fun things.
+Gobierto Contracts is a relatively young RoR project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, and many other fun things.
 
 You'll also be contributing from time to time to Gobierto Transparency, our open source solution for setting transparency and accountability initiatives.
 
@@ -86,11 +83,12 @@ Depending on your skills and interests, you may participate in:
 - Are looking for a stable job in a rewarding environment, with mission-driven projects, where you'll spend your next few years
 - Value a work environment which strives for excellence, from process to results, from design to code
 - Enjoy working in a small team interested in understanding and contributing to our different systems (code, tools, processes)
-- Have developed MVC or Ruby on Rails applications with a level of complexity similar to Gobierto
+- Have developed Ruby on Rails applications with a level of complexity similar to Gobierto and follow the Ruby on Rails ecosystem
 - Value clean code with good abstractions and good communication skills both in the code and in the submitted PRs
 - Understand and value testing and have been doing this systematically in recent times
 - Prioritize understanding and analyzing problems to come up with effective solutions
 - Are familiar with PostgreSQL, Git, Linux systems, the Unix shell
+- Being Ruby your main language, are not afraid to use Python, Javascript or another one
 - Enjoy hacking in the Unix shell to automate tasks
 - You are interested in open data, free software, data visualization
 - You are fluent in written and spoken English
