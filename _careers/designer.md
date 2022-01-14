@@ -3,7 +3,7 @@ layout: career
 title: Digital Product Designer
 date: 2021-08-31
 outtro: no
-active: true
+active: false
 place: "Remote (Spain) or hibrid (office: Madrid)"
 ---
 
