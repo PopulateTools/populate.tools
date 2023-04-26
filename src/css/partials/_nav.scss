@@ -1,0 +1,55 @@
+.nav-constitution {
+    width: 100%;
+    padding: .75rem;
+    font-size: 0;
+}
+
+.browser-title {
+    font-size: 1.5rem;
+    font-family: $text;
+    color: $black;
+    display: inline-block;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-constitution-element {
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: middle;
+    &.nav-constitution-logo {
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.nav-constitution-link {
+    color: #969696;
+    font-size: 12px;
+    font-family: $text;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: $text;
+    padding-right: .5rem;
+    color: #BBBBBB;
+
+}
+
+.nav-logo-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-logo-image {
+    max-width: 95px !important;
+    border: 0 !important;
+}

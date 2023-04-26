@@ -63,8 +63,16 @@ populate_data: data
 # Build settings
 markdown: kramdown
 highlighter: rouge
-# Exclude _i18n due to Github compilation error
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n']
+exclude: 
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - _config.yml
+  - config
+  - _i18n
+  - src
+  - node_modules
 
 assets:
   features:
