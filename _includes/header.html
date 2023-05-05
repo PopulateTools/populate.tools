@@ -9,7 +9,7 @@
 
       <div class="desktop-menu">
         <a class="no-underline logo" href="/">
-          <img src="{% asset 'logo' @path %}" class="logo-header pure-img" alt="Populate" />
+          <img src="{% asset 'Logo-Populate-Key' @path %}" class="logo-header pure-img" alt="Populate" />
         </a>
         <ul class="header-list">
           <!--
@@ -20,7 +20,7 @@
           <li class="sep header-item"><a class="header-link header-section" href="/{{ site.populate_data }}">populate data</a></li>
           <li class="header-item"><a class="header-link header-section" href="/projects/gobierto">gobierto</a></li>
           -->
-          <li class="sep header-item">
+          <li class="header-item">
           {% for tongue in site.languages %}
             <a class="header-link header-section"
               {% if tongue == site.active_lang %}

@@ -1,5 +1,5 @@
 .header {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 6rem;
 
   @include screen(768) {
@@ -14,9 +14,17 @@
 }
 
 .logo-header {
-  display: none;
+  display: inline-block;
   max-width: 8rem;
   padding-right: 4rem;
+  margin-left: -18px;
+}
+.logo-in-home {
+  .logo-header {
+    max-width: 12rem;
+    margin-left: -26px;
+    margin-top: 6rem;
+  }
 }
 .header-list {
   display: inline-block;
@@ -98,7 +106,10 @@
   display: none;
 
   @include min-screen(768) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
 }
 .open_mobile_menu {
@@ -200,9 +211,6 @@
 
 .header.stuck,
 .header.stuck .logo-header {
-  display: inline-block;
-}
-.logo-header {
   display: inline-block;
 }
 

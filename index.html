@@ -1,15 +1,9 @@
 ---
 layout: default
 permalink: /
-description: "Digital agency providing full service: from conceptualization and research, design, front-end, back-end, data..."
+description: "Digital studio providing full service: from conceptualization and research, design, front-end, back-end, data..."
 lang: en
 ---
-
-<div class="mt5">
-  {% include header.html %}
-</div>
-
-{% include hero.html %}
 
 <script>
 function init() {
@@ -30,8 +24,18 @@ function init() {
           otherTarget.classList.add('target-hidden');
         }
       });
+
+      window.location.hash = target.id;
     });
   });
+
+  const targetId = window.location.hash.substring(1);
+  const target = document.getElementById(targetId);
+
+  if (target) {
+    target.classList.remove('target-hidden');
+  }
+
 }
 window.addEventListener('load', init);
 
@@ -43,72 +47,68 @@ window.addEventListener('load', init);
 // }, 1000);
 
 </script>
+
+<div class="front-page-hero"></div>
+
+<div class="logo-in-home">
+  {% include header.html %}
+</div>
+
+<div style="display: none">{% include hero.html %}</div>
+
 <main>
+
 
   <div class="container">
 
-    <section class="intro-text pb6 f5 lh-title mid-gray">
+    <section class="intro-text">
       
-      <div class="flex">
-        <div class="sidebar hypertext-sources">
+      <div class="sidebar hypertext-sources">
 
-          <p><span>We are a</span> <button data-target="t1">small digital studio</button> <span>in Spain. We help you think about the</span> <span data-target="t2">things you should build</span>, <span>ask the</span> <span data-target="t3">questions to discover</span> <span>them and</span> <span class="t4">focus on the right work</span> <span>to do at a given stage.</span></p>
+        <p><span>We are a</span> <button data-target="what">small digital studio</button><span>. We help you think about the</span> <span data-target="should">things you should build</span>, <span>ask the</span> <span data-target="questions">questions to discover</span> <span>them and focus on the right work to do at a given stage.</span></p>
 
-          <p>And then we help you to build the thing. So: <span data-target="product">product design</span> and <span data-target="implementation">implementation</span>. The big picture, the user experience, the technology, the launch, and the day to day chores.</p>
+        <p>And then we help you to build the thing. So: <button data-target="product">product design</button> and <button data-target="implementation">implementation</button>. The big picture, the user experience, the technology, the launch, and the day to day chores.</p>
 
-          <p>We have built quite a few projects along the years.</p>
+        <p>We have built quite a <button data-target="projects-t">few projects</button> along the years.</p>
 
-          <p>We enjoy doing just the right amount of work, starting small, putting the work in hands of the users as soon as possible (because that's the way to learn), working in unexplored areas and strange projects, and working with like minded persons inside interesting organizations.</p>
+        <p>We enjoy doing just the <button data-target="right-amount">right amount of work, starting small</button>, putting the work in hands of the users as soon as possible (because that's the way to learn), working in <button data-target="unexplored">unexplored areas and strange projects</button>, and working with <button data-target="">like minded persons</button> inside interesting organizations.</p>
 
-          <p>We work with companies, NGOs and government organizations.</p>
+        <p>We work with companies, NGOs and government organizations.</p>
 
-          <p>We think that maybe we are using the first person plural too much and that you might enjoy having a chat to get to know each other.</p>
-	
+        <p>We think that maybe we are using the first person plural too much and that you might enjoy <button data-target="chat">having a chat</button> to get to know each other.</p>
+
+      </div>
+      <div class="main">
+
+        {% for item in site.data.home-items %}
+        <div class="target target-hidden" id="{{ item.id }}">
+          {% assign text = item.text %}
+          {{ text | markdownify }}
         </div>
-        <div class="main">
+        {% endfor %}
 
-          <div class="target target-hidden" id="t1">
-            <p>Populate was founded by Álvaro Ortiz & Fernando Blat in 2015. We have been working together for more than 20 years in different projects: offering business consultancy to big cos; creating online spaces for millions of users; defining and launching startups; organizing events and participating in communities.</p>
-            <p>Halfway between activism and consultancy, we are a professional services firm with numerous projects around civic engagement.</p>  
-          </div>
-
-          <div class="target target-hidden" id="t2">
-            
-          </div>
-
-          <div class="target target-hidden" id="t3">
-            <p>Asking the right questions is probably the most important super power to have in any aspect of life. Digital product building is no exception. Asking the appropriate questions alone defines most of what you need to build, what and how you need to offer to your public. </p>
-            <p>Should we define our job as question-answering artisans? We might. With a little web development knowhow.</p>
-          </div>
-
-          <div class="target target-hidden" id="product">
-            <p>Our roots are in user centered design. We take pride on coming up with polished user experiences, which usually means giving users only what they need and no more in the moment they need it.</p>
-            <p>World is complex: digital products should get out of the way and provide calm and enlightning experiences.</p>
-            <p>We use <strong>data visualization</strong> as a tool to give context and allow the quick understanding of complex issues.</p>  
-          </div>
-
-          <div class="target target-hidden" id="implementation">
-            <p></p>
-            <p></p>  
-          </div>
-
-          
-          
-        </div>
       </div>
       
     </section>
 
-    <section id="projects" class=" projects">
-      {% include projects.html %}
-    </section>
-
-    <!-- <section id="news" class="section news">
-      {% include news.html %}
-    </section> -->
   </div>
+  
+  <section id="projects" class=" projects">
+    {% include projects.html %}
+  </section>
 
-  {% include about.html %}
+  <!-- <section id="news" class="section news">
+    {% include news.html %}
+  </section> -->
+  
+  <div class="container">
+    <div class="post-list">
+      {% assign posts = site.posts %}
+      {% for post in posts %}
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      {% endfor %}
+    </div>
+  </div>
 
   <div class="container-fluid">
     <section id="clients" class="section clients">

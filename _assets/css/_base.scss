@@ -10,7 +10,7 @@ body {
   // background-size: 40%;
 
   @include min-screen(768) {
-    background: url(asset_path('pieces')) 101% -1.5% no-repeat;
+    // background: url(asset_path('pieces')) 101% -1.5% no-repeat;
     // background-position: 101% -1.5%;
     // background-size: 20%;
   }
@@ -291,4 +291,8 @@ body.story header.story {
   .ml-form-formContent.horozintalForm .ml-button-horizontal {
 
   }
+}
+
+img {
+  max-width: 100%;
 }
