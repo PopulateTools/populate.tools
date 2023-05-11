@@ -1,3 +1,22 @@
 projects: projects
 stories: stories
 about: about
+
+footer: 
+  lets-chat: "Let's chat"
+
+home:
+  intro-text: |
+    <p><strong>
+      <span>We are a</span> <button data-target="what">small digital studio</button><span> doing </span><button data-target="product">product design</button>, <button data-target="implementation">implementation</button>, and <button data-target="new">new projects</button>.
+    </strong></p>
+    
+    <p><span>We help you think about</span> what you should build and how to do it. We are professional <button data-target="questions">question-makers</button>.</p>
+
+    <p>We enjoy doing just the <button data-target="right-amount">right amount of work, starting small</button>, putting the work in hands of the users as soon as possible (because that's the way to learn) and working in <button data-target="unexplored">unexplored areas and strange projects</button></p>
+    
+    <p>Enough we. What about you? <button data-target="chat">Let's chat</button> and see if we are a good fit to help you.</p>
+  services: |
+    <p>product: research, ux/ui/id, data visualization</p>
+    <p>implementation: webdev, front-end, ruby on rails</p>
+    <p>new projects: do you have a weird challenge at the interesection of tech+people?</p>

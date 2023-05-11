@@ -2,59 +2,8 @@
 layout: default
 permalink: /
 description: "Digital studio providing full service: from conceptualization and research, design, front-end, back-end, data..."
-lang: en
+# lang: en
 ---
-
-<script>
-function init() {
-  const sources = document.querySelectorAll('[data-target]');
-  const targets = document.querySelectorAll('.target');
-
-  // Add click event listener to each source element
-  sources.forEach(source => {
-    source.tabIndex = 0;
-    source.addEventListener('click', () => {
-      // Toggle matching target element
-      const targetId = source.dataset.target;
-      const target = document.getElementById(targetId);
-      target.classList.toggle('target-hidden');
-      // Toggle off all other target elements
-      targets.forEach(otherTarget => {
-        if (otherTarget !== target) {
-          otherTarget.classList.add('target-hidden');
-        }
-      });
-
-      window.location.hash = target.id;
-    });
-  });
-
-  const targetId = window.location.hash.substring(1);
-  const target = document.getElementById(targetId);
-
-  if (target) {
-    target.classList.remove('target-hidden');
-  }
-
-  function hideTarget(event) {
-    event.preventDefault();
-    const target = event.target.closest('.target');
-    target.classList.add('target-hidden');
-  }
-
-}
-window.addEventListener('load', init);
-
-// setTimeout(() => {
-//   const spans = document.querySelectorAll('.hypertext-sources span');
-//   spans.forEach(span => {
-//     span.style.opacity = 1;
-//   });
-// }, 1000);
-
-</script>
-
-<div class="front-page-hero"></div>
 
 <div class="logo-in-home">
   {% include header.html %}
@@ -67,24 +16,16 @@ window.addEventListener('load', init);
 
   <div class="container">
 
+    <!-- {{ site.data.strings.projects }} -->
+
     <section class="intro-text">
       
       <div class="sidebar hypertext-sources">
 
-        <p><strong>
-          <span>We are a</span> <button data-target="what">small digital studio</button><span> doing </span><button data-target="product">product design</button>, <button data-target="implementation">implementation</button>, and <button data-target="new">new projects</button>.
-        </strong></p>
+        {{ site.data.strings.home.intro-text }}
         
-        <p><span>We help you think about</span> <button data-target="should">what you should build</button> and how to do it. We are professional <button data-target="questions">question-makers</button>.</p>
-
-        <p>We enjoy doing just the <button data-target="right-amount">right amount of work, starting small</button>, putting the work in hands of the users as soon as possible (because that's the way to learn) and working in <button data-target="unexplored">unexplored areas and strange projects</button></p>
-        
-        <p>Enough we. What about you? <button data-target="chat">Let's chat</button> and see if we are a good fit to help you.</p>
-
         <small>
-          <p>product: research, ux/ui/id, data visualization</p>
-          <p>implementation: webdev, front-end, ruby on rails</p>
-          <p>new projects: do you have a weird challenge at the interesection of tech+people?</p>
+          {{ site.data.strings.home.services }}
         </small>
 
       </div>

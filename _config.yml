@@ -90,5 +90,5 @@ plugins:
 
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "assets"]
+exclude_from_localization: ["javascript", "images", "css", "assets", "datasets"]
 parallel_localization: false

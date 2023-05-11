@@ -1,3 +1,22 @@
 projects: proyectos
 stories: historias
 about: acerca de
+
+footer: 
+  lets-chat: "Hablemos"
+
+home:
+  intro-text: |
+    <p><strong>
+      <span>Somos un</span> <button data-target="what">pequeño estudio digital</button><span> haciendo </span><button data-target="product">diseño de producto</button>, <button data-target="implementation">implementación</button>, y <button data-target="new">nuevos proyectos</button>.
+    </strong></p>
+
+    <p><span>Te ayudamos a pensar en</span> lo que deberías construir y cómo hacerlo. Somos profesionales <button data-target="questions">creadores de preguntas</button>.</p>
+
+    <p>Nos gusta hacer la <button data-target="right-amount">cantidad justa de trabajo, empezando por lo pequeño</button>, poniendo el trabajo en manos de las personas lo antes posible (porque esa es la forma de aprender) y trabajando en <button data-target="unexplored">áreas inexploradas y proyectos extraños</button>.</p>
+    
+    <p>Basta de nosotros. <button data-target="chat">Hablemos</button> y veamos si te podemos ayudar.</p>
+  services: |
+    <p>producto: investigación, ux/ui/id, visualización de datos</p>
+    <p>implementación: webdev, front-end, ruby on rails</p>
+    <p>nuevos projects: personas+tecnología</p>

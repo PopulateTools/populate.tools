@@ -10,6 +10,9 @@
 //= require vendor/TweenMax.min.js
 //= require vendor/ScrollMagic/animation.gsap.min.js
 
+//= require populate-data-browser.js
+
+
 $(document).ready(function() {
 
   /* Lazyload */
@@ -17,14 +20,6 @@ $(document).ready(function() {
     selector: '.lazy',
     successClass: 'loaded'
   });
-
-  /* Stick header
-  if ($('.header').length > 0) {
-    var sticky = new Waypoint.Sticky({
-      element: $('.header')[0]
-    });
-  }
-  */
 
   if ($('.toc').length > 0) {
     var sticky = new Waypoint.Sticky({
@@ -180,74 +175,43 @@ $(document).ready(function() {
     return false;
   });
 
-
-
-  // Populate Data Browser
-  // ToDo: Extract this code to its own files/repository
-
-  $(".pdb_data_list_series a").click(function(e) {
-    e.preventDefault();
-
-    $('.pdb_dataset_series').removeClass('slide-out-left');
-    $('.p_data_browser').removeClass('slide-in-left');
-
-    $('.p_data_browser').addClass('slide-out-left');
-    $('.pdb_dataset_series').addClass('slide-in-left');
-  });
-
-  $('.back_to_browse').click(function(e) {
-    e.preventDefault();
-    $('.p_data_browser').removeClass('slide-out-left');
-    $('.pdb_dataset_series').removeClass('slide-in-left');
-
-    $('.pdb_dataset_series').addClass('slide-out-left');
-    $('.p_data_browser').addClass('slide-in-left');
-  });
-
-
-
-  // create social networking pop-ups
-  (function() {
-    // link selector and pop-up window size
-    var Config = {
-        Link: "a.share",
-        Width: 500,
-        Height: 500
-    };
-    // add handler links
-    var slink = document.querySelectorAll(Config.Link);
-    for (var a = 0; a < slink.length; a++) {
-        slink[a].onclick = PopupHandler;
-    }
-    // create popup
-    function PopupHandler(e) {
-        e = (e ? e : window.event);
-        var t = (e.target ? e.target : e.srcElement);
-        if(t.tagName !== "A"){
-          t = t.parentElement;
-        }
-        // popup position
-        var
-            px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
-            py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
-        // open popup
-        var popup = window.open(t.href, "social",
-            "width="+Config.Width+",height="+Config.Height+
-            ",left="+px+",top="+py+
-            ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1");
-        if (popup) {
-            popup.focus();
-            if (e.preventDefault) e.preventDefault();
-            e.returnValue = false;
-        }
-        return !!popup;
-    }
-  }());
-
-
-  $('.menu-story-cue a').click(function(e) {
-    e.preventDefault();
-  });
-
-
 });
+
+function init() {
+  const sources = document.querySelectorAll('[data-target]');
+  const targets = document.querySelectorAll('.target');
+
+  // Add click event listener to each source element
+  sources.forEach(source => {
+    source.tabIndex = 0;
+    source.addEventListener('click', () => {
+      // Toggle matching target element
+      const targetId = source.dataset.target;
+      const target = document.getElementById(targetId);
+      target.classList.toggle('target-hidden');
+      // Toggle off all other target elements
+      targets.forEach(otherTarget => {
+        if (otherTarget !== target) {
+          otherTarget.classList.add('target-hidden');
+        }
+      });
+
+      window.location.hash = target.id;
+    });
+  });
+
+  const targetId = window.location.hash.substring(1);
+  const target = document.getElementById(targetId);
+
+  if (target) {
+    target.classList.remove('target-hidden');
+  }
+
+  function hideTarget(event) {
+    event.preventDefault();
+    const target = event.target.closest('.target');
+    target.classList.add('target-hidden');
+  }
+
+}
+window.addEventListener('load', init);

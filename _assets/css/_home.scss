@@ -101,12 +101,6 @@
   }
 }
 
-.front-page-hero {
-  // height: 50px;
-  // width: 100%;
-  // background: linear-gradient(to bottom right, #1E658B, #005770);
-}
-
 .intro-text {
   display: flex;
   margin-bottom: 6rem;
@@ -114,7 +108,7 @@
   scroll-padding-top: 1em;
 
   @include screen(800px) {
-    display: inline; 
+    display: block; 
   }
 
   .sidebar {
@@ -171,7 +165,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: calc(100% - 120px);
+    width: 100%;
     height: 100%;
     padding: 0 0 0 120px;
     display: block;
@@ -188,7 +182,7 @@
       right: 0;
       border: 0;
       padding: 32px;
-      width: calc(100% - 64px);
+      width: calc(100%);
       background: #FFF;
       z-index: 100;
       position: fixed;

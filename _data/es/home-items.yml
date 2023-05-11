@@ -1,11 +1,43 @@
 - id: what
-  text: > 
-    Populate was founded by Álvaro Ortiz & Fernando Blat in 2015. We have been working together for more than 20 years in different contexts: offering innovation & business consultancy to corporates; creating online spaces for millions of users; defining and launching startups; organizing events and participating in communities.
+  text: | 
+    Populate fue fundada por Álvaro Ortiz y Fernando Blat en 2015. Hemos estado trabajando juntos durante más de 20 años en diferentes contextos: ofreciendo consultoría de innovación y negocios a empresas; creando espacios en línea para millones de usuarios; definiendo y lanzando startups; organizando eventos y participando en comunidades.
     
-    We build digital products for fun & profit. 
+    Construimos productos digitales por diversión y algo de beneficio en un ambiente acogedor: un equipo pequeño y efectivo que ofrece ideas y soluciones pragmáticas.
 
-- id: questions
-  text: > 
-    Asking the right questions is probably the most important super power to have in any aspect of life. Digital product building is no exception. Asking the appropriate questions alone defines most of what you need to build, what and how you need to offer to your public.
+- id: product
+  text: | 
+    Nuestras raíces están en el diseño centrado en el usuario. Nos enorgullece crear experiencias de usuario pulidas, lo que generalmente significa dar a los usuarios solo lo que necesitan y nada más en el momento en que lo necesitan.
     
-    Should we define our job as question-answering artisans? We might. With a little web development knowhow.
+    El mundo es complejo: los productos digitales deben salir del camino y proporcionar experiencias tranquilas e iluminadoras.
+    
+    Te ayudamos con la estrategia, la investigación, el diseño, la implementación y la comunicación.
+    
+    Utilizamos la visualización de datos como una herramienta para dar contexto y permitir la comprensión rápida de problemas complejos.
+
+    Nos enorgullece ser pragmáticos, honestos y directos.
+
+- id: implementation
+  text: | 
+    Utilizamos Ruby on Rails como nuestro marco de desarrollo web por defecto. Lo hemos estado utilizando desde 2005 (¡casi 20 años!).
+    
+    Hemos probado alternativas a lo largo de los años, pero hemos llegado a creer firmemente que hay mucho valor en tener una larga historia con tus herramientas, especialmente si es una que, después de tantos años, está en mejor forma que nunca y sigue entregando.
+
+- id: web
+  text: |
+    Amamos la web. Permite formas geniales y extrañas de compartir, aprender, conectarse. Disfrutamos trasteando con la tecnología web. Amamos el hipertexto. Nos preguntamos sobre los desafíos que los datos, la tecnología y la IA traen a nuestra sociedad.
+
+    Como muchos, estamos experimentando con la IA generativa y los LLM. Y pensando en lo que significa la inteligencia humana en el contexto de esta nueva inteligencia artificial. Y cuestionando si somos tan inteligentes como creemos que somos. 
+    
+    O sobre cómo los LLM desarrollan comportamientos emergentes, y cómo eso difiere de los elementos que caracterizan la inteligencia humana.
+
+- id: chat
+  text: |
+    No te preocupes, no te haremos hablar con un chatbot.
+
+    ¿Tienes un proyecto en el que crees que podemos ayudar? Cuéntanos: lo que necesitas, cuándo, cómo encajamos nosotros, cuál es tu rango de presupuesto...
+
+    lets@populate.tools
+
+    +34650552940 -- Álvaro Ortiz
+    
+    C/ Meléndez Valdés, 47 28015 Madrid España
