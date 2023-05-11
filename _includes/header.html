@@ -12,14 +12,6 @@
           <img src="{% asset 'Logo-Populate-Key' @path %}" class="logo-header pure-img" alt="Populate" />
         </a>
         <ul class="header-list">
-          <!--
-          <li class="header-item"><a class="header-link header-section" href="/#projects">{{ site.data.strings.projects }}</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/blog">{{ site.data.strings.stories }}</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/#about">{{ site.data.strings.about }}</a></li>
-
-          <li class="sep header-item"><a class="header-link header-section" href="/{{ site.populate_data }}">populate data</a></li>
-          <li class="header-item"><a class="header-link header-section" href="/projects/gobierto">gobierto</a></li>
-          -->
           <li class="header-item">
           {% for tongue in site.languages %}
             <a class="header-link header-section"
@@ -56,7 +48,7 @@
       <li><a href="/#projects">projects</a></li>
       <li><a href="/blog">stories</a></li>
       <li><a href="/#about">about</a></li>
-      <li><a href="/{{ site.populate_data }}">populate data</a></li>
+      <li><a href="/data">populate data</a></li>
       <li><a href="/projects/gobierto">gobierto</a></li>
     </ul>
 

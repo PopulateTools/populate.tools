@@ -36,6 +36,12 @@ function init() {
     target.classList.remove('target-hidden');
   }
 
+  function hideTarget(event) {
+    event.preventDefault();
+    const target = event.target.closest('.target');
+    target.classList.add('target-hidden');
+  }
+
 }
 window.addEventListener('load', init);
 
@@ -65,17 +71,21 @@ window.addEventListener('load', init);
       
       <div class="sidebar hypertext-sources">
 
-        <p><span>We are a</span> <button data-target="what">small digital studio</button><span>. We help you think about the</span> <span data-target="should">things you should build</span>, <span>ask the</span> <span data-target="questions">questions to discover</span> <span>them and focus on the right work to do at a given stage.</span></p>
+        <p><strong>
+          <span>We are a</span> <button data-target="what">small digital studio</button><span> doing </span><button data-target="product">product design</button>, <button data-target="implementation">implementation</button>, and <button data-target="new">new projects</button>.
+        </strong></p>
+        
+        <p><span>We help you think about</span> <button data-target="should">what you should build</button> and how to do it. We are professional <button data-target="questions">question-makers</button>.</p>
 
-        <p>And then we help you to build the thing. So: <button data-target="product">product design</button> and <button data-target="implementation">implementation</button>. The big picture, the user experience, the technology, the launch, and the day to day chores.</p>
+        <p>We enjoy doing just the <button data-target="right-amount">right amount of work, starting small</button>, putting the work in hands of the users as soon as possible (because that's the way to learn) and working in <button data-target="unexplored">unexplored areas and strange projects</button></p>
+        
+        <p>Enough we. What about you? <button data-target="chat">Let's chat</button> and see if we are a good fit to help you.</p>
 
-        <p>We have built quite a <button data-target="projects-t">few projects</button> along the years.</p>
-
-        <p>We enjoy doing just the <button data-target="right-amount">right amount of work, starting small</button>, putting the work in hands of the users as soon as possible (because that's the way to learn), working in <button data-target="unexplored">unexplored areas and strange projects</button>, and working with <button data-target="">like minded persons</button> inside interesting organizations.</p>
-
-        <p>We work with companies, NGOs and government organizations.</p>
-
-        <p>We think that maybe we are using the first person plural too much and that you might enjoy <button data-target="chat">having a chat</button> to get to know each other.</p>
+        <small>
+          <p>product: research, ux/ui/id, data visualization</p>
+          <p>implementation: webdev, front-end, ruby on rails</p>
+          <p>new projects: do you have a weird challenge at the interesection of tech+people?</p>
+        </small>
 
       </div>
       <div class="main">

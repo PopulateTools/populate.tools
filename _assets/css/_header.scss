@@ -18,12 +18,19 @@
   max-width: 8rem;
   padding-right: 4rem;
   margin-left: -18px;
+
+  @include screen(800px) {
+    margin-left: 0;
+  }
 }
 .logo-in-home {
   .logo-header {
     max-width: 12rem;
-    margin-left: -26px;
     margin-top: 6rem;
+    
+    @include min-screen(800px) {
+      margin-left: -26px;
+    }
   }
 }
 .header-list {
