@@ -9,8 +9,9 @@
 <div>Site active_lang: {{ site.active_lang }}</div>
 -->
 
-{{ content }}
+{% include header.html %}
 
+{{ content }}
 
 <footer class="footer">
   <div class="container">
@@ -18,7 +19,7 @@
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-2-3">
         <p>
-          <button class="footer-link" data-target="chat">{{ site.data.strings.footer.lets-chat }}</button>
+          <a href="/#chat" class="footer-link" data-target="chat">{{ site.data.strings.footer.lets-chat }}</a>
 
           <span class="social-links">
             <!-- / elsehwere <i class="fal fa-arrow-right"></i> -->

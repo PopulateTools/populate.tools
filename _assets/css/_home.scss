@@ -133,6 +133,7 @@
     }
 
     [data-target] {
+      display: inline;
       scroll-margin-top: 1em;
       opacity: 1;
       border-bottom: 3px solid var(--color-underline);
@@ -140,7 +141,6 @@
       // background: rgba($blue, .15);
       padding: 2px;
       line-height: 100%;
-      display: inline-block;
       border-radius: 3px;
       transition: background-color 0.2s ease-in-out;
     }
