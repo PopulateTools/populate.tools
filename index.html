@@ -5,14 +5,9 @@ description: "Digital studio providing full service: from conceptualization and 
 # lang: en
 ---
 
-<div style="display: none">{% include hero.html %}</div>
-
 <main>
 
-
   <div class="container">
-
-    <!-- {{ site.data.strings.projects }} -->
 
     <section class="intro-text" x-data="{ currentEl: null }">
 
@@ -28,10 +23,9 @@ description: "Digital studio providing full service: from conceptualization and 
       <div class="main" >
 
         {% for item in site.data.home-items %}
-        <div class="target" id="{{ item.id }}" x-show="currentEl === '{{ item.id }}'" x-transition.opacity.duration.250ms >
+        <div class="hyper-card" id="{{ item.id }}" x-show="currentEl === '{{ item.id }}'" x-transition.opacity.duration.250ms >
           {% assign text = item.text %}
           {{ text | markdownify }}
-
           <button class="close" @click="currentEl = null">x</button>
         </div>
         {% endfor %}
