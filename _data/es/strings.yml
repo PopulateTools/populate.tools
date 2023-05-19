@@ -1,3 +1,34 @@
 projects: proyectos
 stories: historias
 about: acerca de
+
+footer: 
+  lets-chat: "Hablemos"
+
+home:
+  intro-text: |
+    <p><strong>
+      Somos un <span data-target="what" @click="currentEl = 'what'">pequeño estudio digital</span><span> haciendo </span><span data-target="product" @click="currentEl = 'product'">diseño de producto</span>, <span data-target="implementation" @click="currentEl = 'implementation'">implementación</span>, and <span data-target="new" @click="currentEl = 'new'">nuevos proyectos</span>.
+    </strong></p>
+    
+    <p>Te ayudamos a pensar en lo que deberías construir y cómo hacerlo. <span data-target="questions" @click="currentEl = 'questions'">Nos gusta hacer preguntas</span>.</p>
+
+    <p>Nos gusta hacer la <span data-target="right-amount" @click="currentEl = 'right-amount'">cantidad justa de trabajo, empezando por lo pequeño</span>, poniendo el trabajo en manos de las personas lo antes posible (porque esa es la forma de aprender) y trabajando en <span data-target="unexplored" @click="currentEl = 'unexplored'">áreas inexploradas y proyectos extraños</span>.</p>
+    
+    <p>Basta de nosotros. <span data-target="chat" @click="currentEl = 'chat'">Hablemos</span> y veamos si te podemos ayudar.</p>
+    
+  services: |
+    <p>producto: investigación, ux/ui/id, visualización de datos</p>
+    <p>implementación: webdev, front-end, ruby on rails</p>
+    <p>nuevos projects: personas+tecnología</p>
+
+chat: |
+  No te preocupes, no te haremos hablar con un chatbot.
+
+  ¿Tienes un proyecto en el que crees que podemos ayudar? Cuéntanos: lo que necesitas, cuándo, cómo encajamos nosotros, cuál es tu rango de presupuesto...
+
+  lets@populate.tools
+
+  +34650552940 -- Álvaro Ortiz
+  
+  C/ Meléndez Valdés, 47 28015 Madrid España

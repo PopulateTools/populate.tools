@@ -1,3 +1,34 @@
 projects: projects
 stories: stories
 about: about
+
+footer: 
+  lets-chat: "Let's chat"
+
+home:
+  intro-text: |
+   <p><strong>
+          <span>We are a</span> <span data-target="what" @click="currentEl = 'what'">small digital studio</span><span> doing </span><span data-target="product" @click="currentEl = 'product'">product design</span>, <span data-target="implementation" @click="currentEl = 'implementation'">implementation</span>, and <span data-target="new" @click="currentEl = 'new'">new projects</span>.
+        </strong></p>
+        
+        <p><span>We help you think about</span> what you should build and how to do it. We are professional <span data-target="questions" @click="currentEl = 'questions'">question-makers</span>.</p>
+    
+        <p>We enjoy doing just the <span data-target="right-amount" @click="currentEl = 'right-amount'">right amount of work, starting small</span>, putting the work in hands of the users as soon as possible (because that's the way to learn) and working in <span data-target="unexplored" @click="currentEl = 'unexplored'">unexplored areas and strange projects</span></p>
+        
+        <p>Enough we. What about you? <span data-target="chat" @click="currentEl = 'chat'">Let's chat</span> and see if we are a good fit to help you.</p>
+  services: |
+    <p>product: research, ux/ui/id, data visualization</p>
+    <p>implementation: webdev, front-end, ruby on rails</p>
+    <p>new projects: do you have a weird challenge at the interesection of tech+people?</p>
+
+chat: |
+  Don't worry, we won't make you talk to a chatbot. 
+
+  Do you have a project you think we might help with? Tell us: what you need, when, how we fit in, what is your budget range...
+
+
+  lets@populate.tools
+
+  +34650552940 -- Álvaro Ortiz
+  
+  C/ Meléndez Valdés, 47 28015 Madrid Spain

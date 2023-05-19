@@ -9,6 +9,8 @@ lang: en
 permalink: projects/endesa
 ---
 
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
 <div class="w-100 mt5 mb7 hero">
   <div class="container h-100 flex flex-wrap flex-nowrap-ns items-center justify-between">
     <div class="w-100 w-20-ns mt5 mb4 mt0-ns mb0-ns"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>

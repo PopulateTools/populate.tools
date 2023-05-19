@@ -1,28 +1,57 @@
 ---
 layout: default
 permalink: /
-description: "Digital agency providing full service: from conceptualization and research, design, front-end, back-end, data..."
-lang: en
+description: "Digital studio providing full service: from conceptualization and research, design, front-end, back-end, data..."
+# lang: en
 ---
-
-{% include header.html %}
-
-{% include hero.html %}
 
 <main>
 
   <div class="container">
 
-    <section id="projects" class=" projects">
-      {% include projects.html %}
+    <section class="intro-text" x-data="{ currentEl: null }">
+
+      <div class="sidebar hypertext-sources">
+        
+        {{ site.data.strings.home.intro-text }}
+        
+        <small>
+          {{ site.data.strings.home.services }}
+        </small>
+
+      </div>
+      <div class="main" >
+
+        {% for item in site.data.home-items %}
+        <div class="hyper-card" id="{{ item.id }}" x-show="currentEl === '{{ item.id }}'" x-transition.opacity.duration.250ms >
+          {% assign text = item.text %}
+          {{ text | markdownify }}
+          <button class="close" @click="currentEl = null">x</button>
+        </div>
+        {% endfor %}
+
+      </div>
+      
     </section>
 
-    <!-- <section id="news" class="section news">
-      {% include news.html %}
-    </section> -->
   </div>
+  
+  <section id="projects" class=" projects">
+    {% include projects.html %}
+  </section>
 
-  {% include about.html %}
+  <!-- <section id="news" class="section news">
+    {% include news.html %}
+  </section> -->
+  
+  <div class="container">
+    <div class="post-list">
+      {% assign posts = site.posts %}
+      {% for post in posts %}
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      {% endfor %}
+    </div>
+  </div>
 
   <div class="container-fluid">
     <section id="clients" class="section clients">

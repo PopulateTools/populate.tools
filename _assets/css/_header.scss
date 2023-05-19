@@ -1,50 +1,62 @@
 .header {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding: 1rem 0;
+}
 
-  @include screen(768) {
-    // padding: 2rem 4rem 6rem 4rem;
-    padding-top: 1rem;
-    padding-bottom: 6rem;
-  }
-
-  @include min-screen(1600) {
-    // padding: 2rem 0;
-  }
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
 }
 
 .logo-header {
-  display: none;
+  display: inline-block;
   max-width: 8rem;
-  padding-right: 4rem;
+  margin-left: -18px;
+  
+  @include screen(800px) {
+    margin-left: 0;
+  }
 }
+
+body.section_home .logo-header {
+  max-width: 16rem;
+  margin-top: 36vh;
+  margin-bottom: 12vh;
+  
+  @include screen(800px) {
+    max-width: 12rem;
+    margin-left: 0;
+  }
+}
+
 .header-list {
   display: inline-block;
   list-style: none;
-  margin-left: 0;
+  margin: 0;
   padding-left: 0;
-}
-.header-item {
-  vertical-align: 0.7rem;
-  display: inline-block;
-  padding-right: 2rem;
-}
-.header-item.sep {
-  padding-right: 2rem;
-  padding-left: 1rem;
-  position: relative;
-}
-.header-item.sep::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  margin: 0 0 0 -1.5em;
-  background: #DFDFDF;
-}
-.header-link {
-  color: $link;
-  text-decoration: none;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    padding-left: 2rem;
+  }
+  li.sep {
+    padding-left: 3rem;
+    position: relative;
+  }
+  li.sep::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    margin: 0 0 0 -1.5em;
+    background: #DFDFDF;
+  }
+  li a {
+    color: $link;
+    text-decoration: none;
+  }
+
 }
 .header-section {
   font-weight: 500;
@@ -53,6 +65,10 @@
   color: $gray;
   font-weight: 300;
 }
+
+
+
+// ToDo: Review if deprecated
 
 .newsletter {
   display: block;
@@ -66,9 +82,6 @@
     border-bottom: 1px solid $border;
 
   }
-}
-.newsletter #revue-embed {
-  position: relative;
 }
 .newsletter #member_email {
   background: #F3F3F3;
@@ -93,30 +106,9 @@
   background: none;
 }
 
-/* Mobile menu */
-.desktop-menu {
-  display: none;
 
-  @include min-screen(768) {
-    display: block;
-  }
-}
-.open_mobile_menu {
-  float: right;
+// ToDo: Clean .mobile-menu etc as it is no longer used
 
-  @include min-screen(768) {
-    display: none;
-  }
-}
-.bars {
-  fill: #CCC;
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  z-index: 100;
-  right: 1em;
-  top: 1em;
-}
 .mobile-menu .logo {
   @include min-screen(768) {
     display: none;
@@ -160,54 +152,4 @@
 }
 .mobile-link:hover {
   color: white;
-}
-
-/* Stick on scroll */
-.sticky-wrapper {
-  margin: 0 auto;
-}
-.header.stuck {
-  max-width: none;
-  z-index: 1;
-  // background: rgba(255,255,255,0.98);
-  background: rgb(255,255,255);
-  width: 100%;
-  position: fixed;
-  top: 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
-  padding: 1rem 0;
-
-  .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    @include min-screen(768) {
-      padding: 0 6rem;
-    }
-    @include min-screen(1600) {
-      padding: 0;
-    }
-  }
-  .desktop-menu {
-    position: relative;
-  }
-  .desktop-menu .newsletter {
-    right: 0;
-  }
-  .header-list {
-    margin-bottom: 0;
-  }
-}
-
-.header.stuck,
-.header.stuck .logo-header {
-  display: inline-block;
-}
-.logo-header {
-  display: inline-block;
-}
-
-.mobile_menu {
-  @include min-screen(768) {
-    display: none;
-  }
 }

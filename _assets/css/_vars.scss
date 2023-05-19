@@ -3,6 +3,7 @@ $blue: #038ba4;
 $red: #ee3624;
 $brown: #554d42;
 
+
 /* Website */
 $black: #333;
 $gray: #828282;
@@ -10,6 +11,7 @@ $link: rgb(100,100,100);
 $border: #ccc;
 $border_white: rgba(255,255,255, .3);
 $light_gray: #F8F8F8;
+$underline: #e6ebbb;
 
 $border_light: rgba(0,0,0,0.1);
 
@@ -18,7 +20,13 @@ $color_facebook: #3A589A;
 $color_twitter: #00ABEF;
 $color_linkedin: #0074B5;
 
-
 /* Transition Times */
 $transitionRegular: 150ms;
 $transitionSlow: 250ms;
+
+:root {
+  --color-main: #{$blue};
+  --color-second: #{$red};
+  --color-third: #{$brown};
+  --color-underline: #{$underline};
+}

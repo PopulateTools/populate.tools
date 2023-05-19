@@ -61,10 +61,16 @@ populate_data: data
 
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
+# markdown: kramdown
+# markdown: CommonMark
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
+
+
+# highlighter: rouge
 # Exclude _i18n due to Github compilation error
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '.jekyll-cache', '_site']
 
 assets:
   features:
@@ -84,5 +90,5 @@ plugins:
 
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "assets"]
+exclude_from_localization: ["javascript", "images", "css", "assets", "datasets"]
 parallel_localization: false
