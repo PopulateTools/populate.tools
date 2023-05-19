@@ -1,11 +1,5 @@
 .header {
   padding: 1rem 0;
-
-  @include screen(768) {
-    // padding: 2rem 4rem 6rem 4rem;
-    padding-top: 1rem;
-    padding-bottom: 6rem;
-  }
 }
 
 .desktop-menu {
@@ -28,6 +22,11 @@ body.section_home .logo-header {
   max-width: 16rem;
   margin-top: 36vh;
   margin-bottom: 12vh;
+  
+  @include screen(800px) {
+    max-width: 12rem;
+    margin-left: 0;
+  }
 }
 
 .header-list {

@@ -8,14 +8,15 @@ footer:
 home:
   intro-text: |
     <p><strong>
-      <span>Somos un</span> <button data-target="what">pequeño estudio digital</button><span> haciendo </span><button data-target="product">diseño de producto</button>, <button data-target="implementation">implementación</button>, y <button data-target="new">nuevos proyectos</button>.
+      Somos un <span data-target="what" @click="currentEl = 'what'">pequeño estudio digital</span><span> haciendo </span><span data-target="product" @click="currentEl = 'product'">diseño de producto</span>, <span data-target="implementation" @click="currentEl = 'implementation'">implementación</span>, and <span data-target="new" @click="currentEl = 'new'">nuevos proyectos</span>.
     </strong></p>
-
-    <p><span>Te ayudamos a pensar en</span> lo que deberías construir y cómo hacerlo. Somos profesionales <button data-target="questions">creadores de preguntas</button>.</p>
-
-    <p>Nos gusta hacer la <button data-target="right-amount">cantidad justa de trabajo, empezando por lo pequeño</button>, poniendo el trabajo en manos de las personas lo antes posible (porque esa es la forma de aprender) y trabajando en <button data-target="unexplored">áreas inexploradas y proyectos extraños</button>.</p>
     
-    <p>Basta de nosotros. <button data-target="chat">Hablemos</button> y veamos si te podemos ayudar.</p>
+    <p>Te ayudamos a pensar en lo que deberías construir y cómo hacerlo. <span data-target="questions" @click="currentEl = 'questions'">Nos gusta hacer preguntas</span>.</p>
+
+    <p>Nos gusta hacer la <span data-target="right-amount" @click="currentEl = 'right-amount'">cantidad justa de trabajo, empezando por lo pequeño</span>, poniendo el trabajo en manos de las personas lo antes posible (porque esa es la forma de aprender) y trabajando en <span data-target="unexplored" @click="currentEl = 'unexplored'">áreas inexploradas y proyectos extraños</span>.</p>
+    
+    <p>Basta de nosotros. <span data-target="chat" @click="currentEl = 'chat'">Hablemos</span> y veamos si te podemos ayudar.</p>
+    
   services: |
     <p>producto: investigación, ux/ui/id, visualización de datos</p>
     <p>implementación: webdev, front-end, ruby on rails</p>

@@ -44,26 +44,6 @@ $(document).ready(function() {
     }
   });
 
-  //icon animation
-  var topBar = $(".hamburger li:nth-child(1)"),
-    middleBar = $(".hamburger li:nth-child(2)"),
-    bottomBar = $(".hamburger li:nth-child(3)");
-
-  function openCloseHam() {
-    if (middleBar.hasClass("rot-45deg")) {
-      topBar.removeClass("rot45deg");
-      middleBar.removeClass("rot-45deg");
-      bottomBar.removeClass("hidden");
-    } else {
-      bottomBar.addClass("hidden");
-      topBar.addClass("rot45deg");
-      middleBar.addClass("rot-45deg");
-    }
-  }
-  $(".hamburger-container").on("click", function() {
-    openCloseHam();
-  });
-
 
 
   /* Build project grid */
@@ -177,41 +157,41 @@ $(document).ready(function() {
 
 });
 
-function init() {
-  const sources = document.querySelectorAll('[data-target]');
-  const targets = document.querySelectorAll('.target');
+// function init() {
+//   const sources = document.querySelectorAll('[data-target]');
+//   const targets = document.querySelectorAll('.target');
 
-  // Add click event listener to each source element
-  sources.forEach(source => {
-    source.tabIndex = 0;
-    source.addEventListener('click', () => {
-      // Toggle matching target element
-      const targetId = source.dataset.target;
-      const target = document.getElementById(targetId);
-      target.classList.toggle('target-hidden');
-      // Toggle off all other target elements
-      targets.forEach(otherTarget => {
-        if (otherTarget !== target) {
-          otherTarget.classList.add('target-hidden');
-        }
-      });
+//   // Add click event listener to each source element
+//   sources.forEach(source => {
+//     source.tabIndex = 0;
+//     source.addEventListener('click', () => {
+//       // Toggle matching target element
+//       const targetId = source.dataset.target;
+//       const target = document.getElementById(targetId);
+//       target.classList.toggle('target-hidden');
+//       // Toggle off all other target elements
+//       targets.forEach(otherTarget => {
+//         if (otherTarget !== target) {
+//           otherTarget.classList.add('target-hidden');
+//         }
+//       });
 
-      window.location.hash = target.id;
-    });
-  });
+//       window.location.hash = target.id;
+//     });
+//   });
 
-  const targetId = window.location.hash.substring(1);
-  const target = document.getElementById(targetId);
+//   const targetId = window.location.hash.substring(1);
+//   const target = document.getElementById(targetId);
 
-  if (target) {
-    target.classList.remove('target-hidden');
-  }
+//   if (target) {
+//     target.classList.remove('target-hidden');
+//   }
 
-  function hideTarget(event) {
-    event.preventDefault();
-    const target = event.target.closest('.target');
-    target.classList.add('target-hidden');
-  }
+//   function hideTarget(event) {
+//     event.preventDefault();
+//     const target = event.target.closest('.target');
+//     target.classList.add('target-hidden');
+//   }
 
-}
-window.addEventListener('load', init);
+// }
+// window.addEventListener('load', init);
