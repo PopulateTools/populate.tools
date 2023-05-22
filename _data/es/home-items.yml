@@ -22,9 +22,35 @@
     
     Hemos probado alternativas a lo largo de los años, pero hemos llegado a creer firmemente que hay mucho valor en tener una larga historia con tus herramientas, especialmente si es una que, después de tantos años, está en mejor forma que nunca y sigue entregando.
 
-- id: web
+- id: new
+  text: | 
+    We enjoy doing things we haven't done before and getting out of our comfort zone. Impostor syndrome anyone? 
+    
+    Explore, research, read, try, test, learn. 
+
+    Have any challenge around people, tech, participation, design? Share it with us and see if our approach makes sense.
+
+- id: questions
+  text: | 
+    Hacer las preguntas adecuadas es probablemente el mejor super poder que puedes tener en la vida. El diseño de producto no es menos. Simplemente el hacer las preguntas precisas define automáticamente la mayoría de lo que tienes que construir, qué y cómo tienes que ofrecerlo a tu público.
+
+    ¿Deberíamos definir nuestro trabajo como artesanos de preguntas y respuestas? Podríamos. Con un poco de conocimiento de desarrollo web.
+
+    Nuestra metodología: question driven development. 
+
+- id: right-amount
+  text: | 
+    Uno de los mayores riesgos al diseñar y construir tecnología es el alcance. Es fácil y satisfactorio escribir una lista de requisitos (¡mira cuántas ideas se me han ocurrido!). Pero implementar todas esas cosas en un tiempo razonable es un desafío, especialmente cuando no tienes mucha información aparte de la investigación o la intuición de lo que los usuarios finalmente usarán.
+
+    ¿Cuál es la cantidad adecuada de trabajo que algo merece? Esta es la pregunta que intentamos responder al enfrentarnos a un proyecto.
+
+    Es un equilibrio entre funcionalidad, esfuerzo necesario, recompensa posible y obtener suficiente información para aprender y planificar la próxima iteración.
+
+    No nos gusta el concepto de "sprint". Esto no es una carrera. Y de todos modos, no puedes estar corriendo todo el tiempo. Disfrutamos de la exploración.
+    
+- id: unexplored
   text: |
-    Amamos la web. Permite formas geniales y extrañas de compartir, aprender, conectarse. Disfrutamos trasteando con la tecnología web. Amamos el hipertexto. Nos preguntamos sobre los desafíos que los datos, la tecnología y la IA traen a nuestra sociedad.
+    Nos encanta la web. Permite formas geniales y extrañas de compartir, aprender, conectarse. Disfrutamos trasteando con la tecnología web. Amamos el hipertexto. Nos preguntamos sobre los desafíos que los datos, la tecnología y la IA traen a nuestra sociedad.
 
     Como muchos, estamos experimentando con la IA generativa y los LLM. Y pensando en lo que significa la inteligencia humana en el contexto de esta nueva inteligencia artificial. Y cuestionando si somos tan inteligentes como creemos que somos. 
     
