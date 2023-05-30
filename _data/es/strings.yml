@@ -8,7 +8,7 @@ footer:
 home:
   intro-text: |
     <p><strong>
-      Somos un <span data-target="what" @click="currentEl = 'what'">pequeño estudio digital</span><span> haciendo </span><span data-target="product" @click="currentEl = 'product'">diseño de producto</span>, <span data-target="implementation" @click="currentEl = 'implementation'">implementación</span>, and <span data-target="new" @click="currentEl = 'new'">nuevos proyectos</span>.
+      Somos un <span data-target="what" @click="currentEl = 'what'">pequeño estudio digital</span><span> haciendo </span><span data-target="product" @click="currentEl = 'product'">diseño de producto</span>, <span data-target="implementation" @click="currentEl = 'implementation'">implementación</span>, y <span data-target="new" @click="currentEl = 'new'">nuevos proyectos</span>.
     </strong></p>
     
     <p>Te ayudamos a pensar en lo que deberías construir y cómo hacerlo. <span data-target="questions" @click="currentEl = 'questions'">Nos gusta hacer preguntas</span>.</p>
