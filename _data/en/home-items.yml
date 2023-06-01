@@ -18,7 +18,7 @@
 
 - id: implementation
   text: | 
-    We use Ruby on Rails as our go-to web development framework. We have used it since 2005 (damm, almost 20 years).
+    We use Ruby on Rails as our go-to web development framework. We have used it since 2005 (damn, almost 20 years).
     
     We have tried alternatives along the years but we have come to firmly believe that there is a lot of value in having a long history with your tools, especially if its one which after so many years is in better shape than ever and keeps delivering.
     
