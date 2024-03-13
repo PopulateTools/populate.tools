@@ -3,6 +3,5 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .asset-cache
-.ruby-version
 .DS_Store
 
