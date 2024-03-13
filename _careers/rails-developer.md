@@ -9,11 +9,9 @@ place: "Remote (Spain), onsite (Madrid), or mixed"
 
 ## About Populate
 
-We are a design and tech consultancy building digital products around civic engagement. We are hiring for [Gobierto Contracts](https://contratos.gobierto.es), which is our main focus right now: a tool to help public administrations control, plan and research about their contracting activity. Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!
+We are a design and tech consultancy building digital products around civic engagement. We are hiring for [Gobierto Contracts](https://contratos.gobierto.es), which is our main focus right now: a tool for companies and public administrations to explore, analiza, optimize and control all their public procurement data (Read [El por qué de Gobierto Contratación: hacer más eficiente la contratación pública](https://gobierto.es/blog/20210527-gobierto-contratacion.html) (spanish) about our motivation for building this tool — making public spending more efficient, nothing less!)
 
-During the last 12 months we'd have a pretty sweet customer discovery process, talking with tens of organizations to understand where their pains are. Now, a typical product presentation ends up with a "I want this now" (being "now" in the public administration land a process of many months... :D)
-
-We have landed the first clients and have very exciting prospects for the coming months.
+During the last months we'd have a pretty sweet customer discovery process, talking with tens of organizations to understand where their pains are. Now, a typical product presentation ends up with a "I want this now".
 
 We value
 
@@ -26,7 +24,7 @@ We value
 
 ## The job
 
-Gobierto Contracts is a relatively young RoR project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, and many other fun things.
+Gobierto Contracts is a relatively young RoR project, so you'll be a key contributor to shape the basis of the code and will take ownership of the project. One of Gobierto Contracts' parts is a global search engine of tenders and contracts extracted from public sources. On top of this we are applying machine learning magic to do predictions, entity extraction from PDFs, LLMs, and many other fun things.
 
 You'll also be contributing from time to time to Gobierto Transparency, our open source solution for setting transparency and accountability initiatives.
 
