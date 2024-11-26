@@ -87,12 +87,14 @@ module Jekyll
       filename, post_id = parse_parameters context
       
       if filename.start_with?('/')
-        filename
+        filename 
       else
         path = post_path context, post_id
-        # strip filename
-        path = File.dirname(path) if path =~ /\.\w+$/
-        "#{context.registers[:site].config['baseurl']}/assets/img#{path}#{filename}"
+        
+        # If path ends with a file extension (e.g. .html), get just the directory path
+        path = File.dirname(path) + '/' if path =~ /\.\w+$/
+
+        "#{context.registers[:site].config['baseurl']}/assets/img/#{path}/#{filename}"
 
         # fix double slashes
         # path.gsub(%r{/{2,}}, '/')
