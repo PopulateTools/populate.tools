@@ -18,7 +18,7 @@ img: posts/200427-if-life-ES.png
 
 <div class="container">
   
-  {% asset 'posts/200427-if-life-ES.png' %}
+  {% asset_path 'posts/200427-if-life-ES.png' %}
 
   <div class="" style="
     padding: 1.5em;

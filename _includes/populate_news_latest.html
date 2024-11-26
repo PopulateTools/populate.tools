@@ -10,7 +10,7 @@
       {% if item.url != page.url %}
       <div class="news_item">
         <a href="{{ site.baseurl }}/es{{ item.url }}">
-          <div class="visual_feature" style="background-image: url('{% asset {{item.img}} @path %}')" ></div>
+          <div class="visual_feature" style="background-image: url('{% asset_path {{item.img}} @path %}')" ></div>
           <div class="header-text">
             <h1>{{ item.title }}</h1>
             <h2>{{ item.description }}</h2>

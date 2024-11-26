@@ -11,7 +11,7 @@ WordPress powers the 26% of the Internet webpages. It has been around for years,
 
 At Populate we have designed and implemented the new website of the ICIJ. They wanted to migrate to a modern and simpler publication experience which allowed new ways of consuming the information.
 
-{% asset 'posts/181018-icij-01.png' %}
+{% asset_path 'posts/181018-icij-01.png' %}
 
 This project was a real challenge for us, including the technical aspects, as we are Ruby on Rails experts, and developing such an important project in an unknown technology was something unexpected, with lots of unkowns and, why don’t recognize it, many risks.
 
@@ -20,7 +20,7 @@ Thankfully Wordpress and PHP ecosystem has changed a lot, there are many modern 
 ## Roots: the game changer
 Roots is a web development studio that provides open-source tools to develop websites in Wordpress with a modern workflow. They also have very useful plugins, screencasts and books to learn how to use their tools. You should also signup to their monthly newsletter, with good curated information of the Wordpress ecosystem. The three tools that simplify your life as a Wordpress developer we are going to describe are: Bedrock, Trellis and Sage.
 
-{% asset 'posts/181018-icij-02.png' %}
+{% asset_path 'posts/181018-icij-02.png' %}
 
 ### Bedrock
 Bedrock is a boilerplate that organizes a Wordpress site in a modern way. Provides separation of the Wordpress vendorized code from your own application code in a set of well structured folders, introduces Composer, execution environments, environment variables, and many other good and modern patterns present in web frameworks such as Ruby on Rails.
@@ -85,7 +85,7 @@ We had also to define how the inventory of remote servers was obtained, due to t
 Together with the provisioning roles there’s a deployment role implemented using Ansistrano that can be executed in any environment and will run dependencies and update the code. It also offers rollback capabilities.
 
 
-{% asset 'posts/181018-icij-03.png' %}
+{% asset_path 'posts/181018-icij-03.png' %}
 
 ## Conclusion
 This post is a quick overview of Roots tools to build Wordpress sites in a modern way. Many concepts and good practices from other frameworks have been applied to make the development experience nice and robust:

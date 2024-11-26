@@ -67,7 +67,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
 
 </div>
 
-{% asset 'posts/190901-Merca-Foto' class='' style='' %}
+{% asset_path 'posts/190901-Merca-Foto' class='' style='' %}
 
 <div class="row-col">
 
@@ -164,7 +164,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
   <div class="container">
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-1-6">
-        {% asset 'posts/190901-Sparra' class='' style='margin: auto; margin-top: -81%; margin-bottom: -50%; ' %}
+        {% asset_path 'posts/190901-Sparra' class='' style='margin: auto; margin-top: -81%; margin-bottom: -50%; ' %}
       </div>
       <div class="pure-u-1 pure-u-md-5-6">
         <h2>Top productos</h2>
@@ -208,7 +208,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
   <div class="container">
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-1-3">
-        {% asset 'posts/190901-Spain' class='' style='margin-top: -18%; margin-bottom: -23%; ' %}
+        {% asset_path 'posts/190901-Spain' class='' style='margin-top: -18%; margin-bottom: -23%; ' %}
       </div>
       <div class="pure-u-1 pure-u-md-2-3">
         <h2>Top provincias</h2>

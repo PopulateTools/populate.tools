@@ -46,6 +46,14 @@ defaults:
       type: projects
     values:
       weight: 100
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+  # - scope:
+  #     path: "_assets"
+  #   values:
+  #     image: true
 
 
 # Analytics
@@ -72,23 +80,21 @@ populate_data: data
 # Exclude _i18n due to Github compilation error
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '.jekyll-cache', '_site']
 
-assets:
-  features:
-    automatic_img_size: false
-  sources:
-    - _assets/css
-    - _assets/img
-    - _assets/img/posts
-    - _assets/js
+sass:
+#  saas_dir: _assets
+  style: expanded
+  sourcemap: never
+  load_paths:
+    - _sass
+    - assets/css
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-assets
   - jekyll-polyglot
   - jekyll-contentblocks
 
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "assets", "datasets"]
+exclude_from_localization: ["javascript", "img", "css", "datasets", "_sass", "assets", "_site"]
 parallel_localization: false

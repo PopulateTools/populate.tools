@@ -1,0 +1,21 @@
+// @import "_vendor/populities";
+
+
+@media screen and (max-width: 1024px) {
+	.column .tool {
+    margin: 0 -5%;
+    width: 110%;
+  }
+}
+@media screen and (max-width: 740px) {
+	/* features */
+  #debt_evolution_widget {
+    height: 700px !important;
+  }
+  .debt_story_slides {
+    .block {
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+  }
+}

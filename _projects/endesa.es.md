@@ -3,7 +3,7 @@ layout: project_v2
 title: Endesa
 name: Tu energía cuenta
 client: Endesa
-img: project_full/mockup_project.png
+img: projects/screens/endesa-mockup_project.png
 weight: 1
 lang: es
 permalink: projects/endesa
@@ -11,7 +11,7 @@ permalink: projects/endesa
 
 <div class="w-100 mt5 mb7 hero">
   <div class="container h-100 flex flex-wrap flex-nowrap-ns items-center justify-between">
-    <div class="w-100 w-20-ns mt5 mb4 mt0-ns mb0-ns"><img src="{% asset 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
+    <div class="w-100 w-20-ns mt5 mb4 mt0-ns mb0-ns"><img src="{% asset_path 'project_full/endesa_logo' @path %}" alt="Endesa" /></div>
     <div class="w-100 w-40-ns f3">
       <strong class="db mb2">
         Exploración y visualización de datos<br />
@@ -19,10 +19,10 @@ permalink: projects/endesa
       <span class="db fw3">Cómo convertir datos complejos en historias</span>
     </div>
     <div class="w-34-ns mt5-ns mr4-ns nl5 nr4 relative">
-      <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
+      <img src="{% asset_path 'project_full/mobile_screenshot_1' @path %}" alt="Endesa" />
       <div class="absolute" style="top: 14.4%; left: 21%; width: 67.715%; height: 100%;">
         <div class="absolute overflow-y-hidden" style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
-          <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
+          <video class="w-100" src="{% asset_path 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@ permalink: projects/endesa
         <div class="fl w-100 w-col-b-ns">
           <div class="flex mb5">
             <div class="w-50 pr3 pr5-ns">
-              <img class="db mb4 h3" src="{% asset 'project_full/claves-1' @path %}" alt="Exploración y análisis de datos" />
+              <img class="db mb4 h3" src="{% asset_path 'project_full/claves-1' @path %}" alt="Exploración y análisis de datos" />
               <strong class="db mb2">Exploración y análisis de datos</strong>
               <p>
                 Análisis de millones de registros de consumo eléctrico horario y búsqueda de fuentes de datos públicas y abiertas para
@@ -80,7 +80,7 @@ permalink: projects/endesa
               </p>
             </div>
             <div class="w-50">
-              <img class="db mb4 h3" src="{% asset 'project_full/claves-2' @path %}" alt="Visualizaciones" />
+              <img class="db mb4 h3" src="{% asset_path 'project_full/claves-2' @path %}" alt="Visualizaciones" />
               <strong class="db mb2">Visualizaciones</strong>
               <p>
                 Transformamos los datos complejos en visualizaciones que permiten comprender de forma intuitiva distintas facetas de los
@@ -90,12 +90,12 @@ permalink: projects/endesa
           </div>
           <div class="flex">
             <div class="w-50 pr3 pr5-ns">
-              <img class="db mb4 h3" src="{% asset 'project_full/claves-3' @path %}" alt="Storytelling" />
+              <img class="db mb4 h3" src="{% asset_path 'project_full/claves-3' @path %}" alt="Storytelling" />
               <strong class="db mb2">Storytelling</strong>
               <p>Creamos historias a partir de los datos para conectar con los lectores.</p>
             </div>
             <div class="w-50">
-              <img class="db mb4 h3" src="{% asset 'project_full/claves-4' @path %}" alt="Storytelling" />
+              <img class="db mb4 h3" src="{% asset_path 'project_full/claves-4' @path %}" alt="Storytelling" />
               <strong class="db mb2">Mobile-first</strong>
               <p>Visualizaciones e historias pensadas para que funcionen en móvil de forma nativa.</p>
             </div>
@@ -107,11 +107,11 @@ permalink: projects/endesa
     <div class="full-width cf mb5 mb6-ns overflow-hidden image-gallery" style="background-color: #fafafa">
       <h3 class="center mv4 mv5-ns">Iteraciones</h3>
       <div class="flex justify-center" style="margin-bottom: -20px">
-        <img src="{% asset 'project_full/iterations_01' @path %}" />
-        <img src="{% asset 'project_full/iterations_02' @path %}" />
-        <img src="{% asset 'project_full/iterations_03' @path %}" />
-        <img src="{% asset 'project_full/iterations_04' @path %}" />
-        <img src="{% asset 'project_full/iterations_05' @path %}" />
+        <img src="{% asset_path 'project_full/iterations_01' @path %}" />
+        <img src="{% asset_path 'project_full/iterations_02' @path %}" />
+        <img src="{% asset_path 'project_full/iterations_03' @path %}" />
+        <img src="{% asset_path 'project_full/iterations_04' @path %}" />
+        <img src="{% asset_path 'project_full/iterations_05' @path %}" />
       </div>
     </div>
 
@@ -130,19 +130,19 @@ permalink: projects/endesa
         </p>
       </div>
       <div class="w-50 relative">
-        <img src="{% asset 'project_full/mobile_screenshot_1' @path %}" />
+        <img src="{% asset_path 'project_full/mobile_screenshot_1' @path %}" />
         <div class="absolute" style="top: 14.615%; left: 21.457%; width: 67.715%; height: 100%;">
           <div class="absolute overflow-y-hidden" style="height: 72.045%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
-            <video class="w-100" src="{% asset 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
+            <video class="w-100" src="{% asset_path 'project_full/video/coverymovilscrollytelling.mp4' @path %}" autoplay loop></video>
           </div>
         </div>
       </div>
     </section>
 
     <section class="mb5 mb6-ns relative">
-      <img src="{% asset 'project_full/laptop_screenshot_1' @path %}" />
+      <img src="{% asset_path 'project_full/laptop_screenshot_1' @path %}" />
       <div class="absolute" style="top: 7.328%; left: 16.127%; width: 68.056%; height: 80.029%;">
-        <video class="w-100 h-100" src="{% asset 'project_full/video/portatil_scrollytelling.mp4' @path %}" autoplay loop></video>
+        <video class="w-100 h-100" src="{% asset_path 'project_full/video/portatil_scrollytelling.mp4' @path %}" autoplay loop></video>
       </div>
     </section>
 
@@ -161,10 +161,10 @@ permalink: projects/endesa
     </section>
 
     <section class="center mb5 mb6-ns relative">
-      <img src="{% asset 'project_full/mobile_screenshot_2' @path %}" />
+      <img src="{% asset_path 'project_full/mobile_screenshot_2' @path %}" />
       <div class="absolute" style="top: 9.182%; left: 35.4%; width: 32.78%; height: 100%;">
         <div class="absolute overflow-y-hidden" style="height: 77.6%; border-bottom-left-radius: 10% 5%; border-bottom-right-radius: 10% 5%;">
-          <video class="w-100" src="{% asset 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
+          <video class="w-100" src="{% asset_path 'project_full/video/movilcentralquehacenloshogares.mp4' @path %}" autoplay loop></video>
         </div>
       </div>
     </section>
@@ -179,7 +179,7 @@ permalink: projects/endesa
     </section>
 
     <section class="center mb5 mb6-ns">
-      <img src="{% asset 'project_full/laptop_screenshot_2' @path %}" />
+      <img src="{% asset_path 'project_full/laptop_screenshot_2' @path %}" />
     </section>
 
     <div id="analisis" class="anchor"></div>
@@ -206,7 +206,7 @@ permalink: projects/endesa
         conclusiones de las actividades y los hábitos por tipología de hogar.
       </p>
 
-      <img class="w-100 mt4" src="{% asset 'project_full/source_code' @path %}" />
+      <img class="w-100 mt4" src="{% asset_path 'project_full/source_code' @path %}" />
     </section>
 
     <section class="mb5 mb6-ns">
@@ -225,92 +225,92 @@ permalink: projects/endesa
     </section>
 
     <div class="full-width mb5 mb6-ns">
-      <img src="{% asset 'project_full/mockup_project' @path %}" />
+      <img src="{% asset_path 'project_full/mockup_project' @path %}" />
     </div>
 
     <section class="mb5 mb6-ns">
       <h3 class="mb4">Iconos e ilustraciones</h3>
       <div class="flex flex-wrap justify-between items-end mb5">
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-0' @path %}" />
+          <img src="{% asset_path 'project_full/icon-0' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-1' @path %}" />
+          <img src="{% asset_path 'project_full/icon-1' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-2' @path %}" />
+          <img src="{% asset_path 'project_full/icon-2' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-3' @path %}" />
+          <img src="{% asset_path 'project_full/icon-3' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-4' @path %}" />
+          <img src="{% asset_path 'project_full/icon-4' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-5' @path %}" />
+          <img src="{% asset_path 'project_full/icon-5' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-6' @path %}" />
+          <img src="{% asset_path 'project_full/icon-6' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-7' @path %}" />
+          <img src="{% asset_path 'project_full/icon-7' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-8' @path %}" />
+          <img src="{% asset_path 'project_full/icon-8' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-9' @path %}" />
+          <img src="{% asset_path 'project_full/icon-9' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-10' @path %}" />
+          <img src="{% asset_path 'project_full/icon-10' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-11' @path %}" />
+          <img src="{% asset_path 'project_full/icon-11' @path %}" />
         </div>
         <div class="ma1 pa1">
-          <img src="{% asset 'project_full/icon-12' @path %}" />
+          <img src="{% asset_path 'project_full/icon-12' @path %}" />
         </div>
       </div>
 
       <div class="flex flex-wrap justify-between items-end mb5">
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-1' @path %}" />
+          <img src="{% asset_path 'project_full/user-1' @path %}" />
         </div>
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-2' @path %}" />
+          <img src="{% asset_path 'project_full/user-2' @path %}" />
         </div>
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-3' @path %}" />
+          <img src="{% asset_path 'project_full/user-3' @path %}" />
         </div>
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-4' @path %}" />
+          <img src="{% asset_path 'project_full/user-4' @path %}" />
         </div>
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-5' @path %}" />
+          <img src="{% asset_path 'project_full/user-5' @path %}" />
         </div>
         <div class="pa1 ma1">
-          <img src="{% asset 'project_full/user-6' @path %}" />
+          <img src="{% asset_path 'project_full/user-6' @path %}" />
         </div>
       </div>
 
       <div class="flex flex-wrap justify-center items-end mb5">
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion1' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion1' @path %}" />
         </div>
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion2' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion2' @path %}" />
         </div>
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion3' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion3' @path %}" />
         </div>
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion4' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion4' @path %}" />
         </div>
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion5' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion5' @path %}" />
         </div>
         <div class="ma2 pa2">
-          <img src="{% asset 'project_full/ilustracion6' @path %}" />
+          <img src="{% asset_path 'project_full/ilustracion6' @path %}" />
         </div>
       </div>
     </section>
