@@ -81,9 +81,8 @@ populate_data: data
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile', '_config.yml', 'config', '_i18n', '.jekyll-cache', '_site']
 
 sass:
-#  saas_dir: _assets
   style: expanded
-  sourcemap: never
+  #sourcemap: never
   load_paths:
     - _sass
     - assets/css

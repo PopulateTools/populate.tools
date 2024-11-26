@@ -87,6 +87,7 @@ DEPENDENCIES
   jekyll-polyglot
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-watch
   kramdown-parser-gfm
   liquid-c
   webrick

@@ -9,4 +9,9 @@ gem "jekyll-contentblocks"
 gem "kramdown-parser-gfm"
 gem "liquid-c"
 gem 'jekyll-include-cache'
-gem "webrick"
+
+group :development do
+  gem "jekyll-watch"
+  gem "webrick"
+end
+
