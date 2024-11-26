@@ -33,17 +33,17 @@ The playbooks make use of three main tasks:
 
 In a standard CKAN installation you create a virtualenv (a directory that encapsulates Python dependencies) in the /usr/lib/ckan/default directory. In our case default is not the virtualenv itself but a symlink to the virtualenv that represents the current release:
 
-{% asset_path 'posts/180417-ckan-01.png' %}
+<img src="{% asset_path '/assets/img/posts/180417-ckan-01.png' %}" />
 
 In case you’re wondering, deploy_base_venv is a virtualenv that just contains the CKAN core files with all its dependencies installed. We use this as the starting point for each of the releases, so we don’t have to clone CKAN again and install all the dependencies (which would slow down the deploy considerably).
 
 The releases directory contains a timestamped directory for each of the previous releases, just like it’s done in a typical Ruby on Rails application:
 
-{% asset_path 'posts/180417-ckan-02.png' %}
+<img src="{% asset_path '/assets/img/posts/180417-ckan-02.png' %}" />
 
 Each time a new release is created, all the extensions are cloned inside the src directory of the release virtualenv:
 
-{% asset_path 'posts/180417-ckan-03.png' %}
+<img src="{% asset_path '/assets/img/posts/180417-ckan-03.png' %}" />
 
 ## The code
 

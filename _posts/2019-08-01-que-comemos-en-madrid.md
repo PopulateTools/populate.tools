@@ -7,7 +7,7 @@ date: 2019-09-05 8:00:00 +0100
 author: blat
 lang: es
 category: populate_news
-img: posts/190901-mercamadrid-ilu-intro.png
+img: /assets/img/posts/190901-mercamadrid-ilu-intro.png
 ---
 
 <div class="menu-story">
@@ -67,7 +67,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
 
 </div>
 
-{% asset_path 'posts/190901-Merca-Foto' class='' style='' %}
+<img src="{% asset_path '/assets/img/posts/190901-Merca-Foto.jpg' %}" class='' style='' />
 
 <div class="row-col">
 
@@ -164,7 +164,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
   <div class="container">
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-1-6">
-        {% asset_path 'posts/190901-Sparra' class='' style='margin: auto; margin-top: -81%; margin-bottom: -50%; ' %}
+        <img src="{% asset_path '/assets/img/posts/190901-Sparra' %}" class='' style='margin: auto; margin-top: -81%; margin-bottom: -50%; ' />
       </div>
       <div class="pure-u-1 pure-u-md-5-6">
         <h2>Top productos</h2>
@@ -208,7 +208,7 @@ img: posts/190901-mercamadrid-ilu-intro.png
   <div class="container">
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-1-3">
-        {% asset_path 'posts/190901-Spain' class='' style='margin-top: -18%; margin-bottom: -23%; ' %}
+        <img src="{% asset_path '/assets/img/posts/190901-Spain.png' %}" class='' style='margin-top: -18%; margin-bottom: -23%; ' />
       </div>
       <div class="pure-u-1 pure-u-md-2-3">
         <h2>Top provincias</h2>

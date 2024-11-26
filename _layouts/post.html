@@ -11,7 +11,7 @@ layout: default
       {% if page.main_photo_big contains '://' %}
         <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% asset_path page.main_photo_big %}
+        <img src="{% asset_path page.main_photo_big %}" />
       {% endif %}
     </header>
     {% endif %}
@@ -37,7 +37,7 @@ layout: default
       {% if page.main_photo contains '://' %}
         <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% asset_path page.main_photo %}
+        <img src="{% asset_path page.main_photo %}" />
       {% endif %}
     </header>
     {% endif %}
