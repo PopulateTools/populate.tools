@@ -13,12 +13,12 @@ technology:
   - Decidim
 img: projects/screens/BCN-Decidim-0.jpg
 screens:
-  - projects/screens/BCN-Decidim-1.jpg
-  - projects/screens/BCN-Decidim-2.jpg
-  - projects/screens/BCN-Decidim-3.jpg
-  - projects/screens/BCN-Decidim-4.jpg
-  - projects/screens/BCN-Decidim-5.jpg
-  - projects/screens/BCN-Decidim-6.jpg
+  - /assets/img/projects/screens/BCN-Decidim-1.jpg
+  - /assets/img/projects/screens/BCN-Decidim-2.jpg
+  - /assets/img/projects/screens/BCN-Decidim-3.jpg
+  - /assets/img/projects/screens/BCN-Decidim-4.jpg
+  - /assets/img/projects/screens/BCN-Decidim-5.jpg
+  - /assets/img/projects/screens/BCN-Decidim-6.jpg
 screen_1: projects/screens/panama-papers-1.jpg
 public_url: https://decidim.barcelona/
 client_url: https://ajuntament.barcelona.cat/
