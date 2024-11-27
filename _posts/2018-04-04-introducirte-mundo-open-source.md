@@ -24,7 +24,7 @@ En este post voy a contar algunos trucos que me han servido a mi para encontrar 
 
 Un primer paso sería buscar aquellas issues marcadas con labels tipo good-first-issue, good-for-contribution o algo del estilo. Por ejemplo, en el repositorio publiclab/plots2 reservan las issues con el label first-timers-only para aquellas personas que no han contribuido nunca a dicho repositorio (y que incluso puede ser su primera contribución a un proyecto open source). En estas issues prestan especial atención a la hora de redactar cuál es el problema e incluso proponen una solución tentativa y los pasos que habría que seguir para resolverla.
 
-{% asset 'posts/180404-introducirte-01.png' %}
+<img src="{% asset_path '/assets/img/posts/180404-introducirte-01.png' %}" />
 
 No obstante no siempre vamos a encontrar este tipo de issues. Como en estos casos puede ser un poco abrumador encontrar un punto de la aplicación al que empezar a hincarle el diente, espero que los siguientes trucos te sirvan para encontrar posibles puntos de la aplicación que puedes mejorar.
 
@@ -39,7 +39,7 @@ Es una de las más inmediatas, y por ese mismo motivo a mi a veces me daba verg�
 1. Abrir una pull request
 1. Responder al feedback (si lo hay) y hacer los cambios oportunos para que te la mergeen.
 
-{% asset 'posts/180404-introducirte-02.png' %}
+<img src="{% asset_path '/assets/img/posts/180404-introducirte-02.png' %}" />
 
 No obstante, este tipo de PRs son una buena forma de establecer un primer contacto con los maintainers del repositorio, ver si están pendientes de las contribuciones, si las mergean… Puedes verlo como una especie de ping.
 
@@ -76,7 +76,7 @@ Por ejemplo en Gobierto usamos Codecov (podéis verlo [aquí](https://codecov.io
 
 Por ejemplo en el caso del código de Gobierto he elegido [este método](https://codecov.io/gh/PopulateTools/gobierto/src/master/app/models/gobierto_participation/process_stage.rb):
 
-{% asset 'posts/180404-introducirte-03.png' %}
+<img src="{% asset_path '/assets/img/posts/180404-introducirte-03.png' %}" />
 
 <small>Las líneas en rojo no son ejecutadas por ningún test</small>
 
@@ -95,7 +95,7 @@ Una opción especialmente interesante de Rubocop para encontrar oportunidades de
 
 Que entre otras cosas es capaz de detectar los métodos excesivamente largos o complejos. Entre las distintas líneas de la salida podemos ver:
 
-{% asset 'posts/180404-introducirte-02.png' %}
+<img src="{% asset_path '/assets/img/posts/180404-introducirte-02.png' %}" />
 
 Si buscamos el código del método en cuestión, es fácil ver que es un buen candidato para ser refactorizado:
 

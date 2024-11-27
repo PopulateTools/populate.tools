@@ -6,19 +6,12 @@ date: 2020-04-27 8:00:00 +0100
 author: alvaro
 lang: en
 category: populate_news
-img: posts/200427-if-life-ES.png
+img: /assets/img/posts/200427-if-life-ES.png
 ---
-
-<div class="" style="
-    font-size: .85em;
-    padding: 1em;
-    color: #828282;"
-  ><a href="/">Populate</a>
-</div>
 
 <div class="container">
   
-  {% asset 'posts/200427-if-life-ES.png' %}
+  <img src="{% asset_path '/assets/img/posts/200427-if-life-ES.png' %}" />
 
   <div class="" style="
     padding: 1.5em;

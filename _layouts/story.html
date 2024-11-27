@@ -16,7 +16,7 @@ layout: default
       </div>
     </div>
 
-    <div class="visual_feature" style="background-url: {% asset {{page.img}} @path %}" ></div>
+    <div class="visual_feature" style="background-image: url('{% asset_path {{page.img}} %}')" ></div>
 
   </div>
 
@@ -31,7 +31,7 @@ layout: default
       {% if page.main_photo_big contains '://' %}
         <img src="{{ page.main_photo_big }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% asset '{{ page.main_photo_big }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+        <img src="{% asset_path '{{ page.main_photo_big }}' %}" class='heading' itemprop='img heading' title='{{ page.main_photo_caption }}' />
       {% endif %}
     </header>
     {% endif %}
@@ -41,7 +41,7 @@ layout: default
       {% if page.main_photo contains '://' %}
         <img src="{{ page.main_photo }}" class="heading" itemprop="img heading" title="{% if page.main_photo_caption %}{{ page.main_photo_caption }}{% endif %}">
       {% else %}
-        {% asset '{{ page.main_photo }}' class:'heading' itemprop:'img heading' title:'{{ page.main_photo_caption }}' %}
+        <img src="{% asset_path '{{ page.main_photo }}' %}" class='heading' itemprop='img heading' title='{{ page.main_photo_caption }}' />
       {% endif %}
     </header>
     {% endif %}

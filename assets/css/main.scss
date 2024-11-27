@@ -1,0 +1,32 @@
+---
+---
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  // "_vendor/pure/base",
+  // "_vendor/pure/buttons",
+  // "_vendor/pure/grids",
+  // "_vendor/pure/grids-responsive",
+  // "_vendor/pure/menus",
+  // "_vendor/pure/tables",
+  "_vendor/pure",
+  "_vendor/populate_utilities",
+  "_vendor/slick-theme",
+  "_vendor/syntax-highlighter",
+  "vars",
+  "type",
+  "header",
+  "base",
+  "hero",
+  "home",
+  "products",
+  "projects",
+  "news",
+  "clients",
+  "team",
+  "post",
+  "page",
+  "footer",
+  "section_populate_data",
+  "menu",
+  "story"
+;

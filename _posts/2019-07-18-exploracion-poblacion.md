@@ -26,7 +26,7 @@ img: posts/190701-CartaTelegrafica.jpg
 
     <div id="pinned-element1">
       <div class="embed_full_width" >
-        {% asset 'posts/190701-CartaTelegrafica' class='' style='' %}
+        <img src="{% asset_path '/assets/img/posts/190701-CartaTelegrafica.jpg' %}" class='' style='' />
       </div>
     </div>
 
@@ -69,11 +69,11 @@ img: posts/190701-CartaTelegrafica.jpg
     <div class="pure-u-1 pure-u-md-1-2" style="padding-right: 3em; text-align: right;">
 
       <div class="img_cont shadow" style="margin-bottom: 5em; ">
-        {% asset 'posts/190701-Congreso' %}
+        <img src="{% asset_path '/assets/img/posts/190701-Congreso.png' %}" />
       </div>
 
       <div class="img_cont shadow" style=" margin-bottom: 2em; margin-left: 18%; ">
-        {% asset 'posts/190701-INE-Historico' %}
+        <img src="{% asset_path '/assets/img/posts/190701-INE-Historico.png' %}" />
       </div>
 
       <div class="source right">Fuente: <a href="#sources">INE / Populate Data</a></div>
@@ -306,7 +306,7 @@ img: posts/190701-CartaTelegrafica.jpg
     <div class="pure-u-1 pure-u-md-1-2" style="padding-right: 3em; text-align: right;">
 
       <div class="img_cont shadow" style="margin-bottom: 5em; margin-left: -7rem; ">
-        {% asset 'posts/190701-Puente' %}
+        <img src="{% asset_path '/assets/img/posts/190701-Puente.png' %}" />
       </div>
 
     </div>
@@ -328,7 +328,7 @@ img: posts/190701-CartaTelegrafica.jpg
     <p>Hemos visualizado el aumento o disminución de la población en relación con la distancia de un municipio a la capital de su provincia: </p>
 
     <div class="m_v_2">
-      {% asset 'posts/190701-Scatter-Distancia.png' %}
+      <img src="{% asset_path '/assets/img/posts/190701-Scatter-Distancia.png' %}" />
       <div class="source">Fuente: <a href="#sources">Elaboración propia / INE / Populate Data</a></div>
     </div>
 
@@ -344,7 +344,7 @@ img: posts/190701-CartaTelegrafica.jpg
 <div class="section scrolling-container" id="pinned_empleo">
 
   <div class="embed_full_width" id="pinned_empleo_img" >
-    {% asset 'posts/190701-Empleo' style="width: 100%; margin-bottom: 3em; " %}
+    <img src="{% asset_path '/assets/img/posts/190701-Empleo.jpg' %}" style="width: 100%; margin-bottom: 3em; " />
     <h2>Empleo y población</h2>
   </div>
 

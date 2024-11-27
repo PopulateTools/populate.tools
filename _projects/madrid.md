@@ -16,9 +16,9 @@ description: We designed and developed the collaborative legislation module for 
 #   more_info_es: /es/blog/populate-ayuntamiento-madrid
 img: projects/screens/consulleg-0.jpg
 screens:
-  - projects/screens/consulleg-1.jpg
-  - projects/screens/consulleg-2.jpg
-  - projects/screens/consulleg-3.jpg
+  - /assets/img/projects/screens/consulleg-1.jpg
+  - /assets/img/projects/screens/consulleg-2.jpg
+  - /assets/img/projects/screens/consulleg-3.jpg
 # public_url: https://panamapapers.icij.org/
 # client_url: https://icij.org/
 ---
